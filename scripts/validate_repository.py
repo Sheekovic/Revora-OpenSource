@@ -22,7 +22,7 @@ secret_patterns = {
 errors = []
 for rel in paths:
     path = pathlib.PurePosixPath(rel)
-    if any(part in {'.migration','.git','bin','obj','node_modules','__pycache__'} for part in path.parts):
+    if any(part in {'.migration','.local','.git','bin','obj','node_modules','__pycache__'} for part in path.parts):
         errors.append((rel,'private/generated directory'))
     if path.suffix.lower() in prohibited_suffixes or path.name in {'.env','appsettings.Development.json','Configuracion.ini','app.config'}:
         errors.append((rel,'private/generated artifact'))
@@ -41,6 +41,8 @@ for rel in paths:
             errors.append((rel,label))
 
 required = ['README.md','LICENSE','THIRD_PARTY_NOTICES.md','docs/source-manifest.json',
+            'START-REVORA.cmd','docs/QUICKSTART.md','docs/AI_AGENT_SETUP.md',
+            'website/site/index.html','website/site/app.js','website/site/styles.css','website/site/config.js',
             'launcher/PlayRevora.Launcher.sln','website/src/Revora.Web/Revora.Web.csproj','server/Revora.csproj',
             'licenses/Npgsql-4.1.14-LICENSE.txt','licenses/dotnet-corefx-LICENSE.txt','website/licenses/COPS-v7-LICENSE.txt']
 for rel in required:

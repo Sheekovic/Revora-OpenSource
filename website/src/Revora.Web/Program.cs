@@ -52,7 +52,7 @@ builder.Services.AddHttpClient<GameIdentityRegistrationClient>(client =>
 {
     client.Timeout = TimeSpan.FromSeconds(10);
     client.DefaultRequestHeaders.UserAgent.ParseAdd("Revora.Web/1.0");
-});
+}).ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler { AllowAutoRedirect = false });
 builder.Services.AddSingleton(identityTokens);
 builder.Services.AddSingleton<RecoveryDisplayCache>();
 builder.Services.AddSingleton<FormProofService>();

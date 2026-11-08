@@ -24,6 +24,9 @@ List<(string Name, Action Test)> tests =
     ("Production defaults fail closed", () => Throws(() => WebOptions.Validate(options, new FakeEnvironment("Production"), ["http://127.0.0.1:5080"]))),
     ("Public binding is rejected", () => Throws(() => WebOptions.Validate(WithRuntime("Development"), new FakeEnvironment("Development"), ["http://0.0.0.0:5080"]))),
     ("Loopback development binding is allowed", () => WebOptions.Validate(WithRuntime("Development"), new FakeEnvironment("Development"), ["http://127.0.0.1:5080"])),
+    ("Local preview cannot enable registration", ValidateLocalPreview),
+    ("Registration endpoint must be explicitly configured", ValidateRegistrationEndpoint),
+    ("Registration client uses only the configured endpoint", ValidateRegistrationDestination),
     ("External return URL is rejected", () => Assert(ReturnUrlPolicy.SafeLocalPath("https://evil.example/", "en") == "/en/dashboard", "External return URL was accepted.")),
     ("Scheme-relative return URL is rejected", () => Assert(ReturnUrlPolicy.SafeLocalPath("//evil.example/", "ar") == "/ar/dashboard", "Scheme-relative return URL was accepted.")),
     ("Local return URL is preserved", () => Assert(ReturnUrlPolicy.SafeLocalPath("/en/dashboard/security", "en") == "/en/dashboard/security", "Local return URL was rejected.")),
@@ -197,7 +200,7 @@ static void TestNetworkDigests()
 }
 static void TestIdentityConfiguration()
 {
-    WebOptions enabled = new() { RuntimeMode = "Development", RegistrationEnabled = true, RecoveryEnabled = true, DatabaseConnectionString = "Host=/run/postgresql;Database=revora", SecurityHmacKeyBase64 = Convert.ToBase64String(new byte[32]) };
+    WebOptions enabled = new() { RuntimeMode = "Development", RegistrationEnabled = true, GameIdentityRegistrationUrl = "https://auth.example.test/api/v1/identity/register", RecoveryEnabled = true, DatabaseConnectionString = "Host=/run/postgresql;Database=revora", SecurityHmacKeyBase64 = Convert.ToBase64String(new byte[32]) };
     WebOptions.Validate(enabled, new FakeEnvironment("Development"), ["http://127.0.0.1:5080"]);
     Throws(() => WebOptions.Validate(new WebOptions { RuntimeMode = "Development", RegistrationEnabled = true }, new FakeEnvironment("Development"), ["http://127.0.0.1:5080"]));
     Throws(() => WebOptions.Validate(enabled, new FakeEnvironment("Production"), ["http://127.0.0.1:5080"]));
@@ -324,6 +327,45 @@ static void ValidatePublicMetadata()
     Assert(document.RootElement.GetProperty("@context").GetString() == "https://schema.org", "Schema.org context is invalid.");
     Assert(document.RootElement.GetProperty("@graph").EnumerateArray().Any(node => node.GetProperty("@type").GetString() == "BreadcrumbList"), "Breadcrumb structured data is missing.");
     Contains(page, "property=\"og:image\"", "name=\"twitter:image\"", "meta name=\"robots\" content=\"index,follow\"");
+}
+
+static void ValidateLocalPreview()
+{
+    WebOptions preview = new() { RuntimeMode = "Development", PublicBaseUrl = "http://127.0.0.1:5080" };
+    WebOptions.Validate(preview, new FakeEnvironment("Development"), ["http://127.0.0.1:5080"]);
+    Throws(() => WebOptions.Validate(preview, new FakeEnvironment("Production"), ["http://127.0.0.1:5080"]));
+    Throws(() => WebOptions.Validate(new WebOptions { RuntimeMode = "Development", PublicBaseUrl = "http://example.test" }, new FakeEnvironment("Development"), ["http://127.0.0.1:5080"]));
+    Throws(() => WebOptions.Validate(new WebOptions { RuntimeMode = "Development", PublicBaseUrl = "http://127.0.0.1:5080", RegistrationEnabled = true }, new FakeEnvironment("Development"), ["http://127.0.0.1:5080"]));
+    WebOptions.Validate(new WebOptions { RuntimeMode = "Development", PublicBaseUrl = "https://realm.example.test" }, new FakeEnvironment("Development"), ["http://127.0.0.1:5080"]);
+}
+
+static void ValidateRegistrationEndpoint()
+{
+    string credentialUrl = new UriBuilder("https", "auth.example.test") { UserName = "user", Password = "synthetic", Path = "/api/v1/identity/register" }.Uri.AbsoluteUri;
+    foreach (string address in new[] { "", "http://auth.example.test/api/v1/identity/register", credentialUrl, "https://auth.example.test/api/v1/identity/register?token=synthetic", "https://auth.example.test/api/v1/identity/register#fragment", "https://auth.example.test/another-route" })
+        Throws(() => WebOptions.RegistrationEndpoint(new WebOptions { GameIdentityRegistrationUrl = address }));
+    Assert(WebOptions.RegistrationEndpoint(new WebOptions { GameIdentityRegistrationUrl = "https://auth.example.test/api/v1/identity/register" }).Host == "auth.example.test", "Operator endpoint was not accepted.");
+}
+
+static void ValidateRegistrationDestination()
+{
+    var handler = new RegistrationTestHandler();
+    using var http = new HttpClient(handler);
+    var disabled = new GameIdentityRegistrationClient(http, new WebOptions());
+    Assert(!disabled.RegisterAsync("synthetic", "test-only", default).GetAwaiter().GetResult() && handler.Destinations.Count == 0, "Disabled registration made a request.");
+    var enabled = new GameIdentityRegistrationClient(http, new WebOptions { RegistrationEnabled = true, GameIdentityRegistrationUrl = "https://auth.example.test/api/v1/identity/register" });
+    Assert(enabled.RegisterAsync("synthetic", "test-only", default).GetAwaiter().GetResult(), "Configured synthetic registration failed.");
+    Assert(handler.Destinations.Count == 1 && handler.Destinations[0] == "https://auth.example.test/api/v1/identity/register", "A different registration service received the request.");
+}
+
+sealed class RegistrationTestHandler : HttpMessageHandler
+{
+    public List<string> Destinations { get; } = [];
+    protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+    {
+        Destinations.Add(request.RequestUri!.AbsoluteUri);
+        return Task.FromResult(new HttpResponseMessage(System.Net.HttpStatusCode.Created));
+    }
 }
 
 sealed class FakeEnvironment(string name) : IHostEnvironment

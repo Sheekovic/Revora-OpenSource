@@ -2,6 +2,12 @@
 
 This repository combines `launcher/`, `website/`, and `server/`.
 
+- The primary frontend is `website/site/`: plain HTML, CSS and JavaScript.
+  Preserve its buildless/static deployment and English/Arabic accessibility.
+  Do not reintroduce ASP.NET or a frontend framework as a website prerequisite.
+- ASP.NET under `website/src/` is an optional preserved backend/reference.
+- GitHub Pages receives only `website/site/`; `.local/` is private operator data.
+
 - Follow the instructions within each component for changes under it.
 - Resolve paths relative to the component's own root. Do not move its build
   props or targets to the monorepo root.

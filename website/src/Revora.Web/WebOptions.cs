@@ -8,6 +8,7 @@ public sealed class WebOptions
     public string PublicBaseUrl { get; init; } = "https://playrevora.com";
     public bool IndexingEnabled { get; init; }
     public bool RegistrationEnabled { get; init; }
+    public string GameIdentityRegistrationUrl { get; init; } = string.Empty;
     public bool RecoveryEnabled { get; init; }
     public bool MaintenanceMode { get; init; }
     public string RuntimeMode { get; init; } = "Unconfigured";
@@ -25,10 +26,15 @@ public sealed class WebOptions
 
     public static void Validate(WebOptions options, IHostEnvironment environment, string[] urls)
     {
-        if (!Uri.TryCreate(options.PublicBaseUrl, UriKind.Absolute, out Uri? origin) ||
-            origin.Scheme != Uri.UriSchemeHttps || origin.Host != "playrevora.com" || origin.PathAndQuery != "/")
+        bool validOrigin = Uri.TryCreate(options.PublicBaseUrl, UriKind.Absolute, out Uri? origin) &&
+            origin.UserInfo.Length == 0 && origin.AbsolutePath == "/" && origin.Query.Length == 0 && origin.Fragment.Length == 0 &&
+            origin.Host.Length > 0 && options.PublicBaseUrl == origin.GetLeftPart(UriPartial.Authority);
+        bool localPreview = validOrigin && origin is not null && origin.Scheme == Uri.UriSchemeHttp && environment.IsDevelopment() &&
+            IPAddress.TryParse(origin.Host, out IPAddress? previewAddress) && IPAddress.IsLoopback(previewAddress) &&
+            !options.RegistrationEnabled && !options.RecoveryEnabled;
+        if (!validOrigin || origin is null || (origin.Scheme != Uri.UriSchemeHttps && !localPreview))
         {
-            throw new InvalidOperationException("RevoraWeb:PublicBaseUrl must be the canonical HTTPS origin.");
+            throw new InvalidOperationException("RevoraWeb:PublicBaseUrl must be an explicit HTTPS origin, or a loopback-only development preview with registration/recovery disabled.");
         }
 
         if (string.Equals(options.RuntimeMode, "Unconfigured", StringComparison.Ordinal) ||
@@ -60,6 +66,8 @@ public sealed class WebOptions
             }
         }
 
+        if (options.RegistrationEnabled) _ = RegistrationEndpoint(options);
+
         if (options.InternalGameIntegrationEnabled)
         {
             if (options.IdentityServerId == 0) throw new InvalidOperationException("A non-zero identity server ID is required.");
@@ -70,6 +78,16 @@ public sealed class WebOptions
             if (key.Length < 32) throw new InvalidOperationException("The identity verification key must contain at least 256 bits.");
             System.Security.Cryptography.CryptographicOperations.ZeroMemory(key);
         }
+    }
+
+    public static Uri RegistrationEndpoint(WebOptions options)
+    {
+        if (!Uri.TryCreate(options.GameIdentityRegistrationUrl, UriKind.Absolute, out Uri? endpoint) ||
+            endpoint.Scheme != Uri.UriSchemeHttps || endpoint.UserInfo.Length != 0 ||
+            endpoint.Query.Length != 0 || endpoint.Fragment.Length != 0 ||
+            endpoint.AbsolutePath != "/api/v1/identity/register")
+            throw new InvalidOperationException("An explicit operator-owned HTTPS game identity registration endpoint is required.");
+        return endpoint;
     }
 
     public static byte[] LoadIdentityKey(WebOptions options)

@@ -56,3 +56,18 @@ Historical workflows under `website/.github/` are retained as source evidence.
 GitHub runs workflows only from the root `.github/workflows/`; the new root
 workflow supplies validation and component build/test jobs. Old deployment,
 security-scan, and release workflows are not automatically activated.
+
+## Follow-up: static website and guided setup
+
+The owner requested a plain HTML/JavaScript website instead of an ASP.NET
+frontend. `website/site/` is now the primary frontend; the previous backend is
+preserved as optional source. GitHub Pages publishes only this static directory.
+The follow-up adds a public PayPal support link approved by the owner, a guided
+local setup entry point, PostgreSQL provisioning, connection/AI-agent guides,
+and redacted Gitleaks checks.
+
+The optional legacy registration client no longer submits to a hardcoded
+original-project endpoint. It requires an explicit operator-owned HTTPS URL,
+and redirects are disabled. Its origin validation permits a local read-only
+development preview while keeping registration/recovery off for plain HTTP.
+These are changes after the pinned initial source import.
