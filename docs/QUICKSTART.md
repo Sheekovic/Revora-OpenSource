@@ -41,8 +41,11 @@ The script creates a workspace-labelled official `postgres:17` container,
 publishes PostgreSQL only on `127.0.0.1:25432`, and stores database files in an
 owned named volume. It creates separate `revora_web_local` and
 `revora6711_3d` databases, separate web/game logins and restricted web-role
-permissions. The 47 existing website migrations are applied transactionally
-with checksums; already-applied matching migrations are skipped.
+permissions. Nine portable web-identity migrations (V001–V008 and V047) are
+applied transactionally with checksums; matching applied migrations are skipped.
+The other historical gameplay migrations require reviewed source catalogs and
+an explicit operator rollout; they are not needed for the static website and
+are not automatically seeded with invented game data.
 
 Passwords are random, generated locally, and retained under ignored,
 permission-restricted `.local/secrets/`. The PostgreSQL bootstrap password is

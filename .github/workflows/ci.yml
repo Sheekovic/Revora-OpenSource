@@ -28,7 +28,15 @@ jobs:
           GITLEAKS_ENABLE_UPLOAD_ARTIFACT: 'false'
           GITLEAKS_ENABLE_SUMMARY: 'false'
       - name: Scan all published history with redaction
-        run: gitleaks detect --source . --redact --no-banner --log-opts=--all --exit-code=1
+        shell: bash
+        run: |
+          set +e
+          gitleaks detect --source . --redact --no-banner --log-opts=--all --exit-code=1 --report-format=json --report-path="$RUNNER_TEMP/revora-secret-review.json"
+          scan_status=$?
+          if [ -f "$RUNNER_TEMP/revora-secret-review.json" ]; then
+            jq '[.[] | {RuleID, File, StartLine, Fingerprint, Commit, Description}]' "$RUNNER_TEMP/revora-secret-review.json"
+          fi
+          exit "$scan_status"
 
   static-website:
     runs-on: ubuntu-latest

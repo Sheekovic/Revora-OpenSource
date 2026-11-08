@@ -259,6 +259,9 @@ END $setup$;
     foreach ($migration in Get-ChildItem -LiteralPath (Join-Path $repoRoot 'website/db/migrations') -Filter 'V*.sql' | Sort-Object Name) {
         if ($migration.Name -notmatch '^V(\d+)__[a-z0-9_]+\.sql$') { throw 'Unexpected migration filename.' }
         $version = [int]$Matches[1]
+        # Only the web identity foundation is portable without private gameplay
+        # catalogs. Preserve the remaining migrations for explicit operator rollout.
+        if ($version -notin @(1, 2, 3, 4, 5, 6, 7, 8, 47)) { continue }
         $sql = [IO.File]::ReadAllText($migration.FullName).Replace("`r`n", "`n")
         $checksum = ([BitConverter]::ToString([Security.Cryptography.SHA256]::Create().ComputeHash($utf8.GetBytes($sql)))).Replace('-', '').ToLowerInvariant()
         if ($ledgerExists) {

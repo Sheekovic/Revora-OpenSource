@@ -24,6 +24,6 @@ try {
     Run-Setup @('-WithDatabase','-NoBrowser')
     if ((Get-FileHash -LiteralPath $credentialsPath -Algorithm SHA256).Hash -ne $firstHash) { throw 'Re-running setup changed credentials.' }
     $migrationCount = & docker exec $first.DatabaseContainer psql -X -U postgres -d revora_web_local -t -A -c 'SELECT count(*) FROM operations.schema_migrations;'
-    if ($LASTEXITCODE -ne 0 -or $migrationCount.Trim() -ne '47') { throw 'The complete website migration ledger was not preserved.' }
-    Write-Host 'PASS real PostgreSQL provisioning, 47 migrations, restricted loopback/roles, static website, secret isolation and idempotent rerun.'
+    if ($LASTEXITCODE -ne 0 -or $migrationCount.Trim() -ne '9') { throw 'The website identity migration ledger was not preserved.' }
+    Write-Host 'PASS real PostgreSQL provisioning, 9 web identity migrations, restricted loopback/roles, static website, secret isolation and idempotent rerun.'
 } finally { Run-Setup @('-Mode','Stop','-NoBrowser') }
