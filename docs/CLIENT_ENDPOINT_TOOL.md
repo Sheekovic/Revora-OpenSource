@@ -20,7 +20,7 @@ the actual acceptance gates.
 
 Outputs made by this tool are recognized only when undoing its two fixed spans
 reconstructs one of those entire original hashes. Other changes cause refusal.
-7630, DX8, DX12, arbitrary repacks and outputs from the old 62-byte prototype are
+7630, DX8, DX12, arbitrary repacks and outputs from earlier 62/65-byte prototypes are
 not supported. There is no force option or editable offset/profile manifest.
 
 ## Use and connect
@@ -69,14 +69,16 @@ outputs were never authorized for distribution. This release contains our
 generalized tool source and our own executable, not those outputs.
 
 `GetServerInfo(type=2, address, ..., port)` is redirected by a seven-byte jump
-at raw offset `0x11CEB6`. A **65-byte** stub at `0x7662E4` writes a padded,
+at raw offset `0x11CEB6`. An **80-byte** stub at `0x7662E4` writes a padded,
 NUL-terminated 16-byte IPv4 buffer and a 32-bit port, returning true with the
-original `stdcall` stack cleanup. Other types execute the displaced seven-byte
-prologue and jump back. Relative branches use the checked PE section RVAs.
-The original 62-byte stub supported a shorter fixed address; the extra three
-bytes support all canonical unicast IPv4 lengths, up to 15 characters.
+original callee cleanup of four stack arguments (the original object pointer
+in ECX is preserved on fallback). Other types, null pointers and address-buffer
+capacities below 16 execute the displaced seven-byte prologue and jump back.
+Relative branches use the checked PE section RVAs. The original 62-byte stub
+supported a shorter fixed address; this version supports IPv4 lengths up to
+15 characters and adds pointer/capacity guards.
 
-Both local reviewed images had 65 zero bytes in executable section raw padding.
+Both local reviewed images had 80 zero bytes in executable section raw padding.
 Only those spans change. No RSA/security code is patched. Supporting another
 hash requires an explicit source review and new native evidence.
 
@@ -87,8 +89,9 @@ covering range/input validation, PE permissions, unknown-image refusal,
 outside/stub tampering, exact restoration, retargeting, backup integrity,
 replacement and junction refusal. The release workflow repeats these checks on
 .NET 10. A compiled **x86** harness executes only synthetic test-owned code,
-covering four endpoint cases and six lookup types per case. It verifies stack
-balance, fallback behavior, exact address bytes, port width and buffer sentinels.
+covering four endpoint cases, six lookup types and six buffer capacities per
+case, including null pointers. It verifies stack balance, fallback behavior,
+exact address bytes, port width and buffer sentinels.
 It does not load or execute the proprietary game.
 
 On private copies of **both actual approved client files**, applying a 15-char

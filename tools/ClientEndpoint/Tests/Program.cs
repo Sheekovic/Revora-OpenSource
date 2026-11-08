@@ -29,12 +29,12 @@ foreach (var (ip, port) in new[] { ("127.0.0.1", 9958), ("192.168.100.200", 6553
     var state = EndpointPatch.Inspect(patch.Bytes, profiles);
     Check(state.Patched && state.Address == ip && state.Port == port, $"round trip {ip}:{port}");
     Check(EndpointPatch.Restore(patch.Bytes, profiles).Bytes.SequenceEqual(original), "restore entire image hash");
-    Check(original.Where((b, i) => i < EndpointPatch.EntryOffset || (i >= EndpointPatch.EntryOffset + 7 && i < EndpointPatch.CaveOffset) || i >= EndpointPatch.CaveOffset + 65)
-        .SequenceEqual(patch.Bytes.Where((b, i) => i < EndpointPatch.EntryOffset || (i >= EndpointPatch.EntryOffset + 7 && i < EndpointPatch.CaveOffset) || i >= EndpointPatch.CaveOffset + 65)), "only two reviewed spans change");
+    Check(original.Where((b, i) => i < EndpointPatch.EntryOffset || (i >= EndpointPatch.EntryOffset + 7 && i < EndpointPatch.CaveOffset) || i >= EndpointPatch.CaveOffset + EndpointPatch.StubSize)
+        .SequenceEqual(patch.Bytes.Where((b, i) => i < EndpointPatch.EntryOffset || (i >= EndpointPatch.EntryOffset + 7 && i < EndpointPatch.CaveOffset) || i >= EndpointPatch.CaveOffset + EndpointPatch.StubSize)), "only two reviewed spans change");
     var retarget = EndpointPatch.Patch(patch.Bytes, "10.10.10.10", 9959, profiles);
     Check(EndpointPatch.Inspect(retarget.Bytes, profiles).Address == "10.10.10.10", "retarget recognized output");
     string file = $"stub-{cases.Count}.bin";
-    File.WriteAllBytes(Path.Combine(artifacts, file), [.. patch.Bytes.AsSpan(EndpointPatch.EntryOffset, 7), .. patch.Bytes.AsSpan(EndpointPatch.CaveOffset, 65)]);
+    File.WriteAllBytes(Path.Combine(artifacts, file), [.. patch.Bytes.AsSpan(EndpointPatch.EntryOffset, 7), .. patch.Bytes.AsSpan(EndpointPatch.CaveOffset, EndpointPatch.StubSize)]);
     cases.Add(new { file, ip, port });
 }
 File.WriteAllText(Path.Combine(artifacts, "native-cases.json"), JsonSerializer.Serialize(cases));

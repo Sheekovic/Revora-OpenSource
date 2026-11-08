@@ -11,7 +11,7 @@ public static class EndpointPatch
 {
     public const int EntryOffset = 0x11CEB6;
     public const int CaveOffset = 0x7662E4;
-    public const int StubSize = 65;
+    public const int StubSize = 80;
     public const int ClientSize = 10280848;
     public const string GenuineHash = "3728BC3FD4E584D85301EDD2B1887A176267CDAA6356038F9951EF23E4FDED60";
     public const string RevoraHash = "B6D6091CD026757BB9E6400557A44F72BA995D92586618D610861700F362D130";
@@ -49,11 +49,11 @@ public static class EndpointPatch
         if (!input.AsSpan(EntryOffset, 7).SequenceEqual(Branch(layout.EntryRva, layout.CaveRva)))
             throw new InvalidDataException("Unsupported executable. Only the two documented 6711 DX9 hashes and unchanged outputs from this tool are accepted. 7630/DX8/DX12 are not supported.");
         // Decode only this tool's fixed stub. Never accept arbitrary offsets or patch manifests.
-        byte[] addressBytes = [.. input.AsSpan(CaveOffset + 13, 4), .. input.AsSpan(CaveOffset + 20, 4), .. input.AsSpan(CaveOffset + 27, 4), .. input.AsSpan(CaveOffset + 34, 4)];
+        byte[] addressBytes = [.. input.AsSpan(CaveOffset + 32, 4), .. input.AsSpan(CaveOffset + 39, 4), .. input.AsSpan(CaveOffset + 46, 4), .. input.AsSpan(CaveOffset + 53, 4)];
         int end = Array.IndexOf(addressBytes, (byte)0);
         if (end < 1) throw new InvalidDataException("Invalid patched address.");
         string address = ValidateAddress(Encoding.ASCII.GetString(addressBytes, 0, end));
-        int port = BinaryPrimitives.ReadInt32LittleEndian(input.AsSpan(CaveOffset + 44, 4));
+        int port = BinaryPrimitives.ReadInt32LittleEndian(input.AsSpan(CaveOffset + 59, 4));
         ValidatePort(port);
         if (!input.AsSpan(CaveOffset, StubSize).SequenceEqual(BuildStub(address, port, layout.EntryRva, layout.CaveRva)))
             throw new InvalidDataException("The endpoint stub was modified or belongs to a different tool.");
@@ -105,7 +105,7 @@ public static class EndpointPatch
     private static void RequireOriginalSpans(byte[] input)
     {
         if (!input.AsSpan(EntryOffset, 7).SequenceEqual(Prologue) || input.AsSpan(CaveOffset, StubSize).ContainsAnyExcept((byte)0))
-            throw new InvalidDataException("The reviewed prologue or the 65-byte zero-padding span does not match.");
+            throw new InvalidDataException("The reviewed prologue or the 80-byte zero-padding span does not match.");
     }
 
     internal static (int EntryRva, int CaveRva) ReadLayout(byte[] bytes)
@@ -153,11 +153,13 @@ public static class EndpointPatch
         var code = new List<byte>(StubSize);
         void Hex(string value) => code.AddRange(Convert.FromHexString(value));
         void Int32(int value) { byte[] b = new byte[4]; BinaryPrimitives.WriteInt32LittleEndian(b, value); code.AddRange(b); }
-        Hex("837C240402752E8B442408C700"); code.AddRange(paddedAddress.AsSpan(0, 4).ToArray());
+        // Fall back for other types, null pointers or a signed capacity below 16.
+        // EDX is volatile; ECX (the original this pointer) survives every fallback.
+        Hex("837C240402753D8B44240885C07435837C240C107C2E8B54241085D27426C700"); code.AddRange(paddedAddress.AsSpan(0, 4).ToArray());
         Hex("C74004"); code.AddRange(paddedAddress.AsSpan(4, 4).ToArray());
         Hex("C74008"); code.AddRange(paddedAddress.AsSpan(8, 4).ToArray());
         Hex("C7400C"); code.AddRange(paddedAddress.AsSpan(12, 4).ToArray());
-        Hex("8B4C2410C701"); Int32(port);
+        Hex("C702"); Int32(port);
         Hex("B001C21000"); code.AddRange(Prologue);
         Hex("E9"); Int32(checked(entryRva + 7 - (caveRva + StubSize)));
         if (code.Count != StubSize) throw new InvalidOperationException("Unexpected stub length.");

@@ -14,19 +14,14 @@ Copy-Item -LiteralPath (Join-Path $publish 'Revora.ClientEndpoint.exe') -Destina
 Copy-Item -LiteralPath (Join-Path $repository 'LICENSE') -Destination $package
 Copy-Item -LiteralPath (Join-Path $root 'README.md') -Destination $package
 Copy-Item -LiteralPath (Join-Path $root 'RUNTIME-NOTICES.txt') -Destination $package
-$assets = Get-Content (Join-Path $root 'Gui/obj/project.assets.json') -Raw | ConvertFrom-Json
-$runtimePacks = @($assets.libraries.PSObject.Properties | Where-Object { $_.Name -match '^Microsoft\.(NETCore|WindowsDesktop)\.App\.Runtime\.win-x64/' })
+$runtimePacks = @(Get-Content (Join-Path $publish 'runtime-pack-paths.txt') | Where-Object { $_ } | Select-Object -Unique)
 if ($runtimePacks.Count -ne 2) { throw 'Expected exact core and desktop runtime packs for license collection' }
-foreach ($pack in $runtimePacks) {
-    $packPath = $null
-    foreach ($folder in $assets.packageFolders.PSObject.Properties.Name) {
-        $candidate = Join-Path $folder $pack.Value.path
-        if (Test-Path -LiteralPath $candidate) { $packPath = $candidate; break }
-    }
-    if (-not $packPath) { throw "Runtime pack unavailable: $($pack.Name)" }
+foreach ($packPath in $runtimePacks) {
+    if (-not (Test-Path -LiteralPath $packPath)) { throw "Runtime pack unavailable: $packPath" }
+    $packName = (Split-Path (Split-Path $packPath -Parent) -Leaf) + '-' + (Split-Path $packPath -Leaf)
     $notices = @(Get-ChildItem -LiteralPath $packPath -File | Where-Object { $_.Name -match '^(LICENSE|THIRD-PARTY-NOTICES)' })
-    if ($notices.Count -lt 2) { throw "Runtime license/notice files missing: $($pack.Name)" }
-    $licenseDirectory = Join-Path $package ('runtime-licenses/' + $pack.Name.Replace('/', '-'))
+    if ($notices.Count -lt 2) { throw "Runtime license/notice files missing: $packName" }
+    $licenseDirectory = Join-Path $package ('runtime-licenses/' + $packName)
     New-Item -ItemType Directory -Path $licenseDirectory -Force | Out-Null
     foreach ($notice in $notices) { Copy-Item -LiteralPath $notice.FullName -Destination $licenseDirectory }
 }
