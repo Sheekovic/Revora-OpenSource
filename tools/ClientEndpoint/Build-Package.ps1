@@ -14,7 +14,8 @@ Copy-Item -LiteralPath (Join-Path $publish 'Revora.ClientEndpoint.exe') -Destina
 Copy-Item -LiteralPath (Join-Path $repository 'LICENSE') -Destination $package
 Copy-Item -LiteralPath (Join-Path $root 'README.md') -Destination $package
 Copy-Item -LiteralPath (Join-Path $root 'RUNTIME-NOTICES.txt') -Destination $package
-$runtimePacks = @(Get-Content (Join-Path $publish 'runtime-pack-paths.txt') | Where-Object { $_ } | Select-Object -Unique)
+$runtimePacks = @(Get-Content (Join-Path $publish 'runtime-pack-paths.txt') |
+    Where-Object { $_ -match 'microsoft\.(netcore|windowsdesktop)\.app\.runtime\.win-x64[\\/]' } | Select-Object -Unique)
 if ($runtimePacks.Count -ne 2) { throw 'Expected exact core and desktop runtime packs for license collection' }
 foreach ($packPath in $runtimePacks) {
     if (-not (Test-Path -LiteralPath $packPath)) { throw "Runtime pack unavailable: $packPath" }
