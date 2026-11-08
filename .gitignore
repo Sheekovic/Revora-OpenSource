@@ -1,5 +1,7 @@
 .migration/
 .local/
+.revora-endpoint/
+.revora-endpoint-*.tmp
 **/bin/
 **/obj/
 **/node_modules/
