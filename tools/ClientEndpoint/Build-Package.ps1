@@ -21,11 +21,17 @@ foreach ($packPath in $runtimePacks) {
     if (-not (Test-Path -LiteralPath $packPath)) { throw "Runtime pack unavailable: $packPath" }
     $packName = (Split-Path (Split-Path $packPath -Parent) -Leaf) + '-' + (Split-Path $packPath -Leaf)
     $notices = @(Get-ChildItem -LiteralPath $packPath -File | Where-Object { $_.Name -match '^(LICENSE|THIRD-PARTY-NOTICES)' })
-    if ($notices.Count -lt 2) { throw "Runtime license/notice files missing: $packName" }
+    if (-not ($notices | Where-Object Name -match '^LICENSE')) { throw "Runtime license missing: $packName" }
+    if ($packName -match 'microsoft.netcore' -and -not ($notices | Where-Object Name -match '^THIRD-PARTY-NOTICES')) {
+        throw "Core runtime third-party notice missing: $packName"
+    }
     $licenseDirectory = Join-Path $package ('runtime-licenses/' + $packName)
     New-Item -ItemType Directory -Path $licenseDirectory -Force | Out-Null
     foreach ($notice in $notices) { Copy-Item -LiteralPath $notice.FullName -Destination $licenseDirectory }
 }
+# The desktop NuGet pack omits the WinForms BSD notice; include its reviewed upstream text.
+Copy-Item -LiteralPath (Join-Path $repository 'licenses/dotnet-winforms-10.0.14-THIRD-PARTY-NOTICES.txt') `
+    -Destination (Join-Path $package 'runtime-licenses')
 @{
     sourceCommit = (& git -C $repository rev-parse HEAD)
     runtime = '.NET 10, self-contained Windows x64'

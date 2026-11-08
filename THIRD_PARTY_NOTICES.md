@@ -45,3 +45,13 @@ private account database, packet capture, or memory dump is distributed here.
 
 Names and trademarks identify interoperability targets and do not imply
 endorsement or grant rights in third-party games or artwork.
+
+## Client endpoint tool runtime
+
+The portable ClientEndpoint release embeds Microsoft .NET and Windows Desktop
+runtime components under their upstream terms. The package includes the
+runtime packs' license/notice files and the complete WinForms third-party BSD
+notice from [dotnet/winforms v10.0.14](https://github.com/dotnet/winforms/blob/v10.0.14/THIRD-PARTY-NOTICES.TXT),
+preserved in [`licenses/dotnet-winforms-10.0.14-THIRD-PARTY-NOTICES.txt`](licenses/dotnet-winforms-10.0.14-THIRD-PARTY-NOTICES.txt).
+Upstream Git blob: `d8d1743824a0ab5bdc7d45623ebee5e71cf59da1`.
+

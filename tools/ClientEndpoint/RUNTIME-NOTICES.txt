@@ -11,5 +11,10 @@ https://github.com/dotnet/winforms/blob/release/10.0/LICENSE.TXT
 Windows Forms third-party notices:
 https://github.com/dotnet/winforms/blob/release/10.0/THIRD-PARTY-NOTICES.TXT
 
-The build package also includes the license/notice files from the Microsoft
-runtime packs used for that exact build. See the runtime-licenses directory.
+The build package also includes the license/notice files available in the
+Microsoft runtime packs used for that exact build. The desktop NuGet pack
+omits the WinForms third-party notice; its complete upstream text is included
+separately from:
+https://github.com/dotnet/winforms/blob/v10.0.14/THIRD-PARTY-NOTICES.TXT
+Upstream Git blob: d8d1743824a0ab5bdc7d45623ebee5e71cf59da1
+See the runtime-licenses directory.
