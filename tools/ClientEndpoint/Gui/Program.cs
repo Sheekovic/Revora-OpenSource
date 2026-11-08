@@ -21,7 +21,7 @@ internal sealed class EndpointForm : Form
 
     public EndpointForm()
     {
-        Text = "Revora • Client Endpoint 6711";
+        Text = $"Revora • Client Endpoint 6711 — {Application.ProductVersion.Split('+')[0]}";
         ClientSize = new Size(1000, 800); MinimumSize = new Size(900, 720);
         StartPosition = FormStartPosition.CenterScreen;
         Font = new Font("Segoe UI", 10);
@@ -50,7 +50,9 @@ internal sealed class EndpointForm : Form
         {
             ("Inspect", () => {
                 var state = ClientFiles.Inspect(path.Text);
-                return $"{state.Profile}\r\nSHA-256: {state.CurrentSha256}\r\n" + (state.Patched ? $"Configured: {state.Address}:{state.Port}\r\nOriginal SHA-256: {state.OriginalSha256}" : "Approved original. Ready to configure.");
+                return $"{state.Profile}\r\nSHA-256: {state.CurrentSha256}\r\n" +
+                    (state.ServerListKeyChanged ? "Managed Server.dat signing key: use the Server.dat tab for editing and paired restore.\r\n" : "") +
+                    (state.Patched ? $"Endpoint override: {state.Address}:{state.Port}\r\nOriginal SHA-256: {state.OriginalSha256}" : "No endpoint override: routing comes from the signed server list.");
             }),
             ("Apply endpoint", () => Describe(ClientFiles.Apply(path.Text, address.Text.Trim(), (int)port.Value))),
             ("Restore original", () => Describe(ClientFiles.Restore(path.Text)))
@@ -61,7 +63,11 @@ internal sealed class EndpointForm : Form
             button.Click += (_, _) => { try { output.Text = action(); } catch (Exception error) { output.Text = "No operation completed: " + error.Message; } };
             buttons.Controls.Add(button);
         }
-        Wide(buttons, 6); Wide(output, 7); Controls.Add(layout);
+        Wide(buttons, 6); Wide(output, 7);
+        var tabs = new TabControl { Dock = DockStyle.Fill };
+        var endpointTab = new TabPage("Executable endpoint") { UseVisualStyleBackColor = true };
+        endpointTab.Controls.Add(layout); tabs.TabPages.Add(endpointTab); tabs.TabPages.Add(new ServerDatTab());
+        Controls.Add(tabs);
     }
 
     private static string Describe(FileChange change) => $"Completed.\r\nBackup: {change.Backup}\r\nBefore: {change.BeforeSha256}\r\nAfter: {change.AfterSha256}\r\n\r\nUse Inspect to verify. Start the client with your configured launcher after connecting the server components.";

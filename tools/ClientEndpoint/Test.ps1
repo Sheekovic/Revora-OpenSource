@@ -6,7 +6,7 @@ $runtimeArgs = @()
 if ($ReleaseRuntime) { $runtimeArgs = @('-p:RevoraRelease=true') }
 dotnet run --project "$root/Tests/Revora.ClientEndpoint.Tests.csproj" --configuration Release @runtimeArgs -- $artifacts
 if ($LASTEXITCODE -ne 0) { throw 'Managed endpoint tests failed' }
-dotnet build "$root/Gui/Revora.ClientEndpoint.csproj" --configuration Release @runtimeArgs
+dotnet build "$root/Gui/Revora.ClientEndpoint.csproj" --configuration Release @runtimeArgs -o "$root/artifacts/gui-build"
 if ($LASTEXITCODE -ne 0) { throw 'GUI build failed' }
 dotnet build "$root/Cli/Revora.ClientEndpoint.Cli.csproj" --configuration Release @runtimeArgs
 if ($LASTEXITCODE -ne 0) { throw 'CLI build failed' }

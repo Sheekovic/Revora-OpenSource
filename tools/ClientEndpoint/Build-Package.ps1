@@ -1,5 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
+$version = (Get-Content (Join-Path $root 'VERSION') -Raw).Trim()
+if ($version -notmatch '^\d+\.\d+\.\d+$') { throw 'Invalid tool VERSION' }
 $repository = (Resolve-Path (Join-Path $root '../..')).Path
 $destination = Join-Path $root ('artifacts/package-' + [Guid]::NewGuid().ToString('N'))
 $publish = Join-Path $destination 'publish'
@@ -35,17 +37,18 @@ Copy-Item -LiteralPath (Join-Path $repository 'licenses/dotnet-winforms-10.0.14-
 @{
     sourceCommit = (& git -C $repository rev-parse HEAD)
     runtime = '.NET 10, self-contained Windows x64'
-    version = '1.0.0'
+    version = $version
     executableSha256 = (Get-FileHash (Join-Path $package 'Revora.ClientEndpoint.exe') -Algorithm SHA256).Hash
     includesProprietaryClient = $false
 } | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $package 'BUILD-INFO.json') -Encoding utf8
-$zip = Join-Path $destination 'Revora-ClientEndpoint-v1.0.0-win-x64.zip'
+$zip = Join-Path $destination "Revora-ClientEndpoint-v$version-win-x64.zip"
 Compress-Archive -Path $package -DestinationPath $zip
 $checksums = Join-Path $destination 'SHA256SUMS.txt'
 "$((Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash.ToLowerInvariant())  $([IO.Path]::GetFileName($zip))" | Set-Content -LiteralPath $checksums -Encoding ascii
 if ($env:GITHUB_OUTPUT) {
     "zip=$zip" | Add-Content -LiteralPath $env:GITHUB_OUTPUT
     "checksums=$checksums" | Add-Content -LiteralPath $env:GITHUB_OUTPUT
+    "version=$version" | Add-Content -LiteralPath $env:GITHUB_OUTPUT
 }
 Write-Output "Package: $zip"
 Write-Output "Checksums: $checksums"

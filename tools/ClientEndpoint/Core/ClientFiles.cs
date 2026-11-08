@@ -10,10 +10,19 @@ public static class ClientFiles
 {
     public static ClientState Inspect(string path) => EndpointPatch.Inspect(ReadChecked(CheckedPath(path)));
 
-    public static FileChange Apply(string path, string address, int port) =>
-        Change(path, bytes => EndpointPatch.Patch(bytes, address, port));
+    public static FileChange Apply(string path, string address, int port) => Change(path, bytes =>
+    {
+        if (EndpointPatch.Inspect(bytes).ServerListKeyChanged)
+            throw new InvalidOperationException("This client uses a managed signed Server.dat. Edit its endpoint in the Server.dat tab to preserve the paired restore points.");
+        return EndpointPatch.Patch(bytes, address, port);
+    });
 
-    public static FileChange Restore(string path) => Change(path, EndpointPatch.Restore);
+    public static FileChange Restore(string path) => Change(path, bytes =>
+    {
+        if (EndpointPatch.Inspect(bytes).ServerListKeyChanged)
+            throw new InvalidOperationException("Use Restore pair in the Server.dat editor to restore the executable and its matching signed list together.");
+        return EndpointPatch.Restore(bytes);
+    });
 
     internal static FileChange Change(string path, Func<byte[], PatchResult> transform)
     {
@@ -84,7 +93,7 @@ public static class ClientFiles
         return bytes;
     }
 
-    private static string CheckedPath(string path)
+    internal static string CheckedPath(string path)
     {
         string full = Path.GetFullPath(path);
         if (full.StartsWith(@"\\", StringComparison.Ordinal)) throw new IOException("Use a local client folder, not a network/device path.");

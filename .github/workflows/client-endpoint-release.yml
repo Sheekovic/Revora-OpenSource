@@ -2,7 +2,7 @@ name: Release client endpoint tool
 
 on:
   push:
-    tags: ['client-endpoint-v1.0.0']
+    tags: ['client-endpoint-v*']
 
 permissions:
   contents: write
@@ -29,6 +29,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           PACKAGE_ZIP: ${{ steps.package.outputs.zip }}
           PACKAGE_CHECKSUMS: ${{ steps.package.outputs.checksums }}
+          RELEASE_VERSION: ${{ steps.package.outputs.version }}
         run: |
-          gh release create $env:GITHUB_REF_NAME $env:PACKAGE_ZIP $env:PACKAGE_CHECKSUMS --verify-tag --title 'Revora Client Endpoint 1.0.0' --notes-file tools/ClientEndpoint/RELEASE-NOTES.md
+          if ($env:GITHUB_REF_NAME -ne "client-endpoint-v$env:RELEASE_VERSION") { throw 'Tag does not match the built tool VERSION' }
+          gh release create $env:GITHUB_REF_NAME $env:PACKAGE_ZIP $env:PACKAGE_CHECKSUMS --verify-tag --title "Revora Client Endpoint $env:RELEASE_VERSION" --notes-file tools/ClientEndpoint/RELEASE-NOTES.md
           if ($LASTEXITCODE -ne 0) { throw 'GitHub release publication failed' }

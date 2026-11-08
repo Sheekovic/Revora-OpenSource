@@ -2,8 +2,8 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType><TargetFramework>net8.0-windows</TargetFramework><UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <Version>1.0.0</Version><AssemblyTitle>Revora Client Endpoint</AssemblyTitle><Company>Revora</Company>
-    <Description>Configure the account endpoint of approved 6711 DX9 clients with backup and restore.</Description>
+    <Version>$([System.IO.File]::ReadAllText('$(MSBuildThisFileDirectory)../VERSION').Trim())</Version><AssemblyTitle>Revora Client Endpoint</AssemblyTitle><Company>Revora</Company>
+    <Description>Edit signed 6711 server lists and client endpoints with backup and paired restore.</Description>
   </PropertyGroup>
   <PropertyGroup Condition="'$(RevoraRelease)' == 'true'"><TargetFramework>net10.0-windows</TargetFramework></PropertyGroup>
   <ItemGroup><ProjectReference Include="../Core/Revora.ClientEndpoint.Core.csproj" /></ItemGroup>

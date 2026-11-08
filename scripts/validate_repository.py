@@ -43,6 +43,8 @@ for rel in paths:
 required = ['README.md','LICENSE','THIRD_PARTY_NOTICES.md','docs/source-manifest.json',
             'START-REVORA.cmd','docs/QUICKSTART.md','docs/AI_AGENT_SETUP.md',
             'docs/CLIENT_ENDPOINT_TOOL.md','tools/ClientEndpoint/Gui/Revora.ClientEndpoint.csproj',
+            'tools/ClientEndpoint/VERSION','tools/ClientEndpoint/Core/ServerDatCodec.cs',
+            'tools/ClientEndpoint/Core/ServerDatFiles.cs',
             'website/site/index.html','website/site/app.js','website/site/styles.css','website/site/config.js',
             'launcher/PlayRevora.Launcher.sln','website/src/Revora.Web/Revora.Web.csproj','server/Revora.csproj',
             'licenses/Npgsql-4.1.14-LICENSE.txt','licenses/dotnet-corefx-LICENSE.txt','website/licenses/COPS-v7-LICENSE.txt']

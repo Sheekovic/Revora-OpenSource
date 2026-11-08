@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Revora.ClientEndpoint;
 
-public sealed record ClientState(string Profile, string OriginalSha256, string CurrentSha256, bool Patched, string? Address, int? Port);
+public sealed record ClientState(string Profile, string OriginalSha256, string CurrentSha256, bool Patched, string? Address, int? Port, bool ServerListKeyChanged = false);
 public sealed record PatchResult(byte[] Bytes, ClientState Before, string OutputSha256);
 
 public static class EndpointPatch
@@ -38,6 +38,33 @@ public static class EndpointPatch
     public static ClientState Inspect(byte[] input) => Inspect(input, Profiles);
 
     internal static ClientState Inspect(byte[] input, IReadOnlyDictionary<string, string> profiles)
+    {
+        try { return InspectEndpointOnly(input, profiles); }
+        catch (InvalidDataException)
+        {
+            // Permit only the 64 reviewed public-modulus immediates in addition to
+            // our exact endpoint stub. All remaining bytes must reconstruct an approved image.
+            if (input.Length == ClientSize)
+            {
+                foreach (string profile in new[] { GenuineHash, RevoraHash })
+                {
+                    if (!profiles.ContainsKey(profile)) continue;
+                    byte[] normalized = ServerDatCodec.RestorePublicWords(input, profile);
+                    try
+                    {
+                        ClientState state = InspectEndpointOnly(normalized, profiles);
+                        if (state.OriginalSha256 != profile) continue;
+                        _ = ServerDatCodec.ReadModulus(input);
+                        return state with { CurrentSha256 = Hash(input), ServerListKeyChanged = true };
+                    }
+                    catch (InvalidDataException) { }
+                }
+            }
+            throw;
+        }
+    }
+
+    private static ClientState InspectEndpointOnly(byte[] input, IReadOnlyDictionary<string, string> profiles)
     {
         var layout = ReadLayout(input);
         string current = Hash(input);
@@ -83,8 +110,9 @@ public static class EndpointPatch
     internal static PatchResult Restore(byte[] input, IReadOnlyDictionary<string, string> profiles)
     {
         ClientState state = Inspect(input, profiles);
-        if (!state.Patched) throw new InvalidOperationException("This executable is already an approved original; no restore is needed.");
+        if (!state.Patched && !state.ServerListKeyChanged) throw new InvalidOperationException("This executable is already an approved original; no restore is needed.");
         byte[] restored = RestoreSpans(input);
+        if (state.ServerListKeyChanged) restored = ServerDatCodec.RestorePublicWords(restored, state.OriginalSha256);
         if (Hash(restored) != state.OriginalSha256) throw new InvalidDataException("Restored hash mismatch.");
         return new(restored, state, state.OriginalSha256);
     }

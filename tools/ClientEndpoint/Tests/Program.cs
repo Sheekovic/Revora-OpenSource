@@ -6,7 +6,7 @@ int passed = 0;
 void Check(bool value, string name) { if (!value) throw new Exception(name); passed++; Console.WriteLine("PASS " + name); }
 void Refuses(Action action, string name)
 {
-    try { action(); } catch (Exception e) when (e is ArgumentException or InvalidDataException or IOException or InvalidOperationException)
+    try { action(); } catch (Exception e) when (e is ArgumentException or InvalidDataException or IOException or InvalidOperationException or System.Security.Cryptography.CryptographicException or System.Xml.XmlException)
     { passed++; Console.WriteLine("PASS " + name); return; }
     throw new Exception("Expected refusal: " + name);
 }
@@ -71,4 +71,5 @@ if (OperatingSystem.IsWindows())
     Refuses(() => ClientFiles.Inspect(Path.Combine(link, "fixture.bin")), "junction path refused");
     Directory.Delete(link);
 }
+ServerDatTests.Run(original, artifacts, Check, Refuses);
 Console.WriteLine($"{passed} checks passed. Synthetic native cases: {artifacts}");

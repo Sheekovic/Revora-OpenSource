@@ -40,8 +40,14 @@ Do not paste passwords, signing keys, real accounts or production dumps.
 > Read docs/CLIENT_ENDPOINT_TOOL.md. For an approved 6711 DX9 hash, use the
 > ClientEndpoint CLI on a private client copy to set my account IPv4/port,
 > inspect it, verify the backup and exact restore, then configure the endpoint
-> again. Keep the matching valid server list/RSA pair. Re-hash and re-sign the
-> operator-owned launcher manifest after patching; never disable integrity gates.
+> again. For server-list editing, use dat-inspect, dat-apply and dat-restore on
+> the matching private executable/DAT copy. Select the actual server row ID,
+> set my name/account IPv4/port, verify signature decoding and paired restore,
+> then apply the final settings. The editor rotates the local RSA trust anchor
+> and switches to signed-list routing; do not layer an endpoint override on it.
+> Keep .revora-endpoint/, especially keys/server-list-private.pem, private and
+> back it up locally. Re-hash both files and re-sign the operator-owned launcher
+> manifest after saving; never disable integrity gates or publish private keys.
 >
 > Build the relevant components, run existing tests, the static-server tests,
 > the repository checks and a redacted Gitleaks scan. Verify game Account/Game
