@@ -1,0 +1,64 @@
+[
+  {
+    "DisplayName": "Environment",
+    "Description": "Development is the only enabled lifecycle profile in this template revision.",
+    "FieldName": "Environment",
+    "ParamFieldName": "RevoraWeb:RuntimeMode",
+    "Category": "Revora Web:runtime",
+    "InputType": "enum",
+    "DefaultValue": "Development",
+    "EnumValues": { "Development": "Development" }
+  },
+  {
+    "DisplayName": "Bind Address",
+    "Description": "Must remain loopback; nginx is the only public listener.",
+    "FieldName": "BindAddress",
+    "ParamFieldName": "BindAddress",
+    "Category": "Revora Web:network",
+    "InputType": "text",
+    "DefaultValue": "127.0.0.1",
+    "Required": true
+  },
+  {
+    "DisplayName": "Web Port",
+    "Description": "Loopback HTTP port proxied by nginx after deployment approval.",
+    "FieldName": "WebPort",
+    "ParamFieldName": "WebPort",
+    "Category": "Revora Web:network",
+    "InputType": "number",
+    "DefaultValue": "{{$WebPort}}",
+    "minValue": "1024",
+    "maxValue": "65535",
+    "Required": true
+  },
+  {
+    "DisplayName": "Registration",
+    "Description": "Public registration remains disabled until every security gate is complete.",
+    "FieldName": "RegistrationEnabled",
+    "ParamFieldName": "RevoraWeb:RegistrationEnabled",
+    "Category": "Revora Web:security",
+    "InputType": "checkbox",
+    "DefaultValue": "false",
+    "EnumValues": { "false": "Disabled" }
+  },
+  {
+    "DisplayName": "Search Indexing",
+    "Description": "Keep disabled until content, metadata, TLS and visual-review gates pass.",
+    "FieldName": "IndexingEnabled",
+    "ParamFieldName": "RevoraWeb:IndexingEnabled",
+    "Category": "Revora Web:SEO",
+    "InputType": "checkbox",
+    "DefaultValue": "false",
+    "EnumValues": { "false": "Noindex" }
+  },
+  {
+    "DisplayName": "Maintenance Mode",
+    "Description": "Operational maintenance state; enabled for Development.",
+    "FieldName": "MaintenanceMode",
+    "ParamFieldName": "RevoraWeb:MaintenanceMode",
+    "Category": "Revora Web:runtime",
+    "InputType": "checkbox",
+    "DefaultValue": "true",
+    "EnumValues": { "false": "Disabled", "true": "Enabled" }
+  }
+]

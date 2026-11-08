@@ -1,0 +1,30 @@
+# Build
+bin/
+obj/
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.cache
+__pycache__/
+*.pyc
+
+# Secrets and local operator config
+app.config
+**/Configuracion.ini
+**/Configuracion.ini.bak
+!Configuracion.ini.example
+*.pfx
+*.key
+.env
+
+# Database dumps and local captures
+*.sql
+*.bak
+*.log
+auth-capture.log
+
+# Runtime copies that belong next to Revora.exe, not in Git
+bin/Debug/database/
+bin/Release/database/

@@ -1,0 +1,857 @@
+{
+  "scope": "Read-only loaded catalog and public spawn/NPC SELECT probe, 2026-09-26; no schema changes.",
+  "monsters": [
+    {
+      "id": 20,
+      "name": "TombBat",
+      "level": 102,
+      "mesh": 206,
+      "hp": 24472,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "BattleGhost",
+      "level": 25,
+      "mesh": 200,
+      "hp": 548,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "BloodyBat",
+      "level": 107,
+      "mesh": 148,
+      "hp": 28140,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 80,
+      "name": "TombBatL103",
+      "level": 103,
+      "mesh": 206,
+      "hp": 48944,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 81,
+      "name": "BloodyBatL108",
+      "level": 108,
+      "mesh": 148,
+      "hp": 56280,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "VampireBat",
+      "level": 108,
+      "mesh": 148,
+      "hp": 50000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 90,
+      "name": "FlyingBat",
+      "level": 105,
+      "mesh": 206,
+      "hp": 2447200,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=True"
+      ]
+    },
+    {
+      "id": 2131,
+      "name": "Bat",
+      "level": 120,
+      "mesh": 157,
+      "hp": 500,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 2179,
+      "name": "BlizzardBat",
+      "level": 47,
+      "mesh": 148,
+      "hp": 2100,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 3148,
+      "name": "FiendBat",
+      "level": 117,
+      "mesh": 206,
+      "hp": 80000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 3526,
+      "name": "FireBat",
+      "level": 85,
+      "mesh": 148,
+      "hp": 33350,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 3620,
+      "name": "FuryBat",
+      "level": 120,
+      "mesh": 157,
+      "hp": 50000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 3621,
+      "name": "CruelBat",
+      "level": 120,
+      "mesh": 148,
+      "hp": 50000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 3622,
+      "name": "ViciousBat",
+      "level": 120,
+      "mesh": 148,
+      "hp": 50000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 3623,
+      "name": "DemonBat",
+      "level": 120,
+      "mesh": 148,
+      "hp": 50000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 4033,
+      "name": "BloodyBat1",
+      "level": 126,
+      "mesh": 148,
+      "hp": 65535,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 7558,
+      "name": "PandaBattlemaster",
+      "level": 1,
+      "mesh": 848,
+      "hp": 9999,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8116,
+      "name": "BatMessenger",
+      "level": 102,
+      "mesh": 206,
+      "hp": 45000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8117,
+      "name": "BloodyBatMsgr",
+      "level": 107,
+      "mesh": 148,
+      "hp": 50000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8216,
+      "name": "BatAide",
+      "level": 102,
+      "mesh": 157,
+      "hp": 45000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8217,
+      "name": "BloodyBatAide",
+      "level": 107,
+      "mesh": 148,
+      "hp": 50000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8316,
+      "name": "BatKing",
+      "level": 102,
+      "mesh": 206,
+      "hp": 65535,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=True"
+      ]
+    },
+    {
+      "id": 9005,
+      "name": "GhostBat",
+      "level": 15,
+      "mesh": 148,
+      "hp": 3000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 9006,
+      "name": "FastBat",
+      "level": 40,
+      "mesh": 148,
+      "hp": 6000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 9007,
+      "name": "SwiftBat",
+      "level": 70,
+      "mesh": 148,
+      "hp": 15000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 9008,
+      "name": "MagicBat",
+      "level": 100,
+      "mesh": 148,
+      "hp": 30000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 9010,
+      "name": "GhostBatBoss",
+      "level": 15,
+      "mesh": 148,
+      "hp": 10000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=True"
+      ]
+    },
+    {
+      "id": 9011,
+      "name": "FastBatBoss",
+      "level": 40,
+      "mesh": 148,
+      "hp": 20000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=True"
+      ]
+    },
+    {
+      "id": 9012,
+      "name": "SwiftBatBoss",
+      "level": 70,
+      "mesh": 148,
+      "hp": 35000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=True"
+      ]
+    },
+    {
+      "id": 9013,
+      "name": "MagicBatBoss",
+      "level": 100,
+      "mesh": 148,
+      "hp": 60000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=True"
+      ]
+    },
+    {
+      "id": 9015,
+      "name": "EvilBatA",
+      "level": 15,
+      "mesh": 206,
+      "hp": 3000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 9016,
+      "name": "EvilBatB",
+      "level": 40,
+      "mesh": 206,
+      "hp": 6000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 9017,
+      "name": "EvilBatC",
+      "level": 70,
+      "mesh": 206,
+      "hp": 15000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 9018,
+      "name": "EvilBatD",
+      "level": 100,
+      "mesh": 206,
+      "hp": 30000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    }
+  ],
+  "npc_rows": [],
+  "queried_npc_ids": [
+    4651,
+    4652
+  ],
+  "spawns": [
+    {
+      "id": 26,
+      "map": 1001,
+      "origin": [
+        309,
+        597
+      ],
+      "extent": [
+        44,
+        100
+      ],
+      "count": 50,
+      "family": 20,
+      "server_walkable_cells": 2045
+    },
+    {
+      "id": 27,
+      "map": 1001,
+      "origin": [
+        257,
+        549
+      ],
+      "extent": [
+        40,
+        100
+      ],
+      "count": 50,
+      "family": 20,
+      "server_walkable_cells": 1807
+    },
+    {
+      "id": 28,
+      "map": 1001,
+      "origin": [
+        207,
+        518
+      ],
+      "extent": [
+        40,
+        100
+      ],
+      "count": 50,
+      "family": 20,
+      "server_walkable_cells": 529
+    },
+    {
+      "id": 29,
+      "map": 1001,
+      "origin": [
+        317,
+        514
+      ],
+      "extent": [
+        25,
+        100
+      ],
+      "count": 50,
+      "family": 20,
+      "server_walkable_cells": 1561
+    },
+    {
+      "id": 30,
+      "map": 1001,
+      "origin": [
+        241,
+        473
+      ],
+      "extent": [
+        62,
+        100
+      ],
+      "count": 50,
+      "family": 20,
+      "server_walkable_cells": 3412
+    },
+    {
+      "id": 31,
+      "map": 1001,
+      "origin": [
+        362,
+        605
+      ],
+      "extent": [
+        36,
+        100
+      ],
+      "count": 50,
+      "family": 20,
+      "server_walkable_cells": 951
+    },
+    {
+      "id": 34,
+      "map": 1001,
+      "origin": [
+        388,
+        371
+      ],
+      "extent": [
+        40,
+        53
+      ],
+      "count": 50,
+      "family": 56,
+      "server_walkable_cells": 528
+    },
+    {
+      "id": 35,
+      "map": 1001,
+      "origin": [
+        220,
+        347
+      ],
+      "extent": [
+        38,
+        53
+      ],
+      "count": 50,
+      "family": 56,
+      "server_walkable_cells": 510
+    },
+    {
+      "id": 36,
+      "map": 1001,
+      "origin": [
+        347,
+        378
+      ],
+      "extent": [
+        30,
+        53
+      ],
+      "count": 50,
+      "family": 56,
+      "server_walkable_cells": 884
+    },
+    {
+      "id": 37,
+      "map": 1001,
+      "origin": [
+        253,
+        304
+      ],
+      "extent": [
+        70,
+        53
+      ],
+      "count": 50,
+      "family": 56,
+      "server_walkable_cells": 1862
+    },
+    {
+      "id": 38,
+      "map": 1001,
+      "origin": [
+        329,
+        343
+      ],
+      "extent": [
+        26,
+        25
+      ],
+      "count": 50,
+      "family": 56,
+      "server_walkable_cells": 623
+    },
+    {
+      "id": 39,
+      "map": 1001,
+      "origin": [
+        320,
+        425
+      ],
+      "extent": [
+        90,
+        64
+      ],
+      "count": 50,
+      "family": 56,
+      "server_walkable_cells": 3314
+    },
+    {
+      "id": 75,
+      "map": 1001,
+      "origin": [
+        309,
+        597
+      ],
+      "extent": [
+        44,
+        51
+      ],
+      "count": 3,
+      "family": 80,
+      "server_walkable_cells": 1984
+    },
+    {
+      "id": 76,
+      "map": 1001,
+      "origin": [
+        257,
+        549
+      ],
+      "extent": [
+        40,
+        63
+      ],
+      "count": 3,
+      "family": 80,
+      "server_walkable_cells": 1792
+    },
+    {
+      "id": 77,
+      "map": 1001,
+      "origin": [
+        207,
+        518
+      ],
+      "extent": [
+        40,
+        30
+      ],
+      "count": 2,
+      "family": 80,
+      "server_walkable_cells": 529
+    },
+    {
+      "id": 78,
+      "map": 1001,
+      "origin": [
+        317,
+        514
+      ],
+      "extent": [
+        25,
+        26
+      ],
+      "count": 1,
+      "family": 80,
+      "server_walkable_cells": 618
+    },
+    {
+      "id": 79,
+      "map": 1001,
+      "origin": [
+        241,
+        473
+      ],
+      "extent": [
+        62,
+        55
+      ],
+      "count": 50,
+      "family": 80,
+      "server_walkable_cells": 1922
+    },
+    {
+      "id": 80,
+      "map": 1001,
+      "origin": [
+        362,
+        605
+      ],
+      "extent": [
+        36,
+        30
+      ],
+      "count": 2,
+      "family": 80,
+      "server_walkable_cells": 920
+    },
+    {
+      "id": 83,
+      "map": 1001,
+      "origin": [
+        388,
+        371
+      ],
+      "extent": [
+        40,
+        24
+      ],
+      "count": 2,
+      "family": 81,
+      "server_walkable_cells": 479
+    },
+    {
+      "id": 84,
+      "map": 1001,
+      "origin": [
+        220,
+        347
+      ],
+      "extent": [
+        38,
+        24
+      ],
+      "count": 2,
+      "family": 81,
+      "server_walkable_cells": 461
+    },
+    {
+      "id": 85,
+      "map": 1001,
+      "origin": [
+        347,
+        378
+      ],
+      "extent": [
+        30,
+        26
+      ],
+      "count": 2,
+      "family": 81,
+      "server_walkable_cells": 487
+    },
+    {
+      "id": 86,
+      "map": 1001,
+      "origin": [
+        253,
+        304
+      ],
+      "extent": [
+        70,
+        53
+      ],
+      "count": 5,
+      "family": 81,
+      "server_walkable_cells": 1862
+    },
+    {
+      "id": 87,
+      "map": 1001,
+      "origin": [
+        329,
+        343
+      ],
+      "extent": [
+        26,
+        25
+      ],
+      "count": 1,
+      "family": 81,
+      "server_walkable_cells": 623
+    },
+    {
+      "id": 88,
+      "map": 1001,
+      "origin": [
+        320,
+        425
+      ],
+      "extent": [
+        90,
+        64
+      ],
+      "count": 6,
+      "family": 81,
+      "server_walkable_cells": 3314
+    },
+    {
+      "id": 141,
+      "map": 1001,
+      "origin": [
+        264,
+        368
+      ],
+      "extent": [
+        45,
+        72
+      ],
+      "count": 5,
+      "family": 86,
+      "server_walkable_cells": 2122
+    },
+    {
+      "id": 142,
+      "map": 1001,
+      "origin": [
+        421,
+        327
+      ],
+      "extent": [
+        68,
+        41
+      ],
+      "count": 5,
+      "family": 86,
+      "server_walkable_cells": 1690
+    },
+    {
+      "id": 143,
+      "map": 1001,
+      "origin": [
+        433,
+        155
+      ],
+      "extent": [
+        70,
+        54
+      ],
+      "count": 5,
+      "family": 86,
+      "server_walkable_cells": 1896
+    },
+    {
+      "id": 144,
+      "map": 1001,
+      "origin": [
+        510,
+        196
+      ],
+      "extent": [
+        45,
+        56
+      ],
+      "count": 5,
+      "family": 86,
+      "server_walkable_cells": 1244
+    },
+    {
+      "id": 145,
+      "map": 1001,
+      "origin": [
+        489,
+        449
+      ],
+      "extent": [
+        90,
+        60
+      ],
+      "count": 5,
+      "family": 86,
+      "server_walkable_cells": 3319
+    }
+  ],
+  "jinx_template_present": false,
+  "native_acceptance": false
+}

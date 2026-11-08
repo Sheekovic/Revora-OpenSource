@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><TargetFramework>net10.0-windows</TargetFramework><UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting><AssemblyName>Revora.NativeLogin</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest><RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained><PublishSingleFile>true</PublishSingleFile><IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Revora.NativeLogin.Core/Revora.NativeLogin.Core.csproj" />
+    <ProjectReference Include="../Revora.Launcher.Core/Revora.Launcher.Core.csproj" />
+  </ItemGroup>
+</Project>

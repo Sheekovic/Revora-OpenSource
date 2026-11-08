@@ -1,0 +1,23 @@
+{
+  "updateBaseUrl": "https://playrevora.com/updates/",
+  "gameRoot": ".",
+  "gameExecutable": "play.exe",
+  "versionFile": "RevoraVersion.ini",
+  "channelManifest": "channel.json",
+  "masterManifest": "master_manifest.json",
+  "baselinePath": "baseline/",
+  "renderBackendLabel": "Native D3D9",
+  "statusEndpoint": "https://playrevora.com/api/status",
+  "signedClientManifest": "client-manifest.signed.json",
+  "manifestKeyId": "",
+  "manifestPublicKeySpkiBase64": "",
+  "preferencesFile": "launcher.preferences.json",
+  "buildChannel": "production",
+  "verificationReceiptFile": "RevoraUpdates\\State\\verification-receipt.json",
+  "pendingInstallFile": "RevoraUpdates\\State\\pending-install.json",
+  "signedPatchIndex": "patch-index.signed.json",
+  "updateIndexTimeoutSeconds": 10,
+  "baselineClientPatch": 7630,
+  "baselineContentVersion": "1.0.0",
+  "dx9BridgeOwnerTestEnabled": false
+}

@@ -1,0 +1,36 @@
+{
+  "native_acceptance": false,
+  "client_monster_sha256": "99fa2c8f14c3851d797a0b20fbd325053f9acee35c7dab4c5e73edc2f5792585",
+  "client_jade_profile": {
+    "TypeID": "2149",
+    "MaxLife": "13805",
+    "Level": "60",
+    "Boss": "0"
+  },
+  "npc_catalog_sha256": "b06db1e2484992a1b58eabd7a3d884da07ac728a4a183d0fd18f2dccd5b20497",
+  "npcs": {
+    "670": {
+      "Name": "GeneralAmber",
+      "SimpleObjID": "271"
+    },
+    "671": {
+      "Name": "GeneralZhao",
+      "SimpleObjID": "16"
+    },
+    "672": {
+      "Name": "PainterFengKang",
+      "SimpleObjID": "225"
+    },
+    "673": {
+      "Name": "GuardLi",
+      "SimpleObjID": "210"
+    }
+  },
+  "phantom_model_policy": "Revora uses General Amber simple-object model 271 for the disguised phantom; original phantom mesh is unverified; native combat animation pending.",
+  "simple_catalog_sha256": "f34f56332383809968074ceda1130507011583d0fa79610110dcf66bcf3d7efc",
+  "model": {
+    "PartAmount": "1",
+    "Part0": "9992710",
+    "Texture0": "9992710"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-04",
+  "result": "passed",
+  "scope": "Rising Star title lifecycle with supplied isolated achievement receipts, not a320-earned career",
+  "server_sha256": "bcb763292587681a7f06cd627d4a391a0008238ebdf392158df98a5bb3ed95d8",
+  "suite_checks": 574,
+  "added_rising_star_checks": 6,
+  "title_key": 20010002,
+  "requirement": 320,
+  "points": 300,
+  "checks": [
+    "319 distinct known receipts do not produce title ownership",
+    "320 receipts reconcile into owned Rising Star with300 title points",
+    "Eligible ordinary fixture equips title through the existing title handler",
+    "New achievement object and database wardrobe reload preserve ownership, count, points and equipped selection",
+    "Twelve concurrent reconciliations do not multiply saved points",
+    "Isolated receipt removal revokes ownership and equipped selection"
+  ],
+  "fixture_repair": "Heart event temporary entities table now includes previousmapid/previousx/previousy required by current production teleport. The first run passed all new Rising Star checks before failing on missing previousmapid; its log is preserved.",
+  "limitations": [
+    "Achievement receipts are supplied by the existing title boundary fixture; this does not prove their earning or compatible career order.",
+    "Reload uses production achievement/wardrobe loaders within the test process, not a cold game-process restart.",
+    "Native title display and live deployment remain pending.",
+    "Fresh and retained career databases were not used for this fixture."
+  ],
+  "log_sha256": "19327539ea9b8b06c581838bf113ffacb6c98ec3eee141e81442cb6c36343dea",
+  "earlier_failure_log_sha256": "c14f3c4b1d863cefa93ecd34f7d527d30b76afb3c1f1994aac1ab6cee52cf5b9",
+  "source_sha256": {
+    "tests/PotencyHunt/TitleTests.cs": "26c3712e3ffe6972998e5ebaa0ba353a3681395b8bfd6fbfff7c318bd99c5ef5",
+    "Sistemas/WardRobe/TitleRequirements.cs": "3f2e43c32908f7a4b08fb135d38258c4b09444cc3a32682818e3bfc44d0b0c99",
+    "Sistemas/WardRobe/StorageManager.cs": "8a9ec9e2ea4316c4f874b5b4f9b029d37f38d635168898f907d29d290c9fe5ae",
+    "Game/Features/ProgressionEvidence.cs": "edd322dc574f9232761262c39966b4cd002c4ff60aff8d40e0fbbd0d252aaaa1"
+  }
+}

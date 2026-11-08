@@ -1,0 +1,70 @@
+{
+  "scope": "Snapshot-based retained-career planning; not an earned count or completion percentage",
+  "input_sha256": {
+    "docs/research/RETAINED_CAREER_PROGRESS.json": "2d5aab6bbfb256c4584e5f2464843484b00b04baaaf0c393aee3724676e2eea9",
+    "docs/research/ACHIEVEMENT_CAREER_GAPS.json": "b2f5521e854358a0488aba784f3e65453d53140d8960f9da748e61fe53bde807",
+    "Game/Features/RebirthRules.cs": "40c5e7a5b8da89d5065c5ca37985d00c2a4e509ad2c95f7cb0ea7537196afa6c",
+    "Game/Features/ReincarnationRules.cs": "ba59c49364f0f66509ca9acd5a62cef2751a03e59119286eac988a223bbc81de",
+    "Game/Features/ClassPromotion.cs": "f5a6ba183797a9220ab2e49444e003f4dd2fbacef2298d4740c8444b6809b178",
+    "Game/Features/PaidReincarnation.cs": "f45d8593f32dfeafc3adf8519ffe7ae582e7f5d03dc31e33bfa9d0fca8b03713",
+    "Game/Features/FirstRebirth.cs": "341b04e566876dc5c2ecc36fb3b07817c5ecf85cf847cfcfeecb1b7d22965cc6",
+    "Game/Features/SecondRebirth.cs": "83550973877494ce71ae5716a0204f309acac200056f71a29b7736b79f3e3bf1",
+    "Network/GamePackets/Reincarnation.cs": "1341d64edcaeb05d8302b23f6e526955531c6f3e364879738d791b0b7b034fef",
+    "Game/Features/Reincarnation/Handle.cs": "2b7a843ab97ca81cc78c4d5d870d215b0837732aa004b3215c9b6ce10480623d"
+  },
+  "catalog_count": 337,
+  "target": 320,
+  "currently_unavailable": [
+    10726,
+    11010,
+    11031,
+    11232
+  ],
+  "retained_promotion_routes_unproven": [
+    10813,
+    10819,
+    10824,
+    10825,
+    10829,
+    10830,
+    10903,
+    10908,
+    10913,
+    11205,
+    11216,
+    11304
+  ],
+  "overlap_between_exclusions": [],
+  "conservative_candidate_count": 321,
+  "candidate_margin_over_target": 1,
+  "candidate_receipts_present_mixed_provenance": 321,
+  "candidate_receipts_absent": 0,
+  "absent_by_primary_producer": {},
+  "early_promotion_route_audit": {
+    "ordinary_rebirth_targets": [
+      11,
+      21,
+      41,
+      51,
+      61,
+      71,
+      81,
+      132,
+      142,
+      161
+    ],
+    "ordinary_packet_entry": "Network/GamePackets/Reincarnation.cs -> PaidReincarnation.Process -> ReincarnationRules.Profile",
+    "constraint": "Reviewed rites do not return this existing character to unpromoted x0/100 or Taoist101; selecting a promoted class does not earn its trainer receipt.",
+    "legacy_helpers": "Direct class setters/legacy constructors do not establish an ordinary earning route; bounded caller inspection found no alternative ordinary route for the retained profile.",
+    "fresh_character_distinction": "Creation can select an unpromoted school on a new identity; that is not recovery of the retained character's missing receipts.",
+    "global_impossibility_proven": false
+  },
+  "compatible_career_verified": false,
+  "limitations": [
+    "Excluding an unproven promotion route is a planning assumption, not proof it is impossible.",
+    "Candidate identities may still have incompatible prerequisites; this is not a playable upper/lower bound.",
+    "Present receipts include supplied and observed state; they are not all independently earned.",
+    "Private opt-in receipts do not override default activation or native/deployment gates.",
+    "Receipt absence does not by itself identify an implementation defect."
+  ]
+}

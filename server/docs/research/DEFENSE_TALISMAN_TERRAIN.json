@@ -1,0 +1,148 @@
+{
+  "scope": "Read-only scene bindings, hashes, full blocked-cell comparison and journal target cells. Connectivity, NPC footprints, portals and native rendering are not validated.",
+  "scenes": [
+    {
+      "map": 1782,
+      "client_bindings": [],
+      "server_bindings": [],
+      "server_floor_exists": false,
+      "verified": false,
+      "problem": "Missing or conflicting scene binding/floor"
+    },
+    {
+      "map": 1783,
+      "client_bindings": [],
+      "server_bindings": [],
+      "server_floor_exists": false,
+      "verified": false,
+      "problem": "Missing or conflicting scene binding/floor"
+    },
+    {
+      "map": 1784,
+      "client_bindings": [],
+      "server_bindings": [],
+      "server_floor_exists": false,
+      "verified": false,
+      "problem": "Missing or conflicting scene binding/floor"
+    },
+    {
+      "map": 1785,
+      "client_bindings": [
+        [
+          "map/map/Halloween2007a.7z",
+          256
+        ]
+      ],
+      "server_bindings": [
+        [
+          "map/map/Halloween2007a.7z",
+          256
+        ]
+      ],
+      "server_floor_exists": true,
+      "verified": true,
+      "dimensions": [
+        164,
+        164
+      ],
+      "sha256": {
+        "server": "5b8dc4a922f7ce95eb3b2b9245bdbe195983bca35f6714d896a9851531ba13be",
+        "archive": "1d0e33668830199d94347c80f6504c347a9f2ddd3a0a83a8134fa834fce50a96",
+        "native": "ee452184f049b13df047a34e9a9e8efbe8165729fe43f69c6c57024aa43279e2"
+      },
+      "differing_cells": 0,
+      "points": [
+        {
+          "x": 96,
+          "y": 120,
+          "walkable": true
+        },
+        {
+          "x": 70,
+          "y": 60,
+          "walkable": true
+        }
+      ]
+    },
+    {
+      "map": 1786,
+      "client_bindings": [
+        [
+          "map/map/Halloween2007b.7z",
+          256
+        ]
+      ],
+      "server_bindings": [
+        [
+          "map/map/Halloween2007b.7z",
+          256
+        ]
+      ],
+      "server_floor_exists": true,
+      "verified": true,
+      "dimensions": [
+        164,
+        164
+      ],
+      "sha256": {
+        "server": "2325d5c9b27d8cbc80b23e197429bfe7d632f9e8d2a1dc010155f73bdb31b6c0",
+        "archive": "b6adcc5ea5b6c3ae9b939e0fc1490f9962d8ba62f616c3f30333b6d51f718e4b",
+        "native": "b0d2186da871a9b1389141a3cfb98bebde8e7ce275149f4d523dda89bbbaab6e"
+      },
+      "differing_cells": 0,
+      "points": [
+        {
+          "x": 113,
+          "y": 122,
+          "walkable": true
+        },
+        {
+          "x": 62,
+          "y": 81,
+          "walkable": true
+        }
+      ]
+    },
+    {
+      "map": 1787,
+      "client_bindings": [
+        [
+          "map/map/Halloween2007boss.7z",
+          256
+        ]
+      ],
+      "server_bindings": [
+        [
+          "map/map/Halloween2007boss.7z",
+          256
+        ]
+      ],
+      "server_floor_exists": true,
+      "verified": true,
+      "dimensions": [
+        108,
+        108
+      ],
+      "sha256": {
+        "server": "9b7aca4f515a5c3402113ba946dbc73cd8b57bf01cb957e8a91e059fbe13434a",
+        "archive": "c2d5abd9952c4ecc38277db8b202964ea18a769108727b10ef6f3f16b3b9130d",
+        "native": "15bc8e88ef3fe4f598c51988a158f8c24e55bbd65871f3a2b42c6380c9c26726"
+      },
+      "differing_cells": 0,
+      "points": [
+        {
+          "x": 48,
+          "y": 37,
+          "walkable": true
+        },
+        {
+          "x": 56,
+          "y": 64,
+          "walkable": true
+        }
+      ]
+    }
+  ],
+  "all_scenes_available": false,
+  "native_acceptance": false
+}

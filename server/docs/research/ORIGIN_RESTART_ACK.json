@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-04",
+  "scope": "Current-session authorization and durable acknowledgement of pre-restart origin results",
+  "baseline_build_sha256": "b2b51154e48664c90e5144572d1d01567cae1161fcded9253ae04db715090a2e",
+  "corrected_build_sha256": "82e5435a9b28de4660159fb9ba8e447bbfb5409d3e51537e1eb3c1459b285490",
+  "baseline_failure": "old origin owner cannot acknowledge a result after session replacement",
+  "checks": {
+    "realm": 36,
+    "tournament": 21,
+    "CTF": 47,
+    "Elite PK": 29,
+    "Team PK": 32
+  },
+  "total": 165,
+  "logs_sha256": {
+    "obj/origin-ack-before.log": "ceb52becd0b0581158f1680c757fb13524a87188fc0ff569a4aa4768cc8c0b96",
+    "obj/origin-ack-after.log": "ecc983dbcc0f6c20e36594f61ebfd592b831dd355946a8d11231a4334d8f8910",
+    "obj/origin-ack-build.log": "ab96bab403e4d19e1a075a5bb997c9519c66c09d022ae6f76c578a3ca7c65d7e"
+  },
+  "source_sha256": {
+    "Game/Features/OriginTournaments.cs": "2553851f315e170ef88041529dc6ff1164356b1ef1662cbf56173a6924001eaa",
+    "tests/OriginRealms/OriginRealmTests.cs": "8f8aba443ae6936f1a1fb4ab99cb93d5d99ec74386d353e3706d6be70c5224a2"
+  },
+  "limitations": [
+    "Restart uses replaced process/session owners and independent database connections in the private validation schema.",
+    "No native battle, inter-realm network caller, live release, or career runtime replacement.",
+    "The result outbox is not a wardrobe grant; separate award recovery remains covered by the existing origin suite."
+  ]
+}

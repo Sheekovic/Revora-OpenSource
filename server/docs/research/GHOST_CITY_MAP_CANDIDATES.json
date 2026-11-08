@@ -1,0 +1,40 @@
+{
+  "journal_map": 1780,
+  "candidates": [
+    {
+      "map": 1779,
+      "client_path": "map/map/slpk.7z",
+      "same_runtime_binding": true,
+      "server_sha256": "a8e54974e3127c3235a788269df3f9f662b3c40be93130638469022266fd532b",
+      "client_dmap_sha256": "6bf114e344b4b550200f654620da8e024013c440b60ba94005e42defb8c0870c",
+      "server_size": [
+        320,
+        320
+      ],
+      "client_size": [
+        320,
+        320
+      ],
+      "archive_present": true,
+      "native_playability_verified": false
+    },
+    {
+      "map": 1780,
+      "client_path": "map/map/slpk.7z",
+      "same_runtime_binding": true,
+      "server_sha256": "a8e54974e3127c3235a788269df3f9f662b3c40be93130638469022266fd532b",
+      "client_dmap_sha256": "6bf114e344b4b550200f654620da8e024013c440b60ba94005e42defb8c0870c",
+      "server_size": [
+        320,
+        320
+      ],
+      "client_size": [
+        320,
+        320
+      ],
+      "archive_present": true,
+      "native_playability_verified": false
+    }
+  ],
+  "note": "Terrain presence and bindings only; route, spawn and native acceptance remain pending."
+}

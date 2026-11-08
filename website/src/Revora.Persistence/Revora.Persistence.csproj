@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../Revora.Application/Revora.Application.csproj" />
+    <ProjectReference Include="../Revora.Domain/Revora.Domain.csproj" />
+    <ProjectReference Include="../Revora.Gameplay/Revora.Gameplay.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="10.0.3" />
+  </ItemGroup>
+</Project>

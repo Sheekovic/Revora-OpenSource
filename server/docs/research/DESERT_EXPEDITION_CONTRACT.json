@@ -1,0 +1,178 @@
+{
+  "stages": [
+    {
+      "mission": 1835,
+      "predecessor": 0,
+      "begin": [
+        8796,
+        1002,
+        473,
+        300
+      ],
+      "finish": [
+        4702,
+        1000,
+        520,
+        589
+      ],
+      "materials": []
+    },
+    {
+      "mission": 1836,
+      "predecessor": 1835,
+      "begin": [
+        4702,
+        1000,
+        520,
+        589
+      ],
+      "finish": [
+        4702,
+        1000,
+        520,
+        589
+      ],
+      "materials": [
+        [
+          710259,
+          10
+        ]
+      ]
+    },
+    {
+      "mission": 1837,
+      "predecessor": 1836,
+      "begin": [
+        4702,
+        1000,
+        520,
+        589
+      ],
+      "finish": [
+        4702,
+        1000,
+        520,
+        589
+      ],
+      "materials": [
+        [
+          710261,
+          3
+        ]
+      ]
+    },
+    {
+      "mission": 1838,
+      "predecessor": 1837,
+      "begin": [
+        4702,
+        1000,
+        520,
+        589
+      ],
+      "finish": [
+        4702,
+        1000,
+        520,
+        589
+      ],
+      "materials": [
+        [
+          710260,
+          1
+        ]
+      ]
+    },
+    {
+      "mission": 1839,
+      "predecessor": 1838,
+      "begin": [
+        4702,
+        1000,
+        520,
+        589
+      ],
+      "finish": [
+        8796,
+        1002,
+        473,
+        300
+      ],
+      "materials": []
+    }
+  ],
+  "items": {
+    "150219": {
+      "name": "DragonRing",
+      "required_class": 0,
+      "level": 110
+    },
+    "152229": {
+      "name": "DiamondBracelet",
+      "required_class": 190,
+      "level": 115
+    },
+    "710259": {
+      "name": "BurntBullhorn",
+      "required_class": 0,
+      "level": 0
+    },
+    "710260": {
+      "name": "BullHeart",
+      "required_class": 0,
+      "level": 0
+    },
+    "710261": {
+      "name": "BullGhost",
+      "required_class": 0,
+      "level": 0
+    },
+    "721920": {
+      "name": "FerventPill",
+      "required_class": 0,
+      "level": 0
+    },
+    "721921": {
+      "name": "GhostMirror",
+      "required_class": 0,
+      "level": 0
+    },
+    "728250": {
+      "name": "L110SuperRingPack",
+      "required_class": 0,
+      "level": 0
+    }
+  },
+  "sha256": {
+    "quest": "f783c2a8ead9461a469c79b6c7e7aae00b2604066d4bc6e2e2c56d7e98fc5e14",
+    "items": "52889c537ddd00a6f4d349fa9243268dfedc81ab3899523f1e434218735387cb"
+  },
+  "minimum_level": 105,
+  "client_maximum": 125,
+  "trap_hints": [
+    [
+      172,
+      399
+    ],
+    [
+      102,
+      292
+    ],
+    [
+      109,
+      369
+    ]
+  ],
+  "bull_master_hint": [
+    186,
+    359
+  ],
+  "pill_duration_conflict": {
+    "client_tooltip_seconds": 300,
+    "official_guide_seconds": 60
+  },
+  "original_drop_odds": null,
+  "original_trap_duration": null,
+  "implemented": false,
+  "native_acceptance": false
+}

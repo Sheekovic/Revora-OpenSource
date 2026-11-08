@@ -1,0 +1,16 @@
+Revora Manual Playable Baseline — Owner Test M1
+
+Prerequisite: install the official Microsoft .NET Desktop Runtime 10 x64 once if it is not already installed.
+
+1. Keep Microsoft Defender and Malwarebytes enabled. Run only as a normal Windows user.
+2. Download M1 from the authenticated Admin dashboard and verify its displayed SHA-256.
+3. Extract the ZIP into a new small tools folder outside every Conquer/Revora client directory.
+4. Start Revora.Launcher.exe and select the exact clean Test 2c donor created by Client Doctor 2c.
+5. Click Prepare and start M1 once. The tool verifies all 12,831 donor files, reuses or creates the marked owner workspace, applies only the reviewed Server.dat RSA trust-anchor replacement, installs the signed loopback Server.dat, verifies the complete target profile, starts 127.0.0.1:9958, and launches the exact reviewed configuration-only client.
+6. In the genuine game login screen, manually enter ONLY the throwaway development game account. Do not use an owner, Admin, email, banking, or reused password. Press the in-game Enter button exactly once.
+7. Do not type credentials into the Revora tool. It has no credential fields and does not persist them.
+8. Expected network result: one PID-attributed encrypted 276-byte request decrypts to packet 1086; M1 sends one encrypted 12-byte packet 1055 controlled rejection/error.
+9. The exact visible legacy message is not yet proven. Record its exact text and take one screenshot after the client processes the response.
+10. Click Emergency Stop after the result. Return only Reports/manual-playable-m1-*.json, the screenshot, the exact visible text, and Defender/Malwarebytes scan results.
+
+Do not send a packet capture, password, raw client file, ticket, private path, or proprietary archive. M1 does not prove authentication, Game handoff, character selection, or playability.

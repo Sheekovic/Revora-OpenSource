@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-04",
+  "scope": "Ordinary guild invitation ownership at the packet handler boundary",
+  "previous_build_sha256": "E6DC083AE36E3DDB9046126870C7850865CCE0AC24F3C623A9C9B69F5A5BC5F2",
+  "validated_build_sha256": "fc90f64ca4ee203b4e0dcdbf24fbedc000f4f7a87cc00ecde765b9020a633844",
+  "baseline": "Guildless ordinary InviteRequest raises NullReferenceException in GuildCommand.ProcessCurrent.",
+  "result": "Nine focused checks pass after reusing GuildLeadership.Leader for invitation authority.",
+  "checks": 9,
+  "source_sha256": {
+    "Network/GamePackets/GuildCommand.cs": "2f001df8eff91a89f02bba78112bd091466a957a21318597978b3c32bff500cb",
+    "Game/Features/GuildLeadership.cs": "3c85059d84b99247219ed5f8245bee38177af02344ff0e741de21d98dde5cc13",
+    "tests/GuildInvitations/GuildInvitationTests.cs": "697f02a7c47502b787176bb82cdfb7673dc53e449a7dc2da46dbfced3b7bb369",
+    "tests/GuildInvitations/Verify-GuildInvitations.ps1": "1946ec171703957fd0fdf65d78ff8cbbd540f747873a51c0e630ac0d48823c3f"
+  },
+  "log_sha256": {
+    "obj/guild-invitation-before.log": "d625044fde9131cced5f1627048c8c67c6097f3d86ba4eeacdc497523ddf2824",
+    "obj/guild-invitation-after.log": "8b91245379a0ca6b1408a51fb98eb8cb2595451ca38a49296deb23134e547358",
+    "obj/guild-invitation-build.log": "136861103b4915652760d46f8a1dd070b98ec5816bc033a48891df75b4be8ccb"
+  },
+  "validation": [
+    "Guildless and orphaned member invitations return without exceptions or consent mutation.",
+    "Wrong leader name, replaced guild, detached member and inconsistent rank are rejected.",
+    "A canonical ordinary leader reaches the blacklist rule and can offer an unblocked invitation.",
+    "Offering alone does not join the target or change guild membership."
+  ],
+  "limitations": [
+    "Offline packet adapter; no database, native client, successful membership transaction or live service execution.",
+    "Existing saved admission and cold recovery evidence is not rerun or expanded by these tests.",
+    "Initial fixture compilation required qualifying ambiguous names; positive-case fixture required normal empty weapon state. These were harness corrections, not production defects.",
+    "GeoIP.dat absence is reported by static initialization in the artifact-only directory; all focused checks pass without it.",
+    "Private game build retains existing warnings; focused harness compiles with warnings as errors.",
+    "Installed career runtime and live server remain unchanged."
+  ]
+}

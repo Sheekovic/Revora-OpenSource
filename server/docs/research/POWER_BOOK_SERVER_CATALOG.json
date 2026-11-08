@@ -1,0 +1,122 @@
+{
+  "monsters": [
+    {
+      "family": 3141,
+      "name": "Slinger",
+      "level": 103,
+      "hp": 30000
+    },
+    {
+      "family": 3142,
+      "name": "GoldGhost",
+      "level": 108,
+      "hp": 60000
+    },
+    {
+      "family": 3144,
+      "name": "Bladeling",
+      "level": 110,
+      "hp": 35000
+    },
+    {
+      "family": 3145,
+      "name": "AgileRat",
+      "level": 112,
+      "hp": 70000
+    },
+    {
+      "family": 3147,
+      "name": "AzureBird",
+      "level": 140,
+      "hp": 5000000
+    },
+    {
+      "family": 3148,
+      "name": "FiendBat",
+      "level": 117,
+      "hp": 80000
+    },
+    {
+      "family": 3155,
+      "name": "MinotaurL120",
+      "level": 120,
+      "hp": 60000
+    }
+  ],
+  "npcs": [],
+  "items": [
+    {
+      "id": 721715,
+      "name": "TrainingBadge",
+      "level": 0,
+      "class": 0
+    },
+    {
+      "id": 721924,
+      "name": "PowerBook",
+      "level": 0,
+      "class": 0
+    },
+    {
+      "id": 721926,
+      "name": "AgileRatFang",
+      "level": 0,
+      "class": 0
+    },
+    {
+      "id": 721928,
+      "name": "FiendBatWing",
+      "level": 0,
+      "class": 0
+    },
+    {
+      "id": 721929,
+      "name": "RoastFiendBatWing",
+      "level": 0,
+      "class": 0
+    },
+    {
+      "id": 721931,
+      "name": "BlueBirdPlume",
+      "level": 0,
+      "class": 0
+    },
+    {
+      "id": 728251,
+      "name": "L120SuperClothingPack",
+      "level": 0,
+      "class": 0
+    }
+  ],
+  "spawn_families_by_map": {
+    "1000": [
+      3147
+    ],
+    "1351": [
+      3141,
+      3142
+    ],
+    "1352": [
+      3144,
+      3145
+    ],
+    "1353": [
+      3147,
+      3148
+    ],
+    "1354": [
+      3155
+    ]
+  },
+  "queried_npc_ids": [
+    4704,
+    8796
+  ],
+  "log_sha256": "3359b1b96bfa142898cf35d80bc267eb362dcd2303114c8b5c835e1f5b5b62af",
+  "limits": [
+    "Read-only installed catalog; not proof of original Trial Cave identities",
+    "Loaded BlueBird family name differs from journal label",
+    "Labyrinth maps 1351-1354 have a separate active quest; do not credit its unrelated deaths",
+    "Reward pack opening and class outputs not yet verified"
+  ]
+}

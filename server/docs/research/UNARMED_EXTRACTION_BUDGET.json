@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-04",
+  "result": "passed",
+  "scope": "Weapon-assisted unarmed final blow under existing10525 rules; calculated budget, not a new earned victory",
+  "profile_uid": 1096322,
+  "earned_loadout": "docs/research/FRESH_SNOW_LOADOUT.json",
+  "unarmed_min_attack": 4109,
+  "unarmed_damage": 5217,
+  "armed_damage": 71599,
+  "armed_hits": 69,
+  "unarmed_hits": 12,
+  "boss_hp": 5000000,
+  "boss_remaining_after_bow": 59669,
+  "incoming_maximum": 5500,
+  "hp_ceiling": 23960,
+  "minimum_hp": 18460,
+  "medicines": 85,
+  "medicine_stock": 100,
+  "attack_seconds": 81,
+  "unequip_allowance_seconds": 4,
+  "travel_allowance_seconds": 180,
+  "extraction_hold_seconds": 10,
+  "budget_seconds": 275,
+  "remaining_event_seconds": 600,
+  "hand_hp_removed": 0,
+  "assumptions": [
+    "Paid Archer kit and permanent P7 souls are already earned and cold-validated. Use only non-hand base/plus/soul attack and150percent Dragon gems for the unarmed damage bound; no strength, fan, critical or Chi attack bonus.",
+    "The already-earned bow profile supplies the initial damage. Stop with59669HP remaining; both hands must be removed before the final12hits.",
+    "Extracted item catalog confirms bow500429, arrows1050002 and bow soul800618 add zero HP; no HP gems or enchant on those purchased items.23960HP ceiling is below earned30163.",
+    "Conservative5500 incoming damage every second, including four seconds of hand removal; real guardian attack interval is2seconds.7000HP medicine after every modeled hit, including wasted healing.",
+    "Each second has separate500ms action slots for attack/removal and medicine. Wear upper bound6times81=486, below4097 repaired durability."
+  ],
+  "limits": [
+    "Native attack/unequip/medicine timing, approach and exit navigation, crowds and hostile players remain acceptance gates.180seconds is an explicit travel allowance, not measured movement.",
+    "This demonstrates a valid final-blow route; it does not certify a full unarmed5M fight. Existing retained122-hit unarmed earning and cold-recovery evidence is independent and unchanged.",
+    "Initial diagnostic using low-level retained snapshot without Chi/fan failed; do not substitute that old rebirth gear for the paid Archer kit.",
+    "An early fixture with ordinary monster damage omitted ExpeditionField.TryHit; the final result explicitly uses its5500maximum.",
+    "No new receipts minted; no joint320 certificate or live deployment."
+  ],
+  "source_sha256": {
+    "tests/CombatBalance/UnarmedExtractionBudgetTests.cs": "532b034263c293f4167a9404a0fee00c5f7105f5bf206916decfae5d906f0de1",
+    "Client/GameState.cs": "f71a7b91642a15f70ba552d241b8006dd5732e53cab153c6e18690e4711b6a14",
+    "Game/Features/RevoraMasterSystem.cs": "10d349197719f707b6eebaa363ae68bda8969e41ef3d5bc952de167a28709a24",
+    "Game/Features/ExpeditionField.cs": "a76f9571b0524763b72f086f43efa438fe1f10efcabef10108aee1f02b022459",
+    "Game/Features/ExpeditionEvent.cs": "beee33563dbf849077e53958671703d3a4578151e0ead3601f8a7304537c3c84",
+    "Game/Features/EquipmentAchievements.cs": "5be5bae5c486fd721b9c8e0cb3683387aec090c3aae40fcf74cb601ecadc4277",
+    "Game/Attacking/Calculate.cs": "8e8a456205faf75b9b054904ed01a614a445e888aa8747ca99f1a5fb6cbdfed3",
+    "Database/ConquerItemInformation.cs": "f4604a614f44ad1d2dcfe253f904392f79dedd4d4c6be62f3bd77ba097d672ad",
+    "docs/research/FRESH_SNOW_LOADOUT.json": "56f9232264f6a8422365127cfffab875e06747c1c2dfdefaaac2a129e818a6fd"
+  },
+  "catalog_file_sha256": {
+    "bin/Debug/database/itemtype-new.txt": "d66c0489807d877e19053c8c04994d6738ffccf5c86565f216399f5dbfd55279",
+    "bin/Debug/database/ItemtypeSub.txt": "625b6432f5a23aa5833c24d4a4c6be709dd244b4e5f71e6cfba6fe0272cd84b0",
+    "bin/Debug/database/ItemsPlus.ini": "f63d727f037a9a459c8024396dc5dbe1ca8cdaf4c279c0d045753a7a33107b5c"
+  },
+  "server_sha256": "99c23c1b0be49b38dcb5a62800186c6419561d3c8a68fd9852b19591699bf7e0",
+  "log_sha256": "87e208f590632a4c8c327c2a10231c7016e5b354b5e161d66ae1da11f21a5571",
+  "database_writes": false,
+  "deployed": false
+}

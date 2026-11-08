@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Revora.Application/Revora.Application.csproj" />
+    <ProjectReference Include="../Revora.Networking/Revora.Networking.csproj" />
+    <ProjectReference Include="../Revora.Persistence/Revora.Persistence.csproj" />
+    <ProjectReference Include="../Revora.Protocol5165/Revora.Protocol5165.csproj" />
+  </ItemGroup>
+</Project>
+

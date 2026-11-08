@@ -1,0 +1,48 @@
+{
+  "map": 1801,
+  "dimensions": [
+    126,
+    126
+  ],
+  "entry": [
+    50,
+    55
+  ],
+  "actors": [
+    {
+      "name": "ObscureWarrior",
+      "position": [
+        48,
+        51
+      ],
+      "placement": "original journal"
+    },
+    {
+      "name": "StoneColumn",
+      "position": [
+        40,
+        50
+      ],
+      "placement": "Revora return placement"
+    }
+  ],
+  "approaches": [
+    {
+      "x": 46,
+      "y": 51,
+      "walk_steps": 8
+    },
+    {
+      "x": 42,
+      "y": 50,
+      "walk_steps": 13
+    }
+  ],
+  "sha256": {
+    "server": "27915507e6db3153afc7fa11b29c85b60fa51cbfc260afa93f023d241ed53d06",
+    "archive": "dc43ec825a1fb11781ac2fe1f1e6da868948463457e02a643a9442478b49e562",
+    "native": "6233285a2139c76cb14db29487820f039d032a4ecbd4423b2f7e3653f111a692"
+  },
+  "native_acceptance": false,
+  "scope": "Shared static four-direction walking with both 3x3 NPC footprints; no live actors, ownership, teleport or rendering acceptance."
+}

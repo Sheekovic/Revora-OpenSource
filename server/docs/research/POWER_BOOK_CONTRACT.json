@@ -1,0 +1,374 @@
+{
+  "stages": [
+    {
+      "mission": 1840,
+      "predecessor": 0,
+      "begin": [
+        8796,
+        1002,
+        473,
+        300
+      ],
+      "finish": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "objectives": [
+        [
+          1840,
+          0,
+          1,
+          1
+        ]
+      ],
+      "materials": [
+        [
+          1088001,
+          1
+        ]
+      ],
+      "timer_seconds": null
+    },
+    {
+      "mission": 1841,
+      "predecessor": 1840,
+      "begin": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "finish": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "objectives": [
+        [
+          1841,
+          1,
+          1,
+          20
+        ]
+      ],
+      "materials": [],
+      "timer_seconds": null
+    },
+    {
+      "mission": 1842,
+      "predecessor": 1841,
+      "begin": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "finish": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "objectives": [
+        [
+          1842,
+          1,
+          1,
+          10
+        ]
+      ],
+      "materials": [],
+      "timer_seconds": null
+    },
+    {
+      "mission": 1843,
+      "predecessor": 1842,
+      "begin": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "finish": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "objectives": [
+        [
+          1843,
+          1,
+          1,
+          15
+        ],
+        [
+          1843,
+          1,
+          2,
+          15
+        ]
+      ],
+      "materials": [],
+      "timer_seconds": null
+    },
+    {
+      "mission": 1844,
+      "predecessor": 1843,
+      "begin": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "finish": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "objectives": [
+        [
+          1844,
+          1,
+          1,
+          2
+        ]
+      ],
+      "materials": [],
+      "timer_seconds": 10
+    },
+    {
+      "mission": 1845,
+      "predecessor": 1844,
+      "begin": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "finish": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "objectives": [
+        [
+          1845,
+          1,
+          1,
+          1
+        ]
+      ],
+      "materials": [],
+      "timer_seconds": null
+    },
+    {
+      "mission": 1846,
+      "predecessor": 1845,
+      "begin": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "finish": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "objectives": [
+        [
+          1846,
+          1,
+          1,
+          10
+        ],
+        [
+          1846,
+          1,
+          2,
+          10
+        ]
+      ],
+      "materials": [],
+      "timer_seconds": null
+    },
+    {
+      "mission": 1847,
+      "predecessor": 1846,
+      "begin": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "finish": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "objectives": [
+        [
+          1847,
+          1,
+          1,
+          2
+        ]
+      ],
+      "materials": [],
+      "timer_seconds": 20
+    },
+    {
+      "mission": 1848,
+      "predecessor": 1847,
+      "begin": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "finish": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "objectives": [
+        [
+          1848,
+          1,
+          1,
+          1
+        ]
+      ],
+      "materials": [],
+      "timer_seconds": null
+    },
+    {
+      "mission": 1849,
+      "predecessor": 1848,
+      "begin": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "finish": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "objectives": [
+        [
+          1849,
+          1,
+          1,
+          5
+        ],
+        [
+          1849,
+          1,
+          2,
+          5
+        ]
+      ],
+      "materials": [],
+      "timer_seconds": null
+    },
+    {
+      "mission": 1850,
+      "predecessor": 1849,
+      "begin": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "finish": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "objectives": [
+        [
+          1850,
+          1,
+          1,
+          10
+        ]
+      ],
+      "materials": [
+        [
+          721931,
+          1
+        ]
+      ],
+      "timer_seconds": null
+    },
+    {
+      "mission": 1851,
+      "predecessor": 1850,
+      "begin": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "finish": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "objectives": [],
+      "materials": [],
+      "timer_seconds": null
+    },
+    {
+      "mission": 1852,
+      "predecessor": 1851,
+      "begin": [
+        4704,
+        1002,
+        466,
+        331
+      ],
+      "finish": [
+        8796,
+        1002,
+        473,
+        300
+      ],
+      "objectives": [],
+      "materials": [],
+      "timer_seconds": null
+    }
+  ],
+  "items": [
+    721715,
+    721924,
+    721926,
+    721928,
+    721929,
+    721931,
+    728251
+  ],
+  "minimum_level": 115,
+  "client_maximum": 135,
+  "reward_pack": 728251,
+  "implemented": false,
+  "aggregate_10931_proven": false,
+  "sha256": {
+    "quest": "f783c2a8ead9461a469c79b6c7e7aae00b2604066d4bc6e2e2c56d7e98fc5e14",
+    "items": "52889c537ddd00a6f4d349fa9243268dfedc81ab3899523f1e434218735387cb"
+  }
+}

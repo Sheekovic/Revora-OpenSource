@@ -1,0 +1,108 @@
+{
+  "scope": "Explicit Revora private reuse of map1011 around the verified Swan Lake entrance; not original missing interior restoration. Native/server blocked cells and seven routes agree after reserving Herbalist Chou footprint at475,840. Incense moves from original interior55,109 to475,844. Native rendering/portal acceptance pending.",
+  "scenes": [
+    {
+      "map": 1011,
+      "client_bindings": [
+        [
+          "map/map/woods.7z",
+          256
+        ]
+      ],
+      "server_bindings": [
+        [
+          "map/map/woods.7z",
+          256
+        ]
+      ],
+      "server_floor_exists": true,
+      "verified": true,
+      "dimensions": [
+        944,
+        944
+      ],
+      "sha256": {
+        "server": "7e8f7a8262f8ae93a314699af6d276f0324fff6c32bcc6061bffc2f336f1e817",
+        "archive": "27d16d937ca171aef33a36ab4d46ba9b754c0c7e6bdf732cc5878853e8bb78be",
+        "native": "71144fb55181044fce3fe1312bcb331c3473c88334ac144c713ea9cde2296649"
+      },
+      "differing_cells": 0,
+      "points": [
+        {
+          "x": 471,
+          "y": 844,
+          "walkable": true
+        },
+        {
+          "x": 473,
+          "y": 844,
+          "walkable": true
+        },
+        {
+          "x": 475,
+          "y": 844,
+          "walkable": true
+        },
+        {
+          "x": 477,
+          "y": 840,
+          "walkable": true
+        },
+        {
+          "x": 479,
+          "y": 844,
+          "walkable": true
+        },
+        {
+          "x": 481,
+          "y": 844,
+          "walkable": true
+        },
+        {
+          "x": 483,
+          "y": 844,
+          "walkable": true
+        }
+      ],
+      "routes": [
+        {
+          "x": 471,
+          "y": 844,
+          "steps": 0
+        },
+        {
+          "x": 473,
+          "y": 844,
+          "steps": 2
+        },
+        {
+          "x": 475,
+          "y": 844,
+          "steps": 4
+        },
+        {
+          "x": 477,
+          "y": 840,
+          "steps": 10
+        },
+        {
+          "x": 479,
+          "y": 844,
+          "steps": 8
+        },
+        {
+          "x": 481,
+          "y": 844,
+          "steps": 10
+        },
+        {
+          "x": 483,
+          "y": 844,
+          "steps": 12
+        }
+      ]
+    }
+  ],
+  "all_scenes_available": true,
+  "native_acceptance": false
+}

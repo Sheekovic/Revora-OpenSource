@@ -1,0 +1,30 @@
+{
+  "scope": "Fresh character Moon Box quest with unforced tactic/token RNG and calculated combat; private handler evidence",
+  "character_uid": 1096322,
+  "baseline_commit": "9355f2679f76037d23088408bdf971d2b58a11d9",
+  "executable_sha256": "3fb610b2493460b21c8c7530be8ee3790e6cde5931d3ffc3baeb31c49e5511a0",
+  "fixture_sha256": "bc5166fe67d1cee859a3ce1035ef78811916faac0ceb833b297097b9e7e3699a",
+  "checkpoint": "revora_fresh_moon_probe",
+  "tactic_visits": 60,
+  "kills": 114,
+  "calculated_melee_attacks": 226,
+  "surrendered_runs": 8,
+  "rng_override": false,
+  "rewards": [
+    "Unbound Moon Box721090, held for final promotion",
+    "One bound P7 soul from installed quest reward catalog"
+  ],
+  "passed_logs": {
+    "career-fresh-moon-earn": "3a5e73d60de85f05de93666f38f6910c5cab20da70c04fabc14a8fb5728d75f8",
+    "career-fresh-moon-reload": "8f8bb4d4250879fbc9da89300d20c923adb561da2f338d8b0d28340c03110149"
+  },
+  "controls": [
+    "Disconnected timer-free session",
+    "Initial school-to-town transport, NPC/monster proximity, attack timestamps"
+  ],
+  "limits": [
+    "No native/navigation/retaliation/pacing proof",
+    "Final promotion and later career remain open",
+    "Frozen owner starter overlay; see FRESH_STARTER_VALIDATION.json"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "baseline_commit": "4b2c5c31d0abe7dcb2dbb14736809b4644a8044f",
+  "character_uid": 1096322,
+  "checkpoint": "revora_fresh_second_promotion_probe",
+  "game_sha256": "b90e35e9f3281b416da579ba2acc568be1997bdd17a9648d6071cc0b5f1c8826",
+  "prior_overlay_provenance": "docs/research/FRESH_REBIRTH_VALIDATION.json",
+  "fixture_sha256": {
+    "CheckCandidateFreshSecondLife.cs": "2fd139e2db007b68bcb370fbbb63ca185cd91ab295d502a196760e15dae2e836",
+    "CheckCandidateFreshSecondMoon.cs": "9ffb281d305fef6057801eb00695cbd3d4aabaec2cb96966a98c5af9ab35ad3b",
+    "CheckCandidateArenaLifecycle.cs": "3f54e3c30ffd6d0693b80099d20237179c4d0663e19183560f1216d911450d90",
+    "Invoke-CandidateArenaLifecycle.ps1": "833883a34b6c2529d7bf47c1df1e30b3a43df403b34f778ce4691fc5e4710054"
+  },
+  "logs": {
+    "arena-process-career-fresh-second-life-reload.log": "10e98fc054aea247b05e8da49d116d30aedb9b234b3719b37cf6a76fbaa7899e",
+    "arena-process-career-fresh-second-life-train.batch1.log": "fecfd4e481b65b78b90c657ea02074cc5a0fabc8dd4678127f17b66597d07a75",
+    "arena-process-career-fresh-second-life-train.batch2.log": "c8fcfe48589f7def7efcfa0e1fec25106f921a62a49e19b63ec32b5e78fbd043",
+    "arena-process-career-fresh-second-life-train.log": "53dbf987028e8fda4405bc0f4a6bb5767afe6b8a3f1d6f3124d84bb8044e4cbd",
+    "arena-process-career-fresh-second-moon-earn.log": "c00dc59503d1ef2c3fc71210d0bf0e0eabfc0ab7147053493084d2c4498580aa",
+    "arena-process-career-fresh-second-moon-promote-reload.log": "17b3594c8c4d7b0fb797e5b4e0934dacc20a8b5f8ed053d8a071f14171743369",
+    "arena-process-career-fresh-second-moon-promote.log": "5a9bc50269faa127a3cc74ab4db8026b2a3aef51118c4b8c31ea6620786b6531",
+    "arena-process-career-fresh-second-moon-reload.log": "d94c247f36ac3e5038074a5360b9bab66c30aec98ffb55c907935b3de701952b"
+  },
+  "result": {
+    "level": 110,
+    "class": 15,
+    "reborn": 1,
+    "cps": 173959,
+    "training_kills": 5148,
+    "training_hits": 6159,
+    "moon_visits": 41,
+    "moon_kills": 102,
+    "moon_hits": 204,
+    "moon_surrenders": 4,
+    "first_rebirth_starter_claims": 1
+  },
+  "scope": [
+    "Three bounded training processes then separate cold reload; repeated Moon quest and separate cold reload; final promotion and separate cold reload",
+    "No supplied profile, equipment, purse, EXP or damage; no clock or RNG overrides",
+    "Controlled proximity, teleports and attack cooldown; native pace/retaliation unproven",
+    "No additional daily EXP purchase or first-life recovery; level120/second rebirth remain open",
+    "No game rebuild, deployment or native acceptance in this batch"
+  ]
+}

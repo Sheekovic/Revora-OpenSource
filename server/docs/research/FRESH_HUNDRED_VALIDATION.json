@@ -1,0 +1,59 @@
+{
+  "scope": "Fresh character level70 to100 with paid EXP Balls and calculated combat, fourth promotion and three-item starter milestone; private handler evidence",
+  "character_uid": 1096322,
+  "baseline_commit": "50ca75698b437e4151d4503b2c1ff3ac4f640489",
+  "executable_sha256": "3fb610b2493460b21c8c7530be8ee3790e6cde5931d3ffc3baeb31c49e5511a0",
+  "fixture_sha256": "9faa3277b8062bbf0e413de1b8541dfd45355bda3048020f79c8d4f744861dc8",
+  "checkpoint": "revora_fresh_hundred_probe",
+  "exp_balls": 10,
+  "exp_ball_unit_cps": 27,
+  "exp_ball_clock_override": false,
+  "kills": 3520,
+  "calculated_melee_attacks": 11830,
+  "logged_family_examples": [
+    [
+      "14",
+      "SandMonster",
+      "3842"
+    ],
+    [
+      "15",
+      "HillMonster",
+      "4908"
+    ],
+    [
+      "16",
+      "RockMonster",
+      "5642"
+    ],
+    [
+      "17",
+      "BladeGhost",
+      "7786"
+    ],
+    [
+      "18",
+      "Birdman",
+      "8952"
+    ]
+  ],
+  "level": 100,
+  "class": 14,
+  "remaining_exp": 132448,
+  "meteor_catalog_cps": 3,
+  "earned_cps": 26940,
+  "final_cps": 52081,
+  "passed_logs": {
+    "career-fresh-hundred-earn": "772e25ca0c0fa232f60e76d9c7930326a4c48f7a1030384cd512bec92812ac1f",
+    "career-fresh-hundred-reload": "61579d9b0f217d508e06ec0a83d91e2e620ed94ff7eacdc7e31fa71487d3b70e"
+  },
+  "controls": [
+    "Disconnected timer-free session",
+    "Map transport, proximity, attack timestamps"
+  ],
+  "limits": [
+    "No native/navigation/retaliation/pacing proof",
+    "Later progression and client/deployment gates remain open",
+    "Frozen owner starter overlay; see FRESH_STARTER_VALIDATION.json"
+  ]
+}

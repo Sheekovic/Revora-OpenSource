@@ -1,0 +1,69 @@
+{
+  "client_item_sha256": "52889c537ddd00a6f4d349fa9243268dfedc81ab3899523f1e434218735387cb",
+  "policy": "Revora class selection; level 67, except Archer level 62 because the next Archer hat is level 72. Not a recovered original pack script.",
+  "items": [
+    {
+      "id": 118068,
+      "name": "WarCoronet",
+      "class": 11,
+      "level": 67,
+      "quality": 8
+    },
+    {
+      "id": 111068,
+      "name": "GoldHelmet",
+      "class": 21,
+      "level": 67,
+      "quality": 8
+    },
+    {
+      "id": 113038,
+      "name": "LeopardHat",
+      "class": 40,
+      "level": 62,
+      "quality": 8
+    },
+    {
+      "id": 112068,
+      "name": "BloodVeil",
+      "class": 50,
+      "level": 67,
+      "quality": 8
+    },
+    {
+      "id": 143068,
+      "name": "HeadbandOfRepentance",
+      "class": 60,
+      "level": 67,
+      "quality": 8
+    },
+    {
+      "id": 144068,
+      "name": "CalmHat",
+      "class": 70,
+      "level": 67,
+      "quality": 8
+    },
+    {
+      "id": 148068,
+      "name": "BreezeHood",
+      "class": 80,
+      "level": 67,
+      "quality": 8
+    },
+    {
+      "id": 114068,
+      "name": "SharkCap",
+      "class": 190,
+      "level": 67,
+      "quality": 8
+    },
+    {
+      "id": 170068,
+      "name": "DarkCloudHat",
+      "class": 160,
+      "level": 67,
+      "quality": 8
+    }
+  ]
+}

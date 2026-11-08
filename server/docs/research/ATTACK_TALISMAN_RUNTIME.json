@@ -1,0 +1,247 @@
+{
+  "scope": "Read-only loaded monster catalog and public NPC/spawn SELECT probe; no schema mutation, 2026-09-26.",
+  "monster_terms": [
+    "viper",
+    "brigand",
+    "crimson",
+    "courtesan",
+    "poem",
+    "lyra",
+    "winged"
+  ],
+  "monsters": [
+    {
+      "id": 6,
+      "name": "WingedSnake",
+      "level": 27,
+      "mesh": 203,
+      "hp": 445,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "WingedSnakeL28",
+      "level": 28,
+      "mesh": 203,
+      "hp": 890,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 4036,
+      "name": "WingedSnakeKin",
+      "level": 126,
+      "mesh": 203,
+      "hp": 65535,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8101,
+      "name": "WingedSnakeMsgr",
+      "level": 27,
+      "mesh": 203,
+      "hp": 800,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8201,
+      "name": "WingedSnakeAide",
+      "level": 27,
+      "mesh": 203,
+      "hp": 800,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8301,
+      "name": "WingedSnakeKing",
+      "level": 27,
+      "mesh": 203,
+      "hp": 26680,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=True"
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "id": 4580,
+      "map": 1782,
+      "x": 38,
+      "y": 38,
+      "lookface": 3797,
+      "name": "None"
+    },
+    {
+      "id": 4582,
+      "map": 1011,
+      "x": 788,
+      "y": 456,
+      "lookface": 3600,
+      "name": "None"
+    },
+    {
+      "id": 4587,
+      "map": 1015,
+      "x": 653,
+      "y": 700,
+      "lookface": 3500,
+      "name": "None"
+    },
+    {
+      "id": 4588,
+      "map": 1015,
+      "x": 664,
+      "y": 691,
+      "lookface": 3510,
+      "name": "None"
+    },
+    {
+      "id": 4591,
+      "map": 1015,
+      "x": 656,
+      "y": 693,
+      "lookface": 3540,
+      "name": "None"
+    },
+    {
+      "id": 4592,
+      "map": 1791,
+      "x": 59,
+      "y": 61,
+      "lookface": 3550,
+      "name": "None"
+    },
+    {
+      "id": 4593,
+      "map": 1791,
+      "x": 59,
+      "y": 56,
+      "lookface": 3560,
+      "name": "None"
+    },
+    {
+      "id": 4594,
+      "map": 1791,
+      "x": 59,
+      "y": 51,
+      "lookface": 3570,
+      "name": "None"
+    },
+    {
+      "id": 4595,
+      "map": 1791,
+      "x": 55,
+      "y": 55,
+      "lookface": 3580,
+      "name": "None"
+    },
+    {
+      "id": 4600,
+      "map": 1782,
+      "x": 60,
+      "y": 38,
+      "lookface": 3797,
+      "name": "None"
+    }
+  ],
+  "spawns": [
+    {
+      "id": 7,
+      "map": 1011,
+      "x": 317,
+      "y": 77,
+      "width": 300,
+      "height": 500,
+      "max_per_gen": 300,
+      "family": 6
+    },
+    {
+      "id": 1103,
+      "map": 1076,
+      "x": 286,
+      "y": 87,
+      "width": 160,
+      "height": 120,
+      "max_per_gen": 5,
+      "family": 6
+    },
+    {
+      "id": 1503,
+      "map": 1523,
+      "x": 62,
+      "y": 89,
+      "width": 10,
+      "height": 10,
+      "max_per_gen": 0,
+      "family": 6
+    },
+    {
+      "id": 56,
+      "map": 1011,
+      "x": 317,
+      "y": 77,
+      "width": 150,
+      "height": 50,
+      "max_per_gen": 40,
+      "family": 65
+    },
+    {
+      "id": 8002,
+      "map": 1011,
+      "x": 317,
+      "y": 77,
+      "width": 150,
+      "height": 50,
+      "max_per_gen": 40,
+      "family": 8101
+    },
+    {
+      "id": 8022,
+      "map": 1011,
+      "x": 317,
+      "y": 77,
+      "width": 150,
+      "height": 50,
+      "max_per_gen": 40,
+      "family": 8201
+    },
+    {
+      "id": 8042,
+      "map": 1011,
+      "x": 317,
+      "y": 77,
+      "width": 150,
+      "height": 50,
+      "max_per_gen": 40,
+      "family": 8301
+    }
+  ],
+  "missing_scene_candidates": [
+    1788,
+    1789,
+    1790,
+    1791
+  ],
+  "interpretation": "Only Winged Snake relatives match. Candidate scene IDs have no installed client/server binding or floor. Scene candidate1791 contains clustered NPCs4592-4595; their original names are absent; other candidate identities remain unverified."
+}

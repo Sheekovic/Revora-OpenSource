@@ -1,0 +1,548 @@
+{
+  "uid": 4294907001,
+  "ledgers": [
+    {
+      "source": "appearance",
+      "currency": "silver",
+      "receipts": 6,
+      "spent": 11500
+    },
+    {
+      "source": "attack_talisman",
+      "currency": "silver",
+      "receipts": 1,
+      "spent": 10000
+    },
+    {
+      "source": "defense_talisman",
+      "currency": "silver",
+      "receipts": 3,
+      "spent": 90000
+    },
+    {
+      "source": "desert_portrait",
+      "currency": "silver",
+      "receipts": 1,
+      "spent": 99999
+    },
+    {
+      "source": "equipment_repairs",
+      "currency": "silver",
+      "receipts": 127,
+      "spent": 1120685
+    },
+    {
+      "source": "euro_shop",
+      "currency": "CP",
+      "receipts": 69,
+      "spent": 39433
+    },
+    {
+      "source": "exemption_and_stones",
+      "currency": "CP",
+      "receipts": 1225,
+      "spent": 3572100
+    },
+    {
+      "source": "furniture",
+      "currency": "CP",
+      "receipts": 12,
+      "spent": 30000
+    },
+    {
+      "source": "furniture",
+      "currency": "silver",
+      "receipts": 1,
+      "spent": 100000
+    },
+    {
+      "source": "gem_composition",
+      "currency": "silver",
+      "receipts": 1,
+      "spent": 10000
+    },
+    {
+      "source": "honor_shop",
+      "currency": "Honor",
+      "receipts": 2,
+      "spent": 43000
+    },
+    {
+      "source": "house_construction",
+      "currency": "silver",
+      "receipts": 5,
+      "spent": 7800000
+    },
+    {
+      "source": "magnolia",
+      "currency": "CP",
+      "receipts": 1,
+      "spent": 100
+    },
+    {
+      "source": "mount_kit",
+      "currency": "CP",
+      "receipts": 1,
+      "spent": 40000
+    },
+    {
+      "source": "ninja_epic",
+      "currency": "CP",
+      "receipts": 5,
+      "spent": 54
+    },
+    {
+      "source": "oblivion_dew",
+      "currency": "CP",
+      "receipts": 40,
+      "spent": 80000
+    },
+    {
+      "source": "peak_eligibility",
+      "currency": "CP",
+      "receipts": 1,
+      "spent": 25000
+    },
+    {
+      "source": "reincarnation",
+      "currency": "CP",
+      "receipts": 40,
+      "spent": 200000
+    },
+    {
+      "source": "sign_in",
+      "currency": "RVP",
+      "receipts": 70,
+      "spent": 280000
+    },
+    {
+      "source": "travel_scrolls",
+      "currency": "silver",
+      "receipts": 22,
+      "spent": 4600
+    },
+    {
+      "source": "vestments",
+      "currency": "CP",
+      "receipts": 5,
+      "spent": 200000
+    },
+    {
+      "source": "vip",
+      "currency": "CP",
+      "receipts": 1,
+      "spent": 50000
+    },
+    {
+      "source": "weapon_books",
+      "currency": "silver",
+      "receipts": 79,
+      "spent": 296317
+    }
+  ],
+  "totals": [
+    {
+      "currency": "CP",
+      "receipts": 1400,
+      "spent": 4236687
+    },
+    {
+      "currency": "Honor",
+      "receipts": 2,
+      "spent": 43000
+    },
+    {
+      "currency": "RVP",
+      "receipts": 70,
+      "spent": 280000
+    },
+    {
+      "currency": "silver",
+      "receipts": 246,
+      "spent": 9543101
+    }
+  ],
+  "date": "2026-10-04",
+  "scope": "Read-only historical expense subset for the retained character; not all purchases or selected-route total",
+  "receipt_count": 1718,
+  "funding_comparison": {
+    "net_per_modeled_boss": {
+      "CP": 1000000,
+      "RVP": 50000,
+      "silver": 5628944
+    },
+    "wins_for_recorded_cash_subset": 6,
+    "honor_included_in_boss_comparison": false,
+    "initial_silver_reserve": 4371056,
+    "wins_for_subtotal_with_allowances": 8
+  },
+  "exclusions": [
+    "The omitted nobility donation is excluded from this selection budget.",
+    "Reward fields named amount or paid_cp are not counted as spending.",
+    "Failed Desert Treasure bids do not charge and are excluded; successful price is a conservative gross expense before its100-silver credit."
+  ],
+  "remaining_expense_sources": [
+    "Other generic equipment/tools and nonjournaled services, including initial weapons/gem composition inputs and variable Moon fare history.",
+    "Non-funding encounter healing/repair requirements remain dependent on encounter combat acceptance; do not assume the daily-boss model covers all encounters.",
+    "Natural RNG retry expense remains unbounded by observed controlled success-path totals."
+  ],
+  "limitations": [
+    "Some recorded expenses support discarded attempts or nonselected achievements; the subset is not an exact minimum route price.",
+    "No bound-CP purchases occurred in the two reviewed currency-selectable journals; the query preserves that distinction for other characters.",
+    "Six wins is only an arithmetic funding comparison, not six additional earned kills or a promised calendar completion time.",
+    "No items, currencies, receipts or character snapshots were changed. Only the private PostgreSQL instance was started and stopped for read-only queries.",
+    "Supplemental amounts are a constructed conservative budget, not additional observed expense receipts. Actual runtime guild prices and shop catalogs must match the cited configurations at release.",
+    "The conservative collection allowance overlaps some CP cosmetic purchase receipts. It deliberately over-reserves those purchases; the subtotal is not claimed to be minimum expenditure."
+  ],
+  "query_sha256": "c83bc2e64bdbe7cafc62f763217b5b1352851e43e92d97b14377f23b5798ce25",
+  "source_sha256": {
+    "Game/Features/AttackTalismanStore.cs": "c587ba0156891061cddf629d32ad8cab60e564450874cb8834ddc1a91d8b770d",
+    "Game/Features/DefenseTalismanStore.cs": "b5b0b03296cf60750fb9f3f093f8e9d1175b2b645df64eddc47a885b489e5451",
+    "Game/Features/DesertTreasureStore.Purchase.cs": "c8c76b1fa6a0ab41f698993d0001472c3d385a29097d9a9606a0162f7a981fc2",
+    "Game/Features/EquipmentUpgrades.cs": "62413c19eeb4b7fec62cda558858bfe8bc235ef4c5d0911c4899f104a2e7086d",
+    "Game/Features/EuroJerseyShop.cs": "e5219caf2befed18d00a34b03aa886c03bfd6d1a97028aa76ef1e297dd4fc438",
+    "Game/Features/ExemptionTokenShop.cs": "5f8aa161123bd38033e8cdae35ee85f69bd0004dda59d128c40e812f24646eba",
+    "Game/Features/GemComposition.cs": "1340d4cbe60be20e153e00c261e47135ca325991f83ee29052efc8e3699738d7",
+    "Game/Features/RevoraMasterSystem.cs": "10d349197719f707b6eebaa363ae68bda8969e41ef3d5bc952de167a28709a24",
+    "Game/Features/RevoraMasterPeak.cs": "ebb9d629fc9b77d7cb7ff578fe25d50d03297cf564e1836c0cafad9f02fc9e87",
+    "Game/Features/NinjaEpicStore.cs": "92c266362ca9aa8349101c2a2e713150362babb310bafbf843aabdb43832966d",
+    "Game/Features/TravelScrollShop.cs": "109cdb483f56ec16f8aa6cef2d8e4ba18e892bae24c038302c25640918e17eb8",
+    "Game/Features/WeaponBookShop.cs": "83b09238e750c740e78761eb3c1f3614b22ad06ff8ce25ebb387be21612306a6",
+    "Network/GamePackets/SignIn/MsgSignIn.cs": "269102659a6f381a13b980da576c109441e6e269e750a185f918336c8a92cb28",
+    "Game/Features/Housing.cs": "4a038c973bf010bcf3a09804054582744af19e023717a17856e2b12dcd174dd5",
+    "docs/HOUSE_VISITS.md": "d1bb1a10c9037ef5e876bd0c497c951ac2b1c9fb26af96b414857faf8d5ea6b0",
+    "docs/GUILD_OFFICE_EARNING_PLAN.md": "9757718d883ba2a4d93f87a661675adcb82a6330d9b96f984f69261415a4e3b3",
+    "docs/GUILD_FOUNDING_TRANSACTION.md": "2aadf06c5ba86acb4d483e90725d1f2ada19abb3a65d85def967ef39c134a764",
+    "docs/FULL_LEVEL_RUNE_ACHIEVEMENTS.md": "66516620435edee2e4d4499b8d9462f0677d7bf2c236cde102c3a29d84341a78",
+    "docs/RUNE_ACQUISITION.md": "1dbba148feb1812afbe038baf43172af17ecca447f6d169ae1b12164782090fb",
+    "docs/research/CAREER_RESOURCE_DEPENDENCIES.json": "9936d1d88b4d79c2eef702069a96f5568119b807deeca717a75aa8f9c29ca48a",
+    "docs/research/FRESH_PEER_PREREQUISITES.json": "067a6e2e0b2502d431e36abe8b241c61906c3434adb195c8659dff734faf73aa",
+    "Game/Features/CosmeticOwnership.cs": "bc2d2b0e070ef1610cff51e2b601f4e8e656de66d7740a63243fa76192da857c",
+    "Game/Features/MagnoliaQuest.cs": "d09f86a782354dce32c1079dbda5e83601afba641004343f973951cc870e2427",
+    "Game/Features/MagnoliaSeeds.cs": "fddc605b378593a9066ad2704540abbf1c571f5a3deb873491b388a198a1a02a",
+    "Game/Features/GenderChange.cs": "f1b2a222e24381d699f9d1573126cba7d2d86ad84d728cbb1c14909d5ed7236d",
+    "tools/CheckCandidateCareerRites.cs": "a5eb50e4784861a4dbb8dc54fede733a14c063031f52065c6a8a8d3783f3bc50",
+    "tools/CheckCandidateCollectionLifecycle.cs": "ee987fc7a065ec76324a9606ba913582a33e73c127fe2dee9abcee06174c050c",
+    "docs/FLOWER_QUEEN_EARNING.md": "7deaf987c9cfda0dcb58bafb2c21261f4971b2f2b90f168a2c8cd309e7db4d42",
+    "docs/CLAN_MEMBERSHIP_EARNING.md": "e4369382c81ada5045542d86daa8556559e96899b20104b7d1bb420e108657a6",
+    "tools/CheckCareerRecoveryBudget.cs": "dbc0a1526c2cfc2fcd2d030abd5cb5c2157cd9109a6e3f4088c44ef13dce4b38",
+    "tools/Verify-CareerRecoveryBudget.ps1": "a55285ef18472459c10c87b535aa72d9b0ff464ce247e106a5642f88cd33364a",
+    "Game/Features/ExperienceMath.cs": "f724f08983384da9e8cf0406804ac92811559fb803e45d8c40528b8bc50cf37a",
+    "Game/Features/ExperienceConsumables.cs": "9bfa1791b52378f3c4d04f2b02390440d94c5e83bd11a035155526d0f9d42067",
+    "Database/DataHolderTable.cs": "4e41ac30cbc7bab6c8e5ebecc8b476365ae15897f68dcb5f1f56b21d7a0cf7b3",
+    "Game/Features/EquipmentSockets.cs": "1e5ec6b523315de5856cf3476e0e6b9fb7152959cfdeb0de6e103029ae974365",
+    "Game/Features/ItemEnchantment.cs": "a2ef487adf68ff1f2491ef0709287693de66c30b3183444d2c41a22b40df15f5",
+    "Game/Features/MiningPassage.cs": "b74a36665c39a5d1cd672fe377efdf0e3c185c19ec5e7d0225fc893f6107d4e4",
+    "Game/Features/TrainingGroundPassage.cs": "d61f539678aa60343eeb0f111ff14dc6d22d1274093f0edaea6c92105814af31",
+    "Game/Features/AdventureTravel.cs": "8054d77b775dbd6bf5466c2b4ebf848dbddb598a1123768f977bce4823652036",
+    "docs/ARTIFACT_EARNED_ROUTE.md": "41920ba01dd0ab4d54f8f6812a4d73e2aeb1b76d9187168fee7852ce17240c46",
+    "Database/ConquerItemInformation.cs": "f4604a614f44ad1d2dcfe253f904392f79dedd4d4c6be62f3bd77ba097d672ad"
+  },
+  "supplemental_budget_allowances": [
+    {
+      "name": "five_house_certificates",
+      "currency": "CP",
+      "amount": 36000,
+      "basis": "Five successful career-house earn quotes; construction silver already in ledger."
+    },
+    {
+      "name": "guest_host_certificate",
+      "currency": "CP",
+      "amount": 8000,
+      "basis": "Existing ordinary trade funds separate level-one host; HOUSE_VISITS.md."
+    },
+    {
+      "name": "guest_host_construction",
+      "currency": "silver",
+      "amount": 300000,
+      "basis": "Separate host house; main construction ledger must not substitute for it."
+    },
+    {
+      "name": "two_guild_foundings",
+      "currency": "CP",
+      "amount": 50000,
+      "basis": "Conservative two ordinary guilds at current25000-CP default, including opposing field."
+    },
+    {
+      "name": "two_supervisor_donors",
+      "currency": "CP",
+      "amount": 1636996,
+      "basis": "Two ordinary818498-CP donations funded through trades; GUILD_OFFICE_EARNING_PLAN.md."
+    },
+    {
+      "name": "honorary_appointment",
+      "currency": "CP",
+      "amount": 320,
+      "basis": "Acting leader fee; earlier class-kit purchases already included."
+    },
+    {
+      "name": "three_arsenal_unlocks",
+      "currency": "silver",
+      "amount": 20000000,
+      "basis": "Conservative personal funding for5M+5M+10M unlocks; donation and subsequent guild expenditure are one expense, not two."
+    },
+    {
+      "name": "all_class_rune_purchases",
+      "currency": "RVP",
+      "amount": 19000,
+      "basis": "3250 initial five-rune loadout plus15750 for nine further red/blue pairs; +Stones and rites already in ledger."
+    },
+    {
+      "name": "subclasses_zero_initial_study",
+      "currency": "CP",
+      "amount": 51389,
+      "basis": "Conservative zero-Study route from CAREER_RESOURCE_DEPENDENCIES.json; generic subclass shop absent from historical purchase ledger."
+    },
+    {
+      "name": "second_rebirth_token",
+      "currency": "CP",
+      "amount": 888,
+      "basis": "Constructed route replaces excluded Abyss route with proved Exemption Token; allowance remains conservative if a spare token is already covered."
+    },
+    {
+      "name": "earned_peer_leveling",
+      "currency": "CP",
+      "amount": 17010,
+      "basis": "Fresh peer qualification purchases4806+12204; additional qualification capacity rather than gifted levels."
+    },
+    {
+      "name": "initial_collection",
+      "currency": "CP",
+      "amount": 54241,
+      "basis": "Exact before/after saved wardrobe and collection checkpoints; other three purse components unchanged."
+    },
+    {
+      "name": "later_collection_cp",
+      "currency": "CP",
+      "amount": 32775,
+      "basis": "Completed CareerStores quote; covers only purchases missing after the initial collection and Planet exchanges."
+    },
+    {
+      "name": "later_collection_rvp",
+      "currency": "RVP",
+      "amount": 70000,
+      "basis": "Same completed store phase; these are distinct from sign-in and rune costs."
+    },
+    {
+      "name": "gender_rite",
+      "currency": "CP",
+      "amount": 25000,
+      "basis": "Retained female-before-marriage earning route; configured Sereth quote."
+    },
+    {
+      "name": "flower_bouquets",
+      "currency": "CP",
+      "amount": 2458,
+      "basis": "Two1229-CP bouquets, including the preserved unused first purchase; conservative versus one needed sender purchase."
+    },
+    {
+      "name": "flower_seed_changes",
+      "currency": "CP",
+      "amount": 2,
+      "basis": "Two observed one-CP sender rerolls with controlled successful outcomes; not a bound on natural random retries."
+    },
+    {
+      "name": "clan_founding",
+      "currency": "silver",
+      "amount": 100000,
+      "basis": "One ordinary founding at current default; clan fund is not charged a second time."
+    },
+    {
+      "name": "exp_recovery_reserve",
+      "currency": "CP",
+      "amount": 650160,
+      "basis": "Pure production EXP math from every starting level1..136; reserve forty no-restoration level15+ recoveries and three complete initial-life recoveries to137. Ignores free EXP/items, existing carried EXP and beneficial saved-level restoration."
+    },
+    {
+      "name": "recorded_equipment_materials",
+      "currency": "CP",
+      "amount": 13154,
+      "basis": "Upgrade, socket, embedding, enchantment and broken-repair journals joined to unique installed catalog prices; +Stones remain in existing purchase totals."
+    },
+    {
+      "name": "artifact_purification_and_stabilization",
+      "currency": "CP",
+      "amount": 10490,
+      "basis": "Retained route:2500-CP P6 soul,30 Meteors at3 CP and two3950-CP BigPermanentStones. Target upgrades are in material journal quote, not added again."
+    },
+    {
+      "name": "artifact_target_weapon",
+      "currency": "silver",
+      "amount": 100000,
+      "basis": "The separately purchased100000-silver FrostBlade, per ARTIFACT_EARNED_ROUTE.md; not one of the CP class kits."
+    },
+    {
+      "name": "fixed_passages",
+      "currency": "silver",
+      "amount": 4300,
+      "basis": "Three mine entries at100, one training entry at1000, three Adventure entries at1000; saved trip counters and fixed source/database invariants."
+    }
+  ],
+  "reviewed_budget_subtotal": {
+    "CP": 6825570,
+    "Honor": 43000,
+    "RVP": 369000,
+    "silver": 30047401
+  },
+  "reused_log_sha256": {
+    "arena-process-career-house-earn.log": "63192146f5bf3705250cef3dfcd282c3c56d845dc7f5774a833ea7de756ca626",
+    "arena-process-career-house-reload.log": "cf90bf86f26885c248b4be9311180b1ca99d0028c1b768c4c4d348b77221321b",
+    "arena-process-career-retained-supervisor-earn.log": "394a6620d18a410972d2dfc8ee54429bdfe5f7664b9a6195184855643f41549f",
+    "arena-process-career-retained-supervisor-reload.log": "40f75a5348b3e662b291d3d1dfc603a48e4a655d8a2c9e1f7b9f6c916cc814ed",
+    "arena-process-career-retained-guildlevel-earn.log": "a4db905b3b4cc7b60183ce9357ab138a669687ebd70dfca10507f4d3632d126d",
+    "arena-process-career-retained-guildlevel-reload.log": "a30218cc20ec1e7d09d02ac54dad10f05e6ae12a0651bedc3346b7979ed03402",
+    "arena-process-career-retained-office-earn.log": "ea622b0027a16e16ab34c1de934d4e6b84d25312385d02f4b91d007b6bf6b50a",
+    "arena-process-career-retained-office-reload.log": "046c8f471368c864989dc0c9364f57b8fe27165a33df296ab0d572a19a6b0205",
+    "arena-process-career-stores-earn.log": "aa007e05220ba25bcb5c8fd3b6d391115a905b7d0f2f4dd331ac1c33d3ac6a96",
+    "arena-process-career-collection-earn.log": "10fe1ce0bd729eadb93b42b930debbccc97d0b2391b19eaeed66833ce780211c",
+    "arena-process-career-collection-reload.log": "933ae23f5dc1903bd97080927944c70afc6f589981f69bf9e8b8a50c2031203e",
+    "arena-process-career-stores-reload.log": "d2737f575eba8926055b33597850a494fc354211d9c37d1993354eefd1fb36ad"
+  },
+  "collection_checkpoint_comparison": {
+    "purse_fields": [
+      "CP",
+      "RVP",
+      "silver",
+      "bound_CP"
+    ],
+    "before": [
+      758033,
+      50000,
+      10008810,
+      0
+    ],
+    "after": [
+      703792,
+      50000,
+      10008810,
+      0
+    ],
+    "cp_spent": 54241,
+    "saved_query_output_sha256": "642ef621026d74dbf904bb67014816d422dcd358833f68d89963e5dfe35f4cb7",
+    "note": "Historical snapshots include nested JSON strings under career; decode those strings before looking for purse. No snapshot was rewritten."
+  },
+  "exp_recovery_bound": {
+    "result": {
+      "start_levels_checked": 136,
+      "from_level1_balls": 560,
+      "maximum_from_level15_or_later_balls": 560,
+      "recovery_cycles": 40,
+      "additional_initial_lives": 3,
+      "reserved_balls": 24080,
+      "unit_cps": 27,
+      "reserved_cps": 650160,
+      "target_level": 137,
+      "claims_level140": false
+    },
+    "runtime_sha256": "fc90f64ca4ee203b4e0dcdbf24fbedc000f4f7a87cc00ecde765b9020a633844",
+    "log_sha256": "16416307f9285402141e032d2389d30af3e8d81aef18b3f6ec4b631208423506",
+    "catalog_sha256": "cd160b51cd6670e9690f0ea2e935cccbf22c78a9b3acbf44c48a32fb995810c5",
+    "limits": [
+      "No character, DB, reward or clock is changed. This is arithmetic, not a new purchase/consumption/reload run.",
+      "Standard balls stop at137; the existing monster-earned137..140 route remains distinct.",
+      "Ten standard balls per day still applies. Price reserve does not accelerate that calendar or promise a completion date.",
+      "An extra three initial-life journeys is a conservative allowance; no extra rebirth is granted or required."
+    ]
+  },
+  "material_uses": [
+    {
+      "source": "embedding",
+      "item_type": 700043,
+      "units": 4
+    },
+    {
+      "source": "enchantment",
+      "item_type": 700042,
+      "units": 6
+    },
+    {
+      "source": "repair",
+      "item_type": 1088001,
+      "units": 30
+    },
+    {
+      "source": "sockets",
+      "item_type": 1088000,
+      "units": 12
+    },
+    {
+      "source": "upgrade",
+      "item_type": 1088000,
+      "units": 43
+    },
+    {
+      "source": "upgrade",
+      "item_type": 1088001,
+      "units": 103
+    }
+  ],
+  "fixed_passages": [
+    {
+      "source": "adventure",
+      "trips": 3,
+      "unit_silver": 1000
+    },
+    {
+      "source": "mining",
+      "trips": 3,
+      "unit_silver": 100
+    },
+    {
+      "source": "training",
+      "trips": 1,
+      "unit_silver": 1000
+    }
+  ],
+  "material_replenishment_quote": {
+    "rows": [
+      {
+        "source": "embedding",
+        "item_type": 700043,
+        "units": 4,
+        "unit_cps": 180,
+        "quoted_cps": 720
+      },
+      {
+        "source": "enchantment",
+        "item_type": 700042,
+        "units": 6,
+        "unit_cps": 35,
+        "quoted_cps": 210
+      },
+      {
+        "source": "repair",
+        "item_type": 1088001,
+        "units": 30,
+        "unit_cps": 3,
+        "quoted_cps": 90
+      },
+      {
+        "source": "sockets",
+        "item_type": 1088000,
+        "units": 12,
+        "unit_cps": 215,
+        "quoted_cps": 2580
+      },
+      {
+        "source": "upgrade",
+        "item_type": 1088000,
+        "units": 43,
+        "unit_cps": 215,
+        "quoted_cps": 9245
+      },
+      {
+        "source": "upgrade",
+        "item_type": 1088001,
+        "units": 103,
+        "unit_cps": 3,
+        "quoted_cps": 309
+      }
+    ],
+    "cps": 13154,
+    "scope": "Conservative repurchase quote for recorded consumed inputs, not new purchase receipts; refunds, reused extracted gems and freely earned materials are not credited back."
+  },
+  "material_catalog_sha256": {
+    "itemtype-new.txt": "cd160b51cd6670e9690f0ea2e935cccbf22c78a9b3acbf44c48a32fb995810c5",
+    "ItemtypeSub.txt": "6e318b1e53b0fb28036bd547b5cb78914e3e66b1272d8054259b6b0bcaa66aea"
+  }
+}

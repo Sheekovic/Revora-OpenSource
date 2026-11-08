@@ -1,0 +1,66 @@
+{
+  "scope": "Ordinary earned solo Snow victory with simultaneous timed enemy callbacks and cold outcome recovery; not native timing",
+  "uid": 1096322,
+  "server_side_victory_verified": true,
+  "profile_evidence": "docs/research/FRESH_SNOW_LOADOUT.json",
+  "result": {
+    "stage": 3,
+    "ticks": 324,
+    "hits": 306,
+    "damage": 105999995,
+    "received": 3,
+    "boss_healed": 6000000,
+    "unattributed_damage": 5,
+    "used": 0,
+    "bought": 77,
+    "min_hp": 23960,
+    "arrow_before": 1,
+    "arrow_after": 0
+  },
+  "simulated_elapsed_ms": 162000,
+  "medicine_purchase_silver": 77000,
+  "boss_initial_hp": 100000000,
+  "reward_evidence": {
+    "persisted_victory_killer": 1096322,
+    "study_paid": 100,
+    "saved_loot_entitlements": 3,
+    "new_loot_pickup_tested": false,
+    "existing_pickup_evidence": "docs/SNOW_BANSHEE_ENCOUNTER.md"
+  },
+  "controls": [
+    "One ordinary ranged dispatch at most per500ms; boss clock advances on every step",
+    "Stuns suppress attacks; medicine would replace an attack slot",
+    "Normal shop buys77 additional medicines; none consumed in this run",
+    "Existing earned level140 Archer kit; no damage, HP, purse or reward injection",
+    "No repair needed: all non-arrow equipment retains positive durability during the run"
+  ],
+  "accounting_limit": "Five HP of boss loss occurred outside measured player-attack windows. Reflect3060 is present and its enemy callback can cause this loss; that attribution is an inference, not a recorded per-hit trace. Original measured damage is preserved. The completed victory was not replayed.",
+  "arrow_defect": {
+    "observed_before": 1,
+    "observed_after_cold_reload": 0,
+    "cause": "Defensive wear wrongly required an arrow to have a non-offhand position before excluding it.",
+    "fix": "Exclude arrows from defensive wear, matching the existing attacking-side exclusion.",
+    "old_build_regression": "Fails when defensive wear tries to persist the arrow decrement; invalid connection-string guard prevents network/database access.",
+    "corrected_build_checks": 9,
+    "corrected_build_sha256": "bf6b3c12681cccb1c0c48823d03882f6afe8996c9745ae214788a6b0551de44d",
+    "private_character_arrow_replaced": false
+  },
+  "limits": [
+    "Clock and approach are controlled; cooldown eligibility is translated to the simulated500ms schedule",
+    "This tests one earned Archer loadout, not all-class or retail numerical parity",
+    "Arrow fix is isolated-build validated and not deployed into the private or live server",
+    "Native client and coordinated release remain pending"
+  ],
+  "log_sha256": {
+    "arena-process-career-fresh-arena-classes-mentor-snow-battle-prepare.log": "fceff2a4b74c74ea918e2faa7280567afdd09fb69a42c4985c3828d4b306d378",
+    "arena-process-career-fresh-arena-classes-mentor-snow-battle-accounting-failure.log": "216a72fbd6e7a68b7a1977691ae25dfcc47fba3a0970f6552a7fb18cdc61c29d",
+    "arena-process-career-fresh-arena-classes-mentor-snow-battle-reload.log": "8e921d976fee57f78e3565c999ef25ce0311f31f8122f80a524612703ee50cb8"
+  },
+  "private_server_sha256": "18cac3a8a6ef22f46175ef2fab4749adac8e2db09fc3ad323b944f39d969a5f3",
+  "source_sha256": {
+    "tools/CheckCandidateFreshSnow.cs": "2f94fbfc1e6604a8497dd7f953af6bd5828a6cad68017620e75af1b1a8bf93f4",
+    "tools/CheckCandidateFreshArenaClasses.cs": "b82622c4312999b830623ff02b4fe5649a1866d972ff385de2bdf169593b2a1b",
+    "Game/Attacking/Calculate.cs": "8e8a456205faf75b9b054904ed01a614a445e888aa8747ca99f1a5fb6cbdfed3",
+    "tests/CombatBalance/CombatTests.cs": "11773f976b30a9817652b5f34ebbbf5452477e944b295138d239a5164f1d7541"
+  }
+}

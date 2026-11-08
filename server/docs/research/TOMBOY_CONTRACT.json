@@ -1,0 +1,163 @@
+{
+  "stages": [
+    {
+      "mission": 1795,
+      "predecessor": 0,
+      "begin": [
+        8796,
+        1002,
+        473,
+        300
+      ],
+      "finish": [
+        4718,
+        1000,
+        461,
+        661
+      ],
+      "materials": []
+    },
+    {
+      "mission": 1796,
+      "predecessor": 1795,
+      "begin": [
+        4718,
+        1000,
+        461,
+        661
+      ],
+      "finish": [
+        4718,
+        1000,
+        461,
+        661
+      ],
+      "materials": [
+        [
+          710581,
+          10
+        ]
+      ]
+    },
+    {
+      "mission": 1797,
+      "predecessor": 1796,
+      "begin": [
+        4718,
+        1000,
+        461,
+        661
+      ],
+      "finish": [
+        4718,
+        1000,
+        461,
+        661
+      ],
+      "materials": [
+        [
+          710582,
+          1
+        ],
+        [
+          710583,
+          1
+        ],
+        [
+          710584,
+          1
+        ]
+      ]
+    },
+    {
+      "mission": 1798,
+      "predecessor": 1797,
+      "begin": [
+        4718,
+        1000,
+        461,
+        661
+      ],
+      "finish": [
+        4719,
+        1000,
+        460,
+        667
+      ],
+      "materials": []
+    },
+    {
+      "mission": 1799,
+      "predecessor": 1798,
+      "begin": [
+        4719,
+        1000,
+        460,
+        667
+      ],
+      "finish": [
+        8796,
+        1002,
+        473,
+        300
+      ],
+      "materials": []
+    }
+  ],
+  "items": {
+    "710581": "Marble",
+    "710582": "RuneJade",
+    "710583": "MoonJade",
+    "710584": "SunJade",
+    "721951": "LeafStone",
+    "721952": "MapleStone",
+    "721953": "OceanStone",
+    "728241": "Level82EliteNecklacePack"
+  },
+  "equipment": [
+    {
+      "id": 120158,
+      "name": "BasaltNecklace",
+      "required_class": 0,
+      "level": 82,
+      "quality": 8
+    },
+    {
+      "id": 121158,
+      "name": "JadeBag",
+      "required_class": 190,
+      "level": 82,
+      "quality": 8
+    }
+  ],
+  "recipes": [
+    {
+      "clicked": 721951,
+      "partner": 721952,
+      "result": 710582
+    },
+    {
+      "clicked": 721952,
+      "partner": 721953,
+      "result": 710583
+    },
+    {
+      "clicked": 721953,
+      "partner": 721951,
+      "result": 710584
+    }
+  ],
+  "minimum_level": 78,
+  "client_maximum": 98,
+  "reward_pack": 728241,
+  "original_drop_odds": null,
+  "original_fusion_odds": null,
+  "original_question": null,
+  "quest_implemented": false,
+  "native_acceptance": false,
+  "aggregate_10931_proven": false,
+  "sha256": {
+    "quest": "f783c2a8ead9461a469c79b6c7e7aae00b2604066d4bc6e2e2c56d7e98fc5e14",
+    "items": "52889c537ddd00a6f4d349fa9243268dfedc81ab3899523f1e434218735387cb"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "map": 1000,
+  "start": [
+    87,
+    313
+  ],
+  "npc_footprints": [
+    [
+      85,
+      313
+    ]
+  ],
+  "targets": [
+    {
+      "x": 89,
+      "y": 313,
+      "walk_steps": 2
+    }
+  ],
+  "walk_route_verified": true,
+  "sha256": {
+    "server": "c874aa5659420dfcf03545f1bfad67bea0197ae55fbc8140fcd7e85ffbae33f1",
+    "archive": "22a6b93a38be33b3fd1cb736b2bdb091d4a87fc1bf78d431227051515e964d10",
+    "native": "baedafd532acc86d81cdc08ed49b7ef0197e67c5e5d62ae0e8655265ccdd35f7"
+  },
+  "scope": "Static four-direction walking with the listed quest NPC footprints; other live objects, jumps and inter-city arrival not validated. Island start is a sampled walkable city point, not a verified teleport landing.",
+  "native_acceptance": false
+}

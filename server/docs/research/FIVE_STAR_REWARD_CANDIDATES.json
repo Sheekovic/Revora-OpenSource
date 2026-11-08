@@ -1,0 +1,823 @@
+{
+  "scope": "Catalog identities only; not native rendering, trade, permanence or earned-claim acceptance.",
+  "hashes": {
+    "server_rarity": "469ac492d7445ed6759827f04602a77e57179c361218dffcf79788fe165f4977",
+    "server_items": "1ed7a23b7a34b5e3706277f97e421e3cdf0b269eeb5be7367a4ebc0e4f22b3ef",
+    "client_rarity": "98b4a93581d4a34ee8a688d3c1416a34a921a9e6decd47f3552dc84eace41a5a",
+    "client_items": "d49f0658bf01387b99c284ddec81713838f2eae3adb8e63666e5c906f63cf87a"
+  },
+  "candidates": [
+    {
+      "id": 187405,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 188915,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 189065,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 189135,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 189496,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 189675,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 189690,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 189695,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 189766,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 193055,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different"
+      ]
+    },
+    {
+      "id": 193445,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 193525,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 193526,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 193565,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 193625,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 194395,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 194694,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 194700,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 194714,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 194724,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 194815,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 194820,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 194835,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 194875,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 194879,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195015,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195046,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195076,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195176,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195186,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195196,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195206,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195226,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195295,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195296,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195305,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195306,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195315,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195316,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195325,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195326,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195335,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195336,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195345,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195346,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195366,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195406,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195426,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 195486,
+      "category": "garment",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200449,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200482,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200489,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200494,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200517,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200524,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200525,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different"
+      ]
+    },
+    {
+      "id": 200531,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200532,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200533,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200537,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200540,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200544,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200559,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200560,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200564,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200572,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200573,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200575,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200580,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200581,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200592,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200596,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200600,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200601,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200606,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200607,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200613,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200614,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 200621,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200622,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200623,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200624,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200626,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200629,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200630,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    },
+    {
+      "id": 200632,
+      "category": "mount",
+      "stars": 5,
+      "catalog_verified": false,
+      "exclusions": [
+        "client rarity/type missing or different",
+        "missing loaded server item",
+        "missing client item"
+      ]
+    }
+  ]
+}

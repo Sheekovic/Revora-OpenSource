@@ -1,0 +1,40 @@
+{
+  "scope": "Loaded ordinary character readiness; no attack, purchase or full-combat acceptance",
+  "profile": {
+    "uid": 1096322,
+    "class": 41,
+    "level": 133,
+    "hp": 19664,
+    "bp": 358,
+    "minimum_attack": 5876,
+    "fan": 6633,
+    "dragon_gem_percent": 180,
+    "right_weapon": 410009,
+    "left_weapon": 0,
+    "bow_dispatch_equipped": false,
+    "unbuffed_ranged_arithmetic_floor": 35025,
+    "solo_full_uptime_floor": 21277,
+    "solo_half_uptime_floor": 42554,
+    "two_player_half_uptime_floor": 21277,
+    "current_damage_bound_only": true
+  },
+  "owned_bows": [],
+  "saved_career_snapshot_unchanged": true,
+  "combat_feasibility_verified": false,
+  "findings": [
+    "The current Archer41 equips blade410009, not a bow; the ranged arithmetic estimate cannot be used as an attack result.",
+    "The private read-only owned-item query found no bow in inventory, equipment or warehouses.",
+    "The blade-based profile gives35025 hypothetical ranged damage before positive random effects. Equipping another weapon changes stats and requires a new calculation.",
+    "Do not repeat loot earning or weaken healing to compensate for an unsuitable weapon. Validate an ordinarily acquired and equipped bow/arrow loadout first."
+  ],
+  "log_sha256": "9f8b35548edba92a413c148a35603e21b2661f64453f5abc45e801226fd62e39",
+  "owned_item_query_sha256": "187bedcd463928f74d4429441487e208678072b9130a60be0786c50ce6439874",
+  "owned_item_result_sha256": "50056c08ce479cc2f54c4d6595a4264bdf32bf84f2995d59ff3bd513897ab414",
+  "source_sha256": {
+    "tools/CheckCandidateFreshArenaClasses.cs": "286ebea0029eaf86992c59979a1ddea04458cf7ade5c40ba82af45bddc6361e0",
+    "Game/Attacking/PvM.cs": "d0b5f04a98440b9ad577338c94acc530535425c24f220eed2dc43dfb408b0044",
+    "Game/Attacking/Calculate.cs": "ab4ac7ef6727a46353d8cfe2670c0cf74d3f7eea7ce789b0b56ee1bd50803522",
+    "Game/Attacking/Handle.cs": "b6a00f22b36f66500bba94e9851d313c388101681def5e03e3e03ecd8cc24bce",
+    "Game/Features/SnowBansheeCombat.cs": "01cb25ecd9cef76f687ee10795e65d22624086e30f16532c388a44b20c3e5f98"
+  }
+}

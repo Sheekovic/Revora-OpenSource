@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../Revora.Domain/Revora.Domain.csproj" />
+  </ItemGroup>
+</Project>
+

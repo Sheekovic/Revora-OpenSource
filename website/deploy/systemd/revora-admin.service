@@ -1,0 +1,52 @@
+[Unit]
+Description=Revora protected administration platform
+After=network-online.target postgresql.service
+Wants=network-online.target
+Requires=postgresql.service
+StartLimitIntervalSec=300
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=revora-admin
+Group=revora-admin
+WorkingDirectory=/srv/revora-admin/app
+ExecStart=/srv/revora-admin/app/Revora.Admin --config config/revora-admin.json
+Restart=on-failure
+RestartSec=10
+TimeoutStartSec=30
+TimeoutStopSec=30
+KillSignal=SIGTERM
+UMask=0077
+
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_EnableDiagnostics=0
+Environment=COMPlus_EnableDiagnostics=0
+Environment=DOTNET_NOLOGO=1
+
+NoNewPrivileges=true
+PrivateDevices=true
+PrivateTmp=true
+ProtectClock=true
+ProtectControlGroups=true
+ProtectHome=true
+ProtectHostname=true
+ProtectKernelLogs=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectProc=invisible
+ProcSubset=pid
+ProtectSystem=strict
+ReadWritePaths=/srv/revora-admin/data
+CapabilityBoundingSet=
+AmbientCapabilities=
+LockPersonality=true
+RestrictNamespaces=true
+RestrictRealtime=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+IPAddressDeny=any
+IPAddressAllow=localhost
+
+[Install]
+WantedBy=multi-user.target

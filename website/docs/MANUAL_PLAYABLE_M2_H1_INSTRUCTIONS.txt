@@ -1,0 +1,13 @@
+Revora Manual Playable Baseline — Owner Test M2-H1 (one run only)
+
+1. Keep Microsoft Defender and Malwarebytes enabled. Do not run as Administrator.
+2. Extract the ZIP to a new ordinary user-owned folder. Do not place it inside a client folder.
+3. Verify the ZIP SHA-256 against the authenticated Admin dashboard value.
+4. Start Revora.Launcher.exe. Select the unchanged verified Test 2c clean donor.
+5. Click Prepare and start M2-H1 once. Wait for the genuine login/server surface.
+6. Manually enter only the provided throwaway development game account and press Enter once.
+7. Do not retry. Record the exact visible result and take one screenshot.
+8. Click Emergency Stop if the tool has not already completed.
+9. Return only Reports/manual-playable-m2-h1-*.json, the screenshot, and Defender/Malwarebytes results.
+
+Never return credentials, client files, raw packet captures, or private filesystem paths.

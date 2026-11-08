@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "asOfDate": "2026-08-29",
+  "authority": {
+    "ownerPackageClassification": "owner-provided-authorized-data",
+    "ownerSourceRole": "primary-gameplay-behavior-donor",
+    "exactClientRole": "final-wire-and-client-state-authority",
+    "revoraRole": "identity-network-crypto-persistence-security-authority",
+    "exactClientSha256": "902954c9b66911838fc8277a2f3d40cf8cd77ff413da2e759e3b74bb1ed93c2f"
+  },
+  "package": {
+    "ownerFilename": "ReVora-Essentials.zip",
+    "ignoredLocalResearchReference": "research/isolated/owner-complete-20260829/owner-complete.download",
+    "bytes": 28932493,
+    "sha256": "dbd508b66abf5966e2b326f4a7cc45e20a5350c8f18a9845579f7022b6a7a457",
+    "entries": 845,
+    "files": 835,
+    "directories": 10,
+    "uncompressedBytes": 486721093,
+    "archiveCrcValidated": true,
+    "encryptedEntries": 0,
+    "unsafePaths": 0,
+    "duplicateNames": 0,
+    "caseCollisionGroups": 0,
+    "symlinksOrSpecialFiles": 0
+  },
+  "scan": {
+    "engine": "ClamAV",
+    "engineVersion": "1.4.3",
+    "signatureCount": 3628034,
+    "outerNonEmptyTargetsScanned": 834,
+    "outerDirectDetections": 0,
+    "nestedDirectDetections": 2,
+    "nestedThreatName": "Win.Trojan.Banload-10873",
+    "detectedSha256": [
+      "0478e48f124255417fea0cde1d1d72906b695a9b8c1f5e09c32f711155b43831",
+      "2275c117692e545885e6aab8c52faff9f3672d8d52147cd56d9807f221bb76cc"
+    ],
+    "disposition": "exclude-entire-navicat-subtree"
+  },
+  "categoryManifests": [
+    { "category": "dmaps", "files": 192, "bytes": 458232872, "sha256": "1791135fdaecaaa6e506a195bd039e5185fb2887963bf594636ef2d66e036ec2" },
+    { "category": "puzzles", "files": 204, "bytes": 1531676, "sha256": "0d32ff793854b47bf1b66a0764d78238f72801adfb635ec5a52916447cc0aa11" },
+    { "category": "scenes", "files": 275, "bytes": 202116, "sha256": "22575947d9825a3bbd4ebbc2a4fe894b9083b931a7b45f15a2aa09cf4a288bcb" },
+    { "category": "scene-parts", "files": 126, "bytes": 72448, "sha256": "d81db3e1ecb9a8c123c01e310dbe33be8a1bc100d5183d9cc6c2b2e0acc64139" },
+    { "category": "text-catalogs", "files": 16, "bytes": 1422657, "sha256": "e58e0fd5863892be5027a0f475f06b37ef3691162d2fd0f05b30d938eb604be6" },
+    { "category": "dat-catalogs-and-state", "files": 12, "bytes": 125805, "sha256": "80fe73ab72ca7ff7df8f6926011251c03a6c488a50d0d871c4a0c71b0e99d45a" },
+    { "category": "ini-catalogs-and-config", "files": 4, "bytes": 146352, "sha256": "2f38affdb67899ce14d54ad91942f76b4454f0ee125c810b46c627432a50559e" }
+  ],
+  "resources": [
+    {
+      "id": "map-index",
+      "source": "GameMap.dat",
+      "sha256": "6cdcddc3e62b088738f0202276ebd4791864d6703d0e035ada75ab9fc877d9a6",
+      "counts": { "mappingRows": 222, "uniquePaths": 179, "resolvedRows": 213, "missingRows": 9 },
+      "formerBlocker": "substantially-resolved",
+      "conflicts": ["missing-kunlun-1-through-9", "dynamic-and-event-map-aliases-require-review"]
+    },
+    {
+      "id": "dmaps",
+      "counts": { "files": 192, "numeric1004": 121, "dmap101": 20, "numeric1003": 50, "dmap100": 1, "structurallyValidated": 192, "acceptedByCurrentRevoraParser": 192 },
+      "formerBlocker": "structurally-resolved",
+      "conflicts": ["supplied-newplain-differs-from-production-proven-map"]
+    },
+    {
+      "id": "item-definitions",
+      "source": "Items.txt",
+      "sha256": "40cc0138d48ed76247ca212e6ddf9add839b58e40865a262134c5956cf3ea609",
+      "counts": { "declared": 8405, "parsedRows": 8409, "uniqueIds": 8408, "duplicateIdenticalRows": 1 },
+      "formerBlocker": "resource-present-validation-required",
+      "conflicts": ["declared-count-does-not-match-loader-shaped-record-count"]
+    },
+    {
+      "id": "item-additions",
+      "source": "ItemAdd.ini",
+      "sha256": "61f95b4825ed2b847e0693859d5d99736c975c19e5f98d55a0344577f9834546",
+      "counts": { "rows": 5063, "baseIds": 422 },
+      "formerBlocker": "resolved",
+      "conflicts": ["base-family-ids-require-semantic-normalization"]
+    },
+    {
+      "id": "monster-types",
+      "source": "MobInfos.txt",
+      "sha256": "4f0106834578fab90410a0aefdfd99e298233ee637bf6f2fd8de33fda572bbd8",
+      "counts": { "rows": 189, "uniqueIds": 189 },
+      "formerBlocker": "resolved",
+      "conflicts": ["21-and-23-field-variants"]
+    },
+    {
+      "id": "monster-spawns",
+      "source": "MobSpawns.txt",
+      "sha256": "555055a610dbb98a624c85014eca5d3df9bb43d88bb10c2590cf776920a8c97e",
+      "counts": { "regions": 1004, "monsterTypes": 162, "maps": 53, "missingMonsterReferences": 0 },
+      "formerBlocker": "resource-present-validation-required",
+      "conflicts": ["maps-8004-through-8006-have-no-direct-gamemap-entry"]
+    },
+    {
+      "id": "specific-drop-rules",
+      "source": "DropRates.txt",
+      "sha256": "051037bd29d23f5ccebd48c22fdfebf9391eaf140e63951914d6a893d11c2adb",
+      "counts": { "monsterGroups": 44, "rules": 181, "missingItemReferences": 0, "localeCommaRates": 34 },
+      "formerBlocker": "resolved",
+      "conflicts": ["culture-dependent-decimal-format"]
+    },
+    {
+      "id": "equipment-drop-candidates",
+      "source": "EquipDrops.txt",
+      "sha256": "c9682e376ed4f12c50406d6de68274a8ab5faa3e1e2b7b4faac22a31b1e17f32",
+      "counts": { "rows": 1841, "uniqueRows": 1841, "missingItemReferences": 0 },
+      "formerBlocker": "resolved",
+      "conflicts": []
+    },
+    {
+      "id": "magic-types",
+      "source": "MagicType.txt",
+      "sha256": "4a2042a76438e1f003ace13732327ddb76cc39b40defa7e9bf719fe38b7ce4b0",
+      "counts": { "sourceRows": 764, "uniqueSkillIds": 431, "uniqueIdLevels": 759, "orderedLastReplacements": 5, "fortyEightFieldRows": 763, "fortyNineFieldRows": 1 },
+      "formerBlocker": "substantially-resolved",
+      "conflicts": ["one-field-count-variant", "exact-client-corroboration-required"]
+    },
+    {
+      "id": "level-and-class-stats",
+      "sources": ["ExpNeed.dat", "Stats.txt"],
+      "counts": { "levelThresholds": 129, "classStatKeys": 480 },
+      "formerBlocker": "resolved",
+      "conflicts": []
+    },
+    {
+      "id": "canonical-shop-catalog",
+      "source": "Shop.dat",
+      "sha256": "bfc0d22a6c814a0df0f25c1203b968da585badb531a2828dcc4be050451b231a",
+      "counts": { "shops": 34, "itemReferences": 1250, "uniqueItems": 678, "missingItemReferences": 0 },
+      "formerBlocker": "resolved",
+      "conflicts": ["noncanonical-shop-subdirectory-file-rejected"]
+    },
+    {
+      "id": "mysql-reference-export",
+      "source": "granger.sql",
+      "sha256": "e9971b72badb113ad27f6c0131bceb07953bffb1443d6caa6a600d091ee70657",
+      "counts": { "tables": 49, "insertStatements": 10573, "portals": 222, "npcs": 1373, "shops": 445, "itemAdditions": 5063, "dialogButtons": 58, "dialogs": 43, "furniture": 103, "dynamicMaps": 143 },
+      "formerBlocker": "deduplicated-against-retained-export",
+      "conflicts": ["contains-sensitive-and-historical-categories-that-must-never-be-imported"]
+    }
+  ],
+  "excluded": [
+    "navicat-and-keygens",
+    "all-compiled-legacy-binaries",
+    "config-secrets",
+    "accounts-passwords-and-reset-data",
+    "historical-characters-and-inventories",
+    "ip-online-log-session-and-audit-history",
+    "payment-voting-vip-and-ranking-history",
+    "guild-house-nobility-and-killboard-snapshots",
+    "raw-donor-sql-execution",
+    "legacy-mysql-nhibernate-runtime",
+    "dynamic-compilation-reflection-handler-discovery-and-unrestricted-scripts",
+    "proprietary-client-assets-in-git-or-public-packages",
+    "unknown-license-third-party-code"
+  ],
+  "stagingSnapshot": {
+    "disposablePostgreSqlApply": "passed-twice-idempotently",
+    "featureGatesEnabled": 0,
+    "validatedInputRows": 27441,
+    "stagedCounts": { "maps": 222, "mapDocuments": 213, "items": 8408, "enhancements": 5063, "shops": 27, "shopItems": 1094, "monsters": 189, "spawns": 989, "drops": 181, "equipmentDrops": 1841, "magicTypes": 759, "experience": 129, "characterStats": 480, "npcs": 1371, "portals": 158 },
+    "quarantines": { "missingDMaps": 9, "unresolvedSpawnMapIds": 3, "unresolvedNpcMapIds": 2, "unresolvedPortalMapIds": 19, "unresolvedShopNpcIds": 7, "unresolvedCustomShopItems": 417, "conflictingSqlItemAdds": 14 }
+  },
+  "implementationGates": [
+    { "gate": 1, "id": "complete-map-and-reference-catalogs", "status": "runtime-integrated-canary-ready", "resourceReadiness": "substantially-resolved", "remaining": ["resolve-declared-map-quarantines", "production-backup-and-import", "genuine-owner-acceptance-before-global-rollout"] },
+    { "gate": 2, "id": "item-definitions", "status": "encrypted-host-path-tested-canary-ready", "resourceReadiness": "normalized-reviewed-catalog", "remaining": ["genuine-owner-acceptance"] },
+    { "gate": 3, "id": "item-instances-and-inventory", "status": "encrypted-host-path-tested-canary-ready", "resourceReadiness": "source-behavior-present", "dependsOn": [2], "remaining": ["genuine-owner-acceptance"] },
+    { "gate": 4, "id": "transactional-currency-ledger", "status": "encrypted-host-path-tested-canary-ready", "resourceReadiness": "independent-secure-rewrite", "dependsOn": [3], "remaining": ["genuine-owner-acceptance"] },
+    { "gate": 5, "id": "equipment-and-character-stats", "status": "encrypted-host-path-tested-canary-ready", "resourceReadiness": "definitions-present", "dependsOn": [2, 3], "remaining": ["genuine-owner-acceptance"] },
+    { "gate": 6, "id": "shops-buy-and-sell", "status": "encrypted-host-path-tested-canary-ready", "resourceReadiness": "1094-npc-bound-items-staged", "dependsOn": [2, 3, 4], "remaining": ["seven-shop-placement-quarantines", "genuine-owner-acceptance"] },
+    { "gate": 7, "id": "warehouse", "status": "encrypted-host-path-tested-canary-ready", "resourceReadiness": "source-behavior-present", "dependsOn": [3], "remaining": ["genuine-owner-acceptance"] },
+    { "gate": 8, "id": "item-use-upgrades-composition-quality-sockets-durability", "status": "schema-and-catalog-disabled", "resourceReadiness": "catalogs-present", "dependsOn": [2, 3, 5] },
+    { "gate": 9, "id": "monster-definitions-spawns-and-ai", "status": "domain-schema-catalog-tested-disabled", "resourceReadiness": "989-map-closed-spawns-staged", "dependsOn": [1], "remaining": ["ai-runtime", "exact-client-codecs", "host-integration"] },
+    { "gate": 10, "id": "combat-damage-death-and-pk", "status": "domain-and-schema-tested-disabled", "resourceReadiness": "source-behavior-present", "dependsOn": [5, 9], "remaining": ["exact-formula-and-codec-corroboration", "host-integration"] },
+    { "gate": 11, "id": "drops-and-loot", "status": "domain-schema-catalog-tested-disabled", "resourceReadiness": "drop-catalogs-staged", "dependsOn": [3, 9, 10], "remaining": ["world-entity-and-pickup-codecs", "host-integration"] },
+    { "gate": 12, "id": "skills-spells-and-proficiencies", "status": "schema-and-catalog-disabled", "resourceReadiness": "substantially-resolved", "dependsOn": [5, 10], "remaining": ["skill-runtime", "exact-client-codecs"] },
+    { "gate": 13, "id": "experience-leveling-and-rebirth", "status": "domain-schema-catalog-tested-disabled", "resourceReadiness": "level-and-stat-data-staged", "dependsOn": [10, 12], "remaining": ["rebirth-runtime", "exact-client-codecs"] },
+    { "gate": 14, "id": "teams-friends-and-enemies", "status": "domain-and-schema-tested-disabled", "resourceReadiness": "source-behavior-present", "dependsOn": [1], "remaining": ["persistence-and-codecs", "host-integration"] },
+    { "gate": 15, "id": "trade-and-personal-shops", "status": "domain-and-schema-tested-disabled", "resourceReadiness": "source-behavior-present", "dependsOn": [3, 4, 14], "remaining": ["persistence-and-codecs", "host-integration"] },
+    { "gate": 16, "id": "guilds-and-marriage", "status": "domain-and-schema-tested-disabled", "resourceReadiness": "source-behavior-present-historical-state-excluded", "dependsOn": [14], "remaining": ["persistence-and-codecs", "host-integration"] },
+    { "gate": 17, "id": "declarative-npc-actions-and-quests", "status": "partially-implemented", "resourceReadiness": "placements-dialog-data-and-owner-handlers-present", "dependsOn": [3, 6, 7, 9, 10, 11, 12, 13], "remaining": ["replace-unrestricted-handlers-with-reviewed-declarative-actions"] },
+    { "gate": 18, "id": "events-tournaments-arena-and-rankings", "status": "domain-and-schema-tested-disabled", "resourceReadiness": "source-behavior-present-historical-state-excluded", "dependsOn": [9, 10, 12, 14, 16, 17], "remaining": ["declarative-rules", "persistence-and-codecs"] },
+    { "gate": 19, "id": "housing-furniture-mining-and-weather", "status": "schema-only-disabled", "resourceReadiness": "partial-reference-data-present", "dependsOn": [1, 3, 9, 11, 17] },
+    { "gate": 20, "id": "player-chat-and-revora-gm-commands", "status": "schema-only-disabled", "resourceReadiness": "independent-secure-rewrite-required", "dependsOn": [14, 16], "remaining": ["exclude-legacy-raw-sql-and-privilege-model", "use-audited-revora-admin-authorization", "runtime-and-codecs"] }
+  ]
+}

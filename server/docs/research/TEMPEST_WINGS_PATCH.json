@@ -1,0 +1,73 @@
+{
+  "purpose": "Private composed Tempest directions and corrected floor plus all prior Fan/quest/map repairs",
+  "outputs": [
+    {
+      "path": "client/ini/Questinfo.ini",
+      "sha256": "c54419fbe46aa9ea166d3111a6ecc7528b53002da33a1cb166bf3ffa08cccbe4",
+      "bytes": 633582
+    },
+    {
+      "path": "client/ini/itemtype.txt",
+      "sha256": "a28851f6f74928bd6de38c9c77e4815eb7ea28cdeb89bf3053d3475ac4d63d28",
+      "bytes": 8802574
+    },
+    {
+      "path": "client/ini/itemtype.dat",
+      "sha256": "49481e59aa5562868dba06263ec9f7a2d89e84ca36a2a01fcce05edea62c10e7",
+      "bytes": 8843081
+    },
+    {
+      "path": "client/ini/GameMap.dat",
+      "sha256": "48f46669af68189f30359ebd56d6db6665e608e4941d0a006b4495ebdcfd5a15",
+      "bytes": 12136
+    },
+    {
+      "path": "server/database/GameMap.dat",
+      "sha256": "ae0a92063c4f82ca1face0386cc288b2f89d78b04b635f29ce745f5fafe743fd",
+      "bytes": 11634
+    },
+    {
+      "path": "server/database/maps/1782.map",
+      "sha256": "9619a90984e1fd2f959ce89f918075353a5bc5839cbdd6d4eef2a1b05c9a87c4",
+      "bytes": 8472
+    },
+    {
+      "path": "server/database/maps/1783.map",
+      "sha256": "9619a90984e1fd2f959ce89f918075353a5bc5839cbdd6d4eef2a1b05c9a87c4",
+      "bytes": 8472
+    },
+    {
+      "path": "server/database/maps/1784.map",
+      "sha256": "9619a90984e1fd2f959ce89f918075353a5bc5839cbdd6d4eef2a1b05c9a87c4",
+      "bytes": 8472
+    },
+    {
+      "path": "server/database/maps/1363.map",
+      "sha256": "a9a555cf6b1b407f75b5ce19aaaec2109d3d1397cf8b0675b67acfdf7b5a54dd",
+      "bytes": 313608
+    },
+    {
+      "path": "server/database/maps/tempest-1100.map",
+      "sha256": "ae99b05f276ccacaff95c3772211a5c9b1f0cc5fe4ea88c2cd9da8c97e346bd6",
+      "bytes": 50184
+    }
+  ],
+  "missions": [
+    200
+  ],
+  "tooltips": [
+    3006392
+  ],
+  "installed": false,
+  "signed": false,
+  "published": false,
+  "pending": [
+    "Native DX9/Host acceptance",
+    "Signing",
+    "Transactional installation with exact preimage backups"
+  ],
+  "note": "Changes only mission200 and the feather tooltip over the hash-pinned Fan package; adds a dedicated private floor. Existing1100 client binding is reused. Original public1100 stays unchanged. Proprietary contents stay outside Git.",
+  "validation": "6 composition checks pass with the corrected Net Peddler coordinate inherited from Tower v2; native acceptance remains pending.",
+  "private_package": "obj/chi-refill-validation/tempest-wings-composed-v2",
+  "superseded": "Earlier composed packages retain the occupied Net Peddler location or a failed draft; preserve for provenance only, never install."
+}

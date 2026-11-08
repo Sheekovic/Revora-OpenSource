@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-04",
+  "scope": "Finite acceptance handoff for the existing selected320; not a completion certificate or new implementation requirement",
+  "server_earning_review_complete": true,
+  "compatible_career_verified": false,
+  "selected_identity_count": 320,
+  "reviewed_group_identity_count": 319,
+  "separate_collection_identity": 11232,
+  "closed_prerequisites": [
+    "Selected identities all have earning reviews; retained earning review has no unreviewed source findings.",
+    "Ordered class promotions, masteries and runes precede class changes; receipts survive paid transitions.",
+    "Female flower direction precedes marriage; qualified peers and mentor admission have existing earning evidence.",
+    "Permanent200-mount acquisition is earned; its seventeen missing catalog packs have a reviewed staged restoration.",
+    "Recurring bounty reserve and independent Honor/Virtue routes replace a demand for exact lifetime spending.",
+    "Named numeric deadlines and survival stocks are reviewed for Terato/Sword, Snow, Spook, Flame gates, Power Arena, Dis City, catalog families and unarmed Extraction."
+  ],
+  "acceptance_gaps": [
+    {
+      "id": "career-runtime-continuity",
+      "status": "open",
+      "requirement": "Confirm the selected ordered route preserves eligibility, equipment availability and spendable reserves at transitions in ordinary runtime.",
+      "existing_evidence": "Retained nested cold checkpoints and fresh paid-transition evidence; models establish specific prerequisites.",
+      "missing_evidence": "An integrated acceptance record connecting the remaining controlled joins; catalog coverage and319/320 row totals alone do not supply it.",
+      "next_action": "Reuse saved checkpoints and require a named contradictory or missing transition before another earning run; do not restart a fresh320 campaign."
+    },
+    {
+      "id": "timed-traversal",
+      "status": "open",
+      "requirement": "Validate movement and timed action schedules used by encounter budgets.",
+      "existing_evidence": "Server movement/portal tests and explicit travel/cadence allowances in linked encounter reports.",
+      "missing_evidence": "Ordinary traversal and action timing at the controlled approaches/resupply/exit joins; artificial clock advancement is not measured play.",
+      "next_action": "Consolidate with genuine6711 ordinary-player acceptance; preserve numerical results without rerunning each calculator."
+    },
+    {
+      "id": "shared-world-encounters",
+      "status": "open",
+      "requirement": "Accept actual event target selection, pursuit and concurrent-player behavior where fixtures supplied stationary or non-retaliating participants.",
+      "existing_evidence": "Calculated victories, event settlement, ordinary NPC reward claims and cold persistence.",
+      "missing_evidence": "Representative ordinary runtime behavior under active opponents/crowds. Winning a contested event is possible but never guaranteed.",
+      "next_action": "Use existing earned rosters in the consolidated runtime/client session; do not mint additional fixture receipts merely to raise counts."
+    },
+    {
+      "id": "catalog-release-equivalence",
+      "status": "pending-release",
+      "requirement": "Deploy the reviewed suppliers/terrain/source together and verify the installed ordinary-player route.",
+      "existing_evidence": "Seventeen mount pack restoration staged and loader-checked; source shop precedence/binding fixes committed.",
+      "missing_evidence": "Installed signed client/server equivalence and native shop purchases.",
+      "next_action": "Include in coordinated release with backup/rollback; staged capacity is not live availability."
+    }
+  ],
+  "separate_roadmap_gates": [
+    "Elimination11010, Abyss11031 and1363/10726 activation/native gates remain; these IDs are excluded from selected320.",
+    "Owner decision2026-10-04: implemented local Revora tournament editions define the finish scope. Genuine cross-server transport is deferred outside this scope, not complete.",
+    "Owner selected gaming-PC native acceptance using docs/OWNER_NATIVE_ACCEPTANCE_CHECKLIST.md. Candidate package preparation and actual acceptance remain pending; checklist creation is not deployment approval."
+  ],
+  "do_not_repeat": [
+    "Already-earned collection, promotion, boss and title-lifecycle journeys without a named defect or missing transition.",
+    "Standalone numeric bounds when their inputs have not changed.",
+    "Fresh/retained identity summation or supplied-receipt title tests as proof of earning320."
+  ],
+  "source_sha256": {
+    "docs/research/RETAINED_EARNING_REVIEW.json": "51407c7176c2e8834a4a141e6384c4bd2b5fd9b1917b832a1882349892e4018e",
+    "docs/research/RETAINED_OBSERVED_PROVENANCE.json": "26df52e00a062047216946d3c19f2e6f5f884032667ecbe097e753523843845e",
+    "docs/research/RETAINED_COLLECTION_200.json": "8fe23748622d0520c944ea9346f85eab153a2f89890d66e41ba1dd20a70e93dd",
+    "docs/research/CAREER_ORDERING_REVIEW.json": "adaa17a1e56ee11d018dd17b8098ebc3e0a9723b77f879938a475626869436ab",
+    "docs/research/CAREER_SOCIAL_PREREQUISITES.json": "53fb8f853606ae326ac7a9714528b93f4464305369d54f0e3358674058998f13",
+    "docs/research/FRESH_PEER_PREREQUISITES.json": "067a6e2e0b2502d431e36abe8b241c61906c3434adb195c8659dff734faf73aa",
+    "docs/research/CAREER_FUNDING_RECURRENCE.json": "f3f16ad849b3a02373de91db36ffc0edb8f26db1c9f078009d39dee2ca5564fe",
+    "docs/research/CAREER_RESOURCE_DEPENDENCIES.json": "ca6701d6b225eb3116bf43cf619716a7131da9d2209d03c2edd9ee9caa8eb6c3"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "scope": "Fresh first-life level120 foundation; final Moon Box promotion and starter grant; private handler evidence",
+  "character_uid": 1096322,
+  "baseline_commit": "6a037ee2378eef84313255851d0b63e4375388d6",
+  "executable_sha256": "3fb610b2493460b21c8c7530be8ee3790e6cde5931d3ffc3baeb31c49e5511a0",
+  "final_fixture_sha256": "cc00320395f5b0dd74455ae9a51e04396bcaa3baa6445e84533bffed387d0a96",
+  "checkpoint": "revora_fresh_advanced_probe",
+  "completion_requires": "stage=claimed and final cold reload; stage=training is partial progress only",
+  "dragonballs_consumed_for_exp": 1,
+  "dragonball_catalog_cps": 215,
+  "clock_override": false,
+  "kills_this_leg": 11413,
+  "calculated_melee_attacks_this_leg": 12295,
+  "level": 120,
+  "class": 15,
+  "remaining_exp": 414753,
+  "final_cps": 132528,
+  "logs": {
+    "arena-process-career-fresh-advanced-earn.batch1.log": "f8742edcf50a2a606fb34ed5ffa50361afa990ed6f08d94def49b5f87c6a0ede",
+    "arena-process-career-fresh-advanced-earn.batch2.log": "8a707f347e29a3a99460faaeafd72bb49d3bf05d2dfa6ad5aa9aa1ca0687ee43",
+    "arena-process-career-fresh-advanced-earn.batch3.log": "df0e8d903875d423168a4797db7f539d48e342b9d6555646a8012ca760b9d9fe",
+    "arena-process-career-fresh-advanced-earn.batch4.log": "ec7cd029c7cdd720db2ef8e32bd2f010de7c5afca04b72452a46f653a9d272aa",
+    "arena-process-career-fresh-advanced-earn.batch5-pre-replay.log": "9bd032523bc5f140647f1ea9f4e6bc42c222e45cdc497fcddc047e0056eed95a",
+    "arena-process-career-fresh-advanced-earn.log": "4348dd8f87b2b1cd0eeea390044475488676cc7ced46f8bd8e8a3f73b9e0f85e",
+    "arena-process-career-fresh-advanced-reload.log": "4f8eac53ea766389e5c5686178a312f93926e5db9696aad814c32118de12ad06"
+  },
+  "fixture_corrections": [
+    "Initial monster selectors corrected without resetting saved kills",
+    "Final promotion moved before level120 once qualified; batch1 predates adjustment",
+    "Last replay probe corrected NPC location after reward commit; final earn and reload both passed"
+  ],
+  "controls": [
+    "Disconnected timer-free session",
+    "Transport, proximity and attack timestamps"
+  ],
+  "limits": [
+    "No native/navigation/retaliation/pacing proof",
+    "P7 choice pack granted but unopened",
+    "Rebirth/later career and client/deployment gates remain open",
+    "Frozen owner starter overlay; see FRESH_STARTER_VALIDATION.json"
+  ]
+}

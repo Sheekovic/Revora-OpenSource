@@ -1,0 +1,44 @@
+{
+  "baseline_commit": "3df05663f7688c2109997edb7c6d428d21898f59",
+  "fresh_character_uid": 1096322,
+  "checkpoint": "revora_fresh_rebirth_probe",
+  "candidate_before": "66CEBCE7300ACB20D83869EB02A5FBE0A975EC0F991D252C690DCF0E1301CA41",
+  "candidate_fixed": "b90e35e9f3281b416da579ba2acc568be1997bdd17a9648d6071cc0b5f1c8826",
+  "build_overlay": "obj/fresh-choice-validation/sources.targets",
+  "prior_overlay_provenance": "docs/research/FRESH_CHOICE_VALIDATION.json",
+  "source_sha256": {
+    "Game/Features/FirstRebirth.cs": "1c62e7a33ed9119459d929cd335d011889bd623a143b03460cbb9a5ae947a2e4",
+    "tools/CheckCandidateFreshRebirth.cs": "d6bde61b1897dbf83c18f1ceeab9b81b2633eff1c8bf9600d4c3dcb35d0b117c",
+    "tools/CheckCandidateArenaLifecycle.cs": "2528aceca27a10f721851235f03715e6579aa62ab0a4a5b1b7cd0fc0bfbf8fb9",
+    "tools/Invoke-CandidateArenaLifecycle.ps1": "b7cb2fd4ccd8584dcf2871a8096917e7cb635f2971edac8b59a0c5cd6e65f84f"
+  },
+  "logs": {
+    "arena-process-career-fresh-rebirth-reload.log": "195b22f04445e3569490b03794fb5fc1d3d12154c28b314cf189deec89554543",
+    "arena-process-career-fresh-rebirth-rite.before-fix.log": "7c036dc9d24ee8bdc37a487f15af151943b5c3e88bf8529c6c9fcd0595c67c6f",
+    "arena-process-career-fresh-rebirth-rite.log": "32ad0d604f04931317f630511bf560a9b67b08eb6ae3757b6c225ac8e1da5a0e",
+    "arena-process-career-fresh-rebirth-starter.log": "735c13d111750c4ba3970c946e2bc4622cc7a9749cfaaaef13f49709644463ff"
+  },
+  "results": {
+    "reborn": 1,
+    "level": 15,
+    "class": 11,
+    "stone_cost_cps": 30,
+    "remaining_cps": 132498,
+    "bound_cps": 50000,
+    "silver": 1100000,
+    "steed_red": 150,
+    "steed_saved_bless": 0,
+    "starter_equipment_pieces": 7,
+    "unbound_rite_garment": 187405,
+    "bound_random_garment": 189135,
+    "random_garment_stars": 5,
+    "random_garment_bless": 0
+  },
+  "limits": [
+    "Controlled NPC proximity and portal positioning; decoded NPC dispatch",
+    "Starter and garment pack consumers use frozen private owner overlay and ItemHandler.UseItem",
+    "Purchased stone does not prove mining or Clean Water crafting",
+    "No native acceptance or live deployment",
+    "Final fixture only removes temporary diagnostic snapshot file writes after successful runs"
+  ]
+}

@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <AssemblyName>Revora.Admin</AssemblyName>
+    <RootNamespace>Revora.Admin</RootNamespace>
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Revora.Application/Revora.Application.csproj" />
+    <ProjectReference Include="../Revora.Persistence/Revora.Persistence.csproj" />
+  </ItemGroup>
+</Project>

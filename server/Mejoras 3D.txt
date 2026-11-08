@@ -1,0 +1,216 @@
+Jugadores aquí les traigo los horarios de nuestros eventos y boss.
+Saqueo: 13:00 - 14:00
+Guerras de clanes miercoles:20:00 - 21:00 y domingos:15:00 - 16:00 hora del servidor
+Gloria y fortuna: 
+20:00 - 20:07 segunda etapa 20:07 - 20:17
+C-O-N-Q-U-E-R:
+01:00 07:00 13:00 19:00
+Elite pk: 
+20:00 - 20:59 solo los viernes
+Guerra elite de clanes: 
+21:00 - 22:00 solo lunes y viernes
+torneo pk grupo 
+12:00 a 12:15
+
+xx:01 - Pk Candi
+xx:03 - Pk Sangriento
+xx:05 - Hombre Loco
+xx:09 - Maestro Marcial
+xx:11 - Pk Amus
+xx:13 - Torneo Famoso
+xx:15 - Pk Diario
+xx:17 - Pk Panda
+xx:19 - Pk Universal
+xx:21 - Pk Sexos
+xx:23 - Pk Zorro
+xx:25 - Pk Tormenta
+xx:27 - Pk Conejito
+xx:29 - Pk Diario
+xx:31 - Evento Hada
+xx:33 - Pk DeathMach
+xx:35 - Torneo Fantasma
+xx:37 - Pk Legendario
+xx:39 - Pk Legendario (2)
+xx:41 - Pk Mundial
+xx:43 - Pk Catakismo
+xx:45 - Pk Diario
+xx:47 - Pk Llorones
+xx:49 - Torneo Aktoy
+xx:51 - Pk Relampago
+xx:53 - Pk Guardian
+xx:55 - Pk Hancock
+xx:57 - Pk Krathos
+
+Horario de los boss.
+
+xx:00 - Pulpo De Oro
+xx:06 - Bruja De Hielo
+xx:12 - Caos Destripador
+xx:18-43 - Nemesis Tyrant
+xx:24 - Rey Dragon
+xx:30 - Reina De Hielo
+xx:36 - Demonio Gordo
+xx:49 - Dragon De Trueno
+xx:59 - Oso furioso
+
+
+Restructuracion de todo el sevidor en cuanto al drop
+Ahora lo Mostros Normales daran mas oro que Cps
+Los Sueperboss Solo daran Puntos Slayer + Fracmento de equipo
+++++++++++++++++++++++++++++++++++++
+1) Drop de Cps:
+----------------------------------
+Desde VIP1 hasta VIP7
+500 Cps por mostro.
+++++++++++++++++++++++++++++++++++++
+
+2)Drop de VIP1 hasta VIP5 Oro:
+----------------------------------
+Randon 1 hasta 500.000 Mil de Oro
+++++++++++++++++++++++++++++++++++++
+3)Drop de VIP6 Oro:
+---------------------------------
+de 1 Online hasta 50 Online
+Randon 1 hasta 600.000 Mil de Oro
+----------------------------------
+de 51 Online hasta 99 Online
+Randon 1 hasta 1.200.000 Mil de Oro
+----------------------------------
+de 100 Online o mas
+Randon 1 hasta 1.800.000 Mil de Oro
+++++++++++++++++++++++++++++++++++++
+4)Drop de VIP7 Oro:
+----------------------------------
+de 1 Online hasta 50 Online
+Randon 500.000 hasta 1.800.000 Mil de Oro
+----------------------------------
+de 51 Online hasta 99 Online
+Randon 500.000 hasta 2.400.000 Mil de Oro
+----------------------------------
+de 100 Online o mas
+Randon 500.000 hasta 3.000.000 Mil de Oro
+----------------------------------
+++++++++++++++++++++++++++++++++++++
+5)La hora Slayer son todo los dias Cada 6 Horas del server.
+de 6:00 a 7:00- 12:00 a 13:00- 18:00 a 19:00- 23:00 a 24:00
+Oro Extra se suma con el drop Normal.
+Randon 1 hasta 500.000 Mil de Oro Extra
+----------------------------------
+[HoraSlayerx1]
+de 1 hasta 30 Online
+Oro Extra + 1 Punto Slayer
+----------------------------------
+[HoraSlayerx2]
+de 31 hasta 40 Online
+Oro Extra + 2 Punto Slayer
+----------------------------------
+despues de los 30 Online, Cada 10 Online extra  
+La HoraSlayer se Suma + 1 Punto Slayer
+++++++++++++++++++++++++++++++++++++
+6)Los SuperBoss que son:
+"FatDemon" "ChaosRipper" "DragonKing"
+"NemesisTyrant" "GoldOctopus" "IceQueen" 
+"BrujaDeHielo"  "ThunderDragon" "FuriousBear" 
+Nuevos sistema Randon Por Vip de Item en el suelo al 
+matar el mostro.
+Articulos que estan en la Lista:
+PiezaAlmaSantaE7 - PiezaAlmaEquipamientoE7- PiezaSagradaRefinada
+PiedraEstrellaRadiante- PiedraSanta- Billetera Lvl 9
+----------------------------------
+VIP 7
+Botara 15 Articulos al suelo + Randon 1.000 hasta 5.000 Puntos Slayer
+Tiene la Probabilidad de que caiga Piedras De Perfeccion Super.
+----------------------------------
+VIP 6
+Botara 10 Articulos al suelo + Randon 300 hasta 2.000 Puntos Slayer
+----------------------------------
+VIP 5
+Botara 5 Articulos al suelo + Randon 100 hasta 1.000 Puntos Slayer
+----------------------------------
+++++++++++++++++++++++++++++++++++++
+Los mostros de Perfeccion fueron reparados ya no se desapareceran mientras les pegan
+++++++++++++++++++++++++++++++++++++
+Las habilidades de Lotus de Tao Agua y Tao fuego Fueron reparadas
+ya pueden revivir y matar con las lotus de pendiendo de la profesion
+++++++++++++++++++++++++++++++++++++
+Reparamos el Error de las epicas y Hossu de Tao que no se podia encantar
+++++++++++++++++++++++++++++++++++++
+Las habilidades de Fbs y SS fueron mejoradas y reparadas para que las puedan usar
+todas las profesiones. Ataques por nobleza.
+++++++++++++++++++++++++++++++++++++
+La habilidad Clones de Sombra del Ninja fue reparada y mejorada a un 80%
+++++++++++++++++++++++++++++++++++++
+
+Las Profesiones Del Guerrero x 3 con lanza + escudo se mejoro su defensa
+y ataque, 
+y el Accesino fueron reparados ya pueden usar y usar sus 
+habilidades para pk estan diseñadas para ser competitivas frente 
+a todas las demas profesiones.
+++++++++++++++++++++++++++++++++++++
+
+La tares de Chi y Jian fue Mejorada ahora los item podras ser tratables
+para su comercializacion en el servidor, de igualmanera el tiempo de 
+salida ahora sera de un nimuto y se incremento en un poco la sangre
+++++++++++++++++++++++++++++++++++++
+Nuevos Peinados en el Npc de Barbero.
+++++++++++++++++++++++++++++++++++++
+Nuevos Paquete de Principiante
+Maximo premio 5 Piedras Super de perfeccion Libres para las alas
+al llegar al 140 dos revol
+++++++++++++++++++++++++++++++++++++
+Devido a los diferentes robos de perfeccion en los ultimos meses
+se ha aumentado la dificultada de poder cambiar y tranferir 
+la perfeccion de Dueño ahora sera con Puntos slayer
+100.000 Mil puntos por items. 
+++++++++++++++++++++++++++++++++++++
+Los top de Torneos de Profesiones fue reparado 
+ahora ya duran 8 Dias los Top.
+++++++++++++++++++++++++++++++++++++
+Nuevo Titulo de Slayer 3D
+++++++++++++++++++++++++++++++++++++
+EvilPum y MonkeySlayer Mejorados con Atributos
+funcionales.
+++++++++++++++++++++++++++++++++++++
+Error Corregido al encantar se frizaba al ser menor el encanto, de igual manera las gemas
+de dragon ya no reaparecen en objetos de Nuevo.
+++++++++++++++++++++++++++++++++++++
+Se Agrego Mas Opciones para Cambiar el Nombre Ahora podran Cambiarlo hasta 30 Veces.
+al agotar estos Cambios ya no se volveran Hacer mas Cambios manuales.
+++++++++++++++++++++++++++++++++++++
+
+
+nuevas mejoras
+
+
+
+
+3004121@@VIP6Token+2@@0@@0@@0@@0@@0@@0@@0@@0@@11@@0@@0@@98384000@@0@@0@@0@@0@@0@@0@@0@@1@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@800@@0@@0@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@Gift@@A~token~fo~VIP~6~2Day~players~to~take~part~in~the~VIP~Summer~Vacation~event.@@0@@0@@0@@0@@0@@500@@0@@0@@0@@0@@0@@
+3004122@@VIP6Token+5@@0@@0@@0@@0@@0@@0@@0@@0@@11@@0@@0@@98384000@@0@@0@@0@@0@@0@@0@@0@@1@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@800@@0@@0@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@Gift@@A~token~fo~VIP~6~5Day~players~to~take~part~in~the~VIP~Summer~Vacation~event.@@0@@0@@0@@0@@0@@500@@0@@0@@0@@0@@0@@
+3004123@@VIP6Token+15@@0@@0@@0@@0@@0@@0@@0@@0@@11@@0@@0@@98384000@@0@@0@@0@@0@@0@@0@@0@@1@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@800@@0@@0@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@Gift@@A~token~fo~VIP~6~15Day~players~to~take~part~in~the~VIP~Summer~Vacation~event.@@0@@0@@0@@0@@0@@500@@0@@0@@0@@0@@0@@
+
+
+3007985@@TimeDropNormal@@0@@0@@0@@0@@0@@0@@0@@0@@9@@0@@0@@98471500@@0@@0@@0@@0@@0@@0@@0@@1@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@200@@0@@0@@0@@0@@0@@0@@0@@0@@0@@100@@0@@0@@0@@0@@0@@PuntoSlayer@@30~Minutos~de~puntos~Slayer~en~cualquier~ciudad~puedes~usar~Click~derecho.[Drop:(VIP5=1~a~5~Puntos),(VIP6=1~a~10~Puntos),(VIP7=1~a~15~Puntos).@@5@@0@@0@@0@@0@@500@@0@@0@@0@@0@@0@@
+3007989@@TimeDropElite@@0@@0@@0@@0@@0@@0@@0@@0@@9@@0@@0@@98471500@@0@@0@@0@@0@@0@@0@@0@@1@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@PuntoSlayer@@60~Minutos~de~puntos~Slayer~en~cualquier~ciudad~puedes~usar~Click~derecho.[Drop:(VIP5=1~a~5~Puntos),(VIP6=1~a~10~Puntos),(VIP7=1~a~15~Puntos)@@8@@0@@0@@0@@0@@500@@0@@0@@0@@0@@0@@
+3007992@@TimeDropSuper@@0@@0@@0@@0@@0@@0@@0@@0@@9@@0@@0@@98471500@@0@@0@@0@@0@@0@@0@@0@@1@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@29999@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@PuntoSlayer@@120~Minutos~de~puntos~Slayer~en~cualquier~ciudad~puedes~usar~Click~derecho.[Drop:(VIP5=1~a~5~Puntos),(VIP6=1~a~10~Puntos),(VIP7=1~a~15~Puntos)@@9@@0@@0@@0@@0@@500@@0@@0@@0@@0@@0@@
+
+
+
+
+3007366@@AbundantMoneyBag@@0@@0@@0@@0@@0@@0@@0@@0@@11@@0@@0@@98548950@@0@@0@@0@@0@@0@@0@@0@@1@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@800@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@0@@0@@0@@0@@0@@Gift@@This~pack~is~filled~with~2,000,000,000~Oro.~Right~click~to~open.@@0@@0@@0@@0@@0@@500@@0@@0@@0@@0@@0@@
+3007367@@HarvestMoneyBag@@0@@0@@0@@0@@0@@0@@0@@0@@11@@0@@0@@98548960@@0@@0@@0@@0@@0@@0@@0@@1@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@800@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@0@@0@@0@@0@@0@@Gift@@This~pack~is~filled~with~50,000,000,000~Oro.~Right~click~to~open.@@0@@0@@0@@0@@0@@500@@0@@0@@0@@0@@0@@
+3007365@@KingdomMoneyBag@@0@@0@@0@@0@@0@@0@@0@@0@@11@@0@@0@@98548940@@0@@0@@0@@0@@0@@0@@0@@1@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@800@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@0@@0@@0@@0@@0@@Gift@@This~pack~is~filled~with~250,000,000,000~Oro.~Right~click~to~open.@@0@@0@@0@@0@@0@@500@@0@@0@@0@@0@@0@@
+3007368@@LuxuriMoneyBag@@0@@0@@0@@0@@0@@0@@0@@0@@11@@0@@0@@98548970@@0@@0@@0@@0@@0@@0@@0@@1@@1@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@800@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@0@@1@@0@@0@@0@@0@@0@@Gift@@This~pack~is~filled~with~500,000,000,000~Oro.~Right~click~to~open.@@0@@0@@0@@0@@0@@500@@0@@0@@0@@0@@0@@
+
+
+
+
+
+
+
+
+
+
+
+
+
+

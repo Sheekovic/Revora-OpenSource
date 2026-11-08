@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-04",
+  "before_binary_sha256": "a9b832862153b718bf1ef6f6b6dcf73b1e0c0c0fe19a4feba03fed4f7d429f99",
+  "after_binary_sha256": "7fd50a2a22fcfd5faf6e4ab86a8f0a661ae82af9562846b46654ab8eee75d372",
+  "result": "passed",
+  "checks": 959,
+  "added_checks": 6,
+  "shops": [
+    91008,
+    91009,
+    91010
+  ],
+  "live_deployment": false,
+  "source_scope": "Integrated current worktree including uncommitted owner code; source comment added after build, with no behavior change.",
+  "logs_sha256": {
+    "progression-shop-routing-before.log": "98c39ae5a259ac24220e00f25e453581a94e4c81bdf659c62fdf70527c48b6bf",
+    "shop-routing-integration-build.log": "104bac00c4732346ac4b5873c42e588cf9969c239c71c922568365dc540b68e4",
+    "shop-routing-integration-packs.log": "88b4835d1ab4094ee1febad6176e630e12d16cc475ffe10e99e4139ff42b84cc"
+  },
+  "before_failure": "Registered ordinary player bound-CP request bypassed the progression shop policy at91008.",
+  "fixture_corrections": [
+    "Preserve defaults on the disposable Champion table.",
+    "Set the empty full-fixture progression bonus default to0 after initialization.",
+    "Register the ordinary test session and initialize P6 prices through production Create."
+  ],
+  "limits": [
+    "Synthetic stock/proximity; production payment and entity/inventory reload.",
+    "No new full-game startup or native client acceptance.",
+    "Other owner worktree changes remain uncommitted."
+  ]
+}

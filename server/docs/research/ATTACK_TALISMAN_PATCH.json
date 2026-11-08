@@ -1,0 +1,91 @@
+{
+  "purpose": "Private composed Heaven Fan directions plus all prior Tower/quest/map repairs",
+  "outputs": [
+    {
+      "path": "client/ini/Questinfo.ini",
+      "sha256": "4e0614081e987dd01c437eb94cae0ff8ddc490e76a9ad6d98a1ee82102e70192",
+      "bytes": 632529
+    },
+    {
+      "path": "client/ini/itemtype.txt",
+      "sha256": "771d075f657f2404fb64515495f1988669aa60260c128184e59078746b15b959",
+      "bytes": 8802530
+    },
+    {
+      "path": "client/ini/itemtype.dat",
+      "sha256": "a5406b3223d575f76dc9cafe509350e3584eee23df4ed133854c433e25a5a2c2",
+      "bytes": 8843037
+    },
+    {
+      "path": "client/ini/GameMap.dat",
+      "sha256": "48f46669af68189f30359ebd56d6db6665e608e4941d0a006b4495ebdcfd5a15",
+      "bytes": 12136
+    },
+    {
+      "path": "server/database/GameMap.dat",
+      "sha256": "ae0a92063c4f82ca1face0386cc288b2f89d78b04b635f29ce745f5fafe743fd",
+      "bytes": 11634
+    },
+    {
+      "path": "server/database/maps/1782.map",
+      "sha256": "9619a90984e1fd2f959ce89f918075353a5bc5839cbdd6d4eef2a1b05c9a87c4",
+      "bytes": 8472
+    },
+    {
+      "path": "server/database/maps/1783.map",
+      "sha256": "9619a90984e1fd2f959ce89f918075353a5bc5839cbdd6d4eef2a1b05c9a87c4",
+      "bytes": 8472
+    },
+    {
+      "path": "server/database/maps/1784.map",
+      "sha256": "9619a90984e1fd2f959ce89f918075353a5bc5839cbdd6d4eef2a1b05c9a87c4",
+      "bytes": 8472
+    },
+    {
+      "path": "server/database/maps/1363.map",
+      "sha256": "a9a555cf6b1b407f75b5ce19aaaec2109d3d1397cf8b0675b67acfdf7b5a54dd",
+      "bytes": 313608
+    }
+  ],
+  "missions": [
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409
+  ],
+  "tooltips": [
+    710216,
+    710217,
+    710218,
+    710219,
+    710220,
+    710221,
+    710222,
+    721798,
+    721799,
+    721800,
+    721801,
+    721802,
+    721803,
+    721804,
+    721806
+  ],
+  "installed": false,
+  "signed": false,
+  "published": false,
+  "pending": [
+    "Native DX9/Host acceptance",
+    "Signing",
+    "Transactional installation with exact preimage backups"
+  ],
+  "note": "Changes only Fan journal sections and tooltip fields over the hash-pinned Tower package. Fan scenes use existing1025/1011/3937 bindings; no new map alias. Proprietary contents stay outside Git.",
+  "private_package": "obj/chi-refill-validation/attack-talisman-composed-v3",
+  "validation": "10 composition checks pass with the corrected Net Peddler coordinate inherited from Tower v2; native acceptance remains pending.",
+  "superseded": "Earlier composed packages retain the occupied Net Peddler location or a failed draft; preserve for provenance only, never install."
+}

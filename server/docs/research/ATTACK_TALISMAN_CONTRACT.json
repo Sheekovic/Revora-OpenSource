@@ -1,0 +1,283 @@
+{
+  "source_sha256": {
+    "quest": "f783c2a8ead9461a469c79b6c7e7aae00b2604066d4bc6e2e2c56d7e98fc5e14",
+    "items": "52889c537ddd00a6f4d349fa9243268dfedc81ab3899523f1e434218735387cb"
+  },
+  "stages": [
+    {
+      "mission": 400,
+      "predecessor": 527,
+      "begin": "4565,1015,685,599,SugarTang,BirdIsland",
+      "finish": "4582,1011,788,456,VillagerChou,PhoenixCastle",
+      "materials": []
+    },
+    {
+      "mission": 401,
+      "predecessor": 400,
+      "begin": "4582,1011,788,456,VillagerChou,PhoenixCastle",
+      "finish": "4582,1011,788,456,VillagerChou,PhoenixCastle",
+      "materials": [
+        [
+          721800,
+          1
+        ],
+        [
+          710220,
+          5
+        ]
+      ]
+    },
+    {
+      "mission": 402,
+      "predecessor": 401,
+      "begin": "4582,1011,788,456,VillagerChou,PhoenixCastle",
+      "finish": "4565,1015,685,599,SugarTang,BirdIsland",
+      "materials": []
+    },
+    {
+      "mission": 403,
+      "predecessor": 402,
+      "begin": "4565,1015,685,599,SugarTang,BirdIsland",
+      "finish": "4583,1000,490,618,KunlunWanderer,DesertCity",
+      "materials": []
+    },
+    {
+      "mission": 404,
+      "predecessor": 403,
+      "begin": "4583,1000,490,618,KunlunWanderer,DesertCity",
+      "finish": "4583,1000,490,618,KunlunWanderer,DesertCity",
+      "materials": [
+        [
+          721801,
+          1
+        ]
+      ]
+    },
+    {
+      "mission": 405,
+      "predecessor": 404,
+      "begin": "4583,1000,490,618,KunlunWanderer,DesertCity",
+      "finish": "4582,1011,788,456,VillagerChou,PhoenixCastle",
+      "materials": [
+        [
+          721801,
+          1
+        ]
+      ]
+    },
+    {
+      "mission": 406,
+      "predecessor": 405,
+      "begin": "4582,1011,788,456,VillagerChou,PhoenixCastle",
+      "finish": "4582,1011,788,456,VillagerChou,PhoenixCastle",
+      "materials": []
+    },
+    {
+      "mission": 407,
+      "predecessor": 406,
+      "begin": "4582,1011,788,456,VillagerChou,PhoenixCastle",
+      "finish": "4582,1011,788,456,VillagerChou,PhoenixCastle",
+      "materials": [
+        [
+          710216,
+          1
+        ]
+      ]
+    },
+    {
+      "mission": 408,
+      "predecessor": 407,
+      "begin": "4582,1011,788,456,VillagerChou,PhoenixCastle",
+      "finish": "4591,1015,686,723,Platform,BirdIsland",
+      "materials": [
+        [
+          710216,
+          1
+        ],
+        [
+          710217,
+          1
+        ],
+        [
+          710218,
+          1
+        ],
+        [
+          710219,
+          1
+        ]
+      ]
+    },
+    {
+      "mission": 409,
+      "predecessor": 408,
+      "begin": "4591,1015,686,723,Platform,BirdIsland",
+      "finish": "4565,1015,685,599,SugarTang,BirdIsland",
+      "materials": [
+        [
+          710222,
+          1
+        ]
+      ]
+    }
+  ],
+  "items": {
+    "201009": {
+      "name": "HeavenFan",
+      "required_class": 0,
+      "level": 100
+    },
+    "710216": {
+      "name": "PurpleEye",
+      "required_class": 0,
+      "level": 0
+    },
+    "710217": {
+      "name": "JadeScepter",
+      "required_class": 0,
+      "level": 0
+    },
+    "710218": {
+      "name": "Jadeite",
+      "required_class": 0,
+      "level": 0
+    },
+    "710219": {
+      "name": "Hairpin",
+      "required_class": 0,
+      "level": 0
+    },
+    "710220": {
+      "name": "SnakeMeat",
+      "required_class": 0,
+      "level": 0
+    },
+    "710221": {
+      "name": "HeavenFan",
+      "required_class": 0,
+      "level": 0
+    },
+    "710222": {
+      "name": "PoemBook",
+      "required_class": 0,
+      "level": 0
+    },
+    "721798": {
+      "name": "TangSilk",
+      "required_class": 0,
+      "level": 0
+    },
+    "721799": {
+      "name": "Incense",
+      "required_class": 0,
+      "level": 0
+    },
+    "721800": {
+      "name": "BambooWine",
+      "required_class": 0,
+      "level": 0
+    },
+    "721801": {
+      "name": "PoemSilk",
+      "required_class": 0,
+      "level": 0
+    },
+    "721802": {
+      "name": "KunlunLiquid",
+      "required_class": 0,
+      "level": 0
+    },
+    "721803": {
+      "name": "PoisonFang",
+      "required_class": 0,
+      "level": 0
+    },
+    "721804": {
+      "name": "SacredWater",
+      "required_class": 0,
+      "level": 0
+    },
+    "721806": {
+      "name": "BeeKettle",
+      "required_class": 0,
+      "level": 0
+    }
+  },
+  "prerequisite_conflict": {
+    "client_mission": 527,
+    "completed_tower_mission": 528,
+    "revora_required_tower_stage": 10
+  },
+  "recipe": [
+    {
+      "inputs": [
+        721803,
+        721802
+      ],
+      "output": 721804
+    },
+    {
+      "inputs": [
+        721804,
+        721798
+      ],
+      "output": 721801
+    }
+  ],
+  "gem_pillars": {
+    "PurpleEye": "Sparrow",
+    "JadeScepter": "Dragon",
+    "Jadeite": "Tiger",
+    "Hairpin": "Leopard"
+  },
+  "coordinate_conflicts": [
+    {
+      "subject": "Gem pillar tooltips",
+      "tooltip": [
+        653,
+        700
+      ],
+      "journal_targets": [
+        [
+          733,
+          776
+        ],
+        [
+          694,
+          721
+        ],
+        [
+          694,
+          735
+        ],
+        [
+          698,
+          731
+        ]
+      ]
+    },
+    {
+      "subject": "Swan Lake",
+      "entrance": [
+        471,
+        844
+      ],
+      "incense_site": [
+        55,
+        109
+      ],
+      "scene_id_verified": false
+    }
+  ],
+  "scene_candidates": [
+    1788,
+    1789,
+    1790,
+    1791
+  ],
+  "scene_candidate_identity_verified": false,
+  "original_drop_odds": null,
+  "original_monster_stats": null,
+  "implemented": false,
+  "native_acceptance": false
+}

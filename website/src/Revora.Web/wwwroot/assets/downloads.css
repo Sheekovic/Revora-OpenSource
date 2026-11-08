@@ -1,0 +1,34 @@
+.download-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.7rem;
+}
+.download-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: .9rem;
+  background: #07101380;
+}
+.download-card.recommended { border-color: #d4b46f99; box-shadow: 0 0 0 1px #d4b46f18; }
+.download-card h2 { margin: .25rem 0 .5rem; font-family: Georgia, serif; font-size: 1.65rem; }
+.download-card p, .download-card dt { color: var(--muted); }
+.download-card dl { display: grid; gap: .4rem; margin: 1rem 0 1.25rem; }
+.download-card dl div { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid #ffffff12; padding: .35rem 0; }
+.download-card dd { margin: 0; text-align: end; }
+.download-card .button { margin-top: auto; }
+.download-tag { position: absolute; inset-block-start: .8rem; inset-inline-end: .8rem; padding: .2rem .55rem; border-radius: 99px; background: var(--gold); color: #071013; font-size: .72rem; font-weight: 800; }
+.checksum { margin: .85rem 0 0; }
+.checksum strong { display: block; font-size: .76rem; color: var(--gold); }
+.checksum code { display: block; max-width: 100%; overflow-wrap: anywhere; color: #c8d8d3; font-size: .72rem; }
+.download-instructions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1rem; }
+.download-instructions article, .download-warning { padding: 1.25rem; border: 1px solid var(--line); border-radius: .8rem; background: #07101366; }
+.download-instructions h2 { margin-top: 0; font-size: 1.15rem; }
+.download-instructions ol, .download-warning ul { padding-inline-start: 1.35rem; }
+.download-warning { margin-top: 1rem; border-color: #d4b46f66; }
+.download-warning > strong { color: var(--gold); }
+@media (max-width: 900px) { .download-options, .download-instructions { grid-template-columns: 1fr; } }

@@ -1,0 +1,30 @@
+{
+  "scope": "Fresh starter character first levelling and promotion; private handler evidence, not full career or native acceptance",
+  "character_uid": 1096322,
+  "baseline_commit": "63b78ee6c5cec3e74dcd9d1d79bdd42f6492cb93",
+  "executable_sha256": "3fb610b2493460b21c8c7530be8ee3790e6cde5931d3ffc3baeb31c49e5511a0",
+  "fixture_sha256": "c467cfd6790fed5c3621eab7e8fbfe7b01fba2ce5f1745040276c33425e5228e",
+  "checkpoint": "revora_fresh_training_probe",
+  "kills": 136,
+  "calculated_melee_attacks": 136,
+  "level": 15,
+  "class": 11,
+  "remaining_exp": 568,
+  "passed_logs": {
+    "career-fresh-training-earn": "5694af73ad53ff07b335672521ce03573b47696bbe868b4434c7a5994d585a36",
+    "career-fresh-training-reload": "2d1d7b66c0c4cddd00dd4bfbba146a77a693d06b05689a9f435c6724db5f2972"
+  },
+  "controls": [
+    "Disconnected transport and timer-free screen",
+    "Player proximity and attack cooldown timestamps",
+    "School transport and NPC proximity"
+  ],
+  "limits": [
+    "No native client or real-time pacing/retaliation proof",
+    "Later career and native gates remain open"
+  ],
+  "earn_fixture_sha256": "c23d16e0a77dce704c44dee9784d68860c7606e0387ec7655e6a4147d3e814a7",
+  "earned_cps": 926,
+  "final_cps": 10926,
+  "validation_versions": "Earn phase passed before added equipment/purse/replay assertions; final fixture passed the expanded cold reload phase."
+}

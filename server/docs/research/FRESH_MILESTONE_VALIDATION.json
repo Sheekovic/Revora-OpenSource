@@ -1,0 +1,45 @@
+{
+  "scope": "Fresh character level15 to40, Trojan rank12 and first starter milestone; private handler evidence",
+  "character_uid": 1096322,
+  "baseline_commit": "22708931f9e6b9520e0cdf97af9d21fdcb295476",
+  "executable_sha256": "3fb610b2493460b21c8c7530be8ee3790e6cde5931d3ffc3baeb31c49e5511a0",
+  "fixture_sha256": "4930c255925b9585a6c282852c3082b37efaa2213468973a9efd8e760f1cf4a5",
+  "checkpoint": "revora_fresh_milestone_probe",
+  "kills": 438,
+  "calculated_melee_attacks": 438,
+  "logged_family_examples": [
+    [
+      "4",
+      "Apparition",
+      "202"
+    ],
+    [
+      "6",
+      "WingedSnake",
+      "445"
+    ],
+    [
+      "7",
+      "Bandit",
+      "545"
+    ]
+  ],
+  "level": 40,
+  "class": 12,
+  "remaining_exp": 10512,
+  "earned_cps": 3778,
+  "final_cps": 14704,
+  "passed_logs": {
+    "career-fresh-milestone-earn": "376570d40c4e1933375807cace13578319534aa1f05efcfa7baff4d1b3e5efbf",
+    "career-fresh-milestone-reload": "e9cc311a0ccb32ecf6dc18ce2c4823cded66c05b1ed7397b3121a743610e5c83"
+  },
+  "controls": [
+    "Disconnected timer-free session",
+    "Map transport, proximity, attack timestamps"
+  ],
+  "limits": [
+    "No native/navigation/retaliation/pacing proof",
+    "Later progression and client/deployment gates remain open",
+    "Frozen owner starter overlay; see FRESH_STARTER_VALIDATION.json"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-04",
+  "environment": "main production server and database only",
+  "server_sha256": "9d258a1223f2a19d53da1c242b53bb6f343234ae4fb30c1fab3183338a2030d3",
+  "pid": 3184,
+  "startup_ms": 9266,
+  "perfection_fix": "Accept legacy zero-stack single equipment and permit improving locked target gear in place; consumed materials remain unlocked, singly held, owned, permanent, non-suspicious and binding-compatible",
+  "jiang_fix": "Do not send full rolled star status ahead of training delta 2702; preserve client previous/new comparison. Existing in-session old-star server snapshot and restoration transaction are retained. Full status remains for restoration.",
+  "validation": [
+    "Production build passed",
+    "12 standalone production-assembly Perfection checks passed with no database writes",
+    "Main database protected row digests unchanged during cleanup",
+    "Production startup completed and ports9958/9959 listening"
+  ],
+  "cleanup": {
+    "total": 88632,
+    "tables": {
+      "activeness": 4,
+      "arena": 4,
+      "championarena": 4,
+      "dialyquests": 10970,
+      "jianghu": 1,
+      "jianghu_1": 906,
+      "prizes": 13314,
+      "pt_arsenal_inscribed": 45762,
+      "quests": 1311,
+      "revora_pk_legacy_status": 1,
+      "reward": 13314,
+      "status": 2,
+      "teamarena": 4,
+      "variablevault": 4,
+      "wayofheroes": 4,
+      "titles": 3,
+      "apprentice": 591,
+      "pt_arsenal": 2417,
+      "itemadding": 7,
+      "panel_web_mensaje": 9
+    },
+    "preserved_accounts": 6,
+    "preserved_characters": 4,
+    "preserved_subclass_rows": 10,
+    "excluded": "World/catalog tables, global variable owner0, statue keys, process ownership UUIDs and live-player history"
+  },
+  "backup_directory": "C:\\Revora\\DeploymentBackups\\perfection-jiang-history-20261004",
+  "native_acceptance": "Owner should retry RadiantStarStone and JiangHu training comparison; native client not exercised by this run",
+  "client_patch": "No new client patch required; remains 1.0.20"
+}

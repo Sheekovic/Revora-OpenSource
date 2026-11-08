@@ -1,0 +1,208 @@
+{
+  "source_sha256": "f783c2a8ead9461a469c79b6c7e7aae00b2604066d4bc6e2e2c56d7e98fc5e14",
+  "interpretation": "Listed edges only; branch semantics and live acceptance are not inferred.",
+  "records": 797,
+  "unique_mission_ids": 790,
+  "duplicate_mission_ids": [
+    928,
+    929,
+    1587,
+    1972,
+    6070,
+    6071,
+    6072
+  ],
+  "categories": {
+    "1": {
+      "record_count": 72,
+      "blank_name_ids": [],
+      "missing_listed_predecessors": [
+        601,
+        603,
+        604,
+        605,
+        800,
+        806,
+        6457
+      ],
+      "level_reversals": [],
+      "named_root_ids": [
+        3478,
+        6448
+      ]
+    },
+    "2": {
+      "record_count": 9,
+      "blank_name_ids": [],
+      "missing_listed_predecessors": [],
+      "level_reversals": [],
+      "named_root_ids": [
+        702,
+        704,
+        706,
+        707,
+        709,
+        710,
+        3460,
+        3943,
+        3945
+      ]
+    },
+    "4": {
+      "record_count": 150,
+      "blank_name_ids": [
+        950,
+        951,
+        952,
+        953,
+        954,
+        955,
+        956,
+        957,
+        958,
+        959,
+        960,
+        961,
+        962,
+        963,
+        964,
+        965,
+        966,
+        967
+      ],
+      "missing_listed_predecessors": [],
+      "level_reversals": [
+        {
+          "parent": 1833,
+          "child": 1834,
+          "child_max_level": 65
+        }
+      ],
+      "named_root_ids": [
+        200,
+        520,
+        1718,
+        1723,
+        1727,
+        1733,
+        1738,
+        1745,
+        1751,
+        1781,
+        1787,
+        1795,
+        1800,
+        1808,
+        1819,
+        1828,
+        1835,
+        1840
+      ]
+    }
+  },
+  "newcomer_intro_candidate": {
+    "mission_ids": [
+      3478,
+      3479,
+      3480,
+      3481
+    ],
+    "unique_complete_chain": true,
+    "rows": [
+      {
+        "mission_id": 3478,
+        "listed_predecessors": [
+          0
+        ],
+        "type": 1,
+        "minimum_level": 1,
+        "maximum_level": 140,
+        "profession": "0",
+        "sex": "0",
+        "begin_npc_map_xy": [
+          5673,
+          1002,
+          432,
+          397
+        ],
+        "finish_npc_map_xy": [
+          5673,
+          1002,
+          432,
+          397
+        ]
+      },
+      {
+        "mission_id": 3479,
+        "listed_predecessors": [
+          3478
+        ],
+        "type": 1,
+        "minimum_level": 1,
+        "maximum_level": 140,
+        "profession": "0",
+        "sex": "0",
+        "begin_npc_map_xy": [
+          5673,
+          1002,
+          432,
+          397
+        ],
+        "finish_npc_map_xy": [
+          8,
+          1002,
+          402,
+          311
+        ]
+      },
+      {
+        "mission_id": 3480,
+        "listed_predecessors": [
+          3479
+        ],
+        "type": 1,
+        "minimum_level": 1,
+        "maximum_level": 140,
+        "profession": "0",
+        "sex": "0",
+        "begin_npc_map_xy": [
+          8,
+          1002,
+          402,
+          311
+        ],
+        "finish_npc_map_xy": [
+          3,
+          1002,
+          400,
+          328
+        ]
+      },
+      {
+        "mission_id": 3481,
+        "listed_predecessors": [
+          3480
+        ],
+        "type": 1,
+        "minimum_level": 1,
+        "maximum_level": 140,
+        "profession": "0",
+        "sex": "0",
+        "begin_npc_map_xy": [
+          3,
+          1002,
+          400,
+          328
+        ],
+        "finish_npc_map_xy": [
+          2001,
+          1002,
+          439,
+          464
+        ]
+      }
+    ],
+    "original_aggregate_verified": false,
+    "limitation": "Listed linear prerequisites do not establish achievement10930 or live NPC availability."
+  }
+}

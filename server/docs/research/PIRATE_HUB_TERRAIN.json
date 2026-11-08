@@ -1,0 +1,51 @@
+{
+  "map": 10271,
+  "dimensions": [
+    214,
+    214
+  ],
+  "floor_sha256": "268e254af092f8cef3e7ed71f69a658467aca6225c335a1bb77241bd2113e065",
+  "landing": [
+    114,
+    188
+  ],
+  "reachable_cells": 9207,
+  "approaches": [
+    {
+      "npc": [
+        116,
+        191
+      ],
+      "approach": [
+        116,
+        189
+      ]
+    },
+    {
+      "npc": [
+        128,
+        187
+      ],
+      "approach": [
+        126,
+        185
+      ]
+    },
+    {
+      "npc": [
+        107,
+        178
+      ],
+      "approach": [
+        105,
+        176
+      ]
+    }
+  ],
+  "portal_records": 2,
+  "kind4_objects": 56,
+  "opaque_trailer_bytes": 572,
+  "original_hub_identity_verified": false,
+  "native_acceptance": false,
+  "scope": "Revora hub choice; matches existing version1004 server base-floor model; native/trailer semantics not certified"
+}

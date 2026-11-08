@@ -1,0 +1,63 @@
+{
+  "scope": "Private Planet extension and restart validation; no deployment/native or full200-mount career claim",
+  "deliveries": 13,
+  "credits_per_delivery": 20,
+  "maximum_credits": 260,
+  "stock": {
+    "garments": 108,
+    "mounts": 149,
+    "total": 257,
+    "added_mounts": 101,
+    "original_index_prefix_preserved": true
+  },
+  "new_delivery_rewards": {
+    "steps": [
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "item": 4030101,
+    "count_per_step": 1,
+    "bound": true
+  },
+  "checks": {
+    "parent": 552,
+    "collection_restart_child": 518,
+    "earlier_restart_child": 11
+  },
+  "runtime_assertions": [
+    "Existing eight-step schema migration is idempotent and preserves exact earned state.",
+    "All13 hunt/guard/cache deliveries earn receipts; duplicate delivery cannot duplicate runes.",
+    "Both byte-safe catalog sections deliver exact permanent bound items through NPC purchase and wardrobe deposit.",
+    "All257 exchange recipes purchased; balance is260 minus257 equals3.",
+    "Fresh process loads276 wardrobe items, checks257 exact item/receipt pairs and refuses257 repeat purchases.",
+    "Complete step13 refuses new admission.",
+    "Prior rollback, full-bag, concurrent duplicate, late delivery and wing-expiry checks pass."
+  ],
+  "supplier_potential": {
+    "garments": 200,
+    "mounts": 203
+  },
+  "candidate_sha256": "1cc2a81c34247e7b9b61d25b017e7ad241c7c92037845a6f6a43bf3eb87da744",
+  "source_sha256": {
+    "Game/Features/PlanetWeekend.cs": "ec1929009ee4849397e1501fa0ae3f61ec840633aa33b6dfe1ff30e5b514905b",
+    "Game/Features/CollectionAchievementCatalog.cs": "173342f13b144ecf82b5abe3b239196e44049c1a161c917cf22e2d8cca4dab8a",
+    "tests/PotencyHunt/PlanetTests.cs": "f84a3de6d6c0e565e00cf638d02839d4aa74093ae8d37cfa8c8ccbee0b21aea2",
+    "tests/PotencyHunt/PlanetProcessTests.cs": "0d1dc7779701eafabb7bea6660d6e090b1963fca6bcb7df38061e9af0c228367",
+    "tools/CheckCollectionShopCapacity.cs": "d791dad1a24aca689423aa2c5e07cb23ddcb49b7ae584ef1d6d6a4e1ab2524c5"
+  },
+  "log_sha256": {
+    "obj/planet-extension-build.log": "b48091a9204f6734975f4e0bcf9d22960c91b41a39b58b7316d83bc5eac852ce",
+    "obj/planet-extension-runtime.log": "0f650b869d96417e1d26913c03a956e55f4e6bc4cca348dd1838783442b5894f",
+    "obj/planet-extension-capacity.log": "bbd2f0ddcb217312c77136b1f68b04efc8e29389be0f802127c284196276ea09"
+  },
+  "limitations": [
+    "Ordinary non-GM fixture has supplied level/attributes; calendar and hunt deaths are controlled.",
+    "Existing encounter combat checks run, but new13-week reward progression does not prove natural difficulty or elapsed-time balance.",
+    "Fresh-process recovery uses the same disposable PostgreSQL process; this batch does not claim a database restart.",
+    "Owner WIP excluded through committed-source overlays; private candidate only, not installed live.",
+    "276 total cosmetic designs is not200 mount designs; combined200-mount achievement remains a separate check."
+  ]
+}

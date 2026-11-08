@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-03",
+  "title_key": 20010002,
+  "runtime_sha256": "18CAC3A8A6EF22F46175EF2FAB4749ADAC8E2DB09FC3AD323B944F39D969A5F3",
+  "scope": "Ordinary-account title eligibility, equip, duplicate request and cold persistence; not a jointly earned320-achievement route certificate",
+  "negative": {
+    "uid": 1096322,
+    "verified_achievements": 148,
+    "wardrobe_session_ready": true,
+    "equip_result": "refused",
+    "current_title_and_saved_title_bytes": "unchanged",
+    "career_snapshot": "unchanged during request"
+  },
+  "positive": {
+    "uid": 4294907001,
+    "verified_achievements": 323,
+    "equip_result": 20010002,
+    "cold_equipped_title": 20010002,
+    "duplicate_equip": "exact snapshot unchanged",
+    "achievement_receipts": "unchanged",
+    "current_checkpoint": "revora_retained_rising_probe"
+  },
+  "fixture_corrections": [
+    "First compilation used uint for the int equipped-title field; corrected before execution.",
+    "Initial negative test had an uninitialized wardrobe session and zero loaded verified achievements; it was not accepted as threshold evidence. The corrected test invokes normal TitleStorage.Login and requires readiness and exactly148 verified achievements.",
+    "Initial positive cold snapshot differed only in one prestige title and300 title points. Rising Star remained selected. The fixture reconciled titles before loading Chi/JiangHu; loading all those dependencies before TitleStorage.Login restores exact equality without replacing any saved career snapshot."
+  ],
+  "limitations": [
+    "Retained323 contains historical mixed-provenance setup; this does not upgrade the Rising Star earning route from predicate-only.",
+    "Requests call the production wardrobe handler with an ordinary account and no inserted achievements or title grants. Native packet/UI acceptance remains pending.",
+    "No game source, live service, deployment or native client changed."
+  ],
+  "logs": {
+    "career-fresh-arena-classes-ko-rising-denied": {
+      "status": "passed",
+      "sha256": "c9d50f806306db98753bb6b93df85eee13bdee76f51de9c19a06536d9e745dfb"
+    },
+    "career-retained-mounts-rising-equip": {
+      "status": "passed",
+      "sha256": "6aa8afd7ee2bb8f9ffa5b9b9219f3703204e5c79822111b14f2448aa1f6fd87f"
+    },
+    "career-retained-mounts-rising-reload": {
+      "status": "passed",
+      "sha256": "24dc101f2ff1002059581db412d7c325f88c3cfef1b1bc5398d3c4bd95e08123"
+    }
+  },
+  "source_sha256": {
+    "tools/CheckCandidateFreshArenaClasses.cs": "07afd2f3e1d88440b95d5f569a3d8cad78ef7f841d0199221ed2bafc75ecf62a",
+    "tools/CheckCandidateRetainedMounts.cs": "f772697109be98a233d6e719036a3960b28b7580965b065ad60e2fb505d3e6e9",
+    "Sistemas/WardRobe/TitleRequirements.cs": "3f2e43c32908f7a4b08fb135d38258c4b09444cc3a32682818e3bfc44d0b0c99",
+    "Sistemas/WardRobe/Title.cs": "1df196b79c4ac4c54ea9f0c0ab77565d859d7976f8e9c27b49b06efc42bd1794"
+  }
+}

@@ -1,0 +1,23 @@
+name: Revora stable release security scan
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  defender-exact-packages:
+    runs-on: windows-2025
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download, validate and scan exact stable packages
+        shell: pwsh
+        run: tests/windows/scan_stable_release_packages.ps1 -OutputDirectory "$env:RUNNER_TEMP/stable-security"
+      - name: Upload sanitized Defender evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: revora-stable-1.0.8-defender-evidence
+          path: ${{ runner.temp }}/stable-security/stable-defender-evidence.json
+          if-no-files-found: error

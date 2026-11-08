@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0-windows</TargetFramework><UseWPF>true</UseWPF><EnableWindowsTargeting>true</EnableWindowsTargeting><RuntimeIdentifier>win-x64</RuntimeIdentifier><AssemblyName>Revora.Launcher.WpfTests</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Revora.Launcher/Revora.Launcher.csproj" />
+    <Content Include="../../src/Revora.Web/wwwroot/assets/revora-full-logo.png" Link="Assets/revora-full-logo.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../src/Revora.Web/wwwroot/assets/revora-guardian.png" Link="Assets/revora-guardian.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../src/Revora.Launcher/Assets/revora.ico" Link="Assets/revora.ico" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

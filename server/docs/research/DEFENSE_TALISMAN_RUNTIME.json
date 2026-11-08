@@ -1,0 +1,123 @@
+{
+  "scope": "Read-only loaded monster catalog and public NPC/spawn SELECT probe, 2026-09-26; no schema mutations.",
+  "monster_search_terms": [
+    "trout",
+    "shawn",
+    "caprice",
+    "condor",
+    "vicious",
+    "mausoleum",
+    "yang"
+  ],
+  "matching_monsters": [
+    {
+      "id": 3622,
+      "name": "ViciousBat",
+      "level": 120,
+      "mesh": 148,
+      "hp": 50000
+    }
+  ],
+  "npcs": [
+    {
+      "id": 4567,
+      "map": 1782,
+      "x": 51,
+      "y": 70,
+      "lookface": 3654,
+      "name": "None"
+    },
+    {
+      "id": 4568,
+      "map": 1784,
+      "x": 55,
+      "y": 55,
+      "lookface": 3676,
+      "name": "None"
+    },
+    {
+      "id": 4569,
+      "map": 1015,
+      "x": 192,
+      "y": 212,
+      "lookface": 3686,
+      "name": "None"
+    },
+    {
+      "id": 4570,
+      "map": 1784,
+      "x": 61,
+      "y": 68,
+      "lookface": 3694,
+      "name": "None"
+    },
+    {
+      "id": 4571,
+      "map": 1784,
+      "x": 61,
+      "y": 30,
+      "lookface": 3700,
+      "name": "None"
+    },
+    {
+      "id": 4575,
+      "map": 1015,
+      "x": 208,
+      "y": 216,
+      "lookface": 3740,
+      "name": "None"
+    },
+    {
+      "id": 4576,
+      "map": 1015,
+      "x": 222,
+      "y": 214,
+      "lookface": 3750,
+      "name": "None"
+    },
+    {
+      "id": 4577,
+      "map": 5000,
+      "x": 150,
+      "y": 95,
+      "lookface": 3760,
+      "name": "None"
+    },
+    {
+      "id": 4578,
+      "map": 1787,
+      "x": 48,
+      "y": 37,
+      "lookface": 3770,
+      "name": "None"
+    },
+    {
+      "id": 4579,
+      "map": 1015,
+      "x": 189,
+      "y": 183,
+      "lookface": 3786,
+      "name": "None"
+    }
+  ],
+  "matching_spawns": [],
+  "missing_npc_ids": [
+    4565,
+    4566,
+    4572,
+    4573,
+    4574
+  ],
+  "interpretation": "ViciousBat is a substring match, not evidence for the required Vicious Rat. No required named monster template is established by this probe.",
+  "rat_appearance_probe": {
+    "scope": "Read-only loaded catalog name search, 2026-09-26; appearance reuse is a Revora adaptation, not original Vicious Rat identification.",
+    "id": 8,
+    "name": "Ratling",
+    "level": 37,
+    "mesh": 202,
+    "hp": 666,
+    "guard": false,
+    "reviver": false,
+    "boss": false
+  }
+}

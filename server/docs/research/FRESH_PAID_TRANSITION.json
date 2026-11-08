@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-03",
+  "uid": 1096322,
+  "scope": "Fresh ordinary-character paid class transition and earned recovery; not full compatible320 or native acceptance",
+  "build_sha256": "A38205B5C2185F060453E2D3BED757059D41724B912383F856C613CEC9E5A0DA",
+  "before": {
+    "class": 25,
+    "level": 133,
+    "reborn": 2,
+    "cps": 4610185
+  },
+  "after": {
+    "class": 41,
+    "level": 133,
+    "reborn": 2,
+    "cps": 4596921
+  },
+  "dew_cost": 2000,
+  "rite_cost": 5000,
+  "level15_attribute_budget": 82,
+  "exp_balls": 232,
+  "exp_ball_spend": 6264,
+  "preserved_achievement_identities": 140,
+  "exact_achievement_rows_preserved": true,
+  "pending_recovery_rows_after": 0,
+  "phases": {
+    "pay": {
+      "log_sha256": "c345316fc8b042d8482568d5b9b5eac29de3a745ea8a59381e6da11185aeac02",
+      "passed": true
+    },
+    "reload": {
+      "log_sha256": "95d3be19daf166adbde23cb0696935a022d3689e0645d26a1be17f5ffb1b59d8",
+      "passed": true
+    },
+    "grow": {
+      "log_sha256": "572ddeed867fcf0060694161a997674df8457454b8b958d291d275bfccb57b55",
+      "passed": true
+    },
+    "recovered": {
+      "log_sha256": "a6780122b496ea916ec30234ac30cb53b431b10bdac7cf2b5401f93161e235fe",
+      "passed": true
+    }
+  },
+  "inputs": {
+    "tools/CheckCandidateFreshArenaClasses.cs": "9d9b2932bbd212686b6e51eabee699e11199438d44ff3bed52722522d9eb198c",
+    "Game/Features/PaidReincarnation.cs": "f45d8593f32dfeafc3adf8519ffe7ae582e7f5d03dc31e33bfa9d0fca8b03713",
+    "Game/Features/PaidReincarnationRecovery.cs": "01d36c1e9b169ee1219c42402d6eab5d531d74dd0259aa26449122bd9a693988",
+    "Game/Features/ReincarnationRules.cs": "6b309d7733cf5079b512267f30227972aa41f3dcc742d2af6ef8f0c5ebfaaf3b"
+  },
+  "limitations": [
+    "NPC proximity and EXP Ball calendar controlled. Existing daily allowance enforced; elapsed real-world leveling duration is not tested.",
+    "Decoded ordinary shop/reincarnation/item handlers and private cold process recovery, not native client acceptance.",
+    "Unfinished six-class Arena series preserved and not counted as completed.",
+    "Proves one fresh paid transition with the prior ten-destination rule check and retained multi-class evidence, not every full fresh class career."
+  ],
+  "interrupted_checkpoint": {
+    "prior_sha256": "abc4d8874126140e2cc9094477a21fd228ba5f33d0ec2fe5beb07e9098eeb107",
+    "current_sha256": "c3b3cde050ebf0a3ab9dec46743a1bf9ae3494d3d86cc0db0851a08abac58472",
+    "audited_changes": "Only ball129: CP -27, level94 to95, XP39032853 to1771099, free attributes266 to269, daily used8 to9; repeated projections of these fields. No item/skill/proficiency/achievement or peer differences. Probe counters already129/3483.",
+    "policy": "Require exact snapshot hashes and counter preimage before advancing test checkpoint; no gameplay rows rewritten."
+  }
+}

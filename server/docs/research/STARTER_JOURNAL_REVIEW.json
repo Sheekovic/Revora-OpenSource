@@ -1,0 +1,23 @@
+{
+  "purpose": "private-composed-starter-quest-journal-review",
+  "relative": "ini/Questinfo.ini",
+  "before": "f783c2a8ead9461a469c79b6c7e7aae00b2604066d4bc6e2e2c56d7e98fc5e14",
+  "source_bundle": "1cf153510ca3767b49345192c57e852e44abd122f27fd36bc9f993c84028f310",
+  "previous_composed": "160a4d649f5120216cba33f813c5612f16c291715a296bb200f4795b4e2387de",
+  "after": "342c95ae5282e1ba0223d96d1a97f50f781d54edc1ef7048036ea8ed6d2656e2",
+  "approved_dx9": "3728bc3fd4e584d85301edd2b1887a176267cdaa6356038f9951ef23e4fded60",
+  "architecture": "x86",
+  "missions": [
+    90001,
+    90002,
+    90003
+  ],
+  "preserved": "Prior quest bundle, Monk and Warrior corrections; only five fields in starter missions changed.",
+  "route": "Courier: Cerys passage to Phoenix Castle 1011; Commander and Clerk navigation unchanged.",
+  "limits": "Cerys link directs to the verified departure NPC, not an inferred Bandit spawn coordinate. Native links, text fit and binding display need review.",
+  "installed": false,
+  "published": false,
+  "signed": false,
+  "native_acceptance": "pending",
+  "rollback": "Future deployment must verify and back up the installed preimage, and restore originals/ini/Questinfo.ini transactionally."
+}

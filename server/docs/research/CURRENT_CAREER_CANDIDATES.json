@@ -1,0 +1,46 @@
+{
+  "scope": "Current saved-state reconciliation, not a jointly earned career certificate",
+  "input_sha256": {
+    "docs/research/CURRENT_CAREER_RECEIPTS.json": "71f6d8fd463c699926977d3d18f0c71c4e0493f60e420e2095323fd36e6d1811",
+    "Game/Features/AchievementCatalog.cs": "d27e572f53ed8ab8741584dc5f4f1a97f06643e580f14212f3c1b168b0e05b95",
+    "docs/research/RETAINED_COMPATIBILITY_PLAN.json": "dca161ba3e7f7bca0ee9c46d0865bd77446933c11115d816a499f995d5eb0522",
+    "docs/research/RETAINED_COLLECTION_200.json": "8fe23748622d0520c944ea9346f85eab153a2f89890d66e41ba1dd20a70e93dd"
+  },
+  "fresh_checkpoint": "revora_fresh_mentor_join_probe",
+  "catalog_count": 337,
+  "target": 320,
+  "retained_early_promotions_excluded_as_unproven": [
+    10813,
+    10819,
+    10824,
+    10825,
+    10829,
+    10830,
+    10903,
+    10908,
+    10913,
+    11205,
+    11216,
+    11304
+  ],
+  "activation_gated_exclusions": [
+    10726,
+    11010,
+    11031
+  ],
+  "retained_conservative_candidates": 322,
+  "candidate_margin": 2,
+  "retained_saved_receipts": 323,
+  "retained_candidate_receipts_present": 322,
+  "retained_candidate_receipts_absent": [],
+  "fresh_saved_receipts": 149,
+  "fresh_candidate_receipts_present": 148,
+  "compatible_career_verified": false,
+  "limitations": [
+    "Early-rank exclusions belong to the retained route, not a claim of global impossibility.",
+    "Saved rows include mixed-provenance historical evidence; counts alone prove no earning path.",
+    "Activation gates remain even if private opt-in receipts exist.",
+    "The fresh and retained characters are separate identities; their receipts must not be added together.",
+    "Native/client/deployment and remaining compatibility boundaries remain open."
+  ]
+}

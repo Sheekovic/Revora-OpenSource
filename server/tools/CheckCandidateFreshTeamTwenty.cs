@@ -1,0 +1,49 @@
+using System;
+using System.Linq;
+using System.Reflection;
+using Revora;
+using Revora.Client;
+using Revora.Database;
+using Revora.Game;
+using Revora.Network.GamePackets;
+using Console=System.Console;
+internal static partial class CheckCandidateArenaLifecycle {
+    static void FreshTeamTwentySave(GameState p,GameState[] players,int stage,int wins){foreach(var who in players)Require(EntityTable.SaveEntity(who));Sql("UPDATE revora_fresh_team_twenty_probe SET stage=@stage,wins=@wins,snapshot=@snapshot","stage",stage,"wins",wins,"snapshot",FreshTeamArenaSnapshot(p,players));}
+    static void FreshTeamTwentyJourney(string phase){
+        bool earn=phase.EndsWith("earn"),claim=phase.EndsWith("claim");var p=FreshLoadSaved(true,true,true,true);EntityVariableTable.Load(p);SubClassTable.Load(p.Entity);ChiTable.Load(p);p.Quests.Load();Revora.Database.KnownPersons.LoadMentor(p);WayofHeroes.Load(p);
+        var list=new System.Collections.Generic.List<GameState>();foreach(int slot in new[]{1,2,3,0}){uint uid=Convert.ToUInt32(Sql("SELECT uid FROM revora_fresh_contributors WHERE slot=@slot","slot",slot));list.Add(FreshContributor(uid,Convert.ToString(Sql("SELECT name FROM revora_fresh_contributors WHERE slot=@slot","slot",slot))));}list.Add(p);var players=list.ToArray();var peer=players[3];Server.GamePool=players;Require(players.All(w=>!w.Fake && w.Account.State==AccountTable.AccountState.Player && !PirateFenced(w) && !w.Entity.Dead));
+
+
+        Revora.Database.KnownPersons.LoadPartner(p);Revora.Database.KnownPersons.LoaderFriends(p);var mate=players[0];var other=players[2];var fighters=new[]{p,mate,peer,other};
+
+        if((bool)Sql("SELECT to_regclass('revora_fresh_team_twenty_probe') IS NULL")){Require(earn && FreshTeamArenaSnapshot(p,players)==Convert.ToString(Sql("SELECT snapshot FROM revora_fresh_team_arena_probe WHERE stage=3")));Sql("CREATE TABLE revora_fresh_team_twenty_probe(stage int,wins int,hits int,snapshot text);INSERT INTO revora_fresh_team_twenty_probe VALUES(0,1,0,@snapshot)","snapshot",FreshTeamArenaSnapshot(p,players));}
+        if(phase.EndsWith("inspect")){System.IO.File.WriteAllText("fresh-team-twenty-loaded.json",FreshTeamArenaSnapshot(p,players));System.IO.File.WriteAllText("fresh-team-twenty-saved.json",Convert.ToString(Sql("SELECT snapshot FROM revora_fresh_team_twenty_probe")));Console.WriteLine("[career-process] "+phase+"-passed");Environment.Exit(0);return;}
+        if(phase.EndsWith("recover")){
+            string before=Convert.ToString(Sql("SELECT snapshot FROM revora_fresh_team_twenty_probe")),after=FreshTeamArenaSnapshot(p,players);Func<string,string> hash=value=>{using(var sha=System.Security.Cryptography.SHA256.Create())return System.BitConverter.ToString(sha.ComputeHash(System.Text.Encoding.UTF8.GetBytes(value))).Replace("-","").ToLowerInvariant();};
+            Require(hash(before)=="9f639ef6e64f1fa243e105c9763f615947a7e8c970b6e605adb10299caa7e2fd" && hash(after)=="6b1b0dd8840759a837bb2d221b7c80272620a7509e9dd42cba15ad3303b339a2" && (int)Sql("SELECT stage FROM revora_fresh_team_twenty_probe")==1 && (int)Sql("SELECT wins FROM revora_fresh_team_twenty_probe")==20 && p.Entity.Experience==21051668520UL && p.Entity.Reborn==2 && mate.Entity.Reborn==0);
+            Require((long)Sql("SELECT count(*) FROM revora_way_of_heroes_claims WHERE uid=@uid AND stage_uid=507 AND prize_type=723700 AND prize_count=1 AND NOT legacy","uid",(long)p.Entity.UID)==1 && (long)Sql("SELECT count(*) FROM revora_way_of_heroes_claims WHERE uid=@uid AND stage_uid=507","uid",(long)mate.Entity.UID)==0);FreshTeamTwentySave(p,players,2,20);Console.WriteLine("[career-process] "+phase+"-passed");Environment.Exit(0);return;
+        }
+        Require(FreshTeamArenaSnapshot(p,players)==Convert.ToString(Sql("SELECT snapshot FROM revora_fresh_team_twenty_probe")));int wins=(int)Sql("SELECT wins FROM revora_fresh_team_twenty_probe");
+        if(earn){
+            Require((int)Sql("SELECT stage FROM revora_fresh_team_twenty_probe")==0 && wins<20);var timer=System.Diagnostics.Stopwatch.StartNew();
+            while(wins<20 && timer.Elapsed.TotalSeconds<210){
+                foreach(var who in fighters)who.Entity.Teleport(1002,408,330);string early=FreshTeamArenaSnapshot(p,players);foreach(var who in fighters)NobilityClaimPacket(who,507);Require(early==FreshTeamArenaSnapshot(p,players));
+                Action<GameState,uint,uint> team=(who,action,target)=>{var frame=new Revora.Network.GamePackets.Team{Type=action,UID=target}.ToArray();Revora.Network.Writer.WriteUInt64(Revora.Network.PacketHandler.ClientSeal,frame.Length-8,frame);Revora.Network.GamePackets.Team.Process(frame,who);};
+                team(p,Revora.Network.GamePackets.Team.Create,0);team(peer,Revora.Network.GamePackets.Team.Create,0);team(p,Revora.Network.GamePackets.Team.InviteRequest,mate.Entity.UID);team(mate,Revora.Network.GamePackets.Team.AcceptInvitation,p.Entity.UID);team(peer,Revora.Network.GamePackets.Team.InviteRequest,other.Entity.UID);team(other,Revora.Network.GamePackets.Team.AcceptInvitation,peer.Entity.UID);Require(p.Team.Teammates.Length==2 && peer.Team.Teammates.Length==2 && ReferenceEquals(p.Team,mate.Team) && ReferenceEquals(peer.Team,other.Team));
+                DateTime now=new DateTime(2041,7,11,20,0,0,DateTimeKind.Utc).AddMinutes(wins);Feature("ArenaMatchLedger").GetField("Clock",Hidden).SetValue(null,(Func<DateTime>)(()=>now));TeamQualifier.AcceptingNewBattles=true;TeamArenaClaimRequest(p,0,0);TeamArenaClaimRequest(peer,0,0);TeamQualifier.EngagePlayers();Require(ReferenceEquals(p.TeamArenaStatistic.PlayWith,peer));TeamArenaClaimRequest(p,3,1);TeamArenaClaimRequest(peer,3,1);TeamQualifier.VerifyAwaitingPeople();var group=p.TeamQualifierGroup;Require(group!=null && fighters.All(w=>ReferenceEquals(w.TeamQualifierGroup,group)));group.ImportTime=group.CreateTime=Time32.Now.AddSeconds(-13);foreach(var who in fighters){who.Attackable=true;who.CantAttack=Time32.Now.AddSeconds(-1);}int hits=0;
+                foreach(var target in new[]{peer,other}){for(int n=0;n<300 && !target.Entity.Dead && !group.Done;n++){p.Entity.X=target.Entity.X;p.Entity.Y=(ushort)(target.Entity.Y+1);p.Screen.Add(target.Entity);target.Screen.Add(p.Entity);p.Entity.AttackStamp=Time32.Now.AddSeconds(-2);Attack.HandleAttack(new Attack(true){Attacker=p.Entity.UID,Attacked=target.Entity.UID,X=target.Entity.X,Y=target.Entity.Y,AttackType=Attack.Melee},p);hits++;}}
+                Require(group.Done);group.DoneStamp=Time32.Now.AddSeconds(-6);var limit=DateTime.UtcNow.AddSeconds(10);do{TeamQualifier.CheckGroups();if(fighters.All(w=>w.TeamQualifierGroup==null))break;System.Threading.Thread.Sleep(50);}while(DateTime.UtcNow<limit);Require(fighters.All(w=>w.TeamQualifierGroup==null));
+                foreach(var who in fighters){Require((long)Sql("SELECT count(*) FROM revora_team_arena_statistics WHERE uid=@uid AND won=@won","uid",(long)who.Entity.UID,"won",who==p || who==mate)==wins+1);if(who.Entity.Dead){who.Entity.DeathStamp=Time32.Now.AddSeconds(-20);GeneralData.Revive(new Data(true){dwParam=0},who);}Require(!who.Entity.Dead && who.Entity.MapID==1002);team(who,Revora.Network.GamePackets.Team.ExitTeam,0);}
+
+                wins++;Sql("UPDATE revora_fresh_team_twenty_probe SET hits=hits+@hits","hits",hits);FreshTeamTwentySave(p,players,wins==20?1:0,wins);Console.WriteLine("[fresh-team-twenty] wins="+wins+" calculated-hits="+hits);
+            }
+        }else{
+            Require(wins==20);
+            if(claim){Require((int)Sql("SELECT stage FROM revora_fresh_team_twenty_probe")==1);DateTime day=new DateTime(2041,7,11,12,0,0,DateTimeKind.Local);Feature("ExperienceConsumables").GetField("Clock",Hidden).SetValue(null,(Func<DateTime>)(()=>day));foreach(var who in new[]{p}){var old=who.Inventory.Objects.Select(i=>i.UID).ToArray();NobilityClaimPacket(who,507);var ball=who.Inventory.Objects.Single(i=>!old.Contains(i.UID));Require(ball.ID==723700 && ball.Bound && ball.StackSize==1);byte level=who.Entity.Level;ulong xp=who.Entity.Experience;SoulClaimUse(who,ball);Require(!who.Inventory.ContainsUID(ball.UID) && (who.Entity.Level>level || who.Entity.Experience>xp));}FreshTeamTwentySave(p,players,2,wins);}else Require(phase.EndsWith("reload") && (int)Sql("SELECT stage FROM revora_fresh_team_twenty_probe")==2);
+            string saved=FreshTeamArenaSnapshot(p,players);foreach(var who in fighters){NobilityClaimPacket(who,305);NobilityClaimPacket(who,507);Require((long)Sql("SELECT count(*) FROM revora_team_arena_statistics WHERE uid=@uid AND won=@won","uid",(long)who.Entity.UID,"won",who==p || who==mate)==20);}Require(saved==FreshTeamArenaSnapshot(p,players));foreach(var who in new[]{p}){Require((long)Sql("SELECT count(*) FROM revora_way_of_heroes_claims WHERE uid=@uid AND stage_uid=507 AND NOT legacy","uid",(long)who.Entity.UID)==1);Require((bool)Sql("SELECT used=1 AND day=20410711 FROM revora_exp_ball_days WHERE uid=@uid","uid",(long)who.Entity.UID));}
+            foreach(var who in fighters.Where(w=>w!=p))Require((long)Sql("SELECT count(*) FROM revora_way_of_heroes_claims WHERE uid=@uid AND stage_uid=507","uid",(long)who.Entity.UID)==0);
+            foreach(var who in players){var ids=(long[])Sql("SELECT coalesce(array_agg(uid ORDER BY uid),ARRAY[]::bigint[]) FROM items WHERE entityid=@uid AND position=0 AND warehouse=0 AND coalesce(inwardrobe,0)=0","uid",(long)who.Entity.UID);Require(ids.SequenceEqual(who.Inventory.Objects.Select(i=>(long)i.UID).OrderBy(id=>id)) && EntityTable.SaveEntity(who));}Require(saved==FreshTeamArenaSnapshot(p,players));
+        }
+        Console.WriteLine("[career-process] "+phase+"-passed wins="+wins);Console.Out.Flush();if(earn || claim){Environment.Exit(0);return;}Server.CommandsAI("@close");throw new InvalidOperationException("Fresh Team Arena twenty did not close.");
+    }
+}

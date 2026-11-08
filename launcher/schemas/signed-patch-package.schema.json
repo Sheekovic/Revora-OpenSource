@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://playrevora.com/schemas/signed-patch-package.schema.json",
+  "title": "PlayRevora signed patch package metadata",
+  "type": "object", "additionalProperties": false,
+  "required": ["schemaVersion", "patchId", "channel", "sourceVersion", "targetVersion", "issuedAtUtc", "expiresAtUtc", "revoked", "archivePath", "archiveSize", "archiveSha256", "targetManifestId", "targetManifestPath", "targetManifestSha256", "files", "signature"],
+  "properties": {
+    "schemaVersion": { "const": 1 }, "patchId": { "type": "string", "minLength": 1 },
+    "channel": { "enum": ["production", "owner-test"] }, "sourceVersion": { "$ref": "#/$defs/version" },
+    "targetVersion": { "$ref": "#/$defs/version" }, "issuedAtUtc": { "type": "string", "format": "date-time" },
+    "expiresAtUtc": { "type": "string", "format": "date-time" }, "revoked": { "type": "boolean" },
+    "archivePath": { "type": "string", "minLength": 1 }, "archiveSize": { "type": "integer", "minimum": 0 },
+    "archiveSha256": { "$ref": "#/$defs/hash" }, "targetManifestId": { "type": "string", "minLength": 1 },
+    "targetManifestPath": { "type": "string", "minLength": 1 },
+    "targetManifestSha256": { "$ref": "#/$defs/hash" },
+    "files": { "type": "array", "items": { "$ref": "#/$defs/file" } },
+    "signature": { "$ref": "signed-client-manifest.schema.json#/$defs/signature" }
+  },
+  "$defs": {
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "hash": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" },
+    "file": { "type": "object", "additionalProperties": false, "required": ["archivePath", "targetPath", "size", "sha256"],
+      "properties": { "archivePath": { "type": "string", "minLength": 1 }, "targetPath": { "type": "string", "minLength": 1 },
+        "size": { "type": "integer", "minimum": 0 }, "sha256": { "$ref": "#/$defs/hash" } } }
+  }
+}

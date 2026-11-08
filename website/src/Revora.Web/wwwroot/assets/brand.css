@@ -1,0 +1,118 @@
+.header-brand-logo,
+.sidebar-brand-logo,
+.full-brand-logo,
+.account-brand-logo {
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  max-width: 100%;
+}
+
+.header-brand-logo {
+  width: auto;
+  height: 3.5rem;
+}
+
+.full-brand-logo {
+  width: clamp(9rem, 24vw, 13rem);
+  height: auto;
+}
+
+.account-brand-logo {
+  width: 7rem;
+  height: auto;
+}
+
+.sidebar-brand-logo {
+  width: 11rem;
+  height: auto;
+}
+
+.admin-label {
+  color: var(--muted);
+  font-size: .65rem;
+  letter-spacing: .16em;
+}
+
+.site-header nav .nav-account {
+  padding-inline: .65rem;
+  color: #f0d493;
+  border: 1px solid #d4b46f66;
+  border-radius: .45rem;
+  background: #d4b46f0d;
+}
+
+.site-header nav .nav-account:hover,
+.site-header nav .nav-account:focus-visible,
+.site-header nav .nav-account[aria-current="page"] {
+  color: #071013;
+  border-color: transparent;
+  background: linear-gradient(135deg, #e0c47f, #b8934f);
+}
+
+.site-header nav .nav-login {
+  color: var(--ink);
+}
+
+.site-header nav .nav-logout {
+  display: inline-flex;
+  margin: 0;
+}
+
+.site-header nav .nav-logout button {
+  padding: .45rem .15rem;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.site-header nav .nav-logout button:hover,
+.site-header nav .nav-logout button:focus-visible {
+  color: var(--ink);
+  border-color: var(--gold);
+  outline: 2px solid transparent;
+}
+
+@media (max-width: 900px) {
+  .header-brand-logo {
+    height: 2.55rem;
+  }
+
+  .site-header nav {
+    grid-row: 2;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+
+  .site-header .language {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .site-header nav::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .header-brand-logo {
+    height: 2.15rem;
+  }
+
+  .sidebar-brand-logo {
+    width: 9rem;
+  }
+
+  .site-header nav {
+    justify-content: space-between;
+    overflow: visible;
+  }
+
+  .site-header nav a:not(:first-child):not(.nav-account):not(.nav-login) {
+    display: none;
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "achievement": 10931,
+  "source_sha256": "f783c2a8ead9461a469c79b6c7e7aae00b2604066d4bc6e2e2c56d7e98fc5e14",
+  "chains": [
+    {
+      "key": "connector",
+      "missions": [
+        1718,
+        1719,
+        1720,
+        1721,
+        1722
+      ],
+      "final_stage": 6,
+      "table": "revora_connector",
+      "scope": "per_rebirth",
+      "reward_count": 3,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/ConnectorQuest.cs",
+      "source_sha256": "5e5e386b2b3d2d9da8ed94f9f4fa6f7ca5ea576fadf91527be7fa21c4b93eca2"
+    },
+    {
+      "key": "spun_gold",
+      "missions": [
+        1723,
+        1724,
+        1725,
+        1726
+      ],
+      "final_stage": 8,
+      "table": "revora_spun_gold",
+      "scope": "per_rebirth",
+      "reward_count": 2,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/SpunGoldStore.cs",
+      "source_sha256": "1ed16f6566cd0ce8df0aa87799c4462c9ebaac7a3bdbaee53f1228473f3448c8"
+    },
+    {
+      "key": "azure_pill",
+      "missions": [
+        1727,
+        1728,
+        1729,
+        1730,
+        1731,
+        1732
+      ],
+      "final_stage": 7,
+      "table": "revora_azure_pill",
+      "scope": "per_rebirth",
+      "reward_count": 2,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/AzurePillQuest.cs",
+      "source_sha256": "31ba781924a25b33c099b8e399e033452c5876742e85b09232efe18f3891fe65"
+    },
+    {
+      "key": "artisan_feather",
+      "missions": [
+        1733,
+        1734,
+        1735,
+        1736,
+        1737
+      ],
+      "final_stage": 6,
+      "table": "revora_artisan_feather",
+      "scope": "per_rebirth",
+      "reward_count": 2,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/ArtisanFeatherQuest.cs",
+      "source_sha256": "ef70602ec9bf0f1105821bd711507400e3030ad73bcdb1bd9f303d1d12738d4d"
+    },
+    {
+      "key": "mystic_ring",
+      "missions": [
+        1738,
+        1739,
+        1740,
+        1741,
+        1742,
+        1743,
+        1744
+      ],
+      "final_stage": 10,
+      "table": "revora_mystic_ring",
+      "scope": "per_rebirth",
+      "reward_count": 2,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/MysticRingStore.Rewards.cs",
+      "source_sha256": "ec0ffae0100b31abd062851ab2d6c538f455af0aeab0bf9ff3222d89e6e60f38"
+    },
+    {
+      "key": "frantic_monkeys",
+      "missions": [
+        1745,
+        1746,
+        1747,
+        1748,
+        1749,
+        1750
+      ],
+      "final_stage": 10,
+      "table": "revora_frantic_monkeys",
+      "scope": "per_rebirth",
+      "reward_count": 2,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/FranticMonkeysStore.Rewards.cs",
+      "source_sha256": "c15674a8f51bed02450d14c52fa6867d1a5cca37fcd6191424547bf1a4fd9582"
+    },
+    {
+      "key": "soul_general",
+      "missions": [
+        1751,
+        1752,
+        1753,
+        1754,
+        1755,
+        1756,
+        1757
+      ],
+      "final_stage": 12,
+      "table": "revora_soul_general",
+      "scope": "per_rebirth",
+      "reward_count": 2,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/SoulGeneralStore.Rewards.cs",
+      "source_sha256": "ec8521e6385cfeb95e6fcb4de1fc3b53821ef5272e0305fbf68c90c62711069f"
+    },
+    {
+      "key": "mad_man",
+      "missions": [
+        1781,
+        1782,
+        1783,
+        1784,
+        1785,
+        1786
+      ],
+      "final_stage": 9,
+      "table": "revora_mad_man",
+      "scope": "per_rebirth",
+      "reward_count": 3,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/MadManStore.Rewards.cs",
+      "source_sha256": "808ae31a8274c05be53f08d0ef9aa9f191aee1ba6c1b8e3c3c468852fc943eb7"
+    },
+    {
+      "key": "ghost_city",
+      "missions": [
+        1787,
+        1788,
+        1789,
+        1790,
+        1791,
+        1792,
+        1793,
+        1794
+      ],
+      "final_stage": 11,
+      "table": "revora_ghost_city",
+      "scope": "per_rebirth",
+      "reward_count": 3,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/GhostCityStore.Rewards.cs",
+      "source_sha256": "3611b10074c0afd07e1856b72ce77f70c7d0591474a9ad2c643267c7c15b61c3"
+    },
+    {
+      "key": "tomboy",
+      "missions": [
+        1795,
+        1796,
+        1797,
+        1798,
+        1799
+      ],
+      "final_stage": 6,
+      "table": "revora_tomboy",
+      "scope": "per_rebirth",
+      "reward_count": 3,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/TomboyStore.Rewards.cs",
+      "source_sha256": "458beae5a08629d34b8277a6c25b6fb733e1ab404772e1ddd66f557629f09b66"
+    },
+    {
+      "key": "desert_blood",
+      "missions": [
+        1800,
+        1801,
+        1802,
+        1803,
+        1804,
+        1805,
+        1806,
+        1807
+      ],
+      "final_stage": 11,
+      "table": "revora_desert_blood",
+      "scope": "per_rebirth",
+      "reward_count": 3,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/DesertBloodStore.Rewards.cs",
+      "source_sha256": "68511af3821c907a76160853953bc61235a31c3205a4e82fef35454da8a749cb"
+    },
+    {
+      "key": "hero_wings",
+      "missions": [
+        1808,
+        1809,
+        1810,
+        1811,
+        1812,
+        1813,
+        1814,
+        1815,
+        1816,
+        1817,
+        1818
+      ],
+      "final_stage": 12,
+      "table": "revora_hero_wings",
+      "scope": "per_rebirth",
+      "reward_count": 3,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/HeroWingsStore.Rewards.cs",
+      "source_sha256": "c7e14b9d762a67d54cb686574b1d7f8de2998a55206e4868c23d024a25cbb6ec"
+    },
+    {
+      "key": "family_feud",
+      "missions": [
+        1819,
+        1820,
+        1821,
+        1822,
+        1823,
+        1824,
+        1825,
+        1826,
+        1827
+      ],
+      "final_stage": 10,
+      "table": "revora_family_feud",
+      "scope": "per_rebirth",
+      "reward_count": 3,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/FamilyFeudStore.Rewards.cs",
+      "source_sha256": "2f0baaa4bed2d33f2e193d82b05174dade4f03050671241a01afc4e60ee1a956"
+    },
+    {
+      "key": "desert_treasure",
+      "missions": [
+        1828,
+        1829,
+        1830,
+        1831,
+        1832,
+        1833,
+        1834
+      ],
+      "final_stage": 8,
+      "table": "revora_desert_treasure",
+      "scope": "per_rebirth",
+      "reward_count": 3,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/DesertTreasureStore.Rewards.cs",
+      "source_sha256": "6d7968106566727e1474e81e010aeb1ccaf45c6320c62b6b0683b90c96d11abd"
+    },
+    {
+      "key": "desert_expedition",
+      "missions": [
+        1835,
+        1836,
+        1837,
+        1838,
+        1839
+      ],
+      "final_stage": 6,
+      "table": "revora_desert_expedition",
+      "scope": "per_rebirth",
+      "reward_count": 3,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/DesertExpeditionStore.Rewards.cs",
+      "source_sha256": "6917c09a0fdae8b58cc7922df260e603243688a7503c8ae3c8eb1fa9642a6746"
+    },
+    {
+      "key": "power_book",
+      "missions": [
+        1840,
+        1841,
+        1842,
+        1843,
+        1844,
+        1845,
+        1846,
+        1847,
+        1848,
+        1849,
+        1850,
+        1851,
+        1852
+      ],
+      "final_stage": 14,
+      "table": "revora_power_book",
+      "scope": "per_rebirth",
+      "reward_count": 2,
+      "reward_receipt": "revora_power_book_rewards(uid,life,pack_uid,soul_uid)",
+      "source": "Game/Features/PowerBookRewards.cs",
+      "source_sha256": "75ae853bbb39122faa6e20fcfa80bee3bd88dc64378ff77e7ce2d3ba3cdbc37d"
+    },
+    {
+      "key": "defense_talisman",
+      "missions": [
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528
+      ],
+      "final_stage": 10,
+      "table": "revora_defense_talisman",
+      "scope": "per_character",
+      "reward_count": 2,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/DefenseTalismanStore.Final.cs",
+      "source_sha256": "2f81c5351b5f660419598f44074376010bf491bbb88eb91feb53c6cbcffe04d9"
+    },
+    {
+      "key": "attack_talisman",
+      "missions": [
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409
+      ],
+      "final_stage": 11,
+      "table": "revora_attack_talisman",
+      "scope": "per_character",
+      "reward_count": 2,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/AttackTalismanStore.Garden.cs",
+      "source_sha256": "c35ae28d1e1fbdd54b3e4b4426fc43036f4e59162487c86d7c551844ef72d0ec"
+    },
+    {
+      "key": "tempest_wings",
+      "missions": [
+        200
+      ],
+      "final_stage": 4,
+      "table": "revora_tempest_wings",
+      "scope": "per_character",
+      "reward_count": 2,
+      "reward_receipt": "rewards bigint[]",
+      "source": "Game/Features/TempestWingsStore.Encounter.cs",
+      "source_sha256": "627f59f1b1a23de4897f4545b4ec564eee7ce7f6008d408abb79050ac3e8b491"
+    }
+  ],
+  "named_missions": 132,
+  "excluded_unnamed_missions": [
+    950,
+    951,
+    952,
+    953,
+    954,
+    955,
+    956,
+    957,
+    958,
+    959,
+    960,
+    961,
+    962,
+    963,
+    964,
+    965,
+    966,
+    967
+  ],
+  "original_aggregate_rule_verified": false,
+  "owner_edition_decision": "approved-cross-life-2026-09-30",
+  "candidate_rule": "All19 restored chains, across saved rebirths for the same character; final stages plus complete reward receipts.",
+  "caveats": [
+    "Catalog category coverage is not proof of original achievement rules",
+    "Source hashes locate reviewed final transactions, not semantic runtime proof",
+    "Fan original predecessor527 differs from reviewed Revora final Tower528",
+    "Missing tables or incomplete receipts cannot qualify",
+    "Consumed reward items must not erase durable completion"
+  ],
+  "enabled": true,
+  "native_acceptance": false
+}

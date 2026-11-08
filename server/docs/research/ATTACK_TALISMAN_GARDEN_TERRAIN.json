@@ -1,0 +1,244 @@
+{
+  "scope": "Explicit Revora pillar layout and private reuse of3937 skygarden; not restored original Rose Garden. Native/server cells, reserved NPC footprints and routes verified; native rendering and portal acceptance pending.",
+  "scenes": [
+    {
+      "map": 1015,
+      "client_bindings": [
+        [
+          "map/map/island.7z",
+          256
+        ]
+      ],
+      "server_bindings": [
+        [
+          "map/map/island.7z",
+          256
+        ]
+      ],
+      "server_floor_exists": true,
+      "verified": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": {
+        "server": "e47df70501200965040755a424873395172c03e7dad920d483414f85c0359ba7",
+        "archive": "150af472995d0c4d81425cc1e3c67ddb3c870dc1cb3a63f6c5dcfa73d50ead27",
+        "native": "9be1551c0856bc631ac4601ef74f1046ca03d3ba2bcae9e0d4ba2b9536e2fa7e"
+      },
+      "differing_cells": 0,
+      "points": [
+        {
+          "x": 680,
+          "y": 720,
+          "walkable": true
+        },
+        {
+          "x": 694,
+          "y": 720,
+          "walkable": true
+        },
+        {
+          "x": 680,
+          "y": 734,
+          "walkable": true
+        },
+        {
+          "x": 694,
+          "y": 734,
+          "walkable": true
+        },
+        {
+          "x": 686,
+          "y": 723,
+          "walkable": true
+        },
+        {
+          "x": 688,
+          "y": 723,
+          "walkable": true
+        },
+        {
+          "x": 682,
+          "y": 720,
+          "walkable": true
+        },
+        {
+          "x": 696,
+          "y": 720,
+          "walkable": true
+        },
+        {
+          "x": 682,
+          "y": 734,
+          "walkable": true
+        },
+        {
+          "x": 696,
+          "y": 734,
+          "walkable": true
+        }
+      ],
+      "routes": [
+        {
+          "x": 688,
+          "y": 723,
+          "steps": 0
+        },
+        {
+          "x": 682,
+          "y": 720,
+          "steps": 9
+        },
+        {
+          "x": 696,
+          "y": 720,
+          "steps": 11
+        },
+        {
+          "x": 682,
+          "y": 734,
+          "steps": 17
+        },
+        {
+          "x": 696,
+          "y": 734,
+          "steps": 19
+        }
+      ]
+    },
+    {
+      "map": 3937,
+      "client_bindings": [
+        [
+          "map/map/skygarden.7z",
+          256
+        ]
+      ],
+      "server_bindings": [
+        [
+          "map/map/skygarden.7z",
+          256
+        ]
+      ],
+      "server_floor_exists": true,
+      "verified": true,
+      "dimensions": [
+        92,
+        92
+      ],
+      "sha256": {
+        "server": "d76d15a0bf69c2e22e75b782138ae94673e68da916debb052106b184cce307e8",
+        "archive": "115c8d62ec4cb271660559c219e459a4650107baaf049788ff53382a3c9a02a6",
+        "native": "f633fa0a4556660bc2b3fb0716a0b56c70eb876cb4219175b1f24de8525ed513"
+      },
+      "differing_cells": 0,
+      "points": [
+        {
+          "x": 52,
+          "y": 50,
+          "walkable": true
+        },
+        {
+          "x": 58,
+          "y": 50,
+          "walkable": true
+        },
+        {
+          "x": 64,
+          "y": 50,
+          "walkable": true
+        },
+        {
+          "x": 60,
+          "y": 64,
+          "walkable": true
+        },
+        {
+          "x": 48,
+          "y": 60,
+          "walkable": true
+        },
+        {
+          "x": 52,
+          "y": 53,
+          "walkable": true
+        },
+        {
+          "x": 58,
+          "y": 53,
+          "walkable": true
+        },
+        {
+          "x": 64,
+          "y": 53,
+          "walkable": true
+        },
+        {
+          "x": 60,
+          "y": 61,
+          "walkable": true
+        },
+        {
+          "x": 54,
+          "y": 58,
+          "walkable": true
+        },
+        {
+          "x": 56,
+          "y": 58,
+          "walkable": true
+        },
+        {
+          "x": 58,
+          "y": 58,
+          "walkable": true
+        }
+      ],
+      "routes": [
+        {
+          "x": 48,
+          "y": 60,
+          "steps": 0
+        },
+        {
+          "x": 52,
+          "y": 53,
+          "steps": 11
+        },
+        {
+          "x": 58,
+          "y": 53,
+          "steps": 17
+        },
+        {
+          "x": 64,
+          "y": 53,
+          "steps": 23
+        },
+        {
+          "x": 60,
+          "y": 61,
+          "steps": 13
+        },
+        {
+          "x": 54,
+          "y": 58,
+          "steps": 8
+        },
+        {
+          "x": 56,
+          "y": 58,
+          "steps": 10
+        },
+        {
+          "x": 58,
+          "y": 58,
+          "steps": 12
+        }
+      ]
+    }
+  ],
+  "all_scenes_available": true,
+  "native_acceptance": false
+}

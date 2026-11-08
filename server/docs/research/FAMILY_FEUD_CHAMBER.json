@@ -1,0 +1,140 @@
+{
+  "map": 1801,
+  "dimensions": [
+    126,
+    126
+  ],
+  "entry": [
+    50,
+    55
+  ],
+  "actors": [
+    {
+      "name": "CommanderKerry",
+      "position": [
+        56,
+        55
+      ],
+      "placement": "Revora adaptation"
+    },
+    {
+      "name": "BlueEye",
+      "position": [
+        48,
+        60
+      ],
+      "placement": "Revora adaptation"
+    },
+    {
+      "name": "GreenEye",
+      "position": [
+        52,
+        64
+      ],
+      "placement": "Revora adaptation"
+    },
+    {
+      "name": "RedEye",
+      "position": [
+        58,
+        66
+      ],
+      "placement": "Revora adaptation"
+    },
+    {
+      "name": "YellowEye",
+      "position": [
+        62,
+        60
+      ],
+      "placement": "Revora adaptation"
+    },
+    {
+      "name": "BlackEye",
+      "position": [
+        58,
+        58
+      ],
+      "placement": "Revora adaptation"
+    }
+  ],
+  "approaches": [
+    {
+      "x": 54,
+      "y": 55,
+      "walk_steps": 4
+    },
+    {
+      "x": 50,
+      "y": 60,
+      "walk_steps": 5
+    },
+    {
+      "x": 54,
+      "y": 64,
+      "walk_steps": 13
+    },
+    {
+      "x": 58,
+      "y": 64,
+      "walk_steps": 17
+    },
+    {
+      "x": 60,
+      "y": 60,
+      "walk_steps": 15
+    },
+    {
+      "x": 58,
+      "y": 60,
+      "walk_steps": 13
+    }
+  ],
+  "sha256": {
+    "server": "27915507e6db3153afc7fa11b29c85b60fa51cbfc260afa93f023d241ed53d06",
+    "archive": "dc43ec825a1fb11781ac2fe1f1e6da868948463457e02a643a9442478b49e562",
+    "native": "6233285a2139c76cb14db29487820f039d032a4ecbd4423b2f7e3653f111a692"
+  },
+  "native_acceptance": false,
+  "scope": "Exact native/server static terrain with six 3x3 NPC footprints; not native rendering, travel speed or movement-packet acceptance.",
+  "adaptation": "Owned dynamic copy of installed map 1801; missing original map 1818 is not reconstructed or claimed equivalent.",
+  "pads": [
+    {
+      "color": "blue",
+      "position": [
+        50,
+        60
+      ]
+    },
+    {
+      "color": "green",
+      "position": [
+        54,
+        64
+      ]
+    },
+    {
+      "color": "red",
+      "position": [
+        58,
+        64
+      ]
+    },
+    {
+      "color": "yellow",
+      "position": [
+        60,
+        60
+      ]
+    },
+    {
+      "color": "black",
+      "position": [
+        58,
+        60
+      ]
+    }
+  ],
+  "seconds": 10,
+  "requires_final_kerry_report": true
+}

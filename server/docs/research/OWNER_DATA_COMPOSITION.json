@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-04",
+  "result": "passed",
+  "scope": "Private combined data payload; not installed, signed, standalone or native-accepted",
+  "files": 16,
+  "bytes": 34295343,
+  "manifest_sha256": "511eb3a9fb659e17030f8972e9e3aa5feecc591b8a045d79794800c48731cd93",
+  "private_path": "obj/chi-refill-validation/owner-data-local-v1",
+  "checks": [
+    "Second composition reuses identical artifacts.",
+    "Independent item decoder/parser confirms one identical727990 record in all three catalogs.",
+    "Every output size/hash matches its manifest.",
+    "Traversal/absolute/non-normal paths and existing starter identity rejected."
+  ],
+  "remaining": [
+    "Server candidate and dependency/configuration reconciliation.",
+    "Destination preimage backups and transactional installation.",
+    "Native owner checklist and coordinated release approval."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://playrevora.com/schemas/patch.schema.json",
+  "title": "PlayRevora delta patch manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "version", "files"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "version": { "type": "string" },
+    "requiresVersion": { "type": ["string", "null"] },
+    "files": { "type": "array", "items": { "$ref": "#/$defs/file" } }
+  },
+  "$defs": {
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "source", "size", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "source": { "type": "string", "minLength": 1 },
+        "size": { "type": "integer", "minimum": 0 },
+        "sha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" }
+      }
+    }
+  }
+}

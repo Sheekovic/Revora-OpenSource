@@ -1,0 +1,69 @@
+{
+  "scope": "Ordinary paid Archer loadout and cold persistence; not a full Snow Banshee combat victory",
+  "uid": 1096322,
+  "result": "passed",
+  "profile": {
+    "level": 140,
+    "class": 45,
+    "hp": 30163,
+    "min": 25571,
+    "max": 26563,
+    "fan": 7733,
+    "gems": 180,
+    "bow": 62312163,
+    "arrows": 62312164,
+    "spent": 65000
+  },
+  "equipped_item_count": 7,
+  "bound_items": 7,
+  "non_arrow_item_properties": {
+    "plus": 12,
+    "bless": 7,
+    "super_dragon_sockets": 2,
+    "permanent_purification_level": 7
+  },
+  "ordinary_actions": [
+    "Warehouse deposits make room without deleting owned items",
+    "Quoted peak training to140/Archer45 with rebirth2 unchanged",
+    "Quoted Archer vestments purchase",
+    "Existing earned attribute points allocated through sealed1024 packet",
+    "Normal equipment handlers install seven purchased items"
+  ],
+  "checks": [
+    "Exact combined65000CP deduction from earned purse",
+    "Repeated confirmations do not charge or create extra items",
+    "All prior achievement identities remain present",
+    "Cold process/database restart preserves the entire nested checkpoint, purchase receipts and owned UIDs",
+    "All seven purchased items are equipped and bound; all six non-arrow items retain their recorded enhancements",
+    "Cold combat stats match earned profile after JiangHu-aware stat refresh"
+  ],
+  "arithmetic_only": {
+    "unbuffed_ranged_damage_estimate": 93251,
+    "half_uptime_solo_threshold": 42554,
+    "not_measured_attack": true
+  },
+  "limits": [
+    "Approach and phase clock are controlled; no native client acceptance",
+    "Peak is an ordinary paid promotion; skipped intermediate trainer achievements are not credited as tested",
+    "A preliminary cold read calculated equipment before loading JiangHu; the scoped harness refresh corrects this and matches the original earned stats",
+    "Survival, damage delivery, ammunition and repair during a complete healing cycle remain to validate"
+  ],
+  "earlier_attempts": [
+    "Initial bag-space guard stopped before purchase; preserved as snow-loadout-bag-blocked.log",
+    "Pre-refresh cold report is preserved separately and is not used for the final combat stats"
+  ],
+  "log_sha256": {
+    "arena-process-career-fresh-arena-classes-mentor-snow-loadout-earn.log": "64bc98e18d6b4c6f7be16523b1f1f08c8c0b2187b1dd0208d8f18b8ae5d275c1",
+    "arena-process-career-fresh-arena-classes-mentor-snow-loadout-reload.log": "7478fee4e87bd4111f1586065ea0f508e3a4183c5f5a4a9ad7a2322637647727"
+  },
+  "server_sha256": "18cac3a8a6ef22f46175ef2fab4749adac8e2db09fc3ad323b944f39d969a5f3",
+  "source_sha256": {
+    "tools/CheckCandidateFreshArenaClasses.cs": "5968eaa8307dc8ff7db2443d13d0ec87678747d050b2291a127e9ce0cd18e0b1",
+    "tools/CheckCandidateArenaLifecycle.cs": "49848bb364218447a5dca8288088ce9292f06fa6fb5199599e86909b18fec187",
+    "tools/Invoke-CandidateArenaLifecycle.ps1": "5c9d969f0b45801626191d96d5e01c8f5057d80ca6a1781646d55604d3021a17",
+    "Game/Features/RevoraMasterPeak.cs": "ebb9d629fc9b77d7cb7ff578fe25d50d03297cf564e1836c0cafad9f02fc9e87",
+    "Game/Features/RevoraMasterSystem.cs": "10d349197719f707b6eebaa363ae68bda8969e41ef3d5bc952de167a28709a24",
+    "Client/GameState.cs": "f71a7b91642a15f70ba552d241b8006dd5732e53cab153c6e18690e4711b6a14",
+    "Game/Attacking/PvM.cs": "d0b5f04a98440b9ad577338c94acc530535425c24f220eed2dc43dfb408b0044"
+  }
+}

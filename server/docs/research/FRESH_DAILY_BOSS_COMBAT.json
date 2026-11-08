@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-03",
+  "uid": 1096322,
+  "scope": "Full calculated Moonfang combat and medicine-funded survival on the fresh ordinary character; controlled timing/proximity, not native or natural-time acceptance",
+  "runtime_sha256": "A38205B5C2185F060453E2D3BED757059D41724B912383F856C613CEC9E5A0DA",
+  "result": {
+    "stage": 3,
+    "run": "2027-07-21/0",
+    "hits": 7220,
+    "damage": 100000000,
+    "retaliations": 1804,
+    "received": 12613054,
+    "elapsed_ms": 5231000,
+    "min_hp": 6433,
+    "bought": 1824,
+    "used": 1801,
+    "trips": 19,
+    "cp_before": 4596921,
+    "rvp_before": 2797,
+    "silver_before": 14647300
+  },
+  "medicine": {
+    "type": 1000040,
+    "hp": 7000,
+    "max_stack": 5,
+    "unit_silver": 1000,
+    "total_silver": 1824000,
+    "remaining": 23
+  },
+  "reward": {
+    "cps": 1000000,
+    "rvps": 50000,
+    "silver": 10000000,
+    "bound_p7_items": 4
+  },
+  "final_balances": {
+    "cps": 5596921,
+    "rvps": 52797,
+    "silver": 22823300
+  },
+  "checks": [
+    "No direct lethal hit or injected HP, purse, equipment or damage.",
+    "Full100M damage accumulated through Attack.HandleAttack; normal monster Handle delivers1804 attacks.",
+    "Exact1000-silver purchases, stack-limited inventory, normal warehouse deposits and owned medicine consumption.",
+    "Computed clock5231000ms stays below7200000ms;500ms melee intervals,2000ms boss intervals and90000ms per resupply round-trip after initial provisioning.",
+    "Existing earned+12 lowered gear retained; ordinary non-GM identity remains eligible.",
+    "Four bound P7 floor items picked up twice; exact saved four item UIDs and claims persist on cold reload.",
+    "Repeated bounty payment and full nested snapshot equality after cold reload."
+  ],
+  "limitations": [
+    "Approach positions and resupply travel are controlled;90-second trips are an explicit model, not a measured or native navigation result.",
+    "Real wall-clock cadence, monster autonomous pursuit/target selection, native presentation and live deployment remain unverified.",
+    "This is one Moonfang fight through shared four-boss code, not four separate encounters or all-class balance proof.",
+    "Subsequent paid maintenance and cold re-equip now pass after the low-level reborn Warrior-gear correction; see FRESH_FUNDING_MAINTENANCE.json. Net rewards after healing and repairs are999970 CPs and8151821 silver. This does not audit every historical currency unit or certify all320 achievements."
+  ],
+  "failures_preserved": [
+    "Initial preparation assertion expected at most35 bag entries; actual bag36 was unchanged. The corrected preparation used ordinary warehouse deposits to make space.",
+    "First combat completed the kill and saved its result, then test-only floor-item reflection used static flags for an instance field. Dedicated loot recovery loaded the exact saved kill and paid bounty; no fight or health state was reset."
+  ],
+  "logs": {
+    "prepare": {
+      "sha256": "649f08f48276a53121d25cd59a6da6e9c452f76b395782a1abda27180bdeffbf",
+      "status": "passed"
+    },
+    "combat": {
+      "sha256": "d5faf60845d03b1d4f8c1ddd5659f4c6bbf3d1591a1540d8e16907fd123f6c6b",
+      "status": "combat completed; fixture failed inspecting loot"
+    },
+    "loot": {
+      "sha256": "a61bd4a701e7dafe49e4c9a1e06510f53bbfc8bd8019352c519d3d812279962c",
+      "status": "passed"
+    },
+    "reload": {
+      "sha256": "93f5595ec470e053b2173fcad9a0e72c24e0af9fe32df67e5db06dbb080d30a4",
+      "status": "passed"
+    }
+  },
+  "source_sha256": {
+    "tools/CheckCandidateFreshDailyBoss.cs": "aba5730061347be1aff22dfbef707a089eea590416ab860fce47a8234ff61971",
+    "Game/Features/DailyWorldBosses.cs": "1e7d6e3281cbe14deefb61a23703d584f769ab60e86c88dfc7ac4a96bac0cbb4",
+    "Game/Features/HealingMedicine.cs": "cafe7965272c52a0abacc33302fac77b939b66bf8e0c13163e290141c7684a91",
+    "Game/Attacking/Calculate.cs": "ab4ac7ef6727a46353d8cfe2670c0cf74d3f7eea7ce789b0b56ee1bd50803522"
+  }
+}

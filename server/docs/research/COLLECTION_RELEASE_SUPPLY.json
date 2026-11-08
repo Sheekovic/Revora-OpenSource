@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-04",
+  "scope": "Current installed and privately staged catalogs through integrated production loaders; supplier potential, not new purchases or native acceptance",
+  "runtime_sha256": "a9b832862153b718bf1ef6f6b6dcf73b1e0c0c0fe19a4feba03fed4f7d429f99",
+  "probe_sha256": "2c34478448e5b2e0ca321c27b2d3968844781d9da152a1d8c64c1b1488f29e66",
+  "before": {
+    "Garments": 250,
+    "Mounts": 186
+  },
+  "staged": {
+    "Garments": 250,
+    "Mounts": 203
+  },
+  "restored_pack_count": 17,
+  "unchanged_pack_price_cps": 2799,
+  "all_pack_cost_cps": 47583,
+  "pack_outputs": {
+    "3000254": 200407,
+    "3000256": 200411,
+    "3000257": 200412,
+    "3000258": 200413,
+    "3000259": 200414,
+    "3000260": 200415,
+    "3000261": 200416,
+    "3000262": 200417,
+    "3000263": 200418,
+    "3000264": 200419,
+    "3000265": 200420,
+    "3000266": 200421,
+    "3000267": 200427,
+    "3000268": 200431,
+    "3000269": 200438,
+    "3000270": 200444,
+    "3000271": 200442
+  },
+  "files": [
+    {
+      "group": "server",
+      "source": "C:\\Users\\Administrator\\Desktop\\Revora\\Source\\Revora-6711\\bin\\Debug\\database\\shops\\emoneyShopV2.ini",
+      "before": "545cfecead1786cfa832acb12865d8dce29347446dfe660ef3597f3c3fe9f35e",
+      "after": "c563b532bd85861b9db8431959e230a23b2c59cbfbed14a424ad5d9b3979bb9f",
+      "added": [
+        3000254,
+        3000256,
+        3000257,
+        3000258,
+        3000259,
+        3000260,
+        3000261,
+        3000262,
+        3000263,
+        3000264,
+        3000265,
+        3000266,
+        3000267,
+        3000268,
+        3000269,
+        3000270,
+        3000271
+      ]
+    },
+    {
+      "group": "client",
+      "source": "C:\\Users\\Administrator\\Desktop\\Revora\\6711\\ini\\emoneyshopv2.ini",
+      "before": "5663b8b102d779a5be7bdef9fe5e18c3b4e30058c643a910813adc969d89c941",
+      "after": "5e34a76d266e9fe708ea310264a8c87cff204fb6742eabb53d6b2b462a54b3ee",
+      "added": [
+        3000254,
+        3000256,
+        3000257,
+        3000258,
+        3000259,
+        3000260,
+        3000261,
+        3000262,
+        3000263,
+        3000264,
+        3000265,
+        3000266,
+        3000267,
+        3000268,
+        3000269,
+        3000270,
+        3000271
+      ]
+    }
+  ],
+  "logs_sha256": {
+    "installed": "0e959941531847ea9067c017000ce1f6d827d9080696deb6d562aa96192b9767",
+    "staged": "e613aa05e9a72ee152603fbde19bf304d698e78782c8ec393a3cbc3b99af6183"
+  },
+  "client_item_catalog_sha256": "ab428fe7d3932d98ead2ece8cdc20c548ee909723792fb4de955df7dddfa7753",
+  "native_acceptance": false,
+  "deployed": false,
+  "published": false,
+  "input_sha256": {
+    "bin/Debug/database/itemtype-new.txt": "d66c0489807d877e19053c8c04994d6738ffccf5c86565f216399f5dbfd55279",
+    "bin/Debug/database/ItemtypeSub.txt": "625b6432f5a23aa5833c24d4a4c6be709dd244b4e5f71e6cfba6fe0272cd84b0",
+    "bin/Debug/database/ItemsPlus.ini": "f63d727f037a9a459c8024396dc5dbe1ca8cdaf4c279c0d045753a7a33107b5c",
+    "bin/Debug/database/coat_storage_type.txt": "469ac492d7445ed6759827f04602a77e57179c361218dffcf79788fe165f4977",
+    "bin/Debug/database/shops/emoneyshop.ini": "582ffe08d88f7bdf216c8e0612a7d06ffc1389bcc6ec643d452d31d401e347ba",
+    "Game/Features/FixedOutputPacks.cs": "84bf5afdaa184bdc9e5cd652389ad74014cff88a8cb5caa55b30e70d3145aa4a",
+    "Game/Features/PlanetWeekend.cs": "ec1929009ee4849397e1501fa0ae3f61ec840633aa33b6dfe1ff30e5b514905b"
+  },
+  "checks": [
+    "17 unique source-defined packs and outputs.",
+    "Server and native prices remain 2799 CPs; packs are permanent.",
+    "Both V2 shop-2888 additions preserve existing rows and every other shop byte-for-byte.",
+    "Staging transformation is idempotent.",
+    "Production item/wardrobe/merged EShop loaders recognize all 17 restored packs."
+  ],
+  "release_requirement": "Merge both staged V2 catalogs into coordinated release; private originals and exact before/after hashes retained. Restage if installed inputs change.",
+  "limits": [
+    "Historical collection earning used different shop catalogs.",
+    "Existing fixed-pack payment/opening/cold-recovery evidence reused; no new earning run.",
+    "Supplier potential includes event/pack rewards; not a guarantee of drop timing or a complete 320 career."
+  ]
+}

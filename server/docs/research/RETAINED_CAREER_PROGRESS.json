@@ -1,0 +1,1808 @@
+{
+  "scope": "Private retained career; receipt presence is not independent earning proof",
+  "sign_in_days": 70,
+  "promotion_school_step": 8,
+  "passive_checkpoint": true,
+  "portal_checkpoint": true,
+  "snapshot_sha256": "46ed3d585d59d9dcd1d06cda90ef8bebecfa1028194612b9a48bf4c77f538cdc",
+  "catalog_sha256": "6cb510031c67dc4cc5da4890892b2b3b6708c20ee31d0bc40ddf4b962358cf02",
+  "catalog_count": 337,
+  "stored_identity_count": 322,
+  "missing_identity_count": 15,
+  "compatible_career_verified": false,
+  "source_counts": {
+    "abyss-trial-v1": 1,
+    "ancient-collection-v1": 1,
+    "arena-class-victory": 10,
+    "arena-first-nine": 1,
+    "arena-local-v1": 1,
+    "arena-twenty-entries": 1,
+    "armor-dye-v1": 1,
+    "artifact-apply": 1,
+    "artifact-stabilize": 1,
+    "aura-cast-v1": 1,
+    "bp-pk-v1": 1,
+    "clan-founder-v1": 1,
+    "clan-territory-v1": 5,
+    "class-pk-v1": 1,
+    "class-promotion-v1": 38,
+    "classic-dance-v1": 1,
+    "classic-labyrinth-v1": 1,
+    "cosmetic-avatar-v1": 1,
+    "cosmetic-colour-v1": 1,
+    "cosmetic-style-v1": 1,
+    "couple-pk-npc-v1": 2,
+    "ctf-local-v1": 2,
+    "demon-exterminators-v1": 1,
+    "dis-city-v1": 4,
+    "dragon-slayer-v1": 1,
+    "elite-pk-champion-v1": 1,
+    "enemy-guild-defeat-v1": 1,
+    "equipment-gems-v1": 1,
+    "equipment-quests-revora-v1": 1,
+    "equipment-set-v1": 8,
+    "equipment-state-v1": 6,
+    "equipment-switch-v1": 1,
+    "equipment-upgrade": 7,
+    "first-rebirth-v1": 2,
+    "flame-lit-v1": 1,
+    "flower-delivery-v1": 1,
+    "flower-queen-v1": 4,
+    "guild-appointment-v1": 3,
+    "guild-beast-daily-v1": 1,
+    "guild-inscription-v1": 1,
+    "guild-manager-v1": 1,
+    "guild-pole-hit-v1": 1,
+    "guild-siege-bomb-v1": 1,
+    "guild-supervisor-v1": 1,
+    "guild-transporter-v1": 1,
+    "guild-war-occupation-v1": 1,
+    "guild-war-purse-v1": 1,
+    "hand-holding-v1": 1,
+    "honor-arena-ranking": 1,
+    "house-construction-v1": 5,
+    "house-furniture-v1": 1,
+    "house-visit-guest-v1": 1,
+    "house-visit-host-v1": 1,
+    "lottery-prize-v1": 1,
+    "mentor-admission-v1": 2,
+    "meteor-monster-loot-v1": 1,
+    "monster-ko-v1": 3,
+    "monthly-pk-v1": 2,
+    "moon-box-v1": 1,
+    "mutual-friend-v1": 1,
+    "mutual-marriage": 1,
+    "mutual-partner-v1": 1,
+    "newcomer-intro-v1": 1,
+    "nobility-donation": 1,
+    "nobility-ranked-king": 1,
+    "observed-state": 45,
+    "owned-guard-summon": 1,
+    "player-booth": 1,
+    "player-defeat-v1": 4,
+    "player-revival-v1": 1,
+    "power-arena-v1": 2,
+    "quiz-local-v1": 2,
+    "refinery-apply": 1,
+    "release-souls-v1": 1,
+    "rune-full-level-v1": 10,
+    "rune-loadout-v1": 2,
+    "second-rebirth-v1": 1,
+    "sky-pass-v1": 1,
+    "snake-islands-v1": 1,
+    "snow-banshee-kill-v1": 1,
+    "snow-banshee-loot": 1,
+    "spook-kill-v1": 1,
+    "steed-breeding-v1": 1,
+    "steed-course-v1": 2,
+    "study-reward-v1": 1,
+    "subclass-v1": 14,
+    "sword-master-kill-v1": 1,
+    "terato-kill-v1": 1,
+    "travel-region-v1": 45,
+    "unarmed-monster-victory": 1,
+    "virtue-meteor-v1": 1,
+    "wardrobe-permanent-v1": 9,
+    "weapon-skill-fixed-v1": 16,
+    "weekly-pk-v1": 2
+  },
+  "missing_by_primary_producer": {
+    "Game/Features/ClassPromotion.cs": 12,
+    "Game/Features/CollectionAchievements.cs": 1,
+    "Game/Features/EliminationRewards.cs": 1,
+    "Game/Features/TravelProgress.cs": 1
+  },
+  "identities": [
+    {
+      "id": 10101,
+      "receipt_source": "house-furniture-v1",
+      "producer": "Game/Features/HouseFurniture.cs:195"
+    },
+    {
+      "id": 10102,
+      "receipt_source": "house-construction-v1",
+      "producer": "Game/Features/Housing.cs:69"
+    },
+    {
+      "id": 10103,
+      "receipt_source": "house-construction-v1",
+      "producer": "Game/Features/Housing.cs:70"
+    },
+    {
+      "id": 10104,
+      "receipt_source": "house-construction-v1",
+      "producer": "Game/Features/Housing.cs:71"
+    },
+    {
+      "id": 10105,
+      "receipt_source": "house-construction-v1",
+      "producer": "Game/Features/Housing.cs:72"
+    },
+    {
+      "id": 10106,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10107,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10108,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10110,
+      "receipt_source": "virtue-meteor-v1",
+      "producer": "Game/Features/ShelbyRewards.cs:60"
+    },
+    {
+      "id": 10112,
+      "receipt_source": "steed-breeding-v1",
+      "producer": "Game/Features/SteedBreeding.cs:105"
+    },
+    {
+      "id": 10113,
+      "receipt_source": "cosmetic-colour-v1",
+      "producer": "Game/Features/CosmeticOwnership.cs:160"
+    },
+    {
+      "id": 10114,
+      "receipt_source": "cosmetic-style-v1",
+      "producer": "Game/Features/CosmeticOwnership.cs:156"
+    },
+    {
+      "id": 10115,
+      "receipt_source": "armor-dye-v1",
+      "producer": "Game/Features/ArmorDyeShop.cs:168"
+    },
+    {
+      "id": 10116,
+      "receipt_source": "cosmetic-avatar-v1",
+      "producer": "Game/Features/CosmeticOwnership.cs:158"
+    },
+    {
+      "id": 10117,
+      "receipt_source": "guild-transporter-v1",
+      "producer": "Game/Features/AdventureTravel.cs:103"
+    },
+    {
+      "id": 10118,
+      "receipt_source": "lottery-prize-v1",
+      "producer": "Game/Features/LotteryDraws.cs:151"
+    },
+    {
+      "id": 10119,
+      "receipt_source": "owned-guard-summon",
+      "producer": "Game/Features/GuardTraining.cs:29"
+    },
+    {
+      "id": 10120,
+      "receipt_source": "quiz-local-v1",
+      "producer": "Game/Features/QuizResults.cs:75"
+    },
+    {
+      "id": 10121,
+      "receipt_source": "classic-dance-v1",
+      "producer": "Game/Features/ClassicDances.cs:56"
+    },
+    {
+      "id": 10122,
+      "receipt_source": "house-construction-v1",
+      "producer": "Game/Features/Housing.cs:73"
+    },
+    {
+      "id": 10123,
+      "receipt_source": "mutual-friend-v1",
+      "producer": "Game/Features/Friendships.cs:128;Game/Features/Friendships.cs:129"
+    },
+    {
+      "id": 10124,
+      "receipt_source": "mentor-admission-v1",
+      "producer": "Game/Features/MentorAdmissions.cs:151"
+    },
+    {
+      "id": 10125,
+      "receipt_source": "mentor-admission-v1",
+      "producer": "Game/Features/MentorAdmissions.cs:152"
+    },
+    {
+      "id": 10126,
+      "receipt_source": "mutual-partner-v1",
+      "producer": "Game/Features/TradePartnerships.cs:191;Game/Features/TradePartnerships.cs:192"
+    },
+    {
+      "id": 10127,
+      "receipt_source": "flower-delivery-v1",
+      "producer": "Game/Features/FlowerDelivery.cs:219;Game/Features/FlowerDelivery.cs:220"
+    },
+    {
+      "id": 10128,
+      "receipt_source": "player-booth",
+      "producer": "Game/Features/PurseBalance.cs:282"
+    },
+    {
+      "id": 10129,
+      "receipt_source": "mutual-marriage",
+      "producer": "Game/Features/Marriages.cs:53"
+    },
+    {
+      "id": 10130,
+      "receipt_source": "hand-holding-v1",
+      "producer": "Game/Attacking/Handle.cs:139;Game/Attacking/Handle.cs:140"
+    },
+    {
+      "id": 10131,
+      "receipt_source": "house-visit-host-v1",
+      "producer": "Game/Features/HouseVisits.cs:162"
+    },
+    {
+      "id": 10132,
+      "receipt_source": "house-visit-guest-v1",
+      "producer": "Game/Features/HouseVisits.cs:163"
+    },
+    {
+      "id": 10218,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10219,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10221,
+      "receipt_source": "guild-appointment-v1",
+      "producer": "Game/Features/GuildLeadership.cs:101"
+    },
+    {
+      "id": 10222,
+      "receipt_source": "guild-appointment-v1",
+      "producer": "Game/Features/GuildLeadership.cs:99"
+    },
+    {
+      "id": 10223,
+      "receipt_source": "guild-manager-v1",
+      "producer": "Game/Features/GuildManagers.cs:162"
+    },
+    {
+      "id": 10224,
+      "receipt_source": "guild-supervisor-v1",
+      "producer": "Game/Features/GuildManagers.cs:167"
+    },
+    {
+      "id": 10225,
+      "receipt_source": "guild-appointment-v1",
+      "producer": "Game/Features/GuildLeadership.cs:100"
+    },
+    {
+      "id": 10226,
+      "receipt_source": "guild-inscription-v1",
+      "producer": "Game/Features/GuildArsenalPurchases.cs:80"
+    },
+    {
+      "id": 10227,
+      "receipt_source": "enemy-guild-defeat-v1",
+      "producer": "Game/Features/PlayerDefeatCredit.cs:67"
+    },
+    {
+      "id": 10228,
+      "receipt_source": "guild-war-purse-v1",
+      "producer": "Game/Features/GuildWarPurses.cs:125;Game/Features/GuildWarPurses.cs:134"
+    },
+    {
+      "id": 10230,
+      "receipt_source": "ctf-local-v1",
+      "producer": "Game/Features/CtfResults.cs:101"
+    },
+    {
+      "id": 10231,
+      "receipt_source": "guild-siege-bomb-v1",
+      "producer": "Game/Features/GuildSeasonWar.cs:171"
+    },
+    {
+      "id": 10232,
+      "receipt_source": "guild-pole-hit-v1",
+      "producer": "Game/Features/GuildPoleCredit.cs:38"
+    },
+    {
+      "id": 10301,
+      "receipt_source": "ctf-local-v1",
+      "producer": "Game/Features/CtfResults.cs:189"
+    },
+    {
+      "id": 10302,
+      "receipt_source": "guild-war-occupation-v1",
+      "producer": "Game/Features/GuildWarPurses.cs:77"
+    },
+    {
+      "id": 10303,
+      "receipt_source": "guild-beast-daily-v1",
+      "producer": "Game/Features/GuildBeastRuns.cs:31;Game/Features/GuildBeastRuns.cs:59"
+    },
+    {
+      "id": 10304,
+      "receipt_source": "clan-founder-v1",
+      "producer": "Game/Features/ClanFounding.cs:37;Game/Features/ClanMembership.cs:64"
+    },
+    {
+      "id": 10305,
+      "receipt_source": "clan-territory-v1",
+      "producer": "Game/Features/ClanWarResults.cs:76"
+    },
+    {
+      "id": 10306,
+      "receipt_source": "clan-territory-v1",
+      "producer": "Game/Features/ClanWarResults.cs:77"
+    },
+    {
+      "id": 10307,
+      "receipt_source": "clan-territory-v1",
+      "producer": "Game/Features/ClanWarResults.cs:78"
+    },
+    {
+      "id": 10308,
+      "receipt_source": "clan-territory-v1",
+      "producer": "Game/Features/ClanWarResults.cs:79"
+    },
+    {
+      "id": 10309,
+      "receipt_source": "clan-territory-v1",
+      "producer": "Game/Features/ClanWarResults.cs:80"
+    },
+    {
+      "id": 10310,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10311,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10312,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10313,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10314,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10315,
+      "receipt_source": "first-rebirth-v1",
+      "producer": "Game/Features/FirstRebirth.cs:170"
+    },
+    {
+      "id": 10316,
+      "receipt_source": "second-rebirth-v1",
+      "producer": "Game/Features/SecondRebirth.cs:126"
+    },
+    {
+      "id": 10317,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10318,
+      "receipt_source": "nobility-donation",
+      "producer": "Game/Features/NobilityDonations.cs:94"
+    },
+    {
+      "id": 10319,
+      "receipt_source": "study-reward-v1",
+      "producer": "Game/Features/StudyRewardEvidence.cs:23"
+    },
+    {
+      "id": 10320,
+      "receipt_source": "honor-arena-ranking",
+      "producer": "Game/Features/ArenaCustomRewards.cs:101;Game/Features/ArenaDailyRewards.cs:87;Game/Features/ArenaRankingSettlement.cs:68"
+    },
+    {
+      "id": 10321,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10322,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10323,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10324,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10325,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10326,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10327,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10328,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10329,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10330,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10331,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10332,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10401,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10402,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10403,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10404,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10405,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10406,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10407,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10408,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 10409,
+      "receipt_source": "equipment-state-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:113"
+    },
+    {
+      "id": 10410,
+      "receipt_source": "equipment-set-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:117"
+    },
+    {
+      "id": 10411,
+      "receipt_source": "equipment-set-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:118"
+    },
+    {
+      "id": 10412,
+      "receipt_source": "equipment-set-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:119"
+    },
+    {
+      "id": 10413,
+      "receipt_source": "equipment-set-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:120"
+    },
+    {
+      "id": 10414,
+      "receipt_source": "equipment-set-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:121"
+    },
+    {
+      "id": 10415,
+      "receipt_source": "equipment-set-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:122"
+    },
+    {
+      "id": 10416,
+      "receipt_source": "equipment-set-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:123"
+    },
+    {
+      "id": 10417,
+      "receipt_source": "equipment-set-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:124"
+    },
+    {
+      "id": 10418,
+      "receipt_source": "equipment-state-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:111"
+    },
+    {
+      "id": 10419,
+      "receipt_source": "equipment-state-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:110"
+    },
+    {
+      "id": 10420,
+      "receipt_source": "equipment-upgrade",
+      "producer": "Game/Features/EquipmentUpgrades.cs:428"
+    },
+    {
+      "id": 10421,
+      "receipt_source": "equipment-upgrade",
+      "producer": "Game/Features/EquipmentUpgrades.cs:429"
+    },
+    {
+      "id": 10422,
+      "receipt_source": "equipment-upgrade",
+      "producer": "Game/Features/EquipmentUpgrades.cs:434"
+    },
+    {
+      "id": 10423,
+      "receipt_source": "equipment-upgrade",
+      "producer": "Game/Features/EquipmentUpgrades.cs:431"
+    },
+    {
+      "id": 10424,
+      "receipt_source": "equipment-upgrade",
+      "producer": "Game/Features/EquipmentUpgrades.cs:432"
+    },
+    {
+      "id": 10425,
+      "receipt_source": "equipment-upgrade",
+      "producer": "Game/Features/EquipmentSockets.cs:154;Game/Features/EquipmentUpgrades.cs:435"
+    },
+    {
+      "id": 10426,
+      "receipt_source": "equipment-upgrade",
+      "producer": "Game/Features/EquipmentSockets.cs:155;Game/Features/EquipmentUpgrades.cs:436"
+    },
+    {
+      "id": 10428,
+      "receipt_source": "equipment-gems-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:109"
+    },
+    {
+      "id": 10429,
+      "receipt_source": "equipment-state-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:115"
+    },
+    {
+      "id": 10430,
+      "receipt_source": "equipment-state-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:114"
+    },
+    {
+      "id": 10431,
+      "receipt_source": "refinery-apply",
+      "producer": "Game/Features/RefineryProgress.cs:118"
+    },
+    {
+      "id": 10432,
+      "receipt_source": "equipment-switch-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:105"
+    },
+    {
+      "id": 10501,
+      "receipt_source": "artifact-apply",
+      "producer": "Game/Features/ArtifactApplication.cs:92"
+    },
+    {
+      "id": 10502,
+      "receipt_source": "artifact-stabilize",
+      "producer": "Game/Features/ArtifactStabilization.cs:70"
+    },
+    {
+      "id": 10503,
+      "receipt_source": "equipment-state-v1",
+      "producer": "Game/Features/EquipmentAchievements.cs:112"
+    },
+    {
+      "id": 10504,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:52"
+    },
+    {
+      "id": 10505,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:53"
+    },
+    {
+      "id": 10506,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:54"
+    },
+    {
+      "id": 10507,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:55"
+    },
+    {
+      "id": 10508,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:56"
+    },
+    {
+      "id": 10509,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:57"
+    },
+    {
+      "id": 10510,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:58"
+    },
+    {
+      "id": 10511,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:59"
+    },
+    {
+      "id": 10512,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:60"
+    },
+    {
+      "id": 10513,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:61"
+    },
+    {
+      "id": 10514,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:62"
+    },
+    {
+      "id": 10515,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:63"
+    },
+    {
+      "id": 10516,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:64"
+    },
+    {
+      "id": 10517,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:65"
+    },
+    {
+      "id": 10518,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:66"
+    },
+    {
+      "id": 10519,
+      "receipt_source": "weapon-skill-fixed-v1",
+      "producer": "Game/Features/WeaponSkillMastery.cs:67"
+    },
+    {
+      "id": 10520,
+      "receipt_source": "monster-ko-v1",
+      "producer": "Game/Features/MonsterKoCounter.cs:71"
+    },
+    {
+      "id": 10521,
+      "receipt_source": "monster-ko-v1",
+      "producer": "Game/Features/MonsterKoCounter.cs:72"
+    },
+    {
+      "id": 10522,
+      "receipt_source": "monster-ko-v1",
+      "producer": "Game/Features/MonsterKoCounter.cs:73"
+    },
+    {
+      "id": 10523,
+      "receipt_source": "snow-banshee-loot",
+      "producer": "Game/Features/SnowBansheeRewards.cs:132"
+    },
+    {
+      "id": 10524,
+      "receipt_source": "meteor-monster-loot-v1",
+      "producer": "Game/Features/MeteorDrops.cs:83"
+    },
+    {
+      "id": 10525,
+      "receipt_source": "unarmed-monster-victory",
+      "producer": "Game/Features/EquipmentAchievements.cs:21"
+    },
+    {
+      "id": 10526,
+      "receipt_source": "terato-kill-v1",
+      "producer": "Game/Features/TeratoEncounter.cs:199"
+    },
+    {
+      "id": 10527,
+      "receipt_source": "snow-banshee-kill-v1",
+      "producer": "Game/Features/SnowBansheeEncounter.cs:118"
+    },
+    {
+      "id": 10528,
+      "receipt_source": "sword-master-kill-v1",
+      "producer": "Game/Features/SwordMasterEncounter.cs:163"
+    },
+    {
+      "id": 10529,
+      "receipt_source": "spook-kill-v1",
+      "producer": "Game/Features/ExorcismWorld.cs:222"
+    },
+    {
+      "id": 10605,
+      "receipt_source": "player-defeat-v1",
+      "producer": "Game/Features/PlayerDefeatCredit.cs:57"
+    },
+    {
+      "id": 10606,
+      "receipt_source": "player-defeat-v1",
+      "producer": "Game/Features/PlayerDefeatCredit.cs:58"
+    },
+    {
+      "id": 10607,
+      "receipt_source": "player-defeat-v1",
+      "producer": "Game/Features/PlayerDefeatCredit.cs:59"
+    },
+    {
+      "id": 10611,
+      "receipt_source": "player-defeat-v1",
+      "producer": "Game/Features/PlayerDefeatCredit.cs:60"
+    },
+    {
+      "id": 10612,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:75"
+    },
+    {
+      "id": 10613,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:76"
+    },
+    {
+      "id": 10614,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:77"
+    },
+    {
+      "id": 10617,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:78"
+    },
+    {
+      "id": 10618,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:79"
+    },
+    {
+      "id": 10619,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:80"
+    },
+    {
+      "id": 10620,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:81"
+    },
+    {
+      "id": 10621,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:82"
+    },
+    {
+      "id": 10622,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:83"
+    },
+    {
+      "id": 10625,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:84"
+    },
+    {
+      "id": 10626,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:85"
+    },
+    {
+      "id": 10629,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:86"
+    },
+    {
+      "id": 10631,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:87"
+    },
+    {
+      "id": 10701,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:88"
+    },
+    {
+      "id": 10702,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:89"
+    },
+    {
+      "id": 10703,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:90"
+    },
+    {
+      "id": 10708,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:91"
+    },
+    {
+      "id": 10709,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:92"
+    },
+    {
+      "id": 10710,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:93"
+    },
+    {
+      "id": 10711,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:94"
+    },
+    {
+      "id": 10712,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:95"
+    },
+    {
+      "id": 10713,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:96"
+    },
+    {
+      "id": 10714,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:97"
+    },
+    {
+      "id": 10715,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:98"
+    },
+    {
+      "id": 10716,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:99"
+    },
+    {
+      "id": 10717,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:100"
+    },
+    {
+      "id": 10718,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:101"
+    },
+    {
+      "id": 10719,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:102"
+    },
+    {
+      "id": 10720,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:103"
+    },
+    {
+      "id": 10721,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:104"
+    },
+    {
+      "id": 10723,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:105"
+    },
+    {
+      "id": 10724,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:106"
+    },
+    {
+      "id": 10725,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:107"
+    },
+    {
+      "id": 10726,
+      "receipt_source": null,
+      "producer": "Game/Features/TravelProgress.cs:108"
+    },
+    {
+      "id": 10727,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:109"
+    },
+    {
+      "id": 10801,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:110"
+    },
+    {
+      "id": 10802,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:111"
+    },
+    {
+      "id": 10803,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:112"
+    },
+    {
+      "id": 10804,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:113"
+    },
+    {
+      "id": 10805,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:114"
+    },
+    {
+      "id": 10806,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:115"
+    },
+    {
+      "id": 10807,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:116"
+    },
+    {
+      "id": 10808,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:117"
+    },
+    {
+      "id": 10809,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:118"
+    },
+    {
+      "id": 10810,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:119"
+    },
+    {
+      "id": 10812,
+      "receipt_source": "travel-region-v1",
+      "producer": "Game/Features/TravelProgress.cs:120"
+    },
+    {
+      "id": 10813,
+      "receipt_source": null,
+      "producer": "Game/Features/ClassPromotion.cs:85"
+    },
+    {
+      "id": 10814,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:88"
+    },
+    {
+      "id": 10815,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:91"
+    },
+    {
+      "id": 10816,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:94"
+    },
+    {
+      "id": 10817,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:97"
+    },
+    {
+      "id": 10819,
+      "receipt_source": null,
+      "producer": "Game/Features/ClassPromotion.cs:70"
+    },
+    {
+      "id": 10820,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:73"
+    },
+    {
+      "id": 10821,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:76"
+    },
+    {
+      "id": 10822,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:79"
+    },
+    {
+      "id": 10823,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:82"
+    },
+    {
+      "id": 10824,
+      "receipt_source": null,
+      "producer": "Game/Features/ClassPromotion.cs:175"
+    },
+    {
+      "id": 10825,
+      "receipt_source": null,
+      "producer": "Game/Features/ClassPromotion.cs:191"
+    },
+    {
+      "id": 10826,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:194"
+    },
+    {
+      "id": 10827,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:197"
+    },
+    {
+      "id": 10828,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:200"
+    },
+    {
+      "id": 10829,
+      "receipt_source": null,
+      "producer": "Game/Features/ClassPromotion.cs:176"
+    },
+    {
+      "id": 10830,
+      "receipt_source": null,
+      "producer": "Game/Features/ClassPromotion.cs:179"
+    },
+    {
+      "id": 10831,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:182"
+    },
+    {
+      "id": 10832,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:185"
+    },
+    {
+      "id": 10901,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:188"
+    },
+    {
+      "id": 10902,
+      "receipt_source": "player-revival-v1",
+      "producer": "Game/Features/PlayerRevival.cs:49"
+    },
+    {
+      "id": 10903,
+      "receipt_source": null,
+      "producer": "Game/Features/ClassPromotion.cs:100"
+    },
+    {
+      "id": 10904,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:103"
+    },
+    {
+      "id": 10905,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:106"
+    },
+    {
+      "id": 10906,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:109"
+    },
+    {
+      "id": 10907,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:112"
+    },
+    {
+      "id": 10908,
+      "receipt_source": null,
+      "producer": "Game/Features/ClassPromotion.cs:115"
+    },
+    {
+      "id": 10909,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:118"
+    },
+    {
+      "id": 10910,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:121"
+    },
+    {
+      "id": 10911,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:124"
+    },
+    {
+      "id": 10912,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:127"
+    },
+    {
+      "id": 10913,
+      "receipt_source": null,
+      "producer": "Game/Features/ClassPromotion.cs:130"
+    },
+    {
+      "id": 10914,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:133"
+    },
+    {
+      "id": 10915,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:136"
+    },
+    {
+      "id": 10916,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:139"
+    },
+    {
+      "id": 10917,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:142"
+    },
+    {
+      "id": 10919,
+      "receipt_source": "aura-cast-v1",
+      "producer": "Game/Features/AuraProgress.cs:13"
+    },
+    {
+      "id": 10920,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:52"
+    },
+    {
+      "id": 10921,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:62"
+    },
+    {
+      "id": 10922,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:48"
+    },
+    {
+      "id": 10923,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:58"
+    },
+    {
+      "id": 10924,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:50"
+    },
+    {
+      "id": 10925,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:60"
+    },
+    {
+      "id": 10926,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:51"
+    },
+    {
+      "id": 10927,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:61"
+    },
+    {
+      "id": 10928,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:53"
+    },
+    {
+      "id": 10929,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:63"
+    },
+    {
+      "id": 10930,
+      "receipt_source": "newcomer-intro-v1",
+      "producer": "Game/Features/NewcomerIntroduction.cs:47"
+    },
+    {
+      "id": 10931,
+      "receipt_source": "equipment-quests-revora-v1",
+      "producer": "Game/Features/ProgressionEvidence.cs:251"
+    },
+    {
+      "id": 10932,
+      "receipt_source": "dragon-slayer-v1",
+      "producer": "Game/Features/TeratoRewards.cs:108"
+    },
+    {
+      "id": 11001,
+      "receipt_source": "demon-exterminators-v1",
+      "producer": "Game/Features/DemonExterminators.cs:181"
+    },
+    {
+      "id": 11002,
+      "receipt_source": "dis-city-v1",
+      "producer": "Game/Features/DisCityQuest.cs:133"
+    },
+    {
+      "id": 11003,
+      "receipt_source": "dis-city-v1",
+      "producer": "Game/Features/DisCityQuest.cs:134"
+    },
+    {
+      "id": 11004,
+      "receipt_source": "dis-city-v1",
+      "producer": "Game/Features/DisCityQuest.cs:135"
+    },
+    {
+      "id": 11005,
+      "receipt_source": "dis-city-v1",
+      "producer": "Game/Features/DisCityQuest.cs:136"
+    },
+    {
+      "id": 11010,
+      "receipt_source": null,
+      "producer": "Game/Features/EliminationRewards.cs:37"
+    },
+    {
+      "id": 11012,
+      "receipt_source": "release-souls-v1",
+      "producer": "Game/Features/ReleaseSoulsQuest.cs:137"
+    },
+    {
+      "id": 11013,
+      "receipt_source": "power-arena-v1",
+      "producer": "Game/Features/PowerArenaEvent.cs:126"
+    },
+    {
+      "id": 11014,
+      "receipt_source": "power-arena-v1",
+      "producer": "Game/Features/PowerArenaEvent.cs:122"
+    },
+    {
+      "id": 11016,
+      "receipt_source": "flame-lit-v1",
+      "producer": "Game/Features/FlameLitStore.cs:117"
+    },
+    {
+      "id": 11018,
+      "receipt_source": "snake-islands-v1",
+      "producer": "Game/Features/SnakeIslandsQuest.cs:195"
+    },
+    {
+      "id": 11019,
+      "receipt_source": "sky-pass-v1",
+      "producer": "Game/Features/SkyPassQuest.cs:126"
+    },
+    {
+      "id": 11020,
+      "receipt_source": "ancient-collection-v1",
+      "producer": "Game/Features/AncientDevilCollection.cs:50"
+    },
+    {
+      "id": 11022,
+      "receipt_source": "moon-box-v1",
+      "producer": "Game/Features/MoonBoxQuest.cs:140"
+    },
+    {
+      "id": 11027,
+      "receipt_source": "classic-labyrinth-v1",
+      "producer": "Game/Features/LabyrinthItems.cs:53"
+    },
+    {
+      "id": 11030,
+      "receipt_source": "first-rebirth-v1",
+      "producer": "Game/Features/FirstRebirth.cs:169"
+    },
+    {
+      "id": 11031,
+      "receipt_source": "abyss-trial-v1",
+      "producer": "Game/Features/AbyssTrialWorld.cs:210"
+    },
+    {
+      "id": 11032,
+      "receipt_source": "arena-local-v1",
+      "producer": "Game/Features/ArenaParticipation.cs:49"
+    },
+    {
+      "id": 11101,
+      "receipt_source": "arena-class-victory",
+      "producer": "Game/Features/ArenaResultStatistics.cs:88"
+    },
+    {
+      "id": 11102,
+      "receipt_source": "arena-class-victory",
+      "producer": "Game/Features/ArenaResultStatistics.cs:89"
+    },
+    {
+      "id": 11103,
+      "receipt_source": "arena-class-victory",
+      "producer": "Game/Features/ArenaResultStatistics.cs:90"
+    },
+    {
+      "id": 11104,
+      "receipt_source": "arena-class-victory",
+      "producer": "Game/Features/ArenaResultStatistics.cs:91"
+    },
+    {
+      "id": 11105,
+      "receipt_source": "arena-class-victory",
+      "producer": "Game/Features/ArenaResultStatistics.cs:92"
+    },
+    {
+      "id": 11106,
+      "receipt_source": "arena-class-victory",
+      "producer": "Game/Features/ArenaResultStatistics.cs:93"
+    },
+    {
+      "id": 11107,
+      "receipt_source": "arena-class-victory",
+      "producer": "Game/Features/ArenaResultStatistics.cs:94"
+    },
+    {
+      "id": 11108,
+      "receipt_source": "arena-class-victory",
+      "producer": "Game/Features/ArenaResultStatistics.cs:95"
+    },
+    {
+      "id": 11109,
+      "receipt_source": "arena-class-victory",
+      "producer": "Game/Features/ArenaResultStatistics.cs:96"
+    },
+    {
+      "id": 11111,
+      "receipt_source": "arena-twenty-entries",
+      "producer": "Game/Features/ArenaParticipation.cs:60"
+    },
+    {
+      "id": 11112,
+      "receipt_source": "arena-first-nine",
+      "producer": "Game/Features/ArenaResultStatistics.cs:117"
+    },
+    {
+      "id": 11113,
+      "receipt_source": "steed-course-v1",
+      "producer": "Game/Features/SteedRaceResults.cs:108"
+    },
+    {
+      "id": 11114,
+      "receipt_source": "bp-pk-v1",
+      "producer": "Game/Features/LocalPkResults.cs:73"
+    },
+    {
+      "id": 11115,
+      "receipt_source": "couple-pk-npc-v1",
+      "producer": "Game/Features/CouplePkResults.cs:82"
+    },
+    {
+      "id": 11116,
+      "receipt_source": "weekly-pk-v1",
+      "producer": "Game/Features/LocalPkResults.cs:71"
+    },
+    {
+      "id": 11117,
+      "receipt_source": "monthly-pk-v1",
+      "producer": "Game/Features/LocalPkResults.cs:72"
+    },
+    {
+      "id": 11118,
+      "receipt_source": "weekly-pk-v1",
+      "producer": "Game/Features/LocalPkResults.cs:93"
+    },
+    {
+      "id": 11119,
+      "receipt_source": "monthly-pk-v1",
+      "producer": "Game/Features/LocalPkResults.cs:94"
+    },
+    {
+      "id": 11120,
+      "receipt_source": "nobility-ranked-king",
+      "producer": "Game/Features/NobilityDonations.cs:99"
+    },
+    {
+      "id": 11121,
+      "receipt_source": "couple-pk-npc-v1",
+      "producer": "Game/Features/CouplePkResults.cs:100;Game/Features/CouplePkResults.cs:100"
+    },
+    {
+      "id": 11122,
+      "receipt_source": "steed-course-v1",
+      "producer": "Game/Features/SteedRaceResults.cs:109"
+    },
+    {
+      "id": 11123,
+      "receipt_source": "elite-pk-champion-v1",
+      "producer": "Game/Features/ElitePkResults.cs:129"
+    },
+    {
+      "id": 11124,
+      "receipt_source": "flower-queen-v1",
+      "producer": "Game/Features/FlowerDelivery.cs:60"
+    },
+    {
+      "id": 11125,
+      "receipt_source": "flower-queen-v1",
+      "producer": "Game/Features/FlowerDelivery.cs:62"
+    },
+    {
+      "id": 11126,
+      "receipt_source": "flower-queen-v1",
+      "producer": "Game/Features/FlowerDelivery.cs:63"
+    },
+    {
+      "id": 11127,
+      "receipt_source": "flower-queen-v1",
+      "producer": "Game/Features/FlowerDelivery.cs:61"
+    },
+    {
+      "id": 11128,
+      "receipt_source": "quiz-local-v1",
+      "producer": "Game/Features/QuizResults.cs:96"
+    },
+    {
+      "id": 11131,
+      "receipt_source": "class-pk-v1",
+      "producer": "Game/Features/LocalPkResults.cs:95"
+    },
+    {
+      "id": 11132,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11201,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:54"
+    },
+    {
+      "id": 11202,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:64"
+    },
+    {
+      "id": 11203,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:49"
+    },
+    {
+      "id": 11204,
+      "receipt_source": "subclass-v1",
+      "producer": "Game/Features/SubclassProgression.cs:59"
+    },
+    {
+      "id": 11205,
+      "receipt_source": null,
+      "producer": "Game/Features/ClassPromotion.cs:145"
+    },
+    {
+      "id": 11206,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:148"
+    },
+    {
+      "id": 11207,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:151"
+    },
+    {
+      "id": 11208,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:154"
+    },
+    {
+      "id": 11209,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:157"
+    },
+    {
+      "id": 11210,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11211,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11212,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11213,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11214,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11215,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11216,
+      "receipt_source": null,
+      "producer": "Game/Features/ClassPromotion.cs:160"
+    },
+    {
+      "id": 11217,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:163"
+    },
+    {
+      "id": 11218,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:166"
+    },
+    {
+      "id": 11219,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:169"
+    },
+    {
+      "id": 11220,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:172"
+    },
+    {
+      "id": 11221,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11222,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11223,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11224,
+      "receipt_source": "wardrobe-permanent-v1",
+      "producer": "Game/Features/CollectionAchievements.cs:32"
+    },
+    {
+      "id": 11225,
+      "receipt_source": "wardrobe-permanent-v1",
+      "producer": "Game/Features/CollectionAchievements.cs:33"
+    },
+    {
+      "id": 11226,
+      "receipt_source": "wardrobe-permanent-v1",
+      "producer": "Game/Features/CollectionAchievements.cs:34"
+    },
+    {
+      "id": 11227,
+      "receipt_source": "wardrobe-permanent-v1",
+      "producer": "Game/Features/CollectionAchievements.cs:35"
+    },
+    {
+      "id": 11228,
+      "receipt_source": "wardrobe-permanent-v1",
+      "producer": "Game/Features/CollectionAchievements.cs:36"
+    },
+    {
+      "id": 11229,
+      "receipt_source": "wardrobe-permanent-v1",
+      "producer": "Game/Features/CollectionAchievements.cs:37"
+    },
+    {
+      "id": 11230,
+      "receipt_source": "wardrobe-permanent-v1",
+      "producer": "Game/Features/CollectionAchievements.cs:38"
+    },
+    {
+      "id": 11231,
+      "receipt_source": "wardrobe-permanent-v1",
+      "producer": "Game/Features/CollectionAchievements.cs:39"
+    },
+    {
+      "id": 11232,
+      "receipt_source": null,
+      "producer": "Game/Features/CollectionAchievements.cs:40"
+    },
+    {
+      "id": 11301,
+      "receipt_source": "wardrobe-permanent-v1",
+      "producer": "Game/Features/CollectionAchievements.cs:41"
+    },
+    {
+      "id": 11302,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11303,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11304,
+      "receipt_source": null,
+      "producer": "Game/Features/ClassPromotion.cs:203"
+    },
+    {
+      "id": 11305,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:206"
+    },
+    {
+      "id": 11306,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:209"
+    },
+    {
+      "id": 11307,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:212"
+    },
+    {
+      "id": 11308,
+      "receipt_source": "class-promotion-v1",
+      "producer": "Game/Features/ClassPromotion.cs:215"
+    },
+    {
+      "id": 11309,
+      "receipt_source": "arena-class-victory",
+      "producer": "Game/Features/ArenaResultStatistics.cs:97"
+    },
+    {
+      "id": 11310,
+      "receipt_source": "rune-loadout-v1",
+      "producer": "Game/Features/RuneLoadout.cs:61"
+    },
+    {
+      "id": 11311,
+      "receipt_source": "rune-loadout-v1",
+      "producer": "Game/Features/RuneLoadout.cs:62"
+    },
+    {
+      "id": 11312,
+      "receipt_source": "rune-full-level-v1",
+      "producer": "Game/Features/RuneLoadout.cs:79"
+    },
+    {
+      "id": 11313,
+      "receipt_source": "rune-full-level-v1",
+      "producer": "Game/Features/RuneLoadout.cs:80"
+    },
+    {
+      "id": 11314,
+      "receipt_source": "rune-full-level-v1",
+      "producer": "Game/Features/RuneLoadout.cs:81"
+    },
+    {
+      "id": 11315,
+      "receipt_source": "rune-full-level-v1",
+      "producer": "Game/Features/RuneLoadout.cs:82"
+    },
+    {
+      "id": 11316,
+      "receipt_source": "rune-full-level-v1",
+      "producer": "Game/Features/RuneLoadout.cs:83"
+    },
+    {
+      "id": 11317,
+      "receipt_source": "rune-full-level-v1",
+      "producer": "Game/Features/RuneLoadout.cs:84"
+    },
+    {
+      "id": 11318,
+      "receipt_source": "rune-full-level-v1",
+      "producer": "Game/Features/RuneLoadout.cs:85"
+    },
+    {
+      "id": 11319,
+      "receipt_source": "rune-full-level-v1",
+      "producer": "Game/Features/RuneLoadout.cs:86"
+    },
+    {
+      "id": 11320,
+      "receipt_source": "rune-full-level-v1",
+      "producer": "Game/Features/RuneLoadout.cs:87"
+    },
+    {
+      "id": 11321,
+      "receipt_source": "rune-full-level-v1",
+      "producer": "Game/Features/RuneLoadout.cs:88"
+    },
+    {
+      "id": 11322,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    },
+    {
+      "id": 11323,
+      "receipt_source": "observed-state",
+      "producer": "Game/Features/AchievementCatalog.cs:Observe"
+    }
+  ],
+  "limitations": [
+    "Starting-profile, incidental travel and observed-state receipts require provenance review; no independently earned total is inferred.",
+    "Documented mastery/quest routes remain evidence even when their receipt source is observed-state.",
+    "Missing receipts include unavailable routes; this report does not authorize activation or grant credit.",
+    "This dated snapshot is not a live completion percentage or native-client acceptance."
+  ]
+}

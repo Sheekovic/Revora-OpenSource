@@ -1,0 +1,114 @@
+{
+  "scope": "Tempest public NPC targets and legacy1100 travel target; shared terrain only, not proof of original Rainbow Sky identity or combat layout.",
+  "scenes": [
+    {
+      "map": 1004,
+      "client_bindings": [
+        [
+          "map/map/forum01_new.7z",
+          128
+        ]
+      ],
+      "server_bindings": [
+        [
+          "map/map/forum01_new.7z",
+          128
+        ]
+      ],
+      "server_floor_exists": true,
+      "verified": true,
+      "dimensions": [
+        108,
+        108
+      ],
+      "sha256": {
+        "server": "9a52e59f7e03e19f74b81f8939a89a710958c09f2596b324b97b8ff96ab155e4",
+        "archive": "a0fa58b9ec1841a0d1200cfa58c71a909c28b2e9d3338431d5cb2281eb22f6cb",
+        "native": "816a1bd59b637a19ee53284ba58def289b8bb3307afe2fe86adb6f78be28f7de"
+      },
+      "differing_cells": 0,
+      "points": [
+        {
+          "x": 51,
+          "y": 49,
+          "walkable": true
+        }
+      ]
+    },
+    {
+      "map": 1011,
+      "client_bindings": [
+        [
+          "map/map/woods.7z",
+          256
+        ]
+      ],
+      "server_bindings": [
+        [
+          "map/map/woods.7z",
+          256
+        ]
+      ],
+      "server_floor_exists": true,
+      "verified": true,
+      "dimensions": [
+        944,
+        944
+      ],
+      "sha256": {
+        "server": "7e8f7a8262f8ae93a314699af6d276f0324fff6c32bcc6061bffc2f336f1e817",
+        "archive": "27d16d937ca171aef33a36ab4d46ba9b754c0c7e6bdf732cc5878853e8bb78be",
+        "native": "71144fb55181044fce3fe1312bcb331c3473c88334ac144c713ea9cde2296649"
+      },
+      "differing_cells": 0,
+      "points": [
+        {
+          "x": 212,
+          "y": 196,
+          "walkable": true
+        },
+        {
+          "x": 213,
+          "y": 199,
+          "walkable": true
+        }
+      ]
+    },
+    {
+      "map": 1100,
+      "client_bindings": [
+        [
+          "map/map/star01.7z",
+          256
+        ]
+      ],
+      "server_bindings": [
+        [
+          "map/map/star01.7z",
+          256
+        ]
+      ],
+      "server_floor_exists": true,
+      "verified": false,
+      "dimensions": [
+        224,
+        224
+      ],
+      "sha256": {
+        "server": "c8441206ad582ce7e091170cb97596262c30817fb43bca86896db661e43d3d6b",
+        "archive": "7f1250acad39ee4be449ccbaf548c59c7a83f15e856bd8c6454c24f0af280e59",
+        "native": "1becced83f576eeb01ec371a3121ad5d10631d7114e8274c437af3009f4400b1"
+      },
+      "differing_cells": 136,
+      "points": [
+        {
+          "x": 141,
+          "y": 111,
+          "walkable": true
+        }
+      ]
+    }
+  ],
+  "all_scenes_available": false,
+  "native_acceptance": false
+}

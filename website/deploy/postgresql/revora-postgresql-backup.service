@@ -1,0 +1,20 @@
+[Unit]
+Description=Revora PostgreSQL consistent backup
+After=postgresql.service
+Requires=postgresql.service
+
+[Service]
+Type=oneshot
+User=revora-backup
+Group=revora-backup
+ExecStart=/usr/local/sbin/revora-postgresql-backup
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/backups/revora-postgresql
+RestrictAddressFamilies=AF_UNIX
+CapabilityBoundingSet=
+RestrictSUIDSGID=true
+LockPersonality=true

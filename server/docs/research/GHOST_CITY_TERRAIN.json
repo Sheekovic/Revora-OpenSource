@@ -1,0 +1,123 @@
+{
+  "town_routes": {
+    "walk_route_verified": false,
+    "unreachable": [
+      [
+        454,
+        538
+      ]
+    ],
+    "server_dimensions": [
+      824,
+      824
+    ],
+    "native_dimensions": [
+      852,
+      852
+    ],
+    "search_bounds": [
+      824,
+      824
+    ],
+    "start": [
+      471,
+      300
+    ],
+    "npc_footprints": [
+      [
+        473,
+        300
+      ],
+      [
+        454,
+        540
+      ],
+      [
+        468,
+        309
+      ],
+      [
+        440,
+        334
+      ]
+    ],
+    "targets": [
+      {
+        "x": 454,
+        "y": 538,
+        "walk_steps": null
+      },
+      {
+        "x": 466,
+        "y": 309,
+        "walk_steps": 34
+      },
+      {
+        "x": 438,
+        "y": 334,
+        "walk_steps": 83
+      },
+      {
+        "x": 440,
+        "y": 308,
+        "walk_steps": 61
+      },
+      {
+        "x": 443,
+        "y": 344,
+        "walk_steps": 88
+      },
+      {
+        "x": 465,
+        "y": 356,
+        "walk_steps": 88
+      }
+    ],
+    "scope": "Quest NPC footprints only; four-direction shared-grid walking. Northern Aunt stand is free, but disconnected from Chang in this audit. Jump travel/native acceptance is unverified. Western Aunt stand is blocked."
+  },
+  "base_map": 1780,
+  "entry": [
+    150,
+    150
+  ],
+  "npcs": [
+    {
+      "role": "MoMo",
+      "uid": 4526,
+      "model": 565,
+      "x": 145,
+      "y": 134,
+      "stand": [
+        143,
+        134
+      ]
+    },
+    {
+      "role": "Pillar",
+      "uid": 9917911,
+      "model": 577,
+      "x": 162,
+      "y": 217,
+      "stand": [
+        160,
+        217
+      ],
+      "model_policy": "Revora FiendAltar candidate"
+    }
+  ],
+  "walk_steps": [
+    27,
+    102,
+    77
+  ],
+  "npc_footprints_included": true,
+  "return_point": {
+    "map": 1002,
+    "x": 438,
+    "y": 334,
+    "outside_shine_footprint": true
+  },
+  "server_sha256": "a8e54974e3127c3235a788269df3f9f662b3c40be93130638469022266fd532b",
+  "native_sha256": "6bf114e344b4b550200f654620da8e024013c440b60ba94005e42defb8c0870c",
+  "native_acceptance": false
+}

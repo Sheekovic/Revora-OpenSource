@@ -1,0 +1,14 @@
+[configuracion]
+IP=127.0.0.1
+GamePort=9959
+AuthPort=9958
+ProtectionPort=6319
+Servidor=Revora
+
+[MySql]
+Host=127.0.0.1
+Port=25432
+Username=revora_game
+Password=
+; REVORA_DATABASE_PASSWORD overrides Password when supplied to the server process.
+Database=revora6711_3d

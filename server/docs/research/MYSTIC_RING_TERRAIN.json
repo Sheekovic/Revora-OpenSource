@@ -1,0 +1,35 @@
+{
+  "map": 1011,
+  "dimensions": [
+    944,
+    944
+  ],
+  "server_sha256": "7e8f7a8262f8ae93a314699af6d276f0324fff6c32bcc6061bffc2f336f1e817",
+  "native_sha256": "48003374aa509f63a4e2b63a70cbcf6ab89b0db3f5fedc506ba50ca410238ba8",
+  "landmarks": [
+    {
+      "name": "minstrel",
+      "x": 184,
+      "y": 282,
+      "walking_steps_from_minstrel": 0
+    },
+    {
+      "name": "shen",
+      "x": 779,
+      "y": 477,
+      "walking_steps_from_minstrel": 804
+    },
+    {
+      "name": "junior",
+      "x": 920,
+      "y": 552,
+      "walking_steps_from_minstrel": 1160
+    }
+  ],
+  "mismatched_cells": 3534,
+  "terrain_equal": false,
+  "route_policy": "walkable in both inputs",
+  "terrain_only": true,
+  "native_acceptance": false,
+  "limits": "Shared cardinal walk routes do not establish live NPC occupancy or native appearance."
+}

@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <AssemblyName>PlayRevora.Launcher</AssemblyName>
+    <RootNamespace>PlayRevora.Launcher</RootNamespace>
+    <Platforms>AnyCPU;x86</Platforms>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <ApplicationIcon>Assets\playrevora.ico</ApplicationIcon>
+    <AssemblyTitle>PlayRevora</AssemblyTitle>
+    <Product>PlayRevora Launcher</Product>
+    <Description>Official PlayRevora game launcher and client doctor</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Services\NativeLoginCanaryService.cs" />
+    <None Update="launcher.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="RevoraVersion.ini" CopyToOutputDirectory="PreserveNewest" />
+    <Resource Include="Assets\playrevora.ico" />
+    <Resource Include="Assets\revora-guardian.png" />
+    <Resource Include="Assets\revora-header-logo.png" />
+    <Resource Include="Assets\revora-full-logo.png" />
+    <Resource Include="Assets\news-dragon-realm.png" />
+    <Resource Include="Assets\news-celestial-festival.png" />
+    <Resource Include="Assets\news-shadowfall-trials.png" />
+  </ItemGroup>
+</Project>

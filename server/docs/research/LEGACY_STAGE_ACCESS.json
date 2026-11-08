@@ -1,0 +1,203 @@
+{
+  "scope": "Read-only private catalog and committed legacy branch audit; no ordinary access or completion certificate",
+  "commit": "408e71e66a55afe1a67e2416be71fd06d6c6fcb2",
+  "catalog": "revora_candidate_arena_process.sobnpcs; npcs query returned no matching stage actors",
+  "actors": [
+    {
+      "id": 900005,
+      "mapid": 6000,
+      "cellx": 70,
+      "celly": 82
+    },
+    {
+      "id": 900006,
+      "mapid": 10332,
+      "cellx": 203,
+      "celly": 363
+    },
+    {
+      "id": 900007,
+      "mapid": 10332,
+      "cellx": 180,
+      "celly": 388
+    },
+    {
+      "id": 900008,
+      "mapid": 10332,
+      "cellx": 227,
+      "celly": 435
+    },
+    {
+      "id": 900009,
+      "mapid": 10332,
+      "cellx": 251,
+      "celly": 412
+    },
+    {
+      "id": 900010,
+      "mapid": 10332,
+      "cellx": 275,
+      "celly": 388
+    },
+    {
+      "id": 900011,
+      "mapid": 10332,
+      "cellx": 299,
+      "celly": 364
+    },
+    {
+      "id": 900012,
+      "mapid": 10332,
+      "cellx": 323,
+      "celly": 340
+    },
+    {
+      "id": 900013,
+      "mapid": 10332,
+      "cellx": 141,
+      "celly": 240
+    },
+    {
+      "id": 900174,
+      "mapid": 6000,
+      "cellx": 114,
+      "celly": 74
+    },
+    {
+      "id": 900176,
+      "mapid": 6000,
+      "cellx": 86,
+      "celly": 78
+    },
+    {
+      "id": 900177,
+      "mapid": 1011,
+      "cellx": 350,
+      "celly": 39
+    },
+    {
+      "id": 900178,
+      "mapid": 1020,
+      "cellx": 295,
+      "celly": 422
+    },
+    {
+      "id": 900179,
+      "mapid": 1000,
+      "cellx": 162,
+      "celly": 465
+    },
+    {
+      "id": 900180,
+      "mapid": 1015,
+      "cellx": 321,
+      "celly": 371
+    },
+    {
+      "id": 900181,
+      "mapid": 5001,
+      "cellx": 50,
+      "celly": 66
+    },
+    {
+      "id": 900182,
+      "mapid": 1819,
+      "cellx": 100,
+      "celly": 100
+    },
+    {
+      "id": 900183,
+      "mapid": 6000,
+      "cellx": 54,
+      "celly": 82
+    }
+  ],
+  "branches": [
+    {
+      "npc": 900005,
+      "committed_branch_sha256": "8114481a2b6366f6057c4e80d37b21c2076734328dfef116be7e2839d2205b20",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900006,
+      "committed_branch_sha256": "ee0529acf50ffb2c2abe6a5ecce17924aa2b7bf361de93e38d07d36b4a8edc9f",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900007,
+      "committed_branch_sha256": "a4eb6b684bfd2e1a02b385fa2e5388ffbafccd308a7c6b54cb1919c0d9910c97",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900008,
+      "committed_branch_sha256": "40da57659deb3d98d7c0a82742d7cf1548df15bedb9fb889d8b8b9cf0647d996",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900009,
+      "committed_branch_sha256": "66ec7f3aace5d9bbd8406d92bf01a7a8f605b892c3e74b6810dc66f4cde215d8",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900010,
+      "committed_branch_sha256": "725e87c8ff0f808c40449ea1c4c55b6d6b7e06af38bc2d9c313f2379978affee",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900011,
+      "committed_branch_sha256": "8b4d59289200c1d082086f6e536a1df9558342dc25fc91c991b722bab4598247",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900012,
+      "committed_branch_sha256": "493bbd0d5362f279ddfd94a640c879c60ea1f564e5ee6406288325fadbc3cb75",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900013,
+      "committed_branch_sha256": "f9b116fb22aecd49eb53c0f2cd8159154dc8dec9e344677efea91b8beaf9dfb1",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900174,
+      "committed_branch_sha256": "fc665e5cfd1b65072a514dd945031f6e3bd266da83c414d3928df9f1fe624e18",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900175,
+      "committed_branch_sha256": "addd7172c05d5e085d9b64ef449cb804071227bbb89666a6773c9cae4fd5d2b1",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900176,
+      "committed_branch_sha256": "78b1cfccd063e96bcb23de24c0518f5685b704792b6c4a2a464b6b16fd2ea4cd",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900177,
+      "committed_branch_sha256": "9ff618c1713e6cde755a6882a4ad30fd97e6d438d9676540c82d184819cab492",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900178,
+      "committed_branch_sha256": "96fd0e484bc102c7f7948aab25a96e91ad5738cfe9c16dd1f5566f05bc4a2dc9",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900179,
+      "committed_branch_sha256": "d1b9432a1bcffd69cd00ee9281eaed304a687ff03853eaa1bdb54f1bc3ee4860",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900180,
+      "committed_branch_sha256": "6a5a98b773cdfd52a1fa0f3287a35c303839cb2f9ecee53a754efb8bd700dd10",
+      "worktree_matches_committed": true
+    },
+    {
+      "npc": 900182,
+      "committed_branch_sha256": "8b1ef6b78072e9ffefbe6d8df647d6412a23b7895ed6c9729b410e17346d817c",
+      "worktree_matches_committed": true
+    }
+  ],
+  "preservation": "No TareaInner/TareaCopa, player inventory or catalog data was changed."
+}

@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-03",
+  "uid": 1096322,
+  "scope": "Ordinary fresh six-class Arena sequence and exact Honor/cold replay; not an all-class balance or native acceptance claim",
+  "runtime_sha256": "A38205B5C2185F060453E2D3BED757059D41724B912383F856C613CEC9E5A0DA",
+  "matches": 6,
+  "calculated_melee_hits": 6,
+  "preserved_prior_ninja_match": 1,
+  "new_matches": 5,
+  "achievement_ids": [
+    11106,
+    11108,
+    11109,
+    11309,
+    11104,
+    11103
+  ],
+  "rank_awards": [
+    {
+      "uid": 1096322,
+      "honor": 1000000
+    },
+    {
+      "uid": 1096325,
+      "honor": 999000
+    },
+    {
+      "uid": 1096327,
+      "honor": 998000
+    },
+    {
+      "uid": 1096328,
+      "honor": 997000
+    },
+    {
+      "uid": 1096329,
+      "honor": 996000
+    },
+    {
+      "uid": 1096330,
+      "honor": 995000
+    },
+    {
+      "uid": 1096332,
+      "honor": 994000
+    }
+  ],
+  "cleanup": {
+    "new_matches": 5,
+    "additional_ticks_required": 0,
+    "server_reentry_defect_reproduced": false
+  },
+  "resume_boundary": "Exact current full boss checkpoint equality required; original unfinished Arena snapshot archived before advancing the test baseline. Actual matches and achievement rows were not reset. Main is now earned Archer41 after the verified paid rite.",
+  "checks": [
+    "Ordinary trained peers, normal sealed signup/accept packets, calculated lethal attacks, result records and town return.",
+    "All six class-victory receipts remain; only the five unfinished matches ran.",
+    "Seven exact Honor awards and synchronized solo/team Honor mirrors.",
+    "Duplicate payouts leave the complete nested snapshot unchanged, including after cold reload."
+  ],
+  "limitations": [
+    "Timer-free fixture supplies match clock, proximity and attack cooldown timing; peers do not retaliate.",
+    "First retained Ninja victory was earned before the main character changed class; it is preserved, not repeated.",
+    "The earlier re-entry failure remains undiagnosed; this run does not justify a production Arena fix.",
+    "Native/client and full320 acceptance remain pending."
+  ],
+  "phases": {
+    "fight": {
+      "passed": true,
+      "log_sha256": "0bb1520989f79eb7e75eec7fe37a78b57e2db5c18e93e68be7a47e455c9ebd55"
+    },
+    "pay": {
+      "passed": true,
+      "log_sha256": "3b160522581e3fd8620ee05b88c5490c745f6ed3727b4adbb8c074c6a60b20a3"
+    },
+    "reload": {
+      "passed": true,
+      "log_sha256": "d1af004165f979c868084b93316d94bdded95a7579048ffa5fb4b8a80154bac2"
+    }
+  },
+  "source_sha256": {
+    "tools/CheckCandidateFreshArenaClasses.cs": "bbedaf6f8be14d370de70699890b0342f3fd47d275a2322a13eafb53c425a2d7"
+  }
+}

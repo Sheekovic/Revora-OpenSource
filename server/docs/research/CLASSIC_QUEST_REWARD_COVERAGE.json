@@ -1,0 +1,219 @@
+{
+  "date": "2026-10-01",
+  "base_commit": "bc161b4cda4dc386fe6526d9d68142700c9f6631",
+  "scope": "18 active classic quest families omitted from the coverage table; source inventory, not a new gameplay test or completion percentage",
+  "families": [
+    {
+      "family": "Azure Pill",
+      "claim_source": "Game/Features/AzurePillQuest.cs",
+      "source_sha256": "31ba781924a25b33c099b8e399e033452c5876742e85b09232efe18f3891fe65",
+      "evidence": "docs/AZURE_PILL_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728238
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Connector",
+      "claim_source": "Game/Features/ConnectorQuest.cs",
+      "source_sha256": "5e5e386b2b3d2d9da8ed94f9f4fa6f7ca5ea576fadf91527be7fa21c4b93eca2",
+      "evidence": "docs/CONNECTOR_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728236,
+        723911
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Artisan Feather",
+      "claim_source": "Game/Features/ArtisanFeatherQuest.cs",
+      "source_sha256": "ef70602ec9bf0f1105821bd711507400e3030ad73bcdb1bd9f303d1d12738d4d",
+      "evidence": "docs/ARTISAN_FEATHER_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728239
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Spun Gold",
+      "claim_source": "Game/Features/SpunGoldStore.cs",
+      "source_sha256": "1ed16f6566cd0ce8df0aa87799c4462c9ebaac7a3bdbaee53f1228473f3448c8",
+      "evidence": "docs/SPUN_GOLD_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728237
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Power Book",
+      "claim_source": "Game/Features/PowerBookRewards.cs",
+      "source_sha256": "75ae853bbb39122faa6e20fcfa80bee3bd88dc64378ff77e7ce2d3ba3cdbc37d",
+      "evidence": "docs/POWER_BOOK_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728251
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Desert Treasure",
+      "claim_source": "Game/Features/DesertTreasureStore.Rewards.cs",
+      "source_sha256": "6d7968106566727e1474e81e010aeb1ccaf45c6320c62b6b0683b90c96d11abd",
+      "evidence": "docs/DESERT_TREASURE_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728249,
+        723911
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Desert Expedition",
+      "claim_source": "Game/Features/DesertExpeditionStore.Rewards.cs",
+      "source_sha256": "6917c09a0fdae8b58cc7922df260e603243688a7503c8ae3c8eb1fa9642a6746",
+      "evidence": "docs/DESERT_EXPEDITION_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728250,
+        723911
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Desert Blood",
+      "claim_source": "Game/Features/DesertBloodStore.Rewards.cs",
+      "source_sha256": "68511af3821c907a76160853953bc61235a31c3205a4e82fef35454da8a749cb",
+      "evidence": "docs/DESERT_BLOOD_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728242,
+        723911
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Frantic Monkeys",
+      "claim_source": "Game/Features/FranticMonkeysStore.Rewards.cs",
+      "source_sha256": "c15674a8f51bed02450d14c52fa6867d1a5cca37fcd6191424547bf1a4fd9582",
+      "evidence": "docs/FRANTIC_MONKEYS_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728243
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Family Feud",
+      "claim_source": "Game/Features/FamilyFeudStore.Rewards.cs",
+      "source_sha256": "2f0baaa4bed2d33f2e193d82b05174dade4f03050671241a01afc4e60ee1a956",
+      "evidence": "docs/FAMILY_FEUD_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728248,
+        723911
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Mystic Ring",
+      "claim_source": "Game/Features/MysticRingStore.Rewards.cs",
+      "source_sha256": "ec0ffae0100b31abd062851ab2d6c538f455af0aeab0bf9ff3222d89e6e60f38",
+      "evidence": "docs/MYSTIC_RING_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728240
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Mad Man",
+      "claim_source": "Game/Features/MadManStore.Rewards.cs",
+      "source_sha256": "808ae31a8274c05be53f08d0ef9aa9f191aee1ba6c1b8e3c3c468852fc943eb7",
+      "evidence": "docs/MAD_MAN_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728245,
+        723911
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Hero Wings",
+      "claim_source": "Game/Features/HeroWingsStore.Rewards.cs",
+      "source_sha256": "c7e14b9d762a67d54cb686574b1d7f8de2998a55206e4868c23d024a25cbb6ec",
+      "evidence": "docs/HERO_WINGS_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728247,
+        723911
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Soul General",
+      "claim_source": "Game/Features/SoulGeneralStore.Rewards.cs",
+      "source_sha256": "ec8521e6385cfeb95e6fcb4de1fc3b53821ef5272e0305fbf68c90c62711069f",
+      "evidence": "docs/SOUL_GENERAL_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728244
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Ghost City",
+      "claim_source": "Game/Features/GhostCityStore.Rewards.cs",
+      "source_sha256": "3611b10074c0afd07e1856b72ce77f70c7d0591474a9ad2c643267c7c15b61c3",
+      "evidence": "docs/GHOST_CITY_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        728246,
+        723911
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Attack Talisman",
+      "claim_source": "Game/Features/AttackTalismanStore.Garden.cs",
+      "source_sha256": "c35ae28d1e1fbdd54b3e4b4426fc43036f4e59162487c86d7c551844ef72d0ec",
+      "evidence": "docs/ATTACK_TALISMAN_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        201009
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Defense Talisman",
+      "claim_source": "Game/Features/DefenseTalismanStore.Final.cs",
+      "source_sha256": "2f81c5351b5f660419598f44074376010bf491bbb88eb91feb53c6cbcffe04d9",
+      "evidence": "docs/DEFENSE_TALISMAN_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        202008
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    },
+    {
+      "family": "Tempest Wings",
+      "claim_source": "Game/Features/TempestWingsStore.Encounter.cs",
+      "source_sha256": "627f59f1b1a23de4897f4545b4ec564eee7ce7f6008d408abb79050ac3e8b491",
+      "evidence": "docs/TEMPEST_WINGS_IMPLEMENTATION.md",
+      "guaranteed_bound_items": [
+        204008
+      ],
+      "additional_reward": "one saved bound P7 soul",
+      "review_scope": "current source terms plus existing route-specific evidence; no new runtime validation"
+    }
+  ],
+  "limits": [
+    "All listed rewards are final completion rewards, not rewards for each intermediate journal entry.",
+    "The numeric classic equipment packs are not claimed to be max-level +12/-7 weapons or five-star cosmetics; the separate guaranteed bound P7 meets the valuable-reward category.",
+    "Native/client deployment, pack-opening evidence and process acceptance keep each linked document's actual scope.",
+    "This inventory does not prove full server quest enumeration or compatible320 achievement earning."
+  ]
+}

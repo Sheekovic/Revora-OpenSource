@@ -1,0 +1,174 @@
+{
+  "source": "Read-only runtime catalog probe 2026-09-26; no runtime mutations",
+  "families": [
+    {
+      "id": 18,
+      "name": "Birdman",
+      "level": 87,
+      "mesh": 205,
+      "hp": 8952,
+      "guard": false,
+      "reviver": false,
+      "boss": false
+    },
+    {
+      "id": 19,
+      "name": "HawKing",
+      "level": 92,
+      "mesh": 205,
+      "hp": 10293,
+      "guard": false,
+      "reviver": false,
+      "boss": true
+    },
+    {
+      "id": 77,
+      "name": "BirdmanL88",
+      "level": 88,
+      "mesh": 205,
+      "hp": 17905,
+      "guard": false,
+      "reviver": false,
+      "boss": false
+    },
+    {
+      "id": 78,
+      "name": "HawkL93",
+      "level": 93,
+      "mesh": 205,
+      "hp": 20586,
+      "guard": false,
+      "reviver": false,
+      "boss": false
+    }
+  ],
+  "spawns": [
+    {
+      "id": 22,
+      "map": 1015,
+      "x": 804,
+      "y": 564,
+      "width": 100,
+      "height": 100,
+      "capacity": 100,
+      "family": 18
+    },
+    {
+      "id": 23,
+      "map": 1015,
+      "x": 717,
+      "y": 636,
+      "width": 100,
+      "height": 100,
+      "capacity": 100,
+      "family": 18
+    },
+    {
+      "id": 210,
+      "map": 1015,
+      "x": 821,
+      "y": 656,
+      "width": 100,
+      "height": 100,
+      "capacity": 100,
+      "family": 18
+    },
+    {
+      "id": 449581,
+      "map": 1015,
+      "x": 697,
+      "y": 730,
+      "width": 100,
+      "height": 100,
+      "capacity": 100,
+      "family": 18
+    },
+    {
+      "id": 449582,
+      "map": 1015,
+      "x": 738,
+      "y": 750,
+      "width": 100,
+      "height": 100,
+      "capacity": 100,
+      "family": 18
+    },
+    {
+      "id": 449583,
+      "map": 1015,
+      "x": 649,
+      "y": 691,
+      "width": 100,
+      "height": 100,
+      "capacity": 100,
+      "family": 18
+    },
+    {
+      "id": 24,
+      "map": 1015,
+      "x": 456,
+      "y": 681,
+      "width": 100,
+      "height": 100,
+      "capacity": 100,
+      "family": 19
+    },
+    {
+      "id": 25,
+      "map": 1015,
+      "x": 263,
+      "y": 103,
+      "width": 100,
+      "height": 100,
+      "capacity": 100,
+      "family": 19
+    },
+    {
+      "id": 71,
+      "map": 1015,
+      "x": 812,
+      "y": 548,
+      "width": 44,
+      "height": 174,
+      "capacity": 39,
+      "family": 77
+    },
+    {
+      "id": 72,
+      "map": 1015,
+      "x": 662,
+      "y": 665,
+      "width": 138,
+      "height": 79,
+      "capacity": 85,
+      "family": 77
+    },
+    {
+      "id": 73,
+      "map": 1015,
+      "x": 451,
+      "y": 676,
+      "width": 93,
+      "height": 117,
+      "capacity": 18,
+      "family": 78
+    },
+    {
+      "id": 74,
+      "map": 1015,
+      "x": 263,
+      "y": 103,
+      "width": 96,
+      "height": 42,
+      "capacity": 18,
+      "family": 78
+    }
+  ],
+  "public_npcs_found": [],
+  "queried_npc_ids": [
+    4700,
+    4701
+  ],
+  "native_acceptance": false,
+  "flag_verification": "Read-only follow-up 2026-09-26; HawKing family 19 has Boss=true. Other quest families have Boss=false."
+}

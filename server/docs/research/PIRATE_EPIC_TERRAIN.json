@@ -1,0 +1,155 @@
+{
+  "maps": [
+    {
+      "dimensions": [
+        100,
+        100
+      ],
+      "floor_walkable_cells": 3297,
+      "cardinal_component_sizes": [
+        3297
+      ],
+      "observed_object_kind": 4,
+      "observed_object_count": 13,
+      "object_collision_verified": false,
+      "legacy_reader_object_count": 0,
+      "proposed_revora_landing": [
+        29,
+        56
+      ],
+      "proposed_revora_search_npc": [
+        33,
+        56
+      ],
+      "landing_base_clearance": 14,
+      "travel_coordinates_original": false,
+      "map": 10266,
+      "archive_sha256": "779906391ff9385738a7cf2a7ceb69a00b427b41e70cd2f31bef4db917c42e99",
+      "dmap_sha256": "47e5085d44ead13d9fa62c0d53fe3b14eb0a496f07b46a999121e9c1d59e2fd1",
+      "server_floor_present": true,
+      "staged_base_floor_sha256": "79d7ba03561f0b00f38b7bf59beef4301c459423dbb90e237de40db086c4992d"
+    },
+    {
+      "dimensions": [
+        100,
+        100
+      ],
+      "floor_walkable_cells": 2650,
+      "cardinal_component_sizes": [
+        1527,
+        1123
+      ],
+      "observed_object_kind": 4,
+      "observed_object_count": 4,
+      "object_collision_verified": false,
+      "legacy_reader_object_count": 0,
+      "proposed_revora_landing": [
+        56,
+        78
+      ],
+      "proposed_revora_search_npc": [
+        60,
+        78
+      ],
+      "landing_base_clearance": 14,
+      "travel_coordinates_original": false,
+      "map": 10267,
+      "archive_sha256": "3cebc628fa2e415b64eee0285e9199d28c06b7132b20ce897a1a331e23ef8ff2",
+      "dmap_sha256": "7c11a86cc76d899b2f2770a6cdaa1092bc37fc04cb188c91bcdf79c2388d7430",
+      "server_floor_present": true,
+      "staged_base_floor_sha256": "98dfa1214ada8dd08da5278c2725f95947ac339cac585c0a4ffb599e5340597d"
+    },
+    {
+      "dimensions": [
+        100,
+        100
+      ],
+      "floor_walkable_cells": 3041,
+      "cardinal_component_sizes": [
+        3041
+      ],
+      "observed_object_kind": 4,
+      "observed_object_count": 7,
+      "object_collision_verified": false,
+      "legacy_reader_object_count": 0,
+      "proposed_revora_landing": [
+        25,
+        42
+      ],
+      "proposed_revora_search_npc": [
+        29,
+        42
+      ],
+      "landing_base_clearance": 19,
+      "travel_coordinates_original": false,
+      "map": 10268,
+      "archive_sha256": "23500828dc31279a8d9e97ea820061ef5710ecdc978978ba5d34d7b700dddab6",
+      "dmap_sha256": "4c4df4d604e2282c1f5fe25f5eb25376292f9de1bf93a3384104df381f795017",
+      "server_floor_present": true,
+      "staged_base_floor_sha256": "6996eb221b1501169b7a4dbeef4b1b754925e11ca7046b9b42a6971d05016331"
+    },
+    {
+      "dimensions": [
+        100,
+        100
+      ],
+      "floor_walkable_cells": 2894,
+      "cardinal_component_sizes": [
+        2894
+      ],
+      "observed_object_kind": 4,
+      "observed_object_count": 8,
+      "object_collision_verified": false,
+      "legacy_reader_object_count": 0,
+      "proposed_revora_landing": [
+        46,
+        56
+      ],
+      "proposed_revora_search_npc": [
+        50,
+        56
+      ],
+      "landing_base_clearance": 15,
+      "travel_coordinates_original": false,
+      "map": 10269,
+      "archive_sha256": "b6b17bc674b778b76c00b439ff6e9cf5e6c30f652ff3149886ec3266884501dc",
+      "dmap_sha256": "330acdb64038eb93b729963eb33866ab8e2a43657953faa6f6d706e770a1e645",
+      "server_floor_present": true,
+      "staged_base_floor_sha256": "69870933adfbc519c22b5b117a22ff9a5c06ac3a9db2f10b54a7883a56c6bbf9"
+    },
+    {
+      "dimensions": [
+        100,
+        100
+      ],
+      "floor_walkable_cells": 3685,
+      "cardinal_component_sizes": [
+        3685
+      ],
+      "observed_object_kind": 4,
+      "observed_object_count": 8,
+      "object_collision_verified": false,
+      "legacy_reader_object_count": 0,
+      "proposed_revora_landing": [
+        26,
+        45
+      ],
+      "proposed_revora_search_npc": [
+        30,
+        45
+      ],
+      "landing_base_clearance": 22,
+      "travel_coordinates_original": false,
+      "map": 10270,
+      "archive_sha256": "b21a51f64d97a9da09acd2dfb0ae5d3ff4e1bb6ec2e3a7cc10cd9007341fbca9",
+      "dmap_sha256": "b5fc1fede29e24e367f857f4d0f5c56ca3f2b62f6539254e1d0f4355ab5dd2d1",
+      "server_floor_present": true,
+      "staged_base_floor_sha256": "052be3a2d737f541ee9b431acd985ecba93942fa38d11652e70d44bba6073537"
+    }
+  ],
+  "hub_identity_verified": false,
+  "ordinary_entry_verified": false,
+  "native_acceptance": false,
+  "earning_route_verified": false,
+  "staging_scope": "base access grid only; disposable travel prototype allowed; production requires object/native collision validation"
+}

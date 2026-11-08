@@ -1,0 +1,42 @@
+{
+  "reviewed": "2026-10-03",
+  "scope": "Historical gate reconciliation, not a new run or native acceptance",
+  "evidence": [
+    {
+      "path": "obj/elimination-full-process-final.log",
+      "sha256": "1611d2e9a42633aca9882db4fd625cec1e6e527383d3d9039c4e8321f43a8836"
+    },
+    {
+      "path": "obj/elimination-commit-loss.log",
+      "sha256": "8e0e0bc81c8cf40d9e127637897ea1800c929935448267c57102e27dde1251d2"
+    },
+    {
+      "path": "obj/elimination-wire-full.log",
+      "sha256": "27b9590e0e5ed5e007d237db6f4d3cc923fd2bb078bb6bc6d53feed5233f6031"
+    },
+    {
+      "path": "tools/CheckCandidateEliminationLifecycle.cs",
+      "sha256": "f783d8d5804ccaa8aea2826c99ec91b94290246857ccb6a0defd81f375da48d7"
+    },
+    {
+      "path": "Game/Features/EliminationLifecycle.cs",
+      "sha256": "99a858bac7b3791e076f74b279ac46e511873199fad8f6f67c177f25ca0f2388"
+    }
+  ],
+  "historical_builds": {
+    "full_route": "835679C5DBC57ACAC6CD0EDCAA1F0F4D1ED8466736A7F0D395B870A172FEF4C1",
+    "lost_commit": "DD61E4AD95D583179236E66A11FD820D2A0A39275CB175404C3F51D802C407CB",
+    "authenticated": "A40A9692DAD1C63CEF1C6F7E53A4F77F02AA98CDFDEA413FB7E352F7A8E67403"
+  },
+  "source_release_ready": false,
+  "remaining": [
+    "Native rendering, real movement, UI and ordinary client experience",
+    "Representative combat balance",
+    "Authorized activation and deployment"
+  ],
+  "limitations": [
+    "Driver logs are local ignored artifacts; only hashes are committed.",
+    "Historical successful runs do not verify the current executable.",
+    "Controlled qualification, proximity and damage limits remain per dated evidence."
+  ]
+}

@@ -1,0 +1,18 @@
+REVORA OWNER TEST 4d REVISION 1
+
+Prerequisite
+Install the official Microsoft .NET 10 Desktop Runtime for Windows x64 once:
+https://dotnet.microsoft.com/en-us/download/dotnet/10.0
+
+Retry steps
+1. Keep the existing Test 2c clean client and Revora Owner Test Workspace unchanged.
+2. Download this Revision 1 ZIP from the authenticated Revora Admin dashboard.
+3. Verify the ZIP SHA-256 shown on that dashboard, then extract it to a new ordinary user folder.
+4. Do not run as Administrator and do not disable Defender or Malwarebytes.
+5. Start Revora.Launcher.exe. Select the unchanged Test 2c clean client only if prompted.
+6. Enter the throwaway game account in the launcher and click Run Test 4d Revision 1 once.
+7. The tool validates the existing marker, verifies 12,829 immutable files, recognizes the controlled Test 4c state, reconstructs the controlled executable from the unchanged Test 2c donor through the reviewed RSA and diagnostic patch chain, then atomically replaces only Conquer.exe and Server.dat.
+8. If blocked, return the newest package-local Reports/owner-test4d-r1-failure-*.json file.
+9. If the client starts, wait for completion, use Emergency Stop, and return the newest owner-test4d-*.json report plus Defender and Malwarebytes results.
+
+The report contains no password, ticket, packet payload, key, or absolute private path. This test does not launch a playable server and does not require public game ports.

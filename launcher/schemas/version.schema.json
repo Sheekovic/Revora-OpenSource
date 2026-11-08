@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://playrevora.com/schemas/version.schema.json",
+  "title": "PlayRevora local client version",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "updatedAtUtc"],
+  "properties": {
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "updatedAtUtc": { "type": "string", "format": "date-time" }
+  }
+}

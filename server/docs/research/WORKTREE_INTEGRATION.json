@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-04",
+  "baseline_commit": "417506e4",
+  "scope": "Full current worktree build, including existing uncommitted owner changes; not a committed-only release or deployment",
+  "source_input_count": 1023,
+  "source_manifest_sha256": "62934f5ffce0af650d9fd86d99daf614c338d720ccdceabb5ee2c8b2d7754f03",
+  "build": "passed",
+  "warnings": {
+    "CS0649": 73,
+    "CS0162": 177,
+    "CS0169": 2
+  },
+  "pre_fix_binary_sha256": "675b41723c9db9d9a3dcefc2a6641158c72b20b54c483c7dbc970d02013122cd",
+  "final_binary_sha256": "a9b832862153b718bf1ef6f6b6dcf73b1e0c0c0fe19a4feba03fed4f7d429f99",
+  "pre_fix_regressions": {
+    "combat": 932,
+    "prestige": 68
+  },
+  "final_regressions": {
+    "starter_and_purchase": 953,
+    "token_and_soul": 593
+  },
+  "correction": "Specialized Exemption Token/+1..+8 stone handler accepts bound-only CP shops and forces bound payment/output; rechecks unchanged shop currency before commit.",
+  "regression_scope": "Standard starter suite, disposable loopback database, ordinary non-GM fixture players. Includes concurrent requests, production inventory reload, replay and both balances. No cold game-process/native acceptance.",
+  "outstanding": [
+    "Owner worktree changes remain uncommitted and are not included in this fix commit.",
+    "Native client, terrain/signing, coordinated release and live deployment remain pending."
+  ],
+  "log_sha256": {
+    "roadmap-integration-build.log": "4b2ec29c14ea4786b18d370749ca46398715801d1aab5ff42f7ebd483eaf8850",
+    "roadmap-integration-combat.log": "c011cafd5f1dfefedd5ca36fd4a3984eb516e4e0a4bf679ce91a926ef46038db",
+    "roadmap-integration-prestige.log": "500bc3938829b3ee93e8e493926a915599cf9c0bd1003febb3c44c29237ad7c5",
+    "roadmap-integration-packs.log": "19b3e8fe81b8e253c130aa7d0d9fe4b3d328f2f208b7c508a6303f087a6751b9",
+    "roadmap-integration-packs-before-fix.log": "c24e7f2a73b1d874ce795f9c7d11899b78aab955785b4ae848ad6238ef925dc7",
+    "roadmap-integration-token-schema-failure.log": "8de9ff81383fcefa64f37d82b585dcbf6d0ee437f3dff09b97a9fc499e574413",
+    "roadmap-integration-token.log": "5a562798331873592a64d3985f1a57a178194da1cdceef40829fc43b0f627da4",
+    "roadmap-integration-token-enlight-failure.log": "b3ab8b3b165c9017c6ccf626aa15b1293ddf5bc057aaaf84e63aea2f1a51a881"
+  },
+  "fixture_resolution": {
+    "schema": "Token/Soul modes start with the full disposable entities schema before dependent foreign keys are installed. No drop/cascade workaround.",
+    "experience": "Soul fixture now initializes EnlightenmentProgress; PrepareCredit previously rejected its disabled fixture service. Production Thread initializes WayOfHeroesClaims, which initializes Enlightenment.",
+    "production_experience_code_changed": false,
+    "verification": "Standard --second-token-shop-only suite; exact earned Soul EXP and consumed item survive production inventory/entity reload; earned CP-to-token-to-second-rebirth path also passes."
+  },
+  "startup_preflight": {
+    "date": "2026-10-04",
+    "checked_compile_resource_inputs": 1023,
+    "compile_input_drift": [],
+    "checked_candidate_dlls": 21,
+    "dependency_mismatches": [],
+    "existing_candidate_sha256": "18cac3a8a6ef22f46175ef2fab4749adac8e2db09fc3ad323b944f39d969a5f3",
+    "prepared_sha256": "a9b832862153b718bf1ef6f6b6dcf73b1e0c0c0fe19a4feba03fed4f7d429f99",
+    "candidate_listeners_present": false,
+    "postgres_pid_file_present": false,
+    "new_binary_startup_tested": false,
+    "free_physical_memory_kib_observed": 1024768,
+    "scope": "Read-only readiness check; no runtime replacement, process launch, new RAM policy or live deployment."
+  },
+  "startup_validation": {
+    "date": "2026-10-04",
+    "binary_sha256": "a9b832862153b718bf1ef6f6b6dcf73b1e0c0c0fe19a4feba03fed4f7d429f99",
+    "command": "tools/Verify-MoonBoxDatabase.ps1 -CheckRoadmapStartup",
+    "game_and_database_cycles": 2,
+    "result": "passed",
+    "expected_loopback_ports": [
+      19558,
+      19559,
+      19619
+    ],
+    "schema_tables_retained": 33,
+    "game_exit_codes": [
+      0,
+      0
+    ],
+    "emergency_kills": 0,
+    "candidate_listeners_after": [],
+    "postgres_pid_file_after": false,
+    "live_process_untouched": 9048,
+    "log_sha256": "2136dc7d1aa1d264d98e04df813bfce606c82c52285346af42455b1e45b97b91",
+    "scope": "Actual integrated game/database startup and restart, event-service readiness and schema identity. No character login, native-client acceptance or production deployment.",
+    "rollback": "Previous 18CAC3A8 executable and runtime manifest preserved by transactional private refresh.",
+    "source_provenance": "1023 build inputs rechecked unchanged before launch; runtime manifest includes tracked source changes and untracked CpShopPurchases.cs. Not a committed-only release."
+  }
+}

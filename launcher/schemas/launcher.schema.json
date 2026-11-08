@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://playrevora.com/schemas/launcher.schema.json",
+  "title": "PlayRevora launcher configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["updateBaseUrl", "gameRoot", "gameExecutable", "versionFile", "channelManifest", "masterManifest", "baselinePath", "proxyPayloadPath", "statusEndpoint"],
+  "properties": {
+    "updateBaseUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "gameRoot": { "type": "string", "minLength": 3 },
+    "gameExecutable": { "type": "string", "minLength": 1 },
+    "versionFile": { "type": "string", "minLength": 1 },
+    "channelManifest": { "type": "string", "minLength": 1 },
+    "masterManifest": { "type": "string", "minLength": 1 },
+    "baselinePath": { "type": "string", "minLength": 1 },
+    "proxyPayloadPath": { "type": "string", "minLength": 1 },
+    "proxySha256": { "type": ["string", "null"], "pattern": "^[A-Fa-f0-9]{64}$" },
+    "statusEndpoint": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "signedClientManifest": { "type": "string", "minLength": 1 },
+    "manifestKeyId": { "type": "string" },
+    "manifestPublicKeySpkiBase64": { "type": "string" },
+    "preferencesFile": { "type": "string", "minLength": 1 },
+    "buildChannel": { "enum": ["production", "owner-test"] },
+    "verificationReceiptFile": { "type": "string", "minLength": 1 },
+    "pendingInstallFile": { "type": "string", "minLength": 1 },
+    "signedPatchIndex": { "type": "string", "minLength": 1 },
+    "baselineClientPatch": { "type": "integer", "minimum": 1 },
+    "baselineContentVersion": { "$ref": "#/$defs/version" }
+  },
+  "$defs": { "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" } }
+}

@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-02",
+  "retained_uid": 4294907001,
+  "scope": "Source and existing evidence reconciliation, not a new runtime pass or independently earned total",
+  "reviewed_input_sha256": {
+    "Game/Features/AchievementCatalog.cs": "d27e572f53ed8ab8741584dc5f4f1a97f06643e580f14212f3c1b168b0e05b95",
+    "tools/CheckCandidateCareerRites.cs": "a5eb50e4784861a4dbb8dc54fede733a14c063031f52065c6a8a8d3783f3bc50",
+    "docs/research/RETAINED_CAREER_PROGRESS.json": "2d5aab6bbfb256c4584e5f2464843484b00b04baaaf0c393aee3724676e2eea9"
+  },
+  "observed_receipt_count": 45,
+  "groups": [
+    {
+      "ids": [
+        10321,
+        10322,
+        10323,
+        10324,
+        10325,
+        10326,
+        10327,
+        10328,
+        10329,
+        10330,
+        10331,
+        10332,
+        10401,
+        10402,
+        10403,
+        10404,
+        10405,
+        10406,
+        10407,
+        10408,
+        11132,
+        11210,
+        11211,
+        11212,
+        11213,
+        11214,
+        11215,
+        11221,
+        11222,
+        11223,
+        11302,
+        11303,
+        11322,
+        11323
+      ],
+      "category": "Weapon masteries",
+      "review": "documented retained earning",
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md#all34-weapon-masteries-composed-pirate-finale-2026-10-01"
+      ],
+      "details": "Same retained UID, shop/epic weapons, calculated combat and actual paid class changes. Mastery receipts survive rites that reset current proficiency. Supplied original eligibility and controlled calendar/proximity/cooldowns remain disclosed."
+    },
+    {
+      "ids": [
+        10310,
+        10311
+      ],
+      "category": "Levels 130 and 140",
+      "review": "documented retained earning",
+      "evidence": [
+        "docs/REVORA_MASTER_PEAK_TRANSACTION.md"
+      ],
+      "details": "Ordinary quoted CP-funded peak package, exact payment, rollback and cold reload. Later paid reincarnations recover the earned level. Does not prove natural-time leveling or all-class package behavior."
+    },
+    {
+      "ids": [
+        10218,
+        10219
+      ],
+      "category": "Guild membership and leadership",
+      "review": "documented retained earning",
+      "evidence": [
+        "docs/GUILD_FOUNDING_TRANSACTION.md",
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "details": "CareerBanner ordinary CP founding on the retained UID; fee and membership commit together. Later ordinary succession/office journeys preserve the career."
+    },
+    {
+      "ids": [
+        10107,
+        10108
+      ],
+      "category": "Equipped steed and +12 steed",
+      "review": "documented retained earning",
+      "evidence": [
+        "docs/STEED_BREEDING_SERVICE.md#retained-prize-parent-and-equipped-breeding-2026-10-01"
+      ],
+      "details": "Retained equipped +12 steed originates in the Mount Kit purchase; later prize-parent breeding and exact reload retain that UID. This is a purchase route, not a claim of leveling the steed through breeding."
+    },
+    {
+      "ids": [
+        10317
+      ],
+      "category": "5000 Virtue Points",
+      "review": "documented retained earning",
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs:RetainedMentor"
+      ],
+      "details": "The retained mentor trains an ordinary apprentice with calculated monster combat until at least5000 Virtue, checking each level-derived credit, then spends5000 through the ordinary Meteor exchange. Current balance need not remain5000."
+    },
+    {
+      "ids": [
+        10106
+      ],
+      "category": "3000000 silver",
+      "review": "historical retained earning threshold reconciled",
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/research/RETAINED_SILVER_PROVENANCE.json",
+        "docs/CAREER_REBIRTH_JOURNEY.md#historical-silver-threshold-reconciliation-2026-10-02"
+      ],
+      "details": "The original first-rebirth checkpoint retains 10097900 silver and achievement10106; CareerFirstRite funds this route through a daily-boss payout of10000000 silver. Current paid-boss ledger corroborates the funding route. Initial profile and lethal damage were controlled; this does not audit every current currency unit or certify the whole career."
+    },
+    {
+      "ids": [
+        10312,
+        10313,
+        10314
+      ],
+      "category": "Battle Power 100, 200 and 300",
+      "review": "cold runtime composition verified after ordinary repair",
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/BATTLE_POWER_SHARING.md#retained-battle-power-composition-and-repair-2026-10-02",
+        "docs/research/RETAINED_BATTLE_POWER_AUDIT.json"
+      ],
+      "details": "Cold runtime total360 = level140 + owned equipment192 + rebirth10 + nobility12 + guild6. Independent/test-added, mentor and clan bonuses are0. Ordinary repairs restored five noncontributing broken pieces; this does not rewrite historical receipt provenance or certify the whole career."
+    }
+  ],
+  "compatible_career_verified": false,
+  "next_action": "Review the remaining non-observed receipt prerequisites and source-specific fixture grants; source labels and counts alone do not certify a complete compatible career.",
+  "limits": [
+    "The initial reconciliation was source/document review; the Battle Power follow-up now has a cold runtime audit. Native client acceptance remains pending.",
+    "Evidence references preserve their original supplied eligibility/funding and controlled calendar/combat limitations.",
+    "These45 observations are a subset of322 receipts; no overall earned count is inferred."
+  ]
+}

@@ -1,0 +1,3 @@
+LIBRARY "RevoraAccountRedirect"
+EXPORTS
+    RevoraAccountRedirectInitialize=_RevoraAccountRedirectInitialize@4

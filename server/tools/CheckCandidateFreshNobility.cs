@@ -1,0 +1,36 @@
+using System;
+using System.Linq;
+using System.Reflection;
+using Revora;
+using Revora.Client;
+using Revora.Database;
+using Revora.Network.GamePackets;
+using Console=System.Console;
+internal static partial class CheckCandidateArenaLifecycle {
+    static string FreshNobilitySnapshot(GameState p,GameState[] players){return Convert.ToString(Sql("SELECT json_build_object('prior',@prior::json,'nobility',@nobility::json)::text","prior",FreshTeamArenaSnapshot(p,players),"nobility",NobilityClaimSnapshot(p)));}
+    static void FreshNobilitySave(GameState p,GameState[] players,int stage){foreach(var who in players)Require(EntityTable.SaveEntity(who));Sql("UPDATE revora_fresh_nobility_probe SET stage=@stage,snapshot=@snapshot","stage",stage,"snapshot",FreshNobilitySnapshot(p,players));}
+    static void FreshNobilityJourney(string phase){
+        bool pay=phase.EndsWith("pay"),claim=phase.EndsWith("claim"),use=phase.EndsWith("use");var p=FreshLoadSaved(true,true,true,true);EntityVariableTable.Load(p);SubClassTable.Load(p.Entity);ChiTable.Load(p);p.Quests.Load();Revora.Database.KnownPersons.LoadMentor(p);WayofHeroes.Load(p);
+        var list=new System.Collections.Generic.List<GameState>();foreach(int slot in new[]{1,2,3,0}){uint uid=Convert.ToUInt32(Sql("SELECT uid FROM revora_fresh_contributors WHERE slot=@slot","slot",slot));list.Add(FreshContributor(uid,Convert.ToString(Sql("SELECT name FROM revora_fresh_contributors WHERE slot=@slot","slot",slot))));}list.Add(p);var players=list.ToArray();var peer=players[3];Server.GamePool=players;Require(players.All(w=>!w.Fake && w.Account.State==AccountTable.AccountState.Player && !PirateFenced(w) && !w.Entity.Dead));
+
+
+
+        uint[] stages={806,907,1005},types={3005127,3005128,3005129};
+        if(pay){
+            Require(FreshTeamArenaSnapshot(p,players)==Convert.ToString(Sql("SELECT snapshot FROM revora_fresh_team_twenty_probe WHERE stage=2 AND wins=20")) && (bool)Sql("SELECT to_regclass('revora_fresh_nobility_probe') IS NULL") && p.NobilityInformation.Donation==0);
+            ulong donation=Math.Max(5000000000UL,(ulong)Call(typeof(Revora.Game.ConquerStructures.Nobility),"RequiredDonation",p.NobilityInformation,Revora.Game.ConquerStructures.NobilityRank.King));uint cost=checked((uint)((donation+49999)/50000));Require(p.Entity.ConquerPoints>=cost);int store=Math.Max(0,p.Inventory.Count-37);var bank=p.Warehouses[Revora.Game.ConquerStructures.Warehouse.WarehouseID.DesertCity];Require(bank.Count+store<=60);FreshClassicTalk(p,1000,10011,0);
+            foreach(var item in p.Inventory.Objects.Where(i=>i.Days==0).Take(store).ToArray()){var frame=new byte[172];Revora.Network.Writer.WriteUInt16(164,0,frame);Revora.Network.Writer.WriteUInt16(1102,2,frame);Revora.Network.Writer.WriteUInt32(10011,4,frame);frame[12]=1;frame[13]=10;Revora.Network.Writer.WriteUInt32(item.UID,18,frame);Revora.Network.Writer.WriteUInt64(Revora.Network.PacketHandler.ClientSeal,164,frame);Warehouse.Process(frame,p);Require(!p.Inventory.ContainsUID(item.UID) && bank.ContainsUID(item.UID));}Require(p.Inventory.Count<=37);p.Entity.Teleport(1002,408,330);
+            string before=FreshNobilitySnapshot(p,players);foreach(uint stage in stages)NobilityClaimPacket(p,stage);Require(before==FreshNobilitySnapshot(p,players));uint cp=p.Entity.ConquerPoints;DateTime paidAt=DateTime.UtcNow;Feature("NobilityDonations").GetField("Clock",Hidden).SetValue(null,(Func<DateTime>)(()=>paidAt));CareerNobilityDonate(p,donation,1);Require(p.Entity.ConquerPoints==cp-cost && p.NobilityInformation.Donation==donation && p.NobilityInformation.Rank==Revora.Game.ConquerStructures.NobilityRank.King);string paid=FreshNobilitySnapshot(p,players);CareerNobilityDonate(p,donation,1);CareerNobilityDonate(p,donation,1);Require(paid==FreshNobilitySnapshot(p,players));
+            Sql("CREATE TABLE revora_fresh_nobility_probe(stage int,donation numeric(20,0),cost bigint,chi bigint,items bigint[],snapshot text);INSERT INTO revora_fresh_nobility_probe VALUES(1,@donation,@cost,@chi,NULL,NULL)","donation",(decimal)donation,"cost",(long)cost,"chi",(long)p.ChiPoints);FreshNobilitySave(p,players,1);Console.WriteLine("[fresh-nobility] donation="+donation+" cp="+cost+" rank="+p.NobilityInformation.Rank);
+        }else{
+            Require(FreshNobilitySnapshot(p,players)==Convert.ToString(Sql("SELECT snapshot FROM revora_fresh_nobility_probe")));Require(p.NobilityInformation.Donation==Convert.ToUInt64(Sql("SELECT donation FROM revora_fresh_nobility_probe")) && p.NobilityInformation.Rank==Revora.Game.ConquerStructures.NobilityRank.King);
+            if(claim){Require((int)Sql("SELECT stage FROM revora_fresh_nobility_probe")==1);var items=new System.Collections.Generic.List<long>();for(int n=0;n<stages.Length;n++){var old=p.Inventory.Objects.Select(i=>i.UID).ToArray();NobilityClaimPacket(p,stages[n]);var reward=p.Inventory.Objects.Single(i=>!old.Contains(i.UID));Require(reward.ID==types[n] && reward.Bound && reward.Plus==0 && reward.StackSize==1);items.Add(reward.UID);}Sql("UPDATE revora_fresh_nobility_probe SET items=@items","items",items.ToArray());FreshNobilitySave(p,players,2);
+            }else if(use){Require((int)Sql("SELECT stage FROM revora_fresh_nobility_probe")==2);var items=(long[])Sql("SELECT items FROM revora_fresh_nobility_probe");for(int n=0;n<items.Length;n++){var item=p.Inventory.Objects.Single(i=>i.UID==items[n]);Require(item.ID==types[n] && item.Bound);uint chi=p.ChiPoints;SoulClaimUse(p,item);Require(!p.Inventory.ContainsUID(item.UID) && p.ChiPoints==chi+(uint)((n+1)*1000));string once=FreshNobilitySnapshot(p,players);SoulClaimUse(p,item);Require(once==FreshNobilitySnapshot(p,players));}FreshNobilitySave(p,players,3);
+            }else Require(phase.EndsWith("reload") && (int)Sql("SELECT stage FROM revora_fresh_nobility_probe")==3);
+            string saved=FreshNobilitySnapshot(p,players);foreach(uint stage in stages)NobilityClaimPacket(p,stage);CareerNobilityDonate(p,0,1);Require(saved==FreshNobilitySnapshot(p,players));
+            if(!claim){Require(p.ChiPoints==Convert.ToUInt32(Sql("SELECT chi FROM revora_fresh_nobility_probe"))+6000);Require((long)Sql("SELECT count(*) FROM revora_chi_item_uses WHERE uid=@uid AND item_uid=ANY(@items)","uid",(long)p.Entity.UID,"items",(long[])Sql("SELECT items FROM revora_fresh_nobility_probe"))==3);}
+            foreach(var who in players){var ids=(long[])Sql("SELECT coalesce(array_agg(uid ORDER BY uid),ARRAY[]::bigint[]) FROM items WHERE entityid=@uid AND position=0 AND warehouse=0 AND coalesce(inwardrobe,0)=0","uid",(long)who.Entity.UID);Require(ids.SequenceEqual(who.Inventory.Objects.Select(i=>(long)i.UID).OrderBy(id=>id)) && EntityTable.SaveEntity(who));}Require(saved==FreshNobilitySnapshot(p,players));
+        }
+        foreach(int id in new[]{10318,11120})Require((long)Sql("SELECT count(*) FROM revora_achievement_evidence WHERE uid=@uid AND achievement_id=@id","uid",(long)p.Entity.UID,"id",id)==1);Require(!PirateFenced(p));Console.WriteLine("[career-process] "+phase+"-passed chi="+p.ChiPoints);Console.Out.Flush();if(pay || claim || use){Environment.Exit(0);return;}Server.CommandsAI("@close");throw new InvalidOperationException("Fresh nobility did not close.");
+    }
+}

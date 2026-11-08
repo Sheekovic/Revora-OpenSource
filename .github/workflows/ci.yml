@@ -1,0 +1,67 @@
+name: Build and validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  repository:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python scripts/validate_repository.py
+
+  launcher:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Build launcher
+        shell: pwsh
+        run: ./scripts/Build.ps1 -Component Launcher
+      - name: Run launcher tests
+        shell: pwsh
+        run: ./scripts/Test.ps1 -Component Launcher
+
+  website:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - name: Build website
+        shell: pwsh
+        run: ./scripts/Build.ps1 -Component Website
+      - name: Run website tests
+        shell: pwsh
+        run: ./scripts/Test.ps1 -Component Website
+
+  admin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - name: Build 3D server administration application
+        shell: pwsh
+        run: ./scripts/Build.ps1 -Component Admin

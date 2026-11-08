@@ -1,0 +1,13 @@
+{
+  "Urls": "http://127.0.0.1:5080",
+  "RevoraWeb": {
+    "PublicBaseUrl": "https://playrevora.com",
+    "RuntimeMode": "Development",
+    "DataProtectionKeysPath": "../data/keys",
+    "IndexingEnabled": false,
+    "RegistrationEnabled": false,
+    "RecoveryEnabled": false,
+    "SecurityHmacKeyPath": "../data/identity-hmac.key",
+    "MaintenanceMode": true
+  }
+}

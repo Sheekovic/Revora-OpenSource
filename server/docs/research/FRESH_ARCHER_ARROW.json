@@ -1,0 +1,22 @@
+{
+    "date":  "2026-10-04",
+    "result":  "passed",
+    "uid":  1096322,
+    "item_type":  1050002,
+    "old_item_uid":  62312164,
+    "new_item_uid":  62321263,
+    "shop_id":  5,
+    "silver_paid":  50000,
+    "silver_after":  22672121,
+    "cps_unchanged":  true,
+    "equipped_durability":  1,
+    "old_broken_item_preserved":  true,
+    "repeated_equip_unchanged":  true,
+    "cold_game_process_reload":  true,
+    "game_sha256":  "18CAC3A8A6EF22F46175EF2FAB4749ADAC8E2DB09FC3AD323B944F39D969A5F3",
+    "log_sha256":  {
+                       "arena-process-career-fresh-arena-classes-mentor-snow-battle-arrow-earn.log":  "a1bbb82034f5a5f24f37bf71f80660ce4b02fc45997fc4ff0251c3af7ebfdb96",
+                       "arena-process-career-fresh-arena-classes-mentor-snow-battle-arrow-reload.log":  "ce91fb4ac4f9c5a30279bd976816f7df05096f23b295b389b7b30b6a10245faf"
+                   },
+    "scope":  "Private saved ordinary character; normal shop purchase and equip handlers. Controlled shop proximity. Historical Snow victory checkpoint preserved. No new combat, native acceptance or live deployment. This private binary predates the separately validated defensive arrow-wear fix."
+}

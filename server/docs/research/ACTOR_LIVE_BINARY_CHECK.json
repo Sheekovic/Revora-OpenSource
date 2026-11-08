@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-04",
+  "reported_log_sha256": "87082fe6028ebeb9ebc170ee17e7768d688bf22dd6cf0311058cb448f0b220cb",
+  "observed_live_pid": 9048,
+  "observed_live_started_local": "2026-10-03 05:35:14",
+  "binary_metadata": {
+    "live_path": {
+      "path": "bin/Debug/Revora.exe",
+      "sha256": "724f82b950182287b74ed1227ae705b582b29832eeb82b754937dd2d69dd4417",
+      "fake_field_reads": {
+        "Boolean": false,
+        "Byte": false,
+        "Int64": false,
+        "String": false,
+        "UInt64": false
+      }
+    },
+    "prepared": {
+      "path": "obj/roadmap-integration/bin/Revora.exe",
+      "sha256": "a9b832862153b718bf1ef6f6b6dcf73b1e0c0c0fe19a4feba03fed4f7d429f99",
+      "fake_field_reads": {
+        "Boolean": true,
+        "Byte": true,
+        "Int64": true,
+        "String": true,
+        "UInt64": true
+      }
+    }
+  },
+  "inspection": "Reflection-only IL decoding; no game methods, process injection, listeners or database calls. Field references establish presence/absence; behavioral regression is separate.",
+  "probe_source_sha256": "86a143eba168545bb3ead136c48a481949dce43af1259859b34699c0a9b0622a",
+  "prepared_regression": {
+    "suite": "tests/CompanionAI/CompanionTests.cs",
+    "checks": 57,
+    "result": "passed",
+    "configured_database": false,
+    "log_sha256": "0329a5c4e883fcffa573b1c8a55050d79c00abb9bdc6a2793984b12b6b03ff95"
+  },
+  "source_fix_commit": "61cf7720",
+  "deployment_performed": false,
+  "limits": [
+    "The live-path evidence is the on-disk executable at the observed process path, not a dump of its loaded modules.",
+    "The log proves authentication timeout during fake-actor movement; it does not establish the database/network outage cause.",
+    "The prepared integrated binary includes other owner/roadmap changes and remains subject to coordinated release gates."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://playrevora.com/schemas/signed-client-manifest.schema.json",
+  "title": "PlayRevora signed dual-profile client manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "manifestVersion", "issuedAtUtc", "expiresAtUtc", "minimumLauncherVersion", "rollback", "rootRequiredFiles", "profiles", "signature"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "manifestVersion": { "type": "string", "minLength": 1 },
+    "issuedAtUtc": { "type": "string", "format": "date-time" },
+    "expiresAtUtc": { "type": "string", "format": "date-time" },
+    "minimumLauncherVersion": { "type": "string", "minLength": 1 },
+    "rollback": { "type": "object", "required": ["previousManifestVersion", "previousManifestSha256"] },
+    "rootRequiredFiles": { "type": "array" },
+    "profiles": { "type": "array", "minItems": 2 },
+    "signature": {
+      "type": "object",
+      "required": ["algorithm", "keyId", "valueBase64"],
+      "properties": { "algorithm": { "const": "ECDSA_P256_SHA256" }, "keyId": { "type": "string" }, "valueBase64": { "type": "string" } }
+    }
+  }
+}

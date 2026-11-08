@@ -1,0 +1,19 @@
+{
+  "mesh": 156,
+  "kind": "asset-mapping candidate for player cosmetic projection",
+  "native_player_rendering_verified": false,
+  "files": {
+    "3DSimpleObj.ini": {
+      "sha256": "f34f56332383809968074ceda1130507011583d0fa79610110dcf66bcf3d7efc",
+      "mapping": "[ObjIDType156]\nPartAmount=1\nPart0=156000000\nTexture0=356000000"
+    },
+    "3DObj.ini": {
+      "sha256": "9202de93aa033d9a32bab73e72a1fe7bee659ee36ac7ce87c9c92cf3ea49e822",
+      "mapping": "156000000=c3/monster/156/100.c3"
+    },
+    "3DTexture.ini": {
+      "sha256": "6be2fece83fd052bd211712d9a705191197f5510e0df8208f4e253dab155be92",
+      "mapping": "356000000=c3/texture/356000000.dds"
+    }
+  }
+}

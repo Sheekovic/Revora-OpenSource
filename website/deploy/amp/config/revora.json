@@ -1,0 +1,23 @@
+{
+  "InstanceName": "Revora Development",
+  "RealmName": "Revora",
+  "Environment": "Development",
+  "RuntimeAdapter": "Disabled",
+  "AccountListener": {
+    "Address": "127.0.0.1",
+    "Port": 9958
+  },
+  "GameListener": {
+    "Address": "127.0.0.1",
+    "Port": 9959
+  },
+  "MaximumPlayers": 100,
+  "ShutdownTimeoutSeconds": 30,
+  "SaveIntervalSeconds": 300,
+  "LogLevel": "Information",
+  "LogRetentionDays": 14,
+  "RegistrationEnabled": false,
+  "MaintenanceMode": true,
+  "ApplyMigrations": false,
+  "SecretFile": "config/revora.secrets.json"
+}

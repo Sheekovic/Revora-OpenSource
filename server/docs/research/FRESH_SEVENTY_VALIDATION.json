@@ -1,0 +1,66 @@
+{
+  "scope": "Fresh character level40 to70, purchased promotion material, Trojan rank13 and level70 starter reward; private handler evidence",
+  "character_uid": 1096322,
+  "baseline_commit": "74449d721677252d58565345af632497ffb74af7",
+  "executable_sha256": "3fb610b2493460b21c8c7530be8ee3790e6cde5931d3ffc3baeb31c49e5511a0",
+  "fixture_sha256": "309e066773a31a29a3b9c176e3aeb32753e3b63e2a7967eed7843ee7259ed7f2",
+  "checkpoint": "revora_fresh_seventy_probe",
+  "kills": 1261,
+  "calculated_melee_attacks": 2215,
+  "logged_family_examples": [
+    [
+      "10",
+      "Macaque",
+      "1467"
+    ],
+    [
+      "11",
+      "GiantApe",
+      "1763"
+    ],
+    [
+      "12",
+      "ThunderApe",
+      "2124"
+    ],
+    [
+      "13",
+      "Snakeman",
+      "3182"
+    ],
+    [
+      "14",
+      "SandMonster",
+      "3842"
+    ],
+    [
+      "15",
+      "HillMonster",
+      "4908"
+    ],
+    [
+      "9",
+      "FireSpirit",
+      "1219"
+    ]
+  ],
+  "level": 70,
+  "class": 13,
+  "remaining_exp": 11175,
+  "emerald_catalog_cps": 1,
+  "earned_cps": 10711,
+  "final_cps": 25414,
+  "passed_logs": {
+    "career-fresh-seventy-earn": "39cadf4fcabe9191ef922a34e6b3253dacf0cb7241826b948125a57c79542433",
+    "career-fresh-seventy-reload": "f73ddb84acd055d33815d780eec3b415885cb34b929bd0e53a9812096cae94b4"
+  },
+  "controls": [
+    "Disconnected timer-free session",
+    "Map transport, proximity, attack timestamps"
+  ],
+  "limits": [
+    "No native/navigation/retaliation/pacing proof",
+    "Later progression and client/deployment gates remain open",
+    "Frozen owner starter overlay; see FRESH_STARTER_VALIDATION.json"
+  ]
+}

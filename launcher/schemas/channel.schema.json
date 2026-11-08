@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://playrevora.com/schemas/channel.schema.json",
+  "title": "PlayRevora update channel",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "latestVersion", "releases"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "latestVersion": { "$ref": "#/$defs/version" },
+    "releases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["version", "manifest"],
+        "properties": {
+          "version": { "$ref": "#/$defs/version" },
+          "manifest": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  },
+  "$defs": { "version": { "type": "string", "pattern": "^[vV]?[0-9]+(\\.[0-9]+){0,2}$" } }
+}

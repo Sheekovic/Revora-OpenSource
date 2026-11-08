@@ -1,0 +1,42 @@
+[Unit]
+Description=Revora genuine 5165 owner-test server
+After=network-online.target postgresql.service
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=revora-game
+Group=revora-game
+WorkingDirectory=/srv/revora-game/app
+ExecStart=/srv/revora-game/app/Revora.Host --config config/revora.json
+Restart=on-failure
+RestartSec=10s
+TimeoutStopSec=35s
+KillSignal=SIGTERM
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectControlGroups=true
+ProtectClock=true
+ProtectHostname=true
+RestrictSUIDSGID=true
+LockPersonality=true
+# The .NET JIT requires executable anonymous memory; MemoryDenyWriteExecute is incompatible.
+CapabilityBoundingSet=
+AmbientCapabilities=
+RestrictAddressFamilies=AF_UNIX AF_INET
+SystemCallArchitectures=native
+SystemCallFilter=@system-service
+SystemCallErrorNumber=EPERM
+ReadWritePaths=/srv/revora-game/data /srv/revora-game/logs
+
+[Install]
+WantedBy=multi-user.target

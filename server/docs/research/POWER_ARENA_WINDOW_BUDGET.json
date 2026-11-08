@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-04",
+  "result": "passed",
+  "scope": "Calculated unopposed Power Arena attack/population budget; not a played event, survival proof or native navigation acceptance",
+  "profile_uid": 1096322,
+  "profile_evidence": "docs/research/FRESH_SNOW_LOADOUT.json",
+  "guardian_needs": [
+    30,
+    45,
+    60,
+    35,
+    45,
+    60,
+    90
+  ],
+  "population": [
+    30,
+    30,
+    30,
+    4,
+    30,
+    30,
+    30
+  ],
+  "maps": [
+    1730,
+    1731,
+    1732,
+    1733,
+    1734,
+    1735,
+    1736
+  ],
+  "respawn_seconds": 45,
+  "timer_interval_ms": 500,
+  "wait_per_wave_seconds": 46,
+  "waves": [
+    1,
+    2,
+    2,
+    9,
+    2,
+    2,
+    3
+  ],
+  "attack_seconds": 365,
+  "respawn_wait_seconds": 644,
+  "movement_claim_healing_allowance_seconds": 900,
+  "total_budget_seconds": 1909,
+  "window_seconds": 3600,
+  "model": "Production ConfigureGuardian and Calculate.Rango with level140/twice-reborn Archer minimum attack25571 and180% Dragon gems, no fan or criticals. One hit kills each configured floor guardian in this model; at most one attack/sec. Wait a full46sec after each completely cleared population wave. Population uses max_per_gen, not maxnpc.",
+  "limits": [
+    "No competing hunters; population is shared, so admission does not guarantee this budget.",
+    "Movement/claims/healing allowance is assumed, not measured. Retaliation, durability, latency and movement require their own evidence.",
+    "Source review: Dis City Standard Hall needs600 kills but each new floor instance has a two-hour lifetime, not one shared short deadline. No Dis City survival certificate is inferred."
+  ],
+  "game_sha256": "a9b832862153b718bf1ef6f6b6dcf73b1e0c0c0fe19a4feba03fed4f7d429f99",
+  "test_checks": 940,
+  "log_sha256": "375401280469289066b8b6fafb1dd872f41ef7ad73f9dbf74b5980cd9f3f6853",
+  "source_sha256": {
+    "Game/Features/PowerArenaEvent.cs": "4ce2417e9ded967cd2ece00574ed83600993ebd12e85ff4569ee9f3c37f4b802",
+    "Game/Map.cs": "6cf9d7b3958e28067a644bd6dcd604e5c6473bf652c6d829cae0d42430a77fe8",
+    "Database/MonsterTable.cs": "d057171bc6fd5d37fe7b45c76dc62642373c6472f621ef45d5f48cd1d5061df3",
+    "Game/Features/DisCityWorld.cs": "09ec275306d8c161ee9a1da982c4656b0e79f68ff6b9587ee221f1c60d38c6c1",
+    "Game/Features/DisCityQuest.cs": "38b78b14c1985b76b7e7c3d645e089120f93e803524ac24dfaaf4f5a9426e939",
+    "tests/CombatBalance/CombatTests.cs": "0a4fccd915bd2113bc732921ae98eeae8e6a03f185ebc02b60e65ed8ccd857da",
+    "docs/research/FRESH_SNOW_LOADOUT.json": "56f9232264f6a8422365127cfffab875e06747c1c2dfdefaaac2a129e818a6fd"
+  },
+  "private_read_sha256": "eded585ae35fc64e3def6d9b0f981ffe99af2504fb1224fa1205e6aa82015999"
+}

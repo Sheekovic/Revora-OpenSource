@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-04",
+  "result": "passed",
+  "scope": "PowerShell client-data installer on a disposable minimal client tree; no game execution or server installation",
+  "script_sha256": "85ee56f12138eb470434d90864a1688e84182b350bdb53ff10e163e201e7c04b",
+  "payload_manifest_sha256": "511eb3a9fb659e17030f8972e9e3aa5feecc591b8a045d79794800c48731cd93",
+  "files": 8,
+  "checks": [
+    "Check mode verifies approved executable, payload and destination hashes.",
+    "Apply then Rollback preserves all eight original hashes.",
+    "A locked second file forces failure after the first replacement; automatic recovery restores originals.",
+    "Modified destination is rejected before applying.",
+    "The actual active client directory is rejected by the separate-copy restriction."
+  ],
+  "initial_failure": "PowerShell converted null backup-path argument to an empty string; corrected File.Replace to use NullString.Value before successful tests.",
+  "limits": [
+    "No native client launch, rendering or server connection.",
+    "Hard interruption can leave a temporary file that requires operator review before rollback; do not launch a partial copy.",
+    "Signed distribution and isolated server candidate remain pending."
+  ],
+  "live_client_changed": false
+}

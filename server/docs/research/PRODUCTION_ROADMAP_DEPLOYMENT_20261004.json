@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-04",
+  "environment": "existing production server and main database",
+  "server_sha256": "153e6da0b6e69fcee62991ba157e2149159e67b766f22b0e9be722c9a0cadec0",
+  "pid": 5376,
+  "ports": [
+    9958,
+    9959
+  ],
+  "startup_ms": 10061,
+  "patch": "1.0.20",
+  "patch_sha256": "6d8e8f4db40c8d16b08f56667830a3ae97289ad0e4e440f47a0130aa1eb94089",
+  "patch_bytes": 4462355,
+  "public_feed_verified": true,
+  "public_zip_verified": true,
+  "database_backup": "C:/Revora/DeploymentBackups/production-owner-20261004/production-public.dump",
+  "schema_change": "Three additive columns and four lookup indexes; normal game role privileges unchanged",
+  "npc_changes": [
+    "TeamRegistrar 1002:291,146",
+    "SkillRegistrar 1002:300,146",
+    "General Amber 1020:865,540"
+  ],
+  "validation": [
+    "Production build passed with established legacy nullable/unused-code compatibility settings",
+    "Ten trigger guards: create, repeat, mismatch refusal; main-DB transaction rolled back",
+    "Three column and four index repeat guards pass under unchanged game role",
+    "Fourteen server data files and executable hashes verified",
+    "Production startup completed; both public ports listening",
+    "Live client gameplay remains owner acceptance pending",
+    "All ten Revora triggers enabled in main database",
+    "Production game socket returned 333-byte handshake; bytes not retained"
+  ],
+  "signing": "Detached offline provenance signature verified; existing launcher uses feed archive SHA256, not detached signature",
+  "native_acceptance": "pending owner login"
+}

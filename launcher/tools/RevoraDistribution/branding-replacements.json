@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    {
+      "path": "ini/UStrRes.ini",
+      "purpose": "Native game window title",
+      "find": "10375=Conquer Online - Dragon`s Ascension",
+      "replace": "10375=Revora - Dragon`s Ascension"
+    },
+    {
+      "path": "1.url",
+      "purpose": "Website shortcut",
+      "replace": "[InternetShortcut]\r\nURL=https://playrevora.com/\r\n"
+    },
+    {
+      "path": "2.url",
+      "purpose": "Account registration shortcut",
+      "replace": "[InternetShortcut]\r\nURL=https://playrevora.com/register\r\n"
+    }
+  ]
+}

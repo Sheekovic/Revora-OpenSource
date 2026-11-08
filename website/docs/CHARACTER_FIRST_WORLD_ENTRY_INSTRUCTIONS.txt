@@ -1,0 +1,17 @@
+Revora Character Creation and First World Entry — one bounded owner run
+
+Prerequisite: Microsoft .NET Desktop Runtime 10 x64 from Microsoft's official download page.
+Keep Microsoft Defender and Malwarebytes enabled. Do not run as Administrator and do not add exclusions.
+
+1. Extract this ZIP to a new ordinary user-owned folder outside the client directories.
+2. Start Revora.Launcher.exe as a normal Windows user.
+3. Select the unchanged verified Test 2c clean donor when requested. The existing marked workspace is reused safely.
+4. Click Prepare and connect to Revora.
+5. In the genuine client, manually enter only the supplied throwaway development account and press Enter once.
+6. At character creation, choose one supported body/class and a new 3–15 character ASCII-alphanumeric name, then submit once.
+7. A successful registration is expected to continue into starter map 1002 in the same client session. Do not treat a second login as normal onboarding; the development recovery action is only for a classified failure after a committed character.
+8. Expected final result: the newly created character is visibly standing in the starter world.
+9. Click Emergency Stop after the result. Return the screenshot, the package-local Reports JSON file(s), and Defender/Malwarebytes results only.
+
+Do not send a packet capture, password, raw client files, private paths, or unrelated security logs.
+The package contains no Conquer client, Flash, injected module, service, driver, or public server credential.

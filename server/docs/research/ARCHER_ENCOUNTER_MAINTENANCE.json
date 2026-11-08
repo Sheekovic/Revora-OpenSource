@@ -1,0 +1,83 @@
+{
+  "uid": 1096322,
+  "hp": "23960",
+  "medicine_units": 100,
+  "silver": 22722121,
+  "cp": 5537451,
+  "items": [
+    {
+      "uid": 62312160,
+      "id": 113309,
+      "position": 1,
+      "durability": 4197,
+      "maximdurability": 4198,
+      "warehouse": 0
+    },
+    {
+      "uid": 62312161,
+      "id": 120269,
+      "position": 2,
+      "durability": 4197,
+      "maximdurability": 4198,
+      "warehouse": 0
+    },
+    {
+      "uid": 62312162,
+      "id": 133309,
+      "position": 3,
+      "durability": 4196,
+      "maximdurability": 4198,
+      "warehouse": 0
+    },
+    {
+      "uid": 62312163,
+      "id": 500429,
+      "position": 4,
+      "durability": 7099,
+      "maximdurability": 7099,
+      "warehouse": 0
+    },
+    {
+      "uid": 62312164,
+      "id": 1050002,
+      "position": 5,
+      "durability": 0,
+      "maximdurability": 1,
+      "warehouse": 0
+    },
+    {
+      "uid": 62312165,
+      "id": 150269,
+      "position": 6,
+      "durability": 7099,
+      "maximdurability": 7099,
+      "warehouse": 0
+    },
+    {
+      "uid": 62312166,
+      "id": 160249,
+      "position": 8,
+      "durability": 4097,
+      "maximdurability": 4098,
+      "warehouse": 0
+    },
+    {
+      "uid": 61683646,
+      "id": 201009,
+      "position": 10,
+      "durability": 6530,
+      "maximdurability": 6698,
+      "warehouse": 0
+    },
+    {
+      "uid": 61683647,
+      "id": 202009,
+      "position": 11,
+      "durability": 6697,
+      "maximdurability": 6698,
+      "warehouse": 0
+    }
+  ],
+  "scope": "Read-only private earned-character maintenance snapshot; no repairs, purchases or balance mutations",
+  "query_sha256": "3997533e02e97a9fcfaa3af4da4903450574e25aa45df03bb72c9199da8f7060"
+}

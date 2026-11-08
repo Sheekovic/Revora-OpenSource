@@ -1,0 +1,19 @@
+{
+  "catalog_count": 337,
+  "source_producer_count": 337,
+  "missing_producers": [],
+  "reviewed_unavailable": [
+    10726,
+    11010,
+    11031,
+    11232
+  ],
+  "supplier_routes_unproven": [],
+  "admission_routes_unproven": [],
+  "ceiling_after_known_unavailable": 333,
+  "unproven_planning_pool": 333,
+  "target": 320,
+  "planning_margin": 13,
+  "compatible_career_verified": false,
+  "limitation": "All remaining entries still require compatible ordinary earning evidence; neither count is a playable total."
+}

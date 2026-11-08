@@ -1,0 +1,7 @@
+LIBRARY RevoraNativeLogin
+EXPORTS
+    RevoraBridgeInitialize
+    RevoraBridgeCleanup
+    RevoraBridgeSyntheticExercise
+    RevoraBridgeSyntheticCredentialBoundaryValidation
+    RevoraBridgeSyntheticHookValidation

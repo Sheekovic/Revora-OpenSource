@@ -1,0 +1,149 @@
+{
+  "monsters": [
+    {
+      "name": "KidCatcher",
+      "TypeID": 2150,
+      "MaxLife": 1500,
+      "ZoomPercent": 100,
+      "StcType": 0,
+      "Level": 75,
+      "Boss": 0
+    },
+    {
+      "name": "KidRipper",
+      "TypeID": 2155,
+      "MaxLife": 1500,
+      "ZoomPercent": 100,
+      "StcType": 0,
+      "Level": 75,
+      "Boss": 0
+    },
+    {
+      "name": "KidHunter",
+      "TypeID": 2151,
+      "MaxLife": 5000,
+      "ZoomPercent": 200,
+      "StcType": 10,
+      "Level": 75,
+      "Boss": 0
+    },
+    {
+      "name": "KidSiezer",
+      "TypeID": 2152,
+      "MaxLife": 10000,
+      "ZoomPercent": 200,
+      "StcType": 10,
+      "Level": 75,
+      "Boss": 0
+    }
+  ],
+  "base_map": 1780,
+  "entry": [
+    150,
+    150
+  ],
+  "spawn_candidates": [
+    {
+      "x": 150,
+      "y": 170,
+      "walk_steps": 22
+    },
+    {
+      "x": 150,
+      "y": 180,
+      "walk_steps": 32
+    },
+    {
+      "x": 160,
+      "y": 180,
+      "walk_steps": 40
+    },
+    {
+      "x": 170,
+      "y": 180,
+      "walk_steps": 50
+    },
+    {
+      "x": 180,
+      "y": 180,
+      "walk_steps": 60
+    },
+    {
+      "x": 150,
+      "y": 190,
+      "walk_steps": 42
+    },
+    {
+      "x": 160,
+      "y": 190,
+      "walk_steps": 50
+    },
+    {
+      "x": 170,
+      "y": 190,
+      "walk_steps": 60
+    },
+    {
+      "x": 180,
+      "y": 190,
+      "walk_steps": 70
+    }
+  ],
+  "children": [
+    {
+      "x": 150,
+      "y": 200,
+      "stand": [
+        148,
+        200
+      ],
+      "walk_steps": 54
+    },
+    {
+      "x": 160,
+      "y": 200,
+      "stand": [
+        158,
+        200
+      ],
+      "walk_steps": 58
+    },
+    {
+      "x": 170,
+      "y": 200,
+      "stand": [
+        168,
+        200
+      ],
+      "walk_steps": 68
+    },
+    {
+      "x": 150,
+      "y": 210,
+      "stand": [
+        148,
+        210
+      ],
+      "walk_steps": 64
+    },
+    {
+      "x": 170,
+      "y": 210,
+      "stand": [
+        168,
+        210
+      ],
+      "walk_steps": 78
+    }
+  ],
+  "placement_policy": "Revora placements; MoMo, pillar and five child footprints included.",
+  "sha256": {
+    "client_monsters": "99fa2c8f14c3851d797a0b20fbd325053f9acee35c7dab4c5e73edc2f5792585",
+    "runtime_monsters": "99d5f7d6b3ece68d9d17cb31d3170ab77c8f2501d80af15075cad467696cac9b",
+    "server_map": "a8e54974e3127c3235a788269df3f9f662b3c40be93130638469022266fd532b",
+    "native_map": "6bf114e344b4b550200f654620da8e024013c440b60ba94005e42defb8c0870c"
+  },
+  "native_acceptance": false,
+  "combat_statistics_verified": false,
+  "note": "Display profiles do not establish attack, defence, spawn sequence or kill-count semantics."
+}

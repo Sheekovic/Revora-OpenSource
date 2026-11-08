@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-03",
+  "uid": 1096322,
+  "result": "passed",
+  "runtime_sha256": "18CAC3A8A6EF22F46175EF2FAB4749ADAC8E2DB09FC3AD323B944F39D969A5F3",
+  "profile": {
+    "class": 41,
+    "level": 133,
+    "reborn": 2,
+    "learned_xp_skill": 1110
+  },
+  "first_cadence_run": {
+    "kills": 400,
+    "chain_kills": 300,
+    "chain_ms": 160875,
+    "buffer_callbacks_during_chain": 0,
+    "scope": "Cadence and saved milestones only; exposed separate status expiry concern"
+  },
+  "buffered_run": {
+    "xp_charging_kills": 100,
+    "chain_kills": 300,
+    "chain_ms": 161424,
+    "minimum_wait_per_attack_ms": 510,
+    "production_attack_gate_ms": 500,
+    "buffer_callback_every_chain_kills": 2,
+    "catalog_cyclone_seconds": 20,
+    "milestone_count": 3,
+    "achievement_ids": [
+      10520,
+      10521,
+      10522
+    ],
+    "cold_snapshot": "equal",
+    "unfinished_chain_after_reload": 0
+  },
+  "production_fix": "Cyclone and Superman kill-time extension refreshes the matching status-flag timer/duration using the existing20-second cap.",
+  "focused_regression": {
+    "checks": 10,
+    "old_build_result": "failed at Cyclone kill extension refreshes status deadline",
+    "new_build_result": "passed",
+    "entry": "tests/MonsterKoTimer/Verify-KoTimer.ps1"
+  },
+  "limitations": [
+    "Target approach positions and the offline socket adapter are controlled; not native movement or full client acceptance.",
+    "BuffersCallback is invoked every two kills during the second chain; unrelated production schedulers and autonomous monster pursuit are not run.",
+    "This verifies a playable attack-cadence/timer path through learned Cyclone, not all XP modes or fully atomic activation/expiry concurrency.",
+    "Private logs retain an unrelated vote-pulse PostgresException; this batch does not repair voting.",
+    "No live build installation, restart or deployment."
+  ],
+  "logs": {
+    "ko-earn": {
+      "status": "passed",
+      "sha256": "3c6c015652ebd876719c797ff36e3129a99bdb5b43ea3eed30f5bc51129ca5f0"
+    },
+    "ko-reload": {
+      "status": "passed",
+      "sha256": "de38380a5de0c0de76b2a62deee52948e50766dbfc2a7ed1c914c0dae1693180"
+    },
+    "ko-buffered": {
+      "status": "passed",
+      "sha256": "bc366b8f8b704ea575599ed0474a0fd594aebf5e14c1edcf46a83dc6c89d84d4"
+    },
+    "ko-buffered-reload": {
+      "status": "passed",
+      "sha256": "99198e956257a8ac2459c160a91fbae7b6b22bbb2484fd50fef939f1ab5f2742"
+    }
+  },
+  "source_sha256": {
+    "Game/Entity.cs": "94a251b26afb8132e921f54fc294f818ca33a68a0813e2c06f9a36d5d02be4fa",
+    "tools/CheckCandidateFreshArenaClasses.cs": "4f5d619eee7750f29aa6378ae2f01e12432fbb3c3c7dd2530170ef520aa3c6ff",
+    "tests/MonsterKoTimer/KoTimerTests.cs": "a157c8387df6c9306e8b6e5045b756bc57c534e803146ccbd844f77d26025fd6"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "InstanceName": "Revora Owner Test",
+  "RealmName": "Revora",
+  "Environment": "OwnerTest",
+  "RuntimeAdapter": "PostgreSql5165",
+  "AccountListener": { "Address": "0.0.0.0", "Port": 9958 },
+  "GameListener": { "Address": "0.0.0.0", "Port": 9959 },
+  "AdvertisedGameAddress": "REPLACE_WITH_REVIEWED_IPV4",
+  "OwnerSourceAddress": "REPLACE_WITH_OWNER_IPV4",
+  "MaximumPlayers": 8,
+  "ShutdownTimeoutSeconds": 30,
+  "SaveIntervalSeconds": 300,
+  "RegistrationEnabled": false,
+  "MaintenanceMode": false,
+  "ApplyMigrations": false,
+  "DataDirectory": "../data",
+  "LogDirectory": "../logs",
+  "SecretFile": "config/revora.secrets.json"
+}

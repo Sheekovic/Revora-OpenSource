@@ -1,0 +1,157 @@
+{
+  "quest_map_identity_verified": false,
+  "note": "Named Kunlun candidates have no local client archive/DMap or server terrain. Revora uses a documented private canyon layout; original quest map identity remains unverified.",
+  "indexes": [
+    {
+      "sha256": "86a54928a9682617371542cdb5a72707c799b92a5c820e3581183adaa94f32b0"
+    },
+    {
+      "sha256": "d1f35d6dc3dc0d1958a2aa612c4cdc988ed693636d89ad93078388e81cd23c19"
+    }
+  ],
+  "candidates": [
+    {
+      "id": 1712,
+      "client_path": "map/map/kunlun1.7z",
+      "extra": 256,
+      "same_runtime_binding": true,
+      "server_terrain_present": false,
+      "server_sha256": null,
+      "client_archive_present": false,
+      "client_dmap_present": false
+    },
+    {
+      "id": 1713,
+      "client_path": "map/map/kunlun2.7z",
+      "extra": 256,
+      "same_runtime_binding": true,
+      "server_terrain_present": false,
+      "server_sha256": null,
+      "client_archive_present": false,
+      "client_dmap_present": false
+    },
+    {
+      "id": 1714,
+      "client_path": "map/map/kunlun3.7z",
+      "extra": 256,
+      "same_runtime_binding": true,
+      "server_terrain_present": false,
+      "server_sha256": null,
+      "client_archive_present": false,
+      "client_dmap_present": false
+    },
+    {
+      "id": 1715,
+      "client_path": "map/map/kunlun4.7z",
+      "extra": 256,
+      "same_runtime_binding": true,
+      "server_terrain_present": false,
+      "server_sha256": null,
+      "client_archive_present": false,
+      "client_dmap_present": false
+    },
+    {
+      "id": 1716,
+      "client_path": "map/map/kunlun5.7z",
+      "extra": 256,
+      "same_runtime_binding": true,
+      "server_terrain_present": false,
+      "server_sha256": null,
+      "client_archive_present": false,
+      "client_dmap_present": false
+    },
+    {
+      "id": 1717,
+      "client_path": "map/map/kunlun6.7z",
+      "extra": 256,
+      "same_runtime_binding": true,
+      "server_terrain_present": false,
+      "server_sha256": null,
+      "client_archive_present": false,
+      "client_dmap_present": false
+    },
+    {
+      "id": 1718,
+      "client_path": "map/map/kunlun7.7z",
+      "extra": 256,
+      "same_runtime_binding": true,
+      "server_terrain_present": false,
+      "server_sha256": null,
+      "client_archive_present": false,
+      "client_dmap_present": false
+    },
+    {
+      "id": 1719,
+      "client_path": "map/map/kunlun8.7z",
+      "extra": 256,
+      "same_runtime_binding": true,
+      "server_terrain_present": false,
+      "server_sha256": null,
+      "client_archive_present": false,
+      "client_dmap_present": false
+    },
+    {
+      "id": 1720,
+      "client_path": "map/map/kunlun9.7z",
+      "extra": 256,
+      "same_runtime_binding": true,
+      "server_terrain_present": false,
+      "server_sha256": null,
+      "client_archive_present": false,
+      "client_dmap_present": false
+    }
+  ],
+  "npc_models": [
+    {
+      "model": 552,
+      "name": "DuSan",
+      "simple_object": "2"
+    },
+    {
+      "model": 554,
+      "name": "PharmacistDong",
+      "simple_object": "273"
+    },
+    {
+      "model": 555,
+      "name": "RedStone",
+      "simple_object": "18"
+    },
+    {
+      "model": 556,
+      "name": "OrangeRock",
+      "simple_object": "18"
+    },
+    {
+      "model": 557,
+      "name": "YellowRock",
+      "simple_object": "18"
+    },
+    {
+      "model": 558,
+      "name": "GreenRock",
+      "simple_object": "18"
+    },
+    {
+      "model": 559,
+      "name": "BlueRock",
+      "simple_object": "18"
+    },
+    {
+      "model": 560,
+      "name": "IndigoRock",
+      "simple_object": "18"
+    },
+    {
+      "model": 561,
+      "name": "PurpleRock",
+      "simple_object": "18"
+    },
+    {
+      "model": 699,
+      "name": "GeneralJudd",
+      "simple_object": "271"
+    }
+  ],
+  "npc_sha256": "b06db1e2484992a1b58eabd7a3d884da07ac728a4a183d0fd18f2dccd5b20497"
+}

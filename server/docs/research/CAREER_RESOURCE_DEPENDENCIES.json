@@ -1,0 +1,112 @@
+{
+  "scope": "Resource prerequisite composition; not a full-career expenditure audit or native acceptance",
+  "uid": 1096322,
+  "subclasses": {
+    "achievement_count": 14,
+    "schools": 7,
+    "required_study": 255500,
+    "observed_books": 477,
+    "observed_paid_cps": 48023,
+    "enrollment_cps": 800,
+    "book_cps": 99,
+    "zero_initial_study_books": 511,
+    "zero_initial_study_cps": 51389,
+    "conclusion": "All seven level9/phase9 schools already passed ordinary earning and cold reload. A zero-Study start can buy the finite missing Study from the same shop; no seeded Study or daily quest P7 is required."
+  },
+  "second_rebirth": {
+    "item_type": 723701,
+    "observed_cost_cps": 888,
+    "route": "Use the already earned/purchased Exemption Token route, not the retained Abyss route.",
+    "excludes_achievement": 11031,
+    "enables_abyss": false
+  },
+  "level140": {
+    "evidence_uid": 4294907001,
+    "route": "Existing ordinary RevoraMaster peak purchase on the retained Pirate route.",
+    "before_level": 137,
+    "after_level": 140,
+    "after_class": 75,
+    "rebirths_unchanged": 2,
+    "observed_cost_cps": 25000,
+    "cost_already_in_recorded_ledger": true,
+    "validation": "Existing rollback, quoted payment, duplicate refusal and cold reload phases; no new runtime run.",
+    "order": "Finish the selected Pirate trainer promotions before buying peak training; it directly sets final class and must not be used to infer intermediate trainer receipts.",
+    "scope": "Reuses the retained Pirate result only. Does not claim all-class peak acceptance, native UI, a fresh-character level140 run or natural combat leveling."
+  },
+  "currency_sources": [
+    {
+      "currencies": [
+        "CPs",
+        "RVPs",
+        "silver"
+      ],
+      "source": "docs/research/FRESH_DUKE_FUNDING_BOUND.json",
+      "conclusion": "Use the ordinary boss bounty and reviewed Duke/maintenance bound as a funding prerequisite. Preserve currency caps, scheduled opportunities and the reserve needed before the fight."
+    },
+    {
+      "currencies": [
+        "Study Points"
+      ],
+      "source": "Game/Features/SubclassShop.cs",
+      "conclusion": "Purchased Modesty Books supply500 points each; train between purchases to respect ushort capacity."
+    },
+    {
+      "currencies": [
+        "Honor"
+      ],
+      "source": "tools/CheckCandidateFreshHonor.cs",
+      "conclusion": "Calculated Arena match, saved ranking settlement and cold payment already prove at least8000 Honor for Sword Soul. CP bounty is not treated as Honor."
+    },
+    {
+      "currencies": [
+        "Virtue"
+      ],
+      "source": "tools/CheckCandidateFreshVirtue.cs",
+      "conclusion": "Fresh team training earned2005 Virtue in452 kills for Labyrinth admission. The retained separate5022-Virtue training/Shelby route covers the5000 exchange; do not spend the same points twice."
+    }
+  ],
+  "composition_order": [
+    "Use earned starter/level/first-rebirth foundation, then purchase the second-rebirth token before consuming it.",
+    "Fund optional purchases before entering timed encounters or resetting class/level; retain medicine and repair funds.",
+    "Train subclasses incrementally using CP-bought materials and books; their14 completed receipts survive later rites.",
+    "Earn Arena Honor before Sword Soul and separate Virtue balances before Labyrinth admission and Shelby exchange.",
+    "Keep the previously reviewed female-before-marriage, class-before-mastery-reset and permanent-collection ordering."
+  ],
+  "compatible_career_verified": false,
+  "remaining": [
+    "Reconcile the full selected route spending and reserves, including peer purchases, against scheduled funding; these bounded joins are not that total.",
+    "Do not infer every historical controlled encounter is naturally survivable from the one boss model.",
+    "Native timing, admission/activation gates and coordinated release remain separate."
+  ],
+  "log_sha256": {
+    "arena-process-career-fresh-subclass-earn.log": "e987a08a10328fb3bd9fe92cebe54129b5cf39064c34715f12ac8e9317dc8837",
+    "arena-process-career-fresh-subclass-reload.log": "5db5a7cb3c9f64dd9084b5fc3064e478bd3c53b69a3f0f80ebf0300936add36e",
+    "arena-process-career-fresh-honor-pay.log": "5333c6aefb61b5b0e35c4c3729dea9dd07075513835b498b1035ee5a93890eeb",
+    "arena-process-career-fresh-honor-reload.log": "517e4cabfee7793dae4b2d35593afa37927b34f4efd8a2c307fdc211f3061390",
+    "arena-process-career-fresh-virtue-earn.log": "127d501c359f2810554bc85b19e22669d730676b064b8371d8a8b359d7416bdd",
+    "arena-process-career-fresh-virtue-reload.log": "1445cf525657b759a2d8b1dfa5dc31928b4e373327151e46844c08cdf0eeb2d3",
+    "arena-process-career-peak-fault.log": "f3d045add1d6f0c6d56f74445c52a5bc326477ce00a0dcffca40eed69fb416e6",
+    "arena-process-career-peak-earn.log": "0431f22242b1c594d514c92d2c8477f3ccd8fa13978505fd2ce6a7b70fae7c57",
+    "arena-process-career-peak-reload.log": "5fedc9f32c01cd656be98dc54d5968fc784af438c28cc7fd8549e96bd8aec4df",
+    "arena-process-career-cap-checkpoint.log": "409df6a8be07b8f278889a819493d50b9abf41d37422839f8fc8c1e72dc12880"
+  },
+  "input_sha256": {
+    "Game/Features/SubclassProgression.cs": "b182ef545886c94e1a81fdc82c4d33eeb1b376bdf7efcf2f72710ffdff795a77",
+    "Game/Features/SubclassShop.cs": "85b8b140c4f1f276569c0dfc9e896db85615a60f3cb5152ee909ae08f86050c4",
+    "tools/ClientPatches/prepare_progression_shops.py": "e0944dcb626a45711ff840421ba897b2a0076955877c187eb90e5fe0f7baeb15",
+    "tools/CheckCandidateFreshSubclass.cs": "3f82aaf0e500b8b1afc932329494438b7f95f8682a0d407e6bd47ecfdd99eeb3",
+    "docs/SUBCLASS_PROGRESSION.md": "1b735c837b3c5266b36e2661d7e6e7510f04f0cb705aa28f0bc01e4c598e1153",
+    "docs/research/FRESH_SECOND_REBIRTH_VALIDATION.json": "70d789bb3c52f464d1bbe64e2b74a66b5d19ece1e98c9e3187cdc8b45aedd9ab",
+    "docs/research/FRESH_DUKE_FUNDING_BOUND.json": "c88c12cce2c2d095390bd74a7a37dc53ad33edc51b948aa20757cea28129d7bf",
+    "Game/Features/SecondRebirth.cs": "7852da65bcebbb4c68d447e37de58d64920689f58b3d5916b920948ae46e7e99",
+    "Game/Features/ExemptionTokenShop.cs": "5f8aa161123bd38033e8cdae35ee85f69bd0004dda59d128c40e812f24646eba",
+    "tools/CheckCandidateFreshHonor.cs": "200392fb630392737d2671db345b708184804375b5ffcbf32096eb53486ed39f",
+    "tools/CheckCandidateFreshVirtue.cs": "a32fdcdc3207554ac32c8d68e57d18bd375fef68803cf542e5dfe181d082a2a4",
+    "docs/research/RETAINED_EARNING_REVIEW.json": "51407c7176c2e8834a4a141e6384c4bd2b5fd9b1917b832a1882349892e4018e",
+    "Game/Features/RevoraMasterPeak.cs": "ebb9d629fc9b77d7cb7ff578fe25d50d03297cf564e1836c0cafad9f02fc9e87",
+    "Game/Features/RevoraMasterSystem.cs": "10d349197719f707b6eebaa363ae68bda8969e41ef3d5bc952de167a28709a24",
+    "tools/CheckCandidateCareerRites.cs": "a5eb50e4784861a4dbb8dc54fede733a14c063031f52065c6a8a8d3783f3bc50",
+    "docs/REVORA_MASTER_PEAK_TRANSACTION.md": "fde1a30539e2b7e2497da9a4d00e802cc49a3a1348d52e4258dac3e11da010fc",
+    "docs/research/CAREER_RECORDED_EXPENSES.json": "d7fbcf302c14c4d63559d5e77de0ef266e092c119904a7a13f027895416123de"
+  }
+}

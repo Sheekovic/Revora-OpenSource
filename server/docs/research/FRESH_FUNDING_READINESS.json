@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-03",
+  "scope": "Read-only fresh combat prerequisite inspection; not a boss kill or renewable-funding proof",
+  "uid": 1096322,
+  "profile": {
+    "hp": 20764,
+    "max_hp": 20764,
+    "min_attack": 6376,
+    "max_attack": 6382,
+    "defence": 1862,
+    "strength": 12,
+    "agility": 36,
+    "vitality": 5,
+    "unallocated_attributes": 383,
+    "cps": 4596921,
+    "rvps": 2797,
+    "silver": 14647300
+  },
+  "equipment": [
+    {
+      "position": 1,
+      "type": 111009,
+      "plus": 12,
+      "bound": true
+    },
+    {
+      "position": 2,
+      "type": 120009,
+      "plus": 12,
+      "bound": true
+    },
+    {
+      "position": 3,
+      "type": 131009,
+      "plus": 12,
+      "bound": true
+    },
+    {
+      "position": 4,
+      "type": 410009,
+      "plus": 12,
+      "bound": true
+    },
+    {
+      "position": 6,
+      "type": 150009,
+      "plus": 12,
+      "bound": true
+    },
+    {
+      "position": 8,
+      "type": 160019,
+      "plus": 12,
+      "bound": true
+    },
+    {
+      "position": 10,
+      "type": 201009,
+      "plus": 12,
+      "bound": true
+    },
+    {
+      "position": 11,
+      "type": 202009,
+      "plus": 12,
+      "bound": true
+    },
+    {
+      "position": 12,
+      "type": 300000,
+      "plus": 12,
+      "bound": true
+    },
+    {
+      "position": 18,
+      "type": 203009,
+      "plus": 12,
+      "bound": true
+    },
+    {
+      "position": 19,
+      "type": 204009,
+      "plus": 12,
+      "bound": true
+    }
+  ],
+  "snapshot_unchanged": true,
+  "runtime_sha256": "A38205B5C2185F060453E2D3BED757059D41724B912383F856C613CEC9E5A0DA",
+  "log_sha256": "24061475afc73ab4d576769af6542c49ae2d8280fac2a321c0abda3cd2fb4095",
+  "daily_boss": {
+    "health": 100000000,
+    "damage_min": 6500,
+    "damage_max": 7500,
+    "attack_interval_ms": 2000,
+    "expiry_hours": 2,
+    "currency_reward": {
+      "cps": 1000000,
+      "rvps": 50000,
+      "silver": 10000000
+    }
+  },
+  "remaining_acceptance": [
+    "Use actual calculated attacks for the full100M HP, not EliminationHit or a direct death callback.",
+    "Demonstrate survival using ordinary healing, movement or eligible allies; disclose controlled timing.",
+    "Retain ordinary medicine/equipment acquisition and exact costs; no injected purse, health or damage.",
+    "Verify exact bounty, four bound P7 loot choices and cold replay against the established reward checks."
+  ],
+  "limits": [
+    "Raw attack statistics are not a measured damage result or a time-to-kill estimate.",
+    "The current level-one equipment is the legitimate result of paid reincarnation; this result does not establish a gear defect.",
+    "The prior paid class-change proof and unfinished Arena trial are preserved.",
+    "Native acceptance and live deployment remain pending."
+  ],
+  "superseded_by": "docs/research/FRESH_DAILY_BOSS_COMBAT.json"
+}

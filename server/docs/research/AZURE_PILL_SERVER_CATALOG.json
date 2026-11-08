@@ -1,0 +1,72 @@
+{
+  "scope": "Read-only installed catalog and public game-world records; no native acceptance claim",
+  "items": [
+    {
+      "id": 721695,
+      "server_client_identity_equal": true
+    },
+    {
+      "id": 721696,
+      "server_client_identity_equal": true
+    },
+    {
+      "id": 721697,
+      "server_client_identity_equal": true
+    },
+    {
+      "id": 721698,
+      "server_client_identity_equal": true
+    },
+    {
+      "id": 728238,
+      "server_client_identity_equal": true
+    },
+    {
+      "id": 151077,
+      "server_client_identity_equal": true
+    }
+  ],
+  "sha256": {
+    "server_items": "d66c0489807d877e19053c8c04994d6738ffccf5c86565f216399f5dbfd55279",
+    "encrypted_client_items": "ab428fe7d3932d98ead2ece8cdc20c548ee909723792fb4de955df7dddfa7753"
+  },
+  "installed_npcs": [
+    {
+      "id": 4484,
+      "map": 5001,
+      "x": 78,
+      "y": 66,
+      "mesh": 30940,
+      "role": "cross-server travel"
+    }
+  ],
+  "missing_quest_npc_ids": [
+    4482,
+    4483,
+    8796
+  ],
+  "hunt": {
+    "family": 67,
+    "name": "FireRatL38",
+    "level": 38,
+    "hp": 1999,
+    "spawn_id": 59,
+    "map": 1011,
+    "bounds": [
+      538,
+      272,
+      110,
+      250
+    ],
+    "count": 50
+  },
+  "ring_pack": {
+    "pack": 728238,
+    "output": 151077,
+    "level": 43,
+    "quality": 7,
+    "binding": "preserve source pack"
+  },
+  "probe_log": "obj/azure-server-catalog.log (ignored)",
+  "native_verified": false
+}

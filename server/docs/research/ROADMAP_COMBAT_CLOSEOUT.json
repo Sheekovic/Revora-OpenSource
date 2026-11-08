@@ -1,0 +1,299 @@
+{
+  "date": "2026-10-04",
+  "result": "passed",
+  "scope": "Consolidated server combat regression and reuse of existing representative earned encounter evidence; not native or all-encounter acceptance",
+  "server_sha256": "bcb763292587681a7f06cd627d4a391a0008238ebdf392158df98a5bb3ed95d8",
+  "command": "tests/CombatBalance/Verify-Combat.ps1 -ArtifactRoot obj/counter-validation/bin",
+  "checks": 932,
+  "class_pair_evaluations": 600,
+  "classes": [
+    15,
+    25,
+    45,
+    55,
+    65,
+    75,
+    85,
+    135,
+    145,
+    165
+  ],
+  "calculation_paths": 6,
+  "class_comparison": "Equal supplied attack/defense stats; excludes class-specific skill kits, attack speed, movement, tactics and native behavior.",
+  "corrections": [
+    "Terato geometry uses widened squared distances across ushort coordinates.",
+    "Equipped arrows are excluded from defensive durability wear.",
+    "Frost Gaze variants12830/13070/13080 subtract the configured power with a zero floor; unsigned Math.Min previously emptied stamina for every successful proc."
+  ],
+  "regressions": [
+    "Class-neutral base calculations",
+    "Critical versus skill-critical and immunity",
+    "Tortoise mitigation",
+    "Block",
+    "Battle Power breakthrough and counteraction",
+    "Flat, cultivation and percentage magic defense",
+    "Terato normal and distant geometry",
+    "Snow minimum throughput relative to healing cadence",
+    "Defensive arrow wear",
+    "97 Frost Gaze handler checks: guaranteed-proc eligibility plus three variants, eight stamina boundaries and four power boundaries including zero and uint.MaxValue",
+    "71 production Screen stamina-callback checks: standing/sitting refill, timing, same-time replay, normal cap, blocking flags and recovery after removal",
+    "Four earned-profile-derived ranged damage/deadline checks for Terato and Sword Master; no new encounter victory claimed",
+    "Six additional checks compose worst-phase retaliation, healing stock and wear allowance with both deadline models"
+  ],
+  "earned_evidence_reused": [
+    {
+      "route": "Daily boss",
+      "evidence": "docs/research/FRESH_DAILY_BOSS_COMBAT.json",
+      "scope": "Existing earned combat, purchased healing, maintenance and cold bounty; Duke funding bound remains a separate numeric prerequisite."
+    },
+    {
+      "route": "Snow Banshee",
+      "evidence": "docs/research/FRESH_SNOW_TIMED_COMBAT.json",
+      "scope": "Timed earned Archer victory with simultaneous healing/retaliation and cold rewards. Preserve the disclosed5HP accounting residual and old-build arrow loss."
+    },
+    {
+      "route": "Moon Box",
+      "evidence": "docs/CAREER_STARTING_BOUNDARY.md",
+      "scope": "Existing ordinary fresh quest kills use production calculated melee, rather than the older retained supplied-lethal helper. Controlled proximity and cooldown remain."
+    },
+    {
+      "route": "Terato",
+      "evidence": "docs/TERATO_DRAGON.md",
+      "scope": "Existing earned-pill summon, calculated victory and durable loot. Not a timed retaliation proof."
+    },
+    {
+      "route": "Sword Master",
+      "evidence": "docs/SWORD_MASTER_ENCOUNTER.md",
+      "scope": "Existing earned-Honor purchase, calculated victory and durable pickup. Not a timed retaliation proof."
+    }
+  ],
+  "remaining": [
+    "Selected320 joint encounter/resource dependencies are not certified by this suite.",
+    "Native6711 timing, display and ordinary-player acceptance remain pending.",
+    "Unverified original retail numerical parity is not asserted.",
+    "Corrected isolated build has not been deployed live."
+  ],
+  "diagnostic": "Optional GeoIP.dat was absent in isolated output; suite completed successfully. No networking/location behavior was tested.",
+  "log_sha256": "d9e4b3d3ae9d386e46be351c8d620011a23187a8d47a91279fc09f4102bba6d1",
+  "source_sha256": {
+    "tests/CombatBalance/CombatTests.cs": "26643dad30868011ac90684a740b94e117bd89269541ceb0ca6034f2fee457ef",
+    "tests/CombatBalance/Verify-Combat.ps1": "e45c15ec57397464a0cd02e88007e1c4fe714d77ee3480ec8542f2283acf8c2f",
+    "Game/Attacking/Calculate.cs": "8e8a456205faf75b9b054904ed01a614a445e888aa8747ca99f1a5fb6cbdfed3",
+    "Game/Features/TeratoCombat.cs": "c414264cf539c0dd1b20976083c4b311227a04e486f55cdbc56d844673784d4d",
+    "Game/Features/SnowBansheeCombat.cs": "01cb25ecd9cef76f687ee10795e65d22624086e30f16532c388a44b20c3e5f98",
+    "docs/research/FRESH_SNOW_TIMED_COMBAT.json": "d091c65169f93754189b9299f2ef44a90fda1da07e0f41ef85158ff3877080e4",
+    "docs/research/FRESH_DAILY_BOSS_COMBAT.json": "d035c12b71cbd229aeaf4343649245c7bcaeead356fb8cb22e26535e33922ec2",
+    "tools/CheckCandidateFreshMoon.cs": "bc5166fe67d1cee859a3ce1035ef78811916faac0ceb833b297097b9e7e3699a",
+    "tools/CheckCandidateFreshTerato.cs": "46996d905f43dd0a6d2e0e92235e76f48476948147917c585c1c22fb48907baf",
+    "tools/CheckCandidateFreshMaster.cs": "4f7f32278c76c1ab1623d03dccb4fccb08ad9525596c755eeb21470f7299a063",
+    "Game/Attacking/Handle.cs": "b545693f7621944a35c94d7121d58c51e21a52b9af5a65b179a2e40e5885d015",
+    "Game/Screen.cs": "bf645e5f05fbfe4744859216e1cb9d2a8bd5eea40496cba459f20c6c03e3c347",
+    "Database/SpellTable.cs": "bef6d9fa69f7d5eb6b5d5f1d55e8d6ed9f0c937dc29aece89de79db6bc20e9d9",
+    "Game/Attacking/PvM.cs": "d0b5f04a98440b9ad577338c94acc530535425c24f220eed2dc43dfb408b0044",
+    "Game/Features/TeratoEncounter.cs": "977400023ae34aa4ff692846fff6c13e50cf7995dd833748f967de32eb35b361",
+    "Game/Features/SwordMasterEncounter.cs": "20c14d47cb224ac104b6410bbea583da9e82dd9a856b39f907ec56d8566fbd08",
+    "Game/Features/SwordMasterCombat.cs": "73488d8c8f8c7cbc1d664dbcb4b23b5287541bd963d7e89df72eae4c8d3c3e56",
+    "docs/research/FRESH_SNOW_LOADOUT.json": "56f9232264f6a8422365127cfffab875e06747c1c2dfdefaaac2a129e818a6fd",
+    "Game/Features/HealingMedicine.cs": "cafe7965272c52a0abacc33302fac77b939b66bf8e0c13163e290141c7684a91",
+    "docs/research/ARCHER_ENCOUNTER_MAINTENANCE.json": "629b4bec85680967ab73e43c7c0a656d1c867c0ced2ee4f8801cd6654fbe1891"
+  },
+  "frost_gaze_regression": {
+    "before_server_sha256": "bf6b3c12681cccb1c0c48823d03882f6afe8996c9745ae214788a6b0551de44d",
+    "failure": "Power50 reduced target stamina51 to0 instead of1 through the production spell handler.",
+    "before_log_sha256": "cd57ec6bd03474e65e077dcc0c5dd2830f10d0854871bfa59aa8fc643aca9b41",
+    "scope": "Offline supplied spell/character profiles and guaranteed proc chance. No DB, native casting or original retail tuning claim."
+  },
+  "acquisition_dependencies": {
+    "stamina": {
+      "achievement_ids": [
+        10119,
+        10504,
+        10505
+      ],
+      "result": "ordinary regeneration prerequisite verified",
+      "unblessed_cap": 100,
+      "standing_per_callback": 5,
+      "sitting_per_callback": 10,
+      "callback_interval_ms": 500,
+      "catalog_rows": [
+        {
+          "spell": 1045,
+          "level": 0,
+          "stamina": 20
+        },
+        {
+          "spell": 1046,
+          "level": 0,
+          "stamina": 20
+        },
+        {
+          "spell": 1045,
+          "level": 1,
+          "stamina": 20
+        },
+        {
+          "spell": 1045,
+          "level": 2,
+          "stamina": 20
+        },
+        {
+          "spell": 1045,
+          "level": 3,
+          "stamina": 20
+        },
+        {
+          "spell": 1045,
+          "level": 4,
+          "stamina": 20
+        },
+        {
+          "spell": 1046,
+          "level": 1,
+          "stamina": 20
+        },
+        {
+          "spell": 1046,
+          "level": 2,
+          "stamina": 20
+        },
+        {
+          "spell": 1046,
+          "level": 3,
+          "stamina": 20
+        },
+        {
+          "spell": 1046,
+          "level": 4,
+          "stamina": 20
+        },
+        {
+          "spell": 4000,
+          "level": 0,
+          "stamina": 100
+        },
+        {
+          "spell": 4000,
+          "level": 1,
+          "stamina": 100
+        },
+        {
+          "spell": 4000,
+          "level": 2,
+          "stamina": 100
+        },
+        {
+          "spell": 4000,
+          "level": 3,
+          "stamina": 100
+        }
+      ],
+      "catalog_sha256": "97ecb413566f5fea541090d1a1c1498ed2acf0874efa6056984583c65c187a71",
+      "source": "Game/Screen.cs:monsterBuffersCallback",
+      "existing_earning": "tools/CheckCandidateCareerRites.cs:RetainedGuard and CareerActiveTraining",
+      "scope": "Empty-screen offline session invokes the real registered callback at controlled timestamps; no stamina grants between recovery steps and no DB operations. This proves replenishment, not natural full-training duration or native sitting/casting. Prior saved earning and cold-recovery evidence remains historical."
+    }
+  },
+  "deadline_dependency": {
+    "profile_evidence": "docs/research/FRESH_SNOW_LOADOUT.json",
+    "profile_uid": 1096322,
+    "minimum_attack": 25571,
+    "dragon_gem_percent": 180,
+    "omitted_benefits": [
+      "fan7733",
+      "critical chance",
+      "temporary attack buffs"
+    ],
+    "calculated_damage_per_hit": 71599,
+    "attack_interval_ms": 1000,
+    "encounters": [
+      {
+        "family": 9916100,
+        "health": 50000000,
+        "deadline_seconds": 1800,
+        "modeled_seconds": 873,
+        "modeled_healing": 0
+      },
+      {
+        "family": 9916804,
+        "health": 15000000,
+        "deadline_seconds": 1800,
+        "modeled_seconds": 683,
+        "modeled_healing": 33900000,
+        "heal_assumption": "Full2% heal every6 seconds, conservatively faster than actual seven-phase42-second cycle"
+      }
+    ],
+    "scope": "Real damage calculators on a conservative profile derived from earned stats, followed by damage/healing/survival recurrence. No new admission, production encounter callbacks or saved victory. Reuses earlier offering/summon/loot evidence; native timing remains pending.",
+    "old_terato_limit": "7163 earlier melee attacks with advanced cooldowns exceed the1800-second encounter deadline even at500ms per attack; do not count that run as timed combat acceptance.",
+    "survival": {
+      "initial_hp": 23960,
+      "maximum_hp": 30163,
+      "defense": "Zero physical, flat magic and percentage magic defense; no equipment mitigation credited",
+      "retaliation": "Maximum attack roll and worst damaging phase each6 seconds, including fear/heal phases",
+      "terato": {
+        "worst_hit": 2016,
+        "minimum_hp": 19200,
+        "medicines": 42,
+        "retaliations": 145,
+        "downtime": "No attacks or medicine6 seconds each30 seconds; actual fear2 seconds"
+      },
+      "sword_master": {
+        "worst_hit": 780,
+        "minimum_hp": 22400,
+        "medicines": 13,
+        "retaliations": 113
+      },
+      "between_fight_medicines_reserved": 5,
+      "combined_medicines": 60,
+      "available_medicines": 100,
+      "medicine_hp": 7000,
+      "action_budget": "At most one medicine and one normal ranged action per second outside downtime",
+      "per_item_wear_bound": 3796,
+      "lowest_saved_non_arrow_durability": 4097,
+      "wear_assumption": "Two wear calls per attack and four per retaliation; at most one decrement per affected item per call. Both fights included; optional extra attack buffs excluded.",
+      "profile_evidence": "docs/research/ARCHER_ENCOUNTER_MAINTENANCE.json",
+      "arrow": "Saved1050002 remains zero durability from old bug. ShopID5 lists replacement for50000 silver; saved22722121 silver affords it. Purchase/equip not performed. Corrected wear exclusions tested only in isolated build; private server unchanged."
+    }
+  },
+  "spook_maintenance": {
+    "date": "2026-10-04",
+    "result": "passed",
+    "profile_uid": 1096322,
+    "grade": 1,
+    "achievement": 10529,
+    "scope": "Calculated solo grade1 Spook survival/time bound; prior saved victories and claims remain separate evidence",
+    "minimum_attack": 25571,
+    "dragon_gems_percent": 180,
+    "damage": 214796,
+    "worst_phase_damage": 7560,
+    "modeled_seconds": 71,
+    "approach_allowance_seconds": 900,
+    "deadline_seconds": 3600,
+    "attacks": 47,
+    "retaliations": 12,
+    "medicines": 13,
+    "available_medicines": 100,
+    "minimum_hp": 15840,
+    "per_item_wear_bound": 142,
+    "available_non_arrow_durability": 4097,
+    "assumptions": [
+      "One attack per second, with a spare500ms medicine action outside stun.",
+      "Maximum attack30000, phase2 multiplier1.5 every6seconds starting at2seconds, plus2second stun each cycle; actual longest windup6seconds is not needed.",
+      "Zero defense, no fan, no critical bonus, no successful dodge.",
+      "Repair and restock before this encounter; the same medicines/durability are not spent twice across separate models."
+    ],
+    "limits": [
+      "Not a native-client fight or new victory receipt.",
+      "Only selected grade1; higher grades and party combat are not certified.",
+      "Joint320 composition and release remain open."
+    ],
+    "source_sha256": {
+      "Game/Features/ExorcismCombat.cs": "b24a41ff26e4b29617e4c2d3c48ad3bf9a62f561458352859afebefd9e9fc943",
+      "Game/Features/ExorcismWorld.cs": "7182fe928976def7c8027e9a34712e420e5abb19d39461ac823fe06c4734c4ef",
+      "Game/Attacking/Calculate.cs": "8e8a456205faf75b9b054904ed01a614a445e888aa8747ca99f1a5fb6cbdfed3",
+      "tests/CombatBalance/CombatTests.cs": "74cc102c8cc1c6ed083a31d97072d96d6d2e4c543ec0639608759952756d2b3d"
+    },
+    "server_sha256": "99c23c1b0be49b38dcb5a62800186c6419561d3c8a68fd9852b19591699bf7e0",
+    "log_sha256": "7f63dc51db3df5b34c910260d57efb47697e827734c5efcd747c423e745ae3e0",
+    "suite_checks": 948
+  }
+}

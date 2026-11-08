@@ -1,0 +1,394 @@
+{
+  "scope": "Static client/server catalogs, read-only database actors and grid reachability; not ordinary earning or native acceptance.",
+  "database_observed_utc": "2026-09-21T11:36:08.5336894Z",
+  "maps": [
+    {
+      "id": 149,
+      "mapdoc": 3825
+    },
+    {
+      "id": 150,
+      "mapdoc": 3825
+    },
+    {
+      "id": 151,
+      "mapdoc": 3825
+    },
+    {
+      "id": 1365,
+      "mapdoc": 3825
+    },
+    {
+      "id": 1366,
+      "mapdoc": 3825
+    },
+    {
+      "id": 1367,
+      "mapdoc": 3825
+    },
+    {
+      "id": 1368,
+      "mapdoc": 3825
+    },
+    {
+      "id": 3825,
+      "mapdoc": 3825
+    },
+    {
+      "id": 4121,
+      "mapdoc": 3825
+    },
+    {
+      "id": 4122,
+      "mapdoc": 3825
+    },
+    {
+      "id": 4123,
+      "mapdoc": 3825
+    },
+    {
+      "id": 4124,
+      "mapdoc": 3825
+    },
+    {
+      "id": 6000,
+      "mapdoc": 6000
+    }
+  ],
+  "actors": [
+    {
+      "id": 66712,
+      "mapid": 6000,
+      "cellx": 54,
+      "celly": 74,
+      "lookface": 29196,
+      "profile": 2919,
+      "name": "Pak`sGhost"
+    },
+    {
+      "id": 122861,
+      "mapid": 4124,
+      "cellx": 34,
+      "celly": 54,
+      "lookface": 29226,
+      "profile": 2922,
+      "name": "Mr.Mirror",
+      "route": {
+        "dimensions": [
+          96,
+          96
+        ],
+        "reachable": true,
+        "steps": 8,
+        "approach": [
+          40,
+          48
+        ]
+      }
+    },
+    {
+      "id": 127861,
+      "mapid": 4123,
+      "cellx": 34,
+      "celly": 54,
+      "lookface": 29216,
+      "profile": 2921,
+      "name": "GeneralPak",
+      "route": {
+        "dimensions": [
+          96,
+          96
+        ],
+        "reachable": true,
+        "steps": 8,
+        "approach": [
+          40,
+          48
+        ]
+      }
+    },
+    {
+      "id": 127871,
+      "mapid": 4122,
+      "cellx": 34,
+      "celly": 54,
+      "lookface": 29236,
+      "profile": 2923,
+      "name": "MonkMisery",
+      "route": {
+        "dimensions": [
+          96,
+          96
+        ],
+        "reachable": true,
+        "steps": 8,
+        "approach": [
+          40,
+          48
+        ]
+      }
+    },
+    {
+      "id": 127881,
+      "mapid": 4121,
+      "cellx": 34,
+      "celly": 54,
+      "lookface": 29196,
+      "profile": 2919,
+      "name": "Pak`sGhost",
+      "route": {
+        "dimensions": [
+          96,
+          96
+        ],
+        "reachable": true,
+        "steps": 8,
+        "approach": [
+          40,
+          48
+        ]
+      }
+    }
+  ],
+  "monsters": [
+    {
+      "id": 7483,
+      "name": "GhostReaver",
+      "lookface": 979,
+      "life": 1000000,
+      "attack_min": 25000,
+      "attack_max": 25000
+    },
+    {
+      "id": 7484,
+      "name": "EvilMonkMisery",
+      "lookface": 981,
+      "life": 2000000,
+      "attack_min": 25000,
+      "attack_max": 25000
+    },
+    {
+      "id": 7486,
+      "name": "AwakeFlameDevastator",
+      "lookface": 977,
+      "life": 10000000,
+      "attack_min": 25000,
+      "attack_max": 25000
+    },
+    {
+      "id": 7487,
+      "name": "FuriousFlameDevastator",
+      "lookface": 978,
+      "life": 20000000,
+      "attack_min": 25000,
+      "attack_max": 25000
+    }
+  ],
+  "spawns": [
+    {
+      "mapid": 4121,
+      "npctype": 7487,
+      "spawn_groups": 1
+    },
+    {
+      "mapid": 4122,
+      "npctype": 7486,
+      "spawn_groups": 1
+    },
+    {
+      "mapid": 4123,
+      "npctype": 7484,
+      "spawn_groups": 1
+    },
+    {
+      "mapid": 4124,
+      "npctype": 7483,
+      "spawn_groups": 1
+    }
+  ],
+  "journal": [
+    {
+      "id": 3269,
+      "name": "[Epic] Solar Blade 1",
+      "previous": 0,
+      "minimum_level": 120,
+      "professions": "10,11,12,13,14,15",
+      "links": [
+        "[npc SuperMok,10580,1002,466,400]"
+      ]
+    },
+    {
+      "id": 3278,
+      "name": "[Epic] Solar Blade 2",
+      "previous": 3269,
+      "minimum_level": 120,
+      "professions": "10,11,12,13,14,15",
+      "links": [
+        "[npc Pak`sGhost,10579,1002,425,298]"
+      ]
+    },
+    {
+      "id": 3275,
+      "name": "[Epic] Evil Array 1",
+      "previous": 3278,
+      "minimum_level": 120,
+      "professions": "10,11,12,13,14,15",
+      "links": [
+        "[npc GeneralPak,10581,3830,154,130]"
+      ]
+    },
+    {
+      "id": 3270,
+      "name": "[Epic] Evil Array 2",
+      "previous": 3275,
+      "minimum_level": 120,
+      "professions": "10,11,12,13,14,15",
+      "links": [
+        "[npc MonkMisery,10583,3830,83,168]"
+      ]
+    },
+    {
+      "id": 3276,
+      "name": "[Epic] Evil Array 3",
+      "previous": 3270,
+      "minimum_level": 120,
+      "professions": "10,11,12,13,14,15",
+      "links": [
+        "[npc GeneralPak,10581,3830,154,130]"
+      ]
+    },
+    {
+      "id": 3271,
+      "name": "[Epic] Ghost Reavers",
+      "previous": 3276,
+      "minimum_level": 120,
+      "professions": "10,11,12,13,14,15",
+      "links": [
+        "[npc Mr.Mirror,10582,3830,162,217]"
+      ]
+    },
+    {
+      "id": 3277,
+      "name": "[Epic] The Traitor 1",
+      "previous": 3271,
+      "minimum_level": 120,
+      "professions": "10,11,12,13,14,15",
+      "links": [
+        "[npc GeneralPak,10581,3830,154,130]"
+      ]
+    },
+    {
+      "id": 3272,
+      "name": "[Epic] The Traitor 2",
+      "previous": 3277,
+      "minimum_level": 120,
+      "professions": "10,11,12,13,14,15",
+      "links": [
+        "[npc MonkMisery,10583,3830,83,168]"
+      ]
+    },
+    {
+      "id": 3273,
+      "name": "[Epic] Solar Essences 1",
+      "previous": 3272,
+      "minimum_level": 120,
+      "professions": "10,11,12,13,14,15",
+      "links": [
+        "[npc GeneralPak,10600,3831,154,130]"
+      ]
+    },
+    {
+      "id": 3279,
+      "name": "[Epic] Solar Essences 2",
+      "previous": 3273,
+      "minimum_level": 120,
+      "professions": "10,11,12,13,14,15",
+      "links": [
+        "[npc DivineJade,10602,3831,101,175]"
+      ]
+    },
+    {
+      "id": 3280,
+      "name": "[Epic] Devastator 1",
+      "previous": 3279,
+      "minimum_level": 120,
+      "professions": "10,11,12,13,14,15",
+      "links": [
+        "[npc GeneralPak,10603,3832,154,130]"
+      ]
+    },
+    {
+      "id": 3274,
+      "name": "[Epic] Devastator 2",
+      "previous": 3280,
+      "minimum_level": 120,
+      "professions": "10,11,12,13,14,15",
+      "links": [
+        "[mob FlameDevastator,3832,101,175]"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": 614439,
+      "name": "FangCrossSaber",
+      "profession": 15,
+      "level": 140
+    },
+    {
+      "id": 3003335,
+      "name": "SolarBladeRemain",
+      "profession": 0,
+      "level": 0
+    },
+    {
+      "id": 3003336,
+      "name": "SolarScrap",
+      "profession": 0,
+      "level": 0
+    },
+    {
+      "id": 3003338,
+      "name": "SolarEssence",
+      "profession": 0,
+      "level": 0
+    },
+    {
+      "id": 3003340,
+      "name": "SolarBlade",
+      "profession": 0,
+      "level": 0
+    }
+  ],
+  "maximum_cross_saber_level": 140,
+  "legacy_base_archive": "map/map/epicmission.7z",
+  "legacy_entrance_closed": true,
+  "journal_npcs_queried": [
+    10579,
+    10580,
+    10581,
+    10582,
+    10583,
+    10600,
+    10602,
+    10603
+  ],
+  "unrelated_duplicate_map_ids": [
+    1067
+  ],
+  "journal_npcs_registered": [],
+  "sha256": {
+    "database_snapshot": "80b8fe2a52ad96eba4733fea7cbc8811192fc306c848aba252cf3a6ec3e7278b",
+    "server_items": "1ed7a23b7a34b5e3706277f97e421e3cdf0b269eeb5be7367a4ebc0e4f22b3ef",
+    "client_items": "d49f0658bf01387b99c284ddec81713838f2eae3adb8e63666e5c906f63cf87a",
+    "client_journal": "f783c2a8ead9461a469c79b6c7e7aae00b2604066d4bc6e2e2c56d7e98fc5e14",
+    "client_npc_profiles": "b06db1e2484992a1b58eabd7a3d884da07ac728a4a183d0fd18f2dccd5b20497",
+    "client_map_index": "86a54928a9682617371542cdb5a72707c799b92a5c820e3581183adaa94f32b0",
+    "server_terrain_3825": "459df7eb9716f1380a06177b0b20adbc058324421e1fcfdb818416f70cfa6a32",
+    "client_terrain_archive_3825": "08ce19e2db8f4fdf97fe451ad3c0928e1eeb056e2edc69256dd25928f6e0c217",
+    "Game/Features/TwinCityPlaza.cs": "4324dee96f1dbea60b930f1d03e1db648b4998c67cde1510e31e922aa6509dcf",
+    "Npcs.cs": "d95cd3f512e4b60ce0bd475661ced3dda7ec68f0dff14bf40b21a86cc0f6a4db",
+    "Database/MonsterTable.cs": "e3ad812efa05f607f959a0486778b7e19acbfc033b697fabb0ba9ceba0ea3a6d",
+    "Game/Map.cs": "5bb2bb72c700696da0776c714cbb692110d987cd90199fab8a3bedf0be517d18"
+  }
+}

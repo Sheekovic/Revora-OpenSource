@@ -1,0 +1,72 @@
+{
+  "scope": "Read-only production-rule readiness, not an executed purchase/class change or compatible320 proof",
+  "character_uid": 1096322,
+  "profile": {
+    "level": 133,
+    "class": 25,
+    "reborn": 2,
+    "cp": 4610185
+  },
+  "dew_and_rite_cp": 7000,
+  "pending_legacy_recovery_rows": 0,
+  "pending_second_rebirth_requiring_recovery": 0,
+  "destinations": [
+    {
+      "class": 11,
+      "base_attribute_budget": 82
+    },
+    {
+      "class": 21,
+      "base_attribute_budget": 82
+    },
+    {
+      "class": 41,
+      "base_attribute_budget": 82
+    },
+    {
+      "class": 51,
+      "base_attribute_budget": 82
+    },
+    {
+      "class": 61,
+      "base_attribute_budget": 82
+    },
+    {
+      "class": 71,
+      "base_attribute_budget": 82
+    },
+    {
+      "class": 81,
+      "base_attribute_budget": 82
+    },
+    {
+      "class": 132,
+      "base_attribute_budget": 82
+    },
+    {
+      "class": 142,
+      "base_attribute_budget": 82
+    },
+    {
+      "class": 161,
+      "base_attribute_budget": 82
+    }
+  ],
+  "snapshot_unchanged": true,
+  "game_sha256": "D48A6C00F6BF84889581ADFEABEB924C4C7448C5DC3C6D17F8674129C43665B6",
+  "log_sha256": "cd6f9703c376c83f2e2e9ac715a3d5cb713df01c78f5a1a9dcc01c2fee8d63f5",
+  "source_sha256": {
+    "tools/CheckCandidateFreshArenaClasses.cs": "9f6115621a634177c382839da2ed66995b22e882a06a55a87525b93926e1b474",
+    "tools/CheckCandidateFreshRoster.cs": "0a5f9959b332bb1a40aa70bb0795d72a5dfb4f56238a82609e4cb75d8531eeaa",
+    "Game/Features/ReincarnationRules.cs": "6b309d7733cf5079b512267f30227972aa41f3dcc742d2af6ef8f0c5ebfaaf3b",
+    "Game/Features/PaidReincarnation.cs": "f45d8593f32dfeafc3adf8519ffe7ae582e7f5d03dc31e33bfa9d0fca8b03713",
+    "Game/Features/ReincarnationRecovery.cs": "30783020eadd2105c919a2696f8e09ac5e5199f8b7883acdd4c24ac9b8fcb878",
+    "Game/Features/PaidReincarnationRecovery.cs": "01d36c1e9b169ee1219c42402d6eab5d531d74dd0259aa26449122bd9a693988"
+  },
+  "limitations": [
+    "No Dew purchase, payment, equipment downgrade, class transition or recovery executed in this phase.",
+    "Existing retained earning covers paid transitions and recovery but retains its starting-profile controls.",
+    "Earlier roster training passed; six-class Arena series is incomplete after one saved Ninja victory and subsequent admission failure.",
+    "Native client and live release pending."
+  ]
+}

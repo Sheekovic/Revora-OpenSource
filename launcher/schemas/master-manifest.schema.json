@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://playrevora.com/schemas/master-manifest.schema.json",
+  "title": "PlayRevora master client manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "version", "files"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "version": { "type": "string" },
+    "files": { "type": "array", "items": { "$ref": "patch.schema.json#/$defs/file" } }
+  }
+}

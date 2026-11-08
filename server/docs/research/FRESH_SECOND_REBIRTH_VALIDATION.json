@@ -1,0 +1,61 @@
+{
+  "baseline_commit": "37df42d0cb169234a6457961d135e8c10453e844",
+  "character_uid": 1096322,
+  "checkpoint": "revora_fresh_third_shield_probe",
+  "game_sha256": "b90e35e9f3281b416da579ba2acc568be1997bdd17a9648d6071cc0b5f1c8826",
+  "overlay_provenance": "docs/research/FRESH_REBIRTH_VALIDATION.json",
+  "fixture_sha256": {
+    "CheckCandidateFreshSecondReady.cs": "3fc664ff2280b52365b94019d0b640ccb5a2a5354248b674aec72641ced0f530",
+    "CheckCandidateFreshSecondRite.cs": "752a2a581671e677493be558fcc2ea549a6991658c402a444685dd161852060a",
+    "CheckCandidateFreshThirdShield.cs": "eff7603613ff04e4ae9ba108d45d0d7f39fff2753da9e55f1cd801c089684aee",
+    "CheckCandidateArenaLifecycle.cs": "9b1034a575aeca79d4ee047b0ef4754cfc6b3bac8651ac9b7d6c04784e0c7921",
+    "Invoke-CandidateArenaLifecycle.ps1": "026a84fbbfe933f3ca14a87597e5a6c7d26abe117dd8c0a9e5384c1dee08e148"
+  },
+  "logs": {
+    "arena-process-career-fresh-second-ready-boost.log": "884f2ce452517ec2873daec90278d3bdbb937e61b3664a62ee0cd808d6267d3b",
+    "arena-process-career-fresh-second-ready-reload.log": "8210bf8f87024af6dcd8e34fcbc4800a6023c353e4f798aeeb0f3bcaea85852b",
+    "arena-process-career-fresh-second-ready-train.batch1.log": "497d09400c417724c029c47b62f15c48086052c2e7b465974da35de1e46fabd8",
+    "arena-process-career-fresh-second-ready-train.batch2.log": "f2bf770b153274ff091889c163e96451fc4e784b88d281372b96a7286268a464",
+    "arena-process-career-fresh-second-ready-train.batch3.log": "3cf7c88bb0dc96ed0ff1d3efefe621741c5d4e2e80e04a0cc8962f6fe00ce929",
+    "arena-process-career-fresh-second-ready-train.log": "1972ab0dc9c5066abe801a1a6f371826f2ff3318a26be51a4b8ad251ab5cce1e",
+    "arena-process-career-fresh-second-rite-complete.log": "aea993c50d744e004b98f1f3fae2dee35097d2dacd61fdd10237157b27d20b52",
+    "arena-process-career-fresh-second-rite-inspect.log": "5654a9290435de804835eea2e7acc156ba5092164451dd1fb5fa4d845d50e003",
+    "arena-process-career-fresh-second-rite-offer.log": "3195b7c374c35ed8405557590b5cf347c1e9ba482de3eea3f39d84853e488673",
+    "arena-process-career-fresh-second-rite-recover.log": "c5718f48de540e7e73cc001b7c01f009ea2daa71dca83b6340d5be36a6a003a6",
+    "arena-process-career-fresh-second-rite-reload.log": "657eb5e0fc17a174bdf217ba3f62aedde31b3e10ec9d45e875be6934b4a6f1c8",
+    "arena-process-career-fresh-second-rite-starter.before-shield-review.log": "f46c9c3ef8c7ed4c9b7f9f0a5d3a7b4732f11e45c634dfffce7ecc2aeebae26b",
+    "arena-process-career-fresh-second-rite-starter.log": "f46c9c3ef8c7ed4c9b7f9f0a5d3a7b4732f11e45c634dfffce7ecc2aeebae26b",
+    "arena-process-career-fresh-third-shield-reload.log": "82ae9f02c1d979a1fd3613a29730e2d7b3eab09ae6b147011bb79fbcbe69788f",
+    "arena-process-career-fresh-third-shield-train.log": "de67a4196ed7043c9eb6dfe6436aa58cffe48bc2570023bd300c2771ff80b439"
+  },
+  "reviewed_recovery": {
+    "prior_sha256": "808d5461ba948aefe5457f0f3392999f80c9ab6e1ea0d1baabf9fb2fcc435486",
+    "current_sha256": "1d6846063c5818952bb06a2883fe26d27947dff9a4196b69f5cfed9abb2c6e95",
+    "scope": "Full snapshots differ only by final payout, entitlement closure, two owned P7 choices and four equipment swaps; no grants reissued"
+  },
+  "result": {
+    "level": 40,
+    "class": 21,
+    "reborn": 2,
+    "cp": 235993,
+    "bound_cp": 150000,
+    "silver": 6100000,
+    "level110_to120_kills": 8617,
+    "level110_to120_hits": 9434,
+    "third_life_level40_kills": 157,
+    "third_life_level40_hits": 157,
+    "potion_cost_cp": 27,
+    "token_cost_cp": 888,
+    "final_warrior_pieces_equipped": 7,
+    "final_bound_p7_choices_consumed": 2,
+    "starter_entitlement_closed": true
+  },
+  "limits": [
+    "Controlled target proximity, teleport and attack cooldown; timer-free fixture does not certify natural pacing/retaliation/countdown",
+    "No supplied profile, purse, material, EXP or damage; production RNG and clocks unchanged",
+    "Standard shield900009 correctly refuses level15 and equips at earned40; initial fixture expectation corrected, no game requirement bypass",
+    "Final starter and P7 use sealed item dispatch; rite uses decoded NPC requests",
+    "Frozen owner starter/garment overlay remains; no new game build, deployment or native acceptance",
+    "Second-rebirth token route deliberately does not claim Abyss11031"
+  ]
+}

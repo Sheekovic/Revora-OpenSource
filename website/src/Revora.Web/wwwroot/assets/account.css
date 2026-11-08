@@ -1,0 +1,32 @@
+.account-page{min-height:100vh;background:var(--night)}
+.account-main{position:relative;isolation:isolate;display:grid;place-items:start center;min-height:calc(100svh - 5rem);padding:clamp(1.25rem,2vw,2.25rem) 1rem 3rem;overflow:hidden}
+.account-main:before{content:"";position:absolute;z-index:-2;inset:0;background:linear-gradient(90deg,#071013f5 0,#071013d9 48%,#071013a8),url('/assets/revora-guardian.png') center 28%/cover no-repeat;opacity:.52}
+.account-main:after{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(circle at 50% 8%,#1d414599,transparent 35rem),linear-gradient(180deg,transparent,#071013 94%)}
+.account-card{width:min(100%,36rem);padding:clamp(1.35rem,2.5vw,1.9rem);overflow:hidden}
+.account-card-login{max-width:34rem}.account-card-account,.account-card-recovery{max-width:42rem}
+.account-emblem{display:grid;place-items:center;width:4.25rem;height:4.25rem;margin:0 auto .55rem;padding:.25rem;border:1px solid #d4b46f55;border-radius:50%;background:#071013b8;box-shadow:0 0 34px #19cbd22b}
+.account-emblem img{display:block;width:100%;height:100%;object-fit:contain}
+.account-heading{text-align:center}.account-heading .eyebrow{margin-bottom:.3rem}.account-heading h1{margin:.15rem 0 .45rem;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,5vw,2.75rem);font-weight:500;line-height:1.12;color:var(--ink)}
+.account-heading p{max-width:34rem;margin:0 auto;color:var(--muted);line-height:1.55}
+html[dir=rtl] .account-heading h1{font-family:"Noto Sans Arabic",Tahoma,sans-serif;font-weight:700}
+.account-form{display:grid;gap:.8rem;margin-top:1.1rem}.account-form+.account-form{margin-top:.8rem}
+.form-field{display:grid;gap:.38rem}.form-field label{color:#dce7e3;font-size:.92rem;font-weight:700}.form-field small{color:var(--muted);font-size:.8rem;line-height:1.4}
+.account-card input:not([type=checkbox]):not([type=hidden]),.account-card select{display:block;width:100%;height:3.15rem;margin:0;padding:.7rem .85rem;color:var(--ink);background:#061013e8;border:1px solid #355156;border-radius:.65rem;font:inherit;line-height:1.2;box-shadow:inset 0 1px 0 #ffffff08;appearance:none}
+.account-card input::placeholder{color:#81918c}.account-card select{background-image:linear-gradient(45deg,transparent 50%,var(--gold) 50%),linear-gradient(135deg,var(--gold) 50%,transparent 50%);background-position:calc(100% - 1rem) 1.35rem,calc(100% - .7rem) 1.35rem;background-size:.3rem .3rem;background-repeat:no-repeat;padding-inline-end:2rem}
+html[dir=rtl] .account-card select{background-position:1rem 1.35rem,.7rem 1.35rem;padding-inline:2rem .85rem}
+.account-card input:not([type=checkbox]):focus-visible,.account-card select:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-color:var(--gold);box-shadow:0 0 0 .25rem #d4b46f18}
+.account-card input[aria-invalid=true]{border-color:var(--danger)}
+.field-error{margin:0;color:#f0a691;font-size:.84rem}.compatibility-note,.section-copy{margin:.05rem 0;color:var(--muted);font-size:.82rem;line-height:1.5}
+.check-row{display:flex;align-items:center;gap:.65rem;min-height:2.75rem;width:max-content;max-width:100%;color:#dce7e3;cursor:pointer;user-select:none}.check-row input[type=checkbox]{flex:0 0 1.12rem;width:1.12rem;height:1.12rem;margin:0;accent-color:var(--gold)}.check-row span{line-height:1.35}
+.bot-field{position:fixed!important;inset-inline-start:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important;opacity:0!important;pointer-events:none!important}
+.account-primary,.account-wide-action{width:100%}.account-primary{margin-top:.2rem;min-height:3.25rem;color:#0b1111!important;cursor:pointer;font-size:1rem;box-shadow:0 12px 30px #0005,0 0 22px #d4b46f15}
+.account-primary:hover,.account-primary:focus-visible{background:linear-gradient(135deg,#efd38d,#c8a55b)}.account-primary:active{transform:translateY(0);box-shadow:inset 0 2px 8px #6b5329aa}
+.account-links{display:flex;justify-content:space-between;gap:1rem;margin-top:1.25rem;padding-top:1.1rem;border-top:1px solid #ffffff12;font-size:.9rem}.account-links a,.account-secondary a{color:var(--gold);text-underline-offset:.25rem}.account-links a:hover,.account-secondary a:hover{color:#f1d694}
+.account-secondary{text-align:center;margin:1.2rem 0 0;color:var(--muted);font-size:.92rem}
+.form-alert{margin:1rem 0 0;padding:.8rem 1rem;border:1px solid #d4b46f80;border-radius:.65rem;background:#d4b46f12;color:#e9d8ae}.account-form .form-alert{margin:0}
+.account-section{margin-top:1.8rem;padding-top:1.45rem;border-top:1px solid #ffffff12}.account-section h2,.account-card>h2{margin:0 0 .35rem;font-family:Georgia,"Times New Roman",serif;font-size:1.35rem}.account-section h2 small{color:var(--muted);font-family:inherit;font-size:.75rem;font-weight:400}
+.recovery-codes{overflow:auto;margin:1.25rem 0;padding:1rem;color:#f3dfab;background:#061013;border:1px solid var(--line);border-radius:.65rem;font-size:.85rem;line-height:1.75}
+.account-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;margin:1.4rem 0}.account-facts div{padding:.75rem;border:1px solid #ffffff12;border-radius:.6rem;background:#07101388}.account-facts dt{color:var(--muted);font-size:.76rem}.account-facts dd{margin:.15rem 0 0;font-weight:700}.character-list{display:grid;gap:.5rem;padding:0;list-style:none}.character-list li{display:flex;justify-content:space-between;gap:1rem;padding:.7rem .8rem;border:1px solid var(--line);border-radius:.55rem}.character-list span,.empty-copy{color:var(--muted)}
+@media(max-width:900px){.account-main{padding-top:1.3rem}.account-main:before{background-position:62% 20%}.account-card{padding:clamp(1.25rem,5vw,2rem)}}
+@media(max-width:520px){.account-main{min-height:auto;padding:1rem .625rem 2.5rem}.account-card{border-radius:.9rem}.account-emblem{width:4rem;height:4rem}.account-heading h1{font-size:2rem}.account-links{display:grid;text-align:center}.account-facts{grid-template-columns:1fr}.check-row{min-height:3rem}.account-page footer{width:calc(100% - 1.25rem)}}
+@media(forced-colors:active){.bot-field{display:none!important}.account-card input,.account-card select{border:1px solid CanvasText}}

@@ -1,0 +1,1911 @@
+{
+  "fresh_uid": 1096322,
+  "checkpoint": "revora_fresh_mentor_join_probe",
+  "profile": {
+    "level": 133,
+    "class": 41,
+    "reborn": 2,
+    "cp": 5602451,
+    "silver": 22799121
+  },
+  "fresh_receipts": [
+    {
+      "achievement_id": 10101,
+      "source": "house-furniture-v1"
+    },
+    {
+      "achievement_id": 10102,
+      "source": "house-construction-v1"
+    },
+    {
+      "achievement_id": 10103,
+      "source": "house-construction-v1"
+    },
+    {
+      "achievement_id": 10104,
+      "source": "house-construction-v1"
+    },
+    {
+      "achievement_id": 10105,
+      "source": "house-construction-v1"
+    },
+    {
+      "achievement_id": 10106,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10107,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10108,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10120,
+      "source": "quiz-local-v1"
+    },
+    {
+      "achievement_id": 10122,
+      "source": "house-construction-v1"
+    },
+    {
+      "achievement_id": 10124,
+      "source": "mentor-admission-v1"
+    },
+    {
+      "achievement_id": 10127,
+      "source": "flower-delivery-v1"
+    },
+    {
+      "achievement_id": 10129,
+      "source": "mutual-marriage"
+    },
+    {
+      "achievement_id": 10218,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10219,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10228,
+      "source": "guild-war-purse-v1"
+    },
+    {
+      "achievement_id": 10230,
+      "source": "ctf-local-v1"
+    },
+    {
+      "achievement_id": 10231,
+      "source": "guild-siege-bomb-v1"
+    },
+    {
+      "achievement_id": 10232,
+      "source": "guild-pole-hit-v1"
+    },
+    {
+      "achievement_id": 10301,
+      "source": "ctf-local-v1"
+    },
+    {
+      "achievement_id": 10302,
+      "source": "guild-war-occupation-v1"
+    },
+    {
+      "achievement_id": 10303,
+      "source": "guild-beast-daily-v1"
+    },
+    {
+      "achievement_id": 10304,
+      "source": "clan-founder-v1"
+    },
+    {
+      "achievement_id": 10305,
+      "source": "clan-territory-v1"
+    },
+    {
+      "achievement_id": 10306,
+      "source": "clan-territory-v1"
+    },
+    {
+      "achievement_id": 10307,
+      "source": "clan-territory-v1"
+    },
+    {
+      "achievement_id": 10308,
+      "source": "clan-territory-v1"
+    },
+    {
+      "achievement_id": 10309,
+      "source": "clan-territory-v1"
+    },
+    {
+      "achievement_id": 10310,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10312,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10313,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10314,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10315,
+      "source": "first-rebirth-v1"
+    },
+    {
+      "achievement_id": 10316,
+      "source": "second-rebirth-v1"
+    },
+    {
+      "achievement_id": 10317,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10318,
+      "source": "nobility-donation"
+    },
+    {
+      "achievement_id": 10319,
+      "source": "study-reward-v1"
+    },
+    {
+      "achievement_id": 10320,
+      "source": "honor-arena-ranking"
+    },
+    {
+      "achievement_id": 10322,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10323,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10409,
+      "source": "equipment-state-v1"
+    },
+    {
+      "achievement_id": 10410,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10411,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10412,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10413,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10414,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10415,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10417,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10418,
+      "source": "equipment-state-v1"
+    },
+    {
+      "achievement_id": 10428,
+      "source": "equipment-gems-v1"
+    },
+    {
+      "achievement_id": 10429,
+      "source": "equipment-state-v1"
+    },
+    {
+      "achievement_id": 10520,
+      "source": "monster-ko-v1"
+    },
+    {
+      "achievement_id": 10521,
+      "source": "monster-ko-v1"
+    },
+    {
+      "achievement_id": 10522,
+      "source": "monster-ko-v1"
+    },
+    {
+      "achievement_id": 10526,
+      "source": "terato-kill-v1"
+    },
+    {
+      "achievement_id": 10527,
+      "source": "snow-banshee-kill-v1"
+    },
+    {
+      "achievement_id": 10528,
+      "source": "sword-master-kill-v1"
+    },
+    {
+      "achievement_id": 10529,
+      "source": "spook-kill-v1"
+    },
+    {
+      "achievement_id": 10612,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10613,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10617,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10618,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10619,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10625,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10626,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10629,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10631,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10701,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10702,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10703,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10802,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10803,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10804,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10805,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10806,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10808,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10810,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10812,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10814,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10815,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10816,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10817,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10819,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10820,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10821,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10822,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10823,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10920,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10921,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10922,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10923,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10924,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10925,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10926,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10927,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10928,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10929,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10930,
+      "source": "newcomer-intro-v1"
+    },
+    {
+      "achievement_id": 10931,
+      "source": "equipment-quests-revora-v1"
+    },
+    {
+      "achievement_id": 10932,
+      "source": "dragon-slayer-v1"
+    },
+    {
+      "achievement_id": 11001,
+      "source": "demon-exterminators-v1"
+    },
+    {
+      "achievement_id": 11002,
+      "source": "dis-city-v1"
+    },
+    {
+      "achievement_id": 11003,
+      "source": "dis-city-v1"
+    },
+    {
+      "achievement_id": 11004,
+      "source": "dis-city-v1"
+    },
+    {
+      "achievement_id": 11005,
+      "source": "dis-city-v1"
+    },
+    {
+      "achievement_id": 11012,
+      "source": "release-souls-v1"
+    },
+    {
+      "achievement_id": 11013,
+      "source": "power-arena-v1"
+    },
+    {
+      "achievement_id": 11014,
+      "source": "power-arena-v1"
+    },
+    {
+      "achievement_id": 11016,
+      "source": "flame-lit-v1"
+    },
+    {
+      "achievement_id": 11018,
+      "source": "snake-islands-v1"
+    },
+    {
+      "achievement_id": 11019,
+      "source": "sky-pass-v1"
+    },
+    {
+      "achievement_id": 11020,
+      "source": "ancient-collection-v1"
+    },
+    {
+      "achievement_id": 11022,
+      "source": "moon-box-v1"
+    },
+    {
+      "achievement_id": 11027,
+      "source": "classic-labyrinth-v1"
+    },
+    {
+      "achievement_id": 11030,
+      "source": "first-rebirth-v1"
+    },
+    {
+      "achievement_id": 11032,
+      "source": "arena-local-v1"
+    },
+    {
+      "achievement_id": 11101,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11102,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11103,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11104,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11105,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11106,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11107,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11108,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11109,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11111,
+      "source": "arena-twenty-entries"
+    },
+    {
+      "achievement_id": 11112,
+      "source": "arena-first-nine"
+    },
+    {
+      "achievement_id": 11113,
+      "source": "steed-course-v1"
+    },
+    {
+      "achievement_id": 11114,
+      "source": "bp-pk-v1"
+    },
+    {
+      "achievement_id": 11115,
+      "source": "couple-pk-npc-v1"
+    },
+    {
+      "achievement_id": 11116,
+      "source": "weekly-pk-v1"
+    },
+    {
+      "achievement_id": 11117,
+      "source": "monthly-pk-v1"
+    },
+    {
+      "achievement_id": 11118,
+      "source": "weekly-pk-v1"
+    },
+    {
+      "achievement_id": 11119,
+      "source": "monthly-pk-v1"
+    },
+    {
+      "achievement_id": 11120,
+      "source": "nobility-ranked-king"
+    },
+    {
+      "achievement_id": 11121,
+      "source": "couple-pk-npc-v1"
+    },
+    {
+      "achievement_id": 11122,
+      "source": "steed-course-v1"
+    },
+    {
+      "achievement_id": 11123,
+      "source": "elite-pk-champion-v1"
+    },
+    {
+      "achievement_id": 11128,
+      "source": "quiz-local-v1"
+    },
+    {
+      "achievement_id": 11131,
+      "source": "class-pk-v1"
+    },
+    {
+      "achievement_id": 11132,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11201,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 11202,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 11203,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 11204,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 11309,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11310,
+      "source": "rune-loadout-v1"
+    },
+    {
+      "achievement_id": 11311,
+      "source": "rune-loadout-v1"
+    },
+    {
+      "achievement_id": 11313,
+      "source": "rune-full-level-v1"
+    }
+  ],
+  "retained_uid": 4294907001,
+  "retained_receipts": [
+    {
+      "achievement_id": 10101,
+      "source": "house-furniture-v1"
+    },
+    {
+      "achievement_id": 10102,
+      "source": "house-construction-v1"
+    },
+    {
+      "achievement_id": 10103,
+      "source": "house-construction-v1"
+    },
+    {
+      "achievement_id": 10104,
+      "source": "house-construction-v1"
+    },
+    {
+      "achievement_id": 10105,
+      "source": "house-construction-v1"
+    },
+    {
+      "achievement_id": 10106,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10107,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10108,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10110,
+      "source": "virtue-meteor-v1"
+    },
+    {
+      "achievement_id": 10112,
+      "source": "steed-breeding-v1"
+    },
+    {
+      "achievement_id": 10113,
+      "source": "cosmetic-colour-v1"
+    },
+    {
+      "achievement_id": 10114,
+      "source": "cosmetic-style-v1"
+    },
+    {
+      "achievement_id": 10115,
+      "source": "armor-dye-v1"
+    },
+    {
+      "achievement_id": 10116,
+      "source": "cosmetic-avatar-v1"
+    },
+    {
+      "achievement_id": 10117,
+      "source": "guild-transporter-v1"
+    },
+    {
+      "achievement_id": 10118,
+      "source": "lottery-prize-v1"
+    },
+    {
+      "achievement_id": 10119,
+      "source": "owned-guard-summon"
+    },
+    {
+      "achievement_id": 10120,
+      "source": "quiz-local-v1"
+    },
+    {
+      "achievement_id": 10121,
+      "source": "classic-dance-v1"
+    },
+    {
+      "achievement_id": 10122,
+      "source": "house-construction-v1"
+    },
+    {
+      "achievement_id": 10123,
+      "source": "mutual-friend-v1"
+    },
+    {
+      "achievement_id": 10124,
+      "source": "mentor-admission-v1"
+    },
+    {
+      "achievement_id": 10125,
+      "source": "mentor-admission-v1"
+    },
+    {
+      "achievement_id": 10126,
+      "source": "mutual-partner-v1"
+    },
+    {
+      "achievement_id": 10127,
+      "source": "flower-delivery-v1"
+    },
+    {
+      "achievement_id": 10128,
+      "source": "player-booth"
+    },
+    {
+      "achievement_id": 10129,
+      "source": "mutual-marriage"
+    },
+    {
+      "achievement_id": 10130,
+      "source": "hand-holding-v1"
+    },
+    {
+      "achievement_id": 10131,
+      "source": "house-visit-host-v1"
+    },
+    {
+      "achievement_id": 10132,
+      "source": "house-visit-guest-v1"
+    },
+    {
+      "achievement_id": 10218,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10219,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10221,
+      "source": "guild-appointment-v1"
+    },
+    {
+      "achievement_id": 10222,
+      "source": "guild-appointment-v1"
+    },
+    {
+      "achievement_id": 10223,
+      "source": "guild-manager-v1"
+    },
+    {
+      "achievement_id": 10224,
+      "source": "guild-supervisor-v1"
+    },
+    {
+      "achievement_id": 10225,
+      "source": "guild-appointment-v1"
+    },
+    {
+      "achievement_id": 10226,
+      "source": "guild-inscription-v1"
+    },
+    {
+      "achievement_id": 10227,
+      "source": "enemy-guild-defeat-v1"
+    },
+    {
+      "achievement_id": 10228,
+      "source": "guild-war-purse-v1"
+    },
+    {
+      "achievement_id": 10230,
+      "source": "ctf-local-v1"
+    },
+    {
+      "achievement_id": 10231,
+      "source": "guild-siege-bomb-v1"
+    },
+    {
+      "achievement_id": 10232,
+      "source": "guild-pole-hit-v1"
+    },
+    {
+      "achievement_id": 10301,
+      "source": "ctf-local-v1"
+    },
+    {
+      "achievement_id": 10302,
+      "source": "guild-war-occupation-v1"
+    },
+    {
+      "achievement_id": 10303,
+      "source": "guild-beast-daily-v1"
+    },
+    {
+      "achievement_id": 10304,
+      "source": "clan-founder-v1"
+    },
+    {
+      "achievement_id": 10305,
+      "source": "clan-territory-v1"
+    },
+    {
+      "achievement_id": 10306,
+      "source": "clan-territory-v1"
+    },
+    {
+      "achievement_id": 10307,
+      "source": "clan-territory-v1"
+    },
+    {
+      "achievement_id": 10308,
+      "source": "clan-territory-v1"
+    },
+    {
+      "achievement_id": 10309,
+      "source": "clan-territory-v1"
+    },
+    {
+      "achievement_id": 10310,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10311,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10312,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10313,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10314,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10315,
+      "source": "first-rebirth-v1"
+    },
+    {
+      "achievement_id": 10316,
+      "source": "second-rebirth-v1"
+    },
+    {
+      "achievement_id": 10317,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10318,
+      "source": "nobility-donation"
+    },
+    {
+      "achievement_id": 10319,
+      "source": "study-reward-v1"
+    },
+    {
+      "achievement_id": 10320,
+      "source": "honor-arena-ranking"
+    },
+    {
+      "achievement_id": 10321,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10322,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10323,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10324,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10325,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10326,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10327,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10328,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10329,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10330,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10331,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10332,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10401,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10402,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10403,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10404,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10405,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10406,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10407,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10408,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 10409,
+      "source": "equipment-state-v1"
+    },
+    {
+      "achievement_id": 10410,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10411,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10412,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10413,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10414,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10415,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10416,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10417,
+      "source": "equipment-set-v1"
+    },
+    {
+      "achievement_id": 10418,
+      "source": "equipment-state-v1"
+    },
+    {
+      "achievement_id": 10419,
+      "source": "equipment-state-v1"
+    },
+    {
+      "achievement_id": 10420,
+      "source": "equipment-upgrade"
+    },
+    {
+      "achievement_id": 10421,
+      "source": "equipment-upgrade"
+    },
+    {
+      "achievement_id": 10422,
+      "source": "equipment-upgrade"
+    },
+    {
+      "achievement_id": 10423,
+      "source": "equipment-upgrade"
+    },
+    {
+      "achievement_id": 10424,
+      "source": "equipment-upgrade"
+    },
+    {
+      "achievement_id": 10425,
+      "source": "equipment-upgrade"
+    },
+    {
+      "achievement_id": 10426,
+      "source": "equipment-upgrade"
+    },
+    {
+      "achievement_id": 10428,
+      "source": "equipment-gems-v1"
+    },
+    {
+      "achievement_id": 10429,
+      "source": "equipment-state-v1"
+    },
+    {
+      "achievement_id": 10430,
+      "source": "equipment-state-v1"
+    },
+    {
+      "achievement_id": 10431,
+      "source": "refinery-apply"
+    },
+    {
+      "achievement_id": 10432,
+      "source": "equipment-switch-v1"
+    },
+    {
+      "achievement_id": 10501,
+      "source": "artifact-apply"
+    },
+    {
+      "achievement_id": 10502,
+      "source": "artifact-stabilize"
+    },
+    {
+      "achievement_id": 10503,
+      "source": "equipment-state-v1"
+    },
+    {
+      "achievement_id": 10504,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10505,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10506,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10507,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10508,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10509,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10510,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10511,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10512,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10513,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10514,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10515,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10516,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10517,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10518,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10519,
+      "source": "weapon-skill-fixed-v1"
+    },
+    {
+      "achievement_id": 10520,
+      "source": "monster-ko-v1"
+    },
+    {
+      "achievement_id": 10521,
+      "source": "monster-ko-v1"
+    },
+    {
+      "achievement_id": 10522,
+      "source": "monster-ko-v1"
+    },
+    {
+      "achievement_id": 10523,
+      "source": "snow-banshee-loot"
+    },
+    {
+      "achievement_id": 10524,
+      "source": "meteor-monster-loot-v1"
+    },
+    {
+      "achievement_id": 10525,
+      "source": "unarmed-monster-victory"
+    },
+    {
+      "achievement_id": 10526,
+      "source": "terato-kill-v1"
+    },
+    {
+      "achievement_id": 10527,
+      "source": "snow-banshee-kill-v1"
+    },
+    {
+      "achievement_id": 10528,
+      "source": "sword-master-kill-v1"
+    },
+    {
+      "achievement_id": 10529,
+      "source": "spook-kill-v1"
+    },
+    {
+      "achievement_id": 10605,
+      "source": "player-defeat-v1"
+    },
+    {
+      "achievement_id": 10606,
+      "source": "player-defeat-v1"
+    },
+    {
+      "achievement_id": 10607,
+      "source": "player-defeat-v1"
+    },
+    {
+      "achievement_id": 10611,
+      "source": "player-defeat-v1"
+    },
+    {
+      "achievement_id": 10612,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10613,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10614,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10617,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10618,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10619,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10620,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10621,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10622,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10625,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10626,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10629,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10631,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10701,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10702,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10703,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10708,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10709,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10710,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10711,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10712,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10713,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10714,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10715,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10716,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10717,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10718,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10719,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10720,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10721,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10723,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10724,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10725,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10727,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10801,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10802,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10803,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10804,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10805,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10806,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10807,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10808,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10809,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10810,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10812,
+      "source": "travel-region-v1"
+    },
+    {
+      "achievement_id": 10814,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10815,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10816,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10817,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10820,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10821,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10822,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10823,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10826,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10827,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10828,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10831,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10832,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10901,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10902,
+      "source": "player-revival-v1"
+    },
+    {
+      "achievement_id": 10904,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10905,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10906,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10907,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10909,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10910,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10911,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10912,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10914,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10915,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10916,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10917,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 10919,
+      "source": "aura-cast-v1"
+    },
+    {
+      "achievement_id": 10920,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10921,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10922,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10923,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10924,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10925,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10926,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10927,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10928,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10929,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 10930,
+      "source": "newcomer-intro-v1"
+    },
+    {
+      "achievement_id": 10931,
+      "source": "equipment-quests-revora-v1"
+    },
+    {
+      "achievement_id": 10932,
+      "source": "dragon-slayer-v1"
+    },
+    {
+      "achievement_id": 11001,
+      "source": "demon-exterminators-v1"
+    },
+    {
+      "achievement_id": 11002,
+      "source": "dis-city-v1"
+    },
+    {
+      "achievement_id": 11003,
+      "source": "dis-city-v1"
+    },
+    {
+      "achievement_id": 11004,
+      "source": "dis-city-v1"
+    },
+    {
+      "achievement_id": 11005,
+      "source": "dis-city-v1"
+    },
+    {
+      "achievement_id": 11012,
+      "source": "release-souls-v1"
+    },
+    {
+      "achievement_id": 11013,
+      "source": "power-arena-v1"
+    },
+    {
+      "achievement_id": 11014,
+      "source": "power-arena-v1"
+    },
+    {
+      "achievement_id": 11016,
+      "source": "flame-lit-v1"
+    },
+    {
+      "achievement_id": 11018,
+      "source": "snake-islands-v1"
+    },
+    {
+      "achievement_id": 11019,
+      "source": "sky-pass-v1"
+    },
+    {
+      "achievement_id": 11020,
+      "source": "ancient-collection-v1"
+    },
+    {
+      "achievement_id": 11022,
+      "source": "moon-box-v1"
+    },
+    {
+      "achievement_id": 11027,
+      "source": "classic-labyrinth-v1"
+    },
+    {
+      "achievement_id": 11030,
+      "source": "first-rebirth-v1"
+    },
+    {
+      "achievement_id": 11031,
+      "source": "abyss-trial-v1"
+    },
+    {
+      "achievement_id": 11032,
+      "source": "arena-local-v1"
+    },
+    {
+      "achievement_id": 11101,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11102,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11103,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11104,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11105,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11106,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11107,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11108,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11109,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11111,
+      "source": "arena-twenty-entries"
+    },
+    {
+      "achievement_id": 11112,
+      "source": "arena-first-nine"
+    },
+    {
+      "achievement_id": 11113,
+      "source": "steed-course-v1"
+    },
+    {
+      "achievement_id": 11114,
+      "source": "bp-pk-v1"
+    },
+    {
+      "achievement_id": 11115,
+      "source": "couple-pk-npc-v1"
+    },
+    {
+      "achievement_id": 11116,
+      "source": "weekly-pk-v1"
+    },
+    {
+      "achievement_id": 11117,
+      "source": "monthly-pk-v1"
+    },
+    {
+      "achievement_id": 11118,
+      "source": "weekly-pk-v1"
+    },
+    {
+      "achievement_id": 11119,
+      "source": "monthly-pk-v1"
+    },
+    {
+      "achievement_id": 11120,
+      "source": "nobility-ranked-king"
+    },
+    {
+      "achievement_id": 11121,
+      "source": "couple-pk-npc-v1"
+    },
+    {
+      "achievement_id": 11122,
+      "source": "steed-course-v1"
+    },
+    {
+      "achievement_id": 11123,
+      "source": "elite-pk-champion-v1"
+    },
+    {
+      "achievement_id": 11124,
+      "source": "flower-queen-v1"
+    },
+    {
+      "achievement_id": 11125,
+      "source": "flower-queen-v1"
+    },
+    {
+      "achievement_id": 11126,
+      "source": "flower-queen-v1"
+    },
+    {
+      "achievement_id": 11127,
+      "source": "flower-queen-v1"
+    },
+    {
+      "achievement_id": 11128,
+      "source": "quiz-local-v1"
+    },
+    {
+      "achievement_id": 11131,
+      "source": "class-pk-v1"
+    },
+    {
+      "achievement_id": 11132,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11201,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 11202,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 11203,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 11204,
+      "source": "subclass-v1"
+    },
+    {
+      "achievement_id": 11206,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 11207,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 11208,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 11209,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 11210,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11211,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11212,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11213,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11214,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11215,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11217,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 11218,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 11219,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 11220,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 11221,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11222,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11223,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11224,
+      "source": "wardrobe-permanent-v1"
+    },
+    {
+      "achievement_id": 11225,
+      "source": "wardrobe-permanent-v1"
+    },
+    {
+      "achievement_id": 11226,
+      "source": "wardrobe-permanent-v1"
+    },
+    {
+      "achievement_id": 11227,
+      "source": "wardrobe-permanent-v1"
+    },
+    {
+      "achievement_id": 11228,
+      "source": "wardrobe-permanent-v1"
+    },
+    {
+      "achievement_id": 11229,
+      "source": "wardrobe-permanent-v1"
+    },
+    {
+      "achievement_id": 11230,
+      "source": "wardrobe-permanent-v1"
+    },
+    {
+      "achievement_id": 11231,
+      "source": "wardrobe-permanent-v1"
+    },
+    {
+      "achievement_id": 11232,
+      "source": "wardrobe-permanent-v1"
+    },
+    {
+      "achievement_id": 11301,
+      "source": "wardrobe-permanent-v1"
+    },
+    {
+      "achievement_id": 11302,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11303,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11305,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 11306,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 11307,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 11308,
+      "source": "class-promotion-v1"
+    },
+    {
+      "achievement_id": 11309,
+      "source": "arena-class-victory"
+    },
+    {
+      "achievement_id": 11310,
+      "source": "rune-loadout-v1"
+    },
+    {
+      "achievement_id": 11311,
+      "source": "rune-loadout-v1"
+    },
+    {
+      "achievement_id": 11312,
+      "source": "rune-full-level-v1"
+    },
+    {
+      "achievement_id": 11313,
+      "source": "rune-full-level-v1"
+    },
+    {
+      "achievement_id": 11314,
+      "source": "rune-full-level-v1"
+    },
+    {
+      "achievement_id": 11315,
+      "source": "rune-full-level-v1"
+    },
+    {
+      "achievement_id": 11316,
+      "source": "rune-full-level-v1"
+    },
+    {
+      "achievement_id": 11317,
+      "source": "rune-full-level-v1"
+    },
+    {
+      "achievement_id": 11318,
+      "source": "rune-full-level-v1"
+    },
+    {
+      "achievement_id": 11319,
+      "source": "rune-full-level-v1"
+    },
+    {
+      "achievement_id": 11320,
+      "source": "rune-full-level-v1"
+    },
+    {
+      "achievement_id": 11321,
+      "source": "rune-full-level-v1"
+    },
+    {
+      "achievement_id": 11322,
+      "source": "observed-state"
+    },
+    {
+      "achievement_id": 11323,
+      "source": "observed-state"
+    }
+  ],
+  "export_metadata": {
+    "date": "2026-10-04",
+    "runtime_sha256": "18CAC3A8A6EF22F46175EF2FAB4749ADAC8E2DB09FC3AD323B944F39D969A5F3",
+    "phase": "career-fresh-arena-classes-mentor-reload",
+    "raw_export_sha256": "09c9e401a5d63e17f38302b168171dc5d0b1748f07197be9fe2cf3a9a4c2f868",
+    "scope": "Current saved identities after ordinary mentor admission; separate fresh and retained careers, not a combined earned count"
+  }
+}

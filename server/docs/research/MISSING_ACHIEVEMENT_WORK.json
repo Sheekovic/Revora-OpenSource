@@ -1,0 +1,10 @@
+{
+  "client_sha256": "df78dd498353b0b089f9b4228cada5d79f4547aae7b705349816671b2c29ebfc",
+  "catalog_count": 337,
+  "source_producer_count": 337,
+  "missing_producer_count": 0,
+  "minimum_additional_identities_for_320": 0,
+  "playable_route_verified": false,
+  "limitation": "Source presence includes staged services and does not prove compatible per-character earning or native acceptance.",
+  "packages": []
+}

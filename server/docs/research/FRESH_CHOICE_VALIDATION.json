@@ -1,0 +1,38 @@
+{
+  "baseline_commit": "5beebaad91e651a80dd084d271fe83630bcc3ea9",
+  "prior_overlay": "obj/fresh-starter-validation/sources.targets",
+  "scope": "Add only staged P7 dialogue and sealed item-use dispatch to the frozen starter overlay",
+  "sources": {
+    "Npcs.cs": "8005c384a12638edb7fd5344d2043e46bad6b9e5d57be3b9fe24ec1dca980478",
+    "Network/GamePackets/ItemUsage.cs": "520959802f90392dda12d235b73169eca00ba59816e828fdf003356ed3c23650"
+  },
+  "fresh_character_uid": 1096322,
+  "fresh_checkpoint": "revora_fresh_choice_probe",
+  "earned_pack_uid": 61696829,
+  "selected_bound_soul": 800618,
+  "wire_regression_uid": 4294919101,
+  "wire_checkpoint": "revora_choice_wire_probe",
+  "regression_qualification": "Supplied pack/profile, not career credit",
+  "decoded_candidate_sha256": "D48D8E88598E129D66CFFBD43FB48DDBA21BE2A091703F454C0C0340E4D2CF99",
+  "fixed_candidate_sha256": "66cebce7300acb20d83869eb02a5fbe0a975ec0f991d252c690dcf0e1301ca41",
+  "minimal_source_build_sha256": "0853fd6d719efca300b147edd26ec07662e6d2533efa5e09712de5c32fe09643",
+  "consumer_sha256": "a0ec40edca8e43aa97e8999e2cab1e467962044ff7b45619bd111074bee00eb5",
+  "packet_handler_sha256": "6f137acd96725b74d0d74217dbbe308c84fbff81447b753fbcb0b44c8ae77d56",
+  "fixture_sha256": {
+    "CheckCandidateFreshChoice.cs": "a6324567e8954c6ccad248fc94b56708f58482776875f8f7ecb33fd374a909de",
+    "CheckCandidateChoiceWire.cs": "79b6cca437eb91057a899a460a2406276cc7c18de6c83b4686bf55dd95570f26"
+  },
+  "logs": {
+    "arena-process-career-fresh-choice-menu.log": "6545e8ccc7bb70102cbc792af261b65354744adc2a6052e8b92d84673c0ab18b",
+    "arena-process-career-fresh-choice-choose.log": "d30655c322ffb1ec13a0dcbebd0536e64e2c0cf731c669abccb56623e35ec2e7",
+    "arena-process-career-fresh-choice-reload.log": "a2385d37cf5a758543f1c1aae69833010bfaaef89414b757d181f8477523f250",
+    "arena-process-career-choice-wire-choose.before-fix.log": "9acf1c1f5c5aa3fe0b7eb0abd01b7403e27fcbacf5418fd71f7092ec9d88770d",
+    "arena-process-career-choice-wire-choose.log": "59aad667c67bd3fdd6d000be3b7be3b6d945c211a71d794922ab502e9a6c4972",
+    "arena-process-career-choice-wire-reload.log": "0fe00f439b120b39d9cee4d11a7d1fa3ea77bf9dfedfbc768089cf3c33ade71e"
+  },
+  "limits": [
+    "Fresh earning test uses decoded NPC dispatch; separate full-packet regression proves wire fix",
+    "No native rendering/authentication/deployment proof",
+    "Minimal source build verified compilation; full starter-overlay candidate used for runtime checks"
+  ]
+}

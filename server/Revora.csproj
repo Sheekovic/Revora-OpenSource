@@ -1,0 +1,1334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B21AD8E-332D-483B-B7CB-6ACA1769DF4D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Revora</RootNamespace>
+    <AssemblyName>Revora</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>latest</LangVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <ApplicationIcon>revora.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNSAFE;</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <NoWarn>
+    </NoWarn>
+    <FileAlignment>8192</FileAlignment>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNSAFE;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.7.4114.6375, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="cityLookUp">
+      <HintPath>bin\Debug\cityLookUp.dll</HintPath>
+    </Reference>
+    <Reference Include="CO2_CORE_DLL, Version=1.0.0.20, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CO2_CORE_DLL.dll</HintPath>
+    </Reference>
+    <Reference Include="CountryLookupProj, Version=1.0.3475.36734, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CountryLookupProj.dll</HintPath>
+    </Reference>
+    <Reference Include="HandEvaluator, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HandEvaluator.dll</HintPath>
+    </Reference>
+    <Reference Include="KinSocket, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\KinSocket.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Activities.Build" />
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\subsonic test\SubCommander\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\subsonic test\SubCommander\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="msvcrt">
+      <HintPath>D:\Sources\RAR\Royal\bin\Debug\msvcrt.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=4.1.14.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>lib\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>lib\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>lib\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>lib\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>lib\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>lib\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>lib\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>lib\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>lib\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="NpcDialogs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NpcDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\database\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Sockets, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="SubSonic, Version=2.2.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="SubSonic.Migrations, Version=2.1.1.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SubSonic.Migrations.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C-p\Controlpanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C-p\Controlpanel.designer.cs">
+      <DependentUpon>Controlpanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MerchantTable.cs" />
+    <Compile Include="Database\RuedaDeSuerteTablecs.cs" />
+    <Compile Include="Game\EventoGMQuest.cs" />
+    <Compile Include="Game\Features\Event\DisCity.cs" />
+    <Compile Include="Game\Features\AchievementCatalog.cs" />
+    <Compile Include="Game\Features\CollectionAchievements.cs" />
+    <Compile Include="Game\Features\EquipmentAchievements.cs" />
+    <Compile Include="Game\Features\GuardTraining.cs" />
+    <Compile Include="Game\Features\ItemEnchantment.cs" />
+    <Compile Include="Game\Features\EquipmentUpgrades.cs" />
+    <Compile Include="Game\Features\EquipmentSockets.cs" />
+    <Compile Include="Game\Features\CollectionAchievementCatalog.cs" />
+    <Compile Include="Game\Features\WardrobeCatalogRepair.cs" />
+    <Compile Include="Game\Features\ProgressionEvidence.cs" />
+    <Compile Include="Game\Features\FashionCompetition.cs" />
+    <Compile Include="Game\Features\MrMs2016.cs" />
+    <Compile Include="Game\Features\MrMs2017.cs" />
+    <Compile Include="Game\Features\MrMs2017.Results.cs" />
+    <Compile Include="Game\Features\MrMs2017.Npc.cs" />
+    <Compile Include="Game\Features\HeartCampaign.cs" />
+    <Compile Include="Game\Features\HeartCampaign.Encounters.cs" />
+    <Compile Include="Game\Features\HeartCampaign.Return.cs" />
+    <Compile Include="Game\Features\HeartCampaign.Results.cs" />
+    <Compile Include="Game\Features\HeartCampaign.Prizes.cs" />
+    <Compile Include="Game\Features\HeartCampaign.Npc.cs" />
+    <Compile Include="Game\Features\EuroJerseyShop.cs" />
+    <Compile Include="Game\Features\HeartEncounter.cs" />
+    <Compile Include="Game\Features\OriginRealms.cs" />
+    <Compile Include="Game\Features\OriginTournaments.cs" />
+    <Compile Include="Game\Features\OriginCtf.cs" />
+    <Compile Include="Game\Features\OriginElitePk.cs" />
+    <Compile Include="Game\Features\OriginTeamPk.cs" />
+    <Compile Include="Game\Features\OriginBind.cs" />
+    <Compile Include="Game\Features\PlanetWeekend.cs" />
+    <Compile Include="Game\Features\PlanetEncounter.cs" />
+    <Compile Include="Game\Features\CtfResults.cs" />
+    <Compile Include="Game\Features\ElitePkResults.cs" />
+    <Compile Include="Game\Features\ElitePkPlacements.cs" />
+    <Compile Include="Game\Features\ElitePkPrizes.cs" />
+    <Compile Include="Game\Features\ElitePkEvent.cs" />
+    <Compile Include="Game\Features\TournamentCombat.cs" />
+    <Compile Include="Game\Features\LocalPkResults.cs" />
+    <Compile Include="Game\Features\LocalPkRules.cs" />
+    <Compile Include="Game\Features\CouplePkResults.cs" />
+    <Compile Include="Game\Features\CouplePkEvent.cs" />
+    <Compile Include="Game\Features\SubclassProgression.cs" />
+    <Compile Include="Game\Features\NinjaFlowerHunt.cs" />
+    <Compile Include="Game\Features\NinjaEpicStore.cs" />
+    <Compile Include="Game\Features\NinjaEpicQuest.cs" />
+    <Compile Include="Game\Features\NinjaEpicRules.cs" />
+    <Compile Include="Game\Features\NinjaTraining.cs" />
+    <Compile Include="Game\Features\MonkTraining.cs" />
+    <Compile Include="Game\Features\MonkEpicRules.cs" />
+    <Compile Include="Game\Features\MonkEpicStore.cs" />
+    <Compile Include="Game\Features\TaoistEpicStore.cs" />
+    <Compile Include="Game\Features\TaoistEpicRules.cs" />
+    <Compile Include="Game\Features\PirateEpicRules.cs" />
+    <Compile Include="Game\Features\PirateEpicJournal.cs" />
+    <Compile Include="Game\Features\PirateEpicWorld.cs" />
+    <Compile Include="Game\Features\PirateEpicStore.cs" />
+    <Compile Include="Game\Features\PirateEpicStore.Purchase.cs" />
+    <Compile Include="Game\Features\PirateEpicStore.Flowers.cs" />
+    <Compile Include="Game\Features\PirateEpicStore.Search.cs" />
+    <Compile Include="Game\Features\PirateEpicStore.Training.cs" />
+    <Compile Include="Game\Features\TaoistEpicQuest.cs" />
+    <Compile Include="Game\Features\TaoistEpicTraining.cs" />
+    <Compile Include="Game\Features\TaoistEpicJournal.cs" />
+    <Compile Include="Game\Features\MonkEpicQuest.cs" />
+    <Compile Include="Game\Features\MonkEpicJournal.cs" />
+    <Compile Include="Game\Features\MonkSutta.cs" />
+    <Compile Include="Game\Features\WarriorTraining.cs" />
+    <Compile Include="Game\Features\WarriorModes.cs" />
+    <Compile Include="Game\Features\WarriorStance.cs" />
+    <Compile Include="Game\Features\WarriorEpicStore.cs" />
+    <Compile Include="Game\Features\TrojanEpicStore.cs" />
+    <Compile Include="Game\Features\TrojanEpicJournal.cs" />
+    <Compile Include="Game\Features\TrojanEpicScenes.cs" />
+    <Compile Include="Game\Features\TrojanEpicCombat.cs" />
+    <Compile Include="Game\Features\TrojanEpicQuest.cs" />
+    <Compile Include="Game\Features\TrojanEpicEntrance.cs" />
+    <Compile Include="Game\Features\TrojanEpicTraining.cs" />
+    <Compile Include="Game\Features\DisCityRunRules.cs" />
+    <Compile Include="Game\Features\HonorPurchases.cs" />
+    <Compile Include="Game\Features\ArenaPointPurchases.cs" />
+    <Compile Include="Game\Features\ArenaAdminBalances.cs" />
+    <Compile Include="Game\Features\ArenaCacheRecovery.cs" />
+    <Compile Include="Game\Features\ArenaCompletionPump.cs" />
+    <Compile Include="Game\Features\SnowBansheeStore.cs" />
+    <Compile Include="Game\Features\SnowBansheeRewards.cs" />
+    <Compile Include="Game\Features\SnowBansheeEncounter.cs" />
+    <Compile Include="Game\Features\SnowBansheeCombat.cs" />
+    <Compile Include="Game\Features\SwordMasterAdmission.cs" />
+    <Compile Include="Game\Features\PurpleBansheeAdmission.cs" />
+    <Compile Include="Game\Features\PurpleBansheeRewards.cs" />
+    <Compile Include="Game\Features\PurpleBansheeEncounter.cs" />
+    <Compile Include="Game\Features\PurpleBansheeCombat.cs" />
+    <Compile Include="Game\Features\SwordMasterRewards.cs" />
+    <Compile Include="Game\Features\SwordMasterEncounter.cs" />
+    <Compile Include="Game\Features\SwordMasterCombat.cs" />
+    <Compile Include="Game\Features\WarriorEpicJournal.cs" />
+    <Compile Include="Game\Features\WarriorEpicScenes.cs" />
+    <Compile Include="Game\Features\WarriorEpicCombat.cs" />
+    <Compile Include="Game\Features\WarriorEpicQuest.cs" />
+    <Compile Include="Game\Features\MagicDefenderProtection.cs" />
+    <Compile Include="Game\Features\AssassinTraining.cs" />
+    <Compile Include="Game\Features\ClassPromotion.cs" />
+    <Compile Include="Game\Features\RuneLoadout.cs" />
+    <Compile Include="Game\Features\RefineryProgress.cs" />
+    <Compile Include="Game\Features\ArtifactStabilization.cs" />
+    <Compile Include="Game\Features\ArtifactApplication.cs" />
+    <Compile Include="Game\Features\NobilityDonations.cs" />
+    <Compile Include="Game\Features\NobilityReset.cs" />
+    <Compile Include="Game\Features\MailRewards.cs" />
+    <Compile Include="Game\Features\ChiWallet.cs" />
+    <Compile Include="Game\Features\JiangTraining.cs" />
+    <Compile Include="Game\Features\PerfectionTempering.cs" />
+    <Compile Include="Game\Features\DisCityJades.cs" />
+    <Compile Include="Game\Features\DisCityWorld.cs" />
+    <Compile Include="Game\Features\DisCityQuest.cs" />
+    <Compile Include="Game\Features\DisCityTreasury.cs" />
+    <Compile Include="Game\Features\DisCityRelics.cs" />
+    <Compile Include="Game\Features\DeityLandRelics.cs" />
+    <Compile Include="Game\Features\DisCityDarkHorn.cs" />
+    <Compile Include="Game\Features\DisCityRanking.cs" />
+    <Compile Include="Game\Features\WeaponSkillMastery.cs" />
+    <Compile Include="Game\Features\WeaponSkillBooks.cs" />
+    <Compile Include="Game\Features\WeaponBookShop.cs" />
+    <Compile Include="Game\Features\ExperienceMath.cs" />
+    <Compile Include="Game\Features\ExperienceRewardPlan.cs" />
+    <Compile Include="Game\Features\ExperienceRewards.cs" />
+    <Compile Include="Game\Features\ExperienceConsumables.cs" />
+    <Compile Include="Game\Features\ElitePkPacks.cs" />
+    <Compile Include="Game\Features\ChiTokenCash.cs" />
+    <Compile Include="Game\Features\QuestGiftPacks.cs" />
+    <Compile Include="Game\Features\LotteryDraws.cs" />
+    <Compile Include="Game\Features\ClassicDances.cs" />
+    <Compile Include="Game\Features\FlowerDelivery.cs" />
+    <Compile Include="Game\Features\DoubleExperienceBalance.cs" />
+    <Compile Include="Game\Features\ExperiencePotions.cs" />
+    <Compile Include="Game\Features\TournamentExpPacks.cs" />
+    <Compile Include="Game\Features\ExpProtectionBalance.cs" />
+    <Compile Include="Game\Features\ExperienceProtection.cs" />
+    <Compile Include="Game\Features\ExpCareCombine.cs" />
+    <Compile Include="Game\Features\TimeDropBalance.cs" />
+    <Compile Include="Game\Features\TimeDropHourglasses.cs" />
+    <Compile Include="Game\Features\WelcomePacks.cs" />
+    <Compile Include="Game\Features\StarterPacks.cs" />
+    <Compile Include="Game\Features\P7SoulChoicePack.cs" />
+    <Compile Include="Game\Features\RevoraStarterPack.cs" />
+    <Compile Include="Game\Features\RebirthGarmentPack.cs" />
+    <Compile Include="Game\Features\CpShopPurchases.cs" />
+    <Compile Include="Game\Features\ConquerPointBags.cs" />
+    <Compile Include="Game\Features\FixedOutputPacks.cs" />
+    <Compile Include="Game\Features\DragonBallPacks.cs" />
+    <Compile Include="Game\Features\PrizeCenterPacks.cs" />
+    <Compile Include="Game\Features\EasterGoldPacks.cs" />
+    <Compile Include="Game\Features\DailySignInPacks.cs" />
+    <Compile Include="Game\Features\AncientStoneCombine.cs" />
+    <Compile Include="Game\Features\StarStoneCombine.cs" />
+    <Compile Include="Game\Features\AttackDefenseBalance.cs" />
+    <Compile Include="Game\Features\AttackDefensePotions.cs" />
+    <Compile Include="Game\Features\HealingMedicineBalance.cs" />
+    <Compile Include="Game\Features\HealingMedicine.cs" />
+    <Compile Include="Game\Features\BloodshedSeaBalance.cs" />
+    <Compile Include="Game\Features\BloodshedSeaBoosts.cs" />
+    <Compile Include="Game\Features\HonorRefineryPacks.cs" />
+    <Compile Include="Game\Features\GainRefineryPacks.cs" />
+    <Compile Include="Game\Features\HossuHairPacks.cs" />
+    <Compile Include="Game\Features\RedRunePacks.cs" />
+    <Compile Include="Game\Features\YellowBlueRunePacks.cs" />
+    <Compile Include="Game\Features\PlusOneStonePacks.cs" />
+    <Compile Include="Game\Features\HigherStonePacks.cs" />
+    <Compile Include="Game\Features\GemDragonSoulPacks.cs" />
+    <Compile Include="Game\Features\WayOfHeroesClaims.cs" />
+    <Compile Include="Game\Features\GuildIdentity.cs" />
+    <Compile Include="Game\Features\MillionaireStonePacking.cs" />
+    <Compile Include="Game\Features\ChiPointItems.cs" />
+    <Compile Include="Game\Features\SilverStudyBags.cs" />
+    <Compile Include="Game\Features\SilverPouches.cs" />
+    <Compile Include="Game\Features\StudyBooks.cs" />
+    <Compile Include="Game\Features\EliteNestedPacks.cs" />
+    <Compile Include="Game\Features\ArenaPrizeConversions.cs" />
+    <Compile Include="Game\Features\P7SoulPacks.cs" />
+    <Compile Include="Game\Features\MagnoliaQuest.cs" />
+    <Compile Include="Game\Features\MagnoliaSeeds.cs" />
+    <Compile Include="Game\Features\MagnoliaBonuses.cs" />
+    <Compile Include="Game\Features\MentorExperience.cs" />
+    <Compile Include="Game\Features\ReincarnationRecovery.cs" />
+    <Compile Include="Game\Features\CharacterAttributes.cs" />
+    <Compile Include="Game\Features\CharacterProgression.cs" />
+    <Compile Include="Game\Features\StudyRewardEvidence.cs" />
+    <Compile Include="Game\Features\SilverBalance.cs" />
+    <Compile Include="Game\Features\PurseBalance.cs" />
+    <Compile Include="Game\Features\PkBalance.cs" />
+    <Compile Include="Game\Features\PenitenceAmulets.cs" />
+    <Compile Include="Game\Features\AppearanceState.cs" />
+    <Compile Include="Game\Features\CosmeticOwnership.cs" />
+    <Compile Include="Game\Features\RetiredHairDyes.cs" />
+    <Compile Include="Game\Features\RetiredBlackTulip.cs" />
+    <Compile Include="Game\Features\ArmorDyeShop.cs" />
+    <Compile Include="Game\Features\VirtueBalance.cs" />
+    <Compile Include="Game\Features\ShelbyRewards.cs" />
+    <Compile Include="Game\Features\TravelRegions.cs" />
+    <Compile Include="Game\Features\TravelProgress.cs" />
+    <Compile Include="Game\Features\ExplorationWorld.cs" />
+    <Compile Include="Game\Features\GrottoPassage.cs" />
+    <Compile Include="Game\Features\GrottoKeyDrops.cs" />
+    <Compile Include="Game\Features\CleanWaterDrops.cs" />
+    <Compile Include="Game\Features\MeteorDrops.cs" />
+    <Compile Include="Game\Features\DailyHuntDrops.cs" />
+    <Compile Include="Game\Features\DailyPriceQuest.cs" />
+    <Compile Include="Game\Features\DailyRareQuest.cs" />
+    <Compile Include="Game\Features\DailySoulBall.cs" />
+    <Compile Include="Game\Features\MiningRewards.cs" />
+    <Compile Include="Game\Features\MiningPassage.cs" />
+    <Compile Include="Game\Features\TrainingGroundPassage.cs" />
+    <Compile Include="Game\Features\MoonPlatformPassage.cs" />
+    <Compile Include="Game\Features\AdventureTravel.cs" />
+    <Compile Include="Game\Features\HeavenlyStoneCrafting.cs" />
+    <Compile Include="Game\Features\RebirthRules.cs" />
+    <Compile Include="Game\Features\SecondRebirthRules.cs" />
+    <Compile Include="Game\Features\ReincarnationRules.cs" />
+    <Compile Include="Game\Features\PaidReincarnation.cs" />
+    <Compile Include="Game\Features\PaidReincarnationRecovery.cs" />
+    <Compile Include="Game\Features\AbyssTrialRules.cs" />
+    <Compile Include="Game\Features\AbyssTrialMaterials.cs" />
+    <Compile Include="Game\Features\AbyssTrialStore.cs" />
+    <Compile Include="Game\Features\AbyssTrialJournal.cs" />
+    <Compile Include="Game\Features\AbyssTrialWorld.cs" />
+    <Compile Include="Game\Features\AbyssTrialQuest.cs" />
+    <Compile Include="Game\Features\AbyssRebirthPayment.cs" />
+    <Compile Include="Game\Features\SecondRebirthSkills.cs" />
+    <Compile Include="Game\Features\SecondRebirth.cs" />
+    <Compile Include="Game\Features\ExemptionTokenShop.cs" />
+    <Compile Include="Game\Features\SecondRebirthRecovery.cs" />
+    <EmbeddedResource Include="Game\Features\Data\SecondRebirthSkills.csv"><LogicalName>Revora.SecondRebirthSkills.csv</LogicalName></EmbeddedResource>
+    <Compile Include="Game\Features\RebirthSkillRules.cs" />
+    <Compile Include="Game\Features\FirstRebirth.cs" />
+    <Compile Include="Game\Features\FirstRebirthRecovery.cs" />
+    <Compile Include="Game\Features\DragonPillCrafting.cs" />
+    <Compile Include="Game\Features\TeratoEncounter.cs" />
+    <Compile Include="Game\Features\GuildSeasonWar.cs" />
+    <Compile Include="Game\Features\GuildWarPurses.cs" />
+    <Compile Include="Game\Features\SuperGuildWarPurses.cs" />
+    <Compile Include="Game\Features\GuildPoleCredit.cs" />
+    <Compile Include="Game\Features\GuildBeastEvent.cs" />
+    <Compile Include="Game\Features\GuildBeastFunding.cs" />
+    <Compile Include="Game\Features\GuildBeastRuns.cs" />
+    <Compile Include="Game\Features\GuildDonations.cs" />
+    <Compile Include="Game\Features\GuildArsenalPurchases.cs" />
+    <Compile Include="Game\Features\GuildLeadership.cs" />
+    <Compile Include="Game\Features\GuildFounding.cs" />
+    <Compile Include="Game\Features\GuildManagers.cs" />
+    <Compile Include="Game\Features\GuildSeasonClaims.cs" />
+    <Compile Include="Game\Features\GuildSeasonPrizes.cs" />
+    <Compile Include="Game\Features\GuildPrizeRollover.cs" />
+    <Compile Include="Game\Features\GuildCupStats.cs" />
+    <Compile Include="Game\Features\HolyGrailCrafting.cs" />
+    <Compile Include="Game\Features\TeratoCombat.cs" />
+    <Compile Include="Game\Features\TeratoRewards.cs" />
+    <Compile Include="Game\Features\DragonSlayerHunt.cs" />
+    <Compile Include="Game\Features\DragonSlayerWorld.cs" />
+    <Compile Include="Network\GamePackets\HairFaceResponse.cs" />
+    <Compile Include="Game\Features\BlessingBalance.cs" />
+    <Compile Include="Game\Features\PrayingStones.cs" />
+    <Compile Include="Game\Features\MonsterEquipmentDrops.cs" />
+    <Compile Include="Game\Features\BattlePowerSharing.cs" />
+    <Compile Include="Game\Features\BattlePowerTournament.cs" />
+    <Compile Include="Game\Features\DisCityPacks.cs" />
+    <Compile Include="Game\Features\ExorcismRewards.cs" />
+    <Compile Include="Game\Features\AnniversaryQuest.cs" />
+    <Compile Include="Game\Features\ExorcismQuest.cs" />
+    <Compile Include="Game\Features\ExorcismWorld.cs" />
+    <Compile Include="Game\Features\ExorcismCombat.cs" />
+    <Compile Include="Game\Features\LocalPkWar.cs" />
+    <Compile Include="Game\Features\DemonExterminators.cs" />
+    <Compile Include="Game\Features\QuestInventory.cs" />
+    <Compile Include="Game\Features\MoonBoxQuest.cs" />
+    <Compile Include="Game\Features\PowerArenaEvent.cs" />
+    <Compile Include="Game\Features\PowerArenaPacks.cs" />
+    <Compile Include="Game\Features\ReleaseSoulsQuest.cs" />
+    <Compile Include="Game\Features\ArenaParticipation.cs" />
+    <Compile Include="Game\Features\ArenaMatchLedger.cs" />
+    <Compile Include="Game\Features\ArenaResultStatistics.cs" />
+    <Compile Include="Game\Features\TeamArenaResultStatistics.cs" />
+    <Compile Include="Game\Features\TeamArenaStartupRecovery.cs" />
+    <Compile Include="Game\Features\TeamArenaResultCoordinator.cs" />
+    <Compile Include="Game\Features\TeamArenaCompletionPump.cs" />
+    <Compile Include="Game\Features\ArenaStartupPreparation.cs" />
+    <Compile Include="Game\Features\ArenaShutdownDrain.cs" />
+    <Compile Include="Game\Features\TeamArenaAdmissions.cs" />
+    <Compile Include="Game\Features\TeamArenaDisconnectRetention.cs" />
+    <Compile Include="Game\Features\IArenaShutdownRetention.cs" />
+    <Compile Include="Game\Features\ArenaDisconnectRetention.cs" />
+    <Compile Include="Game\Features\ArenaAdmissionGuard.cs" />
+    <Compile Include="Game\Features\ArenaActors.cs" />
+    <Compile Include="Game\Features\ArenaBotStore.cs" />
+    <Compile Include="Game\Features\ArenaBotSnapshot.cs" />
+    <Compile Include="Game\Features\ArenaBotPolicy.cs" />
+    <Compile Include="Game\Features\ArenaBotBrain.cs" />
+    <Compile Include="Game\Features\ArenaBots.cs" />
+    <Compile Include="Game\Features\ArenaAdmissions.cs" />
+    <Compile Include="Game\Features\ArenaDailyRewards.cs" />
+    <Compile Include="Game\Features\TeamArenaDailyRewards.cs" />
+    <Compile Include="Game\Features\TeamArenaDayRollover.cs" />
+    <Compile Include="Game\Features\ArenaCustomRewards.cs" />
+    <Compile Include="Game\Features\ArenaResultCoordinator.cs" />
+    <Compile Include="Game\Features\ArenaResultIntents.cs" />
+    <Compile Include="Game\Features\ArenaStartupRecovery.cs" />
+    <Compile Include="Game\Features\ArenaRankingSettlement.cs" />
+    <Compile Include="Game\Features\ArenaRewardDelivery.cs" />
+    <Compile Include="Game\Features\ArenaSignupWithdrawal.cs" />
+    <Compile Include="Game\Features\TeamArenaCombatLease.cs" />
+    <Compile Include="Game\Features\TeamArenaPoison.cs" />
+    <Compile Include="Game\Features\TeamArenaBreakingTouch.cs" />
+    <Compile Include="Game\Features\TeamArenaFlame.cs" />
+    <Compile Include="Game\Features\ArenaDayRollover.cs" />
+    <Compile Include="Game\Features\QuizQuestionsV1.cs" />
+    <Compile Include="Game\Features\QuizResults.cs" />
+    <Compile Include="Game\Features\QuizShowEvent.cs" />
+    <Compile Include="Game\Features\SummerMaterials.cs" />
+    <Compile Include="Game\Features\SummerCrafting.cs" />
+    <Compile Include="Game\Features\SnakeIslandsQuest.cs" />
+    <Compile Include="Game\Features\LabyrinthQuest.cs" />
+    <Compile Include="Game\Features\LabyrinthItems.cs" />
+    <Compile Include="Game\Features\SkyPassWorld.cs" />
+    <Compile Include="Game\Features\SkyPassQuest.cs" />
+    <Compile Include="Game\Features\SummerHunt.cs" />
+    <Compile Include="Game\Features\AtomicTrade.cs" />
+    <Compile Include="Game\Features\AuctionHouse.cs" />
+    <Compile Include="Game\Features\Friendships.cs" />
+    <Compile Include="Game\Features\Marriages.cs" />
+    <Compile Include="Game\Features\TradePartnerships.cs" />
+    <Compile Include="Game\Features\MentorAdmissions.cs" />
+    <Compile Include="Game\Features\MentorDepartures.cs" />
+    <Compile Include="Game\Features\MentorStoneClaims.cs" />
+    <Compile Include="Game\Features\MentorBlessingClaims.cs" />
+    <Compile Include="Game\Features\AuctionGateway.cs" />
+    <Compile Include="Game\Features\CityGuardSystem.cs" />
+    <Compile Include="Game\Features\ExpeditionEvent.cs" />
+    <Compile Include="Game\Features\ExpeditionField.cs" />
+    <Compile Include="Game\Features\LivingWorldSystem.cs" />
+    <Compile Include="Game\Features\AdventurerRetaliation.cs" />
+    <Compile Include="Game\Features\CompanionNavigation.cs" />
+    <Compile Include="Game\Features\GoldPickup.cs" />
+    <Compile Include="Game\Features\SubclassShop.cs" />
+    <Compile Include="Game\Features\P6SoulShop.cs" />
+    <Compile Include="Game\Features\PotencyHunt.cs" />
+    <Compile Include="Game\Features\DailyWorldBosses.cs" />
+    <Compile Include="Game\Features\PotencyPacks.cs" />
+    <Compile Include="Game\Features\InnerPowerPurchases.cs" />
+    <Compile Include="Game\Features\InnerPowerProgress.cs" />
+    <Compile Include="Game\Features\PotencyGuide.cs" />
+    <Compile Include="Game\Features\RevoraMasterSystem.cs" />
+    <Compile Include="Game\Features\RevoraMasterPeak.cs" />
+    <Compile Include="Game\Features\WelcomeGuideSystem.cs" />
+    <Compile Include="Game\Features\LastManStandingSystem.cs" />
+    <Compile Include="Game\Features\LmsAdmissions.cs" />
+    <Compile Include="Game\Features\RelicAdmissions.cs" />
+    <Compile Include="Game\Features\WaveAdmissions.cs" />
+    <Compile Include="Game\Features\BeastAdmissions.cs" />
+    <Compile Include="Database\AccountActivity.cs" />
+    <Compile Include="Game\Features\NobleWarSystem.cs" />
+    <Compile Include="Game\Features\RelicRushSystem.cs" />
+    <Compile Include="Game\Features\WaveDefenseSystem.cs" />
+    <Compile Include="Game\Features\BeastTrialSystem.cs" />
+    <Compile Include="Game\Features\BossRushSystem.cs" />
+    <Compile Include="Game\Features\DuelPitSystem.cs" />
+    <Compile Include="Game\Features\SteedRaceSystem.cs" />
+    <Compile Include="Game\Features\SteedRaceClaims.cs" />
+    <Compile Include="Game\Features\SteedRaceResults.cs" />
+    <Compile Include="Game\Features\SteedRaceCourse.cs" />
+    <Compile Include="Game\Features\MonsterKoCounter.cs" />
+    <Compile Include="Game\Features\PlayerRevival.cs" />
+    <Compile Include="Game\Features\AuraProgress.cs" />
+    <Compile Include="Game\Features\PlayerDefeatCredit.cs" />
+    <Compile Include="Game\Features\ClanMembership.cs" />
+    <Compile Include="Game\Features\ClanFounding.cs" />
+    <Compile Include="Game\Features\ClanDepartures.cs" />
+    <Compile Include="Game\Features\ClanDisbanding.cs" />
+    <Compile Include="Game\Features\ClanLeadership.cs" />
+    <Compile Include="Game\Features\ClanWarResults.cs" />
+    <Compile Include="Game\Features\SoulTrialSystem.cs" />
+    <Compile Include="Game\Features\VipState.cs" />
+    <Compile Include="Game\Features\AncestorWorship.cs" />
+    <Compile Include="Game\Features\PathHuntSystem.cs" />
+    <Compile Include="Game\Features\ForgottenRealms.cs" />
+    <Compile Include="Game\Features\CourierLoopSystem.cs" />
+    <Compile Include="Game\Features\DailyQuestEnvoySystem.cs" />
+    <Compile Include="Game\Features\RevoraPointShopSystem.cs" />
+    <Compile Include="Game\Features\CpGrantDelivery.cs" />
+    <Compile Include="Game\Features\VoteGrantDelivery.cs" />
+    <Compile Include="Game\Features\GenderChange.cs" />
+    <Compile Include="Game\Features\QuestListSystem.cs" />
+    <Compile Include="Game\Features\CpShopClerkSystem.cs" />
+    <Compile Include="Game\Features\MarketErrandSystem.cs" />
+    <Compile Include="Game\Features\AzurePillQuest.cs" />
+    <Compile Include="Game\Features\PowerBookScenes.cs" />
+    <Compile Include="Game\Features\PowerBookStore.cs" />
+    <Compile Include="Game\Features\PowerBookHunts.cs" />
+    <Compile Include="Game\Features\PowerBookMaterials.cs" />
+    <Compile Include="Game\Features\PowerBookRewards.cs" />
+    <Compile Include="Game\Features\PowerBookTravel.cs" />
+    <Compile Include="Game\Features\PowerBookCombat.cs" />
+    <Compile Include="Game\Features\PowerBookQuest.cs" />
+    <Compile Include="Game\Features\PowerBookJournal.cs" />
+    <Compile Include="Game\Features\ConnectorQuest.cs" />
+    <Compile Include="Game\Features\SpunGoldAppearance.cs" />
+    <Compile Include="Game\Features\QuestAppearance.cs" />
+    <Compile Include="Game\Features\SpunGoldStore.cs" />
+    <Compile Include="Game\Features\SpunGoldCombat.cs" />
+    <Compile Include="Game\Features\SpunGoldQuest.cs" />
+    <Compile Include="Game\Features\ArtisanFeatherQuest.cs" />
+    <Compile Include="Game\Features\MysticRingStore.cs" />
+    <Compile Include="Game\Features\MysticRingStore.Progression.cs" />
+    <Compile Include="Game\Features\MysticRingStore.Rewards.cs" />
+    <Compile Include="Game\Features\MysticRingQuest.cs" />
+    <Compile Include="Game\Features\FranticMonkeysStore.cs" />
+    <Compile Include="Game\Features\SoulGeneralStore.cs" />
+    <Compile Include="Game\Features\MadManStore.cs" />
+    <Compile Include="Game\Features\MadManStore.Toxins.cs" />
+    <Compile Include="Game\Features\MadManStore.Collection.cs" />
+    <Compile Include="Game\Features\MadManScenes.cs" />
+    <Compile Include="Game\Features\MadManTravel.cs" />
+    <Compile Include="Game\Features\MadManStore.Recovery.cs" />
+    <Compile Include="Game\Features\MadManStore.Rewards.cs" />
+    <Compile Include="Game\Features\MadManStore.Effects.cs" />
+    <Compile Include="Game\Features\MadManQuest.cs" />
+    <Compile Include="Game\Features\GhostCityStore.cs" />
+    <Compile Include="Game\Features\GhostCityScenes.cs" />
+    <Compile Include="Game\Features\GhostCityTravel.cs" />
+    <Compile Include="Game\Features\GhostCityStore.Visit.cs" />
+    <Compile Include="Game\Features\GhostCityStore.Combat.cs" />
+    <Compile Include="Game\Features\GhostCityStore.Rewards.cs" />
+    <Compile Include="Game\Features\GhostCityQuest.cs" />
+    <Compile Include="Game\Features\TomboyStore.cs" />
+    <Compile Include="Game\Features\TomboyStore.Rewards.cs" />
+    <Compile Include="Game\Features\NewcomerIntroduction.cs" />
+    <Compile Include="Game\Features\TomboyQuest.cs" />
+    <Compile Include="Game\Features\DesertBloodStore.cs" />
+    <Compile Include="Game\Features\DesertBloodStore.Rewards.cs" />
+    <Compile Include="Game\Features\DesertBloodScenes.cs" />
+    <Compile Include="Game\Features\DesertBloodTravel.cs" />
+    <Compile Include="Game\Features\DesertBloodStore.Visit.cs" />
+    <Compile Include="Game\Features\DesertBloodQuest.cs" />
+    <Compile Include="Game\Features\HeroWingsStore.cs" />
+    <Compile Include="Game\Features\FamilyFeudStore.cs" />
+    <Compile Include="Game\Features\DesertTreasureStore.cs" />
+    <Compile Include="Game\Features\DesertExpeditionStore.cs" />
+    <Compile Include="Game\Features\DefenseTalismanStore.cs" />
+    <Compile Include="Game\Features\DefenseTalismanEncounters.cs" />
+    <Compile Include="Game\Features\DefenseTalismanStore.Fishing.cs" />
+    <Compile Include="Game\Features\DefenseTalismanScenes.cs" />
+    <Compile Include="Game\Features\DefenseTalismanTravel.cs" />
+    <Compile Include="Game\Features\DefenseTalismanStore.House.cs" />
+    <Compile Include="Game\Features\DefenseTalismanStore.Doors.cs" />
+    <Compile Include="Game\Features\DefenseTalismanStore.Spear.cs" />
+    <Compile Include="Game\Features\DefenseTalismanStore.Desert.cs" />
+    <Compile Include="Game\Features\DefenseTalismanStore.Ambush.cs" />
+    <Compile Include="Game\Features\DefenseTalismanStore.Dungeon.cs" />
+    <Compile Include="Game\Features\DefenseTalismanStore.Generals.cs" />
+    <Compile Include="Game\Features\DefenseTalismanStore.Final.cs" />
+    <Compile Include="Game\Features\DefenseTalismanQuest.cs" />
+    <Compile Include="Game\Features\AttackTalismanStore.cs" />
+    <Compile Include="Game\Features\TempestWingsStore.cs" />
+    <Compile Include="Game\Features\TempestWingsQuest.cs" />
+    <Compile Include="Game\Features\TempestWingsScenes.cs" />
+    <Compile Include="Game\Features\TempestWingsTravel.cs" />
+    <Compile Include="Game\Features\TempestWingsEncounters.cs" />
+    <Compile Include="Game\Features\TempestWingsStore.Encounter.cs" />
+    <Compile Include="Game\Features\AttackTalismanStore.Hunt.cs" />
+    <Compile Include="Game\Features\AttackTalismanScenes.cs" />
+    <Compile Include="Game\Features\AttackTalismanTravel.cs" />
+    <Compile Include="Game\Features\AttackTalismanStore.Cave.cs" />
+    <Compile Include="Game\Features\AttackTalismanStore.Alchemy.cs" />
+    <Compile Include="Game\Features\AttackTalismanStore.Ambush.cs" />
+    <Compile Include="Game\Features\AttackTalismanStore.Lake.cs" />
+    <Compile Include="Game\Features\AttackTalismanStore.Courtesan.cs" />
+    <Compile Include="Game\Features\AttackTalismanStore.Pillars.cs" />
+    <Compile Include="Game\Features\AttackTalismanStore.Garden.cs" />
+    <Compile Include="Game\Features\AttackTalismanQuest.cs" />
+    <Compile Include="Game\Features\AttackTalismanEncounters.cs" />
+    <Compile Include="Game\Features\DesertExpeditionStore.Recovery.cs" />
+    <Compile Include="Game\Features\DesertExpeditionStore.Rewards.cs" />
+    <Compile Include="Game\Features\DesertExpeditionStore.Pill.cs" />
+    <Compile Include="Game\Features\HealthMutationLease.cs" />
+    <Compile Include="Game\Features\DesertExpeditionStore.Hunt.cs" />
+    <Compile Include="Game\Features\DesertExpeditionStore.Encounters.cs" />
+    <Compile Include="Game\Features\DesertExpeditionEncounters.cs" />
+    <Compile Include="Game\Features\DesertTreasurePopulation.cs" />
+    <Compile Include="Game\Features\DesertTreasureQuest.cs" />
+    <Compile Include="Game\Features\DesertExpeditionQuest.cs" />
+    <Compile Include="Game\Features\DesertTreasureStore.Quiz.cs" />
+    <Compile Include="Game\Features\DesertTreasureEncounter.cs" />
+    <Compile Include="Game\Features\DesertTreasureStore.Encounter.cs" />
+    <Compile Include="Game\Features\DesertTreasureStore.Rewards.cs" />
+    <Compile Include="Game\Features\DesertTreasureStore.Recovery.cs" />
+    <Compile Include="Game\Features\DesertTreasureStore.Vault.cs" />
+    <Compile Include="Game\Features\DesertTreasureStore.Hunt.cs" />
+    <Compile Include="Game\Features\DesertTreasureStore.Purchase.cs" />
+    <Compile Include="Game\Features\FamilyFeudPopulation.cs" />
+    <Compile Include="Game\Features\FamilyFeudQuest.cs" />
+    <Compile Include="Game\Features\FamilyFeudScenes.cs" />
+    <Compile Include="Game\Features\FamilyFeudTravel.cs" />
+    <Compile Include="Game\Features\FamilyFeudStore.Visit.cs" />
+    <Compile Include="Game\Features\FamilyFeudEncounters.cs" />
+    <Compile Include="Game\Features\FamilyFeudStore.Encounters.cs" />
+    <Compile Include="Game\Features\FamilyFeudStore.Hunt.cs" />
+    <Compile Include="Game\Features\FamilyFeudStore.Rewards.cs" />
+    <Compile Include="Game\Features\HeroWingsStore.Rewards.cs" />
+    <Compile Include="Game\Features\HeroWingsQuest.cs" />
+    <Compile Include="Game\Features\GhostCityCombat.cs" />
+    <Compile Include="Game\Features\SoulGeneralQuest.cs" />
+    <Compile Include="Game\Features\SoulGeneralStore.Phantom.cs" />
+    <Compile Include="Game\Features\SoulGeneralStore.Rewards.cs" />
+    <Compile Include="Game\Features\SoulGeneralPhantom.cs" />
+    <Compile Include="Game\Features\FranticMonkeysStore.Trial.cs" />
+    <Compile Include="Game\Features\FranticMonkeysStore.Apes.cs" />
+    <Compile Include="Game\Features\FranticMonkeysStore.Rewards.cs" />
+    <Compile Include="Game\Features\FranticMonkeysQuest.cs" />
+    <Compile Include="Game\Features\FranticMonkeysScenes.cs" />
+    <Compile Include="Game\Features\FranticMonkeysTravel.cs" />
+    <Compile Include="Game\Features\FranticMonkeysAdmission.cs" />
+    <Compile Include="Game\Features\FranticMonkeysCombat.cs" />
+    <Compile Include="Game\Features\FranticMonkeysApes.cs" />
+    <Compile Include="Game\Features\TwinCityPlaza.cs" />
+    <Compile Include="Game\Features\WorldActorMotion.cs" />
+    <Compile Include="Game\Features\Event\NobiltyPoleWar.cs" />
+    <Compile Include="Network\GamePackets\BackFire.cs" />
+    <Compile Include="Network\GamePackets\GoldTree\[3283] - MsgGlobalLotteryRankList.cs" />
+    <Compile Include="Network\GamePackets\GoldTree\DatCryption.cs" />
+    <Compile Include="Network\GamePackets\GoldTree\GoldenTreeTable.cs" />
+    <Compile Include="Network\GamePackets\GoldTree\[3282] - MsgGlobalLottery.cs" />
+    <Compile Include="Network\GamePackets\MsgFixedPezzi.cs" />
+    <Compile Include="Network\GamePackets\MsgUserTotalRefineLev.cs" />
+    <Compile Include="Network\GamePackets\RuedaDeSuerte.cs" />
+    <Compile Include="Network\MsgName.cs" />
+    <Compile Include="Jiang\JiangHu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jiang\JiangHu.designer.cs">
+      <DependentUpon>JiangHu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NPC\ShaDowNpcControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NPC\ShaDowNpcControl.designer.cs">
+      <DependentUpon>ShaDowNpcControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Protaction.cs" />
+    <Compile Include="Game\Attacking\WindWalker.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Advertises.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Recruitment.cs" />
+    <Compile Include="Network\AuthPackets\LoaderEncryption.cs" />
+    <Compile Include="Network\AuthPackets\Srp6711.cs" />
+    <Compile Include="Network\GamePackets\BruteForceProtection.cs" />
+    <Compile Include="Network\GamePackets\MsgPCServerConfig.cs" />
+    <Compile Include="Network\GamePackets\[1134 - 1135] - MsgTaskStatus.cs" />
+    <Compile Include="Network\GamePackets\[2225 - 2226 - 2227] - MsgSynRecruitAdvertising.cs" />
+    <Compile Include="ServerBase\VIPExpired.cs" />
+    <Compile Include="Sistemas\ControlSpell\GUI\SpellControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistemas\ControlSpell\GUI\SpellControl.Designer.cs" />
+    <Compile Include="Database\DBActions\ReadLine.cs" />
+    <Compile Include="Database\DBActions\WriteLine.cs" />
+    <Compile Include="Database\InnerPowerTable.cs" />
+    <Compile Include="Database\Hombreloco.cs" />
+    <Compile Include="Database\LotteryREVORA.cs" />
+    <Compile Include="Database\LotterySlayer.cs" />
+    <Compile Include="Game\Attacking\GemTypes.cs" />
+    <Compile Include="Game\Attacking\MathHelper.cs" />
+    <Compile Include="Game\Attacking\MvP.cs" />
+    <Compile Include="Game\Attacking\MyMath.cs" />
+    <Compile Include="Game\Attacking\PvE.cs" />
+    <Compile Include="Game\Attacking\PvM.cs" />
+    <Compile Include="Game\Attacking\PvP.cs" />
+    <Compile Include="Game\Features\Tournaments\PlanderWar.cs" />
+    <Compile Include="Game\Lottery1.cs" />
+    <Compile Include="Game\SubProStages.cs" />
+    <Compile Include="Sistemas\CrossClient\CrossClient.cs" />
+    <Compile Include="Sistemas\CrossClient\MyGroupServers.cs" />
+    <Compile Include="Sistemas\CrossClient\Packets.cs" />
+    <Compile Include="Sistemas\ExchangeShop\Exchangue.cs" />
+    <Compile Include="Sistemas\ExchangeShop\MsgExchangeShop.cs" />
+    <Compile Include="Sistemas\ExchangeShop\MsgExchangueShopRespond.cs" />
+    <Compile Include="Sistemas\InnerPower\InnerPower.cs" />
+    <Compile Include="Sistemas\InnerPower\InnerPowerGui.cs" />
+    <Compile Include="Sistemas\InnerPower\InnerPowerStage.cs" />
+    <Compile Include="ItemLog.cs" />
+    <Compile Include="Client\CpuUsage.cs" />
+    <Compile Include="Database\ActivenessTable.cs" />
+    <Compile Include="Database\AddingInformationTable.cs" />
+    <Compile Include="Database\Booths.cs" />
+    <Compile Include="Database\DialyQuestTable.cs" />
+    <Compile Include="Database\DropItemTable.cs" />
+    <Compile Include="Database\helpdesk.cs" />
+    <Compile Include="Database\NameChange.cs" />
+    <Compile Include="Database\PremioEventos.cs" />
+    <Compile Include="Database\IPBanTable.cs" />
+    <Compile Include="Database\MonsterSpawn.cs" />
+    <Compile Include="Database\MailboxTable.cs" />
+    <Compile Include="Database\KoBoardTable.cs" />
+    <Compile Include="Database\LoadingTable.cs" />
+    <Compile Include="Database\ScriptDatabase.cs" />
+    <Compile Include="Database\StatueTable.cs" />
+    <Compile Include="Game\Attacking\XScape.cs" />
+    <Compile Include="Game\EntityFlag.cs" />
+    <Compile Include="Game\Features\Event\HeroOfGame.cs" />
+    <Compile Include="Database\PrizeNpcTable.cs" />
+    <Compile Include="Database\RewardTable.cs" />
+    <Compile Include="Database\EntityTable.cs" />
+    <Compile Include="Database\CharacterCreation.cs" />
+    <Compile Include="Database\CharacterActivity.cs" />
+    <Compile Include="Database\JiangTable.cs" />
+    <Compile Include="Database\Read.cs" />
+    <Compile Include="Database\SoulProtection.cs" />
+    <Compile Include="Database\Write.cs" />
+    <Compile Include="Game\Attacking\EquipmentEffect.cs" />
+    <Compile Include="Game\Features\Event\Quarantine.cs" />
+    <Compile Include="Game\Features\Tournaments\DominarPole.cs" />
+    <Compile Include="Game\Features\Tournaments\EliteGuildWar.cs" />
+    <Compile Include="Game\Features\Tournaments\PoleTwin.cs" />
+    <Compile Include="Sistemas\Mascotas\Mascotas.cs" />
+    <Compile Include="Network\GamePackets\UnionData.cs" />
+    <Compile Include="Network\GamePackets\SignIn\MsgSignInTable.cs" />
+    <Compile Include="Network\GamePackets\SignIn\MsgSignIn.cs" />
+    <Compile Include="Network\GamePackets\[1321]MsgAuctionItem.cs" />
+    <Compile Include="Sistemas\MemorySystem\MemoryProcess.cs" />
+    <Compile Include="Sistemas\MemorySystem\MsgCUsage.cs" />
+    <Compile Include="Sistemas\Perfection\EquipRefineRank.cs" />
+    <Compile Include="Sistemas\Perfection\ExpandoObjecta.cs" />
+    <Compile Include="Sistemas\Perfection\ItemRefine.cs" />
+    <Compile Include="Sistemas\Perfection\ItemRefineEffect.cs" />
+    <Compile Include="Sistemas\Perfection\ItemRefineOpt.cs" />
+    <Compile Include="Sistemas\Perfection\ItemRefineRecord.cs" />
+    <Compile Include="Sistemas\Perfection\PerfectionManager.cs" />
+    <Compile Include="Sistemas\Perfection\PlayerAbilityScore.cs" />
+    <Compile Include="Sistemas\Perfection\PrestigeRanking.cs" />
+    <Compile Include="Network\GamePackets\PrestigePackets.cs" />
+    <Compile Include="Sistemas\Perfection\PlayerTotalRefineLevel.cs" />
+    <Compile Include="Sistemas\Perfection\PlayerTotalRefineLevelStar.cs" />
+    <Compile Include="Sistemas\Perfection\RankingPerfecto\MsgRankMemberShow.cs" />
+    <Compile Include="Sistemas\Quarantine.cs" />
+    <Compile Include="Sistemas\Runas\AvaterFaces.cs" />
+    <Compile Include="Sistemas\Runas\FaceAndHair.cs" />
+    <Compile Include="Network\GamePackets\HairFaceRequest.cs" />
+    <Compile Include="Sistemas\Runas\Relics.cs" />
+    <Compile Include="Sistemas\Runas\RunesSystem.cs" />
+    <Compile Include="Sistemas\Runas\RuneProgress.cs" />
+    <Compile Include="Sistemas\WardRobe\StorageTable.cs" />
+    <Compile Include="System\Class1.cs" />
+    <Compile Include="System\MemoryCompressor.cs" />
+    <Compile Include="Network\GamePackets\Activeness.cs" />
+    <Compile Include="Network\GamePackets\ArsenalCalculate.cs" />
+    <Compile Include="Network\GamePackets\ArsenalView.cs" />
+    <Compile Include="Network\GamePackets\Auction.cs" />
+    <Compile Include="Network\GamePackets\BitVector32.cs" />
+    <Compile Include="Network\GamePackets\ColorPantalla.cs" />
+    <Compile Include="Network\GamePackets\ConquerPointsprize.cs" />
+    <Compile Include="Network\GamePackets\CrossServer\CrossServerRank.cs" />
+    <Compile Include="Network\GamePackets\JiangHu\JiangHuCalculate.cs" />
+    <Compile Include="Network\GamePackets\LastLogin.cs" />
+    <Compile Include="Network\GamePackets\Lottery1.cs" />
+    <Compile Include="Network\GamePackets\MyMath.cs" />
+    <Compile Include="Network\GamePackets\NameChange.cs" />
+    <Compile Include="Network\GamePackets\PacketBuilder.cs" />
+    <Compile Include="Network\GamePackets\rates.cs" />
+    <Compile Include="Network\GamePackets\ThrillingSpooks.cs" />
+    <Compile Include="Network\GamePackets\UltimoIngreso.cs" />
+    <Compile Include="Network\GamePackets\WayofHeroes.cs" />
+    <Compile Include="Network\GamePackets\SummonGuard.cs" />
+    <Compile Include="Network\GamePackets\WindowStats.cs" />
+    <Compile Include="Network\Cryptography\RivestCipher5.cs" />
+    <Compile Include="System\Common.cs" />
+    <Compile Include="Database\FlowersTable.cs" />
+    <Compile Include="Game\Features\Flowers\SendFlower.cs" />
+    <Compile Include="Game\Features\Event\SuperGuildWar.cs" />
+    <Compile Include="Database\HouseTable.cs" />
+    <Compile Include="Database\HouseMapRegistry.cs" />
+    <Compile Include="Game\Features\Housing.cs" />
+    <Compile Include="Game\Features\HouseVisits.cs" />
+    <Compile Include="Game\Features\SteedBreedingRules.cs" />
+    <Compile Include="Game\Features\AncientDevilRules.cs" />
+    <Compile Include="Game\Features\AncientDevilStore.cs" />
+    <Compile Include="Game\Features\AncientDevilWorld.cs" />
+    <Compile Include="Game\Features\AncientDevilQuest.cs" />
+    <Compile Include="Game\Features\AncientDevilSummons.cs" />
+    <Compile Include="Game\Features\AncientDevilBattles.cs" />
+    <Compile Include="Game\Features\AncientDevilBossWorld.cs" />
+    <Compile Include="Game\Features\AncientDevilSeal.cs" />
+    <Compile Include="Game\Features\AncientDevilCollection.cs" />
+    <Compile Include="Game\Features\FlameLitRules.cs" />
+    <Compile Include="Game\Features\FlameLitStore.cs" />
+    <Compile Include="Game\Features\FlameLitQuest.cs" />
+    <Compile Include="Game\Features\EliminationRules.cs" />
+    <Compile Include="Game\Features\EliminationStore.cs" />
+    <Compile Include="Game\Features\EliminationQuest.cs" />
+    <Compile Include="Game\Features\EliminationRescueBindings.cs" />
+    <Compile Include="Game\Features\EliminationRescueWorld.cs" />
+    <Compile Include="Game\Features\EliminationPills.cs" />
+    <Compile Include="Game\Features\EliminationDenBindings.cs" />
+    <Compile Include="Game\Features\EliminationDenWorld.cs" />
+    <Compile Include="Game\Features\EliminationRewards.cs" />
+    <Compile Include="Game\Features\QuestSoulReward.cs" />
+    <Compile Include="Game\Features\EliminationLifecycle.cs" />
+    <Compile Include="Game\Features\SteedBreeding.cs" />
+    <Compile Include="Game\Features\HouseInstallments.cs" />
+    <Compile Include="Game\Features\HouseFurniture.cs" />
+    <Compile Include="Game\Features\FurnitureFootprint.cs" />
+    <Compile Include="Network\GamePackets\FurnitureRequest.cs" />
+    <Compile Include="Game\Features\HousingMaterials.cs" />
+    <Compile Include="Game\Features\TravelScrollShop.cs" />
+    <Compile Include="Game\Features\GemComposition.cs" />
+    <Compile Include="Game\Features\Tournaments\TeamSkill.cs" />
+    <Compile Include="Game\Features\Event\NpcEffect.cs" />
+    <Compile Include="Game\Features\Event\Statue.cs" />
+    <Compile Include="Network\GamePackets\Chat.cs" />
+    <Compile Include="Network\GamePackets\TestGameCapture.cs" />
+    <Compile Include="Network\GamePackets\ChiSystem\Retreat.cs" />
+    <Compile Include="Network\GamePackets\MentorPremio.cs" />
+    <Compile Include="Network\GamePackets\ClanWar.cs" />
+    <Compile Include="Network\GamePackets\ConfirmMap.cs" />
+    <Compile Include="Network\GamePackets\DialyQuestsEffect.cs" />
+    <Compile Include="Network\GamePackets\GeneralData.cs" />
+    <Compile Include="Network\GamePackets\GuildMinDonations.cs" />
+    <Compile Include="Network\GamePackets\ItemHandler.cs" />
+    <Compile Include="Network\GamePackets\MemoryAgate.cs" />
+    <Compile Include="Network\GamePackets\Reincarnation.cs" />
+    <Compile Include="Network\GamePackets\PacketID.cs" />
+    <Compile Include="Network\GamePackets\Roulette\RouletteAction.cs" />
+    <Compile Include="Network\GamePackets\Roulette\RouletteAutoInvite.cs" />
+    <Compile Include="Network\GamePackets\Roulette\RouletteCheck.cs" />
+    <Compile Include="Network\GamePackets\Roulette\RoulettedAddNewPlayer.cs" />
+    <Compile Include="Network\GamePackets\Roulette\RouletteNoWinner.cs" />
+    <Compile Include="Network\GamePackets\Roulette\RouletteOpenGui.cs" />
+    <Compile Include="Network\GamePackets\Roulette\RouletteRecord.cs" />
+    <Compile Include="Network\GamePackets\Roulette\RouletteScreen.cs" />
+    <Compile Include="Network\GamePackets\Roulette\RouletteShareBetting.cs" />
+    <Compile Include="Network\GamePackets\Roulette\RouletteSignUp.cs" />
+    <Compile Include="Network\GamePackets\Roulette\RouletteTable.cs" />
+    <Compile Include="Network\GamePackets\Roulette\Roulettes.cs" />
+    <Compile Include="Network\GamePackets\TeamSkill\TeamElitePkBrackets.cs" />
+    <Compile Include="System\SortEntry.cs" />
+    <Compile Include="Network\GamePackets\Mailbox.cs" />
+    <Compile Include="Network\GamePackets\RewardEvent.cs" />
+    <Compile Include="Network\GamePackets\TeamSkill\SkillEliteSetTeamName.cs" />
+    <Compile Include="Network\GamePackets\TeamSkill\TeamElitePKMatchStats.cs" />
+    <Compile Include="Network\GamePackets\TeamSkill\TeamElitePKMatchUI.cs" />
+    <Compile Include="Network\GamePackets\TeamSkill\TeamElitePkTop.cs" />
+    <Compile Include="Network\GamePackets\CloudSaintsJar.cs" />
+    <Compile Include="Network\GamePackets\AutoInvite.cs" />
+    <Compile Include="Network\GamePackets\JiangHu\JiangHu.cs" />
+    <Compile Include="Network\GamePackets\JiangHu\JiangHuRank.cs" />
+    <Compile Include="Network\GamePackets\JiangHu\JiangHuStatus.cs" />
+    <Compile Include="Network\GamePackets\JiangHu\JiangHuUpdate.cs" />
+    <Compile Include="Network\GamePackets\ServerInfo.cs" />
+    <Compile Include="Network\GamePackets\SecondaryPassword.cs" />
+    <Compile Include="Network\GamePackets\SpawnEntity.cs" />
+    <Compile Include="Network\PacketHandler.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="Database\ArsenalTable.cs" />
+    <Compile Include="Database\ChampionTable.cs" />
+    <Compile Include="Database\PkExploitsTable.cs" />
+    <Compile Include="Database\Shops\ChampionShop.cs" />
+    <Compile Include="Database\Shops\EShopFile.cs" />
+    <Compile Include="Database\Shops\EShopV2File.cs" />
+    <Compile Include="Database\Shops\HonorShop.cs" />
+    <Compile Include="Database\Shops\REVORAPointhop.cs" />
+    <Compile Include="Network\GamePackets\GuildDoantion.cs" />
+    <Compile Include="Game\Lottery.cs" />
+    <Compile Include="Network\GamePackets\ArsenalPacket.cs" />
+    <Compile Include="Network\GamePackets\Lottery.cs" />
+    <Compile Include="Network\GamePackets\UserIPInfo.cs" />
+    <Compile Include="Database\Entity.cs" />
+    <Compile Include="Game\Features\Tournaments\CaptureTheFlag.cs" />
+    <Compile Include="Game\Features\Tournaments\ElitePK.cs" />
+    <Compile Include="Game\Features\Tournaments\Champion.cs" />
+    <Compile Include="Game\Features\Tournaments\GuildPkRules.cs" />
+    <Compile Include="Game\Features\Tournaments\GuildContestCoordinator.cs" />
+    <Compile Include="Game\Features\Tournaments\GuildContestAdmission.cs" />
+    <Compile Include="Game\Features\Tournaments\GuildContestCombat.cs" />
+    <Compile Include="Database\GuildContestTable.cs" />
+    <Compile Include="Database\GuildPkSchedule.cs" />
+    <Compile Include="Database\GuildPkBannerTable.cs" />
+    <Compile Include="Database\GuildPkDefeatTable.cs" />
+    <Compile Include="Database\GuildPkRewardTable.cs" />
+    <Compile Include="Game\Features\Tournaments\GuildPkAdmission.cs" />
+    <Compile Include="Game\Features\Tournaments\GuildPkCoordinator.cs" />
+    <Compile Include="Game\Features\Tournaments\GuildPkBanner.cs" />
+    <Compile Include="Game\ElitePKTournament.cs" />
+    <Compile Include="Client\PacketFilter.cs" />
+    <Compile Include="Database\Item.cs" />
+    <Compile Include="Network\GamePackets\Achievement.cs" />
+    <Compile Include="Network\AuthPackets\Authentication.cs" />
+    <Compile Include="Network\AuthPackets\Forward.cs" />
+    <Compile Include="Network\AuthPackets\PasswordCryptographySeed.cs" />
+    <Compile Include="Network\GamePackets\ConcurrentPacketQueue.cs" />
+    <Compile Include="Network\Cryptography\AuthCryptography.cs" />
+    <Compile Include="Network\Cryptography\GameCryptography.cs" />
+    <Compile Include="Network\GamePackets\AddToTeam.cs" />
+    <Compile Include="Network\GamePackets\ApprenticeInformation.cs" />
+    <Compile Include="Network\GamePackets\ArenaStatistic.cs" />
+    <Compile Include="Network\GamePackets\Attack.cs" />
+    <Compile Include="Network\GamePackets\AutoHunt.cs" />
+    <Compile Include="Network\GamePackets\BlackSpotPacket.cs" />
+    <Compile Include="Network\GamePackets\BoothItem.cs" />
+    <Compile Include="Network\GamePackets\Broadcast.cs" />
+    <Compile Include="Network\GamePackets\ChampionStatistic.cs" />
+    <Compile Include="Network\GamePackets\CharacterInfo.cs" />
+    <Compile Include="Network\GamePackets\ChiSystem\Chi.cs" />
+    <Compile Include="Network\GamePackets\ChiSystem\ChiPowers.cs" />
+    <Compile Include="Network\GamePackets\ClanAnnounce.cs" />
+    <Compile Include="Network\GamePackets\ClanMembers.cs" />
+    <Compile Include="Network\GamePackets\ClanRelation.cs" />
+    <Compile Include="Network\GamePackets\ClientEquip.cs" />
+    <Compile Include="Network\GamePackets\Compose.cs" />
+    <Compile Include="Network\GamePackets\Connect.cs" />
+    <Compile Include="Network\GamePackets\ConquerItem.cs" />
+    <Compile Include="Network\GamePackets\CurrentFlags.cs" />
+    <Compile Include="Network\GamePackets\Data.cs" />
+    <Compile Include="Network\GamePackets\DetainedItem.cs" />
+    <Compile Include="Network\GamePackets\DHKeyExchange.cs" />
+    <Compile Include="Network\GamePackets\ElitePk\ElitePKBrackets.cs" />
+    <Compile Include="Network\GamePackets\ElitePk\ElitePKMatchStats.cs" />
+    <Compile Include="Network\GamePackets\ElitePk\ElitePKMatchUI.cs" />
+    <Compile Include="Network\GamePackets\ElitePk\ElitePKRanking.cs" />
+    <Compile Include="Network\GamePackets\ElitePk\ElitePKWager.cs" />
+    <Compile Include="Network\GamePackets\ElitePk\ElitePKWagersList.cs" />
+    <Compile Include="Network\GamePackets\ElitePk\ElitePKWatch.cs" />
+    <Compile Include="Network\GamePackets\EmbedSocket.cs" />
+    <Compile Include="Network\GamePackets\EnitityCreate.cs" />
+    <Compile Include="Network\GamePackets\Enlight.cs" />
+    <Compile Include="Network\GamePackets\FairySpawn.cs" />
+    <Compile Include="Network\GamePackets\FloorItem.cs" />
+    <Compile Include="Network\GamePackets\GameCharacterUpdates.cs" />
+    <Compile Include="Network\GamePackets\GameUpdates.cs" />
+    <Compile Include="Network\GamePackets\ChiSystem\GenericRanking.cs" />
+    <Compile Include="Network\GamePackets\GroundMovement.cs" />
+    <Compile Include="Network\GamePackets\GuildAdvertise\Guild_Advertise.cs" />
+    <Compile Include="Network\GamePackets\GuildAdvertise\Guild_AdvertiseCommends.cs" />
+    <Compile Include="Network\GamePackets\GuildAdvertise\Guild_AdvertiseRecruit.cs" />
+    <Compile Include="Network\GamePackets\GuildCommand.cs" />
+    <Compile Include="Network\GamePackets\GuildProfilePacket.cs" />
+    <Compile Include="Network\GamePackets\ItemAdding.cs" />
+    <Compile Include="Network\GamePackets\ItemAddingStabilization.cs" />
+    <Compile Include="Network\GamePackets\ItemLock.cs" />
+    <Compile Include="Network\GamePackets\ItemSoul.cs" />
+    <Compile Include="Network\GamePackets\ItemUsage.cs" />
+    <Compile Include="Network\GamePackets\KnownPersonInfo.cs" />
+    <Compile Include="Network\GamePackets\KnownPersons.cs" />
+    <Compile Include="Network\GamePackets\Leadership.cs" />
+    <Compile Include="Network\GamePackets\MapStatus.cs" />
+    <Compile Include="Network\GamePackets\MentorApprentice.cs" />
+    <Compile Include="Network\GamePackets\MentorInformation.cs" />
+    <Compile Include="Network\GamePackets\MentorPrize.cs" />
+    <Compile Include="Network\GamePackets\Message.cs" />
+    <Compile Include="Network\GamePackets\NobilityInfo.cs" />
+    <Compile Include="Network\GamePackets\NpcReply.cs" />
+    <Compile Include="Network\GamePackets\NpcRequest.cs" />
+    <Compile Include="Network\GamePackets\NpcSpawn.cs" />
+    <Compile Include="Network\GamePackets\OfflineTGReq.cs" />
+    <Compile Include="Network\GamePackets\OfflineTGSts.cs" />
+    <Compile Include="Network\GamePackets\PkExploits.cs" />
+    <Compile Include="Network\GamePackets\Proficiency.cs" />
+    <Compile Include="Network\GamePackets\Purification.cs" />
+    <Compile Include="Network\GamePackets\QuizShow.cs" />
+    <Compile Include="Network\GamePackets\RacePotion.cs" />
+    <Compile Include="Network\GamePackets\RaceRecord.cs" />
+    <Compile Include="Network\GamePackets\RemoveConfiscatedItem.cs" />
+    <Compile Include="Network\GamePackets\ServerTime.cs" />
+    <Compile Include="Network\GamePackets\SkillExperience.cs" />
+    <Compile Include="Network\GamePackets\SlotMachineRequest.cs" />
+    <Compile Include="Network\GamePackets\SlotMachineResponse.cs" />
+    <Compile Include="Network\GamePackets\SobNpcSpawn.cs" />
+    <Compile Include="Network\GamePackets\Spell.cs" />
+    <Compile Include="Network\GamePackets\SpellUse.cs" />
+    <Compile Include="Network\GamePackets\String.cs" />
+    <Compile Include="Network\GamePackets\Subclass.cs" />
+    <Compile Include="Network\GamePackets\Team.cs" />
+    <Compile Include="Network\GamePackets\TeamArenaStatistic.cs" />
+    <Compile Include="Network\GamePackets\TitlePacket.cs" />
+    <Compile Include="Network\GamePackets\Trade.cs" />
+    <Compile Include="Network\GamePackets\TradePartner.cs" />
+    <Compile Include="Network\GamePackets\TradePartnerInfo.cs" />
+    <Compile Include="Network\GamePackets\RequestInformation.cs" />
+    <Compile Include="Network\GamePackets\TwoMovements.cs" />
+    <Compile Include="Network\GamePackets\FlagsUpdate.cs" />
+    <Compile Include="Network\GamePackets\VipStatus.cs" />
+    <Compile Include="Network\GamePackets\VIPTeleport.cs" />
+    <Compile Include="Network\GamePackets\Virgor.cs" />
+    <Compile Include="Network\GamePackets\Warehouse.cs" />
+    <Compile Include="Network\GamePackets\Weather.cs" />
+    <Compile Include="Network\GamePackets\MessageBoard.cs" />
+    <Compile Include="Network\ServerSocket\ClientWrapper.cs" />
+    <Compile Include="Network\ServerSocket\ServerSocket.cs" />
+    <Compile Include="Database\PtArsenal.cs" />
+    <Compile Include="Database\PtArsenalInscribed.cs" />
+    <Compile Include="System\System\Class2.cs" />
+    <Compile Include="System\System\Class3.cs" />
+    <Compile Include="System\System\Class4.cs" />
+    <Compile Include="System\System\Collections\Concurrent\SafeConcurrentDictionary.cs" />
+    <Compile Include="System\System\Collections\Generic\CareDictionary.cs" />
+    <Compile Include="System\System\Collections\Generic\SafeDictionary.cs" />
+    <Compile Include="System\System\Extensions.cs" />
+    <Compile Include="System\System\FastRandom.cs" />
+    <Compile Include="System\System\OSClipboard.cs" />
+    <Compile Include="System\System\SafeRandom.cs" />
+    <Compile Include="System\System\Threading\Generic\LazyDelegate.cs" />
+    <Compile Include="System\System\Threading\Generic\TimerRule.cs" />
+    <Compile Include="System\System\Threading\LazyDelegate.cs" />
+    <Compile Include="System\System\Threading\StandalonePool.cs" />
+    <Compile Include="System\System\Threading\StaticPool.cs" />
+    <Compile Include="System\System\Threading\TimerRule.cs" />
+    <Compile Include="System\System\ThreadSafeDictionary.cs" />
+    <Compile Include="System\System\Time32.cs" />
+    <Compile Include="System\System\Time64.cs" />
+    <Compile Include="Thread.cs" />
+    <Compile Include="Database\ArenaTable.cs" />
+    <Compile Include="Database\ChiTable.cs" />
+    <Compile Include="Database\ClaimItemTable.cs" />
+    <Compile Include="Database\ConquerItemTable.cs" />
+    <Compile Include="Database\ConquerItemInformation.cs" />
+    <Compile Include="Database\DetainedItemTable.cs" />
+    <Compile Include="Database\DMapsTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\EntityVariableTable.cs" />
+    <Compile Include="Database\GuildTable.cs" />
+    <Compile Include="Database\ItemAddingTable.cs" />
+    <Compile Include="Database\KnownPersons.cs" />
+    <Compile Include="Database\LotteryTable.cs" />
+    <Compile Include="Database\MapsTable.cs" />
+    <Compile Include="Database\MonsterTable.cs" />
+    <Compile Include="Database\MySql\MySqlCommand.cs" />
+    <Compile Include="Database\MySql\MySqlExtensions.cs" />
+    <Compile Include="Database\MySql\MySqlReader.cs" />
+    <Compile Include="Database\NobilityTable.cs" />
+    <Compile Include="Database\PoketTables.cs" />
+    <Compile Include="Database\QuizDataTable.cs" />
+    <Compile Include="Database\ReincarnationTable.cs" />
+    <Compile Include="Database\Shops\ShopFile.cs" />
+    <Compile Include="Database\SkillTable.cs" />
+    <Compile Include="Database\SpellTable.cs" />
+    <Compile Include="Database\SubClassTable.cs" />
+    <Compile Include="Database\TeamArenaTable.cs" />
+    <Compile Include="System\ClassExtensions.cs" />
+    <Compile Include="Game\Calculations.cs" />
+    <Compile Include="Network\GamePackets\ChiSystem\ChiPowerStructure.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Arsenal.cs" />
+    <Compile Include="Game\ConquerStructures\Broadcast.cs" />
+    <Compile Include="Game\Features\Tournaments\ClassPK.cs" />
+    <Compile Include="Game\ConquerStructures\CheckAlive.cs" />
+    <Compile Include="Game\Features\Event\KillTheTerrorist.cs" />
+    <Compile Include="Game\ConquerStructures\Mine.cs" />
+    <Compile Include="Game\ConquerStructures\QuizShow.cs" />
+    <Compile Include="Game\Features\Tournaments\Qualifier.cs" />
+    <Compile Include="Game\Attacking\Calculate.cs" />
+    <Compile Include="Game\Attacking\CombatMath.cs" />
+    <Compile Include="Game\Attacking\Handle.cs" />
+    <Compile Include="Game\Attacking\InLineAlgorithm.cs" />
+    <Compile Include="Game\Attacking\Sector.cs" />
+    <Compile Include="Game\ConquerStructures\Booth.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Apprentice.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Guild.cs" />
+    <Compile Include="Game\Features\Event\GuildWar.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Mentor.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Enemy.cs" />
+    <Compile Include="Game\ConquerStructures\Society\Friend.cs" />
+    <Compile Include="Game\ConquerStructures\Nobility.cs" />
+    <Compile Include="Game\Features\Tournaments\TeamQualifier.cs" />
+    <Compile Include="Game\ConquerStructures\Team.cs" />
+    <Compile Include="Game\ConquerStructures\Equipment.cs" />
+    <Compile Include="Game\ConquerStructures\Inventory.cs" />
+    <Compile Include="Game\ConquerStructures\Trade.cs" />
+    <Compile Include="Game\ConquerStructures\Society\TradePartner.cs" />
+    <Compile Include="Game\ConquerStructures\Warehouse.cs" />
+    <Compile Include="Game\Attacking\Zone.cs" />
+    <Compile Include="Game\Features\Clans\Clan.cs" />
+    <Compile Include="Game\Features\Clans\ClanMember.cs" />
+    <Compile Include="Game\Features\Flowers\Flowers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Features\Refinery\Refinery.cs" />
+    <Compile Include="Game\Features\Reincarnation\Handle.cs" />
+    <Compile Include="Game\Features\Reincarnation\ReincarnateInfo.cs" />
+    <Compile Include="Game\Features\Event\KillTournament.cs" />
+    <Compile Include="Game\Features\Tournaments\Poker.cs" />
+    <Compile Include="Game\Features\Event\PoleEmulator.cs" />
+    <Compile Include="Game\StaticEntity.cs" />
+    <Compile Include="Game\Screen.cs" />
+    <Compile Include="Database\AccountTable.cs" />
+    <Compile Include="Database\DataHolderTable.cs" />
+    <Compile Include="Game\Entity.cs" />
+    <Compile Include="Game\Map.cs" />
+    <Compile Include="Game\Enums.cs" />
+    <Compile Include="Game\SlotMachine.cs" />
+    <Compile Include="Game\Features\Event\TreasureBox.cs" />
+    <Compile Include="Game\Updating.cs" />
+    <Compile Include="Game\UsableRacePotion.cs" />
+    <Compile Include="Game\VariableVault.cs" />
+    <Compile Include="Game\WeatherStruct.cs" />
+    <Compile Include="System\WeekDay.cs" />
+    <Compile Include="ServerBase\Interfaces.cs" />
+    <Compile Include="Client\AuthClient.cs" />
+    <Compile Include="Client\GameState.cs" />
+    <Compile Include="Network\GamePackets\Writer.cs" />
+    <Compile Include="Npcs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="System\System\BitConverter.cs" />
+    <Compile Include="System\Console.cs" />
+    <Compile Include="System\Config.cs" />
+    <Compile Include="ServerBase\Constants.cs" />
+    <Compile Include="System\Counter.cs" />
+    <Compile Include="System\IniFile.cs" />
+    <Compile Include="ServerBase\Kernel.cs" />
+    <Compile Include="Game\Subclasses.cs" />
+    <Compile Include="Game\Features\Tournaments\SteedRace.cs" />
+    <Compile Include="Sistemas\Union\ProgressBar.cs" />
+    <Compile Include="Sistemas\Union\Union.cs" />
+    <Compile Include="Sistemas\Union\UnionPacket.cs" />
+    <Compile Include="Sistemas\Union\UnionTable.cs" />
+    <Compile Include="Sistemas\WardRobe\Coat.cs" />
+    <Compile Include="Sistemas\WardRobe\List.cs" />
+    <Compile Include="Sistemas\WardRobe\StorageItem.cs" />
+    <Compile Include="Sistemas\WardRobe\Title.cs" />
+    <Compile Include="Sistemas\WardRobe\TitleRequirements.cs" />
+    <Compile Include="Sistemas\ChiBonuses.cs" />
+    <Compile Include="Sistemas\WardRobe\StorageManager.cs" />
+    <Compile Include="Sistemas\WardRobe\Storage.cs" />
+    <Compile Include="Sistemas\WardRobe\WardrobeTitles.cs" />
+    <Compile Include="Sistemas\WardRobe\Wrap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CONTRIBUTING.md" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="C-p\Controlpanel.resx">
+      <DependentUpon>Controlpanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jiang\JiangHu.resx">
+      <DependentUpon>JiangHu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NPC\ShaDowNpcControl.resx">
+      <DependentUpon>ShaDowNpcControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistemas\ControlSpell\GUI\SpellControl.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="revora.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

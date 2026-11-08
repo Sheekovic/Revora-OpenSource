@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "version": "1.1.0",
+  "requiresVersion": "1.0.0",
+  "files": [
+    {
+      "path": "ini/GameSetUp.ini",
+      "source": "v1.1/files/ini/GameSetUp.ini",
+      "size": 1234,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ]
+}

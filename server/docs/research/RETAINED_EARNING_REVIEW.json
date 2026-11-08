@@ -1,0 +1,1516 @@
+{
+  "date": "2026-10-03",
+  "uid": 4294907001,
+  "scope": "Manual prerequisite/source review index; counts measure reviewed evidence, not independent earning or roadmap completion",
+  "reviewed_input_sha256": {
+    "docs/CAREER_REBIRTH_JOURNEY.md": "e044daf99968ed3ce47cf94c955966a4e86c37651aee630cd71946b0b0e0e61c",
+    "docs/FULL_LEVEL_RUNE_ACHIEVEMENTS.md": "66516620435edee2e4d4499b8d9462f0677d7bf2c236cde102c3a29d84341a78",
+    "docs/SUBCLASS_PROGRESSION.md": "7d4d08dcc9671a221a0572c51effd351d0f6f1bffba8c719ae6bf72737e719a8",
+    "docs/research/RETAINED_CAREER_RECEIPTS.json": "46ed3d585d59d9dcd1d06cda90ef8bebecfa1028194612b9a48bf4c77f538cdc",
+    "docs/research/RETAINED_OBSERVED_PROVENANCE.json": "26df52e00a062047216946d3c19f2e6f5f884032667ecbe097e753523843845e",
+    "tools/CheckCandidateCareerRites.cs": "a5eb50e4784861a4dbb8dc54fede733a14c063031f52065c6a8a8d3783f3bc50",
+    "docs/WEAPON_SKILL_ACHIEVEMENTS.md": "66cbb0e458c5300e54f2f3b9516c84d66471f15835ecaaf663bb03fc149f00ae",
+    "docs/AURA_ACHIEVEMENT.md": "64285139825e76d0b2c07c1ec1f77410d686d120e46b5d10db034e3aee6831ef",
+    "docs/ANCIENT_DEVIL_COLLECTION.md": "ae1eb1a2978cc3eaaf7bbc730fdad66a40cd68d4e4a054e07d79d48e9c7e20fd",
+    "docs/PLAYER_DEFEAT_ACHIEVEMENTS.md": "7c576d824d9d578fa390bbf450957ba099674dc8b84f57bf9ef4b84826f9c22d",
+    "docs/TEMPEST_WINGS_IMPLEMENTATION.md": "ed256155c618ef43ed9a34a3356f7025830d70e6b0e45386fab90094703a8a42",
+    "docs/EQUIPMENT_QUEST_AGGREGATE.md": "0acafc9f32bf163f622e5468486dab49cfee3449149faddc37e578f17ee80a76",
+    "docs/EQUIPMENT_SET_ACHIEVEMENTS.md": "d8b568a21eb7cbf987e4b19168d069e9693ab3c4441a97feec2c259e446841fc",
+    "docs/EQUIPMENT_ACHIEVEMENTS.md": "1d3e4d1b8b97de045d51747d0a1b3a60d25edfd2bbefc464bfdb324ba96c4a1f",
+    "docs/EQUIPMENT_UPGRADE_TRANSACTION_AUDIT.md": "c80fa3c7178aaa8a1c00805cf430cc1ee3793e49d3ff458383a76757c0125dde",
+    "docs/ARTIFACT_EARNED_ROUTE.md": "41920ba01dd0ab4d54f8f6812a4d73e2aeb1b76d9187168fee7852ce17240c46",
+    "docs/REFINERY_ACHIEVEMENT.md": "407a73f8762fa75470b46fefe8a61f04aef4f095201151f4c30051702beadfcb",
+    "docs/TERATO_DRAGON.md": "68a622dcf65eb2a7239d6223398505ae0d8d2b332518387fc5fefbeedf613bff",
+    "docs/FORGOTTEN_REALMS_EXPEDITION.md": "8132a9cbd24e700a08ad567bda5cdf8422c17e8fb39b06f0390e904f018d7126",
+    "docs/MOON_PLATFORM_PASSAGE.md": "7aeef2048e74fca248cde8417342a69391ba3ca0acd87731e74f7a6c84a36a26",
+    "docs/HOUSING_SERVICE.md": "a34b6e6941aa5970b5b6189b1429e15148d39b0ddde712a7fad597f474f058c4",
+    "docs/HOUSE_FURNITURE.md": "1029297696fba870b340659111db4fc7f99ee2efa90cb8ddb787f719dd42ac73",
+    "docs/FRIEND_ACHIEVEMENT.md": "d423089eaaeb04ee6cab95a6b5e03c2623aba7be25626814b594e7ad4c4d8987",
+    "docs/HOUSE_VISITS.md": "d1bb1a10c9037ef5e876bd0c497c951ac2b1c9fb26af96b414857faf8d5ea6b0",
+    "docs/TRADE_PARTNER_ACHIEVEMENT.md": "b1edb64af5a32f82fb33d0d5baac3c9d80d3a5eb49b104bf1071cf916e5cf826",
+    "docs/MENTOR_ADMISSION.md": "4a421d6a496ce126c9cd73b735679486555597114dcdcafc4d5d0e8b64053917",
+    "docs/VIRTUE_REWARD_EARNING.md": "e46b359e00c8bd14443691e8f80a91e4a435a96e8a9ac9a4ed9eafdeb35cfe76",
+    "docs/PLAYER_REVIVAL_CREDIT.md": "b3047592219c2a0c48741157efb5675da5ca9862c2ec04fd8d1885dbf46a2839",
+    "docs/COSMETICS_RESTORATION.md": "932a2e71c76a0b080d12e89cf2d39ba328b522a12ebf248b24b5562e92ba8663",
+    "docs/GUARD_SUMMON_ACHIEVEMENT.md": "38431b06bee90b737c9a8d63d51f7a55a9e0bdd26f952e8fd9bc17e299748b08",
+    "docs/STEED_BREEDING_SERVICE.md": "3e8f76e5f227f76526bb9deee0248071134eb579af961d654c9921cc9ca224cf",
+    "Game/Features/AbyssTrialQuest.cs": "2355fbf3eb171dc544e38c4610ba63decde3030f39221517f17de47569461438",
+    "tools/CheckCandidateCombinedCollection.cs": "cfb8817e04d34af879546b8227781b659848927b3ed8519c9bfffefe7be7e138",
+    "Game/Features/CollectionAchievements.cs": "53cc19d2b1ddda1bc9ad41c310a240c3a76f5d6da90010aac497456c4dcb6566",
+    "docs/FLOWER_QUEEN_EARNING.md": "7deaf987c9cfda0dcb58bafb2c21261f4971b2f2b90f168a2c8cd309e7db4d42",
+    "docs/MARRIAGE_ACHIEVEMENT.md": "8adb076e54d3a8cbd92eef7f72c8bc305c330bbcc4a3ff716e3f7adf32c53554",
+    "docs/PAIRED_MOVEMENT_EARNING.md": "db72850d813fb7068042c1798d3ff15c2c09c164610837d2b50f0703ad345949",
+    "docs/BOOTH_PURCHASE_ACHIEVEMENT.md": "94580bb73848ea303917411bf9378d9214d711b89a1f92a8447d5fd30d879412",
+    "docs/LOTTERY_TICKET_RESTORATION.md": "1324beeb0966de7c343aba80ca819f8608a6d9a01f1d359ac7237652c30b718f",
+    "docs/ARENA_ACHIEVEMENT_CHECKPOINT.md": "0eb4dbe8433f96f1c5a41c051e5d3f6b25cd923234c0213434d8ef8f65a0dd1b",
+    "docs/SWORD_MASTER_RESTORATION.md": "8afb65a11134a1a6c84fff323058911fefa1e8217c1008faa69576cb0473f400",
+    "docs/LOCAL_PK_WAR.md": "c6f59549019f139cf38555bf89cda6c89a2e6e8c6c4a0786dd76375d70505598",
+    "docs/CLASS_PK_WAR.md": "1201878f0694a1106931e9c37f744821c4fa48cdb24b70c3c413f720284651a3",
+    "docs/BP_PK_IMPLEMENTATION.md": "bd675c89e15eb7c195f5a01e376c38b42c4a4c1deb98bcbb03b7dec276e8b0c0",
+    "docs/STEED_RACE_CLAIMS.md": "8f7e48c8a21aa5987b1d7500d5b49ac3a1079b73510fd813bfa8244bc496f749",
+    "docs/CLAN_MEMBERSHIP_EARNING.md": "37e586de9822f1240d520d3063a333657325fd8fc8d6a844872cb52c00d47c45",
+    "docs/CLAN_TERRITORY_EARNING.md": "ca41d668fddb22ff3f1df19a4ae37940aca80e620bccb3c98278a4c3dfc8a01f",
+    "docs/GUILD_OFFICE_EARNING_PLAN.md": "9757718d883ba2a4d93f87a661675adcb82a6330d9b96f984f69261415a4e3b3",
+    "docs/GUILD_INSCRIPTION_EARNING.md": "a30be955e1634b5219f683bd870734b8b8f8b3b9c7e0fd5ff97ef3c8a8e998e3",
+    "docs/GUILD_BEAST_EVENT.md": "68402ee345e78b0759d46bc9fbf1192060f32f4a556d99371e20a1701df7d416",
+    "docs/GUILD_SIEGE_BOMB.md": "590e3b5c875217248e0c4c043c2366d66b8dc53b41c67e49b778ad1cabb58fd3",
+    "docs/GUILD_TRANSPORTER_EARNING.md": "0d9f277c0fd634a7371736c2fc67605f957ac2a7e8b03daf71367a7c1518efab",
+    "docs/DEMON_EXTERMINATORS.md": "37603c44fc35da9aeece209e4c203978662a83be04088c8315cdf832c6a9c324",
+    "docs/DRAGON_SLAYER_HUNTS.md": "fe14292f59165fa98d784a7517ad88a2eaff64cfb759af2e8b61dffbf6f9fb46",
+    "docs/SNOW_BANSHEE_ENCOUNTER.md": "222a73189bef22f68f4d2ccc1e1deece52e885fbe7d1e7ea705ec88b52b8a69c",
+    "docs/SNOW_BANSHEE_REWARDS.md": "a540fc0f829571cf5fcd72b3af9bc72241f019cdde3a7ed065e62c4bef0b7485",
+    "docs/SWORD_MASTER_ENCOUNTER.md": "3ad85c3e40e9e40d51f83c50b7f143d56d1d2235882f720bc4c1e086cc04445e",
+    "docs/MONSTER_KO_EARNING.md": "b0d6e52714312d54d9f9fb843ce33bc6587458561611cf29bc089c76929d5b4d",
+    "docs/METEOR_MONSTER_LOOT.md": "ab79d6c7df86603a9cea403165dacc41d3d942dc4d9838e2b9e75a777c6c3645",
+    "docs/EXORCISM_COMBAT.md": "a340ef1cdbc5ea396169cad016ce6f3d6156ad02a4e1133000fa22f7193bf369",
+    "docs/POWER_ARENA.md": "4fc9cba68a91a8414190fd7aee70809c92bd4b7940cda0d3c590b8d441f4b133",
+    "docs/FLAME_LIT_STORE.md": "3573887150d81c9071f3257e4f56577f685d0ac2fe313085f4730d141daebb40",
+    "docs/LABYRINTH.md": "b5f5e2e9b977e8075376a6b28ba2441cf46e3cab75e5d5b32fd255436f171da7",
+    "docs/COUPLE_PK_WAR.md": "53928d95db78e8e6f0302b07bd6f0570dd90b96157850e6195cdac0c34928a85",
+    "docs/LOCAL_CTF.md": "157fb234ed19a4911de63cf1ad83cfd511fd228026f89af1491d92cac0c0da0d",
+    "docs/UNARMED_MONSTER_ACHIEVEMENT.md": "55cbd947cccc46cb27bfa97a5a4e1ddcf6bc232fd871f76eaa3a108ec1989454",
+    "Game/Features/EquipmentAchievements.cs": "5be5bae5c486fd721b9c8e0cb3683387aec090c3aae40fcf74cb601ecadc4277",
+    "Game/Features/TrojanEpicStore.cs": "652bcba1e2afa27e42759ef348a09da1839185939400e7b40e3257ba27408bb2",
+    "Game/Features/TrojanEpicCombat.cs": "3193ff4674a308df079b6ec2c5885557740b4ba35a2f1621202fd3d56974d616",
+    "tools/CheckCandidateEliminationLifecycle.cs": "f783d8d5804ccaa8aea2826c99ec91b94290246857ccb6a0defd81f375da48d7",
+    "tools/CheckCandidateRetainedEliteCombat.cs": "ffe4e0d19c2582ba7a7503837c4241a5922f6a6cfe9d6fdf196cd26e2d7841b5",
+    "docs/ELITE_PRIZE_CLAIMS.md": "22787f6205bc5e99816e812f93b879746dab7c8403e4547b9ead26be536978ba",
+    "tools/CheckCandidateRetainedUnarmed.cs": "3cd6e9e753d1455fbf86bbbde2d076e602b292acae990c55c1dd5c59f93bd361",
+    "tools/CheckCandidateRetainedLabBox.cs": "f6ed64805c97695124e6d4ba0dc52c6ed648724d7fd7bc0e8eb9d56636ec7514"
+  },
+  "groups": [
+    {
+      "sources": [
+        "class-promotion-v1"
+      ],
+      "ids": [
+        10814,
+        10815,
+        10816,
+        10817,
+        10820,
+        10821,
+        10822,
+        10823,
+        10826,
+        10827,
+        10828,
+        10831,
+        10832,
+        10901,
+        10904,
+        10905,
+        10906,
+        10907,
+        10909,
+        10910,
+        10911,
+        10912,
+        10914,
+        10915,
+        10916,
+        10917,
+        11206,
+        11207,
+        11208,
+        11209,
+        11217,
+        11218,
+        11219,
+        11220,
+        11305,
+        11306,
+        11307,
+        11308
+      ],
+      "fixture_symbols": [
+        "CareerSecondPreparation",
+        "CareerWarriorPromotions",
+        "CareerPromotionSchools",
+        "CareerPromotionMaterials"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "38 retained trainer receipts use ordinary trainer requests, purchased/mined/hunted materials and paid rites. Cold checkpoints retain prior receipts. The twelve early-rank exclusions are not backfilled."
+    },
+    {
+      "sources": [
+        "subclass-v1"
+      ],
+      "ids": [
+        10920,
+        10921,
+        10922,
+        10923,
+        10924,
+        10925,
+        10926,
+        10927,
+        10928,
+        10929,
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "fixture_symbols": [
+        "CareerSubclassJourney",
+        "CareerSubclassBuy",
+        "CareerSubclassRequest"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/SUBCLASS_PROGRESSION.md"
+      ],
+      "finding": "Seven subclasses reach level9/phase9 through normal2320 requests. Paid enrollment supplies and Modesty Books, exact CP/study debits, duplicate refusal and cold reload are documented. Initial qualification/funding and approach controls remain."
+    },
+    {
+      "sources": [
+        "rune-full-level-v1",
+        "rune-loadout-v1"
+      ],
+      "ids": [
+        11310,
+        11311,
+        11312,
+        11313,
+        11314,
+        11315,
+        11316,
+        11317,
+        11318,
+        11319,
+        11320,
+        11321
+      ],
+      "fixture_symbols": [
+        "CareerRuneJourney",
+        "CareerRuneClasses",
+        "CareerRuneMove"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/FULL_LEVEL_RUNE_ACHIEVEMENTS.md"
+      ],
+      "finding": "Vesper purchases, exact owned +Stone consumption, rune packets and paid class changes establish ten full-class sets and one/five equipped-rune receipts. Earlier class receipts survive cold reload. Prior funding and controlled training dates/proximity remain."
+    },
+    {
+      "sources": [
+        "weapon-skill-fixed-v1"
+      ],
+      "ids": [
+        10504,
+        10505,
+        10506,
+        10507,
+        10508,
+        10509,
+        10510,
+        10511,
+        10512,
+        10513,
+        10514,
+        10515,
+        10516,
+        10517,
+        10518,
+        10519
+      ],
+      "fixture_symbols": [
+        "CareerPassiveTraining",
+        "CareerGatedTraining",
+        "CareerActiveTraining"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/WEAPON_SKILL_ACHIEVEMENTS.md"
+      ],
+      "finding": "Six passive, eight gated and two active weapon skills reach their reviewed terminal levels through purchased books/weapons and calculated combat. Each partial/final batch retains exact cold snapshots. Position/cooldown, and active-skill stamina, are controlled; earlier bounded stalls and recoveries remain documented."
+    },
+    {
+      "sources": [
+        "aura-cast-v1"
+      ],
+      "ids": [
+        10919
+      ],
+      "fixture_symbols": [
+        "RetainedAura"
+      ],
+      "evidence": [
+        "docs/AURA_ACHIEVEMENT.md"
+      ],
+      "finding": "Paid Monk reincarnation, purchased recovery EXP and trainer learning precede ordinary aura activation. Learning alone gives no receipt; actual casting and cold replay preserve exactly10919. Teammate propagation/native presentation are not certified."
+    },
+    {
+      "sources": [
+        "ancient-collection-v1"
+      ],
+      "ids": [
+        11020
+      ],
+      "fixture_symbols": [
+        "RetainedAncient",
+        "RetainedAncientTrade"
+      ],
+      "evidence": [
+        "docs/ANCIENT_DEVIL_COLLECTION.md"
+      ],
+      "finding": "Main Monk trial and eight fresh donor trials earn nine distinct amulets through calculated combat and ordinary exchanges/trades. Cold reload verifies exact owned UIDs and trial provenance; donor starting classes/levels remain controlled. The documented partial-save failure was recovered without recreating completed trials."
+    },
+    {
+      "sources": [
+        "player-defeat-v1",
+        "enemy-guild-defeat-v1"
+      ],
+      "ids": [
+        10227,
+        10605,
+        10606,
+        10607,
+        10611
+      ],
+      "fixture_symbols": [
+        "RetainedCrime",
+        "RetainedRival",
+        "RetainedRevenge"
+      ],
+      "evidence": [
+        "docs/PLAYER_DEFEAT_ACHIEVEMENTS.md"
+      ],
+      "finding": "Crime flags/PK points arise through attacks; guild rivalry uses normal declaration and personal enemy follows a real calculated defeat. Calculated rematches and cold relationship/receipt checks establish five identities. Opponent profiles and placement/cooldowns are controlled; the revenge timeout retained gear wear and is not described as first-pass success."
+    },
+    {
+      "sources": [
+        "equipment-quests-revora-v1"
+      ],
+      "ids": [
+        10931
+      ],
+      "fixture_symbols": [
+        "RetainedTempest"
+      ],
+      "evidence": [
+        "docs/TEMPEST_WINGS_IMPLEMENTATION.md",
+        "docs/EQUIPMENT_QUEST_AGGREGATE.md"
+      ],
+      "finding": "The final Tempest claim follows paid permit materials and calculated Roc combat on this retained UID. Four raced claims grant one frozen reward pair and10931 only after all nineteen final predicates match. Exact cold reload and packet bit are documented; staged private terrain/native gates remain."
+    },
+    {
+      "sources": [
+        "equipment-set-v1",
+        "equipment-gems-v1",
+        "equipment-switch-v1",
+        "equipment-state-v1"
+      ],
+      "ids": [
+        10409,
+        10410,
+        10411,
+        10412,
+        10413,
+        10414,
+        10415,
+        10416,
+        10417,
+        10418,
+        10419,
+        10428,
+        10429,
+        10430,
+        10432,
+        10503
+      ],
+      "fixture_symbols": [
+        "CareerVestmentJourney",
+        "CareerAlternateJourney",
+        "CareerEnchantJourney",
+        "CareerWardrobe",
+        "RetainedAccessories"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/EQUIPMENT_SET_ACHIEVEMENTS.md",
+        "docs/EQUIPMENT_ACHIEVEMENTS.md"
+      ],
+      "finding": "Paid class kit supplies owned Super/+12/blessed/socketed gear and gems; ordinary allocation and earned proficiency permit equipment. Purchased gems enchant the main set. Second paid kit earns alternate credit only on successful switch. First-rebirth garment, paid Mount Kit talismans and mall accessory cover the remaining item observations. Recovery accepts only documented committed purchase/equipment changes; native display and untested kit classes remain separate."
+    },
+    {
+      "sources": [
+        "equipment-upgrade"
+      ],
+      "ids": [
+        10420,
+        10421,
+        10422,
+        10423,
+        10424,
+        10425,
+        10426
+      ],
+      "fixture_symbols": [
+        "RetainedUpgrades",
+        "RetainedUpgradeUsage"
+      ],
+      "evidence": [
+        "docs/EQUIPMENT_UPGRADE_TRANSACTION_AUDIT.md"
+      ],
+      "finding": "Purchased weapon, DragonBalls/Meteors and repairs produce all seven outcome receipts through ordinary upgrade handlers. Random failures/successes are controlled; exact debits/material disappearance, progress and cold replay are checked. Forty forced failed quality attempts are a transition test, not practical socket pricing or natural odds."
+    },
+    {
+      "sources": [
+        "artifact-apply",
+        "artifact-stabilize"
+      ],
+      "ids": [
+        10501,
+        10502
+      ],
+      "fixture_symbols": [
+        "RetainedArtifact"
+      ],
+      "evidence": [
+        "docs/ARTIFACT_EARNED_ROUTE.md"
+      ],
+      "finding": "Purchased/upgraded blade,2500CP P6 soul, thirty Meteors packed through ordinary NPC and bought stones precede purification/stabilization packets. Exact material consumption, permanent soul and cold replay persist. Missing private compatibility catalog and the interrupted purchase were recovered as documented without a free replacement."
+    },
+    {
+      "sources": [
+        "refinery-apply"
+      ],
+      "ids": [
+        10431
+      ],
+      "fixture_symbols": [
+        "CareerRefineryJourney"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/REFINERY_ACHIEVEMENT.md"
+      ],
+      "finding": "Retained Dis City refinery-pack rewards are opened normally; two earned level6 compatible materials refine owned headgear/ring through item handlers. Exact effect/material persistence and10431 survive cold reload. This evidence covers the chosen target/material pairs, not every refinery family."
+    },
+    {
+      "sources": [
+        "travel-region-v1"
+      ],
+      "ids": [
+        10620,
+        10621,
+        10622,
+        10703
+      ],
+      "fixture_symbols": [
+        "CareerPortalJourney"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Installed portals connect1002/1011/1013/1014/1016 and1000/1001; each accepted crossing and cold receipt/bit checkpoint is asserted. Portal approach is controlled, not door-to-door navigation."
+    },
+    {
+      "sources": [
+        "travel-region-v1"
+      ],
+      "ids": [
+        10712,
+        10715,
+        10716,
+        10717,
+        10718,
+        10810
+      ],
+      "fixture_symbols": [
+        "CareerAdventureJourney",
+        "CareerFirstRite"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Ordinary Guild Conductor380 enters1038, paid9884 passage reaches1216 and island portals/NPCs complete the Adventure route and return. Five destination receipts are explicitly checked; Guild Grounds admission is also used by the first-life material route. Entry and fare are ordinary handlers, with approach positions controlled."
+    },
+    {
+      "sources": [
+        "travel-region-v1"
+      ],
+      "ids": [
+        10708,
+        10709,
+        10710,
+        10711,
+        10713,
+        10714,
+        10719,
+        10720,
+        10721
+      ],
+      "fixture_symbols": [
+        "CareerHuntingTravel"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "One paid passage and the installed connected hunting-map portal graph produce nine region receipts. The1217 trigger uses a bounded legal nearby step, not a substituted map. Per-crossing progress, fare, prior career and all nine receipts survive cold reload."
+    },
+    {
+      "sources": [
+        "travel-region-v1"
+      ],
+      "ids": [
+        10617,
+        10625,
+        10629,
+        10701,
+        10812
+      ],
+      "fixture_symbols": [
+        "CareerCityJourney",
+        "CareerMarketReturn"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Catalog-priced ordinary city scrolls and the installed Market portal establish four city arrivals and Market. Each purchase/consumption is checked. Initial Market return-context failure and its later dedicated recovery checks remain distinct; native map display is unverified."
+    },
+    {
+      "sources": [
+        "travel-region-v1"
+      ],
+      "ids": [
+        10801,
+        10802,
+        10808
+      ],
+      "fixture_symbols": [
+        "CareerExploreJourney"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Daily Envoy/GardenKeeper and Desert GrottoEnvoy options admit Garden and first/second Grotto floors; bought return scrolls are consumed. The documented1762 terrain alias supplies10801. Exact fares/items/visits survive cold reload."
+    },
+    {
+      "sources": [
+        "travel-region-v1"
+      ],
+      "ids": [
+        10614,
+        10619,
+        10631,
+        10807
+      ],
+      "fixture_symbols": [
+        "CareerFieldJourney",
+        "CareerWalkRegion"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Connected terrain search drives accepted Entity.Move steps from ordinary arrivals to three field regions; trainer charges1000silver for Training Ground and a bought scroll returns home. Inter-map approaches and time remain controlled. Exact saved career/payment/travel checks pass."
+    },
+    {
+      "sources": [
+        "travel-region-v1"
+      ],
+      "ids": [
+        10803
+      ],
+      "fixture_symbols": [
+        "CareerGrottoThirdJourney"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Envoy admission to1927 and the installed portal reach1999. The dedicated third-floor checkpoint and cold reload establish admission; this entry alone does not certify higher floors."
+    },
+    {
+      "sources": [
+        "travel-region-v1"
+      ],
+      "ids": [
+        10804,
+        10805,
+        10806
+      ],
+      "fixture_symbols": [
+        "CareerDragonHunts",
+        "CareerTerato"
+      ],
+      "evidence": [
+        "docs/TERATO_DRAGON.md",
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "The later retained Dragon hunt explicitly traverses1927->1999->2054, obtains a Grotto Key through calculated kills/floor pickup, uses Guardian7764 and the2055->2056 portal, then completes seven hunts and cold Terato phases. This uses the private installed portal catalog; no native map/index acceptance is inferred."
+    },
+    {
+      "sources": [
+        "travel-region-v1"
+      ],
+      "ids": [
+        10723,
+        10724,
+        10725,
+        10727
+      ],
+      "fixture_symbols": [
+        "CareerRealms"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/FORGOTTEN_REALMS_EXPEDITION.md"
+      ],
+      "finding": "Four installed owner-approved Forgotten Realms expeditions use NPC admission, hunt rewards and return; retained cold snapshots preserve travel/quest receipts. Map1363 stays excluded from these four and its coordinated release remains gated."
+    },
+    {
+      "sources": [
+        "travel-region-v1"
+      ],
+      "ids": [
+        10809
+      ],
+      "fixture_symbols": [
+        "CareerMoonJourney"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/MOON_PLATFORM_PASSAGE.md"
+      ],
+      "finding": "Ordinary Luna entry to1103 and accepted movement reach the Moon Platform region. Interrupted fare findings, dedicated payment-recovery repair and cold checks are documented; this is one accepted alias route, not all ten platform maps."
+    },
+    {
+      "sources": [
+        "travel-region-v1"
+      ],
+      "ids": [
+        10612,
+        10613,
+        10618,
+        10626,
+        10702
+      ],
+      "fixture_symbols": [
+        "RetainedTravelConfirm",
+        "CareerWalkRegion",
+        "CareerPortal"
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Explicit retained movement confirms five previously incidental town/field receipts. Ordinary portals and accepted Entity.Move steps return to Twin City; each leg preserves non-location scalar state and the full final snapshot passes cold game/database reload. Existing receipt IDs are retained, not replaced. Portal approach positions remain controlled."
+    },
+    {
+      "sources": [
+        "house-construction-v1"
+      ],
+      "ids": [
+        10102,
+        10103,
+        10104,
+        10105,
+        10122
+      ],
+      "fixture_symbols": [
+        "CareerHouseJourney"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/HOUSING_SERVICE.md"
+      ],
+      "finding": "Reviewed retained level-one through level-five purchases and construction: exact certificate UID consumption, configured CP debit, silver debit, sequential saved levels and five receipts. Purchase/build replays preserve snapshots; owned map reconstruction, legal entry and exit persist across restart. Existing purse provenance remains mixed/controlled as documented; no new funds or permits are injected in this route. NPC proximity and exit approach are controlled, not native-client movement acceptance. Existing private earn/reload logs both contain passing markers, rechecked 2026-10-02; no new runtime execution."
+    },
+    {
+      "sources": [
+        "house-furniture-v1"
+      ],
+      "ids": [
+        10101
+      ],
+      "fixture_symbols": [
+        "CareerFurnitureJourney",
+        "CareerFurniturePosition"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/HOUSE_FURNITURE.md"
+      ],
+      "finding": "Reviewed twelve ordinary 2500-CP purchases and sealed placement dispatches in the earned level-five home. Exact item UIDs are consumed, duplicate confirmation/placement preserves snapshots, and twelve paid purchases/actors plus achievement survive reload. First full-bag refusal retained eleven purchases; two bounded shopping/placement trips complete the twelfth without resetting state. Placement cells and NPC proximity are controlled; native preview/rendering remains pending. Existing private earn/reload pass markers rechecked 2026-10-02."
+    },
+    {
+      "sources": [
+        "mutual-friend-v1",
+        "house-visit-host-v1",
+        "house-visit-guest-v1"
+      ],
+      "ids": [
+        10123,
+        10131,
+        10132
+      ],
+      "fixture_symbols": [
+        "CareerVisitJourney",
+        "CareerGuestJourney"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/FRIEND_ACHIEVEMENT.md",
+        "docs/HOUSE_VISITS.md"
+      ],
+      "finding": "Reviewed mutual friendship, named guest consent and both visit roles on retained UID itself. Unoffered acceptance and invitation/review alone grant nothing. Destination owner receives 8000 CP and 300000 silver through mutual trade, buys/consumes its certificate, then invites retained player to its separate level-one home. Trade and arrival replay, cold reload and consumed-consent re-entry refusal are checked. Peer initial profile is supplied; proximity/exit positioning controlled. Earlier host-route recovery permits only the three specified new achievement rows and one completed visit while preserving other scalar state; this is disclosed recovery, not an uninterrupted first pass. Existing visit/guest earn and reload pass markers rechecked 2026-10-02."
+    },
+    {
+      "sources": [
+        "mutual-partner-v1"
+      ],
+      "ids": [
+        10126
+      ],
+      "fixture_symbols": [
+        "CareerPartnerJourney",
+        "CareerPartnerSend"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/TRADE_PARTNER_ACHIEVEMENT.md"
+      ],
+      "finding": "Reviewed sealed ordinary partnership requests, forged server-only message rejection, no credit for an unaccepted request, reciprocal saved consent and one receipt per participant. Replay preserves the start timestamp and exact snapshot; cold restart preserves prior career. Controlled service clock checks one tick before and exactly 72 hours, restores the original clock and does not backdate saved rows. This does not prove elapsed real-time waiting or a locked-item trade in this retained route. Existing private earn/reload pass markers rechecked 2026-10-02."
+    },
+    {
+      "sources": [
+        "mentor-admission-v1",
+        "virtue-meteor-v1"
+      ],
+      "ids": [
+        10110,
+        10124,
+        10125
+      ],
+      "fixture_symbols": [
+        "RetainedMentor",
+        "RetainedApprentice",
+        "RetainedMentorPacket"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/MENTOR_ADMISSION.md",
+        "docs/VIRTUE_REWARD_EARNING.md"
+      ],
+      "finding": "Mutual 2065 admission earns main mentor credit; team EXP from calculated monster attacks earns trainee levels and 5022 Virtue through preserved partial batches. Shelby consumes exactly 5000 Virtue for an unbound Meteor; exact UID and remaining 22 survive reload/replay. Later paid Dew/reincarnation puts the main at Water132 level15 without direct class/level assignment, permitting its own apprentice admission while retaining its trainee. Senior and trainee starting profiles are supplied; proximity, respawn and attack timers controlled. Earlier snapshot recovery accepted only the observed Virtue receipt after normal refresh and was removed before clean cold validation; no independent starting-profile or natural training-duration claim. Existing private phase pass markers rechecked 2026-10-02; this review does not rerun gameplay or establish native acceptance."
+    },
+    {
+      "sources": [
+        "player-revival-v1"
+      ],
+      "ids": [
+        10902
+      ],
+      "fixture_symbols": [
+        "RetainedRevival"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/PLAYER_REVIVAL_CREDIT.md"
+      ],
+      "finding": "Paid EXP balls recover the retained reincarnated Water character to saved140; trainer teaches1100 and cold reload precedes combat. Two calculated ranged hits kill the ordinary peer, then the learned decoded spell revives it and earns10902. Cold recovery preserves nested state; cast against living target adds nothing. Consumable dates, PK arena placement and protection timers are controlled; peer qualification supplied. Native spell decoding is outside this route, and target health/receipt are not one transaction spanning both players. Existing private phase pass markers rechecked 2026-10-02; this review does not rerun gameplay or establish native acceptance."
+    },
+    {
+      "sources": [
+        "cosmetic-style-v1",
+        "cosmetic-colour-v1",
+        "cosmetic-avatar-v1",
+        "armor-dye-v1",
+        "classic-dance-v1"
+      ],
+      "ids": [
+        10113,
+        10114,
+        10115,
+        10116,
+        10121
+      ],
+      "fixture_symbols": [
+        "RetainedCosmetics",
+        "RetainedCosmeticPacket"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/COSMETICS_RESTORATION.md"
+      ],
+      "finding": "Ordinary sealed3510 catalog purchases and selections verify exact silver prices plus1000 colour charge. Owned Meteor pays map1008 admission; Dye Seller changes the equipped armor, preserving ownership. Classic dance in1002 earns its receipt. All five identities and paid operation/item snapshots survive cold recovery; repeated appearance purchases/selections and dance cost nothing further. Armor-dye concurrency is not tested by this retained phase. NPC approach/return positions controlled; no native appearance/rendering claim. Existing private phase pass markers rechecked 2026-10-02; this review does not rerun gameplay or establish native acceptance."
+    },
+    {
+      "sources": [
+        "owned-guard-summon"
+      ],
+      "ids": [
+        10119
+      ],
+      "fixture_symbols": [
+        "RetainedGuard"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/GUARD_SUMMON_ACHIEVEMENT.md"
+      ],
+      "finding": "Ordinary1000-silver pickaxe and100-silver mine admission precede controlled mining of a tracked Euxenite UID. Trainer consumes that ore for4000, restored weapon UIDs and learned skill persist through reload. Decoded cast creates the owned healthy companion and spends loaded stamina cost;10119 survives another restart. Mining outcome/time, position and explicit100 stamina are fixture controls; Screen regeneration is disabled and unverified. Earlier wrong-map replay failed after a saved learn checkpoint and recovered without repeating payment/mining. Temporary companion persistence is neither required nor claimed. Existing private phase pass markers rechecked 2026-10-02; this review does not rerun gameplay or establish native acceptance."
+    },
+    {
+      "sources": [
+        "steed-breeding-v1"
+      ],
+      "ids": [
+        10112
+      ],
+      "fixture_symbols": [
+        "RetainedBreed",
+        "RetainedBreedFrame"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/STEED_BREEDING_SERVICE.md"
+      ],
+      "finding": "Existing Elite champion claim pays5M CP and its saved recipe inside its original controlled claim window. Ordinary720049 opening produces an unbound+6 parent; receipt joins prize UID to opening to breeding. Sealed2036 keep-breed consumes it into owned+12 Mount Kit steed for exactly3240 lineage, preserving main UID/colour/binding. Cold snapshot and consumed-parent/claim replay pass. Earlier Elite placement used controlled damage/death and rollback/retry, not natural combat. This review covers material origin and keep-breed only, not full colour/binding/cap or native panel validation. Existing private phase pass markers rechecked 2026-10-02; this review does not rerun gameplay or establish native acceptance."
+    },
+    {
+      "sources": [
+        "first-rebirth-v1"
+      ],
+      "ids": [
+        10315,
+        11030
+      ],
+      "fixture_symbols": [
+        "CareerFirstRite"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Reserved absent UID starts with supplied level120/Trojan eligibility and empty purse/history. Controlled boss victory funds ordinary pickaxe/fare; seven controlled mining yields plus owned Waterlord Clean Water pickup feed eight Heavenly Stone material rows. Sereth consumes the crafted stone and records first history15/124, level15/reborn1 and permanent unbound five-star187405. Both achievement bits and exact reward/purse/material/history snapshot survive restart and repeated craft/rite confirmation. Initial level, lethal encounter damage, proximity, clocks and RNG are controls, not level-one progression or natural combat evidence. Existing private earn/reload pass markers rechecked 2026-10-02; no new runtime execution or native acceptance."
+    },
+    {
+      "sources": [
+        "second-rebirth-v1",
+        "abyss-trial-v1"
+      ],
+      "ids": [
+        10316,
+        11031
+      ],
+      "fixture_symbols": [
+        "CareerSecondPreparation",
+        "CareerSecondRite"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "Game/Features/AbyssTrialQuest.cs"
+      ],
+      "finding": "Same career buys329 EXP balls on controlled consumable dates, obtains trainer materials and completes promotions before Abyss. Full route records432 wild deaths,195 summons,117 consumptions of each base material,40000 grievance,72 spirits and3 forms. Ordinary rite consumes completed trial without Exemption Token, records second history and delivers the exact permanent bound P7 UID. Cold snapshots and final-confirmation replay preserve rewards and achievements. Recursive recipe correction retained earned materials. Combat damage, timing/RNG and approach controlled. Abyss requires explicit opt-in and remains disabled by default; reviewing private11031 does not remove its release/availability exclusion or prove default-server earning. Existing private earn/reload pass markers rechecked 2026-10-02; no new runtime execution or native acceptance."
+    },
+    {
+      "sources": [
+        "wardrobe-permanent-v1"
+      ],
+      "ids": [
+        11224,
+        11225,
+        11226,
+        11227,
+        11228,
+        11229,
+        11230,
+        11231,
+        11301
+      ],
+      "fixture_symbols": [
+        "CareerWardrobe",
+        "CareerCollection",
+        "CareerPlanet",
+        "CareerStores",
+        "CareerSign"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "tools/CheckCandidateCombinedCollection.cs",
+        "Game/Features/CollectionAchievements.cs"
+      ],
+      "finding": "Reviewed same-UID composition, not the separate supplied-profile collection fixture. First-rite garment enters wardrobe; paid mall/fixed-output packs reach50 garments/10 mounts. Eight controlled Planet weekends yield credits for156 distinct exchanges; purchases expand to198/92. Purchased VIP/peak eligibility and70 paid4000-RVP sign-ins over controlled months provide ten Easter packs with selected valid outcomes, completing200 garments/100 mounts. Permanent items, distinct design counts, exact debits, consumed pack UIDs, replay refusal and nested cold snapshots are checked. Later milestone bits/receipts are asserted; no200-mount receipt claimed (compatible catalog199). Original boss funding/encounter controls remain, and dates/outcomes do not establish probability or elapsed play time. Existing private earn/reload pass markers rechecked 2026-10-02; no new runtime execution or native acceptance."
+    },
+    {
+      "sources": [
+        "mutual-marriage",
+        "flower-delivery-v1",
+        "flower-queen-v1"
+      ],
+      "ids": [
+        10127,
+        10129,
+        11124,
+        11125,
+        11126,
+        11127
+      ],
+      "fixture_symbols": [
+        "RetainedSocial"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/FLOWER_QUEEN_EARNING.md",
+        "docs/MARRIAGE_ACHIEVEMENT.md"
+      ],
+      "finding": "Same retained ordinary career pays configured25000-CP gender rite and reconnects before receiving four supplier-backed gifts: free rose, sender-purchased999 lilies and controlled Magnolia orchid/tulip bonuses. Mutual trade funds sender purchase/rerolls; bonus item UIDs are consumed and both bound rune harvests remain, with no daily P7. Exact snapshots, four delivery rows, five flower achievements and later reciprocal marriage10129 survive cold recovery/replay. Private female rankings initially have no positive totals: rank-one is uncontested, not a competitive campaign. Earlier inactive rose offer was refused and unused buyer-side nontradable lilies/payment retained; no refund or gift injection. Clock/RNG/proximity and peer initial qualification are controls; earlier funding provenance remains mixed. Existing private phase pass markers rechecked 2026-10-02; no new runtime execution or native acceptance."
+    },
+    {
+      "sources": [
+        "hand-holding-v1"
+      ],
+      "ids": [
+        10130
+      ],
+      "fixture_symbols": [
+        "RetainedHandHolding"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/PAIRED_MOVEMENT_EARNING.md"
+      ],
+      "finding": "Uses the retained paid female appearance and saved male spouse. Ordinary interaction acceptance alone earns nothing; ground movement advances both by one tile and writes both10130 receipts. Second accepted step adds no duplicate, and cold reload preserves the nested career. Replayed acceptance after restart creates no interaction or saved mutation. Initial corridor/position controlled; actual subsequent movement uses the production ground handler, with native UI/encoding acceptance pending. Existing private phase pass markers rechecked 2026-10-02; no new runtime execution or native acceptance."
+    },
+    {
+      "sources": [
+        "player-booth"
+      ],
+      "ids": [
+        10128
+      ],
+      "fixture_symbols": [
+        "RetainedBooth"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/BOOTH_PURCHASE_ACHIEVEMENT.md"
+      ],
+      "finding": "Spouse purchases a fresh unbound Meteor through normal CP mall, opens booth with sealed OwnBooth and lists its exact UID for100000 silver. Retained buyer receives that UID, seller loses it, silver debit/credit exactly match, and CP balances do not change during sale. Immediate purchase replay preserves state; cold snapshot retains both assets/balances and buyer10128. Both sessions ordinary; proximity and earlier profile/funding controlled. This is a silver sale, not a new CP-sale or native booth validation. Existing private phase pass markers rechecked 2026-10-02; no new runtime execution or native acceptance."
+    },
+    {
+      "sources": [
+        "lottery-prize-v1"
+      ],
+      "ids": [
+        10118
+      ],
+      "fixture_symbols": [
+        "RetainedLottery"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/LOTTERY_TICKET_RESTORATION.md"
+      ],
+      "finding": "Mutual trade moves existing goods to spouse for bag room without deletion. Paid Super Magnolia seed produces controlled ticket710212 bonus; Lady Luck exchanges it for three small tickets, and box925 consumes them into a saved pending draw. Full restart precedes sealed1314 Accept, which delivers one saved prize UID and10118; replay and second cold reload preserve nested state. Calendar, bonus and draw outcome controlled, earlier funds/profile retain provenance. Existing delayed-Continue ambiguity without a verified native request identity remains: single-prize claim replay protection is not unlimited protection against new-draw requests. Existing private phase pass markers rechecked 2026-10-02; no new runtime execution or native acceptance."
+    },
+    {
+      "sources": [
+        "arena-class-victory",
+        "arena-first-nine",
+        "arena-twenty-entries",
+        "arena-local-v1",
+        "honor-arena-ranking"
+      ],
+      "ids": [
+        10320,
+        11032,
+        11101,
+        11102,
+        11103,
+        11104,
+        11105,
+        11106,
+        11107,
+        11108,
+        11109,
+        11111,
+        11112,
+        11309
+      ],
+      "fixture_symbols": [
+        "CareerHonor",
+        "RetainedArena"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/ARENA_ACHIEVEMENT_CHECKPOINT.md",
+        "docs/SWORD_MASTER_RESTORATION.md"
+      ],
+      "finding": "Initial sealed solo signup/matcher/acceptance and calculated ranged victories establish Trojan result/participation; next-day ranking pays earned Honor, mirrored and replay-checked after cold load. Failed fixture run lookup selected an abandoned run: recovery changes only probe metadata after checking two completed wins/result commit, not combat/history or reward. Subsequent20 matches use nine supplied ordinary opponent classes and calculated melee; all ten class receipts coexist, plus20280515 nine-win/twenty-entry receipts. Both daily rewards join paid rows to owned EXP Ball and bound rune UIDs, with no daily P7. Exact nested result/statistics/items snapshots survive cold reload and repeated payment. Opponent qualifications, clocks, cooldowns and positions controlled; opponents do not retaliate. Existing private phase pass markers rechecked 2026-10-02; no new gameplay run, balance or native acceptance claim."
+    },
+    {
+      "sources": [
+        "weekly-pk-v1",
+        "monthly-pk-v1",
+        "class-pk-v1"
+      ],
+      "ids": [
+        11116,
+        11117,
+        11118,
+        11119,
+        11131
+      ],
+      "fixture_symbols": [
+        "RetainedWeekly",
+        "RetainedOtherPk"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/LOCAL_PK_WAR.md",
+        "docs/CLASS_PK_WAR.md"
+      ],
+      "finding": "Ordinary NPC registration and calculated melee against supplied level140 peer produce competitive two-player records before claims. Weekly/Monthly traverse1505/1508/700; Class covers Windwalker130+ only. Separate processes claim exact CP/RVP/silver:100000/1000/1M weekly,250000/2500/5M monthly,50000/500/500000 class; three/five/five bound EXP Ball items plus one bound P7 each. Prior item UIDs survive, repeated claims/cold snapshots do not duplicate rewards, including full-bag Class replay. Monthly bag room uses normal trade/storage. Initial empty Weekly round cancellation retained; successful round uses next Saturday. Calendars/stage waits/positions/cooldowns controlled; peer does not retaliate; other brackets remain outside this route. Existing private phase pass markers rechecked 2026-10-02; no new gameplay run, balance or native acceptance claim."
+    },
+    {
+      "sources": [
+        "bp-pk-v1"
+      ],
+      "ids": [
+        11114
+      ],
+      "fixture_symbols": [
+        "RetainedBp"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/BP_PK_IMPLEMENTATION.md"
+      ],
+      "finding": "Winner uses saved earned gear and282 BP; only peer admission BP is supplied. Ordinary manager admission and calculated melee yield two competitive admissions and11114. Existing Arena runes move normally into rune bag for room. Cold NPC claim gives300 CP,5000 Chi,bound3006840 token and bound P7; exact token expiry/origin, Chi row, result and nested prior inventory survive another restart and twice-repeated full-bag claims. First division/unexpired token only; no higher-division or season-exchange coverage. Controlled schedule/positions/cooldowns; no opponent retaliation. Existing private phase pass markers rechecked 2026-10-02; no new gameplay run, balance or native acceptance claim."
+    },
+    {
+      "sources": [
+        "steed-course-v1"
+      ],
+      "ids": [
+        11113,
+        11122
+      ],
+      "fixture_symbols": [
+        "RetainedRace"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/STEED_RACE_CLAIMS.md"
+      ],
+      "finding": "Main pays configured Mount Kit price, equips exact steed and learns Riding through trainer; peer mount/lesson comes from earlier fixture. Both register normally; pre-gate finish earns nothing. After controlled gate opening,1170 accepted terrain moves each complete map2061, main first and peer second. Main11113/11122 and pending results survive; next process pays each exact saved currencies plus bound P7, preserving earlier bag UIDs. Cold reload and twice-repeated claims leave nested career, peer assets and result/claim snapshots unchanged. Racers advance sequentially, so this proves one course and rewards, not competitive speed, network timing or natural scheduling. Existing private phase pass markers rechecked 2026-10-02; no new gameplay run, balance or native acceptance claim."
+    },
+    {
+      "sources": [
+        "clan-founder-v1",
+        "clan-territory-v1"
+      ],
+      "ids": [
+        10304,
+        10305,
+        10306,
+        10307,
+        10308,
+        10309
+      ],
+      "fixture_symbols": [
+        "ClanCareer",
+        "ClanTerritoryCareer"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CLAN_MEMBERSHIP_EARNING.md",
+        "docs/CLAN_TERRITORY_EARNING.md"
+      ],
+      "finding": "Ordinary registrar2032 name input creates CareerKeep and charges configured silver once, preserving CP/RVP/items; cold registry reload retains founder. Sealed1313 admissions to all five territories settle after controlled20 unopposed minutes. Full bags retain pending entitlements; ordinary trade/storage makes room, saved CP/RVP plus five bound P7 UIDs eventually pay, and cold payment replay is unchanged. Initial Ape portal approach was not walkable; paid city scrolls provide ordinary alternative, leaving portal placement unresolved. Wrong Desert scroll purchase/consumption was preserved under exact debit-only recovery, not refunded. No rival combat or natural calendar claim. Reviewed against existing private logs/source on2026-10-02; no new runtime execution or native/live acceptance."
+    },
+    {
+      "sources": [
+        "guild-appointment-v1",
+        "guild-manager-v1",
+        "guild-supervisor-v1"
+      ],
+      "ids": [
+        10221,
+        10222,
+        10223,
+        10224,
+        10225
+      ],
+      "fixture_symbols": [
+        "RetainedOffice",
+        "RetainedManager",
+        "RetainedGuildLevel",
+        "RetainedSupervisor"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/GUILD_OFFICE_EARNING_PLAN.md"
+      ],
+      "finding": "Mutual guild admission and normal leadership transfer/appointment earn three appointed roles; honorary appointment charges acting leader320 CP once, then leadership restored. Manager derives from saved positive contributions after ordinary discharge to Member. Supervisor prerequisites use three purchased class sets,15M personal silver donation, paid Armor/Ring unlocks and twelve owned inscriptions reaching5449320 in each of three categories. Ordinary trades fund two admitted peers donations818498 CP each; production reconciliation assigns them Manager and retained Magnolia tulip recipient Supervisor. Cold office state and restored-leadership state preserve permanent achievements while removing obsolete automatic ownership. No rank/contribution injected; earlier funding and peer profiles retain controls, not natural competitive progression. Reviewed against existing private logs/source on2026-10-02; no new runtime execution or native/live acceptance."
+    },
+    {
+      "sources": [
+        "guild-inscription-v1"
+      ],
+      "ids": [
+        10226
+      ],
+      "fixture_symbols": [
+        "ArsenalCareer"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/GUILD_INSCRIPTION_EARNING.md"
+      ],
+      "finding": "Retained founder donates4.6M silver, opens Headgear8 for5M guild silver, inscribes exact owned headgear and buys level2 enhancement for100000. Sealed replay adds no charge; inscription,1362330 contribution,2BP and30-day deadline persist. Controlled31-day advance expires enhancement only; cold expired snapshot remains. Original snapshot-column typo occurred after payment; guarded recovery verified only four expected changes plus saved donation/deadline before checkpointing, without repurchase. Slot identifier8 means one unlocked category, not eight. Reviewed against existing private logs/source on2026-10-02; no new runtime execution or native/live acceptance."
+    },
+    {
+      "sources": [
+        "guild-pole-hit-v1",
+        "guild-war-occupation-v1",
+        "guild-war-purse-v1",
+        "guild-beast-daily-v1"
+      ],
+      "ids": [
+        10228,
+        10232,
+        10302,
+        10303
+      ],
+      "fixture_symbols": [
+        "GuildFounderCareer",
+        "GuildHuntCareer"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/GUILD_BEAST_EVENT.md"
+      ],
+      "finding": "Ordinarily founded guild enters Sunday battlefield; calculated ranged attacks capture pole and settlement creates an unclaimed purse. Fresh process Director claim pays exact saved currencies and six items; replay does not duplicate. Founder donates500000 silver and funds Beast once despite repeated requests; scheduled spawn is defeated through calculated ranged attack. Cold claim gives unbound DragonBall and bound P7; later cold replays preserve paid snapshot and prior traded/stored belongings. Initial empty interrupted round retained, travel correction uses actual GuildGateKeeper without refighting. Unopposed, controlled clocks/position/cooldowns; one-hit max-gear Beast is not a balance proof. Reviewed against existing private logs/source on2026-10-02; no new runtime execution or native/live acceptance."
+    },
+    {
+      "sources": [
+        "guild-siege-bomb-v1"
+      ],
+      "ids": [
+        10231
+      ],
+      "fixture_symbols": [
+        "SiegeCareer"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/GUILD_SIEGE_BOMB.md"
+      ],
+      "finding": "Ordinary shop91008 purchase pays loaded10 CP for721261. Active battlefield gate use consumes exact item, deals quarter-max2.5M damage and kills carrier; stale use does not repeat damage/payment. Ordinary revive returns main to town; round closes empty without capture or purse.10231 and exact purchased-item absence/currencies survive cold replay. Schedule/proximity controlled; no war-victory or native blast claim. Reviewed against existing private logs/source on2026-10-02; no new runtime execution or native/live acceptance."
+    },
+    {
+      "sources": [
+        "guild-transporter-v1"
+      ],
+      "ids": [
+        10117
+      ],
+      "fixture_symbols": [
+        "CareerFirstRite"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/GUILD_TRANSPORTER_EARNING.md",
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "First-life material journey uses Guild Controller to1038 and conductor9884 paid1000-silver passage to1216, then ordinary Adventure Island/Waterlord/crafting route. Completed paid passage is the producer prerequisite, not mere map presence; first-rite nested cold snapshot preserves its resulting evidence. Other three conductor routes retain separate component coverage, not repeated retained-career travel. Earlier first-life profile/funding, proximity and encounter controls remain; native navigation unverified. Reviewed against existing private logs/source on2026-10-02; no new runtime execution or native/live acceptance."
+    },
+    {
+      "sources": [
+        "demon-exterminators-v1"
+      ],
+      "ids": [
+        11001
+      ],
+      "fixture_symbols": [
+        "CareerDemonJourney"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/DEMON_EXTERMINATORS.md"
+      ],
+      "finding": "Ordinary Cloud Saint jar route performs600/1200/1500/1800 calculated ranged kills against loaded families through installed portals, with cold snapshots between stages. Final full-bag refusal leaves state unchanged; ordinary trade transfers one spare weapon to peer for space. Claim consumes jar and delivers exactly five bound EXP Balls plus bound yellow rune, no daily P7. Six reward UIDs and earlier possessions survive cold reload; same-day accept/claim replay is unchanged. High equipment, date, proximity, cooldown and respawn timing controlled; no natural hunt-duration/balance claim. Existing private phase pass markers/source reviewed2026-10-02; no new runtime execution or native/live acceptance."
+    },
+    {
+      "sources": [
+        "terato-kill-v1",
+        "dragon-slayer-v1"
+      ],
+      "ids": [
+        10526,
+        10932
+      ],
+      "fixture_symbols": [
+        "CareerDragonHunts",
+        "CareerTerato"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/TERATO_DRAGON.md",
+        "docs/DRAGON_SLAYER_HUNTS.md"
+      ],
+      "finding": "Earned Grotto key/portal route reaches all seven grass/minion/ghoul branches;70 calculated kills yield seven bound components consumed into one bound Dragon Pill. Ordinary use consumes that UID to summon50M-HP Terato; cold process resumes paid admission without a second material. Calculated ranged victory grants50 Study Points and three saved spoils; fresh-process floor pickups earn Dragon Soul receipt only on actual delivery, including one bound P7. Replayed pickup/summon/poll and cold nested snapshots preserve ownership. Controlled time/cooldowns/approach; reload explicitly restores only approach coordinates before comparison. Temporary-table reward-branch tests roll back and are not real reward earning. Existing private phase pass markers/source reviewed2026-10-02; no new runtime execution or native/live acceptance."
+    },
+    {
+      "sources": [
+        "snow-banshee-kill-v1",
+        "snow-banshee-loot"
+      ],
+      "ids": [
+        10523,
+        10527
+      ],
+      "fixture_symbols": [
+        "CareerSnow",
+        "RetainedSnowLoot"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/SNOW_BANSHEE_ENCOUNTER.md",
+        "docs/SNOW_BANSHEE_REWARDS.md"
+      ],
+      "finding": "Initial100M boss receives calculated hits, saves damaged HP and resumes it in another process before victory,100 Study Points and three cold-recovered pickups. Later earned bow route buys200-silver Desert scroll and uses envoy;1684 normal ranged hits plus controlled loot rolls yield two DragonBalls and guaranteed bound P7. Actual floor-item UID/type/collector joins earn10523; repeat pickup/poll and final cold snapshot unchanged. Earlier wrong-map attempt made no payment; wrong melee-with-bow attempt preserved only fare/active-run changes under guarded recovery. Dates, approach/cooldowns and later draws controlled; later loot route uses graceful stops, not a second active-fight interruption test. Existing private phase pass markers/source reviewed2026-10-02; no new runtime execution or native/live acceptance."
+    },
+    {
+      "sources": [
+        "sword-master-kill-v1"
+      ],
+      "ids": [
+        10528
+      ],
+      "fixture_symbols": [
+        "CareerMaster",
+        "CareerHonor"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/SWORD_MASTER_ENCOUNTER.md",
+        "docs/SWORD_MASTER_RESTORATION.md"
+      ],
+      "finding": "Saved Arena ranking Honor funds exact8000-Honor Sword Soul purchase, with ordinary trade freeing room and duplicate purchase suppressed. Cold process enters earned owned house, consumes exact Soul via sealed confirmation and creates one15M-HP boss.94 calculated ranged attacks yield victory,20 Study Points and three pending drops. Another process reconstructs drops; repeated sealed pickups deliver three owned items including one bound P7. Cold snapshots/stale confirm/poll remain unchanged. Active Sword Master disconnect intentionally forfeits; interruptions here occur after purchase or committed victory/pickup, not resumable combat. Controlled clocks/approach/cooldowns. Existing private phase pass markers/source reviewed2026-10-02; no new runtime execution or native/live acceptance."
+    },
+    {
+      "sources": [
+        "monster-ko-v1",
+        "meteor-monster-loot-v1"
+      ],
+      "ids": [
+        10520,
+        10521,
+        10522,
+        10524
+      ],
+      "fixture_symbols": [
+        "RetainedHunt"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/MONSTER_KO_EARNING.md",
+        "docs/METEOR_MONSTER_LOOT.md"
+      ],
+      "finding": "Ordinary trainer and silver-bought compatible weapon enable Omnipotence.100 calculated wilderness kills charge XP; actual buffer callback activates ready flag, decoded spell starts mode,300 further calculated kills earn10/100/300 thresholds. Actual controlled Meteor drop and sealed pickup preserve UID/source; replay and cold reload retain four receipts while transient KO resets0. First bow activation failed after real rewards; exact guarded recovery retained100-kill CP reward/Meteor evidence, then compatible weapon and fresh XP charging resolved prerequisite. Offline send queue, readiness/cooldown/position controls mean this does not prove300 natural-paced kills in40 seconds; AoE/rate/expiry concurrency still unverified. Existing private phase pass markers/source reviewed2026-10-02; no new runtime execution or native/live acceptance."
+    },
+    {
+      "sources": [
+        "spook-kill-v1"
+      ],
+      "ids": [
+        10529
+      ],
+      "fixture_symbols": [
+        "CareerSpookJourney"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/EXORCISM_COMBAT.md"
+      ],
+      "finding": "Ordinary Market registrar/encounter admission creates10M-HP grade1 Spook; calculated ranged combat records victory before claim. Cold NPC claim pays saved CP/RVP/Study and exactly three items including bound4030101 rune, explicitly excluding P7 and preserving earlier UIDs. Repeated claim and same-day admission do not mutate exact nested snapshot; final cold reload retains claimed state. Controlled approach/cooldown and earlier profile/funding provenance remain; no natural combat difficulty or native display claim. Existing private phase pass markers/source reviewed2026-10-02; no new runtime execution or native/live acceptance."
+    },
+    {
+      "sources": [
+        "dis-city-v1"
+      ],
+      "ids": [
+        11002,
+        11003,
+        11004,
+        11005
+      ],
+      "fixture_symbols": [
+        "CareerDisJourney",
+        "CareerDisKill"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Standard Archer edition completes unchanged600 Hall quota and647 recorded deaths, five Soul Stones,nine guardian/crystal seals,four scraps,Pluto summon and four stage claims through ordinary NPC/item/calculated ranged handlers. Actual random drops retained; stage packs and final bound P7 survive nested cold snapshot. Repeated completed weekly entry grants nothing. Calendar advances three seconds per encounter; approach/cooldowns controlled. Redundant arrow purchase refused, existing first purchase retained; no counters/HP/damage/drop overrides. Other difficulties/treasury openings remain separate coverage. Existing private phase pass markers/source reviewed2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "sources": [
+        "sky-pass-v1"
+      ],
+      "ids": [
+        11019
+      ],
+      "fixture_symbols": [
+        "CareerSkyJourney"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Installed portal route and Daniel admission follow three ordinary warehouse deposits. Actual random gates and calculated ranged battles complete climb and issue pass before any claim/11019. Abrupt exit/cold recovery preserves pass and restores summit admission; claim consumes it for four bound Meteors and bound Tortoise Breaker rune, no daily P7. Same-day re-entry and cold snapshot unchanged. First false-gate assumption abandoned an unfinished run through normal login; recovery retained exactly three deposits and6 earned CP. Positions/cooldowns controlled, no gate-roll override or natural survivability claim. Existing private phase pass markers/source reviewed2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "sources": [
+        "power-arena-v1"
+      ],
+      "ids": [
+        11013,
+        11014
+      ],
+      "fixture_symbols": [
+        "CareerPowerJourney"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/POWER_ARENA.md"
+      ],
+      "finding": "Eight ordinary traded weapons free room. Seven floors and365 calculated guardian kills earn first permanent unbound five-star Somersault Cloud and seven badges; after cold restart five floors/215 kills in second controlled window reach12 lifetime badges. Two six-badge exchanges yield two bound medium packs; repeated stage/exchange offers do not duplicate. Nested items/purses/trades/claims survive cold recovery. Missing Screen target setup and depleted population attempts preserved progress; production respawn callback with advanced deadline supplies further existing spawns, not injected kill counts. Calendar/approach/cooldown controlled. Existing private phase pass markers/source reviewed2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "sources": [
+        "flame-lit-v1"
+      ],
+      "ids": [
+        11016
+      ],
+      "fixture_symbols": [
+        "CareerFlameJourney"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/FLAME_LIT_STORE.md"
+      ],
+      "finding": "Ordinary ten-stone NPC sequence consumes/replaces owned rune at each step, refuses premature last step and early final claim. Installed Guild Transporter and two purchased Town Scrolls cost400silver; two spares traded normally for space. Abrupt exit leaves Dragon Rune; cold startup cancels interrupted battle but permits earned claim after original deadline. It consumes rune for exact bound P7 UID; max-level12 EXP units give zero extra experience. Repeated offer/claim and cold snapshot unchanged. Earlier dead-peer trade refusal and already-cancelled calendar run preserved, unused Sunday used. NPC positioning bypasses contested movement pressure, not evidence of walking through closed gates. Existing private phase pass markers/source reviewed2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "sources": [
+        "classic-labyrinth-v1"
+      ],
+      "ids": [
+        11027
+      ],
+      "fixture_symbols": [
+        "CareerLabJourney"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/LABYRINTH.md",
+        "tools/CheckCandidateRetainedLabBox.cs"
+      ],
+      "finding": "Ordinary team-earned Virtue funds2000-point admission, leaving106; mutual trade preserves owned gem on peer for room.506 calculated ranged kills with unchanged drops yield three consumed passage tokens and17 bound Cloud Diamonds. After abrupt exit/cold recovery, ordinary return and confirmed exchange consume stack for bound Ancestor Box and bound P7, preserving unrelated UIDs. Repeated confirmations/new offer without diamonds and cold snapshot unchanged. Later RetainedLabBoxProcess opens the original earned box60495399 through the ordinary item handler: unforced roll25, two bound Meteors with exact recorded UIDs, consumed-object/stale-UID replay refusal and exact nested cold reload. No extra P7/achievement. proximity/cooldown controlled, no materials/Virtue injected. Earlier hunting markers were reviewed2026-10-02; the separate opening/reload phases pass2026-10-03. Native/live acceptance remains pending."
+    },
+    {
+      "sources": [
+        "moon-box-v1"
+      ],
+      "ids": [
+        11022
+      ],
+      "fixture_symbols": [
+        "CareerSecondPreparation"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Same first-rebirth career uses ordinary Moon Box admission, six tactic hunts/token turn-ins and final NPC return to obtain721090, later consumed by normal promotion. Route controls tactic/token rolls and lethal damage through EliminationHit, so this is material/history/claim evidence rather than natural combat or random navigation. Paid EXP recovery and preserved preparation snapshot/cold restart retain earning history; no token or Moon Box insertion to skip prerequisites. Existing private phase pass markers/source reviewed2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "sources": [
+        "release-souls-v1",
+        "study-reward-v1"
+      ],
+      "ids": [
+        10319,
+        11012
+      ],
+      "fixture_symbols": [
+        "CareerSoulsJourney"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Envoy/Desert Guardian admission and three distinct remains complete only at three-second prayer deadlines; two-second ticks/reinspection do not advance. Premature/full-bag reward refusal unchanged. Two previously earned Yin Jades consume once for600 Chi and make room; unpaid claim pays configured CP/RVP/50 Study plus bound EXP Ball,Chi token and rune, no P7. Exact nested quest/jade/item/currency state and11012/10319 survive cold reload and replay. Study receipt is reviewed as actual positive reward, not a seeded balance; approach and quest clock controlled. Existing private phase pass markers/source reviewed2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "sources": [
+        "snake-islands-v1"
+      ],
+      "ids": [
+        11018
+      ],
+      "fixture_symbols": [
+        "CareerSnakeJourney"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Paid Bird/Town scrolls, ordinary Green Snake admission and49 accepted sealed jumps reach installed Snake King; calculated ranged bow attack earns unclaimed victory. Cold recovery after abrupt saved exit claims two bound Meteors and a bound rune, no P7; duplicate claim/same-day entry and later cold snapshot unchanged. Earlier wrong-shop refusal charged nothing; guarded recovery preserved exactly two warehouse deposits. NPC/date/cooldown controlled; one-shot maximum-gear victory is not difficulty acceptance. Existing private phase pass markers/source reviewed2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "sources": [
+        "couple-pk-npc-v1"
+      ],
+      "ids": [
+        11115,
+        11121
+      ],
+      "fixture_symbols": [
+        "RetainedCouple"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/COUPLE_PK_WAR.md"
+      ],
+      "finding": "Ordinary saved spouses create teams and accept NPC2319 invitations against a second married pair. Calculated ranged attacks defeat both opponents; controlled clock settles champion pair and returns all four. Separate cold claim pays each spouse 50000 CP,500 RVP,500000 silver,two bound EXP Balls and one bound P7. Exact snapshots, replay and loser refusal persist. Prior protected-opponent January12 round was cancelled without prizes; its two participation rows and recovered returns were preserved, not erased. January19 uses controlled proximity,cooldowns and non-retaliating opponents; no competitive balance claim. Existing private phase pass markers and source reviewed 2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "sources": [
+        "ctf-local-v1"
+      ],
+      "ids": [
+        10230,
+        10301
+      ],
+      "fixture_symbols": [
+        "RetainedCtf"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/LOCAL_CTF.md"
+      ],
+      "finding": "Two ordinarily founded guilds enter NPC380; peer attacks a separate base while main takes a20M base with876 calculated melee hits. Sealed walking collects/delivers flag; controlled clock yields winner10230/10301, permanent Conqueror/Radiant awards and one pending bound P7; losing contributor receives none. Separate cold claim grants exactly one permanent bound P7 with no currency changes; another cold reload and replay preserve snapshots. Controlled approaches/cooldowns and two contributors do not prove contested full-scale PvP. Existing private phase pass markers and source reviewed 2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "sources": [
+        "elite-pk-champion-v1"
+      ],
+      "ids": [
+        11123
+      ],
+      "fixture_symbols": [
+        "CareerChampion"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "tools/CheckCandidateRetainedEliteCombat.cs",
+        "docs/ELITE_PRIZE_CLAIMS.md"
+      ],
+      "finding": "Historical CareerChampion used controlled damage/death and verified rollback of11123; that receipt remains preserved. The new RetainedEliteCombatProcess on the same UID loads current earned equipment, registers both ordinary players and wins by one calculated Attack.HandleAttack melee hit from11559 opponent HP, with saved positive match damage/outcome defeat. Separate cold NPC claim pays exactly5M CPs and24 item UIDs including one permanent bound P7; exact nested career/event/claim state and duplicate refusal survive another restart. Opponent eligibility, non-retaliation, attackability, approach, cooldown and calendar remain controlled. Initial wrong-map fixture failure occurred before admission; three zero-currency trades were preserved and checked before using the next calendar slot. No new achievement count, native acceptance or full320 claim."
+    },
+    {
+      "sources": [
+        "newcomer-intro-v1"
+      ],
+      "ids": [
+        10930
+      ],
+      "fixture_symbols": [
+        "CareerNewcomer"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Retained high-level career visits actual introductory NPCs, warehouse and pharmacy purchase, then captain2001; preserved life/class/level and one permanent bound4030101 reward. Duplicate completion and cold snapshot retain reward UID,10930/11123 and previous possessions. This is ordinary quest access on a retained character, not fresh level1 onboarding or starter-pack acceptance. Existing private phase pass markers and source reviewed 2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "sources": [
+        "quiz-local-v1"
+      ],
+      "ids": [
+        10120,
+        11128
+      ],
+      "fixture_symbols": [
+        "CareerQuizJourney"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Four spare weapons transfer ordinarily to make bag space. NPC900000062 admits main and peer; actual stored deck drives20 timed question offers. Unoffered first answer refused, changed duplicate answer unchanged. Main20 correct ranks1/prize3; peer10 ranks2/prize2. Saved claims grant four/three bound items respectively including bound P7 event rewards. Exact nested snapshots, tick/claim replay and full cold reload pass. Answers read from catalog and clock advanced; no human quiz/client usability claim. Existing private phase pass markers and source reviewed 2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "sources": [
+        "nobility-donation",
+        "nobility-ranked-king"
+      ],
+      "ids": [
+        10318,
+        11120
+      ],
+      "fixture_symbols": [
+        "CareerNobilityJourney"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "finding": "Decoded2064 production donation spends100000 previously earned CP for5B donation, silver/RVP unchanged. Zero and unsupported currency2 refused; fixed one-second clock suppresses identical immediate payments, not arbitrary future replay. Empty private leaderboard yields King10318/11120; cold snapshot retains exact payment,purse,rank. Competitive rank not proved. Donor900042 is map5000:69,94 with no established ordinary admission; this validates wire handler, not reachable NPC or native donation panel. Existing private phase pass markers and source reviewed 2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "sources": [
+        "unarmed-monster-victory"
+      ],
+      "ids": [
+        10525
+      ],
+      "fixture_symbols": [
+        "CareerTrojan"
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/UNARMED_MONSTER_ACHIEVEMENT.md",
+        "Game/Features/EquipmentAchievements.cs",
+        "Game/Features/TrojanEpicStore.cs",
+        "Game/Features/TrojanEpicCombat.cs",
+        "tools/CheckCandidateEliminationLifecycle.cs",
+        "tools/CheckCandidateRetainedUnarmed.cs"
+      ],
+      "finding": "Historical10525 receipt came from controlled Trojan lethal damage and remains unchanged. RetainedUnarmedProcess now removes the same earned weapon UIDs through ordinary handlers, verifies empty cached/saved active hands, and defeats level140 five-million-HP Extraction Specter in122 calculated melee attacks. Re-equipping, three relics/bound P7/660 RVP, interrupted-hold refusal and exact nested cold recovery pass. Existing achievement ownership deliberately suppresses a second life/grant receipt. Initial123-hit attempt stopped on the erroneous extra-row expectation; recovery preserves only the documented exact ring/fan wear and prior UIDs, without resetting evidence. Time/proximity/cooldown and prior funding remain controlled; no retaliation, native acceptance or full320 claim."
+    }
+  ],
+  "compatible_career_verified": false,
+  "limits": [
+    "Source and saved-result evidence preserve their documented fixture controls.",
+    "The checker verifies index consistency and freshness, not gameplay correctness.",
+    "Native and live deployment gates are unchanged.",
+    "All stored source identities have been reviewed; fixture-controlled earning and unresolved accessibility/balance/native limits still prevent a verified compatible career claim."
+  ],
+  "open_findings": []
+}

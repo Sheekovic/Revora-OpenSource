@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-03",
+  "uid": 4294907001,
+  "build_sha256": "A38205B5C2185F060453E2D3BED757059D41724B912383F856C613CEC9E5A0DA",
+  "result": "passed",
+  "mounts": 201,
+  "garments": 200,
+  "planet_completed_deliveries": 13,
+  "planet_exchange_receipts": 257,
+  "achievement": 11232,
+  "achievement_rows": 1,
+  "source": "wardrobe-permanent-v1",
+  "calculated_melee_hits_in_extension": 635,
+  "duplicate_new_design_claims_per_phase": 101,
+  "phases": {
+    "earn": {
+      "log_sha256": "89d20eee0b83506a32fd0b38cbe8516464bd80a09b1d0410e2915caff9759a46",
+      "passed": true
+    },
+    "reload": {
+      "log_sha256": "6c3efe9b9aae5d69f805b9f1c183144e1259c2a60897c747d1efefbbe1de0ce8",
+      "passed": true
+    }
+  },
+  "limitations": [
+    "Retained ordinary-player profile and initial funding retain prior provenance limitations.",
+    "Calendar and target proximity controlled; initial 100 uncredited kills preceded clock synchronization.",
+    "Private handler/process evidence, not native acceptance or live deployment."
+  ],
+  "crash_recovery": {
+    "before_sha256": "abd8a3f2833bdc978a26b615efb677ce77b16d903de7567cfbd07179bb782534",
+    "recovered_sha256": "1c2c45960a178d23050222ce1d5ed0e3566aed5ced107c2ded9d10db9b95203c",
+    "only_changes": [
+      "Exchange receipt for design 200547, item UID 62243771.",
+      "Same permanent bound item added to both nested item snapshots, wardrobe=1, position=17.",
+      "Previous mount UID 62243770 position changed 17 to 0 in both nested item snapshots."
+    ],
+    "policy": "Exact complete snapshot hashes required before advancing test checkpoint; no character or reward rows rewritten."
+  }
+}

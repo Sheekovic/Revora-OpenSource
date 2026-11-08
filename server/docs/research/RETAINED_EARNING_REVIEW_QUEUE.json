@@ -1,0 +1,11 @@
+{
+  "scope": "Evidence review inventory, not independently earned count or completion percentage",
+  "stored_identities": 322,
+  "prerequisite_reviewed": 277,
+  "observed_state_reviewed": 45,
+  "remaining_source_review": 0,
+  "remaining_by_source": {},
+  "open_findings": [],
+  "compatible_career_verified": false,
+  "limitation": "References and hashes prove index consistency only; manual review retains all fixture and native limitations."
+}

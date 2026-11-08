@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Revora.Protocol5165/Revora.Protocol5165.csproj" />
+    <ProjectReference Include="../../src/Revora.NativeLogin.Core/Revora.NativeLogin.Core.csproj" />
+  </ItemGroup>
+</Project>

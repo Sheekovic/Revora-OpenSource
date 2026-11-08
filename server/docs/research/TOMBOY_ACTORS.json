@@ -1,0 +1,56 @@
+{
+  "client_npc_sha256": "b06db1e2484992a1b58eabd7a3d884da07ac728a4a183d0fd18f2dccd5b20497",
+  "npcs": [
+    {
+      "section": "NpcType424",
+      "name": "FarmerLynn",
+      "simpleobj": "268"
+    },
+    {
+      "section": "NpcType425",
+      "name": "Carolyn",
+      "simpleobj": "1"
+    }
+  ],
+  "loaded_monsters": [
+    {
+      "id": 16,
+      "name": "RockMonster",
+      "level": 77,
+      "mesh": 105,
+      "hp": 5642
+    },
+    {
+      "id": 75,
+      "name": "RockMonsterL78",
+      "level": 78,
+      "mesh": 505,
+      "hp": 11284
+    }
+  ],
+  "desert_spawns": [
+    {
+      "id": 20,
+      "map": 1000,
+      "x": 250,
+      "y": 134,
+      "width": 145,
+      "height": 280,
+      "count": 75,
+      "family": 16
+    },
+    {
+      "id": 69,
+      "map": 1000,
+      "x": 250,
+      "y": 134,
+      "width": 145,
+      "height": 280,
+      "count": 39,
+      "family": 75
+    }
+  ],
+  "evidence": "Read-only public catalog and loaded MonsterInformation, obj/tomboy-catalog.log; installed npc.ini",
+  "native_acceptance": false,
+  "journal_npc_ids_present_in_public_catalog": false
+}

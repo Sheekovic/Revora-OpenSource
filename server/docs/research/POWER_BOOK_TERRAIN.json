@@ -1,0 +1,219 @@
+{
+  "adaptation": true,
+  "original_trial_identity_verified": false,
+  "native_acceptance": false,
+  "floors": [
+    {
+      "base": 1500,
+      "terrain_sha256": "64c54fbf5f6b9a091e1702728b7836afc3537ac32cdbfb4fb501819de1058c34",
+      "native_sha256": "e736bac3be542f0cf0a4d7a9def07626632bc7366f8104dc51f79bddcb8bc070",
+      "entry": [
+        77,
+        25
+      ],
+      "routes": [
+        {
+          "target": [
+            77,
+            27
+          ],
+          "walking_steps": 2
+        },
+        {
+          "target": [
+            140,
+            140
+          ],
+          "walking_steps": 178
+        },
+        {
+          "target": [
+            100,
+            66
+          ],
+          "walking_steps": 64
+        },
+        {
+          "target": [
+            77,
+            23
+          ],
+          "walking_steps": 2
+        },
+        {
+          "target": [
+            102,
+            136
+          ],
+          "walking_steps": 136
+        },
+        {
+          "target": [
+            146,
+            104
+          ],
+          "walking_steps": 148
+        }
+      ]
+    },
+    {
+      "base": 1501,
+      "terrain_sha256": "64c54fbf5f6b9a091e1702728b7836afc3537ac32cdbfb4fb501819de1058c34",
+      "native_sha256": "f4b1640826e38519f627fedfbf115a921da9500d34a88a8b90f2804b1d883fa8",
+      "entry": [
+        77,
+        25
+      ],
+      "routes": [
+        {
+          "target": [
+            77,
+            27
+          ],
+          "walking_steps": 2
+        },
+        {
+          "target": [
+            140,
+            140
+          ],
+          "walking_steps": 178
+        },
+        {
+          "target": [
+            100,
+            66
+          ],
+          "walking_steps": 64
+        },
+        {
+          "target": [
+            77,
+            23
+          ],
+          "walking_steps": 2
+        },
+        {
+          "target": [
+            102,
+            136
+          ],
+          "walking_steps": 136
+        },
+        {
+          "target": [
+            146,
+            104
+          ],
+          "walking_steps": 148
+        }
+      ]
+    },
+    {
+      "base": 1502,
+      "terrain_sha256": "25d9fcbd50143d01e67345fdc1fd6eaee8f3634793c1bd04c644491171adc3fd",
+      "native_sha256": "d04771987ab954188fab3df2d6fb23e569fca4777c2568c14878617829938a6e",
+      "entry": [
+        77,
+        25
+      ],
+      "routes": [
+        {
+          "target": [
+            77,
+            27
+          ],
+          "walking_steps": 2
+        },
+        {
+          "target": [
+            140,
+            140
+          ],
+          "walking_steps": 178
+        },
+        {
+          "target": [
+            100,
+            66
+          ],
+          "walking_steps": 64
+        },
+        {
+          "target": [
+            77,
+            23
+          ],
+          "walking_steps": 2
+        },
+        {
+          "target": [
+            102,
+            136
+          ],
+          "walking_steps": 136
+        },
+        {
+          "target": [
+            146,
+            104
+          ],
+          "walking_steps": 148
+        }
+      ]
+    },
+    {
+      "base": 1503,
+      "terrain_sha256": "2a84195994296a0e12b40cd35be8d97dddf0c69f0bf9c780b755c880b4321ad8",
+      "native_sha256": "7f4aad7f17680ba9d5b43ee29a578b62a90c30a39bd15890350868761206ba2d",
+      "entry": [
+        77,
+        25
+      ],
+      "routes": [
+        {
+          "target": [
+            77,
+            27
+          ],
+          "walking_steps": 2
+        },
+        {
+          "target": [
+            140,
+            140
+          ],
+          "walking_steps": 178
+        },
+        {
+          "target": [
+            100,
+            66
+          ],
+          "walking_steps": 64
+        },
+        {
+          "target": [
+            77,
+            23
+          ],
+          "walking_steps": 2
+        },
+        {
+          "target": [
+            102,
+            136
+          ],
+          "walking_steps": 136
+        },
+        {
+          "target": [
+            146,
+            104
+          ],
+          "walking_steps": 148
+        }
+      ]
+    }
+  ]
+}

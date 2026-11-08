@@ -1,0 +1,4 @@
+param([Parameter(Mandatory=$true)][string]$ClientRoot,[Parameter(Mandatory=$true)][string]$BackupRoot)
+$ErrorActionPreference='Stop';$root=[IO.Path]::GetFullPath($ClientRoot);$backup=[IO.Path]::GetFullPath($BackupRoot)
+foreach($relative in @('Env_DX9\Revora-Conquer.exe','Env_DX9\RevoraAuthClient.dll','client-manifest.signed.json')){$destination=Join-Path $root $relative;$saved=Join-Path $backup $relative;if(Test-Path -LiteralPath $saved){Copy-Item -LiteralPath $saved -Destination ($destination+'.restore') -Force;if(Test-Path -LiteralPath $destination){[IO.File]::Replace(($destination+'.restore'),$destination,($destination+'.rollback-swap'));Remove-Item -LiteralPath ($destination+'.rollback-swap') -Force}else{Move-Item -LiteralPath ($destination+'.restore') -Destination $destination -Force}}elseif(Test-Path -LiteralPath $destination){Move-Item -LiteralPath $destination -Destination ($destination+'.rolled-back') -Force}}
+'Revora Auth Client v1 rollback complete.'

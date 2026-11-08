@@ -1,0 +1,111 @@
+{
+  "native_acceptance": false,
+  "terrain_only": true,
+  "all_landmarks_shared_cardinal_paths": true,
+  "policy": "cardinal paths using flag 0 in both grids within overlapping dimensions; no jump or portal inference",
+  "maps": [
+    {
+      "map": 1002,
+      "server_sha256": "9f75cc638480a0485e6b17bdf9f9f76886a9ab7449317bebe18e72ef6ad34a10",
+      "native_sha256": "27f89ae6329344ca2694be2028df274258f2961569040f65a5634ad34d716d14",
+      "archive_sha256": "d741f4f15030ee1b0effc46963684b2ba4344fac50d930c71868aacf358a86e0",
+      "server_dimensions": [
+        824,
+        824
+      ],
+      "native_dimensions": [
+        852,
+        852
+      ],
+      "native_flags": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "server_flags": [
+        0
+      ],
+      "overlap_mismatches": 548483,
+      "terrain_equal": false,
+      "routes": [
+        {
+          "x": 473,
+          "y": 300,
+          "steps": 0
+        },
+        {
+          "x": 368,
+          "y": 251,
+          "steps": 236
+        },
+        {
+          "x": 372,
+          "y": 251,
+          "steps": 240
+        }
+      ]
+    },
+    {
+      "map": 1020,
+      "server_sha256": "bdb39e79fd6a7701da0ea10a12c0753e8cd6f4187ff8719b05608699bc903b95",
+      "native_sha256": "816cf5004f2b3224e06dec9cb96bf9beaceedd0dee4e2e1c7f7e53ff940a2618",
+      "archive_sha256": null,
+      "server_dimensions": [
+        932,
+        932
+      ],
+      "native_dimensions": [
+        932,
+        932
+      ],
+      "native_flags": [
+        0,
+        1
+      ],
+      "server_flags": [
+        0,
+        1
+      ],
+      "overlap_mismatches": 2777,
+      "terrain_equal": false,
+      "routes": [
+        {
+          "x": 556,
+          "y": 571,
+          "steps": 0
+        },
+        {
+          "x": 865,
+          "y": 540,
+          "steps": 370
+        },
+        {
+          "x": 863,
+          "y": 538,
+          "steps": 370
+        },
+        {
+          "x": 863,
+          "y": 542,
+          "steps": 366
+        },
+        {
+          "x": 867,
+          "y": 542,
+          "steps": 370
+        },
+        {
+          "x": 219,
+          "y": 505,
+          "steps": 1607
+        },
+        {
+          "x": 620,
+          "y": 367,
+          "steps": 722
+        }
+      ]
+    }
+  ]
+}

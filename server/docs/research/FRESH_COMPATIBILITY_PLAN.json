@@ -1,0 +1,1167 @@
+{
+  "scope": "Fresh private career planning; stored receipts are not an independent completion percentage",
+  "checkpoint": "revora_fresh_couple_probe",
+  "snapshot_sha256": "5fb516baaf42b0437a3a74b767243f78449f1acdca8529b6507e40b777d2093a",
+  "input_sha256": {
+    "docs/research/FRESH_CAREER_RECEIPTS.json": "6dc7eec5e11e5499425d3b095f10e78c8df6fb5882dec3972de4c4b62c880584",
+    "docs/research/RETAINED_COMPATIBILITY_PLAN.json": "dca161ba3e7f7bca0ee9c46d0865bd77446933c11115d816a499f995d5eb0522",
+    "Game/Features/AchievementCatalog.cs": "d27e572f53ed8ab8741584dc5f4f1a97f06643e580f14212f3c1b168b0e05b95"
+  },
+  "profile": {
+    "level": 133,
+    "class": 25,
+    "reborn": 2
+  },
+  "catalog_count": 337,
+  "target": 320,
+  "stored_identity_count": 134,
+  "absent_identity_count": 203,
+  "source_counts": {
+    "ancient-collection-v1": 1,
+    "arena-class-victory": 1,
+    "arena-local-v1": 1,
+    "bp-pk-v1": 1,
+    "clan-founder-v1": 1,
+    "clan-territory-v1": 5,
+    "class-pk-v1": 1,
+    "class-promotion-v1": 9,
+    "classic-labyrinth-v1": 1,
+    "couple-pk-npc-v1": 2,
+    "ctf-local-v1": 2,
+    "demon-exterminators-v1": 1,
+    "dis-city-v1": 4,
+    "dragon-slayer-v1": 1,
+    "elite-pk-champion-v1": 1,
+    "equipment-gems-v1": 1,
+    "equipment-quests-revora-v1": 1,
+    "equipment-set-v1": 7,
+    "equipment-state-v1": 3,
+    "first-rebirth-v1": 2,
+    "flame-lit-v1": 1,
+    "flower-delivery-v1": 1,
+    "guild-beast-daily-v1": 1,
+    "guild-pole-hit-v1": 1,
+    "guild-siege-bomb-v1": 1,
+    "guild-war-occupation-v1": 1,
+    "guild-war-purse-v1": 1,
+    "honor-arena-ranking": 1,
+    "house-construction-v1": 5,
+    "house-furniture-v1": 1,
+    "monthly-pk-v1": 2,
+    "moon-box-v1": 1,
+    "mutual-marriage": 1,
+    "newcomer-intro-v1": 1,
+    "nobility-donation": 1,
+    "nobility-ranked-king": 1,
+    "observed-state": 13,
+    "power-arena-v1": 2,
+    "quiz-local-v1": 2,
+    "release-souls-v1": 1,
+    "rune-full-level-v1": 1,
+    "rune-loadout-v1": 2,
+    "second-rebirth-v1": 1,
+    "sky-pass-v1": 1,
+    "snake-islands-v1": 1,
+    "snow-banshee-kill-v1": 1,
+    "spook-kill-v1": 1,
+    "steed-course-v1": 2,
+    "study-reward-v1": 1,
+    "subclass-v1": 14,
+    "sword-master-kill-v1": 1,
+    "terato-kill-v1": 1,
+    "travel-region-v1": 20,
+    "weekly-pk-v1": 2
+  },
+  "currently_unavailable": [
+    10726,
+    11010,
+    11031,
+    11232
+  ],
+  "early_promotion_receipts_recovered_by_fresh_creation": [
+    10819
+  ],
+  "early_promotion_routes_still_unproven": [
+    10813,
+    10824,
+    10825,
+    10829,
+    10830,
+    10903,
+    10908,
+    10913,
+    11205,
+    11216,
+    11304
+  ],
+  "conservative_candidate_count": 322,
+  "candidate_margin_over_target": 2,
+  "candidate_receipts_absent": 188,
+  "absent_by_primary_producer": {
+    "Game/Features/ClassPromotion.cs": 41,
+    "Game/Features/AchievementCatalog.cs": 32,
+    "Game/Features/TravelProgress.cs": 26,
+    "Game/Features/WeaponSkillMastery.cs": 16,
+    "Game/Features/ArenaResultStatistics.cs": 10,
+    "Game/Features/CollectionAchievements.cs": 10,
+    "Game/Features/RuneLoadout.cs": 9,
+    "Game/Features/EquipmentAchievements.cs": 6,
+    "Game/Features/EquipmentUpgrades.cs": 5,
+    "Game/Features/PlayerDefeatCredit.cs": 5,
+    "Game/Features/FlowerDelivery.cs": 4,
+    "Game/Features/CosmeticOwnership.cs": 3,
+    "Game/Features/GuildLeadership.cs": 3,
+    "Game/Features/MonsterKoCounter.cs": 3,
+    "Game/Features/EquipmentSockets.cs": 2,
+    "Game/Features/GuildManagers.cs": 2,
+    "Game/Features/HouseVisits.cs": 2,
+    "Game/Features/MentorAdmissions.cs": 2,
+    "Game/Attacking/Handle.cs": 1,
+    "Game/Features/AbyssTrialWorld.cs": 1,
+    "Game/Features/AdventureTravel.cs": 1,
+    "Game/Features/ArenaParticipation.cs": 1,
+    "Game/Features/ArmorDyeShop.cs": 1,
+    "Game/Features/ArtifactApplication.cs": 1,
+    "Game/Features/ArtifactStabilization.cs": 1,
+    "Game/Features/AuraProgress.cs": 1,
+    "Game/Features/ClassicDances.cs": 1,
+    "Game/Features/EliminationRewards.cs": 1,
+    "Game/Features/Friendships.cs": 1,
+    "Game/Features/GuardTraining.cs": 1,
+    "Game/Features/GuildArsenalPurchases.cs": 1,
+    "Game/Features/LotteryDraws.cs": 1,
+    "Game/Features/MeteorDrops.cs": 1,
+    "Game/Features/PlayerRevival.cs": 1,
+    "Game/Features/PurseBalance.cs": 1,
+    "Game/Features/RefineryProgress.cs": 1,
+    "Game/Features/ShelbyRewards.cs": 1,
+    "Game/Features/SnowBansheeRewards.cs": 1,
+    "Game/Features/SteedBreeding.cs": 1,
+    "Game/Features/TradePartnerships.cs": 1
+  },
+  "absent_identities": [
+    {
+      "id": 10110,
+      "source_reference": "Game/Features/ShelbyRewards.cs:60",
+      "planning_excluded": false
+    },
+    {
+      "id": 10112,
+      "source_reference": "Game/Features/SteedBreeding.cs:105",
+      "planning_excluded": false
+    },
+    {
+      "id": 10113,
+      "source_reference": "Game/Features/CosmeticOwnership.cs:160",
+      "planning_excluded": false
+    },
+    {
+      "id": 10114,
+      "source_reference": "Game/Features/CosmeticOwnership.cs:156",
+      "planning_excluded": false
+    },
+    {
+      "id": 10115,
+      "source_reference": "Game/Features/ArmorDyeShop.cs:168",
+      "planning_excluded": false
+    },
+    {
+      "id": 10116,
+      "source_reference": "Game/Features/CosmeticOwnership.cs:158",
+      "planning_excluded": false
+    },
+    {
+      "id": 10117,
+      "source_reference": "Game/Features/AdventureTravel.cs:103",
+      "planning_excluded": false
+    },
+    {
+      "id": 10118,
+      "source_reference": "Game/Features/LotteryDraws.cs:151",
+      "planning_excluded": false
+    },
+    {
+      "id": 10119,
+      "source_reference": "Game/Features/GuardTraining.cs:29",
+      "planning_excluded": false
+    },
+    {
+      "id": 10121,
+      "source_reference": "Game/Features/ClassicDances.cs:56",
+      "planning_excluded": false
+    },
+    {
+      "id": 10123,
+      "source_reference": "Game/Features/Friendships.cs:128;Game/Features/Friendships.cs:129",
+      "planning_excluded": false
+    },
+    {
+      "id": 10124,
+      "source_reference": "Game/Features/MentorAdmissions.cs:151",
+      "planning_excluded": false
+    },
+    {
+      "id": 10125,
+      "source_reference": "Game/Features/MentorAdmissions.cs:152",
+      "planning_excluded": false
+    },
+    {
+      "id": 10126,
+      "source_reference": "Game/Features/TradePartnerships.cs:191;Game/Features/TradePartnerships.cs:192",
+      "planning_excluded": false
+    },
+    {
+      "id": 10128,
+      "source_reference": "Game/Features/PurseBalance.cs:282",
+      "planning_excluded": false
+    },
+    {
+      "id": 10130,
+      "source_reference": "Game/Attacking/Handle.cs:139;Game/Attacking/Handle.cs:140",
+      "planning_excluded": false
+    },
+    {
+      "id": 10131,
+      "source_reference": "Game/Features/HouseVisits.cs:162",
+      "planning_excluded": false
+    },
+    {
+      "id": 10132,
+      "source_reference": "Game/Features/HouseVisits.cs:163",
+      "planning_excluded": false
+    },
+    {
+      "id": 10221,
+      "source_reference": "Game/Features/GuildLeadership.cs:101",
+      "planning_excluded": false
+    },
+    {
+      "id": 10222,
+      "source_reference": "Game/Features/GuildLeadership.cs:99",
+      "planning_excluded": false
+    },
+    {
+      "id": 10223,
+      "source_reference": "Game/Features/GuildManagers.cs:162",
+      "planning_excluded": false
+    },
+    {
+      "id": 10224,
+      "source_reference": "Game/Features/GuildManagers.cs:167",
+      "planning_excluded": false
+    },
+    {
+      "id": 10225,
+      "source_reference": "Game/Features/GuildLeadership.cs:100",
+      "planning_excluded": false
+    },
+    {
+      "id": 10226,
+      "source_reference": "Game/Features/GuildArsenalPurchases.cs:80",
+      "planning_excluded": false
+    },
+    {
+      "id": 10227,
+      "source_reference": "Game/Features/PlayerDefeatCredit.cs:67",
+      "planning_excluded": false
+    },
+    {
+      "id": 10311,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10321,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10324,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10325,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10326,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10327,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10328,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10329,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10330,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10331,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10332,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10401,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10402,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10403,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10404,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10405,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10406,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10407,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10408,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 10416,
+      "source_reference": "Game/Features/EquipmentAchievements.cs:123",
+      "planning_excluded": false
+    },
+    {
+      "id": 10419,
+      "source_reference": "Game/Features/EquipmentAchievements.cs:110",
+      "planning_excluded": false
+    },
+    {
+      "id": 10420,
+      "source_reference": "Game/Features/EquipmentUpgrades.cs:433",
+      "planning_excluded": false
+    },
+    {
+      "id": 10421,
+      "source_reference": "Game/Features/EquipmentUpgrades.cs:434",
+      "planning_excluded": false
+    },
+    {
+      "id": 10422,
+      "source_reference": "Game/Features/EquipmentUpgrades.cs:439",
+      "planning_excluded": false
+    },
+    {
+      "id": 10423,
+      "source_reference": "Game/Features/EquipmentUpgrades.cs:436",
+      "planning_excluded": false
+    },
+    {
+      "id": 10424,
+      "source_reference": "Game/Features/EquipmentUpgrades.cs:437",
+      "planning_excluded": false
+    },
+    {
+      "id": 10425,
+      "source_reference": "Game/Features/EquipmentSockets.cs:154;Game/Features/EquipmentUpgrades.cs:440",
+      "planning_excluded": false
+    },
+    {
+      "id": 10426,
+      "source_reference": "Game/Features/EquipmentSockets.cs:155;Game/Features/EquipmentUpgrades.cs:441",
+      "planning_excluded": false
+    },
+    {
+      "id": 10430,
+      "source_reference": "Game/Features/EquipmentAchievements.cs:114",
+      "planning_excluded": false
+    },
+    {
+      "id": 10431,
+      "source_reference": "Game/Features/RefineryProgress.cs:118",
+      "planning_excluded": false
+    },
+    {
+      "id": 10432,
+      "source_reference": "Game/Features/EquipmentAchievements.cs:105",
+      "planning_excluded": false
+    },
+    {
+      "id": 10501,
+      "source_reference": "Game/Features/ArtifactApplication.cs:92",
+      "planning_excluded": false
+    },
+    {
+      "id": 10502,
+      "source_reference": "Game/Features/ArtifactStabilization.cs:70",
+      "planning_excluded": false
+    },
+    {
+      "id": 10503,
+      "source_reference": "Game/Features/EquipmentAchievements.cs:112",
+      "planning_excluded": false
+    },
+    {
+      "id": 10504,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:52",
+      "planning_excluded": false
+    },
+    {
+      "id": 10505,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:53",
+      "planning_excluded": false
+    },
+    {
+      "id": 10506,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:54",
+      "planning_excluded": false
+    },
+    {
+      "id": 10507,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:55",
+      "planning_excluded": false
+    },
+    {
+      "id": 10508,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:56",
+      "planning_excluded": false
+    },
+    {
+      "id": 10509,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:57",
+      "planning_excluded": false
+    },
+    {
+      "id": 10510,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:58",
+      "planning_excluded": false
+    },
+    {
+      "id": 10511,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:59",
+      "planning_excluded": false
+    },
+    {
+      "id": 10512,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:60",
+      "planning_excluded": false
+    },
+    {
+      "id": 10513,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:61",
+      "planning_excluded": false
+    },
+    {
+      "id": 10514,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:62",
+      "planning_excluded": false
+    },
+    {
+      "id": 10515,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:63",
+      "planning_excluded": false
+    },
+    {
+      "id": 10516,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:64",
+      "planning_excluded": false
+    },
+    {
+      "id": 10517,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:65",
+      "planning_excluded": false
+    },
+    {
+      "id": 10518,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:66",
+      "planning_excluded": false
+    },
+    {
+      "id": 10519,
+      "source_reference": "Game/Features/WeaponSkillMastery.cs:67",
+      "planning_excluded": false
+    },
+    {
+      "id": 10520,
+      "source_reference": "Game/Features/MonsterKoCounter.cs:72",
+      "planning_excluded": false
+    },
+    {
+      "id": 10521,
+      "source_reference": "Game/Features/MonsterKoCounter.cs:73",
+      "planning_excluded": false
+    },
+    {
+      "id": 10522,
+      "source_reference": "Game/Features/MonsterKoCounter.cs:74",
+      "planning_excluded": false
+    },
+    {
+      "id": 10523,
+      "source_reference": "Game/Features/SnowBansheeRewards.cs:132",
+      "planning_excluded": false
+    },
+    {
+      "id": 10524,
+      "source_reference": "Game/Features/MeteorDrops.cs:83",
+      "planning_excluded": false
+    },
+    {
+      "id": 10525,
+      "source_reference": "Game/Features/EquipmentAchievements.cs:21",
+      "planning_excluded": false
+    },
+    {
+      "id": 10605,
+      "source_reference": "Game/Features/PlayerDefeatCredit.cs:57",
+      "planning_excluded": false
+    },
+    {
+      "id": 10606,
+      "source_reference": "Game/Features/PlayerDefeatCredit.cs:58",
+      "planning_excluded": false
+    },
+    {
+      "id": 10607,
+      "source_reference": "Game/Features/PlayerDefeatCredit.cs:59",
+      "planning_excluded": false
+    },
+    {
+      "id": 10611,
+      "source_reference": "Game/Features/PlayerDefeatCredit.cs:60",
+      "planning_excluded": false
+    },
+    {
+      "id": 10614,
+      "source_reference": "Game/Features/TravelProgress.cs:77",
+      "planning_excluded": false
+    },
+    {
+      "id": 10620,
+      "source_reference": "Game/Features/TravelProgress.cs:81",
+      "planning_excluded": false
+    },
+    {
+      "id": 10621,
+      "source_reference": "Game/Features/TravelProgress.cs:82",
+      "planning_excluded": false
+    },
+    {
+      "id": 10622,
+      "source_reference": "Game/Features/TravelProgress.cs:83",
+      "planning_excluded": false
+    },
+    {
+      "id": 10708,
+      "source_reference": "Game/Features/TravelProgress.cs:91",
+      "planning_excluded": false
+    },
+    {
+      "id": 10709,
+      "source_reference": "Game/Features/TravelProgress.cs:92",
+      "planning_excluded": false
+    },
+    {
+      "id": 10710,
+      "source_reference": "Game/Features/TravelProgress.cs:93",
+      "planning_excluded": false
+    },
+    {
+      "id": 10711,
+      "source_reference": "Game/Features/TravelProgress.cs:94",
+      "planning_excluded": false
+    },
+    {
+      "id": 10712,
+      "source_reference": "Game/Features/TravelProgress.cs:95",
+      "planning_excluded": false
+    },
+    {
+      "id": 10713,
+      "source_reference": "Game/Features/TravelProgress.cs:96",
+      "planning_excluded": false
+    },
+    {
+      "id": 10714,
+      "source_reference": "Game/Features/TravelProgress.cs:97",
+      "planning_excluded": false
+    },
+    {
+      "id": 10715,
+      "source_reference": "Game/Features/TravelProgress.cs:98",
+      "planning_excluded": false
+    },
+    {
+      "id": 10716,
+      "source_reference": "Game/Features/TravelProgress.cs:99",
+      "planning_excluded": false
+    },
+    {
+      "id": 10717,
+      "source_reference": "Game/Features/TravelProgress.cs:100",
+      "planning_excluded": false
+    },
+    {
+      "id": 10718,
+      "source_reference": "Game/Features/TravelProgress.cs:101",
+      "planning_excluded": false
+    },
+    {
+      "id": 10719,
+      "source_reference": "Game/Features/TravelProgress.cs:102",
+      "planning_excluded": false
+    },
+    {
+      "id": 10720,
+      "source_reference": "Game/Features/TravelProgress.cs:103",
+      "planning_excluded": false
+    },
+    {
+      "id": 10721,
+      "source_reference": "Game/Features/TravelProgress.cs:104",
+      "planning_excluded": false
+    },
+    {
+      "id": 10723,
+      "source_reference": "Game/Features/TravelProgress.cs:105",
+      "planning_excluded": false
+    },
+    {
+      "id": 10724,
+      "source_reference": "Game/Features/TravelProgress.cs:106",
+      "planning_excluded": false
+    },
+    {
+      "id": 10725,
+      "source_reference": "Game/Features/TravelProgress.cs:107",
+      "planning_excluded": false
+    },
+    {
+      "id": 10726,
+      "source_reference": "Game/Features/TravelProgress.cs:108",
+      "planning_excluded": true
+    },
+    {
+      "id": 10727,
+      "source_reference": "Game/Features/TravelProgress.cs:109",
+      "planning_excluded": false
+    },
+    {
+      "id": 10801,
+      "source_reference": "Game/Features/TravelProgress.cs:110",
+      "planning_excluded": false
+    },
+    {
+      "id": 10807,
+      "source_reference": "Game/Features/TravelProgress.cs:116",
+      "planning_excluded": false
+    },
+    {
+      "id": 10809,
+      "source_reference": "Game/Features/TravelProgress.cs:118",
+      "planning_excluded": false
+    },
+    {
+      "id": 10813,
+      "source_reference": "Game/Features/ClassPromotion.cs:85",
+      "planning_excluded": true
+    },
+    {
+      "id": 10824,
+      "source_reference": "Game/Features/ClassPromotion.cs:175",
+      "planning_excluded": true
+    },
+    {
+      "id": 10825,
+      "source_reference": "Game/Features/ClassPromotion.cs:191",
+      "planning_excluded": true
+    },
+    {
+      "id": 10826,
+      "source_reference": "Game/Features/ClassPromotion.cs:194",
+      "planning_excluded": false
+    },
+    {
+      "id": 10827,
+      "source_reference": "Game/Features/ClassPromotion.cs:197",
+      "planning_excluded": false
+    },
+    {
+      "id": 10828,
+      "source_reference": "Game/Features/ClassPromotion.cs:200",
+      "planning_excluded": false
+    },
+    {
+      "id": 10829,
+      "source_reference": "Game/Features/ClassPromotion.cs:176",
+      "planning_excluded": true
+    },
+    {
+      "id": 10830,
+      "source_reference": "Game/Features/ClassPromotion.cs:179",
+      "planning_excluded": true
+    },
+    {
+      "id": 10831,
+      "source_reference": "Game/Features/ClassPromotion.cs:182",
+      "planning_excluded": false
+    },
+    {
+      "id": 10832,
+      "source_reference": "Game/Features/ClassPromotion.cs:185",
+      "planning_excluded": false
+    },
+    {
+      "id": 10901,
+      "source_reference": "Game/Features/ClassPromotion.cs:188",
+      "planning_excluded": false
+    },
+    {
+      "id": 10902,
+      "source_reference": "Game/Features/PlayerRevival.cs:69",
+      "planning_excluded": false
+    },
+    {
+      "id": 10903,
+      "source_reference": "Game/Features/ClassPromotion.cs:100",
+      "planning_excluded": true
+    },
+    {
+      "id": 10904,
+      "source_reference": "Game/Features/ClassPromotion.cs:103",
+      "planning_excluded": false
+    },
+    {
+      "id": 10905,
+      "source_reference": "Game/Features/ClassPromotion.cs:106",
+      "planning_excluded": false
+    },
+    {
+      "id": 10906,
+      "source_reference": "Game/Features/ClassPromotion.cs:109",
+      "planning_excluded": false
+    },
+    {
+      "id": 10907,
+      "source_reference": "Game/Features/ClassPromotion.cs:112",
+      "planning_excluded": false
+    },
+    {
+      "id": 10908,
+      "source_reference": "Game/Features/ClassPromotion.cs:115",
+      "planning_excluded": true
+    },
+    {
+      "id": 10909,
+      "source_reference": "Game/Features/ClassPromotion.cs:118",
+      "planning_excluded": false
+    },
+    {
+      "id": 10910,
+      "source_reference": "Game/Features/ClassPromotion.cs:121",
+      "planning_excluded": false
+    },
+    {
+      "id": 10911,
+      "source_reference": "Game/Features/ClassPromotion.cs:124",
+      "planning_excluded": false
+    },
+    {
+      "id": 10912,
+      "source_reference": "Game/Features/ClassPromotion.cs:127",
+      "planning_excluded": false
+    },
+    {
+      "id": 10913,
+      "source_reference": "Game/Features/ClassPromotion.cs:130",
+      "planning_excluded": true
+    },
+    {
+      "id": 10914,
+      "source_reference": "Game/Features/ClassPromotion.cs:133",
+      "planning_excluded": false
+    },
+    {
+      "id": 10915,
+      "source_reference": "Game/Features/ClassPromotion.cs:136",
+      "planning_excluded": false
+    },
+    {
+      "id": 10916,
+      "source_reference": "Game/Features/ClassPromotion.cs:139",
+      "planning_excluded": false
+    },
+    {
+      "id": 10917,
+      "source_reference": "Game/Features/ClassPromotion.cs:142",
+      "planning_excluded": false
+    },
+    {
+      "id": 10919,
+      "source_reference": "Game/Features/AuraProgress.cs:13",
+      "planning_excluded": false
+    },
+    {
+      "id": 11010,
+      "source_reference": "Game/Features/EliminationRewards.cs:37",
+      "planning_excluded": true
+    },
+    {
+      "id": 11031,
+      "source_reference": "Game/Features/AbyssTrialWorld.cs:210",
+      "planning_excluded": true
+    },
+    {
+      "id": 11102,
+      "source_reference": "Game/Features/ArenaResultStatistics.cs:89",
+      "planning_excluded": false
+    },
+    {
+      "id": 11103,
+      "source_reference": "Game/Features/ArenaResultStatistics.cs:90",
+      "planning_excluded": false
+    },
+    {
+      "id": 11104,
+      "source_reference": "Game/Features/ArenaResultStatistics.cs:91",
+      "planning_excluded": false
+    },
+    {
+      "id": 11105,
+      "source_reference": "Game/Features/ArenaResultStatistics.cs:92",
+      "planning_excluded": false
+    },
+    {
+      "id": 11106,
+      "source_reference": "Game/Features/ArenaResultStatistics.cs:93",
+      "planning_excluded": false
+    },
+    {
+      "id": 11107,
+      "source_reference": "Game/Features/ArenaResultStatistics.cs:94",
+      "planning_excluded": false
+    },
+    {
+      "id": 11108,
+      "source_reference": "Game/Features/ArenaResultStatistics.cs:95",
+      "planning_excluded": false
+    },
+    {
+      "id": 11109,
+      "source_reference": "Game/Features/ArenaResultStatistics.cs:96",
+      "planning_excluded": false
+    },
+    {
+      "id": 11111,
+      "source_reference": "Game/Features/ArenaParticipation.cs:60",
+      "planning_excluded": false
+    },
+    {
+      "id": 11112,
+      "source_reference": "Game/Features/ArenaResultStatistics.cs:117",
+      "planning_excluded": false
+    },
+    {
+      "id": 11124,
+      "source_reference": "Game/Features/FlowerDelivery.cs:60",
+      "planning_excluded": false
+    },
+    {
+      "id": 11125,
+      "source_reference": "Game/Features/FlowerDelivery.cs:62",
+      "planning_excluded": false
+    },
+    {
+      "id": 11126,
+      "source_reference": "Game/Features/FlowerDelivery.cs:63",
+      "planning_excluded": false
+    },
+    {
+      "id": 11127,
+      "source_reference": "Game/Features/FlowerDelivery.cs:61",
+      "planning_excluded": false
+    },
+    {
+      "id": 11205,
+      "source_reference": "Game/Features/ClassPromotion.cs:145",
+      "planning_excluded": true
+    },
+    {
+      "id": 11206,
+      "source_reference": "Game/Features/ClassPromotion.cs:148",
+      "planning_excluded": false
+    },
+    {
+      "id": 11207,
+      "source_reference": "Game/Features/ClassPromotion.cs:151",
+      "planning_excluded": false
+    },
+    {
+      "id": 11208,
+      "source_reference": "Game/Features/ClassPromotion.cs:154",
+      "planning_excluded": false
+    },
+    {
+      "id": 11209,
+      "source_reference": "Game/Features/ClassPromotion.cs:157",
+      "planning_excluded": false
+    },
+    {
+      "id": 11210,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 11211,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 11212,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 11213,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 11214,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 11215,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 11216,
+      "source_reference": "Game/Features/ClassPromotion.cs:160",
+      "planning_excluded": true
+    },
+    {
+      "id": 11217,
+      "source_reference": "Game/Features/ClassPromotion.cs:163",
+      "planning_excluded": false
+    },
+    {
+      "id": 11218,
+      "source_reference": "Game/Features/ClassPromotion.cs:166",
+      "planning_excluded": false
+    },
+    {
+      "id": 11219,
+      "source_reference": "Game/Features/ClassPromotion.cs:169",
+      "planning_excluded": false
+    },
+    {
+      "id": 11220,
+      "source_reference": "Game/Features/ClassPromotion.cs:172",
+      "planning_excluded": false
+    },
+    {
+      "id": 11221,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 11222,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 11223,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 11224,
+      "source_reference": "Game/Features/CollectionAchievements.cs:32",
+      "planning_excluded": false
+    },
+    {
+      "id": 11225,
+      "source_reference": "Game/Features/CollectionAchievements.cs:33",
+      "planning_excluded": false
+    },
+    {
+      "id": 11226,
+      "source_reference": "Game/Features/CollectionAchievements.cs:34",
+      "planning_excluded": false
+    },
+    {
+      "id": 11227,
+      "source_reference": "Game/Features/CollectionAchievements.cs:35",
+      "planning_excluded": false
+    },
+    {
+      "id": 11228,
+      "source_reference": "Game/Features/CollectionAchievements.cs:36",
+      "planning_excluded": false
+    },
+    {
+      "id": 11229,
+      "source_reference": "Game/Features/CollectionAchievements.cs:37",
+      "planning_excluded": false
+    },
+    {
+      "id": 11230,
+      "source_reference": "Game/Features/CollectionAchievements.cs:38",
+      "planning_excluded": false
+    },
+    {
+      "id": 11231,
+      "source_reference": "Game/Features/CollectionAchievements.cs:39",
+      "planning_excluded": false
+    },
+    {
+      "id": 11232,
+      "source_reference": "Game/Features/CollectionAchievements.cs:40",
+      "planning_excluded": true
+    },
+    {
+      "id": 11301,
+      "source_reference": "Game/Features/CollectionAchievements.cs:41",
+      "planning_excluded": false
+    },
+    {
+      "id": 11302,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 11303,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 11304,
+      "source_reference": "Game/Features/ClassPromotion.cs:203",
+      "planning_excluded": true
+    },
+    {
+      "id": 11305,
+      "source_reference": "Game/Features/ClassPromotion.cs:206",
+      "planning_excluded": false
+    },
+    {
+      "id": 11306,
+      "source_reference": "Game/Features/ClassPromotion.cs:209",
+      "planning_excluded": false
+    },
+    {
+      "id": 11307,
+      "source_reference": "Game/Features/ClassPromotion.cs:212",
+      "planning_excluded": false
+    },
+    {
+      "id": 11308,
+      "source_reference": "Game/Features/ClassPromotion.cs:215",
+      "planning_excluded": false
+    },
+    {
+      "id": 11309,
+      "source_reference": "Game/Features/ArenaResultStatistics.cs:97",
+      "planning_excluded": false
+    },
+    {
+      "id": 11312,
+      "source_reference": "Game/Features/RuneLoadout.cs:79",
+      "planning_excluded": false
+    },
+    {
+      "id": 11314,
+      "source_reference": "Game/Features/RuneLoadout.cs:81",
+      "planning_excluded": false
+    },
+    {
+      "id": 11315,
+      "source_reference": "Game/Features/RuneLoadout.cs:82",
+      "planning_excluded": false
+    },
+    {
+      "id": 11316,
+      "source_reference": "Game/Features/RuneLoadout.cs:83",
+      "planning_excluded": false
+    },
+    {
+      "id": 11317,
+      "source_reference": "Game/Features/RuneLoadout.cs:84",
+      "planning_excluded": false
+    },
+    {
+      "id": 11318,
+      "source_reference": "Game/Features/RuneLoadout.cs:85",
+      "planning_excluded": false
+    },
+    {
+      "id": 11319,
+      "source_reference": "Game/Features/RuneLoadout.cs:86",
+      "planning_excluded": false
+    },
+    {
+      "id": 11320,
+      "source_reference": "Game/Features/RuneLoadout.cs:87",
+      "planning_excluded": false
+    },
+    {
+      "id": 11321,
+      "source_reference": "Game/Features/RuneLoadout.cs:88",
+      "planning_excluded": false
+    },
+    {
+      "id": 11322,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    },
+    {
+      "id": 11323,
+      "source_reference": "Game/Features/AchievementCatalog.cs:Observe",
+      "planning_excluded": false
+    }
+  ],
+  "compatible_career_verified": false,
+  "limitations": [
+    "The eleven remaining early-promotion exclusions inherit reviewed rite constraints; this is a planning assumption, not a global impossibility proof.",
+    "Controlled travel coordinates generated region receipts; their presence does not prove independently navigated ordinary travel.",
+    "Observed-state and equipment receipts require their documented profile/ownership context, not just row presence.",
+    "The fresh journey preserves ordinary creation/earning but controls some timing, proximity and combat cooldowns; native acceptance remains pending.",
+    "Source presence and candidate count do not prove jointly earnable prerequisites or public release readiness."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "source_sha256": {
+    "quest": "f783c2a8ead9461a469c79b6c7e7aae00b2604066d4bc6e2e2c56d7e98fc5e14",
+    "items": "52889c537ddd00a6f4d349fa9243268dfedc81ab3899523f1e434218735387cb"
+  },
+  "mission": 200,
+  "category": 4,
+  "begin": "8796,1004,51,49,TaskmasterChang,JobCenter",
+  "finish": "10850,1011,212,196,Mr.Wonder,PhoenixCastle",
+  "client_levels": [
+    120,
+    200
+  ],
+  "client_checked_quest": 3429,
+  "checked_quest_present": false,
+  "items": {
+    "204008": {
+      "name": "TempestWing",
+      "required_class": 0,
+      "level": 100
+    },
+    "720027": {
+      "name": "MeteorScroll",
+      "required_class": 0,
+      "level": 0
+    },
+    "3006392": {
+      "name": "Roc`sFeather",
+      "required_class": 0,
+      "level": 0
+    }
+  },
+  "official_entry": {
+    "meteor_scroll_id": 720027,
+    "count": 5,
+    "level": 100,
+    "reborn_alternative": true
+  },
+  "conflicts": [
+    "Client level120 versus official level100-or-reborn",
+    "Legacy NPC600065 level130/second-reborn menu versus journal actors8796/10850",
+    "Legacy option3 charges50000CP; official entry consumes five Meteor Scrolls",
+    "Legacy option2 randomizes204009 or3006594; journal promises bound204008",
+    "Client quest3429 check is not a verified server receipt"
+  ],
+  "original_drop_odds": null,
+  "original_monster_stats": null,
+  "rainbow_sky_identity_verified": false,
+  "aggregate_10931_proven": false,
+  "implemented": false,
+  "native_acceptance": false
+}

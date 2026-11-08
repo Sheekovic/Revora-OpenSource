@@ -1,0 +1,1320 @@
+{
+  "scope": "Concrete target selection and historical BP arithmetic; not a jointly earned career certificate",
+  "input_sha256": {
+    "docs/research/CURRENT_CAREER_CANDIDATES.json": "18e3012180a59d8cdc9d96bbfd0d3db5b720dfe119e08f843bb893a56d66f15d",
+    "docs/research/CURRENT_CAREER_RECEIPTS.json": "71f6d8fd463c699926977d3d18f0c71c4e0493f60e420e2095323fd36e6d1811",
+    "docs/research/RETAINED_EARNING_REVIEW.json": "51407c7176c2e8834a4a141e6384c4bd2b5fd9b1917b832a1882349892e4018e",
+    "docs/research/RETAINED_OBSERVED_PROVENANCE.json": "26df52e00a062047216946d3c19f2e6f5f884032667ecbe097e753523843845e",
+    "docs/research/RETAINED_COLLECTION_200.json": "8fe23748622d0520c944ea9346f85eab153a2f89890d66e41ba1dd20a70e93dd",
+    "docs/research/RETAINED_BATTLE_POWER_AUDIT.json": "f591c2d287efe65fa1731aadc81032277a22f78cc2628a7d82439e3374c795fc",
+    "docs/research/FRESH_DUKE_FUNDING_BOUND.json": "c88c12cce2c2d095390bd74a7a37dc53ad33edc51b948aa20757cea28129d7bf",
+    "docs/research/CAREER_RESOURCE_DEPENDENCIES.json": "ca6701d6b225eb3116bf43cf619716a7131da9d2209d03c2edd9ee9caa8eb6c3",
+    "docs/research/CAREER_ORDERING_REVIEW.json": "adaa17a1e56ee11d018dd17b8098ebc3e0a9723b77f879938a475626869436ab",
+    "docs/research/CAREER_FUNDING_RECURRENCE.json": "f3f16ad849b3a02373de91db36ffc0edb8f26db1c9f078009d39dee2ca5564fe",
+    "docs/research/FRESH_NORMAL_KO.json": "48883392e4dd929b67dcd1ec73462733ddc854336232b68f88d6892002d2e7f2",
+    "docs/research/FRESH_SNOW_TIMED_COMBAT.json": "d091c65169f93754189b9299f2ef44a90fda1da07e0f41ef85158ff3877080e4",
+    "docs/research/ROADMAP_COMBAT_CLOSEOUT.json": "6f7cb0176e933cd93a511b29c22c512a6a7c78eee48d3fed9fdd5e6da30cbcde",
+    "docs/research/FRESH_ARCHER_ARROW.json": "61e765d76a9700e76f16a32a85042a2326190b38d7cbbef9c1f6678667d1b0ad",
+    "docs/research/FRESH_MOON_VALIDATION.json": "620b2b5caf0ae09822865b61487eefc94023f36c9e88e0b3ce3f4f7a5a6f6b2b",
+    "docs/research/POWER_ARENA_WINDOW_BUDGET.json": "819fdc294f33572369c6c7c39d92d2f950f78ad58a86eb81dca435bcba505627",
+    "docs/research/COLLECTION_RELEASE_SUPPLY.json": "d17143136b9c9f8dc250f0aeb57ac8a3ddfb2c4d9207a3f5b10479b977718bcf",
+    "docs/research/FLAME_GATE_BUDGET.json": "ad6b78534e46f22c904d664d518e75e37e30d4cf9d94a998bda42f2b96fd5c5d",
+    "docs/research/CAREER_CATALOG_COMBAT.json": "debef50f4e7700c2ba50c5ffd7aadf40a1721d5cb3d33ba26490f7c2298a9b98",
+    "docs/research/DIS_CITY_COMBAT_BUDGET.json": "8b2f8df66c36e0c8c278355476d07ffba29918862b9d16a43e951eb42eb314e2",
+    "docs/research/UNARMED_EXTRACTION_BUDGET.json": "cdfcbfff3470df6e82bd29eccccfb0d1ce94bb38500fdee2e3a9925d7089366e",
+    "docs/research/CAREER_320_ACCEPTANCE_GAPS.json": "8258470b155137ea7bfdbe924dbecc21818551fb88d502532a59b85acc32b4b5"
+  },
+  "target": 320,
+  "selected_count": 320,
+  "selected_ids": [
+    10101,
+    10102,
+    10103,
+    10104,
+    10105,
+    10106,
+    10107,
+    10108,
+    10110,
+    10112,
+    10113,
+    10114,
+    10115,
+    10116,
+    10117,
+    10118,
+    10119,
+    10120,
+    10121,
+    10122,
+    10123,
+    10124,
+    10125,
+    10126,
+    10127,
+    10128,
+    10129,
+    10130,
+    10131,
+    10132,
+    10218,
+    10219,
+    10221,
+    10222,
+    10223,
+    10224,
+    10225,
+    10226,
+    10227,
+    10228,
+    10230,
+    10231,
+    10232,
+    10301,
+    10302,
+    10303,
+    10304,
+    10305,
+    10306,
+    10307,
+    10308,
+    10309,
+    10310,
+    10311,
+    10312,
+    10313,
+    10314,
+    10315,
+    10316,
+    10317,
+    10319,
+    10320,
+    10321,
+    10322,
+    10323,
+    10324,
+    10325,
+    10326,
+    10327,
+    10328,
+    10329,
+    10330,
+    10331,
+    10332,
+    10401,
+    10402,
+    10403,
+    10404,
+    10405,
+    10406,
+    10407,
+    10408,
+    10409,
+    10410,
+    10411,
+    10412,
+    10413,
+    10414,
+    10415,
+    10416,
+    10417,
+    10418,
+    10419,
+    10420,
+    10421,
+    10422,
+    10423,
+    10424,
+    10425,
+    10426,
+    10428,
+    10429,
+    10430,
+    10431,
+    10432,
+    10501,
+    10502,
+    10503,
+    10504,
+    10505,
+    10506,
+    10507,
+    10508,
+    10509,
+    10510,
+    10511,
+    10512,
+    10513,
+    10514,
+    10515,
+    10516,
+    10517,
+    10518,
+    10519,
+    10520,
+    10521,
+    10522,
+    10523,
+    10524,
+    10525,
+    10526,
+    10527,
+    10528,
+    10529,
+    10605,
+    10606,
+    10607,
+    10611,
+    10612,
+    10613,
+    10614,
+    10617,
+    10618,
+    10619,
+    10620,
+    10621,
+    10622,
+    10625,
+    10626,
+    10629,
+    10631,
+    10701,
+    10702,
+    10703,
+    10708,
+    10709,
+    10710,
+    10711,
+    10712,
+    10713,
+    10714,
+    10715,
+    10716,
+    10717,
+    10718,
+    10719,
+    10720,
+    10721,
+    10723,
+    10724,
+    10725,
+    10727,
+    10801,
+    10802,
+    10803,
+    10804,
+    10805,
+    10806,
+    10807,
+    10808,
+    10809,
+    10810,
+    10812,
+    10814,
+    10815,
+    10816,
+    10817,
+    10820,
+    10821,
+    10822,
+    10823,
+    10826,
+    10827,
+    10828,
+    10831,
+    10832,
+    10901,
+    10902,
+    10904,
+    10905,
+    10906,
+    10907,
+    10909,
+    10910,
+    10911,
+    10912,
+    10914,
+    10915,
+    10916,
+    10917,
+    10919,
+    10920,
+    10921,
+    10922,
+    10923,
+    10924,
+    10925,
+    10926,
+    10927,
+    10928,
+    10929,
+    10930,
+    10931,
+    10932,
+    11001,
+    11002,
+    11003,
+    11004,
+    11005,
+    11012,
+    11013,
+    11014,
+    11016,
+    11018,
+    11019,
+    11020,
+    11022,
+    11027,
+    11030,
+    11032,
+    11101,
+    11102,
+    11103,
+    11104,
+    11105,
+    11106,
+    11107,
+    11108,
+    11109,
+    11111,
+    11112,
+    11113,
+    11114,
+    11115,
+    11116,
+    11117,
+    11118,
+    11119,
+    11121,
+    11122,
+    11123,
+    11124,
+    11125,
+    11126,
+    11127,
+    11128,
+    11131,
+    11132,
+    11201,
+    11202,
+    11203,
+    11204,
+    11206,
+    11207,
+    11208,
+    11209,
+    11210,
+    11211,
+    11212,
+    11213,
+    11214,
+    11215,
+    11217,
+    11218,
+    11219,
+    11220,
+    11221,
+    11222,
+    11223,
+    11224,
+    11225,
+    11226,
+    11227,
+    11228,
+    11229,
+    11230,
+    11231,
+    11232,
+    11301,
+    11302,
+    11303,
+    11305,
+    11306,
+    11307,
+    11308,
+    11309,
+    11310,
+    11311,
+    11312,
+    11313,
+    11314,
+    11315,
+    11316,
+    11317,
+    11318,
+    11319,
+    11320,
+    11321,
+    11322,
+    11323
+  ],
+  "omitted_nobility_ids": [
+    10318,
+    11120
+  ],
+  "reason": "Avoid requiring donation/King receipts whose ordinary NPC/native access remains unresolved.",
+  "review_coverage": [
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 0,
+      "ids": [
+        10814,
+        10815,
+        10816,
+        10817,
+        10820,
+        10821,
+        10822,
+        10823,
+        10826,
+        10827,
+        10828,
+        10831,
+        10832,
+        10901,
+        10904,
+        10905,
+        10906,
+        10907,
+        10909,
+        10910,
+        10911,
+        10912,
+        10914,
+        10915,
+        10916,
+        10917,
+        11206,
+        11207,
+        11208,
+        11209,
+        11217,
+        11218,
+        11219,
+        11220,
+        11305,
+        11306,
+        11307,
+        11308
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 1,
+      "ids": [
+        10920,
+        10921,
+        10922,
+        10923,
+        10924,
+        10925,
+        10926,
+        10927,
+        10928,
+        10929,
+        11201,
+        11202,
+        11203,
+        11204
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 2,
+      "ids": [
+        11310,
+        11311,
+        11312,
+        11313,
+        11314,
+        11315,
+        11316,
+        11317,
+        11318,
+        11319,
+        11320,
+        11321
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 3,
+      "ids": [
+        10504,
+        10505,
+        10506,
+        10507,
+        10508,
+        10509,
+        10510,
+        10511,
+        10512,
+        10513,
+        10514,
+        10515,
+        10516,
+        10517,
+        10518,
+        10519
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 4,
+      "ids": [
+        10919
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 5,
+      "ids": [
+        11020
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 6,
+      "ids": [
+        10227,
+        10605,
+        10606,
+        10607,
+        10611
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 7,
+      "ids": [
+        10931
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 8,
+      "ids": [
+        10409,
+        10410,
+        10411,
+        10412,
+        10413,
+        10414,
+        10415,
+        10416,
+        10417,
+        10418,
+        10419,
+        10428,
+        10429,
+        10430,
+        10432,
+        10503
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 9,
+      "ids": [
+        10420,
+        10421,
+        10422,
+        10423,
+        10424,
+        10425,
+        10426
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 10,
+      "ids": [
+        10501,
+        10502
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 11,
+      "ids": [
+        10431
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 12,
+      "ids": [
+        10620,
+        10621,
+        10622,
+        10703
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 13,
+      "ids": [
+        10712,
+        10715,
+        10716,
+        10717,
+        10718,
+        10810
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 14,
+      "ids": [
+        10708,
+        10709,
+        10710,
+        10711,
+        10713,
+        10714,
+        10719,
+        10720,
+        10721
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 15,
+      "ids": [
+        10617,
+        10625,
+        10629,
+        10701,
+        10812
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 16,
+      "ids": [
+        10801,
+        10802,
+        10808
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 17,
+      "ids": [
+        10614,
+        10619,
+        10631,
+        10807
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 18,
+      "ids": [
+        10803
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 19,
+      "ids": [
+        10804,
+        10805,
+        10806
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 20,
+      "ids": [
+        10723,
+        10724,
+        10725,
+        10727
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 21,
+      "ids": [
+        10809
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 22,
+      "ids": [
+        10612,
+        10613,
+        10618,
+        10626,
+        10702
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 23,
+      "ids": [
+        10102,
+        10103,
+        10104,
+        10105,
+        10122
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 24,
+      "ids": [
+        10101
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 25,
+      "ids": [
+        10123,
+        10131,
+        10132
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 26,
+      "ids": [
+        10126
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 27,
+      "ids": [
+        10110,
+        10124,
+        10125
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 28,
+      "ids": [
+        10902
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 29,
+      "ids": [
+        10113,
+        10114,
+        10115,
+        10116,
+        10121
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 30,
+      "ids": [
+        10119
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 31,
+      "ids": [
+        10112
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 32,
+      "ids": [
+        10315,
+        11030
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 33,
+      "ids": [
+        10316
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 34,
+      "ids": [
+        11224,
+        11225,
+        11226,
+        11227,
+        11228,
+        11229,
+        11230,
+        11231,
+        11301
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 35,
+      "ids": [
+        10127,
+        10129,
+        11124,
+        11125,
+        11126,
+        11127
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 36,
+      "ids": [
+        10130
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 37,
+      "ids": [
+        10128
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 38,
+      "ids": [
+        10118
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 39,
+      "ids": [
+        10320,
+        11032,
+        11101,
+        11102,
+        11103,
+        11104,
+        11105,
+        11106,
+        11107,
+        11108,
+        11109,
+        11111,
+        11112,
+        11309
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 40,
+      "ids": [
+        11116,
+        11117,
+        11118,
+        11119,
+        11131
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 41,
+      "ids": [
+        11114
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 42,
+      "ids": [
+        11113,
+        11122
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 43,
+      "ids": [
+        10304,
+        10305,
+        10306,
+        10307,
+        10308,
+        10309
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 44,
+      "ids": [
+        10221,
+        10222,
+        10223,
+        10224,
+        10225
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 45,
+      "ids": [
+        10226
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 46,
+      "ids": [
+        10228,
+        10232,
+        10302,
+        10303
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 47,
+      "ids": [
+        10231
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 48,
+      "ids": [
+        10117
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 49,
+      "ids": [
+        11001
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 50,
+      "ids": [
+        10526,
+        10932
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 51,
+      "ids": [
+        10523,
+        10527
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 52,
+      "ids": [
+        10528
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 53,
+      "ids": [
+        10520,
+        10521,
+        10522,
+        10524
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 54,
+      "ids": [
+        10529
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 55,
+      "ids": [
+        11002,
+        11003,
+        11004,
+        11005
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 56,
+      "ids": [
+        11019
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 57,
+      "ids": [
+        11013,
+        11014
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 58,
+      "ids": [
+        11016
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 59,
+      "ids": [
+        11027
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 60,
+      "ids": [
+        11022
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 61,
+      "ids": [
+        10319,
+        11012
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 62,
+      "ids": [
+        11018
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 63,
+      "ids": [
+        11115,
+        11121
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 64,
+      "ids": [
+        10230,
+        10301
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 65,
+      "ids": [
+        11123
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 66,
+      "ids": [
+        10930
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 67,
+      "ids": [
+        10120,
+        11128
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_EARNING_REVIEW.json",
+      "group_index": 69,
+      "ids": [
+        10525
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_OBSERVED_PROVENANCE.json",
+      "group_index": 0,
+      "ids": [
+        10321,
+        10322,
+        10323,
+        10324,
+        10325,
+        10326,
+        10327,
+        10328,
+        10329,
+        10330,
+        10331,
+        10332,
+        10401,
+        10402,
+        10403,
+        10404,
+        10405,
+        10406,
+        10407,
+        10408,
+        11132,
+        11210,
+        11211,
+        11212,
+        11213,
+        11214,
+        11215,
+        11221,
+        11222,
+        11223,
+        11302,
+        11303,
+        11322,
+        11323
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_OBSERVED_PROVENANCE.json",
+      "group_index": 1,
+      "ids": [
+        10310,
+        10311
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_OBSERVED_PROVENANCE.json",
+      "group_index": 2,
+      "ids": [
+        10218,
+        10219
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_OBSERVED_PROVENANCE.json",
+      "group_index": 3,
+      "ids": [
+        10107,
+        10108
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_OBSERVED_PROVENANCE.json",
+      "group_index": 4,
+      "ids": [
+        10317
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_OBSERVED_PROVENANCE.json",
+      "group_index": 5,
+      "ids": [
+        10106
+      ]
+    },
+    {
+      "review": "docs/research/RETAINED_OBSERVED_PROVENANCE.json",
+      "group_index": 6,
+      "ids": [
+        10312,
+        10313,
+        10314
+      ]
+    }
+  ],
+  "collection_review": "docs/research/RETAINED_COLLECTION_200.json",
+  "collection_release_dependency": {
+    "review": "docs/research/COLLECTION_RELEASE_SUPPLY.json",
+    "installed_supplier_potential": {
+      "Garments": 250,
+      "Mounts": 186
+    },
+    "staged_supplier_potential": {
+      "Garments": 250,
+      "Mounts": 203
+    },
+    "requires_coordinated_catalog_release": true,
+    "native_acceptance": false,
+    "scope": "Reuse historical earning only with its restored suppliers. Staged capacity is not installed availability or a newly earned collection."
+  },
+  "battle_power_dependency": {
+    "historical_total": 360,
+    "without_nobility": 348,
+    "level_rebirth_equipment_only": 342,
+    "highest_selected_threshold": 300,
+    "scope": "Arithmetic on a previously validated repaired loadout, not a new zero-nobility gameplay run."
+  },
+  "compatible_career_verified": false,
+  "ordered_state_dependency": {
+    "review": "docs/research/CAREER_ORDERING_REVIEW.json",
+    "sequence": [
+      "Earn bootstrap and first rebirth, retaining prior receipts; fund the ordinary Exemption Token for second rebirth.",
+      "Complete each selected trainer, active-skill, mastery and rune milestone before the next paid class change; maintain equipment and recovery funds.",
+      "Complete the female flower direction before marriage, then mutual marriage/hand-holding and Couple PK. Class changes preserve supported body gender.",
+      "Earn the final Pirate trainer milestones before the peak purchase, which directly sets final class.",
+      "Acquire and retain distinct permanent wardrobe designs; class and body gender are not collection predicates.",
+      "Keep Honor and Virtue expenditures separate from bounty currencies, and train subclasses incrementally within Study capacity."
+    ],
+    "scope": "Resolved ordering prerequisites only. Does not combine fresh and retained receipts or certify the complete320 career."
+  },
+  "funding_dependency": {
+    "review": "docs/research/FRESH_DUKE_FUNDING_BOUND.json",
+    "recurrence_review": "docs/research/CAREER_FUNDING_RECURRENCE.json",
+    "purchase_policy": "Accumulate funds before a quoted purchase or class reset. Preserve R and the qualified funding loadout. Spend between cycles to retain CP/RVP/silver headroom; do not rely on a payout beyond the caps.",
+    "scope": "Loaded ordinary Duke stats, conservative combat/repair arithmetic and reused payment/repair evidence; not native timing or a full-career budget.",
+    "modeled_hunt_ms": 6911000,
+    "net_silver_bound": 5628944
+  },
+  "resource_dependency": {
+    "review": "docs/research/CAREER_RESOURCE_DEPENDENCIES.json",
+    "second_rebirth_route": "Purchased Exemption Token; no disabled Abyss dependency",
+    "second_rebirth_cps": 888,
+    "all_subclasses_from_zero_study_cps": 51389,
+    "scope": "Specific resource joins only; Honor and Virtue retain their separate earned sources."
+  },
+  "reconciled_encounter_dependencies": {
+    "unarmed_extraction": {
+      "review": "docs/research/UNARMED_EXTRACTION_BUDGET.json",
+      "status": "weapon-assisted-final-blow-budget",
+      "scope": "Weapon-assisted unarmed final blow under existing10525 rules; calculated budget, not a new earned victory",
+      "limits": [
+        "Native attack/unequip/medicine timing, approach and exit navigation, crowds and hostile players remain acceptance gates.180seconds is an explicit travel allowance, not measured movement.",
+        "This demonstrates a valid final-blow route; it does not certify a full unarmed5M fight. Existing retained122-hit unarmed earning and cold-recovery evidence is independent and unchanged.",
+        "Initial diagnostic using low-level retained snapshot without Chi/fan failed; do not substitute that old rebirth gear for the paid Archer kit.",
+        "An early fixture with ordinary monster damage omitted ExpeditionField.TryHit; the final result explicitly uses its5500maximum.",
+        "No new receipts minted; no joint320 certificate or live deployment."
+      ]
+    },
+    "dis_city": {
+      "review": "docs/research/DIS_CITY_COMBAT_BUDGET.json",
+      "status": "standard-numeric-stock-bound",
+      "scope": "Standard revision1 Dis City production calculator bounds using loaded defense and production difficulty profile; no new earning journey",
+      "limits": [
+        "Not crowds, travel, native movement, full event timing or all-difficulty balance acceptance.",
+        "600attack seconds is not elapsed floor time; production replenishes24monsters on its2second scan and each floor receives2hours.",
+        "Existing actual earned Dis City and cold-persistence evidence is reused; this model supplies the missing numerical survival/stock check only.",
+        "Does not certify joint320 or unarmed Extraction."
+      ]
+    },
+    "catalog_families": {
+      "review": "docs/research/CAREER_CATALOG_COMBAT.json",
+      "status": "independent-one-enemy-bounds",
+      "scope": "Production-loaded catalog calculations with an earned-profile-derived Archer; independent one-enemy survival and maintenance models, not new victories",
+      "limits": [
+        "Not crowd/path/timing acceptance for a complete event.",
+        "Does not cover scripted special mechanics by testing only ordinary Calculate paths.",
+        "Dis City overrides, unarmed Extraction and final joint320 composition are not certified by this catalog batch.",
+        "Uses disposable database catalogs and installed Monsters.txt overrides; deployment equivalence and native acceptance remain pending."
+      ]
+    },
+    "spook": {
+      "review": "docs/research/ROADMAP_COMBAT_CLOSEOUT.json",
+      "status": "calculated-survival-budget",
+      "scope": "Calculated solo grade1 Spook survival/time bound; prior saved victories and claims remain separate evidence",
+      "limits": [
+        "Not a native-client fight or new victory receipt.",
+        "Only selected grade1; higher grades and party combat are not certified.",
+        "Joint320 composition and release remain open."
+      ]
+    },
+    "flame_lit": {
+      "review": "docs/research/FLAME_GATE_BUDGET.json",
+      "status": "calculated-gate-budget",
+      "scope": "Unopposed calculated gate combat with explicit travel allowance; not a newly played journey",
+      "limits": [
+        "Candidate catalog snapshot, not current live database; recheck before release.",
+        "Excludes enemy players and pole captures resetting gates.",
+        "One attack per second and20min travel/dialogue are model assumptions; native timing remains pending.",
+        "Repair equipment and replenish ammunition before encounter.",
+        "Does not prove joint320 or native acceptance."
+      ]
+    },
+    "power_arena": {
+      "review": "docs/research/POWER_ARENA_WINDOW_BUDGET.json",
+      "status": "attack-population-budgeted",
+      "scope": "Calculated unopposed Power Arena attack/population budget; not a played event, survival proof or native navigation acceptance",
+      "limits": [
+        "No competing hunters; population is shared, so admission does not guarantee this budget.",
+        "Movement/claims/healing allowance is assumed, not measured. Retaliation, durability, latency and movement require their own evidence.",
+        "Source review: Dis City Standard Hall needs600 kills but each new floor instance has a two-hour lifetime, not one shared short deadline. No Dis City survival certificate is inferred."
+      ]
+    },
+    "moon_box": {
+      "review": "docs/research/FRESH_MOON_VALIDATION.json",
+      "status": "earned-cold-validated",
+      "scope": "Fresh character Moon Box quest with unforced tactic/token RNG and calculated combat; private handler evidence",
+      "controls": [
+        "Disconnected timer-free session",
+        "Initial school-to-town transport, NPC/monster proximity, attack timestamps"
+      ]
+    },
+    "ko_chain": {
+      "review": "docs/research/FRESH_NORMAL_KO.json",
+      "status": "earned-cold-validated",
+      "route": "Learned Cyclone with ordinary attack cadence and periodic buffer callbacks; the earlier Omnipotence timing limitation does not require another chain."
+    },
+    "snow": {
+      "review": "docs/research/FRESH_SNOW_TIMED_COMBAT.json",
+      "status": "earned-cold-validated",
+      "scope": "Ordinary earned solo Snow victory with simultaneous timed enemy callbacks and cold outcome recovery; not native timing"
+    },
+    "terato_sword": {
+      "review": "docs/research/ROADMAP_COMBAT_CLOSEOUT.json",
+      "status": "numerically-bounded",
+      "scope": "Real damage calculators on a conservative profile derived from earned stats, followed by damage/healing/survival recurrence. No new admission, production encounter callbacks or saved victory. Reuses earlier offering/summon/loot evidence; native timing remains pending.",
+      "encounters": [
+        {
+          "family": 9916100,
+          "health": 50000000,
+          "deadline_seconds": 1800,
+          "modeled_seconds": 873,
+          "modeled_healing": 0
+        },
+        {
+          "family": 9916804,
+          "health": 15000000,
+          "deadline_seconds": 1800,
+          "modeled_seconds": 683,
+          "modeled_healing": 33900000,
+          "heal_assumption": "Full2% heal every6 seconds, conservatively faster than actual seven-phase42-second cycle"
+        }
+      ]
+    },
+    "replacement_arrow": {
+      "review": "docs/research/FRESH_ARCHER_ARROW.json",
+      "status": "earned-cold-validated",
+      "scope": "Private saved ordinary character; normal shop purchase and equip handlers. Controlled shop proximity. Historical Snow victory checkpoint preserved. No new combat, native acceptance or live deployment. This private binary predates the separately validated defensive arrow-wear fix."
+    },
+    "stamina_recovery": {
+      "review": "docs/research/ROADMAP_COMBAT_CLOSEOUT.json",
+      "status": "callback-validated",
+      "scope": "Empty-screen offline session invokes the real registered callback at controlled timestamps; no stamina grants between recovery steps and no DB operations. This proves replenishment, not natural full-training duration or native sitting/casting. Prior saved earning and cold-recovery evidence remains historical."
+    },
+    "limits": "These resolve named prerequisites only. Separate character receipts are not summed; numerical encounter bounds are not new saved victories. Native traversal and release remain open."
+  },
+  "acceptance_handoff": "docs/research/CAREER_320_ACCEPTANCE_GAPS.json",
+  "remaining": [
+    "career-runtime-continuity: Confirm the selected ordered route preserves eligibility, equipment availability and spendable reserves at transitions in ordinary runtime.",
+    "timed-traversal: Validate movement and timed action schedules used by encounter budgets.",
+    "shared-world-encounters: Accept actual event target selection, pursuit and concurrent-player behavior where fixtures supplied stationary or non-retaliating participants.",
+    "catalog-release-equivalence: Deploy the reviewed suppliers/terrain/source together and verify the installed ordinary-player route."
+  ],
+  "separate_roadmap_gates": [
+    "Elimination11010, Abyss11031 and1363/10726 activation/native gates remain; these IDs are excluded from selected320.",
+    "Owner decision2026-10-04: implemented local Revora tournament editions define the finish scope. Genuine cross-server transport is deferred outside this scope, not complete.",
+    "Owner selected gaming-PC native acceptance using docs/OWNER_NATIVE_ACCEPTANCE_CHECKLIST.md. Candidate package preparation and actual acceptance remain pending; checklist creation is not deployment approval."
+  ],
+  "non_changes": [
+    "No catalog or title threshold change, no receipt deletion/insertion, no currency or profile mutation.",
+    "Fresh and retained character receipts are not added together.",
+    "Nobility remains part of the game and its existing work is not marked complete or removed from the roadmap."
+  ]
+}

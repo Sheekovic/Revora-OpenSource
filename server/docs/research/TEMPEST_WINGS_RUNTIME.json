@@ -1,0 +1,136 @@
+{
+  "scope": "Read-only loaded catalog probe and private corrected combat floor; no live mutation",
+  "probe_log": "obj/tempest-catalog.log",
+  "npc_ids_queried": [
+    8796,
+    10850,
+    600065,
+    4482
+  ],
+  "matching_npc_rows": [],
+  "monster": {
+    "id": 7696,
+    "name": "SkyRoc",
+    "level": 140,
+    "mesh": 997,
+    "hp": 50000000,
+    "guard": false,
+    "reviver": false,
+    "boss": true
+  },
+  "spawn": {
+    "id": 455463458,
+    "map": 1100,
+    "x": 136,
+    "y": 103,
+    "width": 12,
+    "height": 15,
+    "count": 1,
+    "family": 7696
+  },
+  "scene": {
+    "purpose": "Private Revora combat adaptation; original Rainbow Sky identity unverified",
+    "sources": [
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\Revora\\6711\\Env_DX9\\Conquer.exe",
+        "sha256": "3728bc3fd4e584d85301edd2b1887a176267cdaa6356038f9951ef23e4fded60"
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\Revora\\6711\\ini\\GameMap.dat",
+        "sha256": "86a54928a9682617371542cdb5a72707c799b92a5c820e3581183adaa94f32b0"
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\Revora\\Source\\Revora-6711\\bin\\Debug\\database\\GameMap.dat",
+        "sha256": "d1f35d6dc3dc0d1958a2aa612c4cdc988ed693636d89ad93078388e81cd23c19"
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\Revora\\6711\\map\\map\\star01.7z",
+        "sha256": "7f1250acad39ee4be449ccbaf548c59c7a83f15e856bd8c6454c24f0af280e59"
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\Revora\\Source\\Revora-6711\\bin\\Debug\\database\\maps\\1100.map",
+        "sha256": "c8441206ad582ce7e091170cb97596262c30817fb43bca86896db661e43d3d6b"
+      }
+    ],
+    "native_sha256": "1becced83f576eeb01ec371a3121ad5d10631d7114e8274c437af3009f4400b1",
+    "corrected_cells": 136,
+    "layout": {
+      "entry": [
+        141,
+        111
+      ],
+      "roc": [
+        136,
+        103
+      ],
+      "exit_npc": [
+        145,
+        111
+      ],
+      "reserved_exit_radius": 1,
+      "inherited_portal_walk_reachable": false,
+      "targets": [
+        {
+          "point": [
+            136,
+            103
+          ],
+          "walk_steps": 13
+        },
+        {
+          "point": [
+            143,
+            111
+          ],
+          "walk_steps": 2
+        }
+      ]
+    },
+    "inherited_portal": {
+      "x": 190,
+      "y": 162,
+      "index": 0
+    },
+    "output": {
+      "path": "server/database/maps/tempest-1100.map",
+      "sha256": "ae99b05f276ccacaff95c3772211a5c9b1f0cc5fe4ea88c2cd9da8c97e346bd6",
+      "bytes": 50184
+    },
+    "installed": false,
+    "native_acceptance": false,
+    "pending": [
+      "Owned lifecycle and explicit portal return handling",
+      "Paid permit and tracked encounter",
+      "Native/Host acceptance"
+    ]
+  },
+  "ordinary_earning_implemented": false,
+  "public_npc_footprint_probe": {
+    "log": "obj/tempest-npc-footprints.log",
+    "bounds": [
+      {
+        "map": 1004,
+        "x": [
+          48,
+          54
+        ],
+        "y": [
+          46,
+          52
+        ]
+      },
+      {
+        "map": 1011,
+        "x": [
+          209,
+          215
+        ],
+        "y": [
+          193,
+          199
+        ]
+      }
+    ],
+    "matching_npc_rows": []
+  }
+}

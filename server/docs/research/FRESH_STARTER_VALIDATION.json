@@ -1,0 +1,27 @@
+{
+  "baseline_commit": "e5d5e87df835d61416a7a2a06d51110e3cd30d56",
+  "scope": "Private starter-only source overlay; owner WIP preserved; login delivery invoked by fixture, native acceptance not claimed",
+  "sources": {
+    "Database/CharacterCreation.cs": "0d43ba46b7544026bd354258214c37040fb8666d25b73402e5e12e112d22a1fc",
+    "Thread.cs": "9e41a35b35b21c755edb1c387ac11f66a6d944daeea7046ada6ca929c85f9506",
+    "Network/GamePackets/ItemHandler.cs": "4d58a7c52195b165336b41261af06bd3aa99b4c06422e618c7f948e571342967",
+    "Game/Features/RevoraStarterPack.cs": "20855eb9bf47455b2e36158a09cbf869f2755b92f4058c1882ea7f7b2a1658f1",
+    "Game/Features/P7SoulChoicePack.cs": "a0ec40edca8e43aa97e8999e2cab1e467962044ff7b45619bd111074bee00eb5",
+    "Game/Features/RebirthGarmentPack.cs": "d1fd831ecc443e16c890ddebef0416c3e698ad5dfda9ab85312e79d101bb5fbd"
+  },
+  "character_uid": 1096322,
+  "checkpoint": "revora_fresh_starter_probe",
+  "executable_sha256": "3fb610b2493460b21c8c7530be8ee3790e6cde5931d3ffc3baeb31c49e5511a0",
+  "catalog_sha256": "cd160b51cd6670e9690f0ea2e935cccbf22c78a9b3acbf44c48a32fb995810c5",
+  "fixture_sha256": "787a533470ebeb5ea7a92628863b51630eea7ccaae649fdcf061f35bdfcaec2f",
+  "passed_logs": {
+    "career-fresh-starter-create": "ca618006c30269ac5694bb3cf160bc10d77466ecff5cdfebc24111c429fbdbe9",
+    "career-fresh-starter-open": "f7aa745d1618052771e3226dc8ee93bda555584d3a1796a1e3a9037cce700f98",
+    "career-fresh-starter-reload": "4916da91565e6ac875fc381fab1fdb3e21650d81bf8d3896a14821fe7244bffa"
+  },
+  "limits": [
+    "Frozen staged starter source, not deployed or wholly committed gameplay",
+    "Disconnected timer-free session; explicit OnLogin; no native login proof",
+    "Only original-life Trojan opening tested; no levelling or promotion credit"
+  ]
+}

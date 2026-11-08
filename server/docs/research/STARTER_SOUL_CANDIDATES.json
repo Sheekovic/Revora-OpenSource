@@ -1,0 +1,156 @@
+{
+  "scope": "Candidate identity and P7 grade only; not class exclusivity, purification use, quest earning or native acceptance.",
+  "hashes": {
+    "courier": "b196a61dbd31b42fcbbc045f1a928d791a6b9305b85fe635b959a67e9e49cde3",
+    "trial": "d7b40bc3e8b5e8db3a46d952266e7fcf1668f99e9e00b59627a0fba3ad4a40be",
+    "server_items": "1ed7a23b7a34b5e3706277f97e421e3cdf0b269eeb5be7367a4ebc0e4f22b3ef",
+    "client_items": "d49f0658bf01387b99c284ddec81713838f2eae3adb8e63666e5c906f63cf87a"
+  },
+  "candidates": [
+    {
+      "id": 800020,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 800111,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 800142,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 800215,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 800255,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 800422,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 800522,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 800618,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 800725,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 800810,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 800811,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 800917,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 801004,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 801104,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 801308,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 820073,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 820076,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 821033,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 821034,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 822071,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 822072,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 823058,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 823059,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 823060,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 823061,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 823062,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 824018,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 824019,
+      "verified": true,
+      "exclusions": []
+    },
+    {
+      "id": 824020,
+      "verified": true,
+      "exclusions": []
+    }
+  ]
+}

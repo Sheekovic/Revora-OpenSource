@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "version": "2.0.0",
+  "files": [
+    {
+      "path": "Env_DX9/Conquer.exe",
+      "source": "baseline/Env_DX9/Conquer.exe",
+      "size": 12345678,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ]
+}

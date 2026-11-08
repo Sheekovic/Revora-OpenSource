@@ -1,0 +1,40 @@
+{
+  "uid": 4294907001,
+  "first_rite_purse": [
+    1000001,
+    50000,
+    10097900,
+    0
+  ],
+  "first_rite_silver_receipt": true,
+  "current_silver_receipt": 1,
+  "paid_boss_run_count": 222,
+  "first_paid_boss_run": {
+    "slot": 0,
+    "planned": "2026-12-10T11:31:00",
+    "state": 2,
+    "paid": true
+  },
+  "scope": "Read-only historical retained checkpoint and current paid-boss ledger; not a new earning run or audit of every current currency unit",
+  "date": "2026-10-02",
+  "first_rite_purse_fields": [
+    "CPs",
+    "RVPs",
+    "silver",
+    "bound_CPs"
+  ],
+  "source_daily_boss_silver_reward": 10000000,
+  "achievement_silver_threshold": 3000000,
+  "reviewed_input_sha256": {
+    "Game/Features/DailyWorldBosses.cs": "5bf9d4bd0390a32b64a49947d974f2782ad1ce4fc21e0d1f056e3952a98242e8",
+    "Game/Features/AchievementCatalog.cs": "d27e572f53ed8ab8741584dc5f4f1a97f06643e580f14212f3c1b168b0e05b95",
+    "tools/CheckCandidateCareerRites.cs": "43adff35dbe70c869b5332cf50ceabbd3a8e76b8538c583a801e540d5ace123c",
+    "tools/CheckCandidateCollectionLifecycle.cs": "ee987fc7a065ec76324a9606ba913582a33e73c127fe2dee9abcee06174c050c"
+  },
+  "limits": [
+    "Initial character level/class and lethal encounter damage were controlled in the original earning fixture.",
+    "Current boss-run count includes later funding encounters; it is not the count at first rebirth.",
+    "Historical checkpoint already passed cold reload; this audit reads it without overwriting history or granting achievements.",
+    "No claim of independently earned current total, natural progression, native acceptance or complete compatible career."
+  ]
+}

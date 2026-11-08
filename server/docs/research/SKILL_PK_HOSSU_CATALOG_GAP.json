@@ -1,0 +1,56 @@
+{
+  "scope": "Read-only numeric catalog evidence; no admission or client acceptance claim",
+  "date": "2026-09-28",
+  "item": 619301,
+  "cap_level": 120,
+  "inputs": [
+    {
+      "path": "C:\\Revora\\DisposablePostgres\\moon-box-candidate\\game\\database\\itemtype-new.txt",
+      "sha256": "1ed7a23b7a34b5e3706277f97e421e3cdf0b269eeb5be7367a4ebc0e4f22b3ef",
+      "hossu_rows": 342,
+      "quality_1_rows": [
+        {
+          "id": 619301,
+          "class": 190,
+          "level": 129,
+          "gender": 0,
+          "quality": 1
+        }
+      ],
+      "matching_capped_ids": [],
+      "decoded_numeric_rows": 31358
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\Revora\\6711\\ini\\itemtype.dat",
+      "sha256": "ab428fe7d3932d98ead2ece8cdc20c548ee909723792fb4de955df7dddfa7753",
+      "hossu_rows": 342,
+      "quality_1_rows": [
+        {
+          "id": 619301,
+          "class": 190,
+          "level": 129,
+          "gender": 0,
+          "quality": 1
+        }
+      ],
+      "matching_capped_ids": [],
+      "decoded_numeric_rows": 31371
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\Revora\\6711\\ini\\ItemtypeSub.dat",
+      "sha256": "3388fb5751c4b3afe9b3e578dacff8937ac43c2196894180a11403a9837df594",
+      "hossu_rows": 0,
+      "quality_1_rows": [],
+      "matching_capped_ids": [],
+      "decoded_numeric_rows": 1274
+    },
+    {
+      "path": "C:\\Revora\\DisposablePostgres\\moon-box-candidate\\game\\database\\ItemtypeSub.txt",
+      "sha256": "6e318b1e53b0fb28036bd547b5cb78914e3e66b1272d8054259b6b0bcaa66aea",
+      "decoded_numeric_rows": 1336,
+      "hossu_rows": 0,
+      "quality_1_rows": [],
+      "matching_capped_ids": []
+    }
+  ]
+}

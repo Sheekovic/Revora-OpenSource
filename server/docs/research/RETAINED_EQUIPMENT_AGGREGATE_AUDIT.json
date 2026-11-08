@@ -1,0 +1,207 @@
+{
+  "scope": "Read-only retained character aggregate audit; not a production or native acceptance claim",
+  "character_uid": 4294907001,
+  "achievement_id": 10931,
+  "candidate_game_sha256": "07971A3643E79E748976CEA84BC8067E0318D5F6EF2689B0CAD173787105EED2",
+  "source_commit": "6fdfe57b",
+  "date": "2026-10-02",
+  "requirements": [
+    {
+      "table": "revora_connector",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_spun_gold",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_azure_pill",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_artisan_feather",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_mystic_ring",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_frantic_monkeys",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_soul_general",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_mad_man",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_ghost_city",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_tomboy",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_desert_blood",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_hero_wings",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_family_feud",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_desert_treasure",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_desert_expedition",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_power_book",
+      "schema_present": true,
+      "final_receipt_matches": false
+    },
+    {
+      "table": "revora_defense_talisman",
+      "schema_present": false,
+      "final_receipt_matches": null
+    },
+    {
+      "table": "revora_attack_talisman",
+      "schema_present": false,
+      "final_receipt_matches": null
+    },
+    {
+      "table": "revora_tempest_wings",
+      "schema_present": false,
+      "final_receipt_matches": null
+    }
+  ],
+  "interpretation": {
+    "matching_final_receipts": 0,
+    "present_schemas_without_matching_final_receipt": 16,
+    "absent_schemas": 3,
+    "aggregate_complete": false
+  },
+  "startup_evidence": {
+    "DefenseTalismanQuest": "Candidate log reports pending staged house scenes; Initialize checks maps1782-1784 before schema initialization.",
+    "AttackTalismanQuest": "Initialize returns while DefenseTalismanQuest.Enabled is false.",
+    "TempestWingsQuest": "Candidate log reports pending reviewed private terrain; Initialize requires tempest-1100.map."
+  },
+  "limitations": [
+    "The first combined query failed on an absent schema; the second evaluated sixteen full production receipt predicates and checked only schema existence for the other three.",
+    "No current stage or partial quest progress was inferred from a missing final receipt.",
+    "Other character test results do not establish completion on this retained UID.",
+    "Source and private candidate state do not establish live activation."
+  ],
+  "source_sha256": {
+    "Game/Features/ProgressionEvidence.cs": "544b27e3ecbbc2e1c460f9e7d88f820c0ec5159f8ea7b9fddeaeba5294a1ad80",
+    "Game/Features/DefenseTalismanQuest.cs": "4a8dd267677df440f160000b3ea9c730cd29102e1323cc7fe394e3f16048945d",
+    "Game/Features/AttackTalismanQuest.cs": "c2aa66adfcc2bb293404e9c3ea716fc320c204b986f458dcd2c826112a5537c2",
+    "Game/Features/TempestWingsQuest.cs": "92c2eecc8f72587723efe2a8746bf48e529911f58cddffdd4e6b2e216fe93f5d"
+  },
+  "follow_up": {
+    "candidate_checkpoint": "revora_retained_tempest_probe step2",
+    "evidence_phases": [
+      "career-retained-connector-hunt",
+      "career-retained-connector-claim",
+      "career-retained-connector-reload",
+      "career-retained-early-brew",
+      "career-retained-early-claim",
+      "career-retained-early-reload",
+      "career-retained-artisanring-gather",
+      "career-retained-artisanring-finish",
+      "career-retained-artisanring-reload",
+      "career-retained-frantic-hunt",
+      "career-retained-frantic-reload",
+      "career-retained-soulgeneral-hunt",
+      "career-retained-soulgeneral-claim",
+      "career-retained-soulgeneral-reload",
+      "career-retained-mad-hunt",
+      "career-retained-mad-claim",
+      "career-retained-mad-reload",
+      "career-retained-ghost-hunt",
+      "career-retained-ghost-claim",
+      "career-retained-ghost-reload",
+      "career-retained-tomboy-hunt",
+      "career-retained-tomboy-claim",
+      "career-retained-tomboy-reload",
+      "career-retained-blood-hunt",
+      "career-retained-blood-claim",
+      "career-retained-blood-reload",
+      "career-retained-hero-hunt",
+      "career-retained-hero-claim",
+      "career-retained-hero-reload",
+      "career-retained-family-hunt",
+      "career-retained-family-claim",
+      "career-retained-family-reload",
+      "career-retained-treasure-hunt",
+      "career-retained-treasure-claim",
+      "career-retained-treasure-reload",
+      "career-retained-expedition-hunt",
+      "career-retained-expedition-claim",
+      "career-retained-expedition-reload",
+      "career-retained-power-claim",
+      "career-retained-power-reload",
+      "career-retained-tower-hunt",
+      "career-retained-tower-claim",
+      "career-retained-tower-reload",
+      "career-retained-fan-hunt",
+      "career-retained-fan-claim",
+      "career-retained-fan-reload",
+      "career-retained-tempest-hunt",
+      "career-retained-tempest-claim",
+      "career-retained-tempest-reload"
+    ],
+    "matching_final_receipts": 19,
+    "completed_chains": [
+      "revora_connector",
+      "revora_spun_gold",
+      "revora_azure_pill",
+      "revora_artisan_feather",
+      "revora_mystic_ring",
+      "revora_frantic_monkeys",
+      "revora_soul_general",
+      "revora_mad_man",
+      "revora_ghost_city",
+      "revora_tomboy",
+      "revora_desert_blood",
+      "revora_hero_wings",
+      "revora_family_feud",
+      "revora_desert_treasure",
+      "revora_desert_expedition",
+      "revora_power_book",
+      "revora_defense_talisman",
+      "revora_attack_talisman",
+      "revora_tempest_wings"
+    ],
+    "remaining_final_receipts": 0,
+    "candidate_game_sha256": "34868D44DF9E1EFE5948F6B846C2520579CD53625538F30DAB2BF5D2FA78B0A3",
+    "note": "Fresh full predicates verify all nineteen completed chains on retained UID4294907001. Tempest final claim emits exactly one equipment-quests-revora-v1/nineteen-chains-cross-life achievement10931 receipt; its packet bit and rewards survive restart. This completes this server-side aggregate, not the full career/native roadmap."
+  }
+}

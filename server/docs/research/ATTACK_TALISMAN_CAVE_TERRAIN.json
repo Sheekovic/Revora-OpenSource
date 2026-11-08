@@ -1,0 +1,98 @@
+{
+  "scope": "Explicit Revora reuse of existing native mine-one map1025; not original scene1788 restoration. Owned instance must load no catalog actors or portals. Native/server cells and walking routes agree; live portal/rendering acceptance pending.",
+  "scenes": [
+    {
+      "map": 1025,
+      "client_bindings": [
+        [
+          "map/map/mine-one.7z",
+          256
+        ]
+      ],
+      "server_bindings": [
+        [
+          "map/map/mine-one.7z",
+          256
+        ]
+      ],
+      "server_floor_exists": true,
+      "verified": true,
+      "dimensions": [
+        184,
+        184
+      ],
+      "sha256": {
+        "server": "64c54fbf5f6b9a091e1702728b7836afc3537ac32cdbfb4fb501819de1058c34",
+        "archive": "a3035ee118c6b8e24342af823ac7e05f88d9f286c5f2758ee9e44c3b1fb972f9",
+        "native": "92bbcc94613c7306ef27b8c0d278ac27c0c39a8bd27663d5ecdfd5c9336b304e"
+      },
+      "differing_cells": 0,
+      "points": [
+        {
+          "x": 52,
+          "y": 50,
+          "walkable": true
+        },
+        {
+          "x": 56,
+          "y": 50,
+          "walkable": true
+        },
+        {
+          "x": 58,
+          "y": 50,
+          "walkable": true
+        },
+        {
+          "x": 60,
+          "y": 50,
+          "walkable": true
+        },
+        {
+          "x": 62,
+          "y": 50,
+          "walkable": true
+        },
+        {
+          "x": 64,
+          "y": 50,
+          "walkable": true
+        }
+      ],
+      "routes": [
+        {
+          "x": 52,
+          "y": 50,
+          "steps": 0
+        },
+        {
+          "x": 56,
+          "y": 50,
+          "steps": 4
+        },
+        {
+          "x": 58,
+          "y": 50,
+          "steps": 6
+        },
+        {
+          "x": 60,
+          "y": 50,
+          "steps": 8
+        },
+        {
+          "x": 62,
+          "y": 50,
+          "steps": 10
+        },
+        {
+          "x": 64,
+          "y": 50,
+          "steps": 12
+        }
+      ]
+    }
+  ],
+  "all_scenes_available": true,
+  "native_acceptance": false
+}

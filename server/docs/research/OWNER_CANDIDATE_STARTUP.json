@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-04",
+  "result": "passed",
+  "scope": "Combined private runtime startup and normal shutdown; not logged-in player or native acceptance",
+  "server_sha256": "99c23c1b0be49b38dcb5a62800186c6419561d3c8a68fd9852b19591699bf7e0",
+  "runtime_manifest_sha256": "c6490ceb390c6d5eb189d1909920aab54af5d79b24319732ab1d843db2c58126",
+  "payload_manifest_sha256": "511eb3a9fb659e17030f8972e9e3aa5feecc591b8a045d79794800c48731cd93",
+  "log_sha256": "2136dc7d1aa1d264d98e04df813bfce606c82c52285346af42455b1e45b97b91",
+  "cycles": 2,
+  "owned_tables": 33,
+  "loopback_ports": [
+    19558,
+    19559,
+    19619
+  ],
+  "postgres_loopback_port": 25439,
+  "database_stopped": true,
+  "forced_kills": false,
+  "source_provenance": {
+    "gameplay_baseline": "cf4d2311",
+    "reviewed_build": "obj/prestige-reviewed/bin/Revora.exe",
+    "substitutions_match_HEAD": [
+      "Game/Features/GuildIdentity.cs",
+      "System/IniFile.cs",
+      "Thread.cs"
+    ],
+    "later_cs_changes": "Tests only through f83fea83; unrelated owner worktree changes excluded/preserved. Full clean build is not claimed."
+  },
+  "data_review": {
+    "server_files": 8,
+    "catalog_identity_changes": 0,
+    "existing_item_changes": "253 CP-price fields updated to the currently installed server catalog; all other existing item fields match the previous candidate.",
+    "backup": "C:/Revora/DisposablePostgres/moon-box-candidate/owner-data-before-v1"
+  },
+  "command": "tools/Verify-MoonBoxDatabase.ps1 -CheckRoadmapStartup",
+  "remaining": [
+    "Gaming-PC connection method is pending owner reply; no public listener/firewall/endpoint change authorized by this preparation.",
+    "Transfer/installation against the exact reviewed client preimages; distribution/signing gates remain.",
+    "Ordinary native checklist including scheduled tournaments and gated-event acceptance."
+  ],
+  "live_pid_observed": 9048,
+  "live_changed": false
+}

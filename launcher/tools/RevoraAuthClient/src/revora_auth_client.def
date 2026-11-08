@@ -1,0 +1,20 @@
+LIBRARY RevoraAuthClient
+EXPORTS
+    RevoraAuthClientAbiVersion @1
+    RevoraAuthClientBuildProof @2
+    RevoraAuthClientProcess1637 @3
+    RevoraAuthClientPatch2429 @4
+    RevoraAuthClientBeginLogin @5
+    RevoraAuthClientCaptureUsername @6
+    RevoraAuthClientCapturePassword @7
+    RevoraAuthClientCapturePair @8
+    RevoraAuthClientCaptureUsernameRaw @9
+    RevoraAuthClientCaptureObjects @10
+    RevoraAuthDirectSubmit @20
+    RevoraAuthDirectSeedReady @21
+    RevoraAuthDirectProcess1637 @22
+    RevoraAuthDirectPatch2429V2 @23
+    RevoraAuthOfficialReportSuppressed @24
+    RevoraAuthOwnedControlsTick @25
+    RevoraAuthGameConnect @26
+    RevoraAuthGameDisconnectObserved @27

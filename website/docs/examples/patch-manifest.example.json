@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "channel": "beta",
+  "version": "0.0.1-preview.1",
+  "minimumLauncherVersion": "0.0.1",
+  "createdAt": "2026-08-28T00:00:00Z",
+  "maintenanceMessage": "Example only — no Revora client is available.",
+  "signatureAlgorithm": "Ed25519",
+  "signingKeyId": "revora-offline-signing-v1",
+  "signature": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+  "files": [
+    {
+      "destination": "docs/example-not-a-client.txt",
+      "size": 27,
+      "sha256": "92d9e15cf7ba42f01d900461dfb17dcf92e0b1cf8b757e80ae2733c7615d39b2",
+      "downloadUrl": "https://downloads.example.invalid/revora/0.0.1-preview.1/example-not-a-client.txt"
+    }
+  ]
+}

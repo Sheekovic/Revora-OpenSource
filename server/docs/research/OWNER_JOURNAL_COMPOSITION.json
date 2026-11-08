@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-04",
+  "result": "passed",
+  "source_commit": "3edbf646",
+  "scope": "Private journal merge prerequisite, not a ready-to-run owner package",
+  "changed_fields": [
+    [
+      90001,
+      "Prize"
+    ],
+    [
+      90002,
+      "Content"
+    ],
+    [
+      90002,
+      "Intention2"
+    ],
+    [
+      90002,
+      "Prize"
+    ],
+    [
+      90003,
+      "Prize"
+    ]
+  ],
+  "journal_sha256": "4bce85e83a875a8641e33fb0ee6caa2340ce387e2ff3db86cc6a8921f6d5e45b",
+  "checks": [
+    "All ten base artifact references matched pinned hashes and sizes.",
+    "Approved DX9 executable identity verified.",
+    "Independent section/field diff and reverse replacement preserve every unrelated byte.",
+    "Second composition produces identical output without overwriting artifacts."
+  ],
+  "excluded_stage": "starter-quest-journal-v3 advertises rewards not used by current PathHunt/Courier/SoulTrial source",
+  "code_contract_sources": [
+    "Game/Features/PathHuntSystem.cs",
+    "Game/Features/CourierLoopSystem.cs",
+    "Game/Features/SoulTrialSystem.cs",
+    "Game/Features/QuestSoulReward.cs"
+  ],
+  "private_manifest": "obj/chi-refill-validation/owner-journal-local-v1/manifest.json",
+  "installed": false,
+  "native_acceptance": false
+}

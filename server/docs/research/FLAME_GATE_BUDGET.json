@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-04",
+  "result": "passed",
+  "profile_uid": 1096322,
+  "scope": "Unopposed calculated gate combat with explicit travel allowance; not a newly played journey",
+  "minimum_damage": 44748,
+  "hits_per_gate": 224,
+  "combat_seconds": 448,
+  "travel_allowance_seconds": 1200,
+  "finish_seconds": 1860,
+  "window_seconds": 3600,
+  "gates": [
+    {
+      "uid": 516075,
+      "max_hp": 10000000
+    },
+    {
+      "uid": 516074,
+      "max_hp": 10000000
+    }
+  ],
+  "limits": [
+    "Candidate catalog snapshot, not current live database; recheck before release.",
+    "Excludes enemy players and pole captures resetting gates.",
+    "One attack per second and20min travel/dialogue are model assumptions; native timing remains pending.",
+    "Repair equipment and replenish ammunition before encounter.",
+    "Does not prove joint320 or native acceptance."
+  ],
+  "catalog_snapshot_sha256": "4c58a4d1f7d24f275e220d93062f6ecdc670cfadaabdaf24fc670fb6d0900bee",
+  "source_hashes": {
+    "Game/Attacking/Calculate.cs": "8e8a456205faf75b9b054904ed01a614a445e888aa8747ca99f1a5fb6cbdfed3",
+    "Game/Features/GuildSeasonWar.cs": "cf0a5842431a314d024916cc259733dfc88b325ee9c2973d9123806b7b9d7c78",
+    "Game/Features/FlameLitRules.cs": "423535d5dc0a131dfcc7216b21337916d22dbcd10686bf9f7d8f04bb0a359453",
+    "tests/CombatBalance/CombatTests.cs": "74cc102c8cc1c6ed083a31d97072d96d6d2e4c543ec0639608759952756d2b3d"
+  },
+  "validation": {
+    "checks": 948,
+    "assembly_sha256": "99c23c1b0be49b38dcb5a62800186c6419561d3c8a68fd9852b19591699bf7e0",
+    "log_sha256": "7f63dc51db3df5b34c910260d57efb47697e827734c5efcd747c423e745ae3e0",
+    "owner_worktree_included": false,
+    "deployed": false
+  }
+}

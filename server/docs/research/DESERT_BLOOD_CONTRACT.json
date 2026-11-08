@@ -1,0 +1,208 @@
+{
+  "stages": [
+    {
+      "kills": [],
+      "mission": 1800,
+      "predecessor": 0,
+      "begin": [
+        8796,
+        1002,
+        473,
+        300
+      ],
+      "finish": [
+        4621,
+        1000,
+        495,
+        579
+      ],
+      "materials": []
+    },
+    {
+      "kills": [],
+      "mission": 1801,
+      "predecessor": 1800,
+      "begin": [
+        4621,
+        1000,
+        495,
+        579
+      ],
+      "finish": [
+        4622,
+        1000,
+        386,
+        103
+      ],
+      "materials": [
+        [
+          721843,
+          1
+        ]
+      ]
+    },
+    {
+      "kills": [
+        [
+          1802,
+          1,
+          1,
+          200
+        ]
+      ],
+      "mission": 1802,
+      "predecessor": 1801,
+      "begin": [
+        4622,
+        1000,
+        386,
+        103
+      ],
+      "finish": [
+        4622,
+        1000,
+        386,
+        103
+      ],
+      "materials": [
+        [
+          721845,
+          1
+        ]
+      ]
+    },
+    {
+      "kills": [],
+      "mission": 1803,
+      "predecessor": 1802,
+      "begin": [
+        4622,
+        1000,
+        386,
+        103
+      ],
+      "finish": [
+        4622,
+        1000,
+        386,
+        103
+      ],
+      "materials": [
+        [
+          721846,
+          5
+        ]
+      ]
+    },
+    {
+      "kills": [],
+      "mission": 1804,
+      "predecessor": 1803,
+      "begin": [
+        4622,
+        1000,
+        386,
+        103
+      ],
+      "finish": [
+        4621,
+        1000,
+        495,
+        579
+      ],
+      "materials": []
+    },
+    {
+      "kills": [],
+      "mission": 1805,
+      "predecessor": 1804,
+      "begin": [
+        4621,
+        1000,
+        495,
+        579
+      ],
+      "finish": [
+        4622,
+        1000,
+        386,
+        103
+      ],
+      "materials": []
+    },
+    {
+      "kills": [],
+      "mission": 1806,
+      "predecessor": 1805,
+      "begin": [
+        4622,
+        1000,
+        386,
+        103
+      ],
+      "finish": [
+        4633,
+        1015,
+        765,
+        602
+      ],
+      "materials": []
+    },
+    {
+      "kills": [],
+      "mission": 1807,
+      "predecessor": 1806,
+      "begin": [
+        4633,
+        1015,
+        765,
+        602
+      ],
+      "finish": [
+        8796,
+        1002,
+        473,
+        300
+      ],
+      "materials": []
+    }
+  ],
+  "items": {
+    "721841": "Harvey`sLetter",
+    "721842": "PeachBag",
+    "721843": "StoneSpell",
+    "721844": "Note",
+    "721845": "BluntSword",
+    "721846": "BladeGhostFang",
+    "728242": "AmbitionPack"
+  },
+  "equipment": [
+    {
+      "id": 150178,
+      "name": "CrystalRing",
+      "required_class": 0,
+      "level": 90,
+      "quality": 8
+    },
+    {
+      "id": 152168,
+      "name": "JadeBracelet",
+      "required_class": 190,
+      "level": 85,
+      "quality": 8
+    }
+  ],
+  "minimum_level": 85,
+  "client_maximum": 105,
+  "reward_pack": 728242,
+  "original_drop_odds": null,
+  "original_crypt_return_xp_limit": null,
+  "note_role": "721844 Note is a candidate for Aunt Peach's readable letter; journal does not bind that item ID to her.",
+  "quest_implemented": false,
+  "native_acceptance": false,
+  "aggregate_10931_proven": false,
+  "sha256": {
+    "quest": "f783c2a8ead9461a469c79b6c7e7aae00b2604066d4bc6e2e2c56d7e98fc5e14",
+    "items": "52889c537ddd00a6f4d349fa9243268dfedc81ab3899523f1e434218735387cb"
+  }
+}

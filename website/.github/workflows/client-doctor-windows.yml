@@ -1,0 +1,236 @@
+name: Revora Windows client regressions
+
+on:
+  push:
+    branches: [feature/client-doctor, feature/native-login, feature/manual-playable-baseline, feature/public-registration, feature/licensed-gameplay-adoption, feature/owner-source-integration, feature/genuine-jump-fix, feature/portals-maps-npcs, feature/genuine-portal-fix, feature/full-owner-gameplay-migration, feature/cinematic-launcher-autopatcher, feature/launcher-multi-account]
+    paths:
+      - "src/Revora.ClientDoctor.Core/**"
+      - "src/Revora.Launcher.Core/**"
+      - "src/Revora.Launcher/**"
+      - "src/Revora.Bootstrapper/**"
+      - "tools/Revora.PatchPublisher/**"
+      - "tests/Revora.Launcher.WpfTests/**"
+      - "tests/Revora.ClientDoctorTests/**"
+      - "tests/Revora.ClientDoctor.WpfTests/**"
+      - "src/Revora.ClientDoctor/**"
+      - "src/Revora.NativeLogin.Core/**"
+      - "src/Revora.NativeLogin/**"
+      - "tests/Revora.NativeLoginTests/**"
+      - "tests/Revora.NativeLogin.WpfTests/**"
+      - "tests/Revora.NativeTraceFixture/**"
+      - "tests/Revora.LauncherTests/**"
+      - "tests/windows/**"
+      - "src/Revora.Web/**"
+      - "src/Revora.Admin/**"
+      - "src/Revora.Persistence/**"
+      - "src/Revora.Application/Authentication/**"
+      - "tests/Revora.WebTests/**"
+      - "tests/Revora.PublicIdentityTests/**"
+      - "src/Revora.Host/**"
+      - "src/Revora.Gameplay/**"
+      - "db/migrations/**"
+      - "tests/Revora.HostTests/**"
+      - "tests/Revora.ProtocolTests/**"
+      - "tests/Revora.PlayableTests/**"
+      - "tests/Revora.GameplayTests/**"
+      - "tests/Revora.GameplayPostgreSqlTests/**"
+      - "tests/Revora.FeatureGateTests/**"
+      - "tools/Revora.OwnerGameplayImport/**"
+      - "tools/Revora.OwnerEssentialsImport/**"
+      - "tools/Revora.CatalogLoader/**"
+      - ".github/workflows/client-doctor-windows.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  stable-full-client-validation:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: windows-2025
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate extracted stable full client and selective repair
+        shell: pwsh
+        run: tests/windows/validate_stable_full_client.ps1 -OutputDirectory "$env:RUNNER_TEMP/stable-full-client"
+      - name: Upload sanitized full-client evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: revora-stable-1.0.7-full-client-windows-evidence
+          path: ${{ runner.temp }}/stable-full-client/stable-full-client-windows-evidence.json
+          if-no-files-found: error
+  stable-release-defender:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: windows-2025
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download, validate and scan exact stable packages
+        shell: pwsh
+        run: tests/windows/scan_stable_release_packages.ps1 -OutputDirectory "$env:RUNNER_TEMP/stable-security"
+      - name: Upload sanitized Defender evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: revora-stable-1.0.7-defender-evidence
+          path: ${{ runner.temp }}/stable-security/stable-defender-evidence.json
+          if-no-files-found: error
+  stable-launcher-package:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: windows-2025
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build deterministic stable package from accepted bytes
+        shell: pwsh
+        run: tests/windows/build_deterministic_stable_launcher_package.ps1 -OutputDirectory "$env:RUNNER_TEMP/launcher-stable-package"
+      - name: Upload deterministic stable package
+        uses: actions/upload-artifact@v4
+        with:
+          name: revora-launcher-1.0.8-stable-publication
+          path: |
+            ${{ runner.temp }}/launcher-stable-package/Revora-Launcher-1.0.8.zip
+            ${{ runner.temp }}/launcher-stable-package/stable-package-evidence.json
+          if-no-files-found: error
+      - name: Scan exact newly built stable package with Microsoft Defender
+        shell: pwsh
+        run: tests/windows/scan_local_launcher_package.ps1 -PackagePath "$env:RUNNER_TEMP/launcher-stable-package/Revora-Launcher-1.0.8.zip" -OutputDirectory "$env:RUNNER_TEMP/launcher-1.0.8-stable-security"
+      - name: Upload exact stable 1.0.8 Defender evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: revora-launcher-1.0.8-stable-defender-evidence
+          path: ${{ runner.temp }}/launcher-1.0.8-stable-security/defender-scan-evidence.json
+          if-no-files-found: error
+  windows-handle-lifetime:
+    runs-on: windows-2025
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+      - name: Restore reviewed test graph
+        run: |
+          dotnet restore tests/Revora.ClientDoctorTests/Revora.ClientDoctorTests.csproj
+          dotnet restore tests/Revora.ClientDoctor.WpfTests/Revora.ClientDoctor.WpfTests.csproj
+          dotnet restore tests/Revora.NativeLoginTests/Revora.NativeLoginTests.csproj
+          dotnet restore tests/Revora.NativeLogin.WpfTests/Revora.NativeLogin.WpfTests.csproj
+          dotnet restore tests/Revora.LauncherTests/Revora.LauncherTests.csproj
+          dotnet restore src/Revora.Launcher/Revora.Launcher.csproj
+          dotnet restore src/Revora.Bootstrapper/Revora.Bootstrapper.csproj
+          dotnet restore tests/Revora.Launcher.WpfTests/Revora.Launcher.WpfTests.csproj
+          dotnet restore tests/Revora.WebTests/Revora.WebTests.csproj
+          dotnet restore tests/Revora.PublicIdentityTests/Revora.PublicIdentityTests.csproj
+          dotnet restore tests/Revora.HostTests/Revora.HostTests.csproj
+          dotnet restore tests/Revora.ProtocolTests/Revora.ProtocolTests.csproj
+          dotnet restore tests/Revora.PlayableTests/Revora.PlayableTests.csproj
+          dotnet restore tests/Revora.GameplayTests/Revora.GameplayTests.csproj
+          dotnet restore tests/Revora.GameplayPostgreSqlTests/Revora.GameplayPostgreSqlTests.csproj
+          dotnet restore tests/Revora.FeatureGateTests/Revora.FeatureGateTests.csproj
+          dotnet restore tools/Revora.OwnerGameplayImport/Revora.OwnerGameplayImport.csproj
+          dotnet restore tools/Revora.OwnerEssentialsImport/Revora.OwnerEssentialsImport.csproj
+          dotnet restore tools/Revora.CatalogLoader/Revora.CatalogLoader.csproj
+      - name: Run real Windows rename regression
+        run: dotnet run --project tests/Revora.ClientDoctorTests/Revora.ClientDoctorTests.csproj -c Release --no-restore -- --windows-regression-only
+      - name: Run real Windows WPF Build workflow regression
+        run: dotnet run --project tests/Revora.ClientDoctor.WpfTests/Revora.ClientDoctor.WpfTests.csproj -c Release --no-restore
+      - name: Run Native Login core regressions on Windows
+        run: dotnet run --project tests/Revora.NativeLoginTests/Revora.NativeLoginTests.csproj -c Release --no-restore
+      - name: Compile and run separate x86 startup transport fixture
+        shell: cmd
+        run: |
+          for /f "usebackq tokens=*" %%i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set VSROOT=%%i
+          call "%VSROOT%\VC\Auxiliary\Build\vcvars32.bat"
+          powershell -NoProfile -ExecutionPolicy Bypass -File tests\Revora.NativeTraceFixture\verify_x86_fixture.ps1
+      - name: Run Native Login WPF regression
+        run: dotnet run --project tests/Revora.NativeLogin.WpfTests/Revora.NativeLogin.WpfTests.csproj -c Release --no-restore
+      - name: Run launcher patching and security regressions
+        run: dotnet run --project tests/Revora.LauncherTests/Revora.LauncherTests.csproj -c Release --no-restore
+      - name: Verify public test publications and approved-client boundary
+        shell: pwsh
+        run: tests/windows/collect_launcher_handoff_evidence.ps1 -OutputDirectory "$env:RUNNER_TEMP/launcher-handoff-evidence"
+      - name: Upload sanitized launcher handoff evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: revora-launcher-handoff-evidence
+          path: ${{ runner.temp }}/launcher-handoff-evidence/launcher-handoff-evidence.json
+          if-no-files-found: error
+      - name: Scan exact public launcher package with Microsoft Defender
+        shell: pwsh
+        run: tests/windows/scan_exact_launcher_package.ps1 -OutputDirectory "$env:RUNNER_TEMP/launcher-defender-evidence"
+      - name: Upload Microsoft Defender evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: revora-launcher-defender-evidence
+          path: ${{ runner.temp }}/launcher-defender-evidence/defender-scan-evidence.json
+          if-no-files-found: error
+      - name: Render genuine cinematic launcher states
+        run: dotnet run --project tests/Revora.Launcher.WpfTests/Revora.Launcher.WpfTests.csproj -c Release --no-restore -- "$env:RUNNER_TEMP/launcher-screenshots"
+      - name: Upload genuine launcher screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: revora-launcher-screenshots
+          path: ${{ runner.temp }}/launcher-screenshots/*.png
+          if-no-files-found: error
+      - name: Build deterministic immutable launcher test package
+        shell: pwsh
+        run: tests/windows/build_deterministic_launcher_package.ps1 -OutputDirectory "$env:RUNNER_TEMP/launcher-package"
+      - name: Upload deterministic launcher test package
+        uses: actions/upload-artifact@v4
+        with:
+          name: revora-launcher-1.0.8-test-package
+          path: |
+            ${{ runner.temp }}/launcher-package/Revora-Launcher-1.0.8-test.zip
+            ${{ runner.temp }}/launcher-package/package-evidence.json
+          if-no-files-found: error
+      - name: Scan exact newly built launcher test package with Microsoft Defender
+        shell: pwsh
+        run: tests/windows/scan_local_launcher_package.ps1 -PackagePath "$env:RUNNER_TEMP/launcher-package/Revora-Launcher-1.0.8-test.zip" -OutputDirectory "$env:RUNNER_TEMP/launcher-1.0.8-security"
+      - name: Upload exact 1.0.8 Defender evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: revora-launcher-1.0.8-defender-evidence
+          path: ${{ runner.temp }}/launcher-1.0.8-security/defender-scan-evidence.json
+          if-no-files-found: error
+      - name: Build deterministic immutable launcher stable package
+        if: github.event_name == 'workflow_dispatch'
+        shell: pwsh
+        run: tests/windows/build_deterministic_stable_launcher_package.ps1 -OutputDirectory "$env:RUNNER_TEMP/launcher-stable-package"
+      - name: Upload deterministic launcher stable package
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: revora-launcher-1.0.8-stable-package
+          path: |
+            ${{ runner.temp }}/launcher-stable-package/Revora-Launcher-1.0.8.zip
+            ${{ runner.temp }}/launcher-stable-package/stable-package-evidence.json
+          if-no-files-found: error
+      - name: Run public Web policy regressions
+        run: dotnet run --project tests/Revora.WebTests/Revora.WebTests.csproj -c Release --no-restore
+      - name: Compile public identity integration suite
+        run: dotnet build tests/Revora.PublicIdentityTests/Revora.PublicIdentityTests.csproj -c Release --no-restore
+      - name: Run protocol and Host gameplay regressions on Windows
+        run: |
+          dotnet run --project tests/Revora.ProtocolTests/Revora.ProtocolTests.csproj -c Release --no-restore
+          dotnet run --project tests/Revora.HostTests/Revora.HostTests.csproj -c Release --no-restore
+          dotnet run --project tests/Revora.GameplayTests/Revora.GameplayTests.csproj -c Release --no-restore
+          dotnet build tests/Revora.GameplayPostgreSqlTests/Revora.GameplayPostgreSqlTests.csproj -c Release --no-restore
+          dotnet run --project tests/Revora.FeatureGateTests/Revora.FeatureGateTests.csproj -c Release --no-restore
+          python tests/validate_gameplay_schema_migrations.py
+          dotnet build tests/Revora.PlayableTests/Revora.PlayableTests.csproj -c Release --no-restore
+          dotnet run --project tools/Revora.OwnerGameplayImport/Revora.OwnerGameplayImport.csproj -c Release --no-restore -- --self-test
+          dotnet run --project tools/Revora.OwnerEssentialsImport/Revora.OwnerEssentialsImport.csproj -c Release --no-restore -- --self-test
+          dotnet run --project tools/Revora.CatalogLoader/Revora.CatalogLoader.csproj -c Release --no-restore -- --self-test
+      - name: Compile Owner Test launcher on Windows
+        run: |
+          dotnet build src/Revora.Launcher/Revora.Launcher.csproj -c Release --no-restore
+          dotnet build src/Revora.Bootstrapper/Revora.Bootstrapper.csproj -c Release --no-restore
+      - name: Verify small framework-dependent Owner Test publish
+        shell: pwsh
+        run: |
+          dotnet publish src/Revora.Launcher/Revora.Launcher.csproj -c Release --no-restore -r win-x64 --self-contained false -p:PublishSingleFile=false -p:DebugType=None -p:DebugSymbols=false -o "$env:RUNNER_TEMP/revora-owner-test-fd"
+          $files = Get-ChildItem "$env:RUNNER_TEMP/revora-owner-test-fd" -File
+          $bytes = ($files | Measure-Object Length -Sum).Sum
+          if ($bytes -ge 15000000) { throw "Framework-dependent application files exceed 15 MB: $bytes" }
+          if ($files.Name -contains "coreclr.dll" -or $files.Name -contains "hostfxr.dll") { throw "A bundled .NET runtime was found." }
+          Write-Host "Framework-dependent application bytes: $bytes"

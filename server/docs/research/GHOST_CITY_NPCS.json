@@ -1,0 +1,18 @@
+{
+  "source": "6711/ini/npc.ini",
+  "sha256": "b06db1e2484992a1b58eabd7a3d884da07ac728a4a183d0fd18f2dccd5b20497",
+  "models": {
+    "AuntZhang": 562,
+    "JerkWang": 563,
+    "TaoistShine": 564,
+    "MoMo_first_variant": 565,
+    "MoMo_second_variant": 571,
+    "FiendAltar": 577
+  },
+  "first_visit": {
+    "MoMo": 565,
+    "Pillar": 577
+  },
+  "pillar_policy": "Explicit Revora FiendAltar candidate; original pillar model unverified",
+  "native_rendering_verified": false
+}

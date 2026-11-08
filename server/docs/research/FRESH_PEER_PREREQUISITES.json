@@ -1,0 +1,116 @@
+{
+  "review_date": "2026-10-04",
+  "scope": "Reuse completed fresh-peer qualification, ancient amulet earning and ten Arena class victories; no new runtime execution",
+  "main_uid": 1096322,
+  "results": {
+    "eight_contributors_minimum_levels": [
+      58,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "team_training_calculated_kills": 5849,
+    "ancient_peer_trials": 8,
+    "ancient_peer_hits": 124,
+    "owned_distinct_amulets_after_trade": 9,
+    "fresh_ancient_collection_achievement": 11020,
+    "further_roster_training_balls": 178,
+    "further_roster_training_cps": 4806,
+    "warrior_peer_level": 130,
+    "warrior_peer_balls": 452,
+    "warrior_peer_cps": 12204,
+    "saved_arena_class_victory_ids": [
+      11101,
+      11102,
+      11103,
+      11104,
+      11105,
+      11106,
+      11107,
+      11108,
+      11109,
+      11309
+    ]
+  },
+  "closed_prerequisites": [
+    "Eight ordinary created and trained donor classes can qualify for Ancient Devil trials, earn unbound amulets, and transfer them through mutual trades. All nine owned amulets and their provenance survive cold reload.",
+    "All ten Arena class-victory identities already coexist on the same fresh main UID. The later six-class batch must not be mistaken for only six lifetime classes.",
+    "Level and class qualification of these fresh participants is earned through calculated team combat, ordinary trainers and paid EXP items, not direct profile setters."
+  ],
+  "not_closed": [
+    "Does not validate every supplied mentor, guild office, marriage or competitive-rank peer from the separate retained fixtures. Their existing evidence retains its stated controls.",
+    "Does not merge receipts between identities, certify a full unseeded320 career, native authentication or natural combat balance."
+  ],
+  "log_evidence": {
+    "career-fresh-contributors-create": {
+      "sha256": "961084f72fe31fbe058f266b5d817b9ef1700b43a5cb5989d5dc531d68434b04",
+      "passed_marker": "[career-process] career-fresh-contributors-create-passed kills=0 hits=0 levels=33,1,1,1,1,1,1,1 leader-virtue=5"
+    },
+    "career-fresh-contributors-train-a": {
+      "sha256": "e18124bbbbd2825dbb179bda886a121de64ddd635f78bbbef43be5cff8964cd7",
+      "passed_marker": "[career-process] career-fresh-contributors-train-a-passed kills=2920 hits=2920 levels=58,50,50,50,1,1,1,1 leader-virtue=18303"
+    },
+    "career-fresh-contributors-train-b": {
+      "sha256": "d122e66853d0a676667e79c9ff37a1ce4e65be5b85f8ba3826b13e96e847ff4d",
+      "passed_marker": "[career-process] career-fresh-contributors-train-b-passed kills=5849 hits=5849 levels=58,50,50,50,50,50,50,50 leader-virtue=36971"
+    },
+    "career-fresh-contributors-reload": {
+      "sha256": "85909d7758da3e548ae9ef0d9bb2e6d1f10a284f5286167bd0da4fb715ef2a7f",
+      "passed_marker": "[career-process] career-fresh-contributors-reload-passed kills=5849 hits=5849 levels=58,50,50,50,50,50,50,50 leader-virtue=36971"
+    },
+    "career-fresh-amulets-qualify": {
+      "sha256": "12cdc0f8dc7abd299fd87eeb8cc8e4fa0f1f5ae4f3df3e87842f9680270c36fb",
+      "passed_marker": "[career-process] career-fresh-amulets-qualify-passed kills=0 hits=0 bag=36"
+    },
+    "career-fresh-amulets-earn": {
+      "sha256": "72ad56d9066283b97f133411672cf98d7d74b5b264d6f8ab8cf04b57cabdb516",
+      "passed_marker": "[career-process] career-fresh-amulets-earn-passed kills=8 hits=124 bag=36"
+    },
+    "career-fresh-amulets-trade": {
+      "sha256": "001149d244dfdc7d11f58faeb0371a830111ae215a40e63a6e2da16ff3fa0450",
+      "passed_marker": "[career-process] career-fresh-amulets-trade-passed kills=8 hits=124 bag=38"
+    },
+    "career-fresh-amulets-reload": {
+      "sha256": "804008a99df038f1b5be0611ba3d300a6aa2d908794773ef54ed391793c5dca4",
+      "passed_marker": "[career-process] career-fresh-amulets-reload-passed kills=8 hits=124 bag=38"
+    },
+    "career-fresh-roster-create": {
+      "sha256": "d1da862680add53ae13e1c5a6080fe7effd66a5dfbf7f1c661ebd8b911375e52",
+      "passed_marker": "[career-process] career-fresh-roster-create-passed done=False balls=0 cp=0"
+    },
+    "career-fresh-roster-train": {
+      "sha256": "b43b56fc7212894478c98492f22edcc3782ae3e8d6fa8d26319ef027e59ed614",
+      "passed_marker": "[career-process] career-fresh-roster-train-passed done=True balls=178 cp=4806"
+    },
+    "career-fresh-roster-reload": {
+      "sha256": "8553da046387f7a1efd6709b48c4f22c4339609e05e8d56ef8aa44f5fedcd67c",
+      "passed_marker": "[career-process] career-fresh-roster-reload-passed done=True balls=178 cp=4806"
+    },
+    "career-fresh-warrior-peer-create": {
+      "sha256": "977cd4d38d1be2e94f87d450b61e0e5a3a0f3147e3aa7e8ea645eee968f20239",
+      "passed_marker": "[career-process] career-fresh-warrior-peer-create-passed level=1 balls=0 cp=0 done=False"
+    },
+    "career-fresh-warrior-peer-train": {
+      "sha256": "8b15f84b294d3fec15420206977e81169732d0e007b511eae0f5ed87662022b5",
+      "passed_marker": "[career-process] career-fresh-warrior-peer-train-passed level=130 balls=452 cp=12204 done=True"
+    },
+    "career-fresh-warrior-peer-reload": {
+      "sha256": "bb416e54ae454134840ccc910c71a6afdf70aebb8f1bdd0e8e800342e7af8221",
+      "passed_marker": "[career-process] career-fresh-warrior-peer-reload-passed level=130 balls=452 cp=12204 done=True"
+    }
+  },
+  "reviewed_inputs_sha256": {
+    "tools/CheckCandidateFreshContributors.cs": "e2e21ca5c5f26d018e71afa4133b4f424d6e0634f11c6434cf58902d14375e47",
+    "tools/CheckCandidateFreshAmulets.cs": "6c33c68e22dba3abdce3d497f6c0bcea71ac32f6c35f77d400fbe76db36831dc",
+    "tools/CheckCandidateFreshRoster.cs": "0a5f9959b332bb1a40aa70bb0795d72a5dfb4f56238a82609e4cb75d8531eeaa",
+    "tools/CheckCandidateFreshArenaClasses.cs": "07afd2f3e1d88440b95d5f569a3d8cad78ef7f841d0199221ed2bafc75ecf62a",
+    "Game/Features/AncientDevilRules.cs": "24c0b239ab0137a4619d4b680ee84e132a40d5c2468ed3ff9ddb6e97ab91db69",
+    "docs/research/CURRENT_CAREER_RECEIPTS.json": "b28068164b5406a75b8c107956232198bac54b2b85794c51fd26a239ff52da15",
+    "docs/research/FRESH_ARENA_CLASSES.json": "f901a57291b1cfa06499f8dcb5de0a9ef210a7608c46ae7b2baf68747f65723b"
+  },
+  "evidence_coverage_note": "The current candidate set has322 identities.321 map to the existing earning/observed reviews;11232 is covered separately by RETAINED_COLLECTION_200.json. This is evidence indexing, not a compatibility verdict."
+}

@@ -1,0 +1,9 @@
+[
+  {
+    "Protocol": "TCP",
+    "Port": 5080,
+    "Ref": "WebPort",
+    "Name": "Revora Web loopback",
+    "Description": "Internal HTTP listener; nginx remains the only public listener."
+  }
+]

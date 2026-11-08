@@ -1,0 +1,92 @@
+[
+  {
+    "map": 1000,
+    "start": [
+      466,
+      656
+    ],
+    "npc_footprints": [
+      [
+        466,
+        658
+      ]
+    ],
+    "targets": [
+      {
+        "x": 466,
+        "y": 649,
+        "walk_steps": 7
+      }
+    ],
+    "walk_route_verified": true,
+    "sha256": {
+      "server": "c874aa5659420dfcf03545f1bfad67bea0197ae55fbc8140fcd7e85ffbae33f1",
+      "archive": "22a6b93a38be33b3fd1cb736b2bdb091d4a87fc1bf78d431227051515e964d10",
+      "native": "baedafd532acc86d81cdc08ed49b7ef0197e67c5e5d62ae0e8655265ccdd35f7"
+    },
+    "scope": "Static shared-grid walking with proposed NPC footprints; live population, interaction effects and inter-map travel are not validated.",
+    "native_acceptance": false
+  },
+  {
+    "map": 1001,
+    "start": [
+      310,
+      629
+    ],
+    "npc_footprints": [
+      [
+        310,
+        631
+      ],
+      [
+        94,
+        283
+      ]
+    ],
+    "targets": [
+      {
+        "x": 91,
+        "y": 283,
+        "walk_steps": 709
+      },
+      {
+        "x": 333,
+        "y": 612,
+        "walk_steps": 40
+      },
+      {
+        "x": 339,
+        "y": 439,
+        "walk_steps": 287
+      },
+      {
+        "x": 728,
+        "y": 676,
+        "walk_steps": 1175
+      },
+      {
+        "x": 730,
+        "y": 676,
+        "walk_steps": 1177
+      },
+      {
+        "x": 732,
+        "y": 676,
+        "walk_steps": 1179
+      },
+      {
+        "x": 725,
+        "y": 674,
+        "walk_steps": 1170
+      }
+    ],
+    "walk_route_verified": true,
+    "sha256": {
+      "server": "89bdcb2d247add85d8d7b888c8f90d7d4d5127e51499479ca988a0c9884624fc",
+      "archive": "61db100d22f061f9ab8317cb752c0ccfa56a76f48cb86cb1f30c4c36775294ed",
+      "native": "0d3357ffbb1517c870a637a447bac47d871a0fb379b59687c53690309793e509"
+    },
+    "scope": "Static shared-grid walking with proposed NPC footprints; live population, interaction effects and inter-map travel are not validated.",
+    "native_acceptance": false
+  }
+]

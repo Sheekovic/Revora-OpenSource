@@ -1,0 +1,207 @@
+{
+  "stages": [
+    {
+      "mission": 1787,
+      "predecessor": 0,
+      "begin": [
+        8796,
+        1002,
+        473,
+        300
+      ],
+      "finish": [
+        4503,
+        1002,
+        454,
+        540
+      ],
+      "objectives": [],
+      "materials": []
+    },
+    {
+      "mission": 1788,
+      "predecessor": 1787,
+      "begin": [
+        4503,
+        1002,
+        454,
+        540
+      ],
+      "finish": [
+        4504,
+        1002,
+        468,
+        309
+      ],
+      "objectives": [],
+      "materials": []
+    },
+    {
+      "mission": 1789,
+      "predecessor": 1788,
+      "begin": [
+        4504,
+        1002,
+        468,
+        309
+      ],
+      "finish": [
+        4504,
+        1002,
+        468,
+        309
+      ],
+      "objectives": [
+        [
+          1789,
+          1,
+          1,
+          1
+        ],
+        [
+          1789,
+          1,
+          2,
+          1
+        ],
+        [
+          1789,
+          1,
+          3,
+          1
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "mission": 1790,
+      "predecessor": 1789,
+      "begin": [
+        4504,
+        1002,
+        468,
+        309
+      ],
+      "finish": [
+        4505,
+        1002,
+        440,
+        334
+      ],
+      "objectives": [],
+      "materials": []
+    },
+    {
+      "mission": 1791,
+      "predecessor": 1790,
+      "begin": [
+        4505,
+        1002,
+        440,
+        334
+      ],
+      "finish": [
+        4505,
+        1002,
+        440,
+        334
+      ],
+      "objectives": [],
+      "materials": [
+        [
+          721712,
+          1
+        ]
+      ]
+    },
+    {
+      "mission": 1792,
+      "predecessor": 1791,
+      "begin": [
+        4505,
+        1002,
+        440,
+        334
+      ],
+      "finish": [
+        4526,
+        1780,
+        145,
+        134
+      ],
+      "objectives": [],
+      "materials": [
+        [
+          721714,
+          1
+        ]
+      ]
+    },
+    {
+      "mission": 1793,
+      "predecessor": 1792,
+      "begin": [
+        4526,
+        1780,
+        145,
+        134
+      ],
+      "finish": [
+        4503,
+        1002,
+        454,
+        540
+      ],
+      "objectives": [],
+      "materials": []
+    },
+    {
+      "mission": 1794,
+      "predecessor": 1793,
+      "begin": [
+        4503,
+        1002,
+        454,
+        540
+      ],
+      "finish": [
+        8796,
+        1002,
+        473,
+        300
+      ],
+      "objectives": [],
+      "materials": []
+    }
+  ],
+  "items": [
+    721712,
+    721713,
+    721714,
+    721717,
+    728246
+  ],
+  "firework_points": [
+    [
+      440,
+      308
+    ],
+    [
+      443,
+      344
+    ],
+    [
+      465,
+      356
+    ]
+  ],
+  "minimum_level": 75,
+  "client_maximum": 95,
+  "reward_pack": 728246,
+  "implemented": false,
+  "aggregate_10931_proven": false,
+  "sha256": {
+    "quest": "f783c2a8ead9461a469c79b6c7e7aae00b2604066d4bc6e2e2c56d7e98fc5e14",
+    "items": "52889c537ddd00a6f4d349fa9243268dfedc81ab3899523f1e434218735387cb"
+  }
+}

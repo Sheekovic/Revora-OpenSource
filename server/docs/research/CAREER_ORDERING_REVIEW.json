@@ -1,0 +1,243 @@
+{
+  "scope": "Same-character ordering review of retained evidence; not a new gameplay pass or a fresh320 certificate",
+  "retained_uid": 4294907001,
+  "checkpoint": 70,
+  "reviewed_identities": 101,
+  "groups": [
+    {
+      "group": "promotions",
+      "ids": [
+        10814,
+        10815,
+        10816,
+        10817,
+        10820,
+        10821,
+        10822,
+        10823,
+        10826,
+        10827,
+        10828,
+        10831,
+        10832,
+        10901,
+        10904,
+        10905,
+        10906,
+        10907,
+        10909,
+        10910,
+        10911,
+        10912,
+        10914,
+        10915,
+        10916,
+        10917,
+        11206,
+        11207,
+        11208,
+        11209,
+        11217,
+        11218,
+        11219,
+        11220,
+        11305,
+        11306,
+        11307,
+        11308
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md"
+      ],
+      "retained_finding": "38 retained trainer receipts use ordinary trainer requests, purchased/mined/hunted materials and paid rites. Cold checkpoints retain prior receipts. The twelve early-rank exclusions are not backfilled."
+    },
+    {
+      "group": "runes",
+      "ids": [
+        11310,
+        11311,
+        11312,
+        11313,
+        11314,
+        11315,
+        11316,
+        11317,
+        11318,
+        11319,
+        11320,
+        11321
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/FULL_LEVEL_RUNE_ACHIEVEMENTS.md"
+      ],
+      "retained_finding": "Vesper purchases, exact owned +Stone consumption, rune packets and paid class changes establish ten full-class sets and one/five equipped-rune receipts. Earlier class receipts survive cold reload. Prior funding and controlled training dates/proximity remain."
+    },
+    {
+      "group": "collections",
+      "ids": [
+        11224,
+        11225,
+        11226,
+        11227,
+        11228,
+        11229,
+        11230,
+        11231,
+        11301
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "tools/CheckCandidateCombinedCollection.cs",
+        "Game/Features/CollectionAchievements.cs"
+      ],
+      "retained_finding": "Reviewed same-UID composition, not the separate supplied-profile collection fixture. First-rite garment enters wardrobe; paid mall/fixed-output packs reach50 garments/10 mounts. Eight controlled Planet weekends yield credits for156 distinct exchanges; purchases expand to198/92. Purchased VIP/peak eligibility and70 paid4000-RVP sign-ins over controlled months provide ten Easter packs with selected valid outcomes, completing200 garments/100 mounts. Permanent items, distinct design counts, exact debits, consumed pack UIDs, replay refusal and nested cold snapshots are checked. Later milestone bits/receipts are asserted; no200-mount receipt claimed (compatible catalog199). Original boss funding/encounter controls remain, and dates/outcomes do not establish probability or elapsed play time. Existing private earn/reload pass markers rechecked 2026-10-02; no new runtime execution or native acceptance."
+    },
+    {
+      "group": "flowers-and-marriage",
+      "ids": [
+        10127,
+        10129,
+        11124,
+        11125,
+        11126,
+        11127
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/FLOWER_QUEEN_EARNING.md",
+        "docs/MARRIAGE_ACHIEVEMENT.md"
+      ],
+      "retained_finding": "Same retained ordinary career pays configured25000-CP gender rite and reconnects before receiving four supplier-backed gifts: free rose, sender-purchased999 lilies and controlled Magnolia orchid/tulip bonuses. Mutual trade funds sender purchase/rerolls; bonus item UIDs are consumed and both bound rune harvests remain, with no daily P7. Exact snapshots, four delivery rows, five flower achievements and later reciprocal marriage10129 survive cold recovery/replay. Private female rankings initially have no positive totals: rank-one is uncontested, not a competitive campaign. Earlier inactive rose offer was refused and unused buyer-side nontradable lilies/payment retained; no refund or gift injection. Clock/RNG/proximity and peer initial qualification are controls; earlier funding provenance remains mixed. Existing private phase pass markers rechecked 2026-10-02; no new runtime execution or native acceptance."
+    },
+    {
+      "group": "couple-pk",
+      "ids": [
+        11115,
+        11121
+      ],
+      "evidence": [
+        "tools/CheckCandidateCareerRites.cs",
+        "docs/CAREER_REBIRTH_JOURNEY.md",
+        "docs/COUPLE_PK_WAR.md"
+      ],
+      "retained_finding": "Ordinary saved spouses create teams and accept NPC2319 invitations against a second married pair. Calculated ranged attacks defeat both opponents; controlled clock settles champion pair and returns all four. Separate cold claim pays each spouse 50000 CP,500 RVP,500000 silver,two bound EXP Balls and one bound P7. Exact snapshots, replay and loser refusal persist. Prior protected-opponent January12 round was cancelled without prizes; its two participation rows and recovered returns were preserved, not erased. January19 uses controlled proximity,cooldowns and non-retaliating opponents; no competitive balance claim. Existing private phase pass markers and source reviewed 2026-10-02; no new gameplay run or native/live acceptance."
+    },
+    {
+      "group": "masteries",
+      "ids": [
+        10321,
+        10322,
+        10323,
+        10324,
+        10325,
+        10326,
+        10327,
+        10328,
+        10329,
+        10330,
+        10331,
+        10332,
+        10401,
+        10402,
+        10403,
+        10404,
+        10405,
+        10406,
+        10407,
+        10408,
+        11132,
+        11210,
+        11211,
+        11212,
+        11213,
+        11214,
+        11215,
+        11221,
+        11222,
+        11223,
+        11302,
+        11303,
+        11322,
+        11323
+      ],
+      "evidence": [
+        "docs/CAREER_REBIRTH_JOURNEY.md#all34-weapon-masteries-composed-pirate-finale-2026-10-01"
+      ],
+      "retained_finding": "Same retained UID, shop/epic weapons, calculated combat and actual paid class changes. Mastery receipts survive rites that reset current proficiency. Supplied original eligibility and controlled calendar/proximity/cooldowns remain disclosed."
+    }
+  ],
+  "ordering_findings": [
+    "Earn class-specific promotions, active skills and full rune sets before leaving each school. Paid rites preserve current mastery evidence before proficiency reset. Historical achievement receipts remain keyed by UID and identity.",
+    "Gender change before marriage is the retained proven sequence. Fresh male character and female spouse do not replicate that order; changing both spouses has not been tested and is not inferred as complete.",
+    "Paid class changes preserve gender through ReincarnationRules.Body. Existing marriage need not be recreated for a class change.",
+    "Collection receipts count distinct permanent owned wardrobe designs without a class/gender predicate. Two hundred mounts remain excluded;200 garments/100 mounts are the retained proven thresholds.",
+    "Do not require every class loadout, maximum current proficiency and gender-specific interaction to be simultaneously active. The catalog uses persisted historical completion."
+  ],
+  "compatible_career_verified": false,
+  "remaining": [
+    "Complete joint resource/reserve and encounter-feasibility composition for the selected320; the recorded ledger is a lower bound with conservative allowances, not a complete budget.",
+    "Keep supplied-damage, controlled-clock, proximity and non-retaliating-peer limits explicit. Reuse representative earned combat where applicable without declaring every encounter proven.",
+    "Native acceptance, activation and release remain separate gates."
+  ],
+  "source_sha256": {
+    "Game/Features/ProgressionEvidence.cs": "edd322dc574f9232761262c39966b4cd002c4ff60aff8d40e0fbbd0d252aaaa1",
+    "Game/Features/AchievementCatalog.cs": "d27e572f53ed8ab8741584dc5f4f1a97f06643e580f14212f3c1b168b0e05b95",
+    "Game/Features/PaidReincarnation.cs": "f45d8593f32dfeafc3adf8519ffe7ae582e7f5d03dc31e33bfa9d0fca8b03713",
+    "Game/Features/ReincarnationRules.cs": "6b309d7733cf5079b512267f30227972aa41f3dcc742d2af6ef8f0c5ebfaaf3b",
+    "Game/Features/RuneLoadout.cs": "698b3f8e095be3696b96269d30ec9a7bfe91304852a17a13d5de3e16bd9c14a5",
+    "Game/Features/GenderChange.cs": "f1b2a222e24381d699f9d1573126cba7d2d86ad84d728cbb1c14909d5ed7236d",
+    "Game/Features/Marriages.cs": "70c65cbde837575b946d7aed7a761c2c36df9c75908ae0c622447b594ab9c673",
+    "Game/Features/CollectionAchievements.cs": "53cc19d2b1ddda1bc9ad41c310a240c3a76f5d6da90010aac497456c4dcb6566",
+    "docs/research/RETAINED_CAREER_RECEIPTS.json": "46ed3d585d59d9dcd1d06cda90ef8bebecfa1028194612b9a48bf4c77f538cdc",
+    "docs/research/RETAINED_EARNING_REVIEW.json": "51407c7176c2e8834a4a141e6384c4bd2b5fd9b1917b832a1882349892e4018e",
+    "docs/research/RETAINED_OBSERVED_PROVENANCE.json": "26df52e00a062047216946d3c19f2e6f5f884032667ecbe097e753523843845e"
+  },
+  "historical_checkpoint_scope": "The six groups and their original findings describe checkpoint70; later evidence below supersedes their open prerequisite statements, not their runtime controls.",
+  "current_reconciliation": {
+    "date": "2026-10-04",
+    "selected_route": "docs/research/CAREER_320_SELECTION.json",
+    "resolved": [
+      {
+        "requirement": "200 permanent mounts",
+        "evidence": "docs/research/RETAINED_COLLECTION_200.json",
+        "finding": "Same retained UID earned201 permanent mounts and achievement11232, with cold recovery. The historical exclusion in this report is superseded."
+      },
+      {
+        "requirement": "Flower/marriage ordering",
+        "evidence": "docs/research/CAREER_SOCIAL_PREREQUISITES.json",
+        "finding": "Use the already proven female-before-marriage sequence. The fresh married male checkpoint need not change gender or repeat marriage to prove this ordered prerequisite."
+      },
+      {
+        "requirement": "Earned qualified peers",
+        "evidence": "docs/research/FRESH_PEER_PREREQUISITES.json",
+        "finding": "Reuse the earned Arena/Ancient profiles; low-level social interactions do not require new level140 peers."
+      },
+      {
+        "requirement": "Second rebirth without disabled Abyss",
+        "evidence": "docs/research/CAREER_RESOURCE_DEPENDENCIES.json",
+        "finding": "Use the paid Exemption Token. Exclude11031; do not turn on Abyss to compose the selected route."
+      },
+      {
+        "requirement": "Permanent receipt retention across class changes",
+        "evidence": "Game/Features/ProgressionEvidence.cs",
+        "finding": "Completion is keyed by UID and achievement, with conflict-safe insertion. Reuse the paid-rite cold snapshots; class-specific promotions/masteries/runes must be earned before leaving each school."
+      },
+      {
+        "requirement": "Flame Lit gate traversal",
+        "evidence": "docs/FLAME_LIT_STORE.md",
+        "finding": "Existing sealed-movement route destroys the closed gate through the SobNpc dispatcher before walking inside. Reuse for geometry/access only; supplied gate damage is not natural kill-time proof."
+      }
+    ],
+    "ordering": [
+      "Earn bootstrap and first rebirth, retaining prior receipts; fund the ordinary Exemption Token for second rebirth.",
+      "Complete each selected trainer, active-skill, mastery and rune milestone before the next paid class change; maintain equipment and recovery funds.",
+      "Complete the female flower direction before marriage, then mutual marriage/hand-holding and Couple PK. Class changes preserve supported body gender.",
+      "Earn the final Pirate trainer milestones before the peak purchase, which directly sets final class.",
+      "Acquire and retain distinct permanent wardrobe designs; class and body gender are not collection predicates.",
+      "Keep Honor and Virtue expenditures separate from bounty currencies, and train subclasses incrementally within Study capacity."
+    ],
+    "scope": "Resolved ordering prerequisites only. Does not combine fresh and retained receipts or certify the complete320 career."
+  }
+}

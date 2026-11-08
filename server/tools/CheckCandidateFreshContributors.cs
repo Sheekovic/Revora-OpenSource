@@ -1,0 +1,44 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using Revora;
+using Revora.Client;
+using Revora.Database;
+using Revora.Game;
+using Revora.Network.GamePackets;
+internal static partial class CheckCandidateArenaLifecycle {
+    static GameState FreshContributor(uint uid,string name){
+        var p=FreshStarterSession();p.Account.Username=name;p.Account.EntityID=uid;p.Entity=new Entity(EntityFlag.Player,false){Owner=p,UID=uid};Require((bool)Call(Feature("SessionInstall"),"TryClaim",uid,p));FreshContributorLoad(p);return p;
+    }
+    static void FreshContributorLoad(GameState p){
+        p.Quests=new Quests(p);Require((bool)Call(typeof(EntityTable),"LoadEntityState",p));p.Action=2;p.Entity.FullyLoaded=true;p.BindWorldMap(p.Entity.MapID);ConquerItemTable.LoadItems(p);SkillTable.LoadSpells(p);SkillTable.LoadProficiencies(p);p.LoadItemStats();p.Quests.Load();EntityVariableTable.Load(p);SubClassTable.Load(p.Entity);ChiTable.Load(p);Revora.Database.KnownPersons.LoadPartner(p);Revora.Database.KnownPersons.LoaderFriends(p);Revora.Database.KnownPersons.LoadMentor(p);WayofHeroes.Load(p);
+        p.Entity.StorageItems=new Dictionary<uint,ConquerItem>();p.Entity.Titles=new System.Collections.Concurrent.ConcurrentDictionary<TitlePacket.Titles,DateTime>();p.InnerPower=new InnerPower(p.Entity.Name,p.Entity.UID);Require(!p.Fake && p.Account.State==AccountTable.AccountState.Player && !PirateFenced(p));
+    }
+    static string FreshContributorsSnapshot(GameState p){return Convert.ToString(Sql(@"SELECT json_build_object('prior',@prior::json,'profiles',(SELECT json_agg(e ORDER BY e.uid) FROM (SELECT uid,owner,name,level,class,experience,virtuepoints,reborn,mapid,x,y,conquerpoints,boundcps,money FROM entities WHERE uid IN(SELECT uid FROM revora_fresh_contributors)) e),'items',(SELECT json_agg(i ORDER BY i.uid) FROM items i WHERE entityid IN(SELECT uid FROM revora_fresh_contributors)),'creation',(SELECT json_agg(r ORDER BY character_uid) FROM revora_character_creation r WHERE character_uid IN(SELECT uid FROM revora_fresh_contributors)),'delivery',(SELECT json_agg(r ORDER BY uid) FROM revora_custom_starter_items r WHERE uid IN(SELECT uid FROM revora_fresh_contributors)),'starter',(SELECT json_agg(r ORDER BY uid,reborn,milestone) FROM revora_custom_starter_claims r WHERE uid IN(SELECT uid FROM revora_fresh_contributors)),'evidence',(SELECT json_agg(r ORDER BY uid,achievement_id) FROM revora_achievement_evidence r WHERE uid IN(SELECT uid FROM revora_fresh_contributors)))::text","prior",FreshAncientSnapshot(p)));}
+    static void FreshContributorsSave(GameState p,GameState[] peers,string stage,int kills,int hits){foreach(var who in peers.Concat(new[]{p}))Require(EntityTable.SaveEntity(who));Sql("UPDATE revora_fresh_contributors_probe SET stage=@stage,kills=@kills,hits=@hits,snapshot=@snapshot","stage",stage,"kills",kills,"hits",hits,"snapshot",FreshContributorsSnapshot(p));}
+    static void FreshContributorsProcess(string phase){
+        var p=FreshLoadSaved(true,true);EntityVariableTable.Load(p);SubClassTable.Load(p.Entity);ChiTable.Load(p);p.Quests.Load();Revora.Database.KnownPersons.LoadMentor(p);WayofHeroes.Load(p);Require(!p.Fake && p.Account.State==AccountTable.AccountState.Player && !PirateFenced(p));var peers=new List<GameState>();
+        if((bool)Sql("SELECT to_regclass('revora_fresh_contributors_probe') IS NULL")){
+            Require(phase.EndsWith("create") && FreshAncientSnapshot(p)==Convert.ToString(Sql("SELECT snapshot FROM revora_fresh_ancient_probe")));Sql("CREATE TABLE revora_fresh_contributors(slot integer PRIMARY KEY,uid bigint UNIQUE,name text,profession integer);CREATE TABLE revora_fresh_contributors_probe(stage text,kills integer,hits integer,snapshot text);INSERT INTO revora_fresh_contributors_probe VALUES('creating',0,0,NULL)");
+            uint uid=Convert.ToUInt32(Sql("SELECT trainee FROM revora_fresh_virtue_probe"));peers.Add(FreshContributor(uid,"FreshPupil1"));Sql("INSERT INTO revora_fresh_contributors VALUES(0,@uid,'FreshPupil1',10)","uid",(long)uid);
+            string[] names={"FreshArc1","FreshNin1","FreshMonk1","FreshPir1","FreshDrag1","FreshWind1","FreshWater1"};byte[] codes={4,8,10,12,14,18,0},classes={40,50,60,70,80,160,100};
+            for(int i=0;i<names.Length;i++){
+                Require((long)Sql("SELECT count(*) FROM accounts WHERE lower(username)=lower(@name)","name",names[i])==0);var who=FreshStarterSession();who.Account.Username=names[i];who.Account.Password=Guid.NewGuid().ToString("N");who.Account.Insert();Require(who.Account.Password=="");string message="";Require(EntityTable.CreateEntity(new EnitityCreate{Name=names[i],Body=1003,Class=codes[i]},who,ref message) && message=="ANSWER_OK");FreshContributorLoad(who);Require(who.Entity.Level==1 && who.Entity.Class==classes[i] && who.Entity.Reborn==0);Call(Feature("RevoraStarterPack"),"OnLogin",who);Sql("INSERT INTO revora_fresh_contributors VALUES(@slot,@uid,@name,@class)","slot",i+1,"uid",(long)who.Entity.UID,"name",names[i],"class",(int)classes[i]);peers.Add(who);
+            }
+            foreach(var who in peers){var pack=who.Inventory.Objects.Single(i=>i.ID==727990);ItemHandler.UseItem(pack,who);Require(who.Inventory.Count>1 && who.Entity.BoundCps==50000 && who.Entity.Money==1100000 && (long)Sql("SELECT count(*) FROM revora_custom_starter_claims WHERE uid=@uid AND reborn=0 AND milestone=1","uid",(long)who.Entity.UID)==1);}
+            FreshContributorsSave(p,peers.ToArray(),"created",0,0);
+        }else{
+            for(int i=0;i<8;i++)peers.Add(FreshContributor(Convert.ToUInt32(Sql("SELECT uid FROM revora_fresh_contributors WHERE slot=@slot","slot",i)),Convert.ToString(Sql("SELECT name FROM revora_fresh_contributors WHERE slot=@slot","slot",i))));
+        }
+        var all=peers.ToArray();Server.GamePool=all.Concat(new[]{p}).ToArray();Require(FreshContributorsSnapshot(p)==Convert.ToString(Sql("SELECT snapshot FROM revora_fresh_contributors_probe")));string stage=Convert.ToString(Sql("SELECT stage FROM revora_fresh_contributors_probe"));int kills=Convert.ToInt32(Sql("SELECT kills FROM revora_fresh_contributors_probe")),hits=Convert.ToInt32(Sql("SELECT hits FROM revora_fresh_contributors_probe"));
+        if(phase.EndsWith("train-a") || phase.EndsWith("train-b")){
+            bool second=phase.EndsWith("train-b");Require(stage==(second?"trained-a":"created"));var group=all.Skip(second?4:0).Take(4).ToArray();foreach(var who in group.Concat(new[]{p})){Revora.Database.KnownPersons.LoadPartner(who);Revora.Database.KnownPersons.LoaderFriends(who);who.Entity.Teleport(1015,468,205);}
+            Action<GameState,uint,uint> team=(who,action,target)=>{var frame=new Revora.Network.GamePackets.Team{Type=action,UID=target}.ToArray();Revora.Network.Writer.WriteUInt64(Revora.Network.PacketHandler.ClientSeal,frame.Length-8,frame);Revora.Network.GamePackets.Team.Process(frame,who);};team(p,Revora.Network.GamePackets.Team.Create,0);foreach(var who in group){team(p,Revora.Network.GamePackets.Team.InviteRequest,who.Entity.UID);team(who,Revora.Network.GamePackets.Team.AcceptInvitation,p.Entity.UID);Require(ReferenceEquals(p.Team,who.Team));}Require(p.Team.Teammates.Length==5);int start=kills;uint expected=p.VirtuePoints;
+            while(group.Any(w=>w.Entity.Level<50) && kills-start<10000){
+                if(!p.Map.Entities.Values.Any(e=>e.MonsterInfo!=null && e.MonsterInfo.ID==18 && !e.Dead))Call(typeof(Map),"_timerCallBack",p.Map,Time32.Now.AddSeconds(600).TotalMilliseconds);var mob=p.Map.Entities.Values.First(e=>e.MonsterInfo!=null && e.MonsterInfo.ID==18 && !e.Dead);var before=group.Select(w=>w.Entity.Level).ToArray();foreach(var who in group){who.Entity.X=mob.X;who.Entity.Y=(ushort)(mob.Y+1);}FreshClassicKill(p,1015,18,ref kills,ref hits);for(int n=0;n<group.Length;n++)if(before[n]<70)for(int level=before[n];level<group[n].Entity.Level;level++)expected+=(uint)(level*3.83F);Require(p.VirtuePoints==expected && group.All(w=>!w.Entity.Dead));
+            }
+            Require(group.All(w=>w.Entity.Level>=50));foreach(var who in group)team(who,Revora.Network.GamePackets.Team.ExitTeam,0);team(p,Revora.Network.GamePackets.Team.ExitTeam,0);Require(group.All(w=>w.Team==null) && p.Team==null);FreshContributorsSave(p,all,second?"trained":"trained-a",kills,hits);
+        }else Require(phase.EndsWith("create") && stage=="created" || phase.EndsWith("reload") && stage=="trained");
+        if(phase.EndsWith("reload"))Require(all.All(w=>w.Entity.Level>=50));Require(FreshContributorsSnapshot(p)==Convert.ToString(Sql("SELECT snapshot FROM revora_fresh_contributors_probe")) && !PirateFenced(p) && all.All(w=>!PirateFenced(w)));System.Console.WriteLine("[career-process] "+phase+"-passed kills="+kills+" hits="+hits+" levels="+string.Join(",",all.Select(w=>w.Entity.Level))+" leader-virtue="+p.VirtuePoints);Server.CommandsAI("@close");throw new InvalidOperationException("Fresh contributors did not close.");
+    }
+}

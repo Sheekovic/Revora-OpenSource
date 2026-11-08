@@ -1,0 +1,10 @@
+{
+  "source": "6711/ini/npc.ini",
+  "sha256": "b06db1e2484992a1b58eabd7a3d884da07ac728a4a183d0fd18f2dccd5b20497",
+  "models": {
+    "DuSan": 552,
+    "GeneralJudd": 699,
+    "PharmacistDong": 554
+  },
+  "native_rendering_verified": false
+}

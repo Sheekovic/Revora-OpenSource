@@ -1,0 +1,78 @@
+{
+  "scope": "Public map1011 native/server blocked cells and four ambush routes agree after reserving Villager Chou three-by-three footprint. Enemy population and appearance are Revora adaptations; native acceptance pending.",
+  "scenes": [
+    {
+      "map": 1011,
+      "client_bindings": [
+        [
+          "map/map/woods.7z",
+          256
+        ]
+      ],
+      "server_bindings": [
+        [
+          "map/map/woods.7z",
+          256
+        ]
+      ],
+      "server_floor_exists": true,
+      "verified": true,
+      "dimensions": [
+        944,
+        944
+      ],
+      "sha256": {
+        "server": "7e8f7a8262f8ae93a314699af6d276f0324fff6c32bcc6061bffc2f336f1e817",
+        "archive": "27d16d937ca171aef33a36ab4d46ba9b754c0c7e6bdf732cc5878853e8bb78be",
+        "native": "71144fb55181044fce3fe1312bcb331c3473c88334ac144c713ea9cde2296649"
+      },
+      "differing_cells": 0,
+      "points": [
+        {
+          "x": 790,
+          "y": 456,
+          "walkable": true
+        },
+        {
+          "x": 788,
+          "y": 460,
+          "walkable": true
+        },
+        {
+          "x": 790,
+          "y": 460,
+          "walkable": true
+        },
+        {
+          "x": 792,
+          "y": 460,
+          "walkable": true
+        }
+      ],
+      "routes": [
+        {
+          "x": 790,
+          "y": 456,
+          "steps": 0
+        },
+        {
+          "x": 788,
+          "y": 460,
+          "steps": 6
+        },
+        {
+          "x": 790,
+          "y": 460,
+          "steps": 4
+        },
+        {
+          "x": 792,
+          "y": 460,
+          "steps": 6
+        }
+      ]
+    }
+  ],
+  "all_scenes_available": true,
+  "native_acceptance": false
+}

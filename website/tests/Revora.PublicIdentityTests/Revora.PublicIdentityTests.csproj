@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><AssemblyName>Revora.PublicIdentityTests</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Revora.Persistence/Revora.Persistence.csproj" />
+    <ProjectReference Include="../../src/Revora.Web/Revora.Web.csproj" />
+  </ItemGroup>
+</Project>

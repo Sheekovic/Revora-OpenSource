@@ -1,0 +1,242 @@
+{
+  "stages": [
+    {
+      "mission": 1819,
+      "begin": [
+        8796,
+        1002,
+        473,
+        300
+      ],
+      "finish": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "materials": [],
+      "progress": []
+    },
+    {
+      "mission": 1820,
+      "begin": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "finish": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "materials": [
+        [
+          710562,
+          1
+        ]
+      ],
+      "progress": []
+    },
+    {
+      "mission": 1821,
+      "begin": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "finish": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "materials": [
+        [
+          710563,
+          1
+        ]
+      ],
+      "progress": []
+    },
+    {
+      "mission": 1822,
+      "begin": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "finish": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "materials": [
+        [
+          710564,
+          1
+        ]
+      ],
+      "progress": []
+    },
+    {
+      "mission": 1823,
+      "begin": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "finish": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "materials": [
+        [
+          710565,
+          1
+        ]
+      ],
+      "progress": []
+    },
+    {
+      "mission": 1824,
+      "begin": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "finish": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "materials": [
+        [
+          710566,
+          1
+        ]
+      ],
+      "progress": []
+    },
+    {
+      "mission": 1825,
+      "begin": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "finish": [
+        4707,
+        1818,
+        56,
+        55
+      ],
+      "materials": [],
+      "progress": [
+        [
+          1825,
+          0,
+          1,
+          1
+        ],
+        [
+          1825,
+          0,
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "mission": 1826,
+      "begin": [
+        4706,
+        1015,
+        669,
+        780
+      ],
+      "finish": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "materials": [],
+      "progress": []
+    },
+    {
+      "mission": 1827,
+      "begin": [
+        4705,
+        1015,
+        686,
+        547
+      ],
+      "finish": [
+        8796,
+        1002,
+        473,
+        300
+      ],
+      "materials": [],
+      "progress": []
+    }
+  ],
+  "items": {
+    "710562": "RedToken",
+    "710563": "IndigoToken",
+    "710564": "BlackToken",
+    "710565": "PitchToken",
+    "710566": "ScarletToken",
+    "710567": "GoldenToken",
+    "728248": "L97SuperNecklacePack"
+  },
+  "equipment": [
+    {
+      "id": 120189,
+      "name": "DragonNecklace",
+      "required_class": 0,
+      "level": 97,
+      "quality": 9
+    },
+    {
+      "id": 121189,
+      "name": "GoldBag",
+      "required_class": 190,
+      "level": 97,
+      "quality": 9
+    }
+  ],
+  "minimum_level": 95,
+  "client_maximum": 115,
+  "reward_pack": 728248,
+  "disguise_seconds": 90,
+  "maze_seconds": 10,
+  "original_drop_odds": null,
+  "original_maze_coordinates": null,
+  "quest_implemented": false,
+  "native_acceptance": false,
+  "aggregate_10931_proven": false,
+  "sha256": {
+    "quest": "f783c2a8ead9461a469c79b6c7e7aae00b2604066d4bc6e2e2c56d7e98fc5e14",
+    "items": "52889c537ddd00a6f4d349fa9243268dfedc81ab3899523f1e434218735387cb",
+    "client_index": "86a54928a9682617371542cdb5a72707c799b92a5c820e3581183adaa94f32b0",
+    "server_index": "d1f35d6dc3dc0d1958a2aa612c4cdc988ed693636d89ad93078388e81cd23c19"
+  },
+  "chamber": {
+    "journal_map": 1818,
+    "client_registered": false,
+    "server_registered": false,
+    "server_terrain_present": false
+  }
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "map": 1000,
+    "start": [
+      493,
+      579
+    ],
+    "npc_footprints": [
+      [
+        495,
+        579
+      ],
+      [
+        386,
+        103
+      ]
+    ],
+    "targets": [
+      {
+        "x": 384,
+        "y": 103,
+        "walk_steps": 881
+      },
+      {
+        "x": 165,
+        "y": 276,
+        "walk_steps": 927
+      }
+    ],
+    "walk_route_verified": true,
+    "sha256": {
+      "server": "c874aa5659420dfcf03545f1bfad67bea0197ae55fbc8140fcd7e85ffbae33f1",
+      "archive": "22a6b93a38be33b3fd1cb736b2bdb091d4a87fc1bf78d431227051515e964d10",
+      "native": "baedafd532acc86d81cdc08ed49b7ef0197e67c5e5d62ae0e8655265ccdd35f7"
+    },
+    "scope": "Static four-direction walking with the listed quest NPC footprints; other live objects, jumps and inter-city arrival not validated. Island start is a sampled walkable city point, not a verified teleport landing.",
+    "native_acceptance": false
+  },
+  {
+    "map": 1015,
+    "start": [
+      717,
+      573
+    ],
+    "npc_footprints": [
+      [
+        765,
+        602
+      ]
+    ],
+    "targets": [
+      {
+        "x": 763,
+        "y": 602,
+        "walk_steps": 75
+      }
+    ],
+    "walk_route_verified": true,
+    "sha256": {
+      "server": "e47df70501200965040755a424873395172c03e7dad920d483414f85c0359ba7",
+      "archive": "150af472995d0c4d81425cc1e3c67ddb3c870dc1cb3a63f6c5dcfa73d50ead27",
+      "native": "9be1551c0856bc631ac4601ef74f1046ca03d3ba2bcae9e0d4ba2b9536e2fa7e"
+    },
+    "scope": "Static four-direction walking with the listed quest NPC footprints; other live objects, jumps and inter-city arrival not validated. Island start is a sampled walkable city point, not a verified teleport landing.",
+    "native_acceptance": false
+  }
+]

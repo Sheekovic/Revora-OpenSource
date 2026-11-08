@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-04",
+  "scope": "Zero-donation loaded Duke profile and conservative fixed-loadout funding model; no new kill or reward",
+  "result": "passed",
+  "profile": {
+    "cp": 5602451,
+    "hp": 19664,
+    "uid": 1096322,
+    "rank": "Duke",
+    "class": 41,
+    "level": 133,
+    "reborn": 2,
+    "silver": 22799121,
+    "defence": 1862,
+    "critical": 1150,
+    "donation": 0,
+    "maximum_hp": 19664,
+    "battle_power": 358,
+    "funding_bound": {
+      "hits": 8480,
+      "trips": 23,
+      "affordable": true,
+      "elapsed_ms": 6911000,
+      "minimum_hp": 5664,
+      "minimum_hit": 11793,
+      "retaliations": 2119,
+      "medicines_used": 2270,
+      "medicine_silver": 2300000,
+      "medicines_bought": 2300,
+      "within_two_hours": true,
+      "dragon_gem_percent": 180,
+      "repair_silver_bound": 2071056,
+      "initial_broken_items": 0,
+      "initial_meteor_cp_bound": 0,
+      "net_bounty_silver_bound": 5628944,
+      "repair_batch_silver_bound": 86294,
+      "minimum_maximum_durability": 1099,
+      "maximum_wear_between_repairs": 475,
+      "maintenance_allowance_ms_per_visit": 30000
+    },
+    "maximum_attack": 5882,
+    "minimum_attack": 5876,
+    "physical_decrease": 4310,
+    "physical_increase": 5633
+  },
+  "private_runtime_sha256": "18cac3a8a6ef22f46175ef2fab4749adac8e2db09fc3ad323b944f39d969a5f3",
+  "fixed_stat_test_runtime_sha256": "fc90f64ca4ee203b4e0dcdbf24fbedc000f4f7a87cc00ecde765b9020a633844",
+  "fixed_stat_checks": 6,
+  "saved_career_snapshot_unchanged": true,
+  "model": {
+    "boss_hp": 100000000,
+    "boss_level": 140,
+    "boss_defence": 7000,
+    "incoming_damage": 7500,
+    "attack_interval_ms": 500,
+    "retaliation_every_hits": 4,
+    "resupply_ms": 90000,
+    "medicine_hp": 7000,
+    "medicine_unit_silver": 1000,
+    "capacity_medicines": 100,
+    "critical_bonus_used": false,
+    "temporary_attack_buffs_used": false,
+    "maintenance_ms_per_visit": 30000,
+    "wear_per_attack_and_retaliation": 1,
+    "repair_policy": "Repair all wear-prone slots before starting, before each medicine refill, and after the kill; model maximum silver cost even for unworn slots."
+  },
+  "conclusions": [
+    "Zero donation naturally loads Duke under the owner-approved ranking policy; Serf is not the real profile.",
+    "Changing only rank in fixed-stat fixtures leaves daily-boss outgoing melee unchanged; incoming active-boss hits remain 6500..7500.",
+    "LoadItemStats also applies rank bonuses. The real Duke profile loses 1100 maximum HP, 500 attack, 500 physical increase and 50 critical compared with the earlier King profile.",
+    "Using the real minimum attack and dragon gems, unbuffed noncritical melee has a calculated lower bound of 11793 against the unbuffed daily boss.",
+    "With planned preventive repairs, zero donation fits the modeled two-hour hunt and leaves at least5628944 silver from the10M bounty after medicine and conservative repairs; no King receipt is needed for this numeric prerequisite.",
+    "Maximum475 wear events between repairs is below the weakest maximum durability1099, even charging every attack and retaliation to every modeled item. Therefore no mid-fight break or lost stat contribution is needed by this model."
+  ],
+  "limitations": [
+    "Arithmetic model only: no new Attack.HandleAttack fight, monster AI, movement, item use, durability loss, payment or persistence claim.",
+    "The 500ms attacks and 90-second resupply trips reuse explicit controlled assumptions, not measured native timing.",
+    "Preventive repairs reuse the already tested ordinary unequip/repair/re-equip path; the extra30 seconds per visit is an explicit model allowance, not measured client time. No new full combat or maintenance transaction was executed.",
+    "Existing full-fight and repair/reload evidence remains separately scoped; do not claim its historical King stats were Duke stats.",
+    "This does not certify every source of initial equipment/funds, all later purchases, the selected320 career, native acceptance or deployment."
+  ],
+  "logs": {
+    "readiness_sha256": "f1c0fa21747e6e1075d5c39528bfaa0e59c1f02b86b672c84289c90ed33db3e1",
+    "fixed_stat_sha256": "84ba84e245f8589ff10a05ff2d401e6a240f0db2dbae672b7a0aadd19ea34f75"
+  },
+  "source_sha256": {
+    "tools/CheckCandidateFreshArenaClasses.cs": "afcde5e1a1d0a0c2a3b280c45e4fa608235893738330cf6890abdf2e58f993db",
+    "tests/CombatBalance/CombatTests.cs": "0afd8df3fb8c8651be0f7d6532dfbc82d2233cf7df7c0645f8dfa702b5285240",
+    "tests/CombatBalance/Verify-Combat.ps1": "0783402c126d4dc5b90bb922ad52cda1ace93c1532bc21a6f6ba47b0064c5318",
+    "Game/Attacking/Calculate.cs": "ab4ac7ef6727a46353d8cfe2670c0cf74d3f7eea7ce789b0b56ee1bd50803522",
+    "Game/Attacking/CombatMath.cs": "56eac16d8768eca01e0924a13a3b987d2846ff9d1a6677c993e4d1d930971ca3",
+    "Game/Features/DailyWorldBosses.cs": "1e7d6e3281cbe14deefb61a23703d584f769ab60e86c88dfc7ac4a96bac0cbb4",
+    "Game/ConquerStructures/Nobility.cs": "b80b8e82b3406ecc365ebf7eeb73b8e0b5c6d1d2d6f94b0d1d4e51e7b36e52ea",
+    "Client/GameState.cs": "f71a7b91642a15f70ba552d241b8006dd5732e53cab153c6e18690e4711b6a14",
+    "Game/Features/EquipmentUpgrades.cs": "62413c19eeb4b7fec62cda558858bfe8bc235ef4c5d0911c4899f104a2e7086d"
+  },
+  "existing_evidence": [
+    "docs/research/FRESH_DAILY_BOSS_COMBAT.json",
+    "docs/research/FRESH_FUNDING_MAINTENANCE.json",
+    "docs/research/CAREER_320_SELECTION.json"
+  ]
+}

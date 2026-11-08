@@ -1,0 +1,288 @@
+{
+  "scope": "Read-only loaded catalog/public spawn SELECT probe, 2026-09-26.",
+  "monsters": [
+    {
+      "id": 57,
+      "name": "BullMonster",
+      "level": 112,
+      "mesh": 284,
+      "hp": 35050,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "BullMonsterL113",
+      "level": 113,
+      "mesh": 282,
+      "hp": 70100,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "BullDevil",
+      "level": 115,
+      "mesh": 317,
+      "hp": 3505000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=True"
+      ]
+    },
+    {
+      "id": 2231,
+      "name": "RedBull",
+      "level": 113,
+      "mesh": 317,
+      "hp": 35535,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 2232,
+      "name": "BlueBull",
+      "level": 115,
+      "mesh": 317,
+      "hp": 65535,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8118,
+      "name": "BullMessenger",
+      "level": 112,
+      "mesh": 317,
+      "hp": 55000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8218,
+      "name": "BullAide",
+      "level": 112,
+      "mesh": 317,
+      "hp": 55000,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8318,
+      "name": "BullKing",
+      "level": 112,
+      "mesh": 317,
+      "hp": 65535,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=True"
+      ]
+    }
+  ],
+  "npc_rows": [],
+  "queried_npc_ids": [
+    4702
+  ],
+  "spawns": [
+    {
+      "id": 40,
+      "map": 1001,
+      "x": 162,
+      "y": 319,
+      "width": 65,
+      "height": 60,
+      "count": 50,
+      "family": 57
+    },
+    {
+      "id": 41,
+      "map": 1001,
+      "x": 52,
+      "y": 323,
+      "width": 35,
+      "height": 25,
+      "count": 50,
+      "family": 57
+    },
+    {
+      "id": 42,
+      "map": 1001,
+      "x": 85,
+      "y": 279,
+      "width": 70,
+      "height": 40,
+      "count": 50,
+      "family": 57
+    },
+    {
+      "id": 43,
+      "map": 1001,
+      "x": 101,
+      "y": 353,
+      "width": 40,
+      "height": 63,
+      "count": 50,
+      "family": 57
+    },
+    {
+      "id": 44,
+      "map": 1001,
+      "x": 153,
+      "y": 401,
+      "width": 90,
+      "height": 63,
+      "count": 50,
+      "family": 57
+    },
+    {
+      "id": 89,
+      "map": 1001,
+      "x": 162,
+      "y": 319,
+      "width": 65,
+      "height": 60,
+      "count": 5,
+      "family": 82
+    },
+    {
+      "id": 90,
+      "map": 1001,
+      "x": 52,
+      "y": 323,
+      "width": 35,
+      "height": 25,
+      "count": 2,
+      "family": 82
+    },
+    {
+      "id": 91,
+      "map": 1001,
+      "x": 85,
+      "y": 279,
+      "width": 70,
+      "height": 40,
+      "count": 5,
+      "family": 82
+    },
+    {
+      "id": 92,
+      "map": 1001,
+      "x": 101,
+      "y": 353,
+      "width": 40,
+      "height": 63,
+      "count": 4,
+      "family": 82
+    },
+    {
+      "id": 93,
+      "map": 1001,
+      "x": 153,
+      "y": 401,
+      "width": 90,
+      "height": 63,
+      "count": 6,
+      "family": 82
+    },
+    {
+      "id": 207,
+      "map": 1001,
+      "x": 153,
+      "y": 401,
+      "width": 90,
+      "height": 63,
+      "count": 1,
+      "family": 92
+    },
+    {
+      "id": 4506,
+      "map": 1001,
+      "x": 89,
+      "y": 280,
+      "width": 20,
+      "height": 20,
+      "count": 3,
+      "family": 2231
+    },
+    {
+      "id": 4507,
+      "map": 1001,
+      "x": 97,
+      "y": 343,
+      "width": 20,
+      "height": 20,
+      "count": 3,
+      "family": 2231
+    },
+    {
+      "id": 4508,
+      "map": 1001,
+      "x": 184,
+      "y": 384,
+      "width": 20,
+      "height": 20,
+      "count": 3,
+      "family": 2231
+    },
+    {
+      "id": 4509,
+      "map": 1001,
+      "x": 186,
+      "y": 359,
+      "width": 1,
+      "height": 1,
+      "count": 1,
+      "family": 2232
+    },
+    {
+      "id": 8019,
+      "map": 1001,
+      "x": 162,
+      "y": 319,
+      "width": 65,
+      "height": 60,
+      "count": 1,
+      "family": 8118
+    },
+    {
+      "id": 8039,
+      "map": 1001,
+      "x": 162,
+      "y": 319,
+      "width": 65,
+      "height": 60,
+      "count": 1,
+      "family": 8218
+    },
+    {
+      "id": 8059,
+      "map": 1001,
+      "x": 162,
+      "y": 319,
+      "width": 65,
+      "height": 60,
+      "count": 1,
+      "family": 8318
+    }
+  ],
+  "native_acceptance": false
+}

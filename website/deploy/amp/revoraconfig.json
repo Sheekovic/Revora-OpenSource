@@ -1,0 +1,193 @@
+[
+  {
+    "DisplayName": "Instance Display Name",
+    "Description": "Human-readable environment name.",
+    "FieldName": "InstanceName",
+    "ParamFieldName": "InstanceName",
+    "Category": "Revora:settings",
+    "InputType": "text",
+    "DefaultValue": "Revora Development",
+    "Required": true
+  },
+  {
+    "DisplayName": "Realm Name",
+    "Description": "Realm name presented to compatible clients.",
+    "FieldName": "RealmName",
+    "ParamFieldName": "RealmName",
+    "Category": "Revora:settings",
+    "InputType": "text",
+    "DefaultValue": "Revora",
+    "Required": true
+  },
+  {
+    "DisplayName": "Environment",
+    "Description": "Deployment safety profile. Production is intentionally unavailable in this template revision.",
+    "FieldName": "Environment",
+    "ParamFieldName": "Environment",
+    "Category": "Revora:settings",
+    "InputType": "enum",
+    "DefaultValue": "Development",
+    "EnumValues": {
+      "Development": "Development",
+      "Staging": "Staging"
+    }
+  },
+  {
+    "DisplayName": "Runtime Adapter",
+    "Description": "Disabled fails closed. PostgreSqlSyntheticTest is a durable clean-room test protocol and is not proof of 5165 compatibility.",
+    "FieldName": "RuntimeAdapter",
+    "ParamFieldName": "RuntimeAdapter",
+    "Category": "Revora:settings",
+    "InputType": "enum",
+    "DefaultValue": "Disabled",
+    "EnumValues": {
+      "Disabled": "Disabled (fail closed)",
+      "InMemory": "In-memory development harness",
+      "PostgreSqlSyntheticTest": "PostgreSQL synthetic test protocol (not 5165)"
+    }
+  },
+  {
+    "DisplayName": "Account Bind Address",
+    "Description": "Account listener address. Keep 127.0.0.1 until public exposure is separately approved.",
+    "FieldName": "AccountAddress",
+    "ParamFieldName": "AccountListener.Address",
+    "Category": "Revora:network",
+    "InputType": "text",
+    "DefaultValue": "127.0.0.1",
+    "Required": true
+  },
+  {
+    "DisplayName": "Account Port",
+    "Description": "TCP port reserved by AMP for the account listener.",
+    "FieldName": "AccountPort",
+    "ParamFieldName": "AccountListener.Port",
+    "Category": "Revora:network",
+    "InputType": "number",
+    "DefaultValue": "{{$AccountPort}}",
+    "minValue": "1024",
+    "maxValue": "65535",
+    "Required": true
+  },
+  {
+    "DisplayName": "Game Bind Address",
+    "Description": "Game listener address. Keep 127.0.0.1 until public exposure is separately approved.",
+    "FieldName": "GameAddress",
+    "ParamFieldName": "GameListener.Address",
+    "Category": "Revora:network",
+    "InputType": "text",
+    "DefaultValue": "127.0.0.1",
+    "Required": true
+  },
+  {
+    "DisplayName": "Game Port",
+    "Description": "TCP port reserved by AMP for the game listener.",
+    "FieldName": "GamePort",
+    "ParamFieldName": "GameListener.Port",
+    "Category": "Revora:network",
+    "InputType": "number",
+    "DefaultValue": "{{$GamePort}}",
+    "minValue": "1024",
+    "maxValue": "65535",
+    "Required": true
+  },
+  {
+    "DisplayName": "Maximum Concurrent Players",
+    "Description": "Hard upper bound for concurrently owned player sessions.",
+    "FieldName": "MaximumPlayers",
+    "ParamFieldName": "MaximumPlayers",
+    "Category": "Revora:limits",
+    "InputType": "number",
+    "DefaultValue": "100",
+    "minValue": "1",
+    "maxValue": "10000"
+  },
+  {
+    "DisplayName": "Shutdown Timeout",
+    "Description": "Maximum graceful shutdown duration.",
+    "FieldName": "ShutdownTimeoutSeconds",
+    "ParamFieldName": "ShutdownTimeoutSeconds",
+    "Category": "Revora:lifecycle",
+    "InputType": "number",
+    "DefaultValue": "30",
+    "minValue": "5",
+    "maxValue": "300",
+    "Suffix": "seconds"
+  },
+  {
+    "DisplayName": "Save Interval",
+    "Description": "Periodic persistence flush interval.",
+    "FieldName": "SaveIntervalSeconds",
+    "ParamFieldName": "SaveIntervalSeconds",
+    "Category": "Revora:lifecycle",
+    "InputType": "number",
+    "DefaultValue": "300",
+    "minValue": "30",
+    "maxValue": "86400",
+    "Suffix": "seconds"
+  },
+  {
+    "DisplayName": "Log Level",
+    "Description": "Minimum operational console log level. Debug is intentionally unavailable.",
+    "FieldName": "LogLevel",
+    "ParamFieldName": "LogLevel",
+    "Category": "Revora:logging",
+    "InputType": "enum",
+    "DefaultValue": "Information",
+    "EnumValues": {
+      "Information": "Information",
+      "Warning": "Warning",
+      "Error": "Error"
+    }
+  },
+  {
+    "DisplayName": "Log Retention",
+    "Description": "Retention target if bounded file logging is enabled later.",
+    "FieldName": "LogRetentionDays",
+    "ParamFieldName": "LogRetentionDays",
+    "Category": "Revora:logging",
+    "InputType": "number",
+    "DefaultValue": "14",
+    "minValue": "1",
+    "maxValue": "90",
+    "Suffix": "days"
+  },
+  {
+    "DisplayName": "New Account Registration",
+    "Description": "Permit new account registration. Disabled by default.",
+    "FieldName": "RegistrationEnabled",
+    "ParamFieldName": "RegistrationEnabled",
+    "Category": "Revora:security",
+    "InputType": "checkbox",
+    "DefaultValue": "false",
+    "EnumValues": {
+      "false": "False",
+      "true": "True"
+    }
+  },
+  {
+    "DisplayName": "Maintenance Mode",
+    "Description": "Reject new player sessions while allowing operator maintenance.",
+    "FieldName": "MaintenanceMode",
+    "ParamFieldName": "MaintenanceMode",
+    "Category": "Revora:security",
+    "InputType": "checkbox",
+    "DefaultValue": "true",
+    "EnumValues": {
+      "false": "False",
+      "true": "True"
+    }
+  },
+  {
+    "DisplayName": "Apply Approved Migrations",
+    "Description": "Apply explicitly approved migrations during startup. Restricted to Development by Revora.Host.",
+    "FieldName": "ApplyMigrations",
+    "ParamFieldName": "ApplyMigrations",
+    "Category": "Revora:security",
+    "InputType": "checkbox",
+    "DefaultValue": "false",
+    "EnumValues": {
+      "false": "False",
+      "true": "True"
+    }
+  }
+]

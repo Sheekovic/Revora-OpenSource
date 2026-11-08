@@ -1,0 +1,29 @@
+{
+  "guide": "https://co.99.com/guide/quests/themadman.shtml",
+  "reviewed": "2026-09-26",
+  "guide_confirms": "Five non-travel outcomes and ordered toxin pairs; no duration/intensity or exact zombie mesh",
+  "revora_rules": {
+    "window_seconds": 20,
+    "poison": "Existing ToxicFog path, 2% current HP per normal two-second tick, initially ten ticks; final tick clears without damage",
+    "heal": "Full current maximum HP once; saved with receipt",
+    "strong": "Existing Stigma flag/strength calculation; configured multiplier 1.15",
+    "float": "Existing Fly flag; refuses pre-existing flight, riding or transformation",
+    "zombie": "Cosmetic GreenFaceZombie mesh 4352, max 20 seconds, cancelled on leaving Twin City or losing eligibility",
+    "replenishment": "Fresh hunted Snakeman fang after receipt handled and window expired; replaces only spent pair"
+  },
+  "client_evidence": {
+    "file": "ini/monster.dat",
+    "sha256": "99fa2c8f14c3851d797a0b20fbd325053f9acee35c7dab4c5e73edc2f5792585",
+    "section": "GreenFaceZombie",
+    "TypeID": 4352,
+    "candidate_only": true,
+    "native_visual_acceptance": false
+  },
+  "source_seams": [
+    "Game/Attacking/Handle.cs: existing Stigma and Fly application",
+    "Game/Attacking/Calculate.cs: existing Stigma and current-HP percentage calculation",
+    "Thread.cs: status expiry and ToxicFog ticks",
+    "Game/Features/QuestAppearance.cs: owned cosmetic projection and restoration"
+  ],
+  "ordinary_dispatch_enabled": false
+}

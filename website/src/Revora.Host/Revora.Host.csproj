@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>Revora.Host</AssemblyName>
+    <Version>0.1.0</Version>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <DebugType Condition="'$(Configuration)' == 'Release'">None</DebugType>
+    <DebugSymbols Condition="'$(Configuration)' == 'Release'">false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Revora.Application/Revora.Application.csproj" />
+    <ProjectReference Include="../Revora.Persistence/Revora.Persistence.csproj" />
+    <ProjectReference Include="../Revora.NativeLogin.Core/Revora.NativeLogin.Core.csproj" />
+    <ProjectReference Include="../Revora.Gameplay/Revora.Gameplay.csproj" />
+    <ProjectReference Include="../Revora.Protocol5165/Revora.Protocol5165.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../licenses/COPS-v7-LICENSE.txt" Link="licenses/COPS-v7-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

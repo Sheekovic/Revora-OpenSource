@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<configuration>
+  <connectionStrings>
+    <add name="Conquer_Server" connectionString="Host=127.0.0.1;Port=25432;Username=revora_game;Password=YOUR_PASSWORD;Database=revora6711_3d" providerName="Npgsql"/>
+  </connectionStrings>
+</configuration>

@@ -1,0 +1,133 @@
+{
+  "review_date": "2026-10-04",
+  "scope": "Source-based peer qualification reconciliation for existing earning evidence; no new runtime earning or full320 certificate",
+  "groups": [
+    {
+      "ids": [
+        10123,
+        10131,
+        10132
+      ],
+      "route": "Friendship and both house-visit roles",
+      "requirements": "Canonical ordinary Player session, mutual saved friendship and consent; host must own a constructed home. No level, class or rebirth threshold in friendship/visit eligibility.",
+      "existing_witness": "Retained earning review group25: mutual trade funds the peer certificate/home; consumed certificate and both visit roles persist. Fresh ordinary creation/trade witnesses are already available.",
+      "decision": "No additional high-level peer training is needed for these eligibility checks. The host still needs its paid home and accepted invitation."
+    },
+    {
+      "ids": [
+        10126
+      ],
+      "route": "Trade partnership",
+      "requirements": "Canonical ordinary Player session, initialized partners, mutual consent and proximity. No level/class/rebirth threshold; mature partnership waits72 hours.",
+      "existing_witness": "Retained group26 checks reciprocal saved consent, timestamp preservation, expiry boundary and cold recovery.",
+      "decision": "Reuse the existing consent/wait evidence; do not manufacture another level140 peer to test a predicate without that requirement."
+    },
+    {
+      "ids": [
+        10127,
+        10129,
+        10130,
+        11124,
+        11125,
+        11126,
+        11127
+      ],
+      "route": "Flowers, marriage and hand holding",
+      "requirements": "Opposite supported body genders for the chosen flower direction/marriage/hand holding. Marriage requires both unmarried at consent. Flower gifting has no level threshold; the chosen Magnolia flower-supply route does require level80.",
+      "existing_witness": "Retained groups35/36: paid gender change before gifts and marriage, then accepted movement. Fresh ordinary Warrior peer has earned level130, exceeding the actual Magnolia80 requirement. Item supply, payment and outcomes remain those of the retained earning tests.",
+      "decision": "Keep the proven female-before-marriage ordering. Do not change both already-married fresh characters or replay their marriage merely to duplicate this route. Competitive first place remains a rank condition, not a promise every simultaneous player can win."
+    },
+    {
+      "ids": [
+        10221,
+        10222,
+        10223,
+        10224,
+        10225
+      ],
+      "route": "Guild appointments, Manager and Supervisor",
+      "requirements": "Join checks the guild-selected level/rebirth/class requirements and saved membership. Leadership/appointment checks membership, authority, capacity and fees. Automatic offices use saved positive donations/flower categories and guild-level-dependent seats, not a separate high-level character requirement.",
+      "existing_witness": "Retained group44: normal admission and leadership handover, paid320-CP honorary appointment, discharge and positive donations, paid inscriptions and two funded contributing peers. Earn/reload/restore logs are retained.",
+      "decision": "Preserve guild admission rules and earned contributions. A supplied peer level140 is not itself a missing prerequisite when the founding guild admits the existing ordinary profiles; no new roster grind is justified by these office predicates."
+    }
+  ],
+  "reviewed_identities": 16,
+  "source_sha256": {
+    "Game/Features/QuestInventory.cs": "5f749770e55262a2b918f55085c71ed7ce0eb5f7b9b38b7783516dbc1af16d4a",
+    "Game/Features/Friendships.cs": "12a715169af408eb6877aa47cf84e29c1b99f7002b3a85507ea536fa0fe6bd45",
+    "Game/Features/HouseVisits.cs": "e0c8e86433264c1b5b6c2bf6a0be46664594d6495d466ef465a5991eadfaf51c",
+    "Game/Features/TradePartnerships.cs": "cd463a8b36691e3a6d0a0d9ef73d9cf70f12949aba87a3eaf8c06005d5685530",
+    "Game/Features/Marriages.cs": "70c65cbde837575b946d7aed7a761c2c36df9c75908ae0c622447b594ab9c673",
+    "Game/Features/GenderChange.cs": "f1b2a222e24381d699f9d1573126cba7d2d86ad84d728cbb1c14909d5ed7236d",
+    "Game/Features/FlowerDelivery.cs": "2a926329e2de7225c185da7a15a1a7786c77012db0199600a0be7918a2fafa48",
+    "Game/Features/MagnoliaQuest.cs": "d09f86a782354dce32c1079dbda5e83601afba641004343f973951cc870e2427",
+    "Game/Features/GuildLeadership.cs": "3c85059d84b99247219ed5f8245bee38177af02344ff0e741de21d98dde5cc13",
+    "Game/Features/GuildManagers.cs": "a39a66fb2a5c6faea381a9f10e363e2a4321e99540d783c62afb4eb1e4ac3154",
+    "Game/Features/GuildFounding.cs": "6a80131a99de1af0c7cb3ee686023e95a39a73f45e5cbf38f34f0b621a7a7df8",
+    "Network/GamePackets/GuildCommand.cs": "05198e9aaeaf23395d8befcbe1592a67a5c5e53717b7b96dd85c98ce68e7e584",
+    "Network/GamePackets/GuildAdvertise/Guild_Advertise.cs": "f31728bbff857565d994e50919e5ccd4bc8835ea1d4a834b0ded9a1f827b47c2",
+    "Game/ConquerStructures/Society/Guild.cs": "fe279e87c93e828eaa7b9ad996ff0b37adfcb205db7a9e30c3f722c17f8483df",
+    "Game/Attacking/Handle.cs": "b6a00f22b36f66500bba94e9851d313c388101681def5e03e3e03ecd8cc24bce",
+    "System/Config.cs": "180158988578926e645ec3d2cf5ec159fbe564ec1779abb7cf5b0e16c1859356",
+    "docs/research/FRESH_PEER_PREREQUISITES.json": "067a6e2e0b2502d431e36abe8b241c61906c3434adb195c8659dff734faf73aa",
+    "docs/research/RETAINED_EARNING_REVIEW.json": "51407c7176c2e8834a4a141e6384c4bd2b5fd9b1917b832a1882349892e4018e"
+  },
+  "existing_log_evidence": {
+    "arena-process-career-retained-manager-earn.log": {
+      "sha256": "a04b6bf559825c941a57c631e61718cffda4f0c61c3dd5440f96e4109e964556",
+      "passed_marker": "[career-process] career-retained-manager-earn-passed"
+    },
+    "arena-process-career-retained-manager-reload.log": {
+      "sha256": "445b4173c3a3352da3bb657a531ff6204d984d5c26d93ae089d7e02451be766d",
+      "passed_marker": "[career-process] career-retained-manager-reload-passed"
+    },
+    "arena-process-career-retained-manager-restore.log": {
+      "sha256": "7671de2b4b6b2e2b9c3c016614bca8c6229e092c4aae053cfb86b86d2e979cd2",
+      "passed_marker": "[career-process] career-retained-manager-restore-passed"
+    },
+    "arena-process-career-retained-office-earn.log": {
+      "sha256": "ea622b0027a16e16ab34c1de934d4e6b84d25312385d02f4b91d007b6bf6b50a",
+      "passed_marker": "[career-process] career-retained-office-earn-passed"
+    },
+    "arena-process-career-retained-office-reload.log": {
+      "sha256": "046c8f471368c864989dc0c9364f57b8fe27165a33df296ab0d572a19a6b0205",
+      "passed_marker": "[career-process] career-retained-office-reload-passed"
+    },
+    "arena-process-career-retained-social-flowers.log": {
+      "sha256": "66b3d4512aa715a3bee499948bbde8de648a06be62546494ec01abe43d512519",
+      "passed_marker": "[career-process] career-retained-social-flowers-passed"
+    },
+    "arena-process-career-retained-social-gender.log": {
+      "sha256": "c9b592f08ee55cbe76817b829785c28fa98c5933f82695903205c0d7994a057a",
+      "passed_marker": "[career-process] career-retained-social-gender-passed"
+    },
+    "arena-process-career-retained-social-marry.log": {
+      "sha256": "d7e03f9e8b46f152cd6f5ddbc3d02f12d05e8b5c3521cdfd9db31bd4cbbdd4db",
+      "passed_marker": "[career-process] career-retained-social-marry-passed"
+    },
+    "arena-process-career-retained-social-reload.log": {
+      "sha256": "618f622bd8babc0e4312b2a9c7ced5d8a038c10f04926ef038e66afea5e3f747",
+      "passed_marker": "[career-process] career-retained-social-reload-passed"
+    },
+    "arena-process-career-retained-supervisor-earn.log": {
+      "sha256": "394a6620d18a410972d2dfc8ee54429bdfe5f7664b9a6195184855643f41549f",
+      "passed_marker": "[career-process] career-retained-supervisor-earn-passed"
+    },
+    "arena-process-career-retained-supervisor-reload.log": {
+      "sha256": "40f75a5348b3e662b291d3d1dfc603a48e4a655d8a2c9e1f7b9f6c916cc814ed",
+      "passed_marker": "[career-process] career-retained-supervisor-reload-passed"
+    },
+    "arena-process-career-retained-supervisor-restore.log": {
+      "sha256": "a8526856be567e99f4c9ea2f6ebf4fc6e1a5eca0b558b40d2abedd9af88a092f",
+      "passed_marker": "[career-process] career-retained-supervisor-restore-passed"
+    }
+  },
+  "compatible_career_verified": false,
+  "limitations": [
+    "Source eligibility does not turn supplied historical peers into freshly created characters or merge main-character receipts.",
+    "Saved-state obligations, fees, invitations, ranking and contribution requirements remain mandatory.",
+    "Retained source reviews retain their controlled clocks, proximity, outcomes and earlier funding provenance.",
+    "This is not a revalidation of unrelated owner worktree edits or current live behavior.",
+    "Remaining full-career resource/order composition, native acceptance and release remain open."
+  ]
+}

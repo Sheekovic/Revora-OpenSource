@@ -1,0 +1,53 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Revora.Domain/Revora.Domain.csproj" />
+    <Project Path="src/Revora.Application/Revora.Application.csproj" />
+    <Project Path="src/Revora.Protocol5165/Revora.Protocol5165.csproj" />
+    <Project Path="src/Revora.Networking/Revora.Networking.csproj" />
+    <Project Path="src/Revora.Persistence/Revora.Persistence.csproj" />
+    <Project Path="src/Revora.AccountServer/Revora.AccountServer.csproj" />
+    <Project Path="src/Revora.GameServer/Revora.GameServer.csproj" />
+    <Project Path="src/Revora.Gameplay/Revora.Gameplay.csproj" />
+    <Project Path="src/Revora.Host/Revora.Host.csproj" />
+    <Project Path="src/Revora.Web/Revora.Web.csproj" />
+    <Project Path="src/Revora.Admin/Revora.Admin.csproj" />
+    <Project Path="src/Revora.Launcher.Core/Revora.Launcher.Core.csproj" />
+    <Project Path="src/Revora.Launcher/Revora.Launcher.csproj" />
+    <Project Path="src/Revora.Bootstrapper/Revora.Bootstrapper.csproj" />
+    <Project Path="src/Revora.ClientDoctor.Core/Revora.ClientDoctor.Core.csproj" />
+    <Project Path="src/Revora.ClientDoctor/Revora.ClientDoctor.csproj" />
+    <Project Path="src/Revora.Compatibility/Revora.Compatibility.csproj" />
+    <Project Path="src/Revora.NativeLogin.Core/Revora.NativeLogin.Core.csproj" />
+    <Project Path="src/Revora.NativeLogin/Revora.NativeLogin.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Revora.UnitTests/Revora.UnitTests.csproj" />
+    <Project Path="tests/Revora.IntegrationTests/Revora.IntegrationTests.csproj" />
+    <Project Path="tests/Revora.ProtocolTests/Revora.ProtocolTests.csproj" />
+    <Project Path="tests/Revora.HostTests/Revora.HostTests.csproj" />
+    <Project Path="tests/Revora.GameplayTests/Revora.GameplayTests.csproj" />
+    <Project Path="tests/Revora.GameplayPostgreSqlTests/Revora.GameplayPostgreSqlTests.csproj" />
+    <Project Path="tests/Revora.FeatureGateTests/Revora.FeatureGateTests.csproj" />
+    <Project Path="tests/Revora.WebTests/Revora.WebTests.csproj" />
+    <Project Path="tests/Revora.PublicIdentityTests/Revora.PublicIdentityTests.csproj" />
+    <Project Path="tests/Revora.AdminTests/Revora.AdminTests.csproj" />
+    <Project Path="tests/Revora.PlayableTests/Revora.PlayableTests.csproj" />
+    <Project Path="tests/Revora.LauncherTests/Revora.LauncherTests.csproj" />
+    <Project Path="tests/Revora.Launcher.WpfTests/Revora.Launcher.WpfTests.csproj" />
+    <Project Path="tests/Revora.LauncherCampaignTests/Revora.LauncherCampaignTests.csproj" />
+    <Project Path="tests/Revora.ClientDoctorTests/Revora.ClientDoctorTests.csproj" />
+    <Project Path="tests/Revora.ClientDoctor.WpfTests/Revora.ClientDoctor.WpfTests.csproj" />
+    <Project Path="tests/Revora.NativeLoginTests/Revora.NativeLoginTests.csproj" />
+    <Project Path="tests/Revora.NativeLogin.WpfTests/Revora.NativeLogin.WpfTests.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/Revora.DeploymentValidation/Revora.DeploymentValidation.csproj" />
+    <Project Path="tools/Revora.ProfileSigner/Revora.ProfileSigner.csproj" />
+    <Project Path="tools/Revora.ClientEvidence/Revora.ClientEvidence.csproj" />
+    <Project Path="tools/Revora.OwnerGameplayImport/Revora.OwnerGameplayImport.csproj" />
+    <Project Path="tools/Revora.OwnerEssentialsImport/Revora.OwnerEssentialsImport.csproj" />
+    <Project Path="tools/Revora.CatalogLoader/Revora.CatalogLoader.csproj" />
+    <Project Path="tools/Revora.EconomyCanary/Revora.EconomyCanary.csproj" />
+    <Project Path="tools/Revora.PatchPublisher/Revora.PatchPublisher.csproj" />
+  </Folder>
+</Solution>

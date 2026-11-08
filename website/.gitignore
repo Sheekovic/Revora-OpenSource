@@ -1,0 +1,14 @@
+research/isolated/
+**/bin/
+**/obj/
+*.user
+*.suo
+.vs/
+.idea/
+.vscode/
+artifacts/
+appsettings.Development.json
+.env
+*.pfx
+*.key
+research/isolated/

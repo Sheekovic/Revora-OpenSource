@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>Revora.WebTests</AssemblyName>
+    <RootNamespace>Revora.WebTests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Revora.Web/Revora.Web.csproj" />
+    <ProjectReference Include="../../src/Revora.Persistence/Revora.Persistence.csproj" />
+  </ItemGroup>
+</Project>

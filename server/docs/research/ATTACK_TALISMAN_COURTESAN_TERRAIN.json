@@ -1,0 +1,178 @@
+{
+  "scope": "Four official Courtesan sites; verified native/server cells and local approaches/fallbacks. Owned appearance, tuning and durable random site are Revora adaptations. Native acceptance pending.",
+  "scenes": [
+    {
+      "map": 1015,
+      "client_bindings": [
+        [
+          "map/map/island.7z",
+          256
+        ]
+      ],
+      "server_bindings": [
+        [
+          "map/map/island.7z",
+          256
+        ]
+      ],
+      "server_floor_exists": true,
+      "verified": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": {
+        "server": "e47df70501200965040755a424873395172c03e7dad920d483414f85c0359ba7",
+        "archive": "150af472995d0c4d81425cc1e3c67ddb3c870dc1cb3a63f6c5dcfa73d50ead27",
+        "native": "9be1551c0856bc631ac4601ef74f1046ca03d3ba2bcae9e0d4ba2b9536e2fa7e"
+      },
+      "differing_cells": 0,
+      "points": [
+        {
+          "x": 731,
+          "y": 776,
+          "walkable": true
+        },
+        {
+          "x": 733,
+          "y": 776,
+          "walkable": true
+        },
+        {
+          "x": 735,
+          "y": 776,
+          "walkable": true
+        },
+        {
+          "x": 737,
+          "y": 776,
+          "walkable": true
+        },
+        {
+          "x": 801,
+          "y": 884,
+          "walkable": true
+        },
+        {
+          "x": 803,
+          "y": 884,
+          "walkable": true
+        },
+        {
+          "x": 805,
+          "y": 884,
+          "walkable": true
+        },
+        {
+          "x": 807,
+          "y": 884,
+          "walkable": true
+        },
+        {
+          "x": 795,
+          "y": 513,
+          "walkable": true
+        },
+        {
+          "x": 797,
+          "y": 513,
+          "walkable": true
+        },
+        {
+          "x": 799,
+          "y": 513,
+          "walkable": true
+        },
+        {
+          "x": 801,
+          "y": 513,
+          "walkable": true
+        },
+        {
+          "x": 701,
+          "y": 653,
+          "walkable": true
+        },
+        {
+          "x": 703,
+          "y": 653,
+          "walkable": true
+        },
+        {
+          "x": 705,
+          "y": 653,
+          "walkable": true
+        },
+        {
+          "x": 707,
+          "y": 653,
+          "walkable": true
+        }
+      ],
+      "routes": [
+        {
+          "site": [
+            733,
+            776
+          ],
+          "approach": [
+            731,
+            776
+          ],
+          "steps": [
+            2,
+            4,
+            6
+          ]
+        },
+        {
+          "site": [
+            803,
+            884
+          ],
+          "approach": [
+            801,
+            884
+          ],
+          "steps": [
+            2,
+            4,
+            6
+          ]
+        },
+        {
+          "site": [
+            797,
+            513
+          ],
+          "approach": [
+            795,
+            513
+          ],
+          "steps": [
+            2,
+            4,
+            6
+          ]
+        },
+        {
+          "site": [
+            703,
+            653
+          ],
+          "approach": [
+            701,
+            653
+          ],
+          "steps": [
+            2,
+            4,
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "all_scenes_available": true,
+  "native_acceptance": false
+}

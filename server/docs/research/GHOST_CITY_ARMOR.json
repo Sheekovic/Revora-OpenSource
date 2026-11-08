@@ -1,0 +1,69 @@
+{
+  "client_item_sha256": "52889c537ddd00a6f4d349fa9243268dfedc81ab3899523f1e434218735387cb",
+  "policy": "Revora class selection from installed level-87 Elite armor; not a recovered original pack script",
+  "items": [
+    {
+      "id": 101078,
+      "name": "MysticWindrobe",
+      "required_class": 160,
+      "level": 87,
+      "quality": 8
+    },
+    {
+      "id": 130078,
+      "name": "SacredArmor",
+      "required_class": 11,
+      "level": 87,
+      "quality": 8
+    },
+    {
+      "id": 131078,
+      "name": "LionArmor",
+      "required_class": 21,
+      "level": 87,
+      "quality": 8
+    },
+    {
+      "id": 133068,
+      "name": "SharkCoat",
+      "required_class": 40,
+      "level": 87,
+      "quality": 8
+    },
+    {
+      "id": 134078,
+      "name": "FullFrock",
+      "required_class": 190,
+      "level": 87,
+      "quality": 8
+    },
+    {
+      "id": 135078,
+      "name": "BearVest",
+      "required_class": 50,
+      "level": 87,
+      "quality": 8
+    },
+    {
+      "id": 136078,
+      "name": "ToughFrock",
+      "required_class": 60,
+      "level": 87,
+      "quality": 8
+    },
+    {
+      "id": 138078,
+      "name": "CombatSuit(Lv.87)",
+      "required_class": 80,
+      "level": 87,
+      "quality": 8
+    },
+    {
+      "id": 139078,
+      "name": "OceanCoat",
+      "required_class": 70,
+      "level": 87,
+      "quality": 8
+    }
+  ]
+}

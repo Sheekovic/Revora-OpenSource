@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "sourceFile": "Conquer.exe",
+  "destinationFile": "Revora-Conquer.exe",
+  "sourceSize": 18594824,
+  "sourceSha256": "4889B6DAB71068D687A9757F64FB1033E9CE1C560714DF3B62634229776A65CE",
+  "destinationSha256": "93E5EF1946B9FE3161135E206DC5D5E2158E8379534E101A42B4127FA0E9092C",
+  "patches": [
+    {
+      "fileOffset": 6094708,
+      "rva": "0x005D0B74",
+      "originalHex": "98F92201",
+      "replacementHex": "54FA2201",
+      "purpose": "Point the first confirmed English exit path at the Revora features URL."
+    },
+    {
+      "fileOffset": 2471281,
+      "rva": "0x0025C171",
+      "originalHex": "60C61601",
+      "replacementHex": "98F92201",
+      "purpose": "Point the genuine login server-list base-name constructor at the dedicated .\\Revora-Server storage; the generic loader appends .dat."
+    },
+    {
+      "fileOffset": 6173705,
+      "rva": "0x005E4009",
+      "originalHex": "98F92201",
+      "replacementHex": "54FA2201",
+      "purpose": "Point the second confirmed English exit path at the Revora features URL."
+    },
+    {
+      "fileOffset": 10456029,
+      "rva": "0x009F97DD",
+      "originalHex": "5C3DAFA0",
+      "replacementHex": "FF977551",
+      "purpose": "Replace obfuscated RSA public modulus word 00 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456039,
+      "rva": "0x009F97E7",
+      "originalHex": "BC08E8E4",
+      "replacementHex": "B8B36E4D",
+      "purpose": "Replace obfuscated RSA public modulus word 01 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456049,
+      "rva": "0x009F97F1",
+      "originalHex": "D1AE989A",
+      "replacementHex": "8C54E6FC",
+      "purpose": "Replace obfuscated RSA public modulus word 02 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456059,
+      "rva": "0x009F97FB",
+      "originalHex": "58921C4D",
+      "replacementHex": "195D9C44",
+      "purpose": "Replace obfuscated RSA public modulus word 03 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456069,
+      "rva": "0x009F9805",
+      "originalHex": "FD7478D6",
+      "replacementHex": "694D356E",
+      "purpose": "Replace obfuscated RSA public modulus word 04 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456079,
+      "rva": "0x009F980F",
+      "originalHex": "0590F038",
+      "replacementHex": "693F0E48",
+      "purpose": "Replace obfuscated RSA public modulus word 05 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456089,
+      "rva": "0x009F9819",
+      "originalHex": "26CCD543",
+      "replacementHex": "A727CDBC",
+      "purpose": "Replace obfuscated RSA public modulus word 06 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456099,
+      "rva": "0x009F9823",
+      "originalHex": "BF54FCD6",
+      "replacementHex": "7C36F331",
+      "purpose": "Replace obfuscated RSA public modulus word 07 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456109,
+      "rva": "0x009F982D",
+      "originalHex": "815092FF",
+      "replacementHex": "CBBE7F49",
+      "purpose": "Replace obfuscated RSA public modulus word 08 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456119,
+      "rva": "0x009F9837",
+      "originalHex": "1A3B095E",
+      "replacementHex": "995DE5B6",
+      "purpose": "Replace obfuscated RSA public modulus word 09 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456129,
+      "rva": "0x009F9841",
+      "originalHex": "7D84D666",
+      "replacementHex": "6CC09D09",
+      "purpose": "Replace obfuscated RSA public modulus word 10 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456139,
+      "rva": "0x009F984B",
+      "originalHex": "0B23567C",
+      "replacementHex": "382B1050",
+      "purpose": "Replace obfuscated RSA public modulus word 11 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456149,
+      "rva": "0x009F9855",
+      "originalHex": "7BFFA8EF",
+      "replacementHex": "88321F61",
+      "purpose": "Replace obfuscated RSA public modulus word 12 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456159,
+      "rva": "0x009F985F",
+      "originalHex": "5F8416DF",
+      "replacementHex": "415F48C8",
+      "purpose": "Replace obfuscated RSA public modulus word 13 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456169,
+      "rva": "0x009F9869",
+      "originalHex": "575630C8",
+      "replacementHex": "61C822F1",
+      "purpose": "Replace obfuscated RSA public modulus word 14 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456179,
+      "rva": "0x009F9873",
+      "originalHex": "84DB3AC9",
+      "replacementHex": "7A087C85",
+      "purpose": "Replace obfuscated RSA public modulus word 15 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456189,
+      "rva": "0x009F987D",
+      "originalHex": "883DBA5E",
+      "replacementHex": "BA77F4A1",
+      "purpose": "Replace obfuscated RSA public modulus word 16 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456199,
+      "rva": "0x009F9887",
+      "originalHex": "52E3FD73",
+      "replacementHex": "774C6664",
+      "purpose": "Replace obfuscated RSA public modulus word 17 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456209,
+      "rva": "0x009F9891",
+      "originalHex": "3716DDD4",
+      "replacementHex": "F39A7A87",
+      "purpose": "Replace obfuscated RSA public modulus word 18 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456219,
+      "rva": "0x009F989B",
+      "originalHex": "DA68B8C3",
+      "replacementHex": "88CB4F9A",
+      "purpose": "Replace obfuscated RSA public modulus word 19 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456229,
+      "rva": "0x009F98A5",
+      "originalHex": "C696305D",
+      "replacementHex": "B5C6147B",
+      "purpose": "Replace obfuscated RSA public modulus word 20 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456239,
+      "rva": "0x009F98AF",
+      "originalHex": "D3CF07C6",
+      "replacementHex": "4C35D96A",
+      "purpose": "Replace obfuscated RSA public modulus word 21 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456249,
+      "rva": "0x009F98B9",
+      "originalHex": "63C5265F",
+      "replacementHex": "86898206",
+      "purpose": "Replace obfuscated RSA public modulus word 22 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456259,
+      "rva": "0x009F98C3",
+      "originalHex": "3207C2CA",
+      "replacementHex": "F2E20BE9",
+      "purpose": "Replace obfuscated RSA public modulus word 23 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456269,
+      "rva": "0x009F98CD",
+      "originalHex": "C8A05C77",
+      "replacementHex": "351AE652",
+      "purpose": "Replace obfuscated RSA public modulus word 24 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456279,
+      "rva": "0x009F98D7",
+      "originalHex": "79AC1983",
+      "replacementHex": "40D578F2",
+      "purpose": "Replace obfuscated RSA public modulus word 25 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456289,
+      "rva": "0x009F98E1",
+      "originalHex": "DBD449D9",
+      "replacementHex": "5558B094",
+      "purpose": "Replace obfuscated RSA public modulus word 26 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456299,
+      "rva": "0x009F98EB",
+      "originalHex": "C92575D0",
+      "replacementHex": "7DAEE868",
+      "purpose": "Replace obfuscated RSA public modulus word 27 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456309,
+      "rva": "0x009F98F5",
+      "originalHex": "AD11EA39",
+      "replacementHex": "303E4162",
+      "purpose": "Replace obfuscated RSA public modulus word 28 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456319,
+      "rva": "0x009F98FF",
+      "originalHex": "61C3BEB8",
+      "replacementHex": "EA1448C3",
+      "purpose": "Replace obfuscated RSA public modulus word 29 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456329,
+      "rva": "0x009F9909",
+      "originalHex": "F3407D2C",
+      "replacementHex": "54BDEF00",
+      "purpose": "Replace obfuscated RSA public modulus word 30 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456339,
+      "rva": "0x009F9913",
+      "originalHex": "09B059FB",
+      "replacementHex": "7933C20E",
+      "purpose": "Replace obfuscated RSA public modulus word 31 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456349,
+      "rva": "0x009F991D",
+      "originalHex": "792E3B07",
+      "replacementHex": "363B0D7F",
+      "purpose": "Replace obfuscated RSA public modulus word 32 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456359,
+      "rva": "0x009F9927",
+      "originalHex": "97B920CA",
+      "replacementHex": "7018384E",
+      "purpose": "Replace obfuscated RSA public modulus word 33 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456369,
+      "rva": "0x009F9931",
+      "originalHex": "86959884",
+      "replacementHex": "BC26828E",
+      "purpose": "Replace obfuscated RSA public modulus word 34 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456379,
+      "rva": "0x009F993B",
+      "originalHex": "CA002846",
+      "replacementHex": "027DB05C",
+      "purpose": "Replace obfuscated RSA public modulus word 35 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456386,
+      "rva": "0x009F9942",
+      "originalHex": "AA85B9A9",
+      "replacementHex": "0480FA86",
+      "purpose": "Replace obfuscated RSA public modulus word 36 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456393,
+      "rva": "0x009F9949",
+      "originalHex": "D7A92646",
+      "replacementHex": "A7214DCF",
+      "purpose": "Replace obfuscated RSA public modulus word 37 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456400,
+      "rva": "0x009F9950",
+      "originalHex": "309A2DE0",
+      "replacementHex": "E495F5D9",
+      "purpose": "Replace obfuscated RSA public modulus word 38 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456407,
+      "rva": "0x009F9957",
+      "originalHex": "164CD887",
+      "replacementHex": "51B18976",
+      "purpose": "Replace obfuscated RSA public modulus word 39 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456414,
+      "rva": "0x009F995E",
+      "originalHex": "7646E54A",
+      "replacementHex": "C72EC6EE",
+      "purpose": "Replace obfuscated RSA public modulus word 40 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456421,
+      "rva": "0x009F9965",
+      "originalHex": "262045C8",
+      "replacementHex": "A6129F67",
+      "purpose": "Replace obfuscated RSA public modulus word 41 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456428,
+      "rva": "0x009F996C",
+      "originalHex": "98060C2D",
+      "replacementHex": "4F6CC1F4",
+      "purpose": "Replace obfuscated RSA public modulus word 42 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456435,
+      "rva": "0x009F9973",
+      "originalHex": "A168BA5C",
+      "replacementHex": "BC8145B2",
+      "purpose": "Replace obfuscated RSA public modulus word 43 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456442,
+      "rva": "0x009F997A",
+      "originalHex": "B906819F",
+      "replacementHex": "15994353",
+      "purpose": "Replace obfuscated RSA public modulus word 44 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456449,
+      "rva": "0x009F9981",
+      "originalHex": "3A054628",
+      "replacementHex": "1C4EEB33",
+      "purpose": "Replace obfuscated RSA public modulus word 45 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456456,
+      "rva": "0x009F9988",
+      "originalHex": "DEA7C123",
+      "replacementHex": "0E4591DE",
+      "purpose": "Replace obfuscated RSA public modulus word 46 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456463,
+      "rva": "0x009F998F",
+      "originalHex": "D7F341FB",
+      "replacementHex": "912E3A25",
+      "purpose": "Replace obfuscated RSA public modulus word 47 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456470,
+      "rva": "0x009F9996",
+      "originalHex": "E44EB445",
+      "replacementHex": "B2FE84CA",
+      "purpose": "Replace obfuscated RSA public modulus word 48 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456477,
+      "rva": "0x009F999D",
+      "originalHex": "E8E2DFDE",
+      "replacementHex": "452833D6",
+      "purpose": "Replace obfuscated RSA public modulus word 49 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456484,
+      "rva": "0x009F99A4",
+      "originalHex": "6644A04B",
+      "replacementHex": "35F489B1",
+      "purpose": "Replace obfuscated RSA public modulus word 50 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456491,
+      "rva": "0x009F99AB",
+      "originalHex": "B1E3B08B",
+      "replacementHex": "61BC586B",
+      "purpose": "Replace obfuscated RSA public modulus word 51 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456498,
+      "rva": "0x009F99B2",
+      "originalHex": "B2C83A48",
+      "replacementHex": "09A5B0A4",
+      "purpose": "Replace obfuscated RSA public modulus word 52 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456505,
+      "rva": "0x009F99B9",
+      "originalHex": "FDC0E8E1",
+      "replacementHex": "4EADD6BE",
+      "purpose": "Replace obfuscated RSA public modulus word 53 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456512,
+      "rva": "0x009F99C0",
+      "originalHex": "DBBBF8EF",
+      "replacementHex": "4A081F60",
+      "purpose": "Replace obfuscated RSA public modulus word 54 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456519,
+      "rva": "0x009F99C7",
+      "originalHex": "68FD1AAB",
+      "replacementHex": "1182343F",
+      "purpose": "Replace obfuscated RSA public modulus word 55 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456526,
+      "rva": "0x009F99CE",
+      "originalHex": "AFC7AA51",
+      "replacementHex": "85679250",
+      "purpose": "Replace obfuscated RSA public modulus word 56 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456533,
+      "rva": "0x009F99D5",
+      "originalHex": "EF699F33",
+      "replacementHex": "28F97446",
+      "purpose": "Replace obfuscated RSA public modulus word 57 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456540,
+      "rva": "0x009F99DC",
+      "originalHex": "FB7EEC93",
+      "replacementHex": "116239B8",
+      "purpose": "Replace obfuscated RSA public modulus word 58 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456547,
+      "rva": "0x009F99E3",
+      "originalHex": "3137D1EB",
+      "replacementHex": "A073B0F3",
+      "purpose": "Replace obfuscated RSA public modulus word 59 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456554,
+      "rva": "0x009F99EA",
+      "originalHex": "BBF04B42",
+      "replacementHex": "A839E1E1",
+      "purpose": "Replace obfuscated RSA public modulus word 60 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456561,
+      "rva": "0x009F99F1",
+      "originalHex": "022872C8",
+      "replacementHex": "2A3C0822",
+      "purpose": "Replace obfuscated RSA public modulus word 61 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456568,
+      "rva": "0x009F99F8",
+      "originalHex": "B140838C",
+      "replacementHex": "24B1C742",
+      "purpose": "Replace obfuscated RSA public modulus word 62 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 10456575,
+      "rva": "0x009F99FF",
+      "originalHex": "A7F22022",
+      "replacementHex": "E0BE700A",
+      "purpose": "Replace obfuscated RSA public modulus word 63 for Revora-Server.dat verification."
+    },
+    {
+      "fileOffset": 14870936,
+      "rva": "0x00E2F998",
+      "originalHex": "687474703A2F2F636F2E39392E636F6D2F7369676E6F75742F00000068",
+      "replacementHex": "2E5C5265766F72612D5365727665720000000000000000000000000000",
+      "purpose": "Store the NUL-terminated .\\Revora-Server base name in the retired English signout string slot."
+    },
+    {
+      "fileOffset": 14871124,
+      "rva": "0x00E2FA54",
+      "originalHex": "687474703A2F2F7A662E74772E39392E636F6D2F7369676E6F75742F696E6465782E7368746D6C0052",
+      "replacementHex": "68747470733A2F2F706C61797265766F72612E636F6D2F656E2F666561747572657300000000000000",
+      "purpose": "Store the NUL-terminated Revora exit URL in an existing bounded URL slot."
+    },
+    {
+      "fileOffset": 18370592,
+      "rva": "0x011AF420",
+      "originalHex": "43006F006E00710075006500720020004F006E006C0069006E0065000000",
+      "replacementHex": "5200650076006F007200610020004F006E006C0069006E00650000000000",
+      "purpose": "Change PE FileDescription from Conquer Online to Revora Online."
+    },
+    {
+      "fileOffset": 18370916,
+      "rva": "0x011AF564",
+      "originalHex": "43006F006E00710075006500720020004F006E006C0069006E0065000000",
+      "replacementHex": "5200650076006F007200610020004F006E006C0069006E00650000000000",
+      "purpose": "Change PE ProductName from Conquer Online to Revora Online."
+    }
+  ]
+}

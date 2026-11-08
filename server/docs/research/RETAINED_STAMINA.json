@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-03",
+  "scope": "Natural stamina availability for retained skill-training prerequisites; not a new 320-achievement earning certificate",
+  "uid": 4294907001,
+  "runtime_sha256": "18CAC3A8A6EF22F46175EF2FAB4749ADAC8E2DB09FC3AD323B944F39D969A5F3",
+  "result": {
+    "initial_stamina": 0,
+    "initial_recovery_ticks": 20,
+    "casts": 2,
+    "skill": 1045,
+    "cost_per_cast": 20,
+    "recovered_after_each_cast": 100,
+    "total_callback_ticks": 28,
+    "callback": "Screen.monsterBuffersCallback",
+    "cold_snapshot": "exact match including prior career and titles",
+    "equipped_title": 20010002,
+    "current_checkpoint": "revora_retained_stamina_probe"
+  },
+  "controls": [
+    "Offline socket adapter and controlled target approach; actual callback cadence waits at least510ms.",
+    "No stamina, regeneration timestamp or attack timestamp assignments in this phase.",
+    "Loaded skill1046 and4000 catalog costs checked at most100; neither skill was cast in this phase."
+  ],
+  "limitations": [
+    "Cold persistence concerns saved career, equipment and titles; transient stamina itself is not claimed persisted.",
+    "Does not repeat active-skill mastery or guard summoning, nor certify native combat.",
+    "Private vote grant pulse still reports PostgresException; this check does not validate voting.",
+    "No production source change, live deployment or native client execution."
+  ],
+  "logs": {
+    "career-retained-mounts-stamina-earn": {
+      "status": "passed",
+      "sha256": "948e47102686ec4b2c844422760fe4ce16f8bd79d83834418f88f7e9c427fb42"
+    },
+    "career-retained-mounts-stamina-reload": {
+      "status": "passed",
+      "sha256": "ce4a18ff4cc1577c45a5d05518ee0cea1013ab71c5eb1f47a3ec994f3183e3c0"
+    }
+  },
+  "source_sha256": {
+    "tools/CheckCandidateRetainedMounts.cs": "f4d78b89bf3cc91ebb33af1959578720c5ab1664902ad3684ba81527cb38fd0e",
+    "Game/Screen.cs": "bf645e5f05fbfe4744859216e1cb9d2a8bd5eea40496cba459f20c6c03e3c347"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "client": {
+    "sha256": "52889c537ddd00a6f4d349fa9243268dfedc81ab3899523f1e434218735387cb",
+    "weapons": [
+      {
+        "id": 410108,
+        "name": "ColdBlade",
+        "required_class": 0,
+        "level": 55
+      },
+      {
+        "id": 421108,
+        "name": "CopperBacksword",
+        "required_class": 190,
+        "level": 55
+      },
+      {
+        "id": 500098,
+        "name": "LongBow",
+        "required_class": 40,
+        "level": 55
+      },
+      {
+        "id": 510108,
+        "name": "SharpGlaive",
+        "required_class": 0,
+        "level": 55
+      },
+      {
+        "id": 601108,
+        "name": "NightKatana",
+        "required_class": 50,
+        "level": 55
+      },
+      {
+        "id": 610108,
+        "name": "BeadsOfTruth",
+        "required_class": 60,
+        "level": 55
+      },
+      {
+        "id": 611108,
+        "name": "MelodyRapier",
+        "required_class": 70,
+        "level": 55
+      },
+      {
+        "id": 617108,
+        "name": "FlameNunchaku",
+        "required_class": 80,
+        "level": 55
+      },
+      {
+        "id": 626108,
+        "name": "PrideFan",
+        "required_class": 160,
+        "level": 55
+      }
+    ]
+  },
+  "server": {
+    "sha256": "594ffe5f252c9445a6087004372519a6f150f089c7bff42d4ec30400911a0e88",
+    "weapons": [
+      {
+        "id": 410108,
+        "name": "ColdBlade",
+        "required_class": 0,
+        "level": 55
+      },
+      {
+        "id": 421108,
+        "name": "CopperBacksword",
+        "required_class": 190,
+        "level": 55
+      },
+      {
+        "id": 500098,
+        "name": "LongBow",
+        "required_class": 40,
+        "level": 55
+      },
+      {
+        "id": 510108,
+        "name": "SharpGlaive",
+        "required_class": 0,
+        "level": 55
+      },
+      {
+        "id": 601108,
+        "name": "NightKatana",
+        "required_class": 50,
+        "level": 55
+      },
+      {
+        "id": 610108,
+        "name": "BeadsOfTruth",
+        "required_class": 60,
+        "level": 55
+      },
+      {
+        "id": 611108,
+        "name": "MelodyRapier",
+        "required_class": 70,
+        "level": 55
+      },
+      {
+        "id": 617108,
+        "name": "FlameNunchaku",
+        "required_class": 80,
+        "level": 55
+      },
+      {
+        "id": 626108,
+        "name": "PrideFan",
+        "required_class": 160,
+        "level": 55
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-04",
+  "scope": "Immutable tournament-result retry contract; not cross-server transport acceptance",
+  "previous_build_sha256": "82E5435A9B28DE4660159FB9BA8E447BBFB5409D3E51537E1EB3C1459B285490",
+  "validated_build_sha256": "e6dc083ae36e3ddb9046126870c7850865cce0ac24f3c623a9c9b69f5a5bc5f2",
+  "regression": "Previous build fails conflicting-winner retry rejection; patched build passes.",
+  "checks": {
+    "origin": 36,
+    "tournament": 26,
+    "ctf": 47,
+    "elite_pk": 29,
+    "team_pk": 32,
+    "total": 170
+  },
+  "new_coverage": [
+    "Conflicting winner rejected; complete run/placement/outbox snapshot unchanged.",
+    "Incomplete replay roster rejected with exact saved state preserved.",
+    "Foreign identity replay rejected with exact saved state preserved.",
+    "Equivalent reordered result and zero-prefixed numeric UID accepted idempotently without rewriting.",
+    "Two concurrent conflicting finalizations commit exactly one complete result and reject the other."
+  ],
+  "source_sha256": {
+    "Game/Features/OriginTournaments.cs": "a5fa344abcc2d9d729d02a75b17721fa4a4c0563557e394b7eda8e8298c00b5b",
+    "tests/OriginRealms/OriginRealmTests.cs": "41f4325058cd46bf18b5708f3f257254ecac04d6f8acf4d2a7eba5582c9fe123"
+  },
+  "log_sha256": {
+    "obj/origin-finalize-before.log": "0c04f771a2c6561a92f7426fcc6784dffc5f986cd4ca058055767a58c2700a01",
+    "obj/origin-finalize-after.log": "3a836facdf6d2b8429a062a79e98d382cc5a8f95c706c5c5eaf4262735bb1012",
+    "obj/origin-finalize-build.log": "55fbc590b3204373c3f308b485cfbd19cc96f2febecad21c409c3479fe3cf51a"
+  },
+  "limits": [
+    "Private loopback PostgreSQL validation schema only; no live server or client execution.",
+    "Installed career runtime remains 18CAC3A8A6EF22F46175EF2FAB4749ADAC8E2DB09FC3AD323B944F39D969A5F3.",
+    "Game build retains existing warnings; test harness compiles with warnings as errors.",
+    "Production battle/admission/return transport and competition-driven coordinator calls remain absent.",
+    "Rank range/uniqueness already enforced before this change; no missing-champion defect was found."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-04",
+  "scope": "Fresh ordinary mentor admission and earned senior-profile prerequisite; not the full320 career",
+  "runtime_sha256": "18CAC3A8A6EF22F46175EF2FAB4749ADAC8E2DB09FC3AD323B944F39D969A5F3",
+  "main_uid": 1096322,
+  "main_profile": {
+    "level": 133,
+    "reborn": 2
+  },
+  "apprentice_profile": {
+    "level": 130,
+    "reborn": 0
+  },
+  "main_achievement": 10124,
+  "apprentice_achievement": 10125,
+  "capacity": 7,
+  "fresh_saved_receipts": 149,
+  "retained_saved_receipts": 323,
+  "current_fresh_checkpoint": "revora_fresh_mentor_join_probe",
+  "results": [
+    "Premature acceptance and invitation alone leave saved state unchanged.",
+    "Ordinary sealed2065 request/consent creates one reciprocal relationship and two correctly owned receipts.",
+    "Duplicate acceptance preserves the exact complete nested checkpoint.",
+    "Cold reload preserves relationship, consent, both achievements and all prior career state.",
+    "Production Eligible accepts the earned133/twice-reborn main as senior for a level15/twice-reborn apprentice. It rejects even140/twice-reborn as senior for the current133/twice-reborn main; the earlier level15 order is required."
+  ],
+  "weekly_rollover": {
+    "prior_snapshot_sha256": "1e7cf49956e43cc0724b888f66854da63a1dbd497bc4a4d0b73afb79b03192c6",
+    "current_snapshot_sha256": "f06832dcc50ccd59312b8d46d134eb00aa26694887e8f6556b281a3df0f01f32",
+    "reset_week": "2026-10-04",
+    "only_scalar_changes": "Two nested projections of the main nobility donation,5000000000 to0",
+    "required_database_evidence": "Reset marker,zero donation/rey and original100000-CP/5B-donation payment",
+    "preservation": "Old KO snapshot retained verbatim in the new probe; no donation restoration, achievement insertion or currency adjustment."
+  },
+  "logs": {
+    "career-fresh-arena-classes-mentor-earn": {
+      "sha256": "5abf281ba7ad31ad959a689218a43dd281a95ee6ae30819c7cb499e819e29cb1",
+      "marker": "[career-process] career-fresh-arena-classes-mentor-earn-passed mentor=1096322 child=1096331 capacity=7 senior-for-level15=true snapshot-exact=true"
+    },
+    "career-fresh-arena-classes-mentor-reload": {
+      "sha256": "00c04002f54d98287a732502094eca0799e331f575b3e8e391d8b9073f9485b7",
+      "marker": "[career-process] career-fresh-arena-classes-mentor-reload-passed mentor=1096322 child=1096331 capacity=7 senior-for-level15=true snapshot-exact=true"
+    }
+  },
+  "source_sha256": {
+    "tools/CheckCandidateFreshArenaClasses.cs": "5ab3a117ce3da1b3f90cd529b1d523f5279776bd5994a31d841f853ca73f9953",
+    "Game/Features/MentorAdmissions.cs": "08e686968835d0a130d2a7dcf3fb77369cefe978afb1635d29bfa7ab00c5eb34",
+    "Game/Features/NobilityReset.cs": "3e53e0c6d032c871661c95d7b342ee1b79024a10e58f288e70571562d86d197f"
+  },
+  "limitations": [
+    "Controlled proximity and offline socket adapter; no native packet/UI or live deployment acceptance.",
+    "The fresh main is the actual mentor in this phase. No claim that it newly earned apprentice10125 or replaced the retained career mentor.",
+    "The retained mentor-role receipt remains historically earned with its documented supplied peer; this validates the missing ordinary senior profile, not a fresh reenactment of that entire career.",
+    "Other private nobility rows may also have reset weekly; older retained snapshots must not be restored over that calendar change."
+  ]
+}

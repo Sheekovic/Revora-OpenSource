@@ -1,0 +1,304 @@
+{
+  "scope": "Read-only loaded runtime catalog probe, 2026-09-26; no live schema changes.",
+  "monsters": [
+    {
+      "id": 7,
+      "name": "Bandit",
+      "level": 32,
+      "mesh": 201,
+      "hp": 545,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "BanditL97",
+      "level": 97,
+      "mesh": 201,
+      "hp": 13805,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "BanditL33",
+      "level": 33,
+      "mesh": 201,
+      "hp": 1635,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "BanditL98",
+      "level": 98,
+      "mesh": 201,
+      "hp": 27610,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 84,
+      "name": "Banditti",
+      "level": 98,
+      "mesh": 201,
+      "hp": 26680,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 85,
+      "name": "BanditKing",
+      "level": 103,
+      "mesh": 201,
+      "hp": 30015,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=True"
+      ]
+    },
+    {
+      "id": 111,
+      "name": "AlienBandit",
+      "level": 32,
+      "mesh": 201,
+      "hp": 600,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 1401,
+      "name": "Banditleader",
+      "level": 52,
+      "mesh": 201,
+      "hp": 2643,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 2140,
+      "name": "CastleBandit",
+      "level": 22,
+      "mesh": 201,
+      "hp": 545,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 3015,
+      "name": "BrutalBandit",
+      "level": 78,
+      "mesh": 201,
+      "hp": 4545,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 3016,
+      "name": "WildBandit",
+      "level": 88,
+      "mesh": 201,
+      "hp": 6813,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 3017,
+      "name": "CruelBandit",
+      "level": 98,
+      "mesh": 201,
+      "hp": 9937,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 3019,
+      "name": "TyrantBandit",
+      "level": 118,
+      "mesh": 201,
+      "hp": 18205,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 3033,
+      "name": "StoneBandit",
+      "level": 77,
+      "mesh": 105,
+      "hp": 5642,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8102,
+      "name": "BanditMessenger",
+      "level": 32,
+      "mesh": 201,
+      "hp": 1067,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    },
+    {
+      "id": 8202,
+      "name": "BanditAide",
+      "level": 32,
+      "mesh": 201,
+      "hp": 1067,
+      "flags": [
+        "guard=False",
+        "reviver=False",
+        "boss=False"
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "id": 4706,
+      "map": 1015,
+      "x": 636,
+      "y": 656,
+      "mesh": 4620,
+      "name": "None"
+    },
+    {
+      "id": 4707,
+      "map": 1818,
+      "x": 56,
+      "y": 55,
+      "mesh": 4637,
+      "name": "None"
+    }
+  ],
+  "bird_island_spawns": [
+    {
+      "id": 32,
+      "map": 1015,
+      "x": 362,
+      "y": 469,
+      "width": 192,
+      "height": 117,
+      "count": 15,
+      "family": 55
+    },
+    {
+      "id": 33,
+      "map": 1015,
+      "x": 335,
+      "y": 329,
+      "width": 96,
+      "height": 70,
+      "count": 15,
+      "family": 55
+    },
+    {
+      "id": 81,
+      "map": 1015,
+      "x": 362,
+      "y": 469,
+      "width": 192,
+      "height": 117,
+      "count": 39,
+      "family": 79
+    },
+    {
+      "id": 82,
+      "map": 1015,
+      "x": 335,
+      "y": 329,
+      "width": 96,
+      "height": 70,
+      "count": 39,
+      "family": 79
+    },
+    {
+      "id": 139,
+      "map": 1015,
+      "x": 114,
+      "y": 312,
+      "width": 95,
+      "height": 45,
+      "count": 18,
+      "family": 84
+    },
+    {
+      "id": 140,
+      "map": 1015,
+      "x": 293,
+      "y": 559,
+      "width": 56,
+      "height": 37,
+      "count": 18,
+      "family": 84
+    },
+    {
+      "id": 151,
+      "map": 1015,
+      "x": 114,
+      "y": 312,
+      "width": 95,
+      "height": 45,
+      "count": 33,
+      "family": 85
+    },
+    {
+      "id": 152,
+      "map": 1015,
+      "x": 293,
+      "y": 559,
+      "width": 56,
+      "height": 37,
+      "count": 23,
+      "family": 85
+    }
+  ],
+  "missing_exact_names": [
+    "BanditLeaderL97",
+    "BanditCourier",
+    "BanditDeliverer",
+    "SeniorBandit"
+  ],
+  "native_acceptance": false
+}

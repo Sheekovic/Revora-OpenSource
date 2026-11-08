@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-03",
+  "uid": 1096322,
+  "runtime_sha256": "A38205B5C2185F060453E2D3BED757059D41724B912383F856C613CEC9E5A0DA",
+  "status": "Repair/re-equip and cold reload passed after correcting the two late Warrior-gear guards to honor the documented low-level rebirth exemption.",
+  "observed": {
+    "class": 41,
+    "level": 133,
+    "broken_types": [
+      410009,
+      150009
+    ],
+    "helmet_type": 111009,
+    "helmet_before": 3897,
+    "helmet_maximum": 3899,
+    "helmet_after": 3899,
+    "helmet_position": 0,
+    "helmet_repair_silver": 1,
+    "cps": 5596921,
+    "silver": 22823299
+  },
+  "checks": [
+    "Initial readiness left the nested snapshot unchanged.",
+    "Maintenance started only after exact equality with the completed Arena stage2 snapshot.",
+    "Ordinary unequip and repair restored the owned helmet, saved after each operation.",
+    "Repeated repair did not change the saved snapshot or charge again.",
+    "Normal Equipable predicate accepts the low-level helmet through the reborn exception, but EquipItem explicitly rejects Warrior helmet family111 for Archer.",
+    "Cold inspect matched the complete maintenance checkpoint, found the owned repaired helmet in inventory and the empty head slot, and reproduced the rejection without state change."
+  ],
+  "next_requirement": "Use the completed funding/maintenance prerequisite in the joint320 compatibility review; do not repeat this fight or class progression without a new concrete risk.",
+  "limitations": [
+    "One full recorded Moonfang fight plus paid maintenance supports positive net funding for this earned setup, using the earlier controlled timing/proximity/travel model. It is not proof of natural-time navigation, all-class balance or unlimited currency.",
+    "The older observed checkpoint and failed logs above document the pre-fix build. The resolution section is the latest state.",
+    "Only the private game/reference assemblies were refreshed, with prior binaries and manifest preserved under ignored obj/reborn-gear-install. No live deployment or native acceptance."
+  ],
+  "logs": {
+    "funding-readiness": {
+      "sha256": "7a7dde83bab918a610ec348aa052d6235d7fdfafd2e1cbd432a1478c133f1981",
+      "status": "passed"
+    },
+    "maintenance-repair": {
+      "sha256": "57199463746b5da188fa9b51c0d41642d275456a6e37f697cc420a87879f6883",
+      "status": "failed at re-equip"
+    },
+    "maintenance-inspect": {
+      "sha256": "3ee3abd5850355b97f52628ba6a7a829a85b9e843ded04fe227efab3d6577414",
+      "status": "passed"
+    }
+  },
+  "failures_preserved": [
+    "First fixture compilation needed System.Console qualification; no runtime mutation occurred.",
+    "First maintenance run repaired the helmet and checkpointed the rejected re-equip. The diagnostic retry reproduced rejection from that checkpoint; neither run repeated the boss fight or reset state."
+  ],
+  "historical_status": "Maintenance incomplete: Archer cannot re-equip retained Warrior helmet. Cold diagnostic passed; repair/re-equip journey failed.",
+  "resolution": {
+    "runtime_sha256": "4A8F616763464052607B30AD625FAC4EA4FFA5ABB6CD39A63415724890F7B62F",
+    "official_rule": "https://co.99.com/guide/quests/2rebornadv.shtml",
+    "scope": "Only late Warrior armor131 and helmet111 refusal now respects existing EquipPassRbReq; no item/profile grant or bypass of earlier eligibility checks.",
+    "focused_checks": 40,
+    "repaired_slots": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      10,
+      11
+    ],
+    "cost_cps": 30,
+    "cost_silver": 24179,
+    "purchased_meteors": 10,
+    "net_boss_cps_after_repairs": 999970,
+    "net_boss_silver_after_healing_and_repairs": 8151821,
+    "final_cps": 5596891,
+    "final_silver": 22799121,
+    "full_checkpoint_reload": "passed",
+    "logs": {
+      "maintenance-repair": {
+        "sha256": "7595d9423e84fb62737881206982bc3109fbc2db10f7660a15e38c1aa55ea04b",
+        "status": "passed"
+      },
+      "maintenance-reload": {
+        "sha256": "05aa1d1fed7194482d02036144a48699c88c9e50bedcbbec1acb407cdbfcf403",
+        "status": "passed"
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-04",
+  "result": "passed",
+  "profile_uid": 1096322,
+  "scope": "Standard revision1 Dis City production calculator bounds using loaded defense and production difficulty profile; no new earning journey",
+  "cases": [
+    {
+      "template_or_guardian_marker": 5050,
+      "hp": 100000,
+      "outgoing": 178996,
+      "incoming": 672,
+      "shots": 1,
+      "spell": 0,
+      "attack_ms": 1500,
+      "medicines": 0,
+      "minimum_hp": 23288
+    },
+    {
+      "template_or_guardian_marker": 5051,
+      "hp": 100000,
+      "outgoing": 178996,
+      "incoming": 672,
+      "shots": 1,
+      "spell": 0,
+      "attack_ms": 1500,
+      "medicines": 0,
+      "minimum_hp": 23288
+    },
+    {
+      "template_or_guardian_marker": 5053,
+      "hp": 100000,
+      "outgoing": 178996,
+      "incoming": 672,
+      "shots": 1,
+      "spell": 0,
+      "attack_ms": 1500,
+      "medicines": 0,
+      "minimum_hp": 23288
+    },
+    {
+      "template_or_guardian_marker": 5054,
+      "hp": 100000,
+      "outgoing": 178996,
+      "incoming": 672,
+      "shots": 1,
+      "spell": 0,
+      "attack_ms": 1500,
+      "medicines": 0,
+      "minimum_hp": 23288
+    },
+    {
+      "template_or_guardian_marker": 5055,
+      "hp": 100000,
+      "outgoing": 178996,
+      "incoming": 672,
+      "shots": 1,
+      "spell": 0,
+      "attack_ms": 1500,
+      "medicines": 0,
+      "minimum_hp": 23288
+    },
+    {
+      "template_or_guardian_marker": 5056,
+      "hp": 100000,
+      "outgoing": 178996,
+      "incoming": 672,
+      "shots": 1,
+      "spell": 0,
+      "attack_ms": 1500,
+      "medicines": 0,
+      "minimum_hp": 23288
+    },
+    {
+      "template_or_guardian_marker": 5057,
+      "hp": 100000,
+      "outgoing": 178996,
+      "incoming": 672,
+      "shots": 1,
+      "spell": 0,
+      "attack_ms": 1500,
+      "medicines": 0,
+      "minimum_hp": 23288
+    },
+    {
+      "template_or_guardian_marker": 5058,
+      "hp": 100000,
+      "outgoing": 178996,
+      "incoming": 672,
+      "shots": 1,
+      "spell": 0,
+      "attack_ms": 1500,
+      "medicines": 0,
+      "minimum_hp": 23288
+    },
+    {
+      "template_or_guardian_marker": 5059,
+      "hp": 5000000,
+      "outgoing": 71599,
+      "incoming": 1260,
+      "shots": 70,
+      "spell": 0,
+      "attack_ms": 1500,
+      "medicines": 13,
+      "minimum_hp": 22000
+    },
+    {
+      "template_or_guardian_marker": 15055,
+      "hp": 500000,
+      "outgoing": 178996,
+      "incoming": 672,
+      "shots": 3,
+      "spell": 0,
+      "attack_ms": 1500,
+      "medicines": 1,
+      "minimum_hp": 22616
+    }
+  ],
+  "hall": {
+    "quota": 600,
+    "attack_seconds": 600,
+    "medicines": 58,
+    "minimum_hp": 22504,
+    "wear_bound": 3600,
+    "starting_durability": 4097,
+    "starting_stock": 100,
+    "floor_window_seconds": 7200
+  },
+  "assumptions": [
+    "Earned Archer minimum25571,180% Dragon gems, Serf, no fan/critical bonus; zero defense;23960 startingHP and30163maximum.",
+    "One maximum incoming hit per second and one outgoing shot; optional7000HP medicine in separate500ms slot.",
+    "Hall preserves health and medicine use across600kills; individual other cases reset reserves.",
+    "Production difficulty profile is instantiated; spawn overrides are mirrored from DisCityWorld.Spawn with loaded catalog defense. Marker15055 means5055 crystal guardian."
+  ],
+  "limits": [
+    "Not crowds, travel, native movement, full event timing or all-difficulty balance acceptance.",
+    "600attack seconds is not elapsed floor time; production replenishes24monsters on its2second scan and each floor receives2hours.",
+    "Existing actual earned Dis City and cold-persistence evidence is reused; this model supplies the missing numerical survival/stock check only.",
+    "Does not certify joint320 or unarmed Extraction."
+  ],
+  "source_sha256": {
+    "tests/CombatBalance/DisCityCombatBudgetTests.cs": "60374360b75f52d63becf1c973271205f98252fe449eee463748dfc0c1038fa9",
+    "Game/Features/DisCityWorld.cs": "09ec275306d8c161ee9a1da982c4656b0e79f68ff6b9587ee221f1c60d38c6c1",
+    "Game/Features/DisCityRunRules.cs": "ce6322166ccf27ba9ef694615b8af87317b6be0b1e4028673df6e937ecac2511",
+    "Game/Features/DisCityQuest.cs": "38b78b14c1985b76b7e7c3d645e089120f93e803524ac24dfaaf4f5a9426e939",
+    "Game/Attacking/Calculate.cs": "8e8a456205faf75b9b054904ed01a614a445e888aa8747ca99f1a5fb6cbdfed3",
+    "Database/MonsterTable.cs": "d057171bc6fd5d37fe7b45c76dc62642373c6472f621ef45d5f48cd1d5061df3"
+  },
+  "catalog_file_sha256": {
+    "bin/Debug/database/Monsters.txt": "99d5f7d6b3ece68d9d17cb31d3170ab77c8f2501d80af15075cad467696cac9b"
+  },
+  "server_sha256": "99c23c1b0be49b38dcb5a62800186c6419561d3c8a68fd9852b19591699bf7e0",
+  "log_sha256": "3346980b00c5e2cca5ce6469b7d1a36f1c1a4de1b5adf3c0c58207bb80bd7c96",
+  "database": "disposable loopback revora_candidate_game",
+  "database_writes": false,
+  "deployed": false
+}

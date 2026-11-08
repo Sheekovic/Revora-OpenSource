@@ -1,0 +1,35 @@
+{
+  "scope": "Source-reviewed recurrence plus the existing earned-profile funding bound; not new kills, a complete budget, or a320 certificate",
+  "uid": 1096322,
+  "starting_silver": 22799121,
+  "operating_reserve_silver": 4371056,
+  "net_per_modeled_win": {
+    "CP": 1000000,
+    "RVP": 50000,
+    "silver": 5628944
+  },
+  "known_subtotal_wins": 8,
+  "known_subtotal_surplus": {
+    "CP": 1174430,
+    "RVP": 31000,
+    "silver": 14984151
+  },
+  "reserve_invariant": "Begin with R plus optional funds. Spend at most R on the hunt, receive10M silver, and retain R before optional purchases. Each successful modeled cycle adds5628944 spendable silver,1M CP and50K RVP.",
+  "renewal_contract": "Four date-and-slot keyed opportunities per local day; payment is once per victorious run and killer, not a lifetime character quota. A new opportunity still requires a new earned victory.",
+  "purchase_policy": "Accumulate funds before a quoted purchase or class reset. Preserve R and the qualified funding loadout. Spend between cycles to retain CP/RVP/silver headroom; do not rely on a payout beyond the caps.",
+  "other_resources": "Honor and Virtue keep their independent Arena and apprentice-training routes. Boss rewards are not counted as those currencies.",
+  "conclusion": "The reviewed repeatable source has positive net income and an already affordable reserve. Finite additional purchases need additional cycles, not an exact lifetime expenditure certificate. This does not prove that every required item has an ordinary acquisition route.",
+  "limits": [
+    "Success is conditional on the reviewed combat/repair/travel model, available scheduled bosses and winning the kill; contested victory is not guaranteed.",
+    "The recorded subtotal omits variable expenses. Eight wins is a comparison, not a full-career total or promised time to finish.",
+    "Random acquisition has no fixed retry/spending bound. Positive income does not prove reachability of an unavailable random outcome.",
+    "No fresh and retained achievement receipts are combined; no native or deployment gate is closed."
+  ],
+  "input_sha256": {
+    "docs/research/FRESH_DUKE_FUNDING_BOUND.json": "c88c12cce2c2d095390bd74a7a37dc53ad33edc51b948aa20757cea28129d7bf",
+    "docs/research/CAREER_RECORDED_EXPENSES.json": "d7fbcf302c14c4d63559d5e77de0ef266e092c119904a7a13f027895416123de",
+    "docs/research/FRESH_DAILY_BOSS_COMBAT.json": "d035c12b71cbd229aeaf4343649245c7bcaeead356fb8cb22e26535e33922ec2",
+    "Game/Features/DailyWorldBosses.cs": "1e7d6e3281cbe14deefb61a23703d584f769ab60e86c88dfc7ac4a96bac0cbb4",
+    "Game/Entity.cs": "94a251b26afb8132e921f54fc294f818ca33a68a0813e2c06f9a36d5d02be4fa"
+  }
+}

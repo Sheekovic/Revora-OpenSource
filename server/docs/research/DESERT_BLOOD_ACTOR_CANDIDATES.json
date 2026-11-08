@@ -1,0 +1,54 @@
+{
+  "client_npc_sha256": "b06db1e2484992a1b58eabd7a3d884da07ac728a4a183d0fd18f2dccd5b20497",
+  "npc_candidates": [
+    {
+      "section": "NpcType380",
+      "name": "Harvey",
+      "simpleobj": "267"
+    },
+    {
+      "section": "NpcType381",
+      "name": "StoneColumn",
+      "simpleobj": "24"
+    },
+    {
+      "section": "NpcType381",
+      "name": "StoneColumn",
+      "simpleobj": "24"
+    },
+    {
+      "section": "NpcType382",
+      "name": "ObscureWarrior",
+      "simpleobj": "6000"
+    },
+    {
+      "section": "NpcType383",
+      "name": "StoneColumn",
+      "simpleobj": "25"
+    },
+    {
+      "section": "NpcType384",
+      "name": "AuntPeach",
+      "simpleobj": "272"
+    }
+  ],
+  "crypt_index": {
+    "client": [
+      {
+        "id": 1801,
+        "path": "map/map/mission.7z",
+        "value": 128
+      }
+    ],
+    "runtime": [
+      {
+        "id": 1801,
+        "path": "map/map/mission.7z",
+        "value": 128
+      }
+    ]
+  },
+  "server_crypt_exists": true,
+  "server_crypt_sha256": "27915507e6db3153afc7fa11b29c85b60fa51cbfc260afa93f023d241ed53d06",
+  "native_acceptance": false
+}

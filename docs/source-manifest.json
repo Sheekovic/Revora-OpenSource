@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-08",
+  "import_policy": "Clean snapshot; original Git histories retained separately, not published.",
+  "sources": [
+    {
+      "repository": "Sheekovic/PlayRevora-Launcher",
+      "url": "https://github.com/Sheekovic/PlayRevora-Launcher",
+      "branch": "main",
+      "commit": "43687c6882a2fe3f698ce08058c0363d84f19db7",
+      "destination": "launcher",
+      "source_file_count": 193,
+      "imported_file_count": 192
+    },
+    {
+      "repository": "Sheekovic/Revora.Web",
+      "url": "https://github.com/Sheekovic/Revora.Web",
+      "branch": "Main",
+      "commit": "a0387afab29bd8b4280d035aab3fb378d080724b",
+      "destination": "website",
+      "source_file_count": 459,
+      "imported_file_count": 459
+    },
+    {
+      "repository": "Sheekovic/Revora6711-3D",
+      "url": "https://github.com/Sheekovic/Revora6711-3D",
+      "branch": "main",
+      "commit": "33bb6661291e72bb5ce51028c70226f45633fca9",
+      "destination": "server",
+      "source_file_count": 2540,
+      "imported_file_count": 2540
+    }
+  ],
+  "excluded": {
+    "launcher/src/PlayRevora.Launcher/LauncherAssets/d3d9.dll": "Unused prebuilt graphics proxy; not referenced by the current launcher project."
+  },
+  "edited_imports": {
+    "server/README.md": "Monorepo navigation, build prerequisites, and current owner-approved project/license description."
+  },
+  "vendored_binary_sha256": {
+    "server/lib/Microsoft.Bcl.AsyncInterfaces.dll": "931163e57a151ce3252c726bb5febfd741999eed4d041381f14667212beb8116",
+    "server/lib/Npgsql.dll": "f10b5245ebf0c907270baca687972576be5b18c7aa11d52125324a2d0bd6beb9",
+    "server/lib/System.Buffers.dll": "accccfbe45d9f08ffeed9916e37b33e98c65be012cfff6e7fa7b67210ce1fefb",
+    "server/lib/System.Memory.dll": "bf3fb84664f4097f1a8a9bc71a51dcf8cf1a905d4080a4d290da1730866e856f",
+    "server/lib/System.Numerics.Vectors.dll": "1d3ef8698281e7cf7371d1554afef5872b39f96c26da772210a33da041ba1183",
+    "server/lib/System.Runtime.CompilerServices.Unsafe.dll": "f6ef966d019b1c406659ce18f3ab00c3c7c9334e4dadc0249bc6721cdb77ee9a",
+    "server/lib/System.Text.Encodings.Web.dll": "09f7d7e7f98be4c21c4dba8c3be7bf9516dbae6dddfb1b827188a9bd874c6724",
+    "server/lib/System.Text.Json.dll": "d2608254043e5b19f6e8335569fc2dd72ae4ce11a3df0d3f1425ac158df93237",
+    "server/lib/System.Threading.Tasks.Extensions.dll": "4f81ffd0dc7204db75afc35ea4291769b07c440592f28894260eea76626a23c6",
+    "server/lib/System.ValueTuple.dll": "e4774aead2793f440e0ced6c097048423d118e0b6ed238c6fe5b456acb07817f"
+  }
+}

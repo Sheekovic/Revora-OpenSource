@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-03",
+  "scope": "Exclusive origin startup recovery and stale process fencing; no cross-origin battle implementation",
+  "previous_build_sha256": "18cac3a8a6ef22f46175ef2fab4749adac8e2db09fc3ad323b944f39d969a5f3",
+  "corrected_build_sha256": "b2b51154e48664c90e5144572d1d01567cae1161fcded9253ae04db715090a2e",
+  "baseline": "Regression fails: competing live realm lock prevents recovery and preserves its session",
+  "corrected_checks": {
+    "realm": 36,
+    "tournament": 21,
+    "CTF": 41,
+    "Elite PK": 29,
+    "Team PK": 32
+  },
+  "total": 159,
+  "logs_sha256": {
+    "obj/origin-regression-before.log": "734e11c8903c5da8eea06f1bc667f68278e110a4076fa641f25b353d94f9722c",
+    "obj/origin-regression-after.log": "4b1fe2e1eda3c9383a764a43991beec260fe2b703ec9ecdfdcc46408f9057d78",
+    "obj/origin-build.log": "4ffcd9cad7d1edcfb0bfaa16aea8ad580a90b68be3998b0ab884d703e5c31ad1"
+  },
+  "source_sha256": {
+    "Game/Features/OriginBind.cs": "54057643a4d2032f78adcd70d28b8630f7e9f5c387041d808d05fea16c746965",
+    "Game/Features/OriginRealms.cs": "70a6f14dbed435904d851006aed78bb7c678db977d08d6799487ae789198d19d",
+    "tests/OriginRealms/OriginRealmTests.cs": "d77284967f5c425d06e64ccffb9fcc1ce42eadbd962a024467029b2f008b464a",
+    "tests/OriginRealms/Verify-OriginRealms.ps1": "44712e618df13dab182df05027f0eb40b36ef3bc93a83d1411ac03ada195bd06"
+  },
+  "fixture_corrections": [
+    "Initial harness used a blank private INI password; runner now loads the existing protected runtime credential transiently.",
+    "Bind recovery now uses isolated bind-a/b realms. Existing CTF sessions remain alive, so the subsequent Elite fixture reconnects instead of assuming global recovery closed them."
+  ],
+  "limitations": [
+    "Private database connections model competing process ownership; no independent realm battle or native transport was executed.",
+    "Source build uses committed copies of unrelated owner-modified files. Existing legacy build warnings remain.",
+    "No live deployment, game restart or career runtime replacement.",
+    "Older same-realm processes must be stopped for rollout; they do not participate in the lock protocol."
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "Protocol": "TCP",
+    "Port": 9958,
+    "Ref": "AccountPort",
+    "Name": "Account Server",
+    "Description": "Revora account/login TCP listener. Development instances remain loopback-bound."
+  },
+  {
+    "Protocol": "TCP",
+    "Port": 9959,
+    "Ref": "GamePort",
+    "Name": "Game Server",
+    "Description": "Revora game-world TCP listener. Development instances remain loopback-bound."
+  }
+]
+
