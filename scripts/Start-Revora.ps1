@@ -79,13 +79,27 @@ function Invoke-Sql([string]$Database, [string]$Sql) {
     Invoke-Tool docker @('exec', '-i', $container, 'psql', '-X', '-U', 'postgres', '-d', $Database, '-v', 'ON_ERROR_STOP=1', '-q', '-t', '-A') ($Sql + "`n")
 }
 
-function Stop-OwnedProcess($Entry) {
-    if (-not $Entry) { return }
+function Get-ProcessIdentity($Process) {
+    if ($isWindowsHost) { return 'windows:' + [string]$Process.StartTime.ToUniversalTime().Ticks }
+    # /proc field 22 is a stable kernel start-time counter. DateTime-based boot
+    # estimates can drift between separate PowerShell processes on Linux.
+    $record = [IO.File]::ReadAllText("/proc/$($Process.Id)/stat")
+    $fields = $record.Substring($record.LastIndexOf(')') + 2).Split(' ', [StringSplitOptions]::RemoveEmptyEntries)
+    return 'linux:' + $fields[19]
+}
+
+function Get-OwnedProcess($Entry) {
+    if (-not $Entry) { return $null }
     $process = Get-Process -Id $Entry.Id -ErrorAction SilentlyContinue
-    if ($process -and [string]$process.StartTime.ToUniversalTime().Ticks -eq [string]$Entry.StartTicks) {
-        if ($process.Path -ne $Entry.Executable) { throw 'Process identity changed; it will not be stopped.' }
-        Stop-Process -Id $process.Id
-    }
+    if (-not $process -or $process.Path -ne $Entry.Executable) { return $null }
+    $expected = if ($Entry.PSObject.Properties['StartToken']) { $Entry.StartToken } elseif ($isWindowsHost) { 'windows:' + [string]$Entry.StartTicks } else { '' }
+    if ((Get-ProcessIdentity $process) -ne $expected) { return $null }
+    return $process
+}
+
+function Stop-OwnedProcess($Entry) {
+    $process = Get-OwnedProcess $Entry
+    if ($process) { Stop-Process -Id $process.Id }
 }
 
 function Start-LocalProcess([string]$Executable, [string]$Arguments, [string]$Directory, [string]$Name, $EnvironmentValues) {
@@ -98,7 +112,7 @@ function Start-LocalProcess([string]$Executable, [string]$Arguments, [string]$Di
         $process = Start-Process @parameters
         Start-Sleep -Milliseconds 300
         if ($process.HasExited) { throw "$Name exited during startup. See the private .local/logs directory." }
-        return [PSCustomObject]@{ Id = $process.Id; StartTicks = [string]$process.StartTime.ToUniversalTime().Ticks; Executable = $process.Path }
+        return [PSCustomObject]@{ Id = $process.Id; StartTicks = [string]$process.StartTime.ToUniversalTime().Ticks; StartToken = (Get-ProcessIdentity $process); Executable = $process.Path }
     } finally {
         foreach ($key in $saved.Keys) { [Environment]::SetEnvironmentVariable($key, $saved[$key], 'Process') }
     }
@@ -121,8 +135,8 @@ function Read-LocalState {
 function Prepare-StaticWebsite($State) {
     $null = Invoke-Tool node @('--check', (Join-Path $repoRoot 'website/site/app.js'))
     if ($Mode -ne 'Start') { return $false }
-    $existingProcess = if ($State.WebProcess) { Get-Process -Id $State.WebProcess.Id -ErrorAction SilentlyContinue } else { $null }
-    $running = $existingProcess -and [string]$existingProcess.StartTime.ToUniversalTime().Ticks -eq [string]$State.WebProcess.StartTicks
+    $existingProcess = Get-OwnedProcess $State.WebProcess
+    $running = $null -ne $existingProcess
     if (-not $running) {
         if (Test-Tcp $WebPort) { throw 'Website port is occupied. No existing process will be stopped.' }
         $arguments = (Quote-Argument (Join-Path $PSScriptRoot 'serve-site.mjs')) + " --port $WebPort"

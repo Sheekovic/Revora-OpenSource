@@ -1,0 +1,19 @@
+# Exact, reviewed false-positive fingerprints in the initial public snapshot.
+# These do not exclude files, rules, future commits, or possible new secrets.
+# Signing instructions contain ordinary prose about public-key fingerprints.
+999179e7efb14f7510247798ef04a2c13571d804:launcher/docs/LAUNCHER_MANIFEST_SIGNING_OPERATIONS.md:generic-api-key:76
+# SHA-256 file/build/log checksums in evidence JSON, not access credentials.
+999179e7efb14f7510247798ef04a2c13571d804:server/docs/research/CAREER_RESOURCE_DEPENDENCIES.json:generic-api-key:102
+999179e7efb14f7510247798ef04a2c13571d804:server/docs/research/CAREER_RECORDED_EXPENSES.json:generic-api-key:204
+999179e7efb14f7510247798ef04a2c13571d804:server/docs/research/ELIMINATION_GATE_RECONCILIATION.json:generic-api-key:29
+999179e7efb14f7510247798ef04a2c13571d804:server/docs/research/WORKTREE_INTEGRATION.json:generic-api-key:35
+999179e7efb14f7510247798ef04a2c13571d804:server/docs/research/WORKTREE_INTEGRATION.json:generic-api-key:36
+999179e7efb14f7510247798ef04a2c13571d804:server/docs/research/WORKTREE_INTEGRATION.json:generic-api-key:37
+# Deterministic ABCDEF/0123456789 synthetic vote-fixture value.
+999179e7efb14f7510247798ef04a2c13571d804:server/tests/PotencyHunt/VoteGrantTests.cs:generic-api-key:24
+# Parameterized SQL text, including algorithm/column identifiers; no values.
+999179e7efb14f7510247798ef04a2c13571d804:website/src/Revora.Persistence/PostgreSql/AdminDataStore.cs:generic-api-key:75
+999179e7efb14f7510247798ef04a2c13571d804:website/src/Revora.Persistence/PostgreSql/AdminDataStore.cs:generic-api-key:242
+999179e7efb14f7510247798ef04a2c13571d804:website/src/Revora.Persistence/PostgreSql/WebAccountStore.cs:generic-api-key:337
+# A 64-hex sha256 file digest coincidentally matches the Square token pattern.
+999179e7efb14f7510247798ef04a2c13571d804:launcher/manifests/master_manifest.json:square-access-token:352533

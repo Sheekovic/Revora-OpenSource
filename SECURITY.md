@@ -16,5 +16,7 @@ Do not publish `.local/`, Docker-volume backups or runtime credential files.
 CI uses a redacted Gitleaks scan of published history; findings require review,
 and a leaked real credential must be rotated rather than merely hidden in a
 later commit. Scans reduce risk and cannot establish that every secret is absent.
+Reviewed initial false positives are documented in
+[SECRET_SCAN_REVIEW.md](docs/SECRET_SCAN_REVIEW.md) with exact fingerprints.
 Do not run legacy probes, installers, or deployment tools against production
 without a separately authorized operator procedure.
