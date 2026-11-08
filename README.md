@@ -25,6 +25,7 @@ money behind the project, make a voluntary PayPal donation.
 | Revora website | [`website/site/`](website/site/) | HTML, CSS, vanilla JavaScript | [Website guide](docs/WEBSITE.md) |
 | Revora 6711 3D server | [`server/`](server/) | C#, .NET Framework 4.8, Windows | [Server guide](server/README.md) |
 | Optional legacy web backend | [`website/src/`](website/src/) | ASP.NET Core, .NET 10, PostgreSQL | [Connection guide](docs/CONNECT_COMPONENTS.md) |
+| Client endpoint tool | [`tools/ClientEndpoint/`](tools/ClientEndpoint/) | Windows GUI and CLI, C# | [Download and guide](docs/CLIENT_ENDPOINT_TOOL.md) |
 
 The primary website has **no ASP.NET dependency, npm packages, bundler, or build
 step**. Open `website/site/index.html` directly or use the live GitHub Pages

@@ -37,6 +37,11 @@ Do not paste passwords, signing keys, real accounts or production dumps.
 > Audit the launcher's imported 7630 profiles and original-domain references.
 > Configure a real 6711 profile for my own deployment with exact hashes and
 > signed manifests. Preserve integrity checks and offline signing keys.
+> Read docs/CLIENT_ENDPOINT_TOOL.md. For an approved 6711 DX9 hash, use the
+> ClientEndpoint CLI on a private client copy to set my account IPv4/port,
+> inspect it, verify the backup and exact restore, then configure the endpoint
+> again. Keep the matching valid server list/RSA pair. Re-hash and re-sign the
+> operator-owned launcher manifest after patching; never disable integrity gates.
 >
 > Build the relevant components, run existing tests, the static-server tests,
 > the repository checks and a redacted Gitleaks scan. Verify game Account/Game
